@@ -121,21 +121,25 @@ code {
 
 /* Header */
 .home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  display: flex;
+  align-items: center;
 }
 .home :link:not(:hover) {
   text-decoration: none;
 }
 
 /* Nav */
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
 .nav {
-  padding: 0;
-  list-style: none;
-  float: left;
-  margin-left: 1em;
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 .nav-item {
   display: inline-block;
