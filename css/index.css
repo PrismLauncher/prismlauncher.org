@@ -118,6 +118,11 @@ code {
 .highlight-line-remove {
   background-color: #902f2f;
 }
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 /* Header */
 .home {
@@ -132,6 +137,7 @@ code {
 #nav {
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 .nav {
   display: flex;
@@ -151,6 +157,31 @@ code {
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.download {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(/img/forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content {
+  position: relative;
+}
+.hero-screenshot {
+
 }
 
 /* Posts list */

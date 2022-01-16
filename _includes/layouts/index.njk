@@ -1,10 +1,21 @@
 ---
-layout: layouts/base.njk
-templateClass: tmpl-home
----
+layout : layouts/base.njk
+templateClass : tmpl-home
+--- 
 
 <section class="hero">
-    <div class="hero-content">
-        
-        <h1 class="Hero-title">
-        </h1>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Discover the World
+    </h1>
+    <h2 class="hero-subtitle">
+      Of template subtitle
+    </h2>
+    <button type="button" class="hero-button" onclick="location.href='tours.html'">
+      Download now &raquo;
+    </button>
+  </div>
+  <div class="hero-screenshot">
+    <img src="{{ "/img/screenshots/main.png" | url }}">
+  </div>
+</section>

@@ -13,7 +13,7 @@
   <body>
     <header>
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <nav id="nav">
+      <nav id="nav" class="container">
         <div class="nav left">
           <a href="{{ '/' | url }}" class="home">
             <img src="{{ "/img/icon.svg" | url }}"> {{ metadata.title }}
@@ -28,10 +28,17 @@
         </div>
         <div class="nav right">
           <ul>
-            <li class="nav-item"><a>Download</a></li>
-            <li class="nav-item"><a>Github</a></li>
+            <li class="nav-item download">
+              <a>Download</a>
+            </li>
+            <li class="nav-item github">
+              <a>Github</a>
+            </li>
           </ul>
+        </div>
       </nav>
-    </body>
+    </header>
+      {{ content | safe }}
+    <footer></footer>
   </body>
-</html></header>{{ content | safe }}<footer></footer><!-- Current page: {{ page.url | url }} --></body></html>
+</html>
