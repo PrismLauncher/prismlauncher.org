@@ -31,5 +31,8 @@
     "luxon": "^2.3.0",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1"
+  },
+  "dependencies": {
+    "eleventy-favicon": "^1.1.2"
   }
 }
