@@ -1,11 +1,25 @@
 /* Colors */
 :root {
-  --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
-  --darkgray: #333;
-  --navy: #17050F;
-  --blue: #082840;
-  --white: #fff;
+  --primary: #5a9a30ff;
+  --github: #171515;
+  --background: #444;
+  --accent: #606060;
+  --link: #88b858ff;
+  --visited: #72b147ff;
+  --primary-text: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-text: #333;
+    --background: #fff;
+    --accent: #e0e0e0;
+  }
+}
+
+@font-face {
+  font-family: Heebo;
+  src: url(/fonts/Heebo-Medium.ttf);
 }
 
 /* Global stylesheet */
@@ -18,8 +32,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, system-ui, sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  color: var(--primary-text);
+  background-color: var(--background);
 }
 p:last-child {
   margin-bottom: 0;
@@ -33,11 +47,14 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
-  color: var(--blue);
+h1, h2, h3 {
+  font-family: Heebo;
 }
-a[href]:visited {
-  color: var(--navy);
+main a[href] {
+  color: var(--link);
+}
+main a[href]:visited {
+  color: var(--visited);
 }
 main {
   padding: 1rem;
@@ -46,7 +63,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dashed var(--accent);
 }
 header:after {
   content: "";
@@ -128,60 +145,97 @@ code {
 .home {
   display: flex;
   align-items: center;
+  font-size: 32px;
 }
 .home :link:not(:hover) {
   text-decoration: none;
 }
 
 /* Nav */
-#nav {
+nav {
+  overflow: auto;
+  font-family: Heebo;
+  color: var(--primary-text);
   display: flex;
   justify-content: space-between;
-  padding: 1em;
 }
-.nav {
+.navbar, .links {
   display: flex;
   align-items: center;
-}
-.nav-menu {
-  display: flex;
-  align-items: center;
+  padding: 0;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
+  font-size: 18px;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
+  color: var(--primary-text);
 }
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
 }
-
-.download {
-  background-color: green;
-  padding: 10px;
+.links li {
+  margin-left: 1rem;
+}
+.download, .github  {
+  padding: .5rem .75rem;
   color: white;
-  border-radius: 30px;
+  list-style: none;
+  font-size: 32px;
+  font-family: Heebo;
+  text-decoration: none;
+}
+.download {
+  background-color: var(--primary);
+}
+.github {
+  background-color: var(--github);
 }
 
 /* Hero */
 .hero {
-  position: relative;
-  height: 80vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: url(/img/forest.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/forest.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.hero-content {
   position: relative;
+  color: white;
 }
-.hero-screenshot {
 
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 50%;
+  padding: 20px;  
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-family: Heebo;
+}
+.hero-subtitle {
+  font-size: 24px;
+}
+
+.hero-image {
+  width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 /* Posts list */
@@ -239,7 +293,7 @@ code {
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
   color: var(--darkgray);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--accent);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
   line-height: 1.8;

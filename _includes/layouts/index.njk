@@ -1,21 +1,20 @@
----
-layout : layouts/base.njk
-templateClass : tmpl-home
---- 
-
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">
-      Discover the World
-    </h1>
-    <h2 class="hero-subtitle">
-      Of template subtitle
-    </h2>
-    <button type="button" class="hero-button" onclick="location.href='tours.html'">
-      Download now &raquo;
-    </button>
+{% extends "layouts/base.njk" %}
+{% block hero %}
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="hero-content">
+            <h1 class="hero-title">PolyMC</h1>
+            <p class="hero-subtitle">An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.</p>
+            <br>
+            <a class="download" href="{{ '/downloads' | url }}">Download Now</a>
+          </div>
+        </div>
+        <div class="column">
+          <img class="hero-image" src="/img/screenshots/LauncherBlack.png">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="hero-screenshot">
-    <img src="{{ "/img/screenshots/main.png" | url }}">
-  </div>
-</section>
+{% endblock %}

@@ -12,33 +12,33 @@
   </head>
   <body>
     <header>
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <nav id="nav" class="container">
-        <div class="nav left">
-          <a href="{{ '/' | url }}" class="home">
-            <img src="{{ "/img/icon.svg" | url }}"> {{ metadata.title }}
-          </a>
-          <ul>
-            {%- for entry in collections.all | eleventyNavigation %}
-              <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-              </li>
-            {%- endfor %}
-          </ul>
-        </div>
-        <div class="nav right">
-          <ul>
-            <li class="nav-item download">
-              <a>Download</a>
+      <nav class="container">
+        <ul class="navbar">
+          <li class="nav-item">
+            <a href="{{ '/' | url }}" class="home">
+              <img src="{{ "/img/icon.svg" | url }}"> {{ metadata.title }}
+            </a>
+          </li>
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
-            <li class="nav-item github">
-              <a>Github</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          {%- endfor %}
+        </ul>
+        <ul class="links">
+          <li class="download">
+            <a href="{{ '/downloads/' | url }}">Download</a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/PolyMC/PolyMC">Github</a>
+          </li>
+        </ul>
+      </div>
     </header>
+    {% block hero %}{% endblock %}
+    <main class="container">
       {{ content | safe }}
+    </main>
     <footer></footer>
   </body>
 </html>
