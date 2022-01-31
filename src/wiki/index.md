@@ -1,10 +1,10 @@
 ---
 layout: layouts/page.njk
-title: About Me
+title: Wiki
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: Wiki
   order: 3
 ---
 
-I am a person that writes stuff.
+W.I.P Coming soon.

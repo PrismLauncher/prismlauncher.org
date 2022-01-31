@@ -6,134 +6,137 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const faviconPlugin = require("eleventy-favicon");
+const Image = require("@11ty/eleventy-img");
 
-module.exports = function(eleventyConfig) {
-  // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("fonts");
+async function imageShortcode(src, alt, sizes) {
+	let metadata = await Image(src, {
+		widths: [300, 600],
+		formats: ["avif", "jpeg"]
+	});
 
-  // Add plugins
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(faviconPlugin, destination = "./_site");
+	let imageAttributes = {
+		alt,
+		sizes,
+		loading: "lazy",
+		decoding: "async",
+	};
 
-  // Alias `layout: post` to `layout: layouts/post.njk`
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+	return Image.generateHTML(metadata, imageAttributes);
+}
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
-  });
+module.exports = function (eleventyConfig) {
+	// Copy the `img` and `css` folders to the output
+	eleventyConfig.addPassthroughCopy("src/img");
+	eleventyConfig.addPassthroughCopy("src/css");
+	eleventyConfig.addPassthroughCopy("src/fonts");
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
+	// Add plugins
+	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(pluginSyntaxHighlight);
+	eleventyConfig.addPlugin(pluginNavigation);
+	eleventyConfig.addPlugin(faviconPlugin, destination = "./_site");
 
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if(!Array.isArray(array) || array.length === 0) {
-      return [];
-    }
-    if( n < 0 ) {
-      return array.slice(n);
-    }
+	// Alias `layout: post` to `layout: layouts/post.njk`
+	eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
-    return array.slice(0, n);
-  });
+	eleventyConfig.addFilter("readableDate", dateObj => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
+	});
 
-  // Return the smallest number argument
-  eleventyConfig.addFilter("min", (...numbers) => {
-    return Math.min.apply(null, numbers);
-  });
+	// https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+	});
 
-  function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
-  }
+	// Get the first `n` elements of a collection.
+	eleventyConfig.addFilter("head", (array, n) => {
+		if (!Array.isArray(array) || array.length === 0) {
+			return [];
+		}
+		if (n < 0) {
+			return array.slice(n);
+		}
 
-  eleventyConfig.addFilter("filterTagList", filterTagList)
+		return array.slice(0, n);
+	});
 
-  // Create an array of all tags
-  eleventyConfig.addCollection("tagList", function(collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(item => {
-      (item.data.tags || []).forEach(tag => tagSet.add(tag));
-    });
+	// Return the smallest number argument
+	eleventyConfig.addFilter("min", (...numbers) => {
+		return Math.min.apply(null, numbers);
+	});
 
-    return filterTagList([...tagSet]);
-  });
+	function filterTagList(tags) {
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+	}
 
-  // Customize Markdown library and settings:
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after",
-      class: "direct-link",
-      symbol: "#",
-      level: [1,2,3,4],
-    }),
-    slugify: eleventyConfig.getFilter("slug")
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
+	eleventyConfig.addFilter("filterTagList", filterTagList)
 
-  // Override Browsersync defaults (used only with --serve)
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+	// Create an array of all tags
+	eleventyConfig.addCollection("tagList", function (collection) {
+		let tagSet = new Set();
+		collection.getAll().forEach(item => {
+			(item.data.tags || []).forEach(tag => tagSet.add(tag));
+		});
 
-        browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.writeHead(404, {"Content-Type": "text/html; charset=UTF-8"});
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-    ui: false,
-    ghostMode: false
-  });
+		return filterTagList([...tagSet]);
+	});
 
-  return {
-    // Control which files Eleventy will process
-    // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
-    ],
+	// Customize Markdown library and settings:
+	let markdownLibrary = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: true
+	}).use(markdownItAnchor, {
+		permalink: markdownItAnchor.permalink.ariaHidden({
+			placement: "after",
+			class: "direct-link",
+			symbol: "#",
+			level: [1, 2, 3, 4],
+		}),
+		slugify: eleventyConfig.getFilter("slug")
+	});
+	eleventyConfig.setLibrary("md", markdownLibrary);
 
-    // Pre-process *.md files with: (default: `liquid`)
-    markdownTemplateEngine: "njk",
+	// Override Browsersync defaults (used only with --serve)
+	eleventyConfig.setBrowserSyncConfig({
+		callbacks: {
+			ready: function (err, browserSync) {
+				const content_404 = fs.readFileSync('_site/404.html');
 
-    // Pre-process *.html files with: (default: `liquid`)
-    htmlTemplateEngine: "njk",
+				browserSync.addMiddleware("*", (req, res) => {
+					// Provides the 404 content without redirect.
+					res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+					res.write(content_404);
+					res.end();
+				});
+			},
+		},
+		ui: false,
+		ghostMode: false
+	});
 
-    // -----------------------------------------------------------------
-    // If your site deploys to a subdirectory, change `pathPrefix`.
-    // Don’t worry about leading and trailing slashes, we normalize these.
+	return {
+		// Control which files Eleventy will process
+		// e.g.: *.md, *.njk, *.html, *.liquid
+		templateFormats: [
+			"md",
+			"njk",
+			"html",
+			"11ty.js"
+		],
 
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
+		// Pre-process *.md files with: (default: `liquid`)
+		markdownTemplateEngine: "njk",
 
-    // You can also pass this in on the command line using `--pathprefix`
+		// Pre-process *.html files with: (default: `liquid`)
+		htmlTemplateEngine: "njk",
 
-    // Optional (default is shown)
-    pathPrefix: "/",
-    // -----------------------------------------------------------------
-
-    // These are all optional (defaults are shown):
-    dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site"
-    }
-  };
+		dir: {
+			input: "src",
+			includes: "_includes",
+			data: "_data",
+			output: "_site"
+		}
+	};
 };
