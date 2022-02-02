@@ -6,36 +6,16 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const faviconPlugin = require("eleventy-favicon");
-const Image = require("@11ty/eleventy-img");
-
-async function imageShortcode(src, alt, sizes) {
-	let metadata = await Image(src, {
-		widths: [300, 600],
-		formats: ["avif", "jpeg"]
-	});
-
-	let imageAttributes = {
-		alt,
-		sizes,
-		loading: "lazy",
-		decoding: "async",
-	};
-
-	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-	return Image.generateHTML(metadata, imageAttributes);
-}
 
 module.exports = function (eleventyConfig) {
-	// Copy the `img` and `css` folders to the output
-	eleventyConfig.addPassthroughCopy("src/img");
-	eleventyConfig.addPassthroughCopy("src/css");
-	eleventyConfig.addPassthroughCopy("src/fonts");
+	eleventyConfig.addPassthroughCopy("src/assets");
 
 	// Add plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(faviconPlugin, destination = "./_site");
+	
 
 	// Alias `layout: post` to `layout: layouts/post.njk`
 	eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

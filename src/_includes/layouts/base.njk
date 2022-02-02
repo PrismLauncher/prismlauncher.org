@@ -5,49 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ metadata.title }} - {{ eleventyNavigation.key or title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/markdown.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}"> 
-    {% favicon 'src/img/icon.svg' %}
+    {% favicon 'src/assets/img/icon.svg' %}
   </head>
   <body>
     <header>
-      <nav class="container">
-        <ul class="navbar">
-          <li class="nav-item">
-            <a href="{{ '/' | url }}" class="home">
-              <img src="{{ "/img/icon.svg" | url }}"> {{ metadata.title }}
-            </a>
-          </li>
-          {%- for entry in collections.all | eleventyNavigation %}
-            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-        </ul>
-        <ul class="links">
-          <li>
-            <a class="button" href="{{ '/download/' | url }}">Download</a>
-          </li>
-          <li>
-            <a class="github button" href="https://github.com/PolyMC/PolyMC">Github</a>
-          </li>
-        </ul>
-      </div>
+      {% block header %}
+        {% include "partials/header.njk" %}
+        {% if hero %}
+        {% include "components/hero.njk" %}
+        {% endif %}
+      {% endblock %}
     </header>
-    {% block hero %}{% endblock %}
     <main class="container">
       {{ content | safe }}
     </main>
     <footer>
-      <div class="footer">
-        © 2021-2022 PolyMC Contributors 
-        <a href="https://discord.gg/xq7fxrgtMP"><img src="https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord"></a>
-        <a href="https://matrix.to/#/#polymc:polymc.org"><img src="https://img.shields.io/matrix/polymc:polymc.org?label=PolyMC%20Space&server_fqdn=matrix.polymc.org"></a>
-
-      </div>
+      {% include "partials/footer.njk" %}
     </footer>
   </body>
 </html>

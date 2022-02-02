@@ -1,9 +1,17 @@
 ---
-layout: layouts/home.njk
+layout: layouts/page.njk
 eleventyNavigation:
   key: Home
   order: 1
+hero:
+  title: 'PolyMC'
+  description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
+  mods. Focused on user freedom and free redistributability.'
+  image: /assets/img/screenshots/LauncherBlack.avif
+  background: /assets/img/forest.avif
+  download: true
 ---
+
 <h1> A launcher to rule them all </h1>
 
 {% set maxPosts = collections.posts.length | min(3) %}

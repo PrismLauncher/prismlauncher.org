@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Wiki
-templateClass: tmpl-post
+permalink: /wiki/
 eleventyNavigation:
   key: Wiki
   order: 3

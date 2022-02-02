@@ -1,12 +1,12 @@
 ---
 layout: layouts/page.njk
-permalink: /posts/
 eleventyNavigation:
   key: News
   order: 2
+hero:
+  title: 'Latest News'
+  background: /assets/img/forest.avif
 ---
-
-<h1>Latest News</h1>
 
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
