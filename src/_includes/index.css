@@ -1,10 +1,9 @@
 /* Colors */
 :root {
     --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);
-    --grad-secondary: linear-gradient(126deg, #a87953 0%, #765338 25%, #5b422d 50%);
+    --grad-secondary: linear-gradient(126deg, #555 0%, #272727 50%);
     --primary: #88b858;
     --secondary: #a87953;
-    --github: #171515;
     --background: #333;
     --accent: #555;
     --link: #88b858ff;
