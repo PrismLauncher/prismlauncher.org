@@ -9,8 +9,7 @@ const faviconPlugin = require("eleventy-favicon");
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy("src/img");
-	eleventyConfig.addPassthroughCopy("src/css");
+	eleventyConfig.addPassthroughCopy("src/assets");
 
 	// Add plugins
 	eleventyConfig.addPlugin(pluginRss);
