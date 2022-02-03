@@ -326,6 +326,9 @@ a[href].direct-link:focus:visited,
     color: #aaa;
 }
 
+.download-links {
+    padding: 0;
+}
 .download-links li {
     display: inline;
     margin: 0.25rem;
