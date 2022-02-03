@@ -326,15 +326,25 @@ a[href].direct-link:focus:visited,
     color: #aaa;
 }
 
-
-/* Download */
-.download-links {
-    justify-content: center;
-}
-
 .download-links li {
     display: inline;
     margin: 0.25rem;
+}
+
+.title {
+    font-size: 48px;
+    font-family: Heebo;
+}
+
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+    padding: 20px;
 }
 
 /* footer */

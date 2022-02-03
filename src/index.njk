@@ -12,6 +12,54 @@ hero:
   download: true
 ---
 
+<div class="center">
+  <h1>Main Features</h1>
+  <hr>
+</div>
+<div class="row">
+  <div class="column">
+      <img class="hero-image" src="/assets/img/screenshots/PropertiesBlack.avif" alt="Hero Image">
+  </div>
+  <div class="column">
+      <div class="hero-content">
+          <h1>Modpack management</h1>
+          <p class="hero-subtitle">Install and launch modpacks easily, while keeping them clean.
+No longer do you need to manually install and update. PolyMC can do that for you, without installing tons of separate launchers</p>
+          <br>
+      </div>
+  </div>
+  {% if hero.image %}
+  {% endif %}
+</div>
+<div class="row">
+    <div class="column">
+      <div class="hero-content">
+          <h1>Minecraft instance management </h1>
+          <div class="hero-subtitle">Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
+Are you tired of manually switching mods for different versions, installing modloaders?
+
+PolyMC can help. Each Minecraft instance has it's own folder, with separate mods, resourcepacks and other things.</div>
+          <br>
+      </div>
+  </div>
+  <div class="column">
+      <img class="hero-image" src="/assets/img/screenshots/PropertiesBlack.avif" alt="Hero Image">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+      <img class="hero-image" src="/assets/img/screenshots/PropertiesBlack.avif" alt="Hero Image">
+  </div>
+  <div class="column">
+      <div class="hero-content">
+          <h1>Lightweight</h1>
+          <p class="hero-subtitle">You don't need an embedded web browser for a game launcher.
+PolyMC uses the Qt toolkit, which requires little system resources.</p>
+          <br>
+      </div>
+  </div>
+</div>
+
 <h1> A launcher to rule them all </h1>
 
 {% set maxPosts = collections.posts.length | min(3) %}

@@ -1,9 +1,9 @@
 <div class="hero">
     <div class="container">
         <div class="row">
-            <div class="column">
+            <div class="column centered">
                 <div class="hero-content">
-                    <h1 class="hero-title">{{ hero.title }}</h1>
+                    <h1 class="title">{{ hero.title }}</h1>
                     <p class="hero-subtitle">{{ hero.description }}</p>
                     <br>
                     {% if hero.download == true %}
@@ -12,7 +12,7 @@
                 </div>
             </div>
             {% if hero.image %}
-            <div class="column">
+            <div class="column centered">
                 <img class="hero-image" src="{{ hero.image }}" alt="Hero Image">
             </div>
             {% endif %}

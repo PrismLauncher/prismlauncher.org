@@ -6,20 +6,10 @@
     position: relative;
     color: white;
 }
-.row {
-    display: flex;
-}
-.column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 50%;
-    padding: 20px;
-}
 .hero-content {
     text-align: center;
 }
-.hero-title {
+.title {
     font-size: 48px;
     font-family: Heebo;
 }
