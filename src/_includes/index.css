@@ -187,7 +187,7 @@ code {
     font-size: 1.5em;
     font-family: Heebo;
     text-decoration: none;
-    background-image: var(--grad-primary);  
+    background-image: var(--grad-primary);
     background-size: 200%;
     clip-path: polygon(0.6em 0, calc(100% - 0.6em) 0, 100% 50%, calc(100% - 0.6em) 100%, 0.6em 100%, 0 50%);
     transition: 300ms ease;
@@ -342,6 +342,11 @@ a[href].direct-link:focus:visited,
 .row {
     display: flex;
 }
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 .column {
     display: flex;
     align-items: center;
