@@ -57,7 +57,3 @@ nav {
     margin-left: 1rem;
     list-style: none;
 }
-
-.button.github {
-    background-image: var(--grad-secondary);
-}

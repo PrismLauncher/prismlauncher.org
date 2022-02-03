@@ -187,6 +187,7 @@ code {
     font-size: 1.5em;
     font-family: Heebo;
     text-decoration: none;
+    background-color: var(--primary);
     background-image: var(--grad-primary);
     background-size: 200%;
     clip-path: polygon(0.6em 0, calc(100% - 0.6em) 0, 100% 50%, calc(100% - 0.6em) 100%, 0.6em 100%, 0 50%);
@@ -204,6 +205,11 @@ code {
 
 .button[href]:visited {
     color: white;
+}
+
+.button.secondary {
+    background-color: var(--secondary);
+    background-image: var(--grad-secondary);
 }
 
 /* Posts list */
