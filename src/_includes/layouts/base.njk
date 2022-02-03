@@ -1,22 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% set css %}
+      {% include "index.css" %}
+      {% include "components/hero.css" %}
+      {% include "components/header.css" %}
+      {% include "components/prism-theme.css" %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ metadata.title }} - {{ eleventyNavigation.key or title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}"> 
-    {% favicon 'src/assets/img/icon.svg' %}
+    {% favicon 'src/img/icon.svg' %}
   </head>
   <body>
     <header>
       {% block header %}
         {% include "partials/header.njk" %}
         {% if hero %}
-        {% include "components/hero.njk" %}
+        {% include "partials/hero.njk" %}
         {% endif %}
       {% endblock %}
     </header>

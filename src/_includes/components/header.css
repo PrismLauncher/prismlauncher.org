@@ -1,0 +1,61 @@
+header {
+    border-bottom: 1px dashed var(--accent);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.home img {
+    width: 2em;
+    height: 2em;
+}
+
+.home :link:not(:hover) {
+    text-decoration: none;
+}
+
+/* Nav */
+nav {
+    overflow: auto;
+    font-family: Heebo;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar, .links {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+.nav-item a {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.nav-item-active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.links li {
+    margin-left: 1rem;
+    list-style: none;
+}
+
+.github {
+    background-color: var(--github);
+}

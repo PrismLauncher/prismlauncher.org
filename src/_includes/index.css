@@ -20,7 +20,7 @@
 
 @font-face {
 	font-family: Heebo;
-	src: url(/assets/fonts/Heebo-Medium.ttf);
+	src: url(/css/fonts/Heebo-Medium.ttf);
 	font-display: swap;
 }
 
@@ -50,7 +50,6 @@ p,
 .tmpl-post li,
 img {
 	max-width: 45em;
-	/* 600px /16 */
 }
 
 p,
@@ -117,6 +116,7 @@ pre {
 	padding: 1em;
 	margin: .5em 0;
 	background-color: var(--code);
+    color: #f8f8f8;
 }
 
 code {
@@ -316,7 +316,6 @@ a[href].direct-link:focus:visited,
 :hover>a[href].direct-link:visited {
 	color: #aaa;
 }
-
 
 /* Download */
 .download-links {

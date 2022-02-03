@@ -34,6 +34,8 @@
     "markdown-it-anchor": "^8.4.1"
   },
   "dependencies": {
-    "eleventy-favicon": "^1.1.2"
+    "clean-css": "^5.2.4",
+    "eleventy-favicon": "^1.1.2",
+    "eleventy-plugin-dart-sass": "^1.0.3"
   }
 }

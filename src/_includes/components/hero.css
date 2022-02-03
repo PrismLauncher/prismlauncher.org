@@ -1,0 +1,36 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ hero.background }}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+    padding: 20px;
+}
+.hero-content {
+    text-align: center;
+}
+.hero-title {
+    font-size: 48px;
+    font-family: Heebo;
+}
+.hero-subtitle {
+    font-size: 24px;
+}
+.hero-image {
+    max-width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+    .row {
+        flex-direction: column;
+    }
+}

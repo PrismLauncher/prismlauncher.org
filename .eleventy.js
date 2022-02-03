@@ -6,9 +6,11 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const faviconPlugin = require("eleventy-favicon");
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy("src/assets");
+	eleventyConfig.addPassthroughCopy("src/img");
+	eleventyConfig.addPassthroughCopy("src/css");
 
 	// Add plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -19,6 +21,10 @@ module.exports = function (eleventyConfig) {
 
 	// Alias `layout: post` to `layout: layouts/post.njk`
 	eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
+	eleventyConfig.addFilter("cssmin", function(code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
 
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
