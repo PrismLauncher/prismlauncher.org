@@ -11,6 +11,7 @@ header {
 .home img {
     width: 2em;
     height: 2em;
+    margin-right: 0.25em;
 }
 
 .home :link:not(:hover) {
