@@ -4,7 +4,7 @@ title: Wiki
 permalink: /wiki/
 eleventyNavigation:
   key: Wiki
-  order: 3
+  order: 4
 ---
 
 W.I.P Coming soon.

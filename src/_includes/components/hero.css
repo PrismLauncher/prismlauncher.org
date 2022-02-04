@@ -6,15 +6,11 @@
     position: relative;
     color: white;
 }
-.hero-content {
-    text-align: center;
+
+.hero-title {
+    font-size: 3em;
 }
-.hero-subtitle {
-    font-size: 24px;
-}
-.hero-image {
-    max-width: 100%;
-}
+
 @media only screen and (max-width: 1400px) {
     .row {
         flex-direction: column;

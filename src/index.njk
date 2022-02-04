@@ -16,13 +16,15 @@ hero:
   <h1>Main Features</h1>
   <hr>
 </div>
+
 <div class="row row-reverse">
   <div class="column">
-    <div class="hero-content">
+    <div class="ccontent">
         <h1>Modpack management</h1>
-        <p class="hero-subtitle">Install and launch modpacks easily, while keeping them clean.
-No longer do you need to manually install and update. PolyMC can do that for you, without installing tons of separate launchers</p>
-        <br>
+        <div class="subtitle">
+          Install and launch modpacks easily, while keeping them clean.
+          No longer do you need to manually install and update. PolyMC can do that for you, without installing tons of separate launchers
+        </div>
     </div>
   </div>
   <div class="column">
@@ -31,12 +33,13 @@ No longer do you need to manually install and update. PolyMC can do that for you
 </div>
 <div class="row">
   <div class="column">
-    <div class="hero-content">
+    <div class="ccontent">
         <h1>Minecraft instance management </h1>
-        <div class="hero-subtitle">Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
-Are you tired of manually switching mods for different versions, installing modloaders?
-
-PolyMC can help. Each Minecraft instance has it's own folder, with separate mods, resourcepacks and other things.</div>
+        <div class="subtitle">
+          <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
+          Are you tired of manually switching mods for different versions, installing modloaders?<p>
+          <p>PolyMC can help. Each Minecraft instance has it's own folder, with separate mods, resourcepacks and other things.</p>
+        </div>
         <br>
     </div>
   </div>
@@ -46,11 +49,11 @@ PolyMC can help. Each Minecraft instance has it's own folder, with separate mods
 </div>
 <div class="row row-reverse">
   <div class="column">
-    <div class="hero-content">
+    <div class="cccontent">
         <h1>Lightweight</h1>
-        <p class="hero-subtitle">You don't need an embedded web browser for a game launcher.
-PolyMC uses the Qt toolkit, which requires little system resources.</p>
-        <br>
+        <div class="subtitle">
+          You don't need an embedded web browser for a game launcher. PolyMC uses the Qt toolkit, which requires little system resources.
+        </div>
     </div>
   </div>
   <div class="column">
@@ -58,11 +61,7 @@ PolyMC uses the Qt toolkit, which requires little system resources.</p>
   </div>
 </div>
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/news/' | url }}">the news</a>.</p>
+<div class="center">
+  <h1>Get Involved</h1>
+  <hr>
+</div>

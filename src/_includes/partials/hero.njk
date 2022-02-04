@@ -1,10 +1,10 @@
 <div class="hero">
     <div class="container">
         <div class="row">
-            <div class="column centered">
-                <div class="hero-content">
-                    <h1 class="title">{{ hero.title }}</h1>
-                    <p class="hero-subtitle">{{ hero.description }}</p>
+            <div class="column">
+                <div class="ccontent">
+                    <h1 class="hero-title">{{ hero.title }}</h1>
+                    <p class="subtitle">{{ hero.description }}</p>
                     <br>
                     {% if hero.download == true %}
                         <a class="button" href="{{ '/download' | url }}">Download Now</a>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             {% if hero.image %}
-            <div class="column centered">
+            <div class="column">
                 <img class="hero-image" src="{{ hero.image }}" alt="Hero Image">
             </div>
             {% endif %}

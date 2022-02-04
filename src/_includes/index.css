@@ -44,6 +44,10 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Heebo;
+}
+
 p:last-child {
     margin-bottom: 0;
 }
@@ -339,10 +343,8 @@ a[href].direct-link:focus:visited,
     margin: 0.25rem;
 }
 
-.title {
-    font-size: 48px;
-    font-family: Heebo;
-}
+
+/* Landing page */
 
 .row {
     display: flex;
@@ -360,9 +362,19 @@ a[href].direct-link:focus:visited,
     padding: 20px;
 }
 
+.subtitle {
+    font-size: 1.5em;
+}
+
+.ccontent {
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+}
 /* footer */
 .footer {
-    text-align: center;
     border-top: 1px dashed var(--accent);
     padding: 2em;
 }

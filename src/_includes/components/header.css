@@ -5,13 +5,13 @@ header {
 .home {
     display: flex;
     align-items: center;
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .home img {
     width: 2em;
     height: 2em;
-    margin-right: 0.25em;
+    margin-right: .1em;
 }
 
 .home :link:not(:hover) {
