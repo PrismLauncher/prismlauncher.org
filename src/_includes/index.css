@@ -1,10 +1,9 @@
 /* Colors */
 :root {
     --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);
-    --grad-secondary: linear-gradient(126deg, #a87953 0%, #765338 25%, #5b422d 50%);
+    --grad-secondary: linear-gradient(126deg, #555 0%, #272727 50%);
     --primary: #88b858;
     --secondary: #a87953;
-    --github: #171515;
     --background: #333;
     --accent: #555;
     --link: #88b858ff;
@@ -187,7 +186,8 @@ code {
     font-size: 1.5em;
     font-family: Heebo;
     text-decoration: none;
-    background-image: var(--grad-primary);  
+    background-color: var(--primary);
+    background-image: var(--grad-primary);
     background-size: 200%;
     clip-path: polygon(0.6em 0, calc(100% - 0.6em) 0, 100% 50%, calc(100% - 0.6em) 100%, 0.6em 100%, 0 50%);
     transition: 300ms ease;
@@ -204,6 +204,11 @@ code {
 
 .button[href]:visited {
     color: white;
+}
+
+.button.secondary {
+    background-color: var(--secondary);
+    background-image: var(--grad-secondary);
 }
 
 /* Posts list */
@@ -342,6 +347,11 @@ a[href].direct-link:focus:visited,
 .row {
     display: flex;
 }
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 .column {
     display: flex;
     align-items: center;
