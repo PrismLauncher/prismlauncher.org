@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
-title: Social
+title: Supports
 eleventyNavigation:
-  key: Social
-  order: 3
+  key: Support
+  order: 5
 ---
