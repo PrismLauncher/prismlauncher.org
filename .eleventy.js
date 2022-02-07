@@ -5,7 +5,6 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const faviconPlugin = require("eleventy-favicon");
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
@@ -15,7 +14,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginNavigation);
-	eleventyConfig.addPlugin(faviconPlugin, destination = "./_site");
 	
 
 	// Alias `layout: post` to `layout: layouts/post.njk`
@@ -87,7 +85,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setBrowserSyncConfig({
 		callbacks: {
 			ready: function (err, browserSync) {
-				const content_404 = fs.readFileSync('_site/404.html');
+				const content_404 = fs.readFileSync('docs/404.html');
 
 				browserSync.addMiddleware("*", (req, res) => {
 					// Provides the 404 content without redirect.
