@@ -99,6 +99,12 @@ table th {
     padding-right: 1em;
 }
 
+blockquote {
+    border-left: var(--accent) 3px solid;
+    padding-left: 10px;
+    margin: 0;
+}
+
 pre,
 code {
     font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -260,6 +266,12 @@ code {
     font-weight: bold;
 }
 
+.postlist-description {
+    width: 100%;
+    border-left: var(--accent) 3px solid;
+    padding-left: 10px;
+}
+
 .tmpl-home .postlist-link {
     font-size: 1.1875em;
     /* 19px /16 */
@@ -373,6 +385,7 @@ a[href].direct-link:focus:visited,
 .column img {
     max-width: 100%;
 }
+
 /* footer */
 .footer {
     text-align: center;

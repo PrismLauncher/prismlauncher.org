@@ -7,6 +7,9 @@
       {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
+    <div class="postlist-description">
+      {% if post.data.title %}<p>{{ post.data.description }}</p>{% endif %}
+    </div>
   </li>
 {% endfor %}
 </ol>
