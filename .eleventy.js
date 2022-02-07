@@ -5,17 +5,16 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const faviconPlugin = require("eleventy-favicon");
 const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets");
+	eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
 	// Add plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginNavigation);
-	eleventyConfig.addPlugin(faviconPlugin);
 	
 
 	// Alias `layout: post` to `layout: layouts/post.njk`
