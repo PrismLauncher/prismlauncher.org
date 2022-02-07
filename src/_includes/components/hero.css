@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{hero.background}});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ hero.background | url }}");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
