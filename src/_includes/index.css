@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: Heebo;
-    src: url({{ '/assets/css/fonts/Heebo-Medium.ttf' | url }});
+    src: url('/assets/css/fonts/Heebo-Medium.ttf');
     font-display: swap;
 }
 
