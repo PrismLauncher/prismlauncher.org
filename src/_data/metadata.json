@@ -1,0 +1,21 @@
+{
+  "title": "PolyMC",
+  "url": "https://polymc.org/",
+  "language": "en",
+  "description": "An opensource launcher",
+  "feed": {
+    "subtitle": "An opensource launcher",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://polymc.org/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://example.com/feed/feed.json"
+  },
+  "author": {
+    "name": "PolyMC",
+    "email": "youremailaddress@example.com",
+    "url": "https://polymc.org/about/"
+  }
+}

@@ -1,0 +1,12 @@
+---
+layout: layouts/page.njk
+eleventyNavigation:
+  key: News
+  order: 2
+hero:
+  title: 'Latest News'
+  background: /assets/img/forest.avif
+---
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
