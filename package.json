@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "polymc",
   "version": "6.0.0",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "Official PolyMC website",
   "scripts": {
     "build": "env NODE_ENV=production npx eleventy --pathprefix 'polymc.org'",
     "watch": "eleventy --watch",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/PolyMC/polymc.org.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Ezekiel Smith",
+    "email": "ezekielsmith@protonmail.com",
+    "url": "https://github.com/ZekeSmith"
   },
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/PolyMC/polymc.org/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://polymc.org/",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
