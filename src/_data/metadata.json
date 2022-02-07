@@ -2,9 +2,9 @@
   "title": "PolyMC",
   "url": "https://polymc.org/",
   "language": "en",
-  "description": "An opensource launcher",
+  "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
   "feed": {
-    "subtitle": "An opensource launcher",
+    "subtitle": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://polymc.org/"
