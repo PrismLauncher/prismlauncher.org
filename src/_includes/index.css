@@ -55,7 +55,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-    max-width: 100%;
+    max-width: (100%, 45em);
 
 }
 
@@ -314,6 +314,10 @@ a[href].post-tag:focus {
 
 .postlist-item>.post-tag {
     align-self: center;
+}
+
+.element-links a {
+    text-decoration: none;
 }
 
 /* Warning */
