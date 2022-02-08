@@ -316,10 +316,6 @@ a[href].post-tag:focus {
     align-self: center;
 }
 
-.element-links a {
-    text-decoration: none;
-}
-
 /* Warning */
 .warning {
     background-color: #ffc;
