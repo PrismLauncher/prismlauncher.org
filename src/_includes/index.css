@@ -55,8 +55,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-    max-width: (100%, 45em);
-
+    max-width: min(100%, 45em);
 }
 
 p,
