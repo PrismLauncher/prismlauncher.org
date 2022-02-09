@@ -1,20 +1,18 @@
 <header>
   <nav class="container">
-    <ul class="navbar">
-      <li class="nav-item">
+    <div class="navbar">
         <a href="{{ '/' | url }}" class="home">
           <img src="{{ "/assets/img/icon.svg" | url }}" alt="Logo">
           {{ metadata.title }}
         </a>
-      </li>
-      <ul class="navigation">
+      <ul class="nav">
         {%- for entry in collections.all | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}
       </ul>
-    </ul>
+    </div>
     <ul class="links">
       <li>
         <a class="button" href="{{ '/download/' | url }}">Download</a>
@@ -29,7 +27,7 @@
     <div class="container">
       <div class="row">
         <div class="column">
-          <div class="ccontent">
+          <div class="center">
             <h1 class="hero-title">{{ hero.title }}</h1>
             <p class="subtitle">{{ hero.description }}</p>
             {%- if hero.download == true %}
@@ -39,9 +37,10 @@
           </div>
         </div>
         {%- if hero.image %}
-        <div class="column">
-          <img class="hero-image" src="{{ hero.image | url }}" alt="Hero Image"></div>
-        </div>
+        <picture class="column">
+          <source srcset="{{ hero.image.light | url }}" media="(prefers-color-scheme: light)">
+          <img class="hero-image" src="{{ hero.image.dark | url }}" alt="Hero Image">
+        </picture>
         {%- endif %}
       </div>
     </div>

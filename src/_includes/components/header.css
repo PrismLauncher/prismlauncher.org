@@ -12,6 +12,7 @@ header:after {
     display: flex;
     align-items: center;
     font-size: 2em; 
+    text-decoration: none;
 }
 
 .home img {
@@ -33,26 +34,27 @@ nav {
     justify-content: center;
 }
 
-.navbar, .links {
+.nav {
+    padding: 0;
     margin: 0.5em;
+}
+
+.navbar, .links {
     display: flex;
     align-items: center;
     padding: 0;
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .links {
     display: none;
 }
 
-.navigation {
-    padding: 0;
-}
-
 .nav-item {
     display: inline-block;
-    margin-right: 1rem;
     font-size: 18px;
+    margin: 0.5em;
 }
 
 .nav-item a {
@@ -95,5 +97,8 @@ nav {
     .navbar, .links {
         display: flex;
         flex-direction: row;
+    }
+    .nav-item {
+        margin-left: 1em;
     }
 }
