@@ -79,16 +79,6 @@ main :first-child {
     margin-top: 0;
 }
 
-header {
-    border-bottom: 1px dashed var(--lightgray);
-}
-
-header:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 table {
     margin: 1em 0;
 }
@@ -99,8 +89,8 @@ table th {
 }
 
 blockquote {
-    border-left: var(--accent) 3px solid;
-    padding-left: 10px;
+    border-left: var(--primary) .25em solid;
+    padding-left: 1em;
     margin: 0;
 }
 
@@ -129,6 +119,7 @@ pre {
     margin: .5em 0;
     background-color: var(--code);
     color: white;
+    overflow: auto;
 }
 
 code {
@@ -173,7 +164,7 @@ code {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 90em;
     width: 100%;
     margin: 0 auto;
 }
@@ -268,8 +259,8 @@ code {
 
 .postlist-description {
     width: 100%;
-    border-left: var(--accent) 3px solid;
-    padding-left: 10px;
+    border-left: var(--primary) .25em solid;
+    padding-left: 1em;
 }
 
 .tmpl-home .postlist-link {
@@ -352,7 +343,7 @@ a[href].direct-link:focus:visited,
 }
 .download-links li {
     display: inline;
-    margin: 0.25rem;
+    margin: 0.25em;
 }
 
 
@@ -360,18 +351,14 @@ a[href].direct-link:focus:visited,
 
 .row {
     display: flex;
-}
-
-.row-reverse {
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .column {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 50%;
-    padding: 20px;
+    padding: 1em;
 }
 
 .subtitle {
@@ -382,13 +369,22 @@ a[href].direct-link:focus:visited,
     text-align: center;
 }
 
-.column img {
-    max-width: 100%;
-}
-
 /* footer */
 .footer {
     text-align: center;
-    border-top: 1px dashed var(--accent);
+    border-top: 0.15em dashed var(--accent);
     padding: 2em;
+}
+
+@media (min-width: 90em) {
+    /* landing page */
+    .row {
+        flex-direction: row;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+    .column {
+        flex: 50%;
+    }
 }

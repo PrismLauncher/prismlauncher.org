@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+{% include "partials/header.njk" %}
+
+<main class="container">
+  {{ content | safe }}
+</main>
+
+<footer>
+  {% include "partials/footer.njk" %}
+</footer>

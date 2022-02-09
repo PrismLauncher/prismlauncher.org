@@ -1,5 +1,11 @@
 header {
-    border-bottom: 1px dashed var(--accent);
+    border-bottom: .15em dashed var(--accent);
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .home {
@@ -24,13 +30,22 @@ nav {
     overflow: auto;
     font-family: Heebo;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar, .links {
     margin: 0.5em;
     display: flex;
     align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.links {
+    display: none;
+}
+
+.navigation {
     padding: 0;
 }
 
@@ -57,4 +72,28 @@ nav {
 .links li {
     margin-left: 1rem;
     list-style: none;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ hero.background | url }}");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3em;
+}
+
+@media (min-width: 60em) {
+    nav {
+        justify-content: space-between;
+    }
+    
+    .navbar, .links {
+        display: flex;
+        flex-direction: row;
+    }
 }

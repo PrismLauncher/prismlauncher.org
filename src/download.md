@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/main.njk
 permalink: /download/
 title: Download
 ---

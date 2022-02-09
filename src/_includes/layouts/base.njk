@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% set css %}
-      {% include "index.css" %}
-      {% include "components/hero.css" %}
+    {%- set css %}
       {% include "components/header.css" %}
       {% include "components/prism-theme.css" %}
+      {% include "index.css" %}
     {% endset %}
     <style>{{ css | cssmin | safe }}</style>
     <meta charset="utf-8">
@@ -17,19 +16,8 @@
     <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/img/favicon.png' | url }}">
   </head>
   <body>
-    <header>
-      {% block header %}
-        {% include "partials/header.njk" %}
-        {% if hero %}
-        {% include "partials/hero.njk" %}
-        {% endif %}
-      {% endblock %}
-    </header>
-    <main class="container">
-      {{ content | safe }}
-    </main>
-    <footer>
-      {% include "partials/footer.njk" %}
-    </footer>
+    
+    {{ content | safe }}
+
   </body>
 </html>

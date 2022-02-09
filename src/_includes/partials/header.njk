@@ -1,24 +1,50 @@
-<nav class="container">
+<header>
+  <nav class="container">
     <ul class="navbar">
-        <li class="nav-item">
-            <a href="{{ '/' | url }}" class="home">
-                <img src="{{ "/assets/img/icon.svg" | url }}" alt="Logo">
-                {{ metadata.title }}
-            </a>
-        </li>
+      <li class="nav-item">
+        <a href="{{ '/' | url }}" class="home">
+          <img src="{{ "/assets/img/icon.svg" | url }}" alt="Logo">
+          {{ metadata.title }}
+        </a>
+      </li>
+      <ul class="navigation">
         {%- for entry in collections.all | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
-        {%- endfor %}
-        </ul>
-        <ul class="links">
-            <li>
-                <a class="button" href="{{ '/download/' | url }}">Download</a>
-            </li>
-            <li>
-                <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
-            </li>
-        </ul>
+      {%- endfor %}
+      </ul>
     </ul>
-</nav>
+    <ul class="links">
+      <li>
+        <a class="button" href="{{ '/download/' | url }}">Download</a>
+      </li>
+      <li>
+        <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
+      </li>
+    </ul>
+  </nav>
+  {% if hero %}
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="ccontent">
+            <h1 class="hero-title">{{ hero.title }}</h1>
+            <p class="subtitle">{{ hero.description }}</p>
+            {%- if hero.download == true %}
+            <br>
+            <a class="button" href="{{ '/download' | url }}">Download Now</a>
+            {%- endif %}
+          </div>
+        </div>
+        {%- if hero.image %}
+        <div class="column">
+          <img class="hero-image" src="{{ hero.image | url }}" alt="Hero Image"></div>
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</header>
