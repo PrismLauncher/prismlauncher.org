@@ -359,6 +359,7 @@ a[href].direct-link:focus:visited,
     align-items: center;
     justify-content: center;
     padding: 1em;
+    text-align: center;
 }
 
 .subtitle {
