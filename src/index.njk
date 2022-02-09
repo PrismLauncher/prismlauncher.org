@@ -8,8 +8,8 @@ hero:
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
   image: 
-    dark: /assets/img/screenshots/LauncherBlack.webp
-    light: /assets/img/screenshots/LauncherWhite.webp
+    dark: /assets/img/screenshots/LauncherDark.webp
+    light: /assets/img/screenshots/LauncherLight.webp
   background: /assets/img/forest.webp
   download: true
 ---
@@ -21,7 +21,7 @@ hero:
 
 <div class="row row-reverse">
   <div class="column">
-    <div class="ccontent">
+    <div>
         <h1>Modpack management</h1>
         <div class="subtitle">
           Install and launch modpacks easily, while keeping them clean.
@@ -29,9 +29,10 @@ hero:
         </div>
     </div>
   </div>
-  <div class="column">
-      <img class="hero-image" src="{{ '/assets/img/screenshots/ModpackInstallBlack.webp' | url }}" alt="Hero Image">
-  </div>
+  <picture class="column">
+    <source srcset="{{ '/assets/img/screenshots/ModpackInstallLight.webp' | url }}" media="(prefers-color-scheme: light)">
+    <img class="hero-image" src="{{ '/assets/img/screenshots/ModpackInstallDark.webp' | url }}" alt="Hero Image">
+  </picture>
 </div>
 <div class="row">
   <div class="column">
@@ -42,9 +43,10 @@ hero:
         </div>
     </div>
   </div>
-  <div class="column">
-      <img class="hero-image" src="{{ '/assets/img/screenshots/ModInstallBlack.webp' | url }}" alt="Hero Image">
-  </div>
+  <picture class="column">
+    <source srcset="{{ '/assets/img/screenshots/ModInstallLight.webp' | url }}" media="(prefers-color-scheme: light)">
+    <img class="hero-image" src="{{ '/assets/img/screenshots/ModInstallDark.webp' | url }}" alt="Hero Image">
+  </picture>
 </div>
 <div class="row row-reverse">
   <div class="column">
@@ -58,9 +60,10 @@ hero:
         <br>
     </div>
   </div>
-  <div class="column">
-      <img class="hero-image" src="{{ '/assets/img/screenshots/PropertiesBlack.webp' | url }}" alt="Hero Image">
-  </div>
+  <picture class="column">
+    <source srcset="{{ '/assets/img/screenshots/PropertiesLight.webp' | url }}" media="(prefers-color-scheme: light)">
+    <img class="hero-image" src="{{ '/assets/img/screenshots/PropertiesDark.webp' | url }}" alt="Hero Image">
+  </picture>
 </div>
 <div class="row">
   <div class="column">
@@ -71,9 +74,10 @@ hero:
         </div>
     </div>
   </div>
-  <div class="column">
-      <img class="hero-image" src="{{ '/assets/img/screenshots/LightweightSysMonBlack.webp' | url }}" alt="Hero Image">
-  </div>
+  <picture class="column">
+    <source srcset="{{ '/assets/img/screenshots/LauncherCatLight.webp' | url }}" media="(prefers-color-scheme: light)">
+    <img class="hero-image" src="{{ '/assets/img/screenshots/LauncherCatDark.webp' | url }}" alt="Hero Image">
+  </picture>
 </div>
 
 <div class="center">
