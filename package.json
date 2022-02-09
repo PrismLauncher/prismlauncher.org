@@ -3,7 +3,7 @@
   "version": "6.0.0",
   "description": "Official PolyMC website",
   "scripts": {
-    "build": "env NODE_ENV=production npx eleventy --pathprefix 'polymc.org'",
+    "build": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
