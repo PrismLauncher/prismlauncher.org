@@ -28,6 +28,7 @@ header:after {
 
 /* Nav */
 nav {
+    padding: 0.5em;
     overflow: auto;
     font-family: Heebo;
     display: flex;
@@ -36,7 +37,7 @@ nav {
 
 .nav {
     padding: 0;
-    margin: 0.5em;
+    margin: 0;
 }
 
 .navbar, .links {
@@ -93,12 +94,13 @@ nav {
     nav {
         justify-content: space-between;
     }
+
+    .nav {
+        margin-left: .5em;
+    }
     
     .navbar, .links {
         display: flex;
         flex-direction: row;
-    }
-    .nav-item {
-        margin-left: 1em;
     }
 }
