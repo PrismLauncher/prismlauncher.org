@@ -1,6 +1,6 @@
 # Official Website for PolyMC
 
-polymc.org
+https://polymc.org
 
 ## local development 
 
