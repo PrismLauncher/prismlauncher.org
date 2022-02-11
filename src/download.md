@@ -4,12 +4,12 @@ permalink: /download/
 title: Download
 ---
 <div class="center">
-    <h1> Download </h1>
-    <ul class="download-links">
-        <li><a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (Zip)</a></li>
-        <li><a class="button" href="#mac">Mac</a></li>
-        <li><a class="button" href="#linux">Linux</a></li>
-    </ul>
+    <h1>Download</h1>
+    <div>
+        <a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (.zip)</a>
+        <a class="button" href="#mac">Mac</a>
+        <a class="button" href="#linux">Linux</a>
+    </div>
 </div>
 <br>
 
