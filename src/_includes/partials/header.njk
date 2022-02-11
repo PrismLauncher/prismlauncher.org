@@ -6,7 +6,7 @@
           {{ metadata.title }}
         </a>
       <ul class="nav">
-        {%- for entry in collections.all | eleventyNavigation %}
+        {%- for entry in collections.nav | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>

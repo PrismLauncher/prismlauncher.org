@@ -59,6 +59,18 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addFilter("filterTagList", filterTagList)
 
+	// Navigation
+
+	// Header Navigation
+	eleventyConfig.addCollection('nav', function (collections) {
+		return collections.getFilteredByGlob('src/*');
+	});
+
+	// Wiki navigation
+	eleventyConfig.addCollection('wiki', function (collections) {
+		return collections.getFilteredByGlob('src/wiki/**/*');
+	});
+
 	// Create an array of all tags
 	eleventyConfig.addCollection("tagList", function (collection) {
 		let tagSet = new Set();
