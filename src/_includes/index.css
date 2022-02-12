@@ -72,7 +72,7 @@ a[href]:visited {
 }
 
 main {
-    padding: 1rem;
+    padding: 1em;
 }
 
 main :first-child {
@@ -372,6 +372,59 @@ a[href].direct-link:focus:visited,
     text-align: center;
     border-top: 0.15em dashed var(--accent);
     padding: 2em;
+}
+
+/* Wiki */
+.wiki-content {
+    padding: 1em;
+    display: block;
+    width: 60%;
+    margin-left: 1em;
+}
+
+.wiki-toc {
+    background-color: var(--accent);
+    padding: 1em;
+    height: 100%;
+}
+
+.wiki-toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wiki-category {
+    margin-bottom: 1em;
+}
+
+.wiki-category > a {
+    font-size: 1.5em;
+    font-family: Heebo;
+    text-decoration: none;
+}
+
+.wiki-category-active > a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.wiki-item {
+    border-left: var(--primary) .25em solid;
+    padding: .5em;
+}
+
+.wiki-item > a {
+    text-decoration: none;
+}
+
+.wiki-item-active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.wiki-category > a:hover, .wiki-item:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 90em) {
