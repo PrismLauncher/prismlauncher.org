@@ -180,11 +180,13 @@ code {
 }
 
 .button {
+    display: inline-block;
     position: relative;
     color: white;
     padding: .5em 1.5em;
+    margin: .25em;
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: Heebo;
     text-decoration: none;
     background-color: var(--primary);
@@ -437,5 +439,11 @@ a[href].direct-link:focus:visited,
     }
     .column {
         flex: 50%;
+    }
+}
+
+@media (min-width: 60em) {
+    .button {
+        font-size: 1.5em;
     }
 }
