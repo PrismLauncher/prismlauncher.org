@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
 		html: true,
 		breaks: false,
 		linkify: true
-	}).use(markdownItAnchor, {
+	}).use(markdownItAnchor, require('markdown-it-task-checkbox'),{
 		permalink: markdownItAnchor.permalink.ariaHidden({
 			placement: "after",
 			class: "direct-link",
@@ -95,6 +95,7 @@ module.exports = function (eleventyConfig) {
 		}),
 		slugify: eleventyConfig.getFilter("slug")
 	});
+	markdownLibrary.render('- [x] unchecked')
 	eleventyConfig.setLibrary("md", markdownLibrary);
 
 	// Override Browsersync defaults (used only with --serve)
