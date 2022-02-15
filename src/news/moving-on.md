@@ -11,6 +11,10 @@ In short, the original founders of PolyMC had disagreements with the maintainer 
 These disagreements were turned into a takeover of packaging on Arch Linux by the PolyMC founders, something that, understandably, the [MultiMC maintainers took as sabotage][gh-poly-meta-sabotage].
 After MultiMC has [dropped support for third-party packaging][mmc-drops-aur], the seeds for PolyMC were laid.
 
+As a side note, we want to mention that we do not approve the actions of community members that used these controversies as a basis to harass MultiMC developers.
+Please refrain from brigading other communities.
+It only causes harm on both sides.
+
 PolyMC's inception is very controversial by its very nature.
 The founders have decided to sublicense PolyMC under the terms of the [GNU General Pubic License 3][gpl3] (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.
 As a result the MultiMC team have decided to burn bridges with PolyMC.
@@ -38,8 +42,9 @@ We also plan to clean-up the codebase, remove obscure or old features and cruft 
 Additionally we have reorganized PolyMC, since its inception.
 One of the founders has stepped down as a maintainer and we have formed the *PolyMC Core Team*.
 You can read more about it in [this blogpost](../newmaintainers/).
-We hope we can decouple this project from its controversial origins and start work on a powerful Minecraft launcher.
-In the meantime check out our upcoming changes:
+
+We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.
+While we are working on getting 1.1.0 out, check out our upcoming changes:
 
 **Sneak peak of upcoming changes**:
  - Rewrite of metadata generators, to make them easier to work with. See progress over on [PolyMC/polymorphosis][gh-polymorphosis]
