@@ -48,7 +48,7 @@ In the meantime check out our upcoming changes:
 If you want to be involved in PolyMC, check out the following links:
 
 - [PolyMC GitHub Organization][gh-org]
-- [PolyMC Source Code][gh-src]
+- [PolyMC Source Code][gh-poly]
 - [PolyMC Discord server][discord]
 - [PolyMC Matrix Space][matrix-space] (bridged with Discord)
 
