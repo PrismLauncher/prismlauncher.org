@@ -1,7 +1,7 @@
 ---
 title: New maintainers and step down.
 description: Swirl has stepped down from maintainer and a new core team has been established.
-date: 2022/02/06
+date: 2022-02-06
 tags:
   - News
 ---
