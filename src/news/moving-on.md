@@ -8,7 +8,7 @@ tags:
 
 PolyMC emerged out of frustration with the MultiMC project and therefore brought controversy with it.
 In short, the original founders of PolyMC had disagreements with the maintainer of MultiMC and the project's direction.
-These disagreements were turned into a takeover of packaging on Arch Linux by the PolyMC founders.
+These disagreements were turned into a takeover of packaging on Arch Linux by the PolyMC founders, something that, understandably, the [MultiMC maintainers took as sabotage][gh-poly-meta-sabotage].
 After MultiMC has [dropped support for third-party packaging][mmc-drops-aur], the seeds for PolyMC were laid.
 
 PolyMC's inception is very controversial by its very nature.
@@ -63,6 +63,7 @@ If you want to be involved in PolyMC, check out the following links:
 [gh-org]: https://github.com/PolyMC
 [gh-poly]: https://github.com/PolyMC/PolyMC
 [gh-poly-meta]: https://github.com/PolyMC/PolyMC/issues/75
+[gh-poly-meta-sabotage]: https://github.com/PolyMC/PolyMC/issues/75#issuecomment-1023571223
 [gh-polymorphosis]: https://github.com/PolyMC/polymorphosis
 [gpl3]: https://en.wikipedia.org/wiki/GNU_General_Public_License
 [matrix-space]: https://matrix.to/#/#polymc:polymc.org
