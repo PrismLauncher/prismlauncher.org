@@ -21,14 +21,14 @@ In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the
 Sadly our request was dismissed and one of our team members was banned from the official MultiMC Discord server for being associated with PolyMC.
 
 <div class="center">
-    <img alt="Screenshot of public chat with MultiMC maintainer" src="/assets/img/news/moving-on/discord.png" class="img-constrained">
+    <img alt="Screenshot of public chat with MultiMC maintainer" src="/assets/img/news/moving-on/discord.png" style="width: 40em">
 </div>
 
 This has sparked many internal discussions both at PolyMC as well as MultiMC.
 As MultiMC will be introducing a [contributor license agreement (CLA)][cla] we have decided that we have to move on from our origins as a MultiMC fork.
 
 <div class="center">
-    <img alt="Screenshot of CLA announcement by MultiMC maintainer" src="/assets/img/news/moving-on/discord-cla.png" class="img-constrained">
+    <img alt="Screenshot of CLA announcement by MultiMC maintainer" src="/assets/img/news/moving-on/discord-cla.png" style="width: 40em">
 </div>
 
 Once this CLA is in place we won't be able to take code from MultiMC anymore, which is why we also won't associate with it anymore.
