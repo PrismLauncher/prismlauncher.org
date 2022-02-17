@@ -9,7 +9,7 @@ tags:
 PolyMC emerged out of frustration with the MultiMC project and therefore brought controversy with it.
 In short, the original founders of PolyMC had disagreements with the maintainer of MultiMC and the project's direction.
 These disagreements were turned into a takeover of packaging on Arch Linux by the PolyMC founders, something that, understandably, the [MultiMC maintainers took as sabotage][gh-poly-meta-sabotage].
-After MultiMC has [dropped support for third-party packaging][mmc-drops-aur], the seeds for PolyMC were laid.
+After MultiMC [dropped support for third-party packaging][mmc-drops-aur], the seeds for PolyMC were laid.
 
 As a side note, we want to mention that we do not approve the actions of community members that used these controversies as a basis to harass MultiMC developers.
 Please refrain from brigading other communities.
@@ -19,10 +19,10 @@ PolyMC's inception is very controversial by its very nature.
 The founders have decided to sublicense PolyMC under the terms of the [GNU General Pubic License 3][gpl3] (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.
 As a result the MultiMC team have decided to burn bridges with PolyMC.
 This was manifested after access to the metadata service, provided by MultiMC, was [blocked for all PolyMC users][gh-poly-meta].
-All versions prior to 1.0.6 do not work anymore, as they are trying to reach MultiMC servers instead our own.
+All versions prior to 1.0.6 do not work anymore, as they are trying to reach MultiMC servers instead of our own.
 
-In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see if they want to be credited in our documentation.
-Sadly our request was dismissed and one of our team members was banned from the official MultiMC Discord server for being associated with PolyMC.
+In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.
+Sadly, our request was dismissed, and one of our team members was banned from the official MultiMC Discord server for being associated with PolyMC.
 
 <div class="center">
     <img alt="Screenshot of public chat with MultiMC maintainer" src="/assets/img/news/moving-on/discord.png" style="width: 40em">
@@ -39,7 +39,7 @@ Once this CLA is in place we won't be able to take code from MultiMC anymore, wh
 PolyMC already has a few unique upcoming features, like the integrated mod downloader that supports Modrinth and CurseForge mods.
 We also plan to clean-up the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.
 
-Additionally we have reorganized PolyMC, since its inception.
+Additionally, we have reorganized PolyMC since its inception.
 One of the founders has stepped down as a maintainer and we have formed the *PolyMC Core Team*.
 You can read more about it in [this blogpost](../newmaintainers/).
 
