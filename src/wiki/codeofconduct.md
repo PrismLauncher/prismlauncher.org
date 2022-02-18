@@ -1,8 +1,9 @@
 ---
-title: Code of Conduct
+title: Code of conduct
 eleventyNavigation:
-  Key: Code of Conduct
+  key: Code of conduct
 ---
+
 # Contributor Covenant Code of Conduct
 
 This is a modified version of the Contributor Covenant.
