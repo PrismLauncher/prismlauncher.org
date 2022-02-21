@@ -2,8 +2,11 @@
 
 https://polymc.org
 
-## local development 
 
-`npm install`
+## Serve site for local development
 
-`npx @11ty/eleventy --serve`
+1. `npm install`
+
+2. `npm run serve`
+
+3. Profit!
