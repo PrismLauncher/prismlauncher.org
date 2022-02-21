@@ -1,3 +1,6 @@
+@import url('https://unpkg.com/@fontsource/heebo@4.5.5/400.css');
+@import url('https://unpkg.com/@fontsource/heebo@4.5.5/700.css');
+
 /* Colors */
 :root {
     --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);
@@ -20,12 +23,6 @@
     }
 }
 
-@font-face {
-    font-family: Heebo;
-    src: url("{{ '/assets/css/fonts/Heebo-Medium.ttf' | url }}");
-    font-display: swap;
-}
-
 /* Global stylesheet */
 * {
     box-sizing: border-box;
@@ -45,7 +42,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Heebo;
+    font-family: Heebo, sans-serif;
 }
 
 p:last-child {
@@ -187,7 +184,7 @@ code {
     margin: .25em;
     list-style: none;
     font-size: 1.25em;
-    font-family: Heebo;
+    font-family: Heebo, sans-serif;
     text-decoration: none;
     background-color: var(--primary);
     background-image: var(--grad-primary);
@@ -256,7 +253,7 @@ code {
 }
 
 .postlist-item-active .postlist-link {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .postlist-description {
@@ -402,7 +399,7 @@ a[href].direct-link:focus:visited,
 
 .wiki-category > a {
     font-size: 1.5em;
-    font-family: Heebo;
+    font-family: Heebo, sans-serif;
     text-decoration: none;
 }
 
@@ -421,7 +418,7 @@ a[href].direct-link:focus:visited,
 }
 
 .wiki-item-active {
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: underline;
 }
 
