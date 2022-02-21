@@ -30,7 +30,7 @@ header:after {
 nav {
     padding: 0.5em;
     overflow: auto;
-    font-family: Heebo;
+    font-family: Heebo, sans-serif;
     display: flex;
     justify-content: center;
 }

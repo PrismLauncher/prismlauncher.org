@@ -32,7 +32,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, system-ui, sans-serif;
+    font-family: Heebo, -apple-system, system-ui, sans-serif;
     color: var(--primary-text);
     background-color: var(--background);
 }
