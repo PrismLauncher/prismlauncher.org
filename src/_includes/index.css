@@ -191,10 +191,11 @@ code {
     background-size: 200%;
     clip-path: polygon(0.6em 0, calc(100% - 0.6em) 0, 100% 50%, calc(100% - 0.6em) 100%, 0.6em 100%, 0 50%);
     transition: 300ms ease;
+    background-position-x: 100%;
 }
 
 .button:hover, .button:focus {
-    background-position-x: 100%;  /* slide the gradient */
+    background-position-x: 0%;  /* slide the gradient */
 }
 
 .button[href] {
