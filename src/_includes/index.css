@@ -194,7 +194,6 @@ code {
 }
 
 .button:hover, .button:focus {
-    text-decoration: underline;
     background-position-x: 100%;  /* slide the gradient */
 }
 

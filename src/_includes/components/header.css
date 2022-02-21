@@ -11,7 +11,7 @@ header:after {
 .home {
     display: flex;
     align-items: center;
-    font-size: 2em; 
+    font-size: 1.75em;
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ header:after {
     width: 2em;
     height: 2em;
     max-width: 2em;
-    margin-right: .1em;
+    margin-right: .3em;
 }
 
 .home :link:not(:hover) {
@@ -63,13 +63,8 @@ nav {
     text-decoration: none;
 }
 
-.nav-item:hover {
-    text-decoration: underline;
-}
-
 .nav-item-active {
     font-weight: 700;
-    text-decoration: underline;
 }
 
 .hero {
@@ -95,7 +90,7 @@ header > .container {
     }
 
     .nav {
-        margin-left: .5em;
+        margin-left: 1em;
     }
     
     .navbar {

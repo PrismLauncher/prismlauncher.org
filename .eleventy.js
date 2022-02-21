@@ -12,7 +12,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets");
 	eleventyConfig.addPassthroughCopy("src/favicon.ico");
-    eleventyConfig.addPassthroughCopy("src/.well-known");
+  eleventyConfig.addPassthroughCopy("src/.well-known");
 
 	// Add plugins
 	eleventyConfig.addPlugin(pluginRss);
