@@ -48,6 +48,10 @@ nav {
     flex-wrap: wrap;
 }
 
+.links .button {
+    font-size: 1.2em;
+}
+
 .navbar {
     flex-direction: column;
 }
