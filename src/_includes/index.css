@@ -4,7 +4,7 @@
 /* Colors */
 :root {
     --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 30%, #5a9a30 50%);
-    --grad-secondary: linear-gradient(126deg, #a87953 0%, #5B422D 50%);
+    --grad-secondary: linear-gradient(126deg, #a87953 0%, #765338 50%);
     --primary: #88b858;
     --secondary: #a87953;
     --background: #333;
