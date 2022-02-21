@@ -240,13 +240,17 @@ code {
     color: var(--darkgray);
 }
 
+.postlist-item:not(:first-child) {
+    margin-top: 1em;
+}
+
 .postlist-date {
     word-spacing: -0.5px;
 }
 
 .postlist-link {
     padding-left: .25em;
-    padding-right: .25em;
+    padding-right: 1em;
     text-underline-position: from-font;
     text-underline-offset: 0;
     text-decoration-thickness: 1px;
@@ -260,6 +264,7 @@ code {
     width: 100%;
     border-left: var(--primary) .25em solid;
     padding-left: 1em;
+    margin-top: 0.33em;
 }
 
 .tmpl-home .postlist-link {
@@ -277,13 +282,7 @@ code {
     font-size: 0.75em;
     /* 12px /16 */
     padding: 0.08333333333333em 0.3333333333333em;
-    /* 1px 4px /12 */
-    margin-left: 0.6666666666667em;
-    /* 8px /12 */
-    margin-top: 0.5em;
-    /* 6px /12 */
-    margin-bottom: 0.5em;
-    /* 6px /12 */
+    margin-left: 1em;
     color: var(--darkgray);
     border: 1px solid var(--accent);
     border-radius: 0.25em;
