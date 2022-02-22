@@ -9,4 +9,4 @@ https://polymc.org
 
 2. `npm run serve`
 
-3. Profit!
+3. Profit! <sub>(if you want)</sub>
