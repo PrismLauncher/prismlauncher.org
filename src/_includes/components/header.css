@@ -1,109 +1,111 @@
 header {
-    border-bottom: .15em dashed var(--accent);
+  border-bottom: 0.15em dashed var(--accent);
 }
 
 header:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .home {
-    display: flex;
-    align-items: center;
-    font-size: 1.75em;
-    text-decoration: none;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.75em;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .home img {
-    width: 2em;
-    height: 2em;
-    max-width: 2em;
-    margin-right: .3em;
+  width: 2em;
+  height: 2em;
+  max-width: 2em;
+  margin-right: 0.3em;
 }
 
 .home :link:not(:hover) {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Nav */
 nav {
-    padding: 0.5em;
-    overflow: auto;
-    font-family: Heebo, sans-serif;
-    display: flex;
-    justify-content: center;
+  padding: 0.5em;
+  overflow: auto;
+  font-family: Heebo, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar, .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    flex-wrap: wrap;
+.navbar,
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .links .button {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .navbar {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .nav-item {
-    display: inline-block;
-    font-size: 18px;
-    margin: 0.5em;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.5em;
 }
 
 .nav-item a {
-    color: var(--primary-text);
-    text-decoration: none;
+  color: var(--primary-text);
+  text-decoration: none;
 }
 
 .nav-item-active {
-    font-weight: 700;
-    font-size: 1.25em;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ hero.background | url }}");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("{{ hero.background | url }}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
 }
 
 .hero-title {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 header > .container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 @media (min-width: 60em) {
-    nav {
-        justify-content: space-between;
-    }
+  nav {
+    justify-content: space-between;
+  }
 
-    .nav {
-        margin-left: 1em;
-    }
-    
-    .navbar {
-        flex-direction: row;
-    }
+  .nav {
+    margin-left: 1em;
+  }
 
-    header > .container {
-        flex-direction: row;
-    }
+  .navbar {
+    flex-direction: row;
+  }
+
+  header > .container {
+    flex-direction: row;
+  }
 }
