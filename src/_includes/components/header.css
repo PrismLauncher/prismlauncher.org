@@ -13,6 +13,7 @@ header:after {
     align-items: center;
     font-size: 1.75em;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .home img {
