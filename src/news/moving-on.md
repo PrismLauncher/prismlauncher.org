@@ -16,7 +16,7 @@ Please refrain from brigading other communities.
 It only causes harm on both sides.
 
 PolyMC's inception is very controversial by its very nature.
-The founders have decided to sublicense PolyMC under the terms of the [GNU General Pubic License 3][gpl3] (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.
+The founders have decided to sublicense PolyMC under the terms of the [GNU General Public License 3][gpl3] (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.
 As a result the MultiMC team have decided to burn bridges with PolyMC.
 This was manifested after access to the metadata service, provided by MultiMC, was [blocked for all PolyMC users][gh-poly-meta].
 All versions prior to 1.0.6 do not work anymore, as they are trying to reach MultiMC servers instead of our own.
