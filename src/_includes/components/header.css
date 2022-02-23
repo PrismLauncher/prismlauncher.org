@@ -11,7 +11,7 @@ header:after {
 .home {
     display: flex;
     align-items: center;
-    font-size: 2em; 
+    font-size: 1.75em;
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ header:after {
     width: 2em;
     height: 2em;
     max-width: 2em;
-    margin-right: .1em;
+    margin-right: .3em;
 }
 
 .home :link:not(:hover) {
@@ -30,7 +30,7 @@ header:after {
 nav {
     padding: 0.5em;
     overflow: auto;
-    font-family: Heebo;
+    font-family: Heebo, sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -48,6 +48,10 @@ nav {
     flex-wrap: wrap;
 }
 
+.links .button {
+    font-size: 1.2em;
+}
+
 .navbar {
     flex-direction: column;
 }
@@ -63,13 +67,9 @@ nav {
     text-decoration: none;
 }
 
-.nav-item:hover {
-    text-decoration: underline;
-}
-
 .nav-item-active {
     font-weight: 700;
-    text-decoration: underline;
+    font-size: 1.25em;
 }
 
 .hero {
@@ -95,7 +95,7 @@ header > .container {
     }
 
     .nav {
-        margin-left: .5em;
+        margin-left: 1em;
     }
     
     .navbar {
