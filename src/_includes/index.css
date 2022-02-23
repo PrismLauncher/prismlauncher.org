@@ -1,6 +1,3 @@
-@import url('https://unpkg.com/@fontsource/heebo@4.5.5/400.css');
-@import url('https://unpkg.com/@fontsource/heebo@4.5.5/700.css');
-
 /* Colors */
 :root {
     --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 30%, #5a9a30 50%);

@@ -33,6 +33,7 @@
     "markdown-it-anchor": "^8.4.1"
   },
   "dependencies": {
+    "@fontsource/heebo": "^4.5.5",
     "clean-css": "^5.2.4",
     "markdown-it-task-checkbox": "^1.0.6"
   }
