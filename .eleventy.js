@@ -7,9 +7,50 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const Image = require("@11ty/eleventy-img");
+
+async function image(alt, filepath, darkpath, sizes = "100vw", classes) {
+  if(alt === undefined) {
+    // You bet we throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+  }
+
+  let options = {
+    widths: [300, 600],
+    formats: ['avif', 'webp', 'png'],
+    urlPath: "/img/built/",
+		outputDir: "_site/img/built/",
+  };
+
+  if(darkpath) {
+    var metadata_dark = await Image(darkpath, options);
+  }
+
+  let metadata = await Image(filepath, options);
+
+  let lowsrc = metadata.png[0];
+  let highsrc = metadata.png[metadata.png.length - 1];
+
+  return `<picture>
+    ${Object.values(metadata_dark).map(imageFormat => {
+      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`;
+    }).join("\n")}
+    ${Object.values(metadata).map(imageFormat => {
+      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+    }).join("\n")}
+      <img
+        class="${classes}"
+        src="${lowsrc.url}"
+        width="${highsrc.width}"
+        height="${highsrc.height}"
+        alt="${alt}"
+        loading="lazy"
+        decoding="async">
+    </picture>`;
+}
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy({
@@ -21,6 +62,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  // Add shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("image", image);
 
   // Alias `layout: post` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
