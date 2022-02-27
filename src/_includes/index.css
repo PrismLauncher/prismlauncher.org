@@ -188,7 +188,7 @@ code {
   padding: 0.5em 1.5em;
   margin: 0.25em;
   list-style: none;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-family: Heebo, sans-serif;
   text-decoration: none;
   background-color: var(--primary);
@@ -448,11 +448,5 @@ a[href].direct-link:focus:visited,
   }
   .column {
     flex: 50%;
-  }
-}
-
-@media (min-width: 60em) {
-  .button {
-    font-size: 1.5em;
   }
 }
