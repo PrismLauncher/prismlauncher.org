@@ -119,7 +119,7 @@ There are community-maintained binary packages available:
 In both cases you need X11, Qt5 and Java installed. Both files are 64bit only.  
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
 
-## <img src="https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/OpenBSD%20httpd.svg" height="20" /> OpenBSD
+# <img src="https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/OpenBSD%20httpd.svg" height="20" /> OpenBSD
 
 There are community-maintained binary packages available:
 
