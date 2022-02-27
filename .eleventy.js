@@ -17,7 +17,7 @@ async function image(alt, filepath, darkpath, sizes = "100vw", classes) {
 
   let options = {
     widths: [null],
-    formats: ['avif', 'webp', 'png'],
+    formats: ['webp', 'png'],
     urlPath: "/img/built/",
 		outputDir: "_site/img/built/",
   };
