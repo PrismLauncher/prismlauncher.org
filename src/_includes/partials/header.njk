@@ -2,7 +2,7 @@
   <nav class="container">
     <div class="navbar">
         <a href="{{ '/' | url }}" class="home">
-          <img src="{{ "/assets/img/icon.svg" | url }}" alt="Logo">
+          <img src="{{ "/img/icon.svg" | url }}" alt="Logo">
           {{ metadata.title }}
         </a>
       <ul class="nav">
@@ -33,10 +33,9 @@
           </div>
         </div>
         {%- if hero.image %}
-        <picture class="column">
-          <source srcset="{{ hero.image.light | url }}" media="(prefers-color-scheme: light)">
-          <img class="hero-image" src="{{ hero.image.dark | url }}" alt="Hero Image">
-        </picture>
+        <div class="column">
+          {% image hero.title, hero.image.light, hero.image.dark %}
+        </div>
         {%- endif %}
       </div>
     </div>
