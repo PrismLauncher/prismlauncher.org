@@ -11,6 +11,7 @@ header:after {
 .home {
   display: flex;
   align-items: center;
+  font-family: Heebo, sans-serif;
   font-size: 1.75em;
   text-decoration: none;
   font-weight: 500;
@@ -31,7 +32,6 @@ header:after {
 nav {
   padding: 0.5em;
   overflow: auto;
-  font-family: Heebo, sans-serif;
   display: flex;
   justify-content: center;
 }
