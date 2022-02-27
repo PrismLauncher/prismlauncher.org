@@ -55,7 +55,6 @@ p,
 .tmpl-post li,
 img {
   max-width: min(100%);
-  height: auto;
 }
 
 p,
@@ -371,6 +370,10 @@ a[href].direct-link:focus:visited,
   justify-content: center;
   padding: 1em;
   text-align: center;
+}
+
+.column img {
+  height: auto;
 }
 
 .subtitle {
