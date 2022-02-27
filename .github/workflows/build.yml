@@ -24,7 +24,8 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm ci
-          npm run build          
+          npm run build
+          cp .github/CNAME _site/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
