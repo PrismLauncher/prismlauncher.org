@@ -55,6 +55,7 @@ p,
 .tmpl-post li,
 img {
   max-width: min(100%);
+  height: auto;
 }
 
 p,
