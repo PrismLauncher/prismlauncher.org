@@ -17,6 +17,7 @@ It includes many features, such has:
 - Kill Minecraft easily if it crashes / freezes.
 - Unlike other launchers, PolyMC uses Qt, a simple and lightweight toolkit that doesn't use much system resources
 - Easy installation of mod loaders, such as  Forge, Fabric, LiteLoader and Quilt (WIP).
--  Manage your worlds and resource/texture packs with just some clicks 
+- Manage your worlds and resource/texture packs with just some clicks 
 - Install modpacks from many platforms such as Curseforge, Technic, FTB, Modrinth (WIP) and more
+- Install individual mods to match your loader and version from Curseforge and Modrinth.
 - And many, many other features
