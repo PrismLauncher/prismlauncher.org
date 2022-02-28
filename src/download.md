@@ -95,7 +95,7 @@ sudo tee -a /etc/portage/package.accept_keywords <<< "=games-action/polymc-9999 
 An RPM package is available on [COPR](https://copr.fedorainfracloud.org/coprs/sentry/polymc/)
 
 ```
-sudo dnf copr enable sentry/polymc
+sudo dnf copr enable polymc/polymc
 sudo dnf install polymc
 ```
 ### <img src="https://lotar.altervista.org/wiki/_media/news/slackware-logo.png" height="20" /> Slackware
