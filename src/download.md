@@ -6,7 +6,7 @@ title: Download
 <div class="center">
     <h1>Download</h1>
     <div>
-        <a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (.zip)</a>
+        <a class="button" href="#windows">Windows</a>
         <a class="button" href="#mac">Mac</a>
         <a class="button" href="#🐧-linux">Linux</a>
         <a class="button" href="#freebsd">FreeBSD</a>
@@ -17,12 +17,23 @@ title: Download
 
 <div class="infobox">
 
+## <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" height="20" /> Windows
+
+[Windows (32-bit)](https://packages.polymc.org/latest/win32/win32.zip) ([SHA256](https://packages.polymc.org/latest/win32/win32.zip.sha256)) - this is a portable package, you can extract it anywhere and run it. This package needs testing.
+</div>
+
+<br>
+
+<div class="infobox">
+
 ## <img src="https://www.vectorlogo.zone/logos/apple/apple-tile.svg" height="20" /> MacOS
 
 MacOS has experimental development builds available [here](https://github.com/PolyMC/PolyMC/actions)
 
 </div>
+
 <br>
+
 <div class="infobox">
 
 # 🐧 Linux
@@ -107,7 +118,9 @@ You can also download a community-maintained [prebuilt x86_64 package](http://gl
 
     sudo /sbin/installpkg ~/Downloads/polymc-version-x86_64-1_SBo.tgz
 </div>
+
 <br>
+
 <div class="infobox">
     
 # <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD
@@ -133,7 +146,9 @@ There are community-maintained binary packages available:
 You need X11, Qt5 and Java installed.  
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
 </div>
+
 <br>
+
 <div class="infobox">
     
 # Development Builds
