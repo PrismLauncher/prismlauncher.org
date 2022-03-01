@@ -8,7 +8,7 @@ title: Download
     <div>
         <a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (.zip)</a>
         <a class="button" href="#mac">Mac</a>
-        <a class="button" href="#linux">Linux</a>
+        <a class="button" href="#🐧 linux">Linux</a>
         <a class="button" href="#freebsd">FreeBSD</a>
         <a class="button" href="#openbsd">OpenBSD</a>
     </div>
@@ -108,6 +108,9 @@ sudo dnf install polymc
 You can also download a community-maintained [prebuilt x86_64 package](http://glowiak.github.io/file/polymc-latest-slackware) and install it with /sbin/installpkg:
 
     sudo /sbin/installpkg ~/Downloads/polymc-version-x86_64-1_SBo.tgz
+</div>
+<br>
+<div class="infobox">
 # <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD
 
 There are community-maintained binary packages available:
@@ -118,7 +121,9 @@ There are community-maintained binary packages available:
 
 In both cases you need X11, Qt5 and Java installed. Both files are 64bit only.  
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
-
+</div>
+<br>
+<div class="infobox">
 # <img src="https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/OpenBSD%20httpd.svg" height="20" /> OpenBSD
 
 There are community-maintained binary packages available:
@@ -127,6 +132,8 @@ There are community-maintained binary packages available:
 
 You need X11, Qt5 and Java installed.  
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
+</div>
+<br>
 
 # Development Builds
 
@@ -137,4 +144,3 @@ For Debian and Arch, you can use these packages for the latest development versi
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
 [![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git)  
 For flatpak, you can use [flathub-beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
-</div>
