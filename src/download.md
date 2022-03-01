@@ -8,7 +8,7 @@ title: Download
     <div>
         <a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (.zip)</a>
         <a class="button" href="#mac">Mac</a>
-        <a class="button" href="#🐧 linux">Linux</a>
+        <a class="button" href="#🐧-linux">Linux</a>
         <a class="button" href="#freebsd">FreeBSD</a>
         <a class="button" href="#openbsd">OpenBSD</a>
     </div>
