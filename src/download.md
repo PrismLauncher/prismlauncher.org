@@ -135,6 +135,7 @@ You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob
 </div>
 <br>
 <div class="infobox">
+    
 # Development Builds
 
 There are per-commit development builds available [here](https://github.com/PolyMC/PolyMC/actions). These have debug information in the binaries, so their file sizes are relatively larger.
