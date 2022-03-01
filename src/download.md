@@ -22,9 +22,7 @@ title: Download
 MacOS has experimental development builds available [here](https://github.com/PolyMC/PolyMC/actions)
 
 </div>
-
 <br>
-
 <div class="infobox">
 
 # 🐧 Linux
@@ -111,6 +109,7 @@ You can also download a community-maintained [prebuilt x86_64 package](http://gl
 </div>
 <br>
 <div class="infobox">
+    
 # <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD
 
 There are community-maintained binary packages available:
@@ -124,6 +123,7 @@ You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob
 </div>
 <br>
 <div class="infobox">
+    
 # <img src="https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/OpenBSD%20httpd.svg" height="20" /> OpenBSD
 
 There are community-maintained binary packages available:
@@ -134,7 +134,6 @@ You need X11, Qt5 and Java installed.
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
 </div>
 <br>
-
 # Development Builds
 
 There are per-commit development builds available [here](https://github.com/PolyMC/PolyMC/actions). These have debug information in the binaries, so their file sizes are relatively larger.
