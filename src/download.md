@@ -7,7 +7,7 @@ title: Download
     <h1>Download</h1>
     <div>
         <a class="button" href="#windows">Windows</a>
-        <a class="button" href="#mac">Mac</a>
+        <a class="button" href="#mac">MacOS</a>
         <a class="button" href="#🐧-linux">Linux</a>
         <a class="button" href="#freebsd">FreeBSD</a>
         <a class="button" href="#openbsd">OpenBSD</a>
@@ -107,7 +107,7 @@ An RPM package is available on [COPR](https://copr.fedorainfracloud.org/coprs/se
 sudo dnf copr enable polymc/polymc
 sudo dnf install polymc
 ```
-### <img src="https://lotar.altervista.org/wiki/_media/news/slackware-logo.png" height="20" /> Slackware
+### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Slackware_logo.svg/256px-Slackware_logo.svg.png" height="20" /> Slackware
 
 [A SlackBuild](https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/polymc.md) is available. You will need [qt5](http://slackbuilds.org/repository/14.2/libraries/qt5/) (on 15.0 installed by default), [a JDK](https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/adoptium-jdk8.md), and if you're on 14.2, you need to compile newer CMake version manually. To build, type in extracted directory with all dependiences met:
 
