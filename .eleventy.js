@@ -5,25 +5,24 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const markdownItTaskLists = require('markdown-it-task-lists');
 const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
 async function image(alt, filepath, darkpath, sizes = "100vw", classes) {
-  if(alt === undefined) {
+  if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
 
   let options = {
     widths: [null],
-    formats: ['webp', 'png'],
+    formats: ["webp", "png"],
     urlPath: "/img/built/",
-		outputDir: "_site/img/built/",
+    outputDir: "_site/img/built/",
   };
 
-  if(darkpath) {
+  if (darkpath) {
     var metadata_dark = await Image(darkpath, options);
   }
 
@@ -33,12 +32,24 @@ async function image(alt, filepath, darkpath, sizes = "100vw", classes) {
   let highsrc = metadata.png[metadata.png.length - 1];
 
   return `<picture>
-    ${Object.values(metadata_dark).map(imageFormat => {
-      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`;
-    }).join("\n")}
-    ${Object.values(metadata).map(imageFormat => {
-      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-    }).join("\n")}
+    ${Object.values(metadata_dark)
+      .map((imageFormat) => {
+        return `  <source type="${
+          imageFormat[0].sourceType
+        }" srcset="${imageFormat
+          .map((entry) => entry.srcset)
+          .join(", ")}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`;
+      })
+      .join("\n")}
+    ${Object.values(metadata)
+      .map((imageFormat) => {
+        return `  <source type="${
+          imageFormat[0].sourceType
+        }" srcset="${imageFormat
+          .map((entry) => entry.srcset)
+          .join(", ")}" sizes="${sizes}">`;
+      })
+      .join("\n")}
       <img
         class="${classes}"
         src="${lowsrc.url}"
@@ -136,15 +147,15 @@ module.exports = function (eleventyConfig) {
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, markdownItTaskLists,{
+    linkify: true,
+  }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: "after",
       class: "direct-link",
       symbol: "#",
-      level: [1,2,3,4],
+      level: [1, 2, 3, 4],
     }),
-    slugify: eleventyConfig.getFilter("slug")
+    slugify: eleventyConfig.getFilter("slug"),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
