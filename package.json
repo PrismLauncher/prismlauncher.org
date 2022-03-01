@@ -36,6 +36,6 @@
     "@11ty/eleventy-img": "^1.1.0",
     "@fontsource/heebo": "^4.5.5",
     "clean-css": "^5.2.4",
-    "markdown-it-task-checkbox": "^1.0.6"
+    "markdown-it-task-lists": "^2.1.1"
   }
 }

@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 4
 ---
 
-Welcome to the wiki
+# Welcome to the PolyMC Wiki
