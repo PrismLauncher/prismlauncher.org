@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTaskLists = require('markdown-it-task-lists');
 const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
@@ -134,18 +135,17 @@ module.exports = function (eleventyConfig) {
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
-    breaks: false,
-    linkify: true,
-  }).use(markdownItAnchor, require("markdown-it-task-checkbox"), {
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, markdownItTaskLists,{
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: "after",
       class: "direct-link",
       symbol: "#",
-      level: [1, 2, 3, 4],
+      level: [1,2,3,4],
     }),
-    slugify: eleventyConfig.getFilter("slug"),
+    slugify: eleventyConfig.getFilter("slug")
   });
-  markdownLibrary.render("- [x] unchecked");
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Override Browsersync defaults (used only with --serve)
@@ -169,7 +169,7 @@ module.exports = function (eleventyConfig) {
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: ["md", "njk", "html", "11ty.js"],
+    templateFormats: ["md", "njk", "html"],
 
     // Pre-process *.md files with: (default: `liquid`)
     markdownTemplateEngine: "njk",
