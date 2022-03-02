@@ -62,6 +62,7 @@ yay -S polymc-bin
 # latest git package:
 yay -S polymc-git
 ```
+You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
 
 ### <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian
 
@@ -71,15 +72,24 @@ Several MPR packages are available:
 [![polymc](https://img.shields.io/badge/mpr-polymc-orange)](https://mpr.makedeb.org/packages/polymc)  
 [![polymc-bin](https://img.shields.io/badge/mpr-polymc--bin-orange)](https://mpr.makedeb.org/packages/polymc-bin)  
 [![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git)
+    
+Installing una a makedeb helper
+
+```
+bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
+```
+            
+Installing PolyMC 
 
 ```
 # stable source package:
-sudo tap install polymc
+sudo una install polymc
 # stable binary package:
-sudo tap install polymc-bin
+sudo una install polymc-bin
 # latest git package:
-sudo tap install polymc-git
+sudo una install polymc-git
 ```
+You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/mpr/list-of-mpr-helpers/) install command.
 
 ### <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
