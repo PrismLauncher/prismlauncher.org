@@ -47,7 +47,7 @@ MacOS has experimental development builds available [here](https://github.com/Po
 - [AppImage SHA256](https://packages.polymc.org/latest/appimage/PolyMC-latest-x86_64.AppImage.sha256)
 - All packages (archived by version) can be found [here](https://packages.polymc.org/) ([latest](https://packages.polymc.org/latest)).
 - Last build status: https://jenkins.polymc.org/job/PolyMC/lastBuild/
-### <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux
+### <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
 There are several AUR packages available:  
 [![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)  
@@ -64,7 +64,7 @@ yay -S polymc-git
 ```
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
 
-### <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian
+### <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
@@ -77,6 +77,8 @@ Installing una a makedeb helper
 
 ```
 bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
+
+una update
 ```
             
 Installing PolyMC 
