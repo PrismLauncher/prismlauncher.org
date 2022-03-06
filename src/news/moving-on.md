@@ -1,7 +1,7 @@
 ---
 title: Moving on
 description: The origins of PolyMC are plagued by controversy. Let's move on from this.
-date: 2022-02-15
+date: 2022-03-6
 tags:
   - multimc
 ---
