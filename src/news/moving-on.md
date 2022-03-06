@@ -29,24 +29,20 @@ Sadly, our request was dismissed, and one of our team members was banned from th
 </div>
 
 This has sparked many internal discussions both at PolyMC as well as MultiMC.
-As MultiMC will be introducing a [contributor license agreement (CLA)][cla] we have decided that we have to move on from our origins as a MultiMC fork.
+We concluded that we will be moving away from our origins as a packaging-friendly fork of MultiMC to it's own thing.
 
-<div class="center">
-    <img alt="Screenshot of CLA announcement by MultiMC maintainer" src="/assets/img/news/moving-on/discord-cla.png" style="width: 40em">
-</div>
+In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.
+The major new feature is the integrated mod downloader that supports Modrinth and CurseForge mods.
+We also plan to clean the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.
 
-Once this CLA is in place we won't be able to take code from MultiMC anymore, which is why we also won't associate with it anymore.
-PolyMC already has a few unique upcoming features, like the integrated mod downloader that supports Modrinth and CurseForge mods.
-We also plan to clean-up the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.
-
-Additionally, we have reorganized PolyMC since its inception.
+Additionally, we have reorganized PolyMC since its inception to be more community-centric.
 One of the founders has stepped down as a maintainer and we have formed the *PolyMC Core Team*.
 You can read more about it in [this blogpost](../newmaintainers/).
 
 We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.
-While we are working on getting 1.1.0 out, check out our upcoming changes:
+While we are working on getting 1.1.0 out, check out our future plans:
 
-**Sneak peak of upcoming changes**:
+**Sneak peak of future plans**:
  - Rewrite of metadata generators, to make them easier to work with. See progress over on [PolyMC/polymorphosis][gh-polymorphosis]
  - Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on [PolyMC/PolyMC#167][rfc-0001]
 
@@ -63,7 +59,6 @@ If you want to be involved in PolyMC, check out the following links:
 
 ~ PolyMC Core Team
 
-[cla]: https://en.wikipedia.org/wiki/Contributor_License_Agreement
 [discord]: https://discord.com/invite/xq7fxrgtMP
 [gh-org]: https://github.com/PolyMC
 [gh-poly]: https://github.com/PolyMC/PolyMC
