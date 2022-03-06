@@ -19,17 +19,17 @@ PolyMC's inception is very controversial by its very nature.
 The founders have decided to sublicense PolyMC under the terms of the [GNU General Public License 3][gpl3] (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.
 As a result the MultiMC team have decided to burn bridges with PolyMC.
 This was manifested after access to the metadata service, provided by MultiMC, was [blocked for all PolyMC users][gh-poly-meta].
-All versions prior to 1.0.6 do not work anymore, as they are trying to reach MultiMC servers instead of our own.
+All versions prior to 1.0.6 do not work anymore, as they try to reach MultiMC servers instead of our own.
 
 In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.
-Sadly, our request was dismissed, and one of our team members was banned from the official MultiMC Discord server for being associated with PolyMC.
+Sadly, our request was dismissed, and most of our team members were banned from the official MultiMC Discord server for being associated with PolyMC.
 
 <div class="center">
     <img alt="Screenshot of public chat with MultiMC maintainer" src="/img/news/moving-on/discord.png" style="width: 40em">
 </div>
 
 This has sparked many internal discussions both at PolyMC as well as MultiMC.
-We concluded that we will be moving away from our origins as a packaging-friendly fork of MultiMC to it's own thing.
+In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.
 
 In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.
 The major new feature is the integrated mod downloader that supports Modrinth and CurseForge mods.
