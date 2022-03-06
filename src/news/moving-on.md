@@ -25,7 +25,7 @@ In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the
 Sadly, our request was dismissed, and one of our team members was banned from the official MultiMC Discord server for being associated with PolyMC.
 
 <div class="center">
-    <img alt="Screenshot of public chat with MultiMC maintainer" src="/assets/img/news/moving-on/discord.png" style="width: 40em">
+    <img alt="Screenshot of public chat with MultiMC maintainer" src="/img/news/moving-on/discord.png" style="width: 40em">
 </div>
 
 This has sparked many internal discussions both at PolyMC as well as MultiMC.
