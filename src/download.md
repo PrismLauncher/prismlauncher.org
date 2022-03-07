@@ -7,7 +7,7 @@ title: Download
     <h1>Download</h1>
     <div>
         <a class="button" href="#windows">Windows</a>
-        <a class="button" href="#mac">MacOS</a>
+        <a class="button" href="#macos">MacOS</a>
         <a class="button" href="#🐧-linux">Linux</a>
         <a class="button" href="#freebsd">FreeBSD</a>
         <a class="button" href="#openbsd">OpenBSD</a>
