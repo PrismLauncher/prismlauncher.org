@@ -24,9 +24,7 @@ All versions prior to 1.0.6 do not work anymore, as they try to reach MultiMC se
 In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.
 Sadly, our request was dismissed, and most of our team members were banned from the official MultiMC Discord server for being associated with PolyMC.
 
-<div class="center">
-    <img alt="Screenshot of public chat with MultiMC maintainer" src="/img/news/moving-on/discord.png" style="width: 40em">
-</div>
+{% image "Screenshot of public chat with MultiMC maintainer", "./src/img/news/moving-on/discord.png" %} 
 
 This has sparked many internal discussions both at PolyMC as well as MultiMC.
 In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.
