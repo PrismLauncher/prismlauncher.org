@@ -398,4 +398,7 @@ a[href].direct-link:focus:visited,
   .column {
     flex: 50%;
   }
+  .wiki-content {
+    padding-left: 1em;
+  }
 }
