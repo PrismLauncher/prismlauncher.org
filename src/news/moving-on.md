@@ -35,7 +35,7 @@ We also plan to clean the codebase, remove obscure or old features and cruft in 
 
 Additionally, we have reorganized PolyMC since its inception to be more community-centric.
 One of the founders has stepped down as a maintainer and we have formed the *PolyMC Core Team*.
-You can read more about it in [this blogpost](../newmaintainers/).
+You can read more about it in [this blogpost](../new-maintainers/).
 
 We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.
 While we are working on getting 1.1.0 out, check out our future plans:
