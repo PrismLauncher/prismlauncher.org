@@ -27,7 +27,7 @@ In lighter news, congratulations to our new Core Team consisting of:
 - timoreo
 - txtsd
 - dada513
-- Tabzlock
+- Ezekiel Smith
 - cozyGalvinism
 
 We will be maintaining the PolyMC project and repositories. We hope to see great contributions and continued development of PolyMC.
