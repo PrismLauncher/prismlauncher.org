@@ -83,6 +83,10 @@ hero:
   # Get involved
   ---
 
+  ## Reddit
+  
+  [r/PolyMCLauncher](https://www.reddit.com/r/PolyMCLauncher/)
+
   ## Discord
 
   to talk directly to us and get involved with development:
