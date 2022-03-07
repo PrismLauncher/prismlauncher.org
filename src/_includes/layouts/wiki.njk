@@ -3,27 +3,29 @@ layout: layouts/main.njk
 templateClass: tmpl-wiki
 ---
 
-<div class="row">
-  <div class="wiki-toc"> 
-    <ul>
-      {% set navPages = collections.wiki | eleventyNavigation %}
-      {%- for entry in navPages %}
-      <li class="wiki-category{% if entry.url == page.url %} wiki-category-active{% endif %}">
-        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-      {%- if entry.children.length -%}
-        <ul>
-          {%- for child in entry.children %}
-          <li class="wiki-item{% if child .url == page.url %} wiki-item-active{% endif %}">
-            <a href="{{ child.url | url }}">{{ child.title }}</a>
-          </li>
-          {% endfor -%}
-        </ul>
-      {%- endif -%}
-      </li>
-      {%- endfor %}
-    </ul>
+<div class="row row-reverse">
+  <div class="wiki-content">
+    {{ content | safe }}
   </div>
-    <div class="wiki-content">
-  {{ content | safe }}
+  <div> 
+    <div class="wiki-toc">
+      <ul>
+        {% set navPages = collections.wiki | eleventyNavigation %}
+        {%- for entry in navPages %}
+        <li class="wiki-category{% if entry.url == page.url %} wiki-category-active{% endif %}">
+          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        {%- if entry.children.length -%}
+          <ul>
+            {%- for child in entry.children %}
+            <li class="wiki-item{% if child .url == page.url %} wiki-item-active{% endif %}">
+              <a href="{{ child.url | url }}">{{ child.title }}</a>
+            </li>
+            {% endfor -%}
+          </ul>
+        {%- endif -%}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
   </div>
 </div>

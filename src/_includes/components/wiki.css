@@ -1,0 +1,49 @@
+.wiki-content {
+  padding: 1em;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.wiki-toc {
+  background-color: var(--accent);
+  padding: 1em;
+}
+
+.wiki-toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wiki-category {
+  margin-bottom: 1em;
+}
+
+.wiki-category > a {
+  font-size: 1.2em;
+  font-family: Heebo, sans-serif;
+}
+
+.wiki-category-active > a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.wiki-item {
+  border-left: var(--primary) 0.25em solid;
+  padding: 0.5em;
+}
+
+.wiki-item > a {
+  text-decoration: none;
+}
+
+.wiki-item-active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.wiki-category > a:hover,
+.wiki-item:hover {
+  text-decoration: underline;
+}

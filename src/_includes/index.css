@@ -89,7 +89,7 @@ table th {
 
 blockquote {
   border-left: var(--primary) 0.25em solid;
-  padding-left: 1em;
+  padding: 0.5em;
   margin: 0;
 }
 
@@ -262,6 +262,8 @@ code {
 }
 
 .postlist-link {
+  font-size: 1.2em;
+  font-family: Heebo, sans-serif;
   padding-left: 0.25em;
   padding-right: 1em;
   text-underline-position: from-font;
@@ -276,7 +278,7 @@ code {
 .postlist-description {
   width: 100%;
   border-left: var(--primary) 0.25em solid;
-  padding-left: 1em;
+  padding: 0.5em;
   margin-top: 0.33em;
 }
 
@@ -385,59 +387,6 @@ a[href].direct-link:focus:visited,
   padding: 2em;
 }
 
-/* Wiki */
-.wiki-content {
-  padding: 1em;
-  display: block;
-  width: 60%;
-  margin-left: 1em;
-}
-
-.wiki-toc {
-  background-color: var(--accent);
-  padding: 1em;
-  height: 100%;
-}
-
-.wiki-toc ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.wiki-category {
-  margin-bottom: 1em;
-}
-
-.wiki-category > a {
-  font-size: 1.5em;
-  font-family: Heebo, sans-serif;
-  text-decoration: none;
-}
-
-.wiki-category-active > a {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.wiki-item {
-  border-left: var(--primary) 0.25em solid;
-  padding: 0.5em;
-}
-
-.wiki-item > a {
-  text-decoration: none;
-}
-
-.wiki-item-active {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.wiki-category > a:hover,
-.wiki-item:hover {
-  text-decoration: underline;
-}
 
 @media (min-width: 90em) {
   /* landing page */
