@@ -1,8 +1,5 @@
 ---
 layout: layouts/main.njk
-eleventyNavigation:
-  key: Home
-  order: 1
 hero:
   title: 'PolyMC'
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
