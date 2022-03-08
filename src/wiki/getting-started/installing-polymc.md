@@ -23,3 +23,7 @@ If you are comfortable and trust PolyMC you can click **More info** then **Run a
 
 Unfortunately there are some issues with the OpenSSL dll at the moment on devbuilds.
 To fix this, install [this](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe)
+
+### Apple can't verify this is malware?
+
+Same as windows, but click close and open again with right-click
