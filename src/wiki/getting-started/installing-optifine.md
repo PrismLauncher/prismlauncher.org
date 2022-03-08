@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Installing Optifine
   parent: Getting Started
-  order: 6
+  order: 7
 ---
 
 # Installing optifine

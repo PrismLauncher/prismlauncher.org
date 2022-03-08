@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Create an Instance
   parent: Getting Started
-  order: 3
+  order: 4
 ---
 
 # Creating an Instance

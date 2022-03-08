@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Downloading Mods
   parent: Getting Started
-  order: 5
+  order: 6
 ---
 # Downloading Mods
 
