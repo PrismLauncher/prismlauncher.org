@@ -1,5 +1,5 @@
 ---
 eleventyNavigation:
   key: FAQ
-  order: 4
+  order: 2
 --- 
