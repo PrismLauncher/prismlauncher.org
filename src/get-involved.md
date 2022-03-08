@@ -6,4 +6,4 @@ eleventyNavigation:
 permalink: false
 ---
 
-Redirecting to wiki overview
+Redirecting to Get Involved
