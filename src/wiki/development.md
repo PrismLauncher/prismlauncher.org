@@ -3,13 +3,24 @@ eleventyNavigation:
   key: Development
   order: 4
 --- 
+# Development
 
-# Development Builds
+If you want to contribute to PolyMC you might find it useful to join our Discord Server or Matrix Space.
 
-There are per-commit development builds available [here](https://github.com/PolyMC/PolyMC/actions). These have debug information in the binaries, so their file sizes are relatively larger.
-Portable builds are provided for AppImage on Linux, Windows, and macOS.
+## Building
 
-For Debian and Arch, you can use these packages for the latest development versions:  
-[![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
-[![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git)  
-For flatpak, you can use [flathub-beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
+If you want to build PolyMC yourself, check [Build Instructions](./builds) for build instructions.
+
+
+## Code formatting
+
+Just follow the existing formatting.
+
+In general, in order of importance:
+
+- Make sure your IDE is not messing up line endings or whitespace and avoid using linters.
+- Prefer readability over dogma.
+- Keep to the existing formatting.
+- Indent with 4 space unless it's in a submodule.
+- Keep lists (of arguments, parameters, initializers...) as lists, not paragraphs. It should either read from top to bottom, or left to right. Not both.
+
