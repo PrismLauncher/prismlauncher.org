@@ -18,3 +18,8 @@ Windows by default can "open" zip files but to use PolyMC you will want to make 
 This is normal behaviour unfortunately due to the nature of Windows app signing polymc has not purchased one yet. We may choose to do so in the future with enough funding. PolyMC is an opensource launcher meaning all code can be audited if you would like to check for yourself you can do so [here](https://github.com/PolyMC/polymc.github.io).
 
 If you are comfortable and trust PolyMC you can click **More info** then **Run anyway**.
+
+### I get random OpenSSL errors on Windows. What I can do?
+
+Unfortunately there are some issues with the OpenSSL dll at the moment on devbuilds.
+To fix this, install [this](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe)
