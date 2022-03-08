@@ -15,7 +15,7 @@ Windows by default can "open" zip files but to use PolyMC you will want to make 
 
 ### Windows protected my PC?
 
-This is normal behaviour unfortunately due to the nature of Windows app signing polymc has not purchased one yet. We may choose to do so in the future with enough funding. PolyMC is an opensource launcher meaning all code can be audited if you would like to check for yourself you can do so [here](https://github.com/PolyMC/polymc.github.io).
+This is normal behaviour unfortunately due to the nature of Windows app signing polymc has not purchased one yet. We may choose to do so in the future with enough funding. PolyMC is an open source launcher meaning all code can be audited if you would like to check for yourself you can do so [here](https://github.com/PolyMC/PolyMC).
 
 If you are comfortable and trust PolyMC you can click **More info** then **Run anyway**.
 
