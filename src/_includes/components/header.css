@@ -8,7 +8,8 @@ header:after {
   clear: both;
 }
 
-.home {
+.home[href] {
+  color: var(--primary-text);
   display: flex;
   align-items: center;
   font-family: Heebo, sans-serif;
@@ -64,7 +65,7 @@ nav {
   margin: 0.5em;
 }
 
-.nav-item a {
+.nav-item a[href] {
   color: var(--primary-text);
   text-decoration: none;
 }

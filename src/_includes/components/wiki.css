@@ -34,8 +34,9 @@
   padding: 0.5em;
 }
 
-.wiki-item > a {
+.wiki-item > a[href] {
   text-decoration: none;
+  color: var(--primary-text);
 }
 
 .wiki-item-active {
