@@ -9,7 +9,7 @@ const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
-async function image(alt, filepath, darkpath, sizes = "100vw", classes, formats = ["webp", "png"]) {
+async function image(alt, filepath, darkpath, classes, formats = ["webp", "png"], lossless = true, sizes = "100vw") {
   if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -20,6 +20,25 @@ async function image(alt, filepath, darkpath, sizes = "100vw", classes, formats 
     formats: formats,
     urlPath: "/img/built/",
     outputDir: "_site/img/built/",
+    sharpWebpOptions: {
+      quality: 70,
+      lossless: lossless,
+      effort: 6,
+    },
+    sharpPngOptions: {
+      compressionLevel: 9,
+    },
+    sharpJpegOptions: {
+      quality: 70,
+      progressive: true,
+      mozjpeg: true,
+    },
+    sharpAvifOptions: {
+      quality: 55,
+      lossless: lossless,
+      effort: 9,
+      chromaSubsampling: lossless ? "4:4:4" : "4:2:0",
+    },
   };
 
   var metadata_dark = {};
