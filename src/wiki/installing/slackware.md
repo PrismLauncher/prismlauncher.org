@@ -13,3 +13,5 @@ eleventyNavigation:
 You can also download a community-maintained [prebuilt x86_64 package](http://glowiak.github.io/file/polymc-latest-slackware) and install it with /sbin/installpkg:
 
     sudo /sbin/installpkg ~/Downloads/polymc-version-x86_64-1_SBo.tgz
+
+If you want to enjoy latest, but yet untested features of PolyMC, try [polymc-edge](https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/polymc-edge.md) SlackBuild, dependiences and build instructions are the same, but as new commit is pushed to develop every hour, there's no sense to build binary packages for it, sorry :/ A note that the -edge SBo conflicts with the normal, stable version and the -edge version does not have a desktop entry.
