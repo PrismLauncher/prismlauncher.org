@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
   key: Translations
+  parent: Overview
   order: 6
 --- 
 
