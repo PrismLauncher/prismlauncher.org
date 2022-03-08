@@ -1,5 +1,6 @@
 ---
 layout: layouts/main.njk
+title: Home
 hero:
   title: 'PolyMC'
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and

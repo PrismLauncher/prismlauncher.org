@@ -1,6 +1,7 @@
 .wiki-content {
   flex-basis: 0;
   flex-grow: 1;
+  margin-bottom: 1em;
 }
 
 .wiki-toc {
