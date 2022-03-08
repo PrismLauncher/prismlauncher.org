@@ -4,4 +4,4 @@ eleventyNavigation:
   order: 3
 --- 
 
-# Welcome to the PolyMC wiki
+# Installation instructions can be found for the respective systems

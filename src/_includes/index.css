@@ -375,6 +375,25 @@ a[href].direct-link:focus:visited,
   text-align: center;
 }
 
+/* card */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card {
+  margin: 1em;
+  flex: 0 1 24%;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--accent);
+}
+.card .button {
+  width: 100%;
+  margin: 0.5em 0;
+}
+
 /* footer */
 .footer {
   text-align: center;
@@ -396,5 +415,13 @@ a[href].direct-link:focus:visited,
   }
   .wiki-content {
     padding-left: 1em;
+  }
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card {
+    margin: 0;
+    align-self: flex-start;
   }
 }
