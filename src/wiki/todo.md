@@ -1,5 +1,4 @@
 ---
-title: Todo
 eleventyNavigation:
   key: ToDo
   order: 4

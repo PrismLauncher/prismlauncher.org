@@ -20,11 +20,12 @@
 
 .wiki-category > a {
   font-size: 1.2em;
+  font-weight: 700;
   font-family: Heebo, sans-serif;
+  text-decoration: none;
 }
 
 .wiki-category-active > a {
-  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -38,7 +39,6 @@
 }
 
 .wiki-item-active {
-  font-weight: 700;
   text-decoration: underline;
 }
 

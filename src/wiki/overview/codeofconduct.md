@@ -1,7 +1,8 @@
 ---
-title: Code of conduct
 eleventyNavigation:
   key: Code of conduct
+  parent: Overview
+  order: 2
 ---
 
 # Contributor Covenant Code of Conduct

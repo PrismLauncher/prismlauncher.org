@@ -1,5 +1,4 @@
 ---
-title: Why was this fork made?
 eleventyNavigation:
   parent: FAQ
   key: Why was this fork made?

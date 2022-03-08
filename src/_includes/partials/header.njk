@@ -1,44 +1,44 @@
 <header>
   <nav class="container">
     <div class="navbar">
-        <a href="{{ '/' | url }}" class="home">
-          <img src="{{ "/img/icon.svg" | url }}" alt="Logo">
+      <a href="{{ '/' | url }}" class="home">
+        <img src="{{ "/img/icon.svg" | url }}" alt="Logo">
           {{ metadata.title }}
         </a>
-      <ul class="nav">
-        {%- for entry in collections.nav | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-      </ul>
-    </div>
-    <div class="links">
-      <a class="button" href="{{ '/download/' | url }}">Download</a>
-      <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
-    </div>
-  </nav>
-  {% if hero %}
-  <div class="hero">
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <div>
-            <h1 class="hero-title">{{ hero.title }}</h1>
-            <p class="subtitle">{{ hero.description }}</p>
-            {%- if hero.download == true %}
-            <br>
-            <a class="button" href="{{ '/download' | url }}">Download Now</a>
-            {%- endif %}
+        <ul class="nav">
+          {%- for entry in collections.nav | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="links">
+        <a class="button" href="{{ '/download/' | url }}">Download</a>
+        <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
+      </div>
+    </nav>
+    {% if hero %}
+      <div class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <div>
+                <h1 class="hero-title">{{ hero.title }}</h1>
+                <p class="subtitle">{{ hero.description }}</p>
+                {%- if hero.download == true %}
+                  <br>
+                    <a class="button" href="{{ '/download' | url }}">Download Now</a>
+                  {%- endif %}
+                </div>
+              </div>
+              {%- if hero.image %}
+                <div class="column">
+                  {% image hero.title, hero.image.light, hero.image.dark %}
+                </div>
+              {%- endif %}
+            </div>
           </div>
         </div>
-        {%- if hero.image %}
-        <div class="column">
-          {% image hero.title, hero.image.light, hero.image.dark %}
-        </div>
-        {%- endif %}
-      </div>
-    </div>
-  </div>
-  {% endif %}
-</header>
+      {% endif %}
+    </header>

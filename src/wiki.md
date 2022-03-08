@@ -1,10 +1,9 @@
 ---
-layout: layouts/wiki.njk
-title: Wiki
-permalink: /wiki/
 eleventyNavigation:
   key: Wiki
   order: 4
+  url: /wiki/
+permalink: false
 ---
 
-# Welcome to the PolyMC Wiki
+Redirecting to wiki overview
