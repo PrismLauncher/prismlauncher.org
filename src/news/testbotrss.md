@@ -1,7 +1,7 @@
 ---
-title: Testing rss feed bot
+title: Updating RSS FEED
 description: This is just a test to see how well this works
-date: 2022-02-06
+date: 2024-02-06
 tags:
   - News
 ---
