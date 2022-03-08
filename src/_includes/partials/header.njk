@@ -20,6 +20,9 @@
   </nav>
   {% if hero %}
   <div class="hero">
+    {% if hero.background %}
+      {% image "Background", hero.background, "", "100vw", "hero-bg", ["webp", "jpeg", "png"] %}
+    {% endif %}
     <div class="container">
       <div class="row">
         <div class="column">

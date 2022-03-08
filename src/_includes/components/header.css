@@ -76,13 +76,19 @@ nav {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("{{ hero.background | url }}");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   color: white;
+  z-index: 0;
+}
+
+.hero-bg {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
 }
 
 .hero-title {

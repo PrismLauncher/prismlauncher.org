@@ -4,7 +4,7 @@ title: Downloads
 permalink: /download/
 hero:
   title: "Downloads"
-  background: /img/forest.webp
+  background: ./src/img/forest.png
 ---
 <div class="notification is-info">
 
