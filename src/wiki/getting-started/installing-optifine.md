@@ -29,6 +29,7 @@ NOTE: some OF versions **don't** work on Forge!
 ## Fabric 
 Note: If you're playing on minecraft versions before 1.16, you might need to also install [Fabric API](../download-mods/#fabric).
 
+
 Fabric, unlike Forge, does not natively support optifine and will require the installation of Optifabric. 
 
 Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. once found click **Select mod for download** then press **Ok**. Now procede to [adding the jar file](#adding-.jar-file). 

@@ -12,9 +12,9 @@ eg. Steam Deck's Gamepad
 ## Before proceeding
 
 * Please ensure that you comfortable with the mod installation process within PolyMC.
-* A full guide on this can be found here: https://polymc.org/wiki/getting-started/download-mods/
+* A full guide on this can be [found here](../download-mods/)
 * Not all game versions are yet supported, including those before 1.12.2, and the latest; 1.18.2
-* If the instance you have created or are using is of a game version lower than 1.17, please ensure a compatable version of Java is selected. You can learn how to do so here (https://polymc.org/wiki/getting-started/installing-java/)
+* If the instance you have created or are using is of a game version lower than 1.17, please ensure a compatable version of Java is selected. [You can learn how to do so here](../installing-java/)
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 
@@ -34,13 +34,15 @@ Within the in-game controls menu, you may need to change the "Mode" setting to *
 
 ## Forge:
 
-For Minecraft 1.12.2 to 1.18.1 we recommend the **Controllable** mod.
+For Minecraft 1.12.2 to 1.18.2 we recommend the **Controllable** mod.
 
-### For Minecraft 1.18.1 *specifically*
+### For Minecraft 1.18.1 and 1.18.2 *specifically*
 
 You must install the Minecraft 1.18 version of the mod **directly** from CurseForge and can be found here: https://www.curseforge.com/minecraft/mc-mods/controllable
 
 This is likely because the 1.18 version of the mod does not claim to support Minecraft 1.18.1, yet despite this, it should work as expected.
+
+1.18.2 Forge is still early in development and may have some issues.
 
 ### For Minecraft Versions 1.12.2 to 1.18
 
