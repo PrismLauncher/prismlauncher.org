@@ -16,6 +16,6 @@ After you choose your mod provider you can search or browse for your desired mod
 
 ## Fabric
 
-If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is almost universally **required** for all Fabric mods.
+If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
 If it is missing, you can find it by right clicking on your instance in PolyMC and selecting the **Edit Instance** option in the menu.
