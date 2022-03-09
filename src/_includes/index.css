@@ -122,6 +122,7 @@ pre {
 
 code {
   word-break: break-all;
+  background-color: var(--code);
 }
 
 .highlight-line {
