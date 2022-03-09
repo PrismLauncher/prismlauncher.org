@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 7
 ---
 
-[Make sure to have fabric api](../download-mods/#fabric)
+[Make sure to have Fabric API](../download-mods/#fabric)
 
 ## Why this
 
