@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 7
 ---
 
-Make sure to have [Fabric API](../download-mods/#fabric), as many Fabric mods depend on it to work.
+NOTE: some mods require [Fabric API](../download-mods/#fabric) to work.
 
 ## Why this
 
