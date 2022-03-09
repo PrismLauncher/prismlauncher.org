@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 # Preamble
 
-You should use optifine alternatives when possible. [See the wiki page about it](../getting-started/install-of-alternatives.md)
+You should use optifine alternatives when possible. [See the wiki page about it](../install-of-alternatives.md)
 # Installing optifine
 
 Make sure you know how to [download-mods](../download-mods) before attempting to install optifine.
