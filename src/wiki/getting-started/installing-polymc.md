@@ -9,6 +9,8 @@ eleventyNavigation:
 
 Installing PolyMC for most systems should be quite straightforward go to [Downloads](/download/) and click on the desired download for your operating system.
 
+## Troubleshoot
+
 ### I dont know how to open a .zip file?
 
 Windows by default can "open" zip files but to use PolyMC you will want to make sure to extract it. to extract it right click on the file then select **Extract all...**. This should create a new folder where you extracted from which you can then open and find the polymc.exe file and run that

@@ -382,11 +382,11 @@ a[href].direct-link:focus:visited,
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 1em;
 }
 
 .card {
-  margin: 1em;
-  flex: 0 1 24%;
+  flex: 1;
   padding: 1em;
   text-align: center;
   background-color: var(--accent);
@@ -394,6 +394,22 @@ a[href].direct-link:focus:visited,
 .card .button {
   width: 100%;
   margin: 0;
+}
+
+/* Notifications */
+.notification {
+  position: relative;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  margin-bottom: 1em;
+}
+
+.notification.is-info {
+  background-color: var(--primary);
+  color: white;
+}
+
+.notification a[href] {
+  color: white;
 }
 
 /* footer */
@@ -423,7 +439,6 @@ a[href].direct-link:focus:visited,
     justify-content: space-between;
   }
   .card {
-    margin: 0;
     align-self: flex-start;
   }
 }
