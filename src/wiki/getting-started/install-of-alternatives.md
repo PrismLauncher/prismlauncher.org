@@ -11,7 +11,7 @@ Once opon a time, OF was the best way to make your game better. Things changed.
 
 ## Sodium
 
-Sodium is the best client side optimization mod at the moment and it's highly raccomended.
+Sodium is the best client side optimization mod at the moment and it's highly recommended.
 
 To install in PolyMC, create a fabric instance, then go to the mods tab and click "Download Mods". There, click on Sodium, click mod for download and then Ok
 
