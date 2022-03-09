@@ -18,5 +18,5 @@ Now you should have PolyMC in your Steam Library.
 ## Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized` and `Close PolyMC after game window opens` in the launcher's settings under the `Minecraft` tab.
-- Install a mod that enables controller support. See [Downloading Mods](../../getting-started/download-mods)
+- Install a mod that enables controller support. See [Controller Support](../getting-started/controller-support)
 
