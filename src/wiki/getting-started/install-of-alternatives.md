@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 7
 ---
 
-[Make sure to have Fabric API](../download-mods/#fabric)
+Make sure to have [Fabric API](../download-mods/#fabric), as many Fabric mods depend on it to work.
 
 ## Why this
 
@@ -13,23 +13,23 @@ Once opon a time, OF was the best way to make your game better. Things changed.
 
 ## Sodium
 
-Sodium is the best client side optimization mod at the moment and it's highly recommended.
+[Sodium](https://modrinth.com/mod/sodium) is the best client side optimization mod at the moment and it's highly recommended.
 
-To install in PolyMC, create a fabric instance, then go to the mods tab and click "Download Mods". There, click on Sodium, click mod for download and then Ok
+To install in PolyMC, create a Fabric instance, then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download** and then **Ok**.
 
 ## Iris
 
-Iris allows you to run OF Shaders while using Sodium. It works great, but it doesn't support every shaderpack at the moment.
+[Iris](https://irisshaders.net/) allows you to run OF Shaders while using Sodium. It works great, but it doesn't support every shaderpack at the moment.
 
 Click [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md) for a list of currently supported shaderpacks
 
-To install in PolyMC, create a fabric instance, then go to the mods tab and click "Download Mods". There, click on Iris, click mod for download and then Ok
+To install in PolyMC, create a Fabric instance, then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download** and then **Ok**.
 
 ## Other Mods
 
-If you want to improve your performance, consider installing lithium and starlight
+If you want to improve your performance, consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
 
-I can't list every mod here, you can find a big list of optifine alternatives [here](https://lambdaurora.dev/optifine_alternatives/)
+We can't list every mod here, but you can find a big list of optifine alternatives [here](https://lambdaurora.dev/optifine_alternatives/).
 
 # Fabulously Optimized
 
