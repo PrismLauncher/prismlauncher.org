@@ -27,7 +27,7 @@ Forge does not require exta steps besides [adding the .jar for optifine](#adding
 NOTE: some OF versions **don't** work on Forge!
 
 ## Fabric 
-[Requires Fabric API](../download-mods/#fabric)
+Note: If you're playing on minecraft versions before 1.16, you might need to also install [Fabric API](../download-mods/#fabric).
 
 Fabric, unlike Forge, does not natively support optifine and will require the installation of Optifabric. 
 
