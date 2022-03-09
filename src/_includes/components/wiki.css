@@ -1,5 +1,6 @@
 .wiki-content {
   margin-bottom: 1em;
+  flex: 1;
 }
 
 .wiki-toc {
