@@ -122,6 +122,7 @@ pre {
 
 code {
   word-break: break-all;
+  color: white;
   background-color: var(--code);
 }
 

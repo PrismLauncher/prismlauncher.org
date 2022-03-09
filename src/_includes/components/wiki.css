@@ -1,11 +1,11 @@
 .wiki-content {
-  flex: 1;
   margin-bottom: 1em;
 }
 
 .wiki-toc {
   background-color: var(--accent);
   padding: 1em;
+  width: 15em;
 }
 
 .wiki-toc ul {
