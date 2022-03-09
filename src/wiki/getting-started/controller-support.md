@@ -12,9 +12,9 @@ eg. Steam Deck's Gamepad
 ## Before proceeding
 
 * Please ensure that you comfortable with the mod installation process within PolyMC.
-* A full guide on this can be [found here](../../getting-started/download-mods/)
+* A full guide on this can be [found here](../download-mods/)
 * Not all game versions are yet supported, including those before 1.12.2, and the latest; 1.18.2
-* If the instance you have created or are using is of a game version lower than 1.17, please ensure a compatable version of Java is selected. [You can learn how to do so here](../../getting-started/installing-java/)
+* If the instance you have created or are using is of a game version lower than 1.17, please ensure a compatable version of Java is selected. [You can learn how to do so here](../installing-java/)
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 
