@@ -9,7 +9,7 @@ const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
-async function image(alt, filepath, darkpath, classes, formats = ["webp", "png"], lossless = true, sizes = "100vw") {
+async function image(alt, filepath, darkpath, classes, lossless = true, sizes = "100vw") {
   if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -17,7 +17,7 @@ async function image(alt, filepath, darkpath, classes, formats = ["webp", "png"]
 
   let options = {
     widths: [null],
-    formats: formats,
+    formats: lossless ? ["webp", "png"] : ["webp", "jpeg"],
     urlPath: "/img/built/",
     outputDir: "_site/img/built/",
     sharpWebpOptions: {
@@ -33,12 +33,6 @@ async function image(alt, filepath, darkpath, classes, formats = ["webp", "png"]
       progressive: true,
       mozjpeg: true,
     },
-    sharpAvifOptions: {
-      quality: 55,
-      lossless: lossless,
-      effort: 9,
-      chromaSubsampling: lossless ? "4:4:4" : "4:2:0",
-    },
   };
 
   var metadata_dark = {};
@@ -48,8 +42,8 @@ async function image(alt, filepath, darkpath, classes, formats = ["webp", "png"]
 
   let metadata = await Image(filepath, options);
 
-  let lowsrc = metadata.png[0];
-  let highsrc = metadata.png[metadata.png.length - 1];
+  let lowsrc = lossless ? metadata.png[0] : metadata.jpeg[0];
+  let highsrc = lossless ? metadata.png[metadata.png.length - 1] : metadata.jpeg[metadata.jpeg.length - 1];
 
   return `<picture>
     ${Object.values(metadata_dark)
