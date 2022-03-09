@@ -5,6 +5,8 @@ eleventyNavigation:
   order: 7
 ---
 
+[Make sure to have fabric api](../download-mods/#fabric)
+
 ## Why this
 
 Once opon a time, OF was the best way to make your game better. Things changed.
