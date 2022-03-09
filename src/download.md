@@ -11,7 +11,7 @@ hero:
   <div class="card">
     <h1>Windows</h1>
     <p><a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Download (Portable)</a>
-    (<a href="https://packages.polymc.org/latest/win32/win32.zip.sha256">SHA256</a>) (<a href="{{ '/wiki/installing/windows/' | url }}">Troubleshoot</a>)
+    (<a href="https://packages.polymc.org/latest/win32/win32.zip.sha256">SHA256</a>) (<a href="{{ '/wiki/installing-polymc' | url }}">Troubleshoot</a>)
     </p>
     <details>
       <summary>
