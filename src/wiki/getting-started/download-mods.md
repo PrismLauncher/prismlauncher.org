@@ -14,7 +14,7 @@ Once you hvae picked your modloader go to the Mods tab on the left and select **
 
 After you choose your mod provider you can search or browse for your desired mods. Click select mod for download to add it to your download queue from which once you press ok it will be downloaded.
 
-##Fabric
+## Fabric
 
 If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is almost universally **required** for all Fabric mods.
 
