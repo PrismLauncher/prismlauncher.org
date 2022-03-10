@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Installing
+  parent: Linux
   key: Gentoo
 --- 
 ### <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo

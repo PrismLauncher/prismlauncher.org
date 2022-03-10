@@ -99,7 +99,7 @@ header > .container {
   flex-direction: column;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 64em) {
   nav {
     justify-content: space-between;
   }

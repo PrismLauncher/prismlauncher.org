@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Installing
+  parent: Linux
   key: Arch / Manjaro
 --- 
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro

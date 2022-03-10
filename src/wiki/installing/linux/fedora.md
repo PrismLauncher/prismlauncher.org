@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Installing
+  parent: Linux
   key: Fedora
 --- 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora

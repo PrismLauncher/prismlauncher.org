@@ -1,50 +1,84 @@
-.wiki-content {
-  margin-bottom: 1em;
+.wiki-toc {
+  font-size: 1rem; /* Reset */
   flex: 1;
 }
 
-.wiki-toc {
-  background-color: var(--accent);
-  padding: 1em;
-  width: 15em;
+.wiki-content {
+  width: 85%;
 }
 
-.wiki-toc ul {
+.wiki-toc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 0 2.5em;
+  list-style: none;
+}
+.wiki-toc-list li {
+  line-height: 1.466666666667; /* 22px /15 */
+}
+/* Nested lists */
+.wiki-toc-list ul {
+  padding: 0 0 0.75em 0;
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-.wiki-category {
-  margin-bottom: 1em;
+/* Menus nested 2 or more deep */
+.wiki-toc-list ul ul {
+  padding-bottom: 0;
+  padding-left: 0.625rem; /* 10px /16 */
 }
 
-.wiki-category > a {
-  font-size: 1.2em;
-  font-weight: 700;
-  font-family: Heebo, sans-serif;
+/* Hide inactive menus 3 or more deep */
+.wiki-toc-list
+  ul
+  ul
+  > li:not(.wiki-toc-active)
+  > ul
+  > li:not(.wiki-toc-active) {
+  display: none;
+}
+
+/* List items */
+.wiki-toc-list a {
+  padding: 0.15em 0.25em;
+  display: block;
+}
+
+.wiki-toc-list a:not(:hover) {
   text-decoration: none;
 }
-
-.wiki-category-active > a {
-  text-decoration: underline;
+.wiki-toc-list li {
+  margin: 0;
+  padding: 0;
 }
-
-.wiki-item {
-  border-left: var(--primary) 0.25em solid;
-  padding: 0.5em;
+.wiki-toc-list > li {
+  flex-grow: 1;
+  flex-basis: 14.375rem; /* 230px /16 */
 }
-
-.wiki-item > a[href] {
-  text-decoration: none;
+/* Top level links */
+.wiki-toc-list > li > a {
   color: var(--primary-text);
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.25em; /* 4px /16 */
 }
 
-.wiki-item-active {
-  text-decoration: underline;
+/* Active links */
+.wiki-toc-list li.wiki-toc-active > a {
+  background-color: var(--accent);
 }
 
-.wiki-category > a:hover,
-.wiki-item:hover {
-  text-decoration: underline;
+/* Show only active nested lists */
+.wiki-toc-list ul.wiki-toc-active,
+.wiki-toc-list li.wiki-toc-active > ul {
+  display: block;
+}
+
+/* Footer catgory navigation */
+.wiki-cat-list-active {
+  font-weight: 600;
 }

@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: Steam Deck
-  parent: Installing
+  parent: Linux
   order: 6
 ---
 # <img src="https://www.vectorlogo.zone/logos/steampowered/steampowered-icon.svg" height="20"/> Steam Deck / SteamOS

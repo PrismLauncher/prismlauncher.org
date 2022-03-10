@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Installing
+  parent: Linux
   key: Ubuntu / Debian
 --- 
 # <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu

@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Installing
+  parent: Linux
   key: NixOS
 --- 
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
