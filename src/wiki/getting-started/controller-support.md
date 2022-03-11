@@ -46,7 +46,7 @@ This is likely because the 1.18 version of the mod does not claim to support Min
 
 ### For Minecraft Versions 1.12.2 to 1.18
 
-It can be be installed using PolyMC's mod downloader funtion from the **CurseForge** service.
+It can be be installed using PolyMC's mod downloader function from the **CurseForge** service.
 
 Once installed, you may now launch your instance and find that the mod should begin working immediately.
 
