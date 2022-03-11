@@ -29,22 +29,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: "Inter", -apple-system, system-ui, sans-serif;
   color: var(--primary-text);
   background-color: var(--background);
 }
 
 * {
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Heebo, sans-serif;
 }
 
 p:last-child {
@@ -187,7 +178,7 @@ code {
   margin: 0.25em;
   list-style: none;
   font-size: 1.5em;
-  font-family: Heebo, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   background-color: var(--primary);
   background-image: var(--grad-primary);
@@ -261,7 +252,6 @@ code {
 
 .postlist-link {
   font-size: 1.2em;
-  font-family: Heebo, sans-serif;
   padding-left: 0.25em;
   padding-right: 1em;
   text-underline-position: from-font;
@@ -270,7 +260,7 @@ code {
 }
 
 .postlist-item-active .postlist-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .postlist-description {
@@ -331,7 +321,6 @@ a[href].post-tag:focus {
 
 /* Direct Links / Markdown Headers */
 .direct-link {
-  font-family: sans-serif;
   text-decoration: none;
   font-style: normal;
   margin-left: .1em;

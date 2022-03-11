@@ -8,18 +8,9 @@ header:after {
   clear: both;
 }
 
-.home[href] {
+.home {
   color: var(--primary-text);
-  display: flex;
-  align-items: center;
-  font-family: Heebo, sans-serif;
-  font-size: 1.75em;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.home svg {
-  height: 2em;
+  height: 3.5em;
 }
 
 .home :link:not(:hover) {

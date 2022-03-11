@@ -80,7 +80,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy({
-    "node_modules/@fontsource/heebo": "assets/fonts/heebo",
+    "node_modules/@fontsource/josefin-sans": "assets/fonts/josefin-sans",
+    "node_modules/@fontsource/inter": "assets/fonts/inter",
   });
 
   // Add plugins
