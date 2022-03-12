@@ -22,6 +22,7 @@ You can [read more about that here](/news/moving-on).
 - Added MSA-Client-ID override in UI by @Scrumplex in #161
 - Added missing tooltip for instance export in #176
 - Added MSA Client ID change detection and prompt by @Scrumplex in #180
+- Added Matrix space link by @dada513 in #243
 
 ### Changed
 - Default to the system locale on first startup by @oynqr in #52
