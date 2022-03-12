@@ -17,7 +17,7 @@ You can [read more about that here](/news/moving-on).
 - New `Open page & copy code` button in MSA login dialog by @Scrumplex  in #88
 - Added StartupWMClass to .desktop file so DEs can behave by @danielhuang in #95
 - Added PolyMC news by @dada513 in #151
-- Added CurseForge and Modrinth mod downloader by @timoreo22 in #64 #129 #183 #193 #205 #207 and @flowln in #221
+- Added CurseForge and Modrinth mod downloader by @timoreo22 in #64 #129 #183 #205 #207 and @flowln in #193 #221
 - New CC BY-NC-SA 4.0 license for PolyMC logos and branding by @ZekeSmith in #149
 - Added MSA-Client-ID override in UI by @Scrumplex in #161
 - Added missing tooltip for instance export in #176
