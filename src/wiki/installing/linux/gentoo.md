@@ -25,4 +25,4 @@ sudo tee -a /etc/portage/package.accept_keywords <<< "=games-action/polymc-9999 
 
 The USE flags currently available are:
 - debug: Enable debug output, useful for development and troubleshooting
-- xrandr: Minecraft <= 1.12.2 need this to work properly (See [this](https://github.com/PolyMC/PolyMC/issues/227))
+- xrandr: Minecraft <= 1.12.2 need this to work properly (See [this issue](https://github.com/PolyMC/PolyMC/issues/227))
