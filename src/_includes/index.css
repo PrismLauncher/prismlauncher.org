@@ -177,8 +177,9 @@ code {
   padding: 0.5em 1.5em;
   margin: 0.25em;
   list-style: none;
-  font-size: 1.5em;
-  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25em;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   text-decoration: none;
   background-color: var(--primary);
   background-image: var(--grad-primary);
