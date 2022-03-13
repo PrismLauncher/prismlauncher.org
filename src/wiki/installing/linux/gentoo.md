@@ -5,21 +5,22 @@ eleventyNavigation:
 --- 
 ### <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
-A Gentoo ebuild is available in the [flowln](https://gitlab.com/flowln/flowln-overlay) overlay, named `games-action/polymc`.
+Gentoo ebuilds are available in the [polymc-gentoo](https://gitlab.com/flowln/polymc-gentoo) overlay, named `games-action/polymc`. If you encounter any problems with those, please open an issue on that repository first, since it is maintained by third-parties!
 
-```
+To install PolyMC, do the following:
+```bash
 # May require root access
 
-echo "[flowln]
-location = /var/db/repos/flowln
+echo "[polymc]
+location = /var/db/repos/polymc
 sync-type = git
-sync-uri = https://gitlab.com/flowln/flowln-overlay.git" > /etc/portage/repos.conf/flowln.conf
+sync-uri = https://gitlab.com/flowln/polymc-gentoo.git" > /etc/portage/repos.conf/polymc.conf
 
-emerge --sync flowln
+emerge --sync polymc
 
 emerge polymc
 
-# to use latest git version:
+# To use the latest git version:
 sudo tee -a /etc/portage/package.accept_keywords <<< "=games-action/polymc-9999 **"
 ```
 
