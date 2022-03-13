@@ -62,7 +62,7 @@
 /* Top level links */
 .wiki-toc-list > li > a {
   color: var(--primary-text);
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 1px solid #ddd;
   margin-bottom: 0.25em; /* 4px /16 */
 }
@@ -80,5 +80,5 @@
 
 /* Footer catgory navigation */
 .wiki-cat-list-active {
-  font-weight: 600;
+  font-weight: 700;
 }
