@@ -9,9 +9,10 @@ eleventyNavigation:
 # Contents
 
 - [Getting the source](#getting-the-source)
-- [Linux](#linux)
+- [Linux and FreeBSD](#linux-and-freebsd)
 - [Windows](#windows)
 - [macOS](#macos)
+- [OpenBSD](#openbsd)
 
 # Getting the source
 
