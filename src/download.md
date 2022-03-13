@@ -46,6 +46,7 @@ scoop install polymc</code></pre>
   </div>
   <div class="card">
     <h1>BSD</h1>
+    <p>bsd packages are managed by a third party</p>
     <p><a class="button" href="{{ '/wiki/installing/free-bsd/' | url }}">FreeBSD</a></p>
     <p><a class="button" href="{{ '/wiki/installing/open-bsd/' | url }}">OpenBSD</a></p>
   </div>
