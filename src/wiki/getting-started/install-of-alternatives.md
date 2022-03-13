@@ -36,3 +36,9 @@ We can't list every mod here, but you can find a big list of optifine alternativ
 If you don't want to search and install these mods manually, the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack is for you!
 
 See the MultiMC/MultiMC (auto-update) guide to install it, they work on PolyMC too.
+
+# Note about Forge
+
+Unlike on fabric, unofficial forge ports of fabric optimization mods are low-quality and generally not recommended (except [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner) and [LazyDFU Forge](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge)
+
+Except these mods, and other mods like [EntityCulling](https://www.curseforge.com/minecraft/mc-mods/entityculling), [FerriteCore for Forge](https://www.curseforge.com/minecraft/mc-mods/ferritecore) and [Starlight for Forge](https://modrinth.com/mod/starlight-forge), you should prefer OptiFine on forge.
