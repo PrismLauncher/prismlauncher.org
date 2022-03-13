@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Linux
-  key: Fedora
+  key: Fedora / OpenSUSE
 --- 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
