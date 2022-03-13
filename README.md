@@ -8,5 +8,3 @@ https://polymc.org
 1. `npm install`
 
 2. `npm run serve`
-
-3. Profit! <sub>(if you want)</sub>
