@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 # Downloading Mods
 
-Make sure you know how to [Create an Instance](../create-instance) before attempting to download modpacks.
+Make sure you know how to [Create an Instance](../create-instance) before attempting to download mods.
 
 Inside the **Edit Instance** menu select **version** from here you will need to decide what mod loader you want to use. Fabric and Forge are the most popular with Forge having the most mods. fabric and forge mods are not cross compatible so choosing between them will change your selection of mods.
 
