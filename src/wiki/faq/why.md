@@ -6,6 +6,10 @@ eleventyNavigation:
 --- 
 
 # Why was this fork made?
+
+<div class="nofification">
+This page is outdated, [Moving on](/news/moving-on) contains more up to date infomation
+</div>
 The maintainer of MultiMC has been hostile to other people packaging it, and has taken an anti-user approach removing features from the software to make it harder to package for a system install. Therefore, this project was made to allow anyone to distribute this as they please, without needless obstructions that the MultiMC maintainer seems to deem necessary. Additionally, this allows for full-system installs, building from source (and you will be allowed support for your own builds), and for any redistribution you like--packages, binaries, whatever.
 
 We simply do not agree with the MultiMC maintainer's attitude, and believe the source code should be provided not only for contribution purposes, but **for the user's freedom.** We believe that no program is truly "open source" if it is not Free Software. The maintainer only open-sourced MultiMC because he wanted free code contributions. To quote him:
