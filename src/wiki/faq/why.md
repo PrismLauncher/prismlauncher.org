@@ -8,6 +8,7 @@ eleventyNavigation:
 # Why was this fork made?
 
 <div class="notification is-info">
+  
 This page is outdated, for more up to date infomation: [Moving on](/news/moving-on)
 </div>
 
