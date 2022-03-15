@@ -177,7 +177,7 @@ code {
   padding: 0.5em 1.5em;
   margin: 0.25em;
   list-style: none;
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -203,6 +203,10 @@ code {
 
 .button {
   color: white;
+}
+
+.button.is-big {
+  font-size: 1.5em;
 }
 
 .button.secondary {
