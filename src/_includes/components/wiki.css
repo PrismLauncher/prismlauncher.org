@@ -107,6 +107,14 @@
   line-height: 1.8;
 }
 
+.wiki-tag:hover a {
+  text-decoration: underline;
+}
+
+.wiki-tag-active a {
+  font-weight: 700;
+}
+
 @media (min-width: 64em) {
   .wiki-content{
     width: 85%

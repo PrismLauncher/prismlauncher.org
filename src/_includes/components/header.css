@@ -92,10 +92,6 @@ header > .container {
     justify-content: space-between;
   }
 
-  .nav {
-    margin-left: 1em;
-  }
-
   .navbar {
     flex-direction: row;
   }
