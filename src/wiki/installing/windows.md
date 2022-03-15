@@ -23,9 +23,17 @@ If you wish to have a shortcut to PolyMC for use on your desktop for example, yo
 
 You may now **move** or **copy** the created shortcut to any desired location on your system.
 
-### A Note on Legacy Windows Support (Windows 7/8/8.1)
+## Issues
+
+If you encounter any problems, **don't worry**, we have a guide that goes over some resolutions to the more common ones.
+
+Please click [here](../../../getting-started/installing-polymc) for more.
+
+
+### A Note on Legacy Windows Support (Windows 7, 8, 8.1)
 
 While it may be **possible** to install PolyMC on these legacy operating systems, it is **not recommended, nor is it officially supported**. We may or may not choose to provide support for any issues you encounter.
+
 
 
 
