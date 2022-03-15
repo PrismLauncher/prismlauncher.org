@@ -7,6 +7,7 @@ eleventyNavigation:
 
 # Using PolyMC via the Command Line
 
+```
 Usage: polymc [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
 
 Options & Switches:
@@ -18,6 +19,7 @@ Options & Switches:
   -a, --profile <profile> Use the account specified by its profile name (only valid in combination with --launch)
   --alive               Write a small 'live.check' file after the launcher starts
   -I, --import <import> Import instance from specified zip (local path or URL)
+```
   
   ## What is the instance ID where do I find it?
   
