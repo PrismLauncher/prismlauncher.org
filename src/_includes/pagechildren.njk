@@ -1,0 +1,7 @@
+{% if eleventyNavigation and eleventyNavigation.key %}
+{%- set navKey = eleventyNavigation.key -%}
+{%- set otherPages = collections.wiki | eleventyNavigation(navKey) -%}
+{% if otherPages.length > 0 %}
+{{ otherPages | eleventyNavigationToHtml | safe }}
+{% endif %}
+{% endif %}
