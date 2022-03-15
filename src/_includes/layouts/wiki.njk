@@ -19,7 +19,7 @@ templateClass: tmpl-wiki
   {% if otherPages.length > 0 %}
   <hr>
   <h3>{% if eleventyNavigation.parent %}Pages in {% endif %}{{ navKey }}:</h3>
-  {{ otherPages | eleventyNavigationToHtml| safe }}
+  {{ otherPages | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'inlinelist inlinelist-no-nest', listItemClass: 'wiki-tag', activeListItemClass: 'elv-cat-list-active' }) | safe }}
   {% endif %}
 
   {% endif %}

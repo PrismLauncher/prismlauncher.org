@@ -53,7 +53,7 @@ nav {
   margin: 0.5em;
 }
 
-.nav-item a[href] {
+.nav-item a {
   color: var(--primary-text);
   text-decoration: none;
 }

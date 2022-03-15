@@ -3,10 +3,6 @@
   flex: 1;
 }
 
-.wiki-content {
-  width: 85%;
-}
-
 .wiki-toc-list {
   display: flex;
   flex-wrap: wrap;
@@ -81,4 +77,40 @@
 /* Footer catgory navigation */
 .wiki-cat-list-active {
   font-weight: 700;
+}
+
+.inlinelist {
+	padding: 0;
+}
+
+.inlinelist-no-nest ul,
+.inlinelist-no-nest ol {
+	display: none;
+}
+
+.wiki-tag {
+  display: inline;
+}
+
+.wiki-tag a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  /* 12px /16 */
+  padding: 0.08333333333333em 0.3333333333333em;
+  margin: 0.5em;
+  color: var(--primary-text);
+  border: 1px solid var(--accent);
+  border-radius: 0.25em;
+  /* 3px /12 */
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+@media (min-width: 64em) {
+  .wiki-content{
+    width: 85%
+  }
 }
