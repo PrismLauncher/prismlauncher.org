@@ -5,42 +5,21 @@ eleventyNavigation:
   order: 1
 --- 
 
-# Why was this fork made?
+# Why did our community choose to fork?
 
 <div class="notification is-info">
-  
-This page has been marked as inaccurate for more accurate information refer to: [Moving on](/news/moving-on)
+
+For some more insight, please refer to: [Moving on](/news/moving-on)
 </div>
 
-The maintainer of MultiMC has been hostile to other people packaging it, and has taken an anti-user approach removing features from the software to make it harder to package for a system install. Therefore, this project was made to allow anyone to distribute this as they please, without needless obstructions that the MultiMC maintainer seems to deem necessary. Additionally, this allows for full-system installs, building from source (and you will be allowed support for your own builds), and for any redistribution you like--packages, binaries, whatever.
+PolyMC was forked from the MultiMC project in late 2021. This was primarily a result of continuing disagreements between a portion of the community, and MultiMC’s lead maintainer, mainly surrounding the topics of 3rd party packaging and re-distribution.
 
-We simply do not agree with the MultiMC maintainer's attitude, and believe the source code should be provided not only for contribution purposes, but **for the user's freedom.** We believe that no program is truly "open source" if it is not Free Software. The maintainer only open-sourced MultiMC because he wanted free code contributions. To quote him:
+Many users, especially across Linux, and other Unix-like platforms, which lacked officially built packages were eventually unable to even use newer self-built versions MultiMC. This was due to the launcher’s source code not building with the necessary API keys for the successful authentication of Microsoft Accounts.
 
-> The source is only provided for the purpose of collaboration.
+The philosophy behind the PolyMC project, and wider community as a whole, is to not take a hostile stance on those who wish to use, modify, or re-distribute our software in a way that works for them. In-keeping with these values, the source code of the launcher is distributed under the GNU General Public License Version 3.
 
-<img src="https://file.swurl.xyz/29645c5bdb8b0fd8/fingerprint.png" alt="Build fingerprinting to prevent anyone from using other methods of packaging.">
+## What does this mean for the future?
 
-<img src="https://file.swurl.xyz/1a85d58df6535fcb/aur_insults.png" alt="resorts to insults on people who try to make the package more free.">
+PolyMC looks to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native as well as Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.
 
-<img src="https://file.swurl.xyz/d18d1ce659a9656f/meta.png" alt="Explicitly breaking metadata to harm the end user's experience.">
-
-<img src="https://file.swurl.xyz/36802e45e55534b3/anti_free_software.png" alt="Anti-Free Software approach. Maintainer also works for Microsoft and has to make deals with them.">
-
-<img src="https://file.swurl.xyz/2a32f733b3f0a2dc/breaking.png" alt="Maintainer implies a potential inbuilt breakage of multimc-bin in the future.">
-
-The maintainer also blacklisted me from forking the repository after I made this fork.
-
-<img src="https://file.swurl.xyz/48c8cbb77abfc28e/fork.png" alt="blacklisted from repo">
-
-This project is **not** endorsed by MultiMC. The maintainer does not like anyone forking, let alone people forking for the purpose of user freedom, and has previously stated he disapproves of this fork.
-
-**UPDATE**: And now, it's confirmed. MultiMC has blocked PolyMC from accessing meta.
-
-<img src="https://file.swurl.xyz/33f9bfe731a5cc63/meta_blocked.png" alt="blocked from meta">
-
-Griffin on Matrix confirmed this, with a `curl` and PolyMC's user agent:
-
-```
-C:\Users\tsira>curl -A "PolyMC/1.0.5" https://meta.multimc.org/v1/index.json
-error code: 1020
-```
+Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, PolyMC is already shaping up to be quite the opposite. This can already be seen in our recent 1.1.0 release, which brings our new in-launcher mod installer. And this, is just the first of many new changes and features to come.
