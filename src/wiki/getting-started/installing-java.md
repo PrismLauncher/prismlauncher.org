@@ -7,15 +7,17 @@ eleventyNavigation:
 
 # Installing Java
 
-Java is required to be able to run minecraft as such until 1.2.0 is released you will need to manually install java to run minecraft under PolyMC.
+Java is **required** in order to run Minecraft, as such, until PolyMC 1.2.0 is released, you **will** need to **manually** install Java to run Minecraft with PolyMC.
 
-https://adoptium.net/ is what we currently reccomend to install the latest versions of java. Minecraft 1.17 and upwards will require Temurin 17 (LTS) anything below will require Temurin 8 (LTS).
+Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)** while anything below will require **Temurin 8 (LTS).**
 
 * 1.17+ **Temurin 17 (LTS)**
 * Pre-classic - 1.16.5 **Temurin 8 (LTS)**
 
-It is reccomended to just install both if you are unsure.
+If you aren't sure which version you will need, **it is recommended to just install both.**
 
 ## Using Java
-once downloaded polymc will be able to detect your java installs in the first time wizard. if you installed Java after already completing the first time wizard you can access your Java configuration through 
+Once you have downloaded and **installed** Java, PolyMC will be able to detect it during the first time set-up wizard. 
+
+If you installed Java after already completing the first time wizard, you can access your Java configuration through 
 > Settings > Java > Java Runtime > Auto-detect...
