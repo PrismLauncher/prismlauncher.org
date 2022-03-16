@@ -27,7 +27,7 @@ You may now **move** or **copy** the created shortcut to any desired location on
 
 If you encounter any problems, **don't worry**, we have a guide that goes over some resolutions to the more common ones.
 
-Please click [here](../../../getting-started/installing-polymc) for more.
+Please click [here](../../getting-started/installing-polymc) for more.
 
 
 ### A Note on Legacy Windows Support (Windows 7, 8, 8.1)
