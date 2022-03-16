@@ -19,7 +19,7 @@ For all available system-specific installation guides, please refer to the [Inst
 
 ### How do I open a .zip file?
 
-Windows by default can "open" .zip archive files, but in order to use PolyMC, you will want to **extract** it instead.
+Windows by default can "open" **.zip** archive files, but in order to use PolyMC, you will want to **extract** it instead.
 
 For more detailed instructions, please see our dedicated [Windows](../../installing/windows) install guide.
 
