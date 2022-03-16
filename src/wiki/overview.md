@@ -5,11 +5,10 @@ eleventyNavigation:
   order: 1
 --- 
 
-# Welcome to the PolyMC wiki
+# Welcome to the PolyMC Wiki!
 
-If your new to polymc and not sure where to start go to [Getting Started](./getting-started).
+If you're new to PolyMC and not quite sure where to begin, please go to [Getting Started](./getting-started).
 
-Polymc is an Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. 
-Focused on user freedom and free redistributability.
+PolyMC is a free and open source Minecraft launcher forked from the MultiMC project, with the ability to manage multiple accounts, as well as instances, each with their own mods, reasource packs, and more! Our project has a much greater focus on both user-freedom, as well as the incorporation of new and exciting features and functionality.
 
-PolyMC is a opensource fork of MultiMC that adds lots of new functionality and features more packaging. Please do not contact MultiMC regarding PolyMC issues they have made it very clear they do not want to be involved.
+Please **do not** contact the MultiMC team regarding issues related PolyMC.
