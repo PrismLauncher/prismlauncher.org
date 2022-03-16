@@ -24,6 +24,6 @@ Now you should have PolyMC in your Steam Library.
 ## Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized` and `Close PolyMC after game window opens` in the launcher's settings under the `Minecraft` tab.
-- If you want Minecraft to launch without the PolyMC launcher add `-l <instance-id>` in your PolyMC's launch options in steam, find out more about CLI launch options [here](https://polymc.org/wiki/getting-started/command-line-interface/)
+- If you want Minecraft to launch without the PolyMC launcher add `-l <instance-id>` in your PolyMC's launch options in steam, if you use this launch option make sure to disable `Close PolyMC after game window opens` in PolyMC so that it does not when the game is closed, find out more about CLI launch options [here](https://polymc.org/wiki/getting-started/command-line-interface/)
 - Install a mod that enables controller support. See [Controller Support](../../../getting-started/controller-support)
 
