@@ -40,7 +40,7 @@ These issues can be **solved** by installing [this](https://download.microsoft.c
 
 Much like the similar pop-up on Windows, this too is **normal behaviour.**
 
-If you face this obsticle, please open your Mac's **System Preferences** application and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. **Left click** on that option, and then **re-open** the installer.
+If you face this obstacle, please open your Mac's **System Preferences** application and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. **Left click** on that option, and then **re-open** the installer.
 
 With that done, PolyMC should now **install as expected.**
 
