@@ -6,15 +6,10 @@ eleventyNavigation:
 ---
 # <img src="https://www.vectorlogo.zone/logos/steampowered/steampowered-icon.svg" height="20"/> Steam Deck / SteamOS
 
-<details>
-  <summary>Video Tutorials</summary>
+## Video Tutorials
+<iframe width="692" height="389" src="https://www.youtube.com/embed/UTVBqyvFCV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
-  ## Gardiner Bryant | TLG 
-  <iframe width="692" height="389" src="https://www.youtube.com/embed/UTVBqyvFCV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  ## gamingonlinux
-  <iframe width="692" height="389" src="https://www.youtube.com/embed/6E2Enr5S78k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</details>
+<iframe width="692" height="389" src="https://www.youtube.com/embed/6E2Enr5S78k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
 This can be done by searching for `PolyMC` in the Discover software center in *Desktop Mode*.
