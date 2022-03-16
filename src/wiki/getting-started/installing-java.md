@@ -19,5 +19,5 @@ If you aren't sure which version you will need, **it is recommended to just inst
 ## Using Java
 Once you have downloaded and **installed** Java, PolyMC will be able to detect it during the first time set-up wizard. 
 
-If you installed Java after already completing the first time wizard, you can access your Java configuration through 
+If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through 
 > Settings > Java > Java Runtime > Auto-detect...
