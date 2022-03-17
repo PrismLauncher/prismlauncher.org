@@ -7,25 +7,56 @@ eleventyNavigation:
 
 # Installing PolyMC
 
-Installing PolyMC for most systems should be quite straightforward go to [Downloads](/download/) and click on the desired download for your operating system.
+Installing PolyMC on most platforms should be quite straightforward. Head over to our [Downloads](/download/) page, and choose the option that'll work best for your operating system.
 
-## Troubleshoot
+## But, how do I install PolyMC on "X" system?
 
-### I dont know how to open a .zip file?
+For all available system-specific installation guides, please refer to the [Installing](../../installing) section of the Wiki.
 
-Windows by default can "open" zip files but to use PolyMC you will want to make sure to extract it. to extract it right click on the file then select **Extract all...**. This should create a new folder where you extracted from which you can then open and find the polymc.exe file and run that
+# Common Issues
 
-### Windows protected my PC?
+## <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Windows (10, 11)
 
-This is normal behaviour unfortunately due to the nature of Windows app signing polymc has not purchased one yet. We may choose to do so in the future with enough funding. PolyMC is an open source launcher meaning all code can be audited if you would like to check for yourself you can do so [here](https://github.com/PolyMC/PolyMC).
+### How do I open a .zip file?
 
-If you are comfortable and trust PolyMC you can click **More info** then **Run anyway**.
+Windows by default can "open" **.zip** archive files, but in order to use PolyMC, you will want to **extract** it instead.
 
-### I get random OpenSSL errors on Windows. What I can do?
+For more detailed instructions, please see our dedicated [Windows](../../installing/windows) install guide.
 
-Unfortunately there are some issues with the OpenSSL dll at the moment on devbuilds.
-To fix this, install [this](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe)
+### Windows Protected my PC?
 
-### Apple can't verify this is malware?
+This is unfortunately **normal behaviour** due to the nature of the Windows app signing process. PolyMC has yet to purchase a signature, however, with enough funding, we may choose to do so in the future. PolyMC is an **open-source** application. As a result of this, all of the source code is public, and can be audited by any individual or group. If you would like to do so yourself, you can do so [here](https://github.com/PolyMC/PolyMC).
 
-Same as windows, but click close and open again with right-click
+If you are **comfortable** and **trust** PolyMC, then you can **left click** on the **More info** button, and then do the same on the **Run anyway** one too.
+
+### I'm getting random OpenSSL errors on Windows. What can I do?
+
+Unfortunately, there are some issues with the OpenSSL dll at the moment on devbuilds.
+These issues can be **solved** by installing [this](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
+
+## <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
+
+### macOS cannot verify that this app is free from malware?
+
+Much like the similar pop-up on Windows, this too is **normal behaviour.**
+
+If you face this obstacle, please open your Mac's **System Preferences** application and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. **Left click** on that option, and then **re-open** the installer.
+
+With that done, PolyMC should now **install as expected.**
+
+## <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Linux
+
+### How do I install the PolyMC Flatpak on my Linux system?
+
+Detailed instructions on setting-up your system to install Flatpak applications from Flathub, can be found [here](https://flatpak.org/setup/).
+
+### How do I open the PolyMC AppImage on my Linux system?
+
+Depending on your system, you may need to grant the PolyMC AppImage **executable** permissions.
+
+You can do this by opening your system's terminal application, **making sure to navigate to the location of the downloaded AppImage,** before granting the execute permission using this command:
+
+```
+sudo chmod +x PolyMC-Linux-1.1.0-x86_64.appimage
+```
+**Please note,** that depending on the version of PolyMC that you have downloaded, you may have to **change the version number** in the command above.

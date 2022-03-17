@@ -7,7 +7,7 @@ eleventyNavigation:
 
 ## Installing PolyMC's Official Portable Archive
 
-While installing this version of PolyMC on **Windows** should be relatively simple, you will need to know how to extract a **.Zip** archive file.
+While installing this version of PolyMC on **Windows** should be relatively simple, you will need to know how to extract a **.zip** archive file.
 
 To begin, navigate to our downloads page and choose the "Download (Portable)" under the **Windows** heading.
 
@@ -27,7 +27,7 @@ You may now **move** or **copy** the created shortcut to any desired location on
 
 If you encounter any problems, **don't worry**, we have a guide that goes over some resolutions to the more common ones.
 
-Please click [here](../../../getting-started/installing-polymc) for more.
+Please click [here](../../getting-started/installing-polymc) for more.
 
 
 ### A Note on Legacy Windows Support (Windows 7, 8, 8.1)
