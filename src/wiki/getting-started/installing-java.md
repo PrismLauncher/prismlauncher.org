@@ -11,8 +11,10 @@ Java is **required** in order to run Minecraft, as such, until PolyMC 1.2.0 is r
 
 Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)** while anything below will require **Temurin 8 (LTS).**
 
-* 1.17+ **Temurin 17 (LTS)**
-* Pre-classic - 1.16.5 **Temurin 8 (LTS)**
+* 1.17 or newer **Temurin 17 (LTS)**
+* 1.16.5 or lower **Temurin 8 (LTS)**
+
+NOTE: you can use the openjdk build you want, like [Azul Zulu](https://www.azul.com/downloads/?package=jdk#download-openjdk), they'll work good the same.
 
 If you aren't sure which version you will need, **it is recommended to just install both.**
 
