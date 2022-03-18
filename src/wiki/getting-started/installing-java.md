@@ -14,7 +14,7 @@ Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to ins
 * 1.17 or newer **Temurin 17 (LTS)**
 * 1.16.5 or lower **Temurin 8 (LTS)**
 
-NOTE: you can use the openjdk build you want, like [Azul Zulu](https://www.azul.com/downloads/?package=jdk#download-openjdk), they'll work good the same.
+NOTE: You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jdk#download-openjdk) is a popular alternative to Temurin, which will work as well.
 
 If you aren't sure which version you will need, **it is recommended to just install both.**
 
