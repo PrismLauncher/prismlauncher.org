@@ -258,7 +258,7 @@ zlib1.dll
 2. Once that is open, change into your user directory, and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
 3. Make a build directory, and change directory to the directory and do `cmake -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=C:\Path\that\makes\sense\for\you`. By default, it will install to C:\Program Files (x86), which you might not want, if you want a local installation. If you want to install it to that directory, make sure to run the command window as administrator.
 4. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
-5. Do `mingw32-make -j$(nproc)`, where X is the number of cores your CPU has plus one.
+5. Do `mingw32-make -jX`, where X is the number of cores your CPU has plus one.
 6. Now to wait for it to compile. This could take some time. Hopefully it compiles properly.
 7. Run the command `mingw32-make install`, and it should install PolyMC, to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 8. In most cases, whenever compiling, the OpenSSL dll's aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `copy C:\OpenSSL-Win32\*.dll C:\Where\you\installed\PolyMC\to`. This should copy the required OpenSSL dll's to log in.
