@@ -44,7 +44,7 @@ If you face this obstacle, please open your Mac's **System Preferences** applica
 
 With that done, PolyMC should now **install as expected.**
 
-There's actually a simpler way to do this. **Right-click** PolyMC.app, click **Open**, them click **Close**, and then **right-click** again and click **Open**
+There's actually a simpler way to do this. **Right-click** PolyMC.app, click **Open**, then click **Close**, and then **right-click** again and click **Open**
  
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Linux
 
