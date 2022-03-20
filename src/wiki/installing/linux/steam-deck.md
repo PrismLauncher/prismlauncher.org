@@ -49,6 +49,6 @@ Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to 
 ## Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized` and `Close PolyMC after game window opens` in the launcher's settings under the `Minecraft` tab.
-- If you want Minecraft to launch without the PolyMC launcher add `-l <instance-id>` in the launch options for you PolyMC Non-Steam Game. If you use this launch option make sure that `Close PolyMC after game window opens` is disabled in the launcher's settings so that the launcher does not show up when the game is closed. See [CLI launch options](../../../getting-started/command-line-interface/)
+- If you want Minecraft to launch without the PolyMC launcher add `-l <instance-id>` in the launch options for your PolyMC Non-Steam Game. If you use this launch option make sure that `Close PolyMC after game window opens` is disabled in the launcher's settings so that the launcher does not show up when the game is closed. See [CLI launch options](../../../getting-started/command-line-interface/)
 - Install a mod that enables controller support. See [Controller Support](../../../getting-started/controller-support)
 
