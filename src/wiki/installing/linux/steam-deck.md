@@ -48,21 +48,22 @@ Then do the same thing for `Set Custom Logo` and select the logo.
 
 Additionally you can change the **cover-art** (also called grid in SteamGridDB).
 There are two types of cover-art, one is the normal vertical one, and the other is the wider one.
+
 To change these, you should first start PolyMC through Steam and close it again.
 This way you can now head over to your library and right click PolyMC in the `RECENT GAMES` shelf.
 It should be a **wide cover** as it's the last-played game.
+Now right click the cover and select `Set custom artwork` under `Manage`.
 
 <img src="/img/Steam_Deck_Cover_wide.png" height="360">
 
-Now right click the cover and select `Set custom artwork` under `Manage`.
 Navigate to where you have saved the images and select the **wide cover-art**.
 
 Then start a different game and close it, so that PolyMC is now the second game in the shelf (with a *vertical cover*).
+Now you can, again, right click the cover and select `Set custom artwork` under `Manage`.
 <img src="/img/Steam_Deck_Cover_vertical.png" height="360">
-Now you can again right click the cover and select `Set custom artwork` under `Manage`.
 Navigate to where you have saved the images and select the **vertical cover-art**.
 
-Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the image you want. 
+Additionally you can add an icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the image you want. 
 
 ## Tips and Tricks
 
