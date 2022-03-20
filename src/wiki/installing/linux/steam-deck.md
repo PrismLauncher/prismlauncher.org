@@ -35,14 +35,14 @@ First you will need to save the following images in your steam deck, i just save
 - [Background](https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/11/Minecraft-Caves-Cliffs-Part-II-Available-Now_JPG.jpg) save as jpg
 - [Icon](https://theme.zdassets.com/theme_assets/2155033/bc270c23058d513de5124ffea6bf9199af7a2370.png) save as png
 
-First we will set the background and the icon, in desktop mode go to your steam library and select the PolyMC Non-Steam Game, right click at the top and select `Set Custom Background`
+Then we will set the background and the icon, in desktop mode go to your steam library and select the PolyMC Non-Steam Game, right click at the top and select `Set Custom Background`
 
 <img src="https://i.imgur.com/jaqjRob.png" width="480" height="253.25"/>
 
-Then navigate to where you have saved the images and select the background, i saved them in my Downloads folder so that is in /home/deck/Downloads.
+Now navigate to where you have saved the images and select the background, i saved them in my Downloads folder so that is in /home/deck/Downloads.
 Then do the same thing for `Set Custom Logo` and select the logo.
 
-Now in gaming mode you will see the new artwork for the PolyMC Non-Steam Game.
+In gaming mode you will now see the new artwork for the PolyMC Non-Steam Game.
 
 Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the Icon png and you are done! 
 
