@@ -44,7 +44,7 @@ Then do the same thing for `Set Custom Logo` and select the logo.
 
 Now in gaming mode you will see the new artwork for the PolyMC Non-Steam Game.
 
-Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties` at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the Icon png and you are done! 
+Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the Icon png and you are done! 
 
 ## Tips and Tricks
 
