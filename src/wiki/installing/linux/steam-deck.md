@@ -25,26 +25,44 @@ Now you should have PolyMC in your Steam Library.
 
 Now that you have PolyMC in your Steam Library you might want to change the artwork of your PolyMC Non-Steam Game so that it looks better in your library.
 
-Final Result
+### Examples
 
-<img src="https://i.imgur.com/WXFkxCw.png" width="480" height="268.75"/>
+<img src="/img/Steam_Deck_PolyMC_1.jpg" height="240">
+<img src="/img/Steam_Deck_PolyMC_2.jpg" height="240">
+<img src="/img/Steam_Deck_PolyMC_3.jpg" height="240">
+<img src="https://i.imgur.com/WXFkxCw.png" height="240">
 
-First you will need to save the following images in your steam deck, i just save them in my Downloads folder.
+### Setting up Artwork
 
-- [Logo](https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg) save as jpg
-- [Background](https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/11/Minecraft-Caves-Cliffs-Part-II-Available-Now_JPG.jpg) save as jpg
-- [Icon](https://theme.zdassets.com/theme_assets/2155033/bc270c23058d513de5124ffea6bf9199af7a2370.png) save as png
+You first need to find artwork for PolyMC.
+One option is to check out [PolyMC's SteamGridDB page](https://www.steamgriddb.com/game/5321639) for our official artwork, as well as community-provided artwork.
+Alternatively there also is a [SteamGridDB page of Minecraft](https://www.steamgriddb.com/game/38365).
+In any case, select the artwork you like and download them onto your Steam Deck.
 
-Then we will set the background and the icon, in desktop mode go to your steam library and select the PolyMC Non-Steam Game, right click at the top and select `Set Custom Background`
+First we will set the **background** (also called hero in SteamGridDB) and the **logo**, in desktop mode go to your steam library and select the PolyMC Non-Steam Game, right click at the top and select `Set Custom Background`.
 
-<img src="https://i.imgur.com/jaqjRob.png" width="480" height="253.25"/>
+<img src="https://i.imgur.com/jaqjRob.png" height="360">
 
-Now navigate to where you have saved the images and select the background, i saved them in my Downloads folder so that is in /home/deck/Downloads.
+Now navigate to where you have saved the images and select the background. I saved them in my Downloads folder, which will be at /home/deck/Downloads.
 Then do the same thing for `Set Custom Logo` and select the logo.
 
-In gaming mode you will now see the new artwork for the PolyMC Non-Steam Game.
+Additionally you can change the **cover-art** (also called grid in SteamGridDB).
+There are two types of cover-art, one is the normal vertical one, and the other is the wider one.
+To change these, you should first start PolyMC through Steam and close it again.
+This way you can now head over to your library and right click PolyMC in the `RECENT GAMES` shelf.
+It should be a **wide cover** as it's the last-played game.
 
-Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the Icon png and you are done! 
+<img src="/img/Steam_Deck_Cover_wide.png" height="360">
+
+Now right click the cover and select `Set custom artwork` under `Manage`.
+Navigate to where you have saved the images and select the **wide cover-art**.
+
+Then start a different game and close it, so that PolyMC is now the second game in the shelf (with a *vertical cover*).
+<img src="/img/Steam_Deck_Cover_vertical.png" height="360">
+Now you can again right click the cover and select `Set custom artwork` under `Manage`.
+Navigate to where you have saved the images and select the **vertical cover-art**.
+
+Additionally you can add an Icon and rename the Non-Steam Game to Minecraft, to do so right click on the PolyMC Non-Steam Game and select `Properties`, at the top you can rename PolyMC to Minecraft and you can change the Icon by clicking the empty square that is to the left of the name, select the image you want. 
 
 ## Tips and Tricks
 
