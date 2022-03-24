@@ -15,7 +15,7 @@ For all available system-specific installation guides, please refer to the [Inst
 
 # Common Issues
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Windows (10, 11)
+## <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Windows (8.1, 10, 11)
 
 ### How do I open a .zip file?
 
@@ -31,8 +31,8 @@ If you are **comfortable** and **trust** PolyMC, then you can **left click** on 
 
 ### I'm getting random OpenSSL errors on Windows. What can I do?
 
-Unfortunately, there are some issues with the OpenSSL dll at the moment on devbuilds.
-These issues can be **solved** by installing [this](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
+Unfortunately, there are some issues with the OpenSSL dll on PolyMC 1.1.0. It's going to be fixed in 1.1.1.
+If you use PolyMC 1.1.0 you can fix these issues installing [vcredist 2010 x86](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
 
