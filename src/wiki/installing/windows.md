@@ -5,11 +5,11 @@ eleventyNavigation:
 ---
 # <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Microsoft Windows
 
-## Installing PolyMC's Official Portable Archive
+## Installing PolyMC's Official Archive
 
 While installing this version of PolyMC on **Windows** should be relatively simple, you will need to know how to extract a **.zip** archive file.
 
-To begin, navigate to our downloads page and choose the "Download (Portable)" under the **Windows** heading.
+To begin, navigate to our downloads page and choose the "Download" (or "Download (Portable)") under the **Windows** heading.
 
 Your browser should ask you if you would prefer to save or open the archive. Please choose a location on your system where you'd like the downloaded file to go, and then select the **save** option.
 
@@ -30,10 +30,10 @@ If you encounter any problems, **don't worry**, we have a guide that goes over s
 Please click [here](../../getting-started/installing-polymc) for more.
 
 
-### A Note on Legacy Windows Support (Windows 7, 8, 8.1)
+### A Note on Legacy Windows Support (Windows 7)
 
-While it may be **possible** to install PolyMC on these legacy operating systems, it is **not recommended, nor is it officially supported**. We may or may not choose to provide support for any issues you encounter.
+While PolyMC currently works on Windows 7, support could break at any time because of dependencies used in building it ([see this](https://www.msys2.org/docs/windows_support/))
 
-
+Anyways you should probably stop using Windows 7, especially when [ESU support will end](https://docs.microsoft.com/en-us/lifecycle/products/windows-7)
 
 
