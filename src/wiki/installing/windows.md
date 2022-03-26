@@ -32,7 +32,12 @@ Please click [here](../../getting-started/installing-polymc) for more.
 
 ### A Note on Legacy Windows Support (Windows 7)
 
-While PolyMC currently works on Windows 7, support could break at any time because of dependencies used in building it ([see this](https://www.msys2.org/docs/windows_support/))
+
+While it may be **possible** to install PolyMC on this legacy operating system, it is **not recommended, nor is it officially supported**. We may or may not choose to provide support for any issues you encounter.
+
+While PolyMC currently works on Windows 7, support could break at any time.
+
+If you want a more technical explanation, it's because of msys2 and cwygin will starting targeting 8.1, that we use in building PolyMC on Windows ([see this](https://www.msys2.org/docs/windows_support/))
 
 Anyways you should probably stop using Windows 7, especially when [ESU support will end](https://docs.microsoft.com/en-us/lifecycle/products/windows-7)
 
