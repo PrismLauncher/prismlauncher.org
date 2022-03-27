@@ -5,7 +5,7 @@ eleventyNavigation:
 --- 
 # Development
 
-If you want to contribute to PolyMC you might find it useful to join our Discord Server or Matrix Space.
+If you would like to contribute to PolyMC, you might find it useful to join our Discord Server or Matrix Space.
 
 ## Building
 
