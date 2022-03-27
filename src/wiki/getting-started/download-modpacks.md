@@ -7,7 +7,8 @@ eleventyNavigation:
 
 # Downloading Modpacks
 
-Similar to [Creating an Instance](../create-instance) downloading a modpack will use the same menu **Add Instance** or *right click > create instance* instead of just selecting your minecraft version you can instead use the side bar to select from:
+Similar to [creating an Instance](../create-instance), downloading a modpack can be done through the **Add Instance** menu. Or alternatively, *right click > create instance* 
+You can now use the sidebar to the left of the window to choose from the following:
 
 * Import from zip
 * ATLauncher
@@ -16,5 +17,7 @@ Similar to [Creating an Instance](../create-instance) downloading a modpack will
 * FTB Legacy
 * Technic
 
-After selecting which service you will use you can browse the modpacks available to install. Importing from zip assumes you have downloaded the modpack to your computer and will ask for a .zip modpack file.
+After selecting which service you wish to use, you can browse the modpacks which available to install. 
+
+The "**Import from zip**" option assumes that you have manually downloaded a modpack to your computer through other means, and will ask for a **.zip** archive containing a PolyMC compatible pack.
 
