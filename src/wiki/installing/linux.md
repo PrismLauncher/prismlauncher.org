@@ -4,6 +4,6 @@ eleventyNavigation:
   key: Linux
 --- 
 
-# Installation instructions for linux distributions
+# Installation instructions for Linux distributions
 
 {% include "pagechildren.njk" %}
