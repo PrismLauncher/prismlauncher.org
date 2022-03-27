@@ -5,7 +5,7 @@ eleventyNavigation:
 --- 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora & CentOS Stream
 
-An RPM package is available on [COPR](https://copr.fedorainfracloud.org/coprs/sentry/polymc/)
+An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
 ```
 sudo dnf copr enable sentry/polymc
