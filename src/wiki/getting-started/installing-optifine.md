@@ -4,37 +4,38 @@ eleventyNavigation:
   parent: Getting Started
   order: 7
 ---
-# Preamble
+# Before you continue
 
-Because Optifine is an old, closed-source project, it evolved to cause many mod incompatibilities, and doesn't do as good of a job as some alternatives out there. 
+Because Optifine is an old, closed-source project, it has evolved to cause many mod incompatibilities, and doesn't do as good of a job as some the alternatives out there. 
 
-Also, if you're using the Fabric mod loader, there's no native support for it, and the current [workaround](#fabric) is known to be buggy and unstable due to the very nature of Optifine and Optifabric. 
+Also, if you're using the Fabric mod loader, there's no native support for it, and the current [workaround](#fabric) is known to be buggy and quite unstable, due to the very nature of Optifine and OptiFabric. 
 
-Therefore, you should use optifine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
+Therefore, you should consider the use of Optifine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
 
 # Installing optifine
-Make sure you know how to [download-mods](../download-mods) before attempting to install optifine.
+Make sure you know how to [download mods](../download-mods) before attempting to install Optifine.
 
-Go to https://optifine.net/downloads and find your respective minecraft version (eg. 1.18.2).
+Go to https://optifine.net/downloads and find your respective Minecraft version (eg. 1.18.2).
 
 Once found, click **mirror**. Now click the **download** button to download your optifine jar file.
 
-Remember where you have kept your .jar and continue to the PolyMC launcher. Follow the steps from [download-mods](../download-mods) and choose either forge or fabric([!warning](#fabric)).
+Remember where you have kept your **.jar** file, and continue to the PolyMC launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
 
 ## Forge
-Forge does not require exta steps besides [adding the .jar for optifine](#adding-.jar-file). 
+Forge does not require any exta steps besides [adding the **.jar** for optifine](#adding-.jar-file) into PolyMC. 
 
-NOTE: some OF versions **don't** work on Forge!
+**NOTE:** Some versions of Optifine **don't** work on Forge!
 
 ## Fabric 
-Note: If you're playing on minecraft versions before 1.16, you might need to also install [Fabric API](../download-mods/#fabric).
+**Note:** If you're playing on Minecraft versions older than 1.16, you might need to also install the [Fabric API](../download-mods/#fabric) mod.
 
+Fabric, unlike Forge, does not natively support Optifine, and will require the installation of OptiFabric. 
 
-Fabric, unlike Forge, does not natively support optifine and will require the installation of Optifabric. 
+Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-.jar-file) for Optifine into PolyMC. 
 
-Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. once found click **Select mod for download** then press **Ok**. Now procede to [adding the jar file](#adding-.jar-file). 
-
-If there's no results shown in the search, your minecraft version may not be compatible, in which case you can try the forge method or may have to wait till support for your version is added.
+If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
 ## Adding .jar file
-Go into the **Mods** tab on the left side, and then in the right menu select **Add .jar**. Find the jar file you downloaded at the beginning and it should now be added to your instance. Enjoy!
+Go into the **Mods** tab on the left side of the **Edit Instance** menu, and then click on the **Add .jar** option to the right of the window. 
+
+Now, find and select the **.jar** file you downloaded earlier, and it should now be added to your instance. Enjoy!
