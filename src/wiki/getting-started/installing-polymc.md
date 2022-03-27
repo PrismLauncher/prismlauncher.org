@@ -27,12 +27,12 @@ For more detailed instructions, please see our dedicated [Windows](../../install
 
 This is unfortunately **normal behaviour** due to the nature of the Windows app signing process. PolyMC has yet to purchase a signature, however, with enough funding, we may choose to do so in the future. PolyMC is an **open-source** application. As a result of this, all of the source code is public, and can be audited by any individual or group. If you would like to do so yourself, you can do so [here](https://github.com/PolyMC/PolyMC).
 
-If you are **comfortable** and **trust** PolyMC, then you can **left click** on the **More info** button, and then do the same on the **Run anyway** one too.
+If you are **comfortable** and **trust** PolyMC, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
 ### I'm getting random OpenSSL errors on Windows. What can I do?
+**NOTE:** These issues have been resolved in PolyMC version 1.1.1, so we do recommend upgrading. You can download this release [here](/download/), or upgrade through your system's package manager.
 
-Unfortunately, there are some issues with the OpenSSL dll on PolyMC 1.1.0. It's going to be fixed in 1.1.1.
-If you use PolyMC 1.1.0 you can fix these issues installing [vcredist 2010 x86](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
+For those still choosing to use PolyMC 1.1.0, you can fix these issues installing [vcredist 2010 x86](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
 
@@ -40,9 +40,9 @@ If you use PolyMC 1.1.0 you can fix these issues installing [vcredist 2010 x86](
 
 Much like the similar pop-up on Windows, this too is **normal behaviour.**
 
-If you face this obstacle, **right-click** PolyMC.app, click **Open**, then click **Close**, and then **right-click** again and click **Open** and then **Open**
+If you face this obstacle, **right-click** on PolyMC.app, and click **Open**. Click the **Close** button on the pop-up window, and then **right-click** on PolyMC.app again. Click on open, and then click on **Open** once more.
  
-Also there's another way to do this: open your Mac's **System Preferences** application and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. **Left click** on that option, and then **re-open** the installer.
+There's also another way to do this: open your Mac's **System Preferences** application, and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. Click on that option, and then **re-open** the installer.
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Linux
 
