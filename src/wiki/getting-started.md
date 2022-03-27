@@ -3,6 +3,6 @@ eleventyNavigation:
   key: Getting Started
   order: 2
 --- 
-# Getting started
+# Getting Started
 
-How to use PolyMc and its functionality
+How to set-up and use PolyMC to its fullest!
