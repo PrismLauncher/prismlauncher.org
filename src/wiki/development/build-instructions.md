@@ -172,10 +172,10 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 ## Dependencies
 
-- [MSYS2](https://www.msys2.org/) -- Software Distribution and Building Platform for Windows
-- [Java JDK 8 or later](https://adoptium.net/releases.html?variant=openjdk8) - Use the MSI installer.
-
-Make sure that the JAVA_HOME environment variable is set (Adoptium will ask you on installation).
+- [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
+  - Make sure to follow all instructions on the webpage.
+- [Java JDK 8 or later](https://adoptium.net/)
+  - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 
 ## Getting set up
 
@@ -190,7 +190,7 @@ Make sure that the JAVA_HOME environment variable is set (Adoptium will ask you 
 
 ### Compile from command line on Windows
 
-1. Open the right **MSYS2 MinGW** shell and alone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
+1. Open the right **MSYS2 MinGW** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
 3. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
 4. Now you need to run the build itself: Run `cmake --build build -jX`, where X is the number of cores your CPU has.
