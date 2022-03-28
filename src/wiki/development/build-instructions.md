@@ -193,7 +193,7 @@ Make sure that the JAVA_HOME environment variable is set (Adoptium will ask you 
 1. Open the right **MSYS2 MinGW** shell and alone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
 3. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
-4. Now you need to run the build itself: Run `make -Cbuild -jX`, where X is the number of cores your CPU has.
+4. Now you need to run the build itself: Run `cmake --build build -jX`, where X is the number of cores your CPU has.
 5. Now to wait for it to compile. This could take some time. Hopefully it compiles properly.
 6. Run the command `cmake --install build`, and it should install PolyMC, to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `cp cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
