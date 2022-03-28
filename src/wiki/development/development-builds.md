@@ -8,7 +8,7 @@ eleventyNavigation:
 Please understand that **these builds are not intended for most users**. There may be bugs, and other instabilities. You have been warned.
 
 There are per-commit development builds available [here](https://github.com/PolyMC/PolyMC/actions). Debug information is present within the binaries, making their file sizes larger than otherwise normal.
-Portable dev-builds are provided for Windows, macOS, and AppImage (Linux).
+Portable dev-builds are, as of now, only provided for Windows.
 
 For Debian and Arch, you can use these packages for the latest development versions:  
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
