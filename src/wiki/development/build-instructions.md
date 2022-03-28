@@ -169,7 +169,6 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 # Windows
 
 We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
-We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.
 
 ## Dependencies
 
@@ -188,11 +187,6 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
 3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p`.
   - This might take a while, as it will install Qt and all the build tools required.
-  - NOTE: There are multiple different MSYS2 related shortcuts, make sure you actually opened the right **MinGW** version
-  - If you are on a 32-bit Windows machine, you probably need to start *MSYS2 MinGW x86* instead
-2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p`
-  - This might take a while, as it will install Qt and all the build tools required
 
 ### Compile from command line on Windows
 
@@ -203,10 +197,6 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 5. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 6. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
-4. Now you need to run the build itself: Run `cmake --build build -jX`, where X is the number of cores your CPU has.
-5. Now to wait for it to compile. This could take some time. Hopefully it compiles properly.
-6. Run the command `cmake --install build`, and it should install PolyMC, to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 # macOS
 
