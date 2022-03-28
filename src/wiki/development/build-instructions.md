@@ -168,100 +168,35 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
 # Windows
 
-Getting the project to build and run on Windows is easy, if you use Qt's IDE; Qt Creator. The project will simply not compile using Microsoft build tools. Because that's not something we do. If it does compile, it is by chance only.
+We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
 
 ## Dependencies
 
-- [Qt 5.6+ Development tools](http://qt-project.org/downloads) -- Qt Online Installer for Windows.
-  - http://download.qt.io/new_archive/qt/5.6/5.6.0/qt-opensource-windows-x86-mingw492-5.6.0.exe
-  - Download the MinGW version (MSVC version does not work).
-- [OpenSSL](https://github.com/IndySockets/OpenSSL-Binaries/tree/master/Archive/) -- Win32 OpenSSL, version 1.0.2g (from 2016).
-  - https://github.com/IndySockets/OpenSSL-Binaries/raw/master/Archive/openssl-1.0.2g-i386-win32.zip
-  - the usual OpenSSL for Windows (http://slproweb.com/products/Win32OpenSSL.html) only provides the newest version of OpenSSL, and we need the 1.0.2g version.
-  - **Download the 32-bit version, not 64-bit.**
-  - Microsoft Visual C++ 2008 Redist is required for this, there's a link on the OpenSSL download page above next to the main download.
-  - We use a custom build of OpenSSL that doesn't have this dependency. For normal development, the custom build is not necessary though.
-- [zlib 1.2+](http://gnuwin32.sourceforge.net/packages/zlib.htm) - the Set-up is fine.
-- [Java JDK 8](https://adoptium.net/releases.html?variant=openjdk8) - Use the MSI installer.
-- [CMake](http://www.cmake.org/cmake/resources/software.html) -- Windows (Win32 Installer).
-
-Ensure that OpenSSL, zlib, Java, and CMake, are on `PATH`.
+- [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
+  - Make sure to follow all instructions on the webpage.
+- [Java JDK 8 or later](https://adoptium.net/)
+  - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 
 ## Getting set up
 
-### Installing Qt
+### Preparing MSYS2
 
-1. Run the Qt installer.
-2. Choose a place to install Qt (C:\Qt is the default).
-3. Choose the components you want to install.
-   - You need Qt 5.6 (32 bit) ticked.
-   - You need Tools/Qt Creator ticked.
-   - Other components are selected by default, you can untick them if you don't need them.
-4. Accept the license agreements.
-5. Double check the install details and then click "Install"
-   - Installation may take a very long time. Go grab a cup of tea or something, and let it work away.
+1. Open the *MSYS2 MinGW x64* shortcut from the start menu
+  - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
+  - If you are on a 32-bit Windows machine, you probably need to start *MSYS2 MinGW x86* instead.
+2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p`.
+  - This might take a while, as it will install Qt and all the build tools required.
 
-### Installing OpenSSL
+### Compile from command line on Windows
 
-1. Download .zip file from the link above.
-2. Unzip and add the directory to PATH, so CMake can find it.
-
-### Installing CMake
-
-1. Run the CMake installer.
-2. It's easiest if you choose to add CMake to the PATH for all users.
-   - If you don't choose to do this, remember where you installed CMake.
-
-### Loading the project
-
-1. Open Qt Creator.
-2. Choose File->Open File or Project.
-3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt
-4. Read the instructions that have just popped up about a build location, and choose one.
-5. If you chose not to add CMake to the system PATH, tell Qt Creator where you've installed it.
-   - Otherwise you can skip this step.
-6. You should see "Run CMake" in the window.
-   - Make sure that Generator is set to "MinGW Generator (Desktop Qt 5.6.x MinGW 32bit)",
-   - Hit the "Run CMake" button.
-   - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
-   - Hit "Finish" if CMake ran successfully.
-7. Cross your fingers and press the "Run" button (bottom left of Qt Creator)!
-   - If the project builds successfully it will run and the Launcher window will come on-screen.
-   - Test OpenSSL by making an instance, and trying to log in. If Qt Creator couldn't find OpenSSL during the CMake stage, login will fail, and you'll get an error.
-
-The following .dlls are needed for the app to run (copy them to build directory if you want to be able to move the build to another pc):
-
-```
-
-platforms/qwindows.dll
-libeay32.dll
-libgcc_s_dw2-1.dll
-libssp-0.dll
-libstdc++-6.dll
-libwinpthread-1.dll
-Qt5Core.dll
-Qt5Gui.dll
-Qt5Network.dll
-Qt5Svg.dll
-Qt5Widgets.dll
-Qt5Xml.dll
-ssleay32.dll
-zlib1.dll
-
-```
-
-**These build instructions worked for me (Drayshak) on a fresh Windows 8 x64 Professional install. If they don't work for you, please let us know on our Discord server, or Matrix Space.**
-
-### Compile from the command line on Windows
-
-1. If you've installed Qt with the web installer, there should be a shortcut called `Qt 5.4 for Desktop (MinGW 4.9 32-bit)` in the Start menu on Windows 7 and 10. The best way to find it is to search for it. Do note, you cannot just use cmd.exe, you have to use the shortcut, otherwise, the proper MinGW software will not be on the PATH.
-2. Once that is open, change into your user directory, and clone PolyMC by running `git clone --recursive https://github.com/PolyMC/PolyMC.git`. Now change directory to the folder you cloned to.
-3. Make a build directory, and change directory to the directory and do `cmake -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=C:\Path\that\makes\sense\for\you`. By default, it will install to `C:\Program Files (x86)`, which may not be what you ideal, if you had wanted a local installation. If you do want to install it into to that directory, make sure to run the command window as an administrator.
-4. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
-5. Do `mingw32-make -jX`, where "X", is the number of cores your CPU has, plus one.
-6. Now to wait for it to compile. This could take some time, so hopefully it compiles properly.
-7. Run the command `mingw32-make install`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-8. In most cases, whenever compiling, the OpenSSL .dll's aren't placed into the directory where PolyMC installs, meaning you cannot log in. The best way to fix this, is just to do `copy C:\OpenSSL-Win32\*.dll C:\Where\you\installed\PolyMC\to`. This should copy the OpenSSL .dll's required to log in.
+1. Open the right **MSYS2 MinGW** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
+3. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
+4. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
+5. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
+6. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 # macOS
 
