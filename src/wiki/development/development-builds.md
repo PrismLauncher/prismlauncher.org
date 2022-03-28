@@ -9,7 +9,7 @@ Please understand that **these builds are not intended for most users**. There m
 
 There are per-commit development builds available [here](https://github.com/PolyMC/PolyMC/actions). Debug information is present within the binaries, making their file sizes larger than otherwise normal.
 
-Non-portable binaries are currently available for Windows as a system install, macOS .app, Linux Tarball, and AppImage.
+Non-portable binaries are currently available for Windows as a system install, macOS .app, Linux tarball, and AppImage.
 
 Portable dev-builds are also provided; for both Windows and Linux.
 
