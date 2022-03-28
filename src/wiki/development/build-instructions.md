@@ -168,7 +168,7 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
 # Windows
 
-Getting the project to build and run on Windows is easy if you use Qt's IDE, Qt Creator. The project will simply not compile using Microsoft build tools, because that's not something we do. If it does compile, it is by chance only.
+We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.
 
 ## Dependencies
 
@@ -196,7 +196,7 @@ Make sure that the JAVA_HOME environment variable is set (Adoptium will ask you 
 4. Now you need to run the build itself: Run `cmake --build build -jX`, where X is the number of cores your CPU has.
 5. Now to wait for it to compile. This could take some time. Hopefully it compiles properly.
 6. Run the command `cmake --install build`, and it should install PolyMC, to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `cp cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
+7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 # macOS
 
