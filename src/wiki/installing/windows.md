@@ -37,7 +37,7 @@ While it may be **possible** to install PolyMC on these legacy operating systems
 
 PolyMC does currently work on Windows 7, however, support could break at any time.
 
-If you want a more technical explanation, it's because msys2 and Cygwin dependancies, that we use for building PolyMC on Windows, will start targeting 8.1  ([see this](https://www.msys2.org/docs/windows_support/)).
+If you want a more technical explanation, it's because msys2 and Cygwin, that we use for building PolyMC on Windows, will start targeting 8.1 ([see this](https://www.msys2.org/docs/windows_support/)).
 
 Anyways, you should probably stop using Windows 7, especially since [ESU support will end](https://docs.microsoft.com/en-us/lifecycle/products/windows-7) soon.
 
