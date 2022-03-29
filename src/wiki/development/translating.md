@@ -1,10 +1,10 @@
 ---
 eleventyNavigation:
-  key: Translations
-  parent: Overview
-  order: 6
+  key: Translating PolyMC
+  parent: Development
+  order: 3
 --- 
 
-# Translations
+# Translating PolyMC
 
 The translation effort for PolyMC is hosted on [Weblate](https://hosted.weblate.org/projects/polymc/polymc/), and information about translating PolyMC is available at https://github.com/PolyMC/Translations

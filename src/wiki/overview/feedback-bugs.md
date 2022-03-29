@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: Copying
-  parent: Development
+  key: Feedback & Bugs
+  parent: Overview
   order: 2
 --- 
 
