@@ -5,40 +5,40 @@ eleventyNavigation:
   order: 7
 ---
 
-NOTE: some mods require [Fabric API](../download-mods/#fabric) to work.
+# Why bother?
 
-## Why this
+Once upon a time, OptiFine was *the* way, to make your game better, faster, and stronger. Things have since changed.
 
-Once opon a time, OF was the best way to make your game better. Things changed.
+**NOTE:** Most Fabric loader mods require the [Fabric API](../download-mods/#fabric) mod in order to work.
 
 ## Sodium
 
-[Sodium](https://modrinth.com/mod/sodium) is the best client side optimization mod at the moment and it's highly recommended.
+[Sodium](https://modrinth.com/mod/sodium) is the best client-side optimisation mod available at the moment, and we **highly recommend** installing it when possible.
 
-To install in PolyMC, create a Fabric instance, then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download** and then **Ok**.
+To install in PolyMC, create an instance with the **Fabric** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
 
 ## Iris
 
-[Iris](https://irisshaders.net/) allows you to run OF Shaders while using Sodium. It works great, but it doesn't support every shaderpack at the moment.
+[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
 
-Click [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md) for a list of currently supported shaderpacks
+You can find a list of currently supported shaderpacks [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md).
 
-To install in PolyMC, create a Fabric instance, then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download** and then **Ok**.
+To install in PolyMC, create an instance with the **Fabric** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
 ## Other Mods
 
-If you want to improve your performance, consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
+If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
 
-We can't list every mod here, but you can find a big list of optifine alternatives [here](https://lambdaurora.dev/optifine_alternatives/).
+If you would like to go a bit further, LamdAurora maintains a very detailed list of OptiFine alternatives, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
 
 # Fabulously Optimized
 
-If you don't want to search and install these mods manually, the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack is for you!
+If you don't want to search, and install these mods manually, then the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack is for you!
 
-See the MultiMC/MultiMC (auto-update) guide to install it, they work on PolyMC too.
+See the [MultiMC/MultiMC (auto-update)](https://github.com/Fabulously-Optimized/fabulously-optimized/wiki/Install-instructions#multimc-auto-update) guide for help installing it. These instructions will work for PolyMC too.
 
-# Note about Forge
+## Note about Forge
 
-Unlike on fabric, unofficial forge ports of fabric optimization mods are low-quality and generally not recommended (except [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner) and [LazyDFU Forge](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge))
+Unlike on Fabric, unofficial Forge ports of Fabric optimization mods are usually of low-quality, and are generally not recommended. (This is with the exception of mods like: [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner), [Starlight for Forge](https://modrinth.com/mod/starlight-forge), [LazyDFU Forge](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge), [FerriteCore for Forge](https://www.curseforge.com/minecraft/mc-mods/ferritecore), and [EntityCulling](https://www.curseforge.com/minecraft/mc-mods/entityculling).)
 
-Except these mods, and other mods like [EntityCulling](https://www.curseforge.com/minecraft/mc-mods/entityculling), [FerriteCore for Forge](https://www.curseforge.com/minecraft/mc-mods/ferritecore) and [Starlight for Forge](https://modrinth.com/mod/starlight-forge), you should prefer OptiFine on forge.
+In most cases however, you should prefer using OptiFine on Forge.

@@ -5,18 +5,18 @@ eleventyNavigation:
 --- 
 # Development
 
-If you want to contribute to PolyMC you might find it useful to join our Discord Server or Matrix Space.
+If you would like to contribute to PolyMC, you might find it useful to join our Discord Server or Matrix Space.
 
 ## Building
 
-If you want to build PolyMC yourself, check [Build Instructions](./builds) for build instructions.
+If you want to build PolyMC yourself, check out our [Build Instructions](./builds) page for a handy guide.
 
 
 ## Code formatting
 
-Just follow the existing formatting.
+Please follow the existing formatting.
 
-In general, in order of importance:
+In general, by order of importance:
 
 - Make sure your IDE is not messing up line endings or whitespace and avoid using linters.
 - Prefer readability over dogma.

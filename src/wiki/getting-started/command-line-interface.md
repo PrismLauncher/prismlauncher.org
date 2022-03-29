@@ -21,12 +21,16 @@ Options & Switches:
   -I, --import <import> Import instance from specified zip (local path or URL)
 ```
   
-  ## What is the instance ID where do I find it?
+  ## What is an instance ID, and where do I find it?
   
-  The instance ID is the folder name for the instance.
-  To find it right click the instance you want the ID of, then click *Instance Folder*, then copy the name of the folder opened.
+  The instance ID is the name of the folder where your instance is contained.
   
-  ## PolyMC is opening after I close Minecraft
+  To find it, **righ-click** on the instance you want to know the ID of, and then click on *Instance Folder* within the context menu. 
   
-  Currently the *Close PolyMC after game window opens* option opens PolyMC after closing Minecraft, even if launched from the CLI.
-  To disable this open *Settings* then select *Minecraft* and finally uncheck the *Close PolyMC after game window opens*.
+  Now, just copy the name of the folder that opened.
+  
+  ## PolyMC is still opening after I close Minecraft
+  
+  Currently, the *Close PolyMC after game window opens* option opens PolyMC after closing Minecraft, even when launched from the CLI.
+  
+  To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PolyMC after game window opens*.

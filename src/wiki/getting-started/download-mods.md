@@ -8,11 +8,13 @@ eleventyNavigation:
 
 Make sure you know how to [Create an Instance](../create-instance) before attempting to download mods.
 
-Inside the **Edit Instance** menu select **version** from here you will need to decide what mod loader you want to use. Fabric and Forge are the most popular with Forge having the most mods. fabric and forge mods are not cross compatible so choosing between them will change your selection of mods.
+Inside the **Edit Instance** menu, select the **version** tab on the left sidebar. From here, you will need to decide on which mod loader you would like to use. **Fabric** and **Forge** are the most popular, with Forge having the most mods available. Fabric and Forge mods are generally not cross-compatible, so choosing between them will change your selection of mods.
 
-Once you have picked your modloader go to the Mods tab on the left and select **Download Mods** in the mod tab's menu on the right. from here you will be able to choose from *modrinth* and *curseforge*. Modrinth supports opensource and free mods however curseforge will have a larger selection.
+Once you have picked out your ideal mod loader, go to the **Mods** tab, and select the **Download Mods** option that's to the right. From here, you can choose to install from both *Modrinth* and *CurseForge* services. Modrinth focuses more towards free and open-source mods, however, CurseForge has a much larger selection. 
 
-After you choose your mod provider you can search or browse for your desired mods. Click select mod for download to add it to your download queue from which once you press ok it will be downloaded.
+It is worth noting that many mods will be available on **both platforms**.
+
+After you've choosen your mod provider, you can search or browse for any desired mods. Click the **Select mod for download** button to add each mod to your download queue. Once finished, you can now press **OK**, and your mods should begin downloading.
 
 ## Fabric
 

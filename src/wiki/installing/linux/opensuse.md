@@ -5,7 +5,7 @@ eleventyNavigation:
 --- 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
 
-An RPM package is available on [COPR](https://copr.fedorainfracloud.org/coprs/sentry/polymc/)
+An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
 ```
 . /etc/os-release

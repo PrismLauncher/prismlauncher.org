@@ -5,11 +5,11 @@ eleventyNavigation:
   order: 4
 ---
 
-# Creating an Instance
-To create an instance simply click add instance up the top left of the window or right click the empty area in the middle of the window then select **Create instance**.
+# Creating an instance
+To create an instance, simply click on the **Add Instance** button on the top menu bar, or right-click an empty area in the middle of the launcher, and select **Create instance**.
 
 ## Editing an instance
-Once an instance is created you can right click it to access a drop down menu with basic settings. Select **Edit Instance** to access the edit menu.
+Once an instance is created, you can right-click it to open a context menu with some basic settings. From this list, select **Edit Instance** to access the edit menu.
 
 ### Configure instance java
-PolyMC does by default not automatically set the right version of java based off what you have installed. To leviate this issue go into settings and click the checkbox for **Java Installation** click **auto-detect...** then choose your version accordingly [Installing Java](../installing-java) has more infomation on the correct java for each minecraft version.
+PolyMC does not yet automatically set the right version of Java for your instance. To **manually** select a version of Java, open the **Settings** window from the top menu bar, select the **Java** tab on the left sidebar, and under **Java Runtime**, click **Auto-detect...**, and then choose your version accordingly. Our [Installing Java](../installing-java) page has more infomation on the correct versions of Java for each Minecraft version.
