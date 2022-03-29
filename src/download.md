@@ -14,8 +14,12 @@ PolyMC supports the Steam Deck you can find the installation [instructions here]
 <div class="cards">
   <div class="card">
     <h1>Windows</h1>
+    <h2>32-bit</h2>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-i686-1.1.1.zip">Download</a>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-i686-portable-1.1.1.zip">Download (Portable)</a>
+    <h2>64-bit</h2>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-x86_64-1.1.1.zip">Download</a>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-x86_64-portable-1.1.1.zip">Download (Portable)</a>
     (<a href="{{ '/wiki/getting-started/installing-polymc/#troubleshoot' | url }}">Troubleshoot</a>)
     </p>
     <details>
