@@ -15,11 +15,11 @@ PolyMC supports the Steam Deck you can find the installation [instructions here]
   <div class="card">
     <h1>Windows</h1>
     <h2>32-bit</h2>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-i686-1.1.1.zip">Download</a>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-i686-portable-1.1.1.zip">Download (Portable)</a>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-Windows-i686-{{ version.current }}.zip">Download</a>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-Windows-i686-portable-{{ version.current }}.zip">Download (Portable)</a>
     <h2>64-bit</h2>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-x86_64-1.1.1.zip">Download</a>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-x86_64-portable-1.1.1.zip">Download (Portable)</a>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-Windows-x86_64-{{ version.current }}.zip">Download</a>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-Windows-x86_64-portable-{{ version.current }}.zip">Download (Portable)</a>
     (<a href="{{ '/wiki/getting-started/installing-polymc/#troubleshoot' | url }}">Troubleshoot</a>)
     </p>
     <details>
@@ -40,7 +40,7 @@ scoop install polymc</code></pre>
   </div>
   <div class="card">
     <h1>MacOS</h1>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-macOS-1.1.1.tar.gz">Download (x86)</a></p>
+    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (x86)</a></p>
   </div>
   <div class="card">
     <h1>Linux</h1>
