@@ -42,7 +42,7 @@ scoop install polymc</code></pre>
       </summary>
     <pre><code>choco install polymc</code></pre>
     </details>
-    <p>Chocolatey and Scoop are third party repositorys, PolyMC is not resposible for outdated versions.</p>
+    <p>Chocolatey and Scoop packages are third party, PolyMC is not responsible for outdated versions. Additionally, the choco package is not approved yet, so it's currently stuck at an ancient version of PolyMC.</p>
   </div>
   <div class="card">
     <h1>MacOS</h1>
