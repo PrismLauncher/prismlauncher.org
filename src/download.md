@@ -51,7 +51,7 @@ scoop install polymc</code></pre>
   </div>
   <div class="card">
     <h1>Linux</h1>
-    <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Linux-1.1.1-x86_64.AppImage" >Install from FlatHub</a>
+    <p><a class="button" href="https://flathub.org/apps/details/org.polymc.PolyMC" >Install from FlatHub</a>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Linux-1.1.1-x86_64.AppImage" >Download (AppImage)</a>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Linux-1.1.1.tar.gz" >Download (tar.gz)</a></p>
     <p>distro specific packages can be <a href="{{ '../wiki/installing/' | url}}">found here</a></p>
