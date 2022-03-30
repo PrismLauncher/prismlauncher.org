@@ -47,7 +47,7 @@ scoop install polymc</code></pre>
   <div class="card">
     <h1>MacOS</h1>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (x86)</a></p>
-    <p>PolyMC does not yet work on the M1 Mac devices.
+    <p>PolyMC does not yet natively work on the M1 Mac devices.
   </div>
   <div class="card">
     <h1>Linux</h1>
