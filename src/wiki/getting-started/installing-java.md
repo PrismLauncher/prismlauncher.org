@@ -34,3 +34,15 @@ Since those igpus are not *officially* supported on Windows 10, with them the ga
 After you download the required java binary for your architecture, *extract* the zip, and move the folder to your PolyMC data folder (%appdata%/PolyMC for notportable, the PolyMC folder for portable builds), you need to go to the *PolyMC java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
 This should fix your issue.
 Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
+
+## Older Minecraft on MacOS
+If you use some older Minecraft versions, you might have had this error:
+
+```
+Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
+```
+
+Well, for you there's a resolution too!
+- first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
+- then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+- select this java binary on PolyMC and it should fix your issue!
