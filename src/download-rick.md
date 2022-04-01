@@ -1,7 +1,7 @@
 ---
 layout: layouts/main.njk
 title: Downloads
-permalink: /download/rick/
+permalink: /download/2/
 eleventyComputed:
   hero:
     title: "Happy april fools!"
