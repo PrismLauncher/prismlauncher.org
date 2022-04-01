@@ -43,7 +43,7 @@ If you’re anything like us, then you must hate bloatware. That’s why, starti
 ![LazyMemory](/img/af/work-out.png)
 Download PolyMC 2.0.0 today, and watch it break a sweat!
 
-<a class="button" href="/download/2/">Download NOW!</a>
+<img width="200px" src="/img/af/arrow.png"><a class="button" href="/download/2/">Download NOW!</a></img>
 
 ## Oh god, what have you done?
 You can find out for yourself! Grab this earth shattering release
