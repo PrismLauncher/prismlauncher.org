@@ -40,7 +40,7 @@ Download PolyMC 2.0.0 today, and watch it break a sweat!
 <a class="button" href="/download/2/">Download NOW!</a>
 
 ## Oh god, what have you done?
-You can find out for yourself! Grab this earth shattering release [here]().
+You can find out for yourself! Grab this earth shattering release
 
 
 <a class="button" href="/download/2/">Download NOW!</a>
