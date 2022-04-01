@@ -37,9 +37,11 @@ Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you
 
 ## Older Minecraft on MacOS
 If you use some older Minecraft versions, you might have had this error:
+
 '''
 Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
 '''
+
 Well, for you there's a resolution too!
 - first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
 - then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
