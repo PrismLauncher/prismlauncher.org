@@ -95,18 +95,18 @@ hero:
 
   For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
-  ![Matrix](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)
+  ![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)
 
   If there are any issues with the space or you are using a client that does not support the feature here are the individual rooms:
 
-  ![Matrix](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)
-  ![Matrix](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)
-  ![Matrix](https://img.shields.io/matrix/polymc-github:matrix.org?label=PolyMC%20Github)
-  ![Matrix](https://img.shields.io/matrix/polymc-maintainers:matrix.org?label=PolyMC%20Maintainers)
-  ![Matrix](https://img.shields.io/matrix/polymc-news:matrix.org?label=PolyMC%20News)
-  ![Matrix](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)
-  ![Matrix](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)
-  ![Matrix](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)
+  ![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)
+  ![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)
+  ![Github](https://img.shields.io/matrix/polymc-github:matrix.org?label=PolyMC%20Github)
+  ![Maintainers](https://img.shields.io/matrix/polymc-maintainers:matrix.org?label=PolyMC%20Maintainers)
+  ![News](https://img.shields.io/matrix/polymc-news:matrix.org?label=PolyMC%20News)
+  ![Offtopic](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)
+  ![Support](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)
+  ![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)
 
   # Source code
   ---
