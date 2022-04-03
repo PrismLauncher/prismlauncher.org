@@ -91,7 +91,7 @@ cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
 # get the rpm spec file from the polymc-misc repo
-wget https://raw.githubusercontent.com/PolyMC/polymc-misc/master/rpm/polymc.spec
+wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/polymc/polymc.git/plain/polymc.spec
 # install build dependencies
 sudo dnf builddep polymc.spec
 # download build sources
