@@ -25,7 +25,7 @@ Options & Switches:
   
   The instance ID is the name of the folder where your instance is contained.
   
-  To find it, **righ-click** on the instance you want to know the ID of, and then click on *Instance Folder* within the context menu. 
+  To find it, **right-click** on the instance you want to know the ID of, and then click on *Instance Folder* within the context menu. 
   
   Now, just copy the name of the folder that opened.
   
