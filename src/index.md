@@ -115,5 +115,5 @@ hero:
   
   [Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
 
-  The logo and related assets are under the CC BY-NC-SA 4.0 license.
+  The logo and related assets are under the CC BY-SA 4.0 license.
 </div>
