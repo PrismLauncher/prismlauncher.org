@@ -48,6 +48,15 @@ scoop install polymc</code></pre>
     <h1>MacOS</h1>
     <p><a class="button" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (x86)</a></p>
     <p>PolyMC does not work natively on the M1 Mac devices yet.
+    </details>
+    <h3>Homebrew Package (community-maintained)</h3>
+    <details>
+      <summary>
+        Installation instructions
+        <hr>
+      </summary>
+    <pre><code>brew install --cask polymc</code></pre>
+    </details>
   </div>
   <div class="card">
     <h1>Linux</h1>
