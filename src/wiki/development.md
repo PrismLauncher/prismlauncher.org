@@ -9,7 +9,7 @@ If you would like to contribute to PolyMC, you might find it useful to join our 
 
 ## Building
 
-If you want to build PolyMC yourself, check out our [Build Instructions](./builds) page for a handy guide.
+If you want to build PolyMC yourself, check out our [Build Instructions](./build-instructions) page for a handy guide.
 
 
 ## Code formatting
