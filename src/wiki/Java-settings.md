@@ -1,3 +1,5 @@
+### Java settings
+
 In this page you can set the global Java settings.
 
 ![](/img/Java-settings.png)
