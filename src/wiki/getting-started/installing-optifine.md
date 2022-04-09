@@ -17,12 +17,12 @@ Make sure you know how to [download mods](../download-mods) before attempting to
 
 Go to https://optifine.net/downloads and find your respective Minecraft version (eg. 1.18.2).
 
-Once found, click **mirror**. Now click the **download** button to download your optifine jar file.
+Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
 
 Remember where you have kept your **.jar** file, and continue to the PolyMC launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
 
 ## Forge
-Forge does not require any exta steps besides [adding the **.jar** for optifine](#adding-.jar-file) into PolyMC. 
+Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-.jar-file) into PolyMC. 
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
