@@ -13,11 +13,11 @@ PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allow
 ## I'm in! Now tell me more about these features?
 
 - Managing multiple, isolated instances of Minecraft.
-- Easy installation of mod loaders, such as  Forge, Fabric, LiteLoader and *Quilt (WIP)*.
+- Easy installation of mod loaders, such as Forge, Fabric, LiteLoader and *Quilt (WIP)*.
 - Manage your worlds, resource packs, and shader packs in just a few clicks.
-- Install modpacks from many platforms such as Curseforge, Technic, FTB, and *Modrinth (WIP)*.
-- Install individual mods from Curseforge and Modrinth, automatically tailored to match your loader and game version.
-- Close Minecraft easily if it crashes or freezes.
-- Simple access to to all your logs.
-- PolyMC is built with Qt, allowing it to be both very performant, as well as light on system resources.
+- Install modpacks from many platforms such as CurseForge, Technic, FTB, and *Modrinth (WIP)*.
+- Install individual mods from CurseForge and Modrinth, automatically tailored to match your loader and game version.
+- Kill Minecraft easily in the event of a crash or freeze.
+- Access all your logs easily.
+- Built using Qt technologies, allowing the launcher to be both very performant, as well as light on system resources.
 - And much, much more.
