@@ -1,3 +1,10 @@
+---
+permalink: /wiki/
+eleventyNavigation:
+  key: Java Settings
+  order: 1
+--- 
+
 ### Java settings
 
 In this page you can set the global Java settings.
