@@ -1,5 +1,4 @@
 ---
-permalink: /wiki/
 eleventyNavigation:
   key: Java Settings
   order: 1
