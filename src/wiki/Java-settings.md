@@ -22,7 +22,7 @@ Java memory settings. You'd use half of your ram for an optimal experience, with
 
 This is where the settings for the Java runtime live, like the location of the runtime and any Java arguments to use.
 
-For information about how to get a correct Java version, see: [../getting-started/installing-java].
+For information about how to get a correct Java version, see: [Installing Java](../getting-started/installing-java).
 
 **Auto-detect** will check your computer for all java versions and show you a list of them, the best one on top.
 
