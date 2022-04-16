@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
   key: APIs
+  parent: Help pages
 --- 
 
 ![](/img/APIs.png)
