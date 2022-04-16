@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: Java Settings
-  order: 1
+  parent: Help pages
 --- 
 
 ### Java settings

@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
   key: Mods
+  parent: Help pages
 --- 
 
 ![](/img/loader-mods.png)
