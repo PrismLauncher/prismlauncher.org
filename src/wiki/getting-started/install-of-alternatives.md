@@ -33,7 +33,7 @@ If you would like to go a bit further, LamdAurora maintains a very detailed list
 
 # Fabulously Optimized
 
-If you don't want to search, and install these mods manually, then give a try to the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
+If you don't want to search, and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
 
 See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for PolyMC too.
 
