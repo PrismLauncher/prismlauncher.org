@@ -32,6 +32,16 @@ Once installed, please launch your instance and navigate to the in-game controls
 
 Within the in-game controls menu, you may need to change the "Mode" setting to **Controller**, in order for the game to respond to input from the gamepad.
 
+### For Minecraft Versions 1.18.1+
+
+Since LambdaControls got deprecated, someone decided to fork it and update it.
+
+In fact, here we're recommending [MidnightControls](https://github.com/TeamMidnightDust/MidnightControls).
+
+It's an updated fork of LambdaControls.
+
+To install this mod on PolyMC, download it directly [from their GitHub releases](https://github.com/TeamMidnightDust/MidnightControls/releases) and drag-and-drop the jar in PolyMC. 
+
 ## Forge
 
 For Minecraft 1.12.2 to 1.18.2 we recommend the **Controllable** mod.
