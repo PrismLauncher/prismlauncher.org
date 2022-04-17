@@ -33,12 +33,11 @@ If you would like to go a bit further, LamdAurora maintains a very detailed list
 
 # Fabulously Optimized
 
-If you don't want to search, and install these mods manually, then the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack is for you!
+If you don't want to search, and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
 
-See the [MultiMC/MultiMC (auto-update)](https://github.com/Fabulously-Optimized/fabulously-optimized/wiki/Install-instructions#multimc-auto-update) guide for help installing it. These instructions will work for PolyMC too.
+See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for PolyMC too.
 
 ## Note about Forge
 
-Unlike on Fabric, unofficial Forge ports of Fabric optimization mods are usually of low-quality, and are generally not recommended. (This is with the exception of mods like: [RoadRunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner), [Starlight for Forge](https://modrinth.com/mod/starlight-forge), [LazyDFU Forge](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge), [FerriteCore for Forge](https://www.curseforge.com/minecraft/mc-mods/ferritecore), and [EntityCulling](https://www.curseforge.com/minecraft/mc-mods/entityculling).)
-
+Unlike on Fabric, unofficial Forge ports of Fabric optimization mods are usually of low-quality, and are generally not recommended (with the exception of some mods)
 In most cases however, you should prefer using OptiFine on Forge.
