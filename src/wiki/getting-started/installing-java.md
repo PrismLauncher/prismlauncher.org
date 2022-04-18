@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Installing Java
 
-Java is **required** in order to run Minecraft. As such, until PolyMC 1.2.0 is released, you **will** need to **manually** install Java to run Minecraft with PolyMC.
+Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with PolyMC.
 
 Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)**, while anything below will require **Temurin 8 (LTS).**
 
@@ -16,7 +16,7 @@ Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to ins
 
 If you aren't sure which version you will need, **it is recommended to just install both.**
 
-**NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jdk#download-openjdk) is a popular alternative to Temurin, and will work just as well.
+**NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
 You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
 

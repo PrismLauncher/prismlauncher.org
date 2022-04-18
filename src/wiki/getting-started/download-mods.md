@@ -21,3 +21,8 @@ After you've choosen your mod provider, you can search or browse for any desired
 If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
 If it is missing, you can find it by right clicking on your instance in PolyMC and selecting the **Edit Instance** option in the menu.
+
+## Quilt
+
+For installing Quilt in PolyMC, follow the [quilt wiki](https://quiltmc.org/install/polymc/).
+You might need to install Quilt Standard Libraries for many Quilt mods to work.

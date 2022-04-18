@@ -30,7 +30,7 @@ This is unfortunately **normal behaviour** due to the nature of the Windows app 
 If you are **comfortable** and **trust** PolyMC, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
 ### I'm getting random OpenSSL errors on Windows. What can I do?
-**NOTE:** These issues have been resolved in PolyMC version 1.1.1, so we do recommend upgrading. You can download this release [here](/download/), or upgrade through your system's package manager.
+**NOTE:** These issues have been resolved in PolyMC version 1.1.1 (and so it's on newer releases too), so we do recommend upgrading. You can download the latest release [here](/download/), or upgrade through your system's package manager.
 
 For those still choosing to use PolyMC 1.1.0, you can fix these issues installing [vcredist 2010 x86](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
 
@@ -57,6 +57,14 @@ Depending on your system, you may need to grant the PolyMC AppImage **executable
 You can do this by opening your system's terminal application, **making sure to navigate to the location of the downloaded AppImage,** before granting the execute permission using this command:
 
 ```
-sudo chmod +x PolyMC-Linux-1.1.0-x86_64.appimage
+sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.appimage
 ```
 **Please note,** that depending on the version of PolyMC that you have downloaded, you may have to **change the version number** in the command above.
+
+If you want to simplify the installation of the AppImage, use [AppimageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system and we reccomend just using packages.
+
+
+### I want to make my system install portable 
+
+Since PolyMC 1.2.0, you can make any install portable (or making portable installs system) just by adding (or removing) portable.txt to the PolyMC root directory.
+

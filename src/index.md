@@ -36,7 +36,7 @@ hero:
     <div>
       <h1>Download Mods</h1>
       <div class="subtitle">
-        <p>Are you sick of finding and adding that one mod you need? PolyMC is able to download individual mods from outside of modpacks using modrinth and curseforge.
+        <p>Are you sick of finding and adding that one mod you need? PolyMC is able to download individual mods from outside of modpacks using Modrinth and CurseForge.
       </div>
     </div>
   </div>
