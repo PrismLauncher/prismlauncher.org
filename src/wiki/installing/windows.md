@@ -23,6 +23,10 @@ If you wish to have a shortcut to PolyMC for use on your desktop for example, yo
 
 You may now **move** or **copy** the created shortcut to any desired location on your system.
 
+## PortableApps.com Installer
+
+A community maintained portable installer for PolyMC can be found [here](https://FayneAldan.github.io/PolyMCPortable/).
+
 ## Issues
 
 If you encounter any problems, **don't worry**, we have a guide that goes over some resolutions to the more common ones.
