@@ -33,4 +33,4 @@ Options & Switches:
   
   Currently, the *Close PolyMC after game window opens* option opens PolyMC after closing Minecraft, even when launched from the CLI.
   
-  To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PolyMC after game window opens*.
+  To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PolyMC after game window opens* or check *Quit the launcher after game window closes*.
