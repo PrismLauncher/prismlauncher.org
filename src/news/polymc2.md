@@ -3,7 +3,7 @@ title: Rewrite in electron
 description: Baftastic Release
 date: 2022-04-01
 tags:
-  - release
+  - April Fools
 ---
  
 <p><audio src="/img/af/vineboom.mp3" autoplay></audio></p>
