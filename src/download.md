@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 <div class="notification is-info">
 
-PolyMC supports the Steam Deck you can find the installation [instructions here](/wiki/installing/linux/steam-deck).
+PolyMC supports the Steam Deck, you can find the installation [instructions here](/wiki/installing/linux/steam-deck).
 </div>
 
 <div class="cards">
