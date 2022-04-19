@@ -18,7 +18,7 @@ eleventyNavigation:
 
 Clone the source code using git, and grab all the submodules:
 
-```
+```bash
 git clone https://github.com/PolyMC/PolyMC.git
 cd PolyMC
 git submodule init
@@ -52,6 +52,7 @@ cmake -S . -B build \
 # build
 cd build
 make -j$(nproc) install
+cmake --install . --prefix install --component portable
 ```
 
 ### Building & installing to the system
@@ -63,7 +64,7 @@ This is the preferred method of installation, and is suitable for packages.
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"
-   -DLauncher_PORTABLE=OFF
+   -DENABLE_LTO=ON # if you want to enable LTO/IPO
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
@@ -72,7 +73,7 @@ make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=
 
 Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
 
-```
+```bash
 git clone https://mpr.makedeb.org/polymc.git
 cd polymc
 makedeb -s
@@ -86,7 +87,7 @@ Build dependencies are automatically installed using `DNF`, however, you will al
 in order to fetch sources and setup your tree.  
 You don't need to clone the repo for this; the spec file handles that.
 
-```
+```bash
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
@@ -108,7 +109,7 @@ To build a Slackware package, first install [qt5 SlackBuild](http://slackbuilds.
 
 If you're using Slackware 14.2, update CMake with these commands:
 
-```
+```bash
 mkdir -p /tmp/SBo
 cd /tmp/SBo
 wget -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz
@@ -213,11 +214,11 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Compile from command line on Windows
 
 1. Open the right **MSYS2 MinGW** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
-3. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
-4. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
-5. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
-6. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
+3. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
+4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
+5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+6. If you don't want PolyMC to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
 7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 # macOS
@@ -229,7 +230,13 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 - Install JDK 8 (https://adoptium.net/releases.html?variant=openjdk8&jvmVariant=hotspot).
 - Get Qt 5.6, and install it (https://download.qt.io/new_archive/qt/5.6/5.6.3/) or higher (tested) (https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source).
 
-You can use `homebrew` to simplify the installation of build dependencies.
+Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
+
+```
+brew update # in the case your repositories weren't updated
+brew install qt@5 openjdk@17 cmake ninja 
+```
+
 
 ### XCode Command Line tools
 
@@ -245,7 +252,7 @@ Choose an installation path.
 
 This is where the final `PolyMC.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PolyMC.
 
-```
+```bash
 mkdir build
 cd build
 cmake \
@@ -256,6 +263,7 @@ cmake \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
+ -DENABLE_LTO=ON # if you want to enable LTO/IPO \
  ..
 make install
 ```
@@ -286,10 +294,11 @@ You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you w
 mkdir install
 # configure the project
 cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake
+   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON 
 # build
 cd build
 make -j$(nproc) install
+cmake --install install --component portable
 ```
 
 ### Building & installing to the system
@@ -301,7 +310,10 @@ This is the preferred method of installation, and is suitable for packages.
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr/local" \ # /usr/local is default in OpenBSD and FreeBSD
-   -DLauncher_PORTABLE=OFF -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
+   -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
+   -DENABLE_LTO=ON # if you want to enable LTO/IPO
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
+
+

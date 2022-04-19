@@ -18,7 +18,7 @@ eg. Steam Deck's Gamepad
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 
-## Fabric
+## Fabric/Quilt
 
 Before you continue, ensure that the correct version of the **Fabric API** mod for your instance is installed.
 

@@ -29,4 +29,4 @@ sudo una install polymc-bin
 # latest git package:
 sudo una install polymc-git
 ```
-You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/mpr/list-of-mpr-helpers/) install command.
+You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
