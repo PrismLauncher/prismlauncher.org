@@ -7,9 +7,7 @@ eleventyNavigation:
 
 There are community-maintained binary packages available:
 
-- [AppBSD Image](http://glowiak.github.io/file/polymc-latest-fbsd64-appbsd) - a portable application, requires [AppBSD](https://codeberg.org/glowiak/appbsd/) (0.4.9 or newer) to be installed.
-
 - [Gzipped binaries](http://glowiak.github.io/file/polymc-latest-fbsd64-raw) - traditional way to distribute, unpack and run.
 
-In both cases you need X11, Qt5 and Java installed. Both files are 64bit only.  
+This file is 64bit only, to run it you need X11, Qt5, Java, ZIP and Base64 installed. 
 You can build from source - see [BUILD.md](https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md)
