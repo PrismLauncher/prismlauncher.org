@@ -8,7 +8,7 @@ hero:
   image: 
     dark: ./src/img/screenshots/LauncherDark.png
     light: ./src/img/screenshots/LauncherLight.png
-  background: ./src/img/forest.png
+  background: ./src/img/cherry.jpg
   download: true
 ---
 
