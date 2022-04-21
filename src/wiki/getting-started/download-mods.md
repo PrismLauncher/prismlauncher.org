@@ -25,4 +25,3 @@ If it is missing, you can find it by right clicking on your instance in PolyMC a
 ## Quilt
 
 For installing Quilt in PolyMC, follow the [quilt wiki](https://quiltmc.org/install/polymc/).
-You might need to install Quilt Standard Libraries for many Quilt mods to work.
