@@ -6,7 +6,7 @@ eleventyComputed:
   hero:
     title: "Downloads"
     description: "Download PolyMC {{version.current}}"
-    background: ./src/img/forest.png
+    background: ./src/img/town-at-night.png
 ---
 <div class="notification is-info">
 
