@@ -69,6 +69,9 @@ cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
 
+## Notes
+ * At the time of writing, when building on FreeBSD or arm64, you may need to use an alternate meta repository for your system. The only way to do so is to add `-DLauncher_META_URL:STRING="[METAURL]"` to your cmake command. There are plans to make this changeable post build in the next release.
+
 ### Building a .deb
 
 Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
