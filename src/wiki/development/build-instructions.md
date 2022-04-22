@@ -263,12 +263,12 @@ cmake \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
- -DENABLE_LTO=ON # if you want to enable LTO/IPO \
+ -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  ..
 make install
 ```
 
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory.
+Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt@5`.
 
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
