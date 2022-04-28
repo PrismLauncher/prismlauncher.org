@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Making use of Controllers 
 
-eg. Steam Deck's Gamepad
+This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 
 ## Before proceeding
 
@@ -20,7 +20,7 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 ## Fabric/Quilt
 
-Before you continue, ensure that the correct version of the **Fabric API** mod for your instance is installed.
+Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilt Standard Libraries** mod on **Quilt** for your instance is installed. 
 
 ### For Minecraft Versions 1.16.5 to 1.18
 
@@ -32,6 +32,8 @@ Once installed, please launch your instance and navigate to the in-game controls
 
 Within the in-game controls menu, you may need to change the "Mode" setting to **Controller**, in order for the game to respond to input from the gamepad.
 
+Remember to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
+
 ### For Minecraft Versions 1.18.1+
 
 Since LambdaControls got deprecated, someone decided to fork it and update it.
@@ -42,19 +44,17 @@ It's an updated fork of LambdaControls.
 
 To install this mod on PolyMC, download it directly [from their GitHub releases](https://github.com/TeamMidnightDust/MidnightControls/releases) and drag-and-drop the jar in PolyMC. 
 
+Once installed, please launch your instance and navigate to the in-game controls menu.
+
+Within the in-game controls menu, you may need to change the "Mode" setting to **Controller**, in order for the game to respond to input from the gamepad.
+
+Remember to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
+
 ## Forge
 
 For Minecraft 1.12.2 to 1.18.2 we recommend the **Controllable** mod.
 
-### For Minecraft 1.18.1 and 1.18.2 *specifically*
-
-You must install the Minecraft 1.18 version of the mod **directly** from CurseForge and can be found [here](https://www.curseforge.com/minecraft/mc-mods/controllable).
-
-This is likely because the 1.18 version of the mod does not claim to support Minecraft 1.18.1 or 1.18.2, yet despite this, it should work as expected.
-
-1.18.2 Forge is still early in development, and may have some issues.
-
-### For Minecraft Versions 1.12.2 to 1.18
+### For Minecraft Versions 1.12.2 to 1.18.2
 
 Controllable can be be installed using PolyMC's mod downloader function from the **CurseForge** service.
 
