@@ -13,8 +13,9 @@ eleventyNavigation:
 - [Windows](#windows)
 - [macOS](#macos)
 - [OpenBSD](#openbsd)
+- [IDEs and Tooling](#ides-and-tooling)
 
-# Getting the source
+## Getting the source
 
 Clone the source code using git, and grab all the submodules:
 
@@ -27,11 +28,11 @@ git submodule update
 
 **The rest of the documentation assumes you have already cloned the repository.**
 
-# Linux and FreeBSD
+## Linux and FreeBSD
 
 Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.
 
-## Build dependencies
+### Build dependencies
 - A C++ compiler capable of building C++11 code.
 - Qt Development tools 5.6 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
 - cmake 3.1 or newer (`cmake` on Debian-based system)
@@ -194,18 +195,16 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
 Now you should be able to build and test PolyMC with the `Build` and `Run` buttons.
 
-# Windows
+## Windows
 
 We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
 
-## Dependencies
+### Dependencies
 
 - [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
   - Make sure to follow all instructions on the webpage.
 - [Java JDK 8 or later](https://adoptium.net/)
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
-
-## Getting set up
 
 ### Preparing MSYS2
 
@@ -226,9 +225,9 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 6. If you don't want PolyMC to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
 7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
 
-# macOS
+## macOS
 
-## Install prerequisites:
+### Install prerequisites:
 
 - Install XCode Command Line tools.
 - Install the official build of CMake (https://cmake.org/download/).
@@ -278,11 +277,11 @@ Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installati
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
 
-# OpenBSD
+## OpenBSD
 
 Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.
 
-## Build dependencies
+### Build dependencies
 - A C++ compiler capable of building C++11 code (included in base system).
 - Qt Development tools 5.6 or newer ([meta/qt5](https://openports.se/meta/qt5)).
 - cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake)).
@@ -321,4 +320,54 @@ cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
 
+## IDEs and Tooling
 
+There are a few tools that you can set up to make your development workflow smoother. In addition, some IDEs also require a bit more setup to work with Qt and CMake.
+
+### ccache
+
+**ccache** is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.
+
+You can [download it here](https://ccache.dev/download.html). After setting up, builds will be incremental, and the builds after the first one will be much faster.
+
+### VS Code
+
+To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
+
+Then, you need to setup the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PolyMC.
+
+1. Add the path to your Qt `include` folder to `includePath`
+2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
+3. Set `compileCommands` to `${workspaceFolder}/build/compile_commands.json` (this will only work after you configure CMake)
+4. Set `cppStandard` to `c++14` or higher.
+
+Now the VS Code setup should be fully working. To test, open up some files and see if any error squiggles appear. If there are none, it's working properly!
+
+Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS with Qt installed via Homebrew:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Mac (PolyMC)",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/opt/qt@5/include/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "compilerArgs": [
+                "-L/opt/homebrew/opt/qt@5/lib"
+            ],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
+```
