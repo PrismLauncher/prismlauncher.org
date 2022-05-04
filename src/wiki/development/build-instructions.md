@@ -173,28 +173,6 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
-### Loading the project in CLion (optional)
-1. Open CLion
-2. Choose `File->Open`
-3. Navigate to the source folder
-4. Go to settings `Ctrl+Alt+S`
-5. Navigate to `Toolchains` in `Build, Execution, Deployment`
-    - Set the correct build tools ([see here](https://i.imgur.com/daFAdVe.png))
-    - CMake: `cmake` (optional)
-    - Make: `make` (optional)
-    - C Compiler: `gcc`
-    - C++ Compiler: `g++`
-    - Debugger: `gdb` (optional)
-6. Navigate to `CMake` in `Build, Execution, Deployment`
-    - Set `Build directory` to `build`
-7. Navigate to `Edit Configurations`  ([see here](https://i.imgur.com/fu53nc3.png))
-    - Create a new configuration
-    - Name: `All`
-    - Target: `All targets`
-    - Choose the newly added configuration as default
-
-Now you should be able to build and test PolyMC with the `Build` and `Run` buttons.
-
 ## Windows
 
 We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
@@ -371,3 +349,26 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
     "version": 4
 }
 ```
+
+### CLion
+
+1. Open CLion
+2. Choose `File->Open`
+3. Navigate to the source folder
+4. Go to settings `Ctrl+Alt+S`
+5. Navigate to `Toolchains` in `Build, Execution, Deployment`
+    - Set the correct build tools ([see here](https://i.imgur.com/daFAdVe.png))
+    - CMake: `cmake` (optional)
+    - Make: `make` (optional)
+    - C Compiler: `gcc`
+    - C++ Compiler: `g++`
+    - Debugger: `gdb` (optional)
+6. Navigate to `CMake` in `Build, Execution, Deployment`
+    - Set `Build directory` to `build`
+7. Navigate to `Edit Configurations`  ([see here](https://i.imgur.com/fu53nc3.png))
+    - Create a new configuration
+    - Name: `All`
+    - Target: `All targets`
+    - Choose the newly added configuration as default
+
+Now you should be able to build and test PolyMC with the `Build` and `Run` buttons.
