@@ -48,7 +48,7 @@ Once installed, please launch your instance and navigate to the in-game controls
 
 Within the in-game controls menu, you may need to change the "Mode" setting to **Controller**, in order for the game to respond to input from the gamepad.
 
-Remember to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
+If it doesn't work, try to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
 
 ## Forge
 
