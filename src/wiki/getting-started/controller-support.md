@@ -38,11 +38,11 @@ Remember to get the mapping using [**the app linked in the mod**](https://genera
 
 Since LambdaControls got deprecated, someone decided to fork it and update it.
 
-In fact, here we're recommending [MidnightControls](https://github.com/TeamMidnightDust/MidnightControls).
+In fact, here we're recommending [MidnightControls](https://modrinth.com/mod/midnightcontrols).
 
 It's an updated fork of LambdaControls.
 
-To install this mod on PolyMC, download it directly [from their GitHub releases](https://github.com/TeamMidnightDust/MidnightControls/releases) and drag-and-drop the jar in PolyMC. 
+It can be be installed using PolyMC's mod downloader funtion With Modrinth.
 
 Once installed, please launch your instance and navigate to the in-game controls menu.
 
