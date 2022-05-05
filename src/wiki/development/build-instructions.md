@@ -316,8 +316,10 @@ Then, you need to setup the configuration. Go into the command palette and open 
 
 1. Add the path to your Qt `include` folder to `includePath`
 2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
-3. Set `compileCommands` to `${workspaceFolder}/build/compile_commands.json` (this will only work after you configure CMake)
+3. Set `compileCommands` to `${workspaceFolder}/build/compile_commands.json`
 4. Set `cppStandard` to `c++14` or higher.
+
+For step 3 to work, you also have to reconfigure CMake to generate a `compile_commands.json` file. To do this, add `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` to the end of your CMake configuration command and run it again. You should see a file at `build/compile_commands.json`.
 
 Now the VS Code setup should be fully working. To test, open up some files and see if any error squiggles appear. If there are none, it's working properly!
 
