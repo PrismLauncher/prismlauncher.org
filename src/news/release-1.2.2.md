@@ -1,7 +1,7 @@
 ---
 title: Release 1.2.2 (CurseForge Hotfix)
 description: Fixing CurseForge just in time!
-date: 2022-04-20
+date: 2022-05-08
 tags:
   - release
 ---
