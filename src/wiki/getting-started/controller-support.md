@@ -18,7 +18,7 @@ This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 
-## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"> <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt 
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt 
 
 Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilt Standard Libraries** mod on **Quilt** for your instance is installed. 
 
