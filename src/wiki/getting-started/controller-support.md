@@ -24,7 +24,7 @@ Before you continue, ensure that the correct version of the **Fabric API** mod o
 
 ### <img src="https://cdn-raw.modrinth.com//data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
 
-For Minecraft 1.16.5 to 1.117.1 we recommend the **LambdaControls** mod.
+For Minecraft 1.16.5 to 1.17.1 we recommend the **LambdaControls** mod.
 
 It can be be installed using PolyMC's mod downloader function either with Modrinth (recommended) or CurseForge.
 
