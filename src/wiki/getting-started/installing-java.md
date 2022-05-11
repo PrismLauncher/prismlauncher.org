@@ -40,7 +40,7 @@ Since those igpus are not *officially* supported on Windows 10, with them the ga
 After you download the required java binary for your architecture, *extract* the zip, and move the folder to your PolyMC data folder (%appdata%/PolyMC for notportable, the PolyMC folder for portable builds), you need to go to the *PolyMC java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
 This should fix your issue.
 Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
-If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, thought.
+If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
 ## Older Minecraft on MacOS
 If you use some older Minecraft versions, you might have had this error:

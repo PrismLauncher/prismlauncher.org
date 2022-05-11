@@ -9,33 +9,37 @@ eleventyNavigation:
 
 Once upon a time, OptiFine was *the* way, to make your game better, faster, and stronger. Things have since changed.
 
-**NOTE:** Most Fabric loader mods require the [Fabric API](../download-mods/#fabric) mod in order to work.
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt 
 
-## Sodium
+**NOTE:** Most Fabric loader mods require the [Fabric API](../download-mods/#fabric) mod in order to work, while most Quilt Loader mods require [Quilt Standard Libraries](https://quiltmc.org/install/polymc/) to work.
+
+##  <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium 
 
 [Sodium](https://modrinth.com/mod/sodium) is the best client-side optimisation mod available at the moment, and we **highly recommend** installing it when possible.
 
-To install in PolyMC, create an instance with the **Fabric** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
+To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
 
-## Iris
+## <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris 
 
 [Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
 
 You can find a list of currently supported shaderpacks [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md).
 
-To install in PolyMC, create an instance with the **Fabric** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
+To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
-## Other Mods
+## <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods  
 
 If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
 
 If you would like to go a bit further, LamdAurora maintains a very detailed list of OptiFine alternatives, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
 
-# Fabulously Optimized
+# <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized 
 
 If you don't want to search, and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
 
 See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for PolyMC too.
+
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge 
 
 ## Note about Forge
 
