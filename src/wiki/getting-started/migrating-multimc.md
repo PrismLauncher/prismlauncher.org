@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Migrating instances from MultiMC
 
-## In MultiMC
+##  <img src="https://avatars2.githubusercontent.com/u/5411890" height="20" />  In MultiMC
 
 In order to transfer an instance, or multiple instances from MultiMC to PolyMC, you must begin the process by opening MultiMC on your computer.
 
@@ -17,7 +17,7 @@ Left click on the tab and select the **View Instance Folder** option. This shoul
 
 Now that the MultiMC instance directory is open, you may **select**, and then **copy** the instances that you wish to transfer.
 
-## In PolyMC
+## <img src="https://raw.githubusercontent.com/PolyMC/PolyMC/e909cc363d2236ad99601222728bad5b1ea71c31/program_info/org.polymc.PolyMC.svg" height="20" /> In PolyMC
 
 To complete the transfer process, you must now open PolyMC.
 
