@@ -31,7 +31,7 @@ To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, 
 
 If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
 
-If you would like to go a bit further, LamdAurora maintains a very detailed list of OptiFine alternatives, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
+If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
 
 ## <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized 
 
@@ -43,5 +43,24 @@ See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/
 
 ## Note about Forge
 
-Unlike on Fabric, unofficial Forge ports of Fabric optimization mods are usually of low-quality, and are generally not recommended (with the exception of some mods)
-In most cases however, you should prefer using OptiFine on Forge.
+Unlike on Fabric, most unofficial ports of Fabric/Quilt OptiFine alternatives might have some compatibility/stability issues.
+
+While on some modpacks/with some mods they're going to work good, with others they might be *very* unstable so be well aware of what you're doing. If you have issues, use OptiFine.
+
+**Don't report issues with those on upstream's Discord support channels!**
+
+## <img src="https://raw.githubusercontent.com/Asek3/Rubidium/e3aea98992e110b41ceed5ab128c81ff6fd98fa0/src/main/resources/icon.png" height="20"> Rubidium 
+
+[Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
+
+To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**, then **CurseForge**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
+
+## <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.16.5/src/main/resources/oculus-logo.png" height="20"> Oculus 
+
+[Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
+
+To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**, then **CurseForge**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
+
+## Other mods
+
+You can find a list of performance mods for Forge [here](https://github.com/NordicGamerFE/usefulmods#performance-and-bug-fixing-mods).
