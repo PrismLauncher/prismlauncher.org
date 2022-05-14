@@ -43,7 +43,7 @@ See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/
 
 ## Note about Forge
 
-Unlike on Fabric, most unofficial ports of Fabric/Quilt OptiFine alternatives might have some compatibility/stability issues.
+Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.
 
 While on some modpacks/with some mods they're going to work good, with others they might be *very* unstable so be well aware of what you're doing. If you have issues, use OptiFine.
 
