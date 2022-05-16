@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 # About PolyMC
 
-PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, reasource packs, settings, and more. While originally being forked over packaging/redistribution concerns, PolyMC brings new and exciting features developed by the community for the community. Furthermore, PolyMC is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected. 
+PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, resource packs, settings, and more. While originally being forked over packaging/redistribution concerns, PolyMC brings new and exciting features developed by the community for the community. Furthermore, PolyMC is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected. 
 
 ## I'm in! Now tell me more about these features?
 
