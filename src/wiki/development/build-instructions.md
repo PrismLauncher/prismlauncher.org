@@ -20,10 +20,8 @@ eleventyNavigation:
 Clone the source code using git, and grab all the submodules:
 
 ```bash
-git clone https://github.com/PolyMC/PolyMC.git
+git clone --recursive https://github.com/PolyMC/PolyMC.git
 cd PolyMC
-git submodule init
-git submodule update
 ```
 
 **The rest of the documentation assumes you have already cloned the repository.**
