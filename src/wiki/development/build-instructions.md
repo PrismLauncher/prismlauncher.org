@@ -32,7 +32,7 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
-- Qt Development tools 5.6 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
+- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
 - cmake 3.1 or newer (`cmake` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
 - Java JDK (`openjdk-17-jdk`on Debian-based system)
@@ -148,7 +148,7 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 1. Run the Qt installer.
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
-   - You need Qt 5.6.x 64-bit ticked.
+   - You need Qt 5.12.x 64-bit ticked. (or a newer version)
    - You need Tools/Qt Creator ticked.
    - Other components are selected by default, you can un-tick them if you don't need them.
 4. Accept the license agreements.
@@ -162,7 +162,7 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.6.x GCC 64bit)".
+   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
    - Hit the "Run CMake" button.
    - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
    - Hit "Finish" if CMake ran successfully.
@@ -208,7 +208,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 - Install XCode Command Line tools.
 - Install the official build of CMake (https://cmake.org/download/).
 - Install JDK 8 (https://adoptium.net/releases.html?variant=openjdk8&jvmVariant=hotspot).
-- Get Qt 5.6, and install it (https://download.qt.io/new_archive/qt/5.6/5.6.3/) or higher (tested) (https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source).
+- Install Qt 5.12 or newer
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
@@ -259,7 +259,7 @@ Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.
 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code (included in base system).
-- Qt Development tools 5.6 or newer ([meta/qt5](https://openports.se/meta/qt5)).
+- Qt Development tools 5.12 or newer ([meta/qt5](https://openports.se/meta/qt5)).
 - cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake)).
 - zlib (included in base system).
 - Java JDK ([devel/jdk-1.8](https://openports.se/devel/jdk/1.8)).
