@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Code of conduct
+  key: Code of Conduct
   parent: Overview
   order: 2
 ---
