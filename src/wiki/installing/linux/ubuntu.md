@@ -11,7 +11,7 @@ Several MPR packages are available:
 [![polymc](https://img.shields.io/badge/mpr-polymc-orange)](https://mpr.makedeb.org/packages/polymc)  
 [![polymc-bin](https://img.shields.io/badge/mpr-polymc--bin-orange)](https://mpr.makedeb.org/packages/polymc-bin)  
     
-Installing una a makedeb helper
+Installing Una, a makedeb helper
 
 ```
 bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
