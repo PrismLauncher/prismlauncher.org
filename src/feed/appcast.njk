@@ -1,0 +1,69 @@
+---
+# Metadata comes from _data/metadata.json
+permalink: "{{ metadata.appcast.path }}"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    {% set absoluteUrl %}{{ metadata.appcast.path | url | absoluteUrl(metadata.url) }}{% endset %}
+    <link>{{ absoluteUrl }}</link>
+    <language>en</language>
+    {%- for post in collections.posts | reverse %}
+    {%- if post.data.release_version and post.data.mac_signature %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+      <item>
+        <title>{{ post.data.title }} (macOS)</title>
+        <link>{{ absolutePostUrl }}</link>
+        <sparkle:version>{{ post.data.release_version }}</sparkle:version>
+        <description>
+            {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+        </description>
+        <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+        {% if post.data.minimum_macos_version %}<sparkle:minimumSystemVersion>{{ post.data.minimum_macos_version }}</sparkle:minimumSystemVersion>{% endif %}
+        {% if post.data.critical_update %}<sparkle:criticalUpdate></sparkle:criticalUpdate>{% endif %}
+        {% if post.data.minimum_autoupdate_version %}<sparkle:minimumAutoupdateVersion>{{ post.data.minimum_autoupdate_version }}</sparkle:minimumAutoupdateVersion>{% endif %}
+        {% if post.data.phased_rollout_interval %}<sparkle:phasedRolloutInterval>{{ post.data.phased_rollout_interval }}</sparkle:phasedRolloutInterval>{% endif %}
+        {%- if post.data.mac_signature %}
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/{{ post.data.release_version }}/PolyMC-macOS-{{ post.data.release_version }}.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="{{ post.data.mac_signature }}"/>
+        {%- endif %}
+      </item>
+    {%- endif %}
+    {%- if post.data.release_version and post.data.win32_signature and post.data.win64_signature %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+      <item>
+        <title>{{ post.data.title }} (Windows)</title>
+        <link>{{ absolutePostUrl }}</link>
+        <sparkle:version>{{ post.data.release_version }}</sparkle:version>
+        <description>
+            {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+        </description>
+        <pubDate>{{ post.date | dateToRfc3339 }}</pubDate>
+        {% if post.data.minimum_windows_version %}<sparkle:minimumSystemVersion>{{ post.data.minimum_windows_version }}</sparkle:minimumSystemVersion>{% endif %}
+        {% if post.data.critical_update %}<sparkle:criticalUpdate></sparkle:criticalUpdate>{% endif %}
+        {% if post.data.minimum_autoupdate_version %}<sparkle:minimumAutoupdateVersion>{{ post.data.minimum_autoupdate_version }}</sparkle:minimumAutoupdateVersion>{% endif %}
+        {% if post.data.phased_rollout_interval %}<sparkle:phasedRolloutInterval>{{ post.data.phased_rollout_interval }}</sparkle:phasedRolloutInterval>{% endif %}
+        {%- if post.data.win32_signature %}
+        <enclosure sparkle:os="windows-x86"
+            url="https://github.com/PolyMC/PolyMC/releases/download/{{ post.data.release_version }}/PolyMC-Windows-i686-Setup-{{ post.data.release_version }}.zip"
+            length="0"
+            type="application/octet-stream"
+            sparkle:dsaSignature="{{ post.data.win32_signature }}"/>
+        {%- endif %}
+        {%- if post.data.win64_signature %}
+        <enclosure sparkle:os="windows-x64"
+            url="https://github.com/PolyMC/PolyMC/releases/download/{{ post.data.release_version }}/PolyMC-Windows-x86_64-Setup-{{ post.data.release_version }}.zip"
+            length="0"
+            type="application/octet-stream"
+            sparkle:dsaSignature="{{ post.data.win64_signature }}"/>
+        {%- endif %}
+      </item>
+    {%- endif %}
+    {%- endfor %}
+  </channel>
+</rss>
