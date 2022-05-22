@@ -2,6 +2,7 @@
 title: Download BSD
 eleventyNavigation:
   key: BSD 
+  order: 5
 ---
 
 <div class="download-content">

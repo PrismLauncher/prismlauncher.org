@@ -2,7 +2,8 @@
 title: Download Windows
 permalink: /download/
 eleventyNavigation:
-  key: <i class="fa fa-windows" aria-hidden="true"></i> Windows 
+  key: <i class="fa fa-windows" aria-hidden="true"></i> Windows
+  order: 1
 ---
 
 <div class="download-content">

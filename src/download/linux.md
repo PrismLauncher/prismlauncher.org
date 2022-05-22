@@ -2,6 +2,7 @@
 title: Download Linux
 eleventyNavigation:
   key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
+  order: 3
 ---
 
 <div class="download-content">

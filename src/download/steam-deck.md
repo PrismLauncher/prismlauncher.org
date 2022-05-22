@@ -2,6 +2,7 @@
 title: Download Steam Deck
 eleventyNavigation:
   key: <i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck
+  order: 4
 ---
 
 <div class="download-content">
