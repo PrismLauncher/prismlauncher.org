@@ -1,7 +1,7 @@
 {
   "title": "PolyMC",
   "url": "https://polymc.org/",
-  "githubEdit": "https://github.com/PolyMC/polymc.github.io/blob/master/", 
+  "githubEdit": "https://github.com/PolyMC/polymc.github.io/blob/master/",
   "language": "en",
   "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
   "feed": {
@@ -13,6 +13,10 @@
   "jsonfeed": {
     "path": "/feed/feed.json",
     "url": "https://polymc.org/feed/feed.json"
+  },
+  "appcast": {
+    "path": "/feed/appcast.xml",
+    "url": "https://polymc.org/feed/appcast.xml"
   },
   "author": {
     "name": "PolyMC",
