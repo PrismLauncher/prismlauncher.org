@@ -1,0 +1,17 @@
+---
+layout: layouts/main.njk
+background: ./src/img/background/download.png
+eleventyComputed:
+  hero:
+    title: "Downloads"
+    description: "Download PolyMC {{version.current}}"
+---
+<style>
+  .background {
+    filter: brightness(80%);
+  }
+</style>
+
+{{ collections.download | eleventyNavigation | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'download-tab-list', activeListItemClass: 'download-tab-active' }) | safe }}
+
+{{ content | safe }}

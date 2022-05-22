@@ -1,4 +1,5 @@
 ---
+tags: nav
 eleventyNavigation:
   key: Community
   order: 5

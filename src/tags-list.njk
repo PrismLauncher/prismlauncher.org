@@ -1,10 +1,12 @@
 ---
 permalink: /tags/
 layout: layouts/main.njk
+background: ./src/img/background/news.png
 ---
-<h1>Tags</h1>
-
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{% endfor %}
+  <h1>Tags</h1>
+<div class="content top">
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+  {% endfor %}
+</div>

@@ -1,4 +1,5 @@
 {
+    "background": "./src/img/background/news.png",
     "layout": "layouts/post.njk",
     "tags": [
         "posts"
