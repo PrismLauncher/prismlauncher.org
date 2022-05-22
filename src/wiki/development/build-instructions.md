@@ -51,7 +51,7 @@ cmake -S . -B build \
 # build
 cd build
 make -j$(nproc) install
-cmake --install . --prefix install --component portable
+cmake --install . --prefix ../install --component portable
 ```
 
 ### Building & installing to the system
