@@ -1,4 +1,5 @@
 ---
+tags: nav
 eleventyNavigation:
   key: Wiki
   order: 4

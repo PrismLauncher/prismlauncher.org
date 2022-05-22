@@ -1,13 +1,19 @@
 ---
 layout: layouts/main.njk
 title: Downloads
-permalink: /download/
+background: ./src/img/background/download.png
+permalink: /download2/
 eleventyComputed:
   hero:
     title: "Downloads"
     description: "Download PolyMC {{version.current}}"
-    background: ./src/img/town-at-night.png
 ---
+<style>
+  .background {
+    filter: brightness(80%);
+  }
+</style>
+
 <div class="notification is-info">
 
 PolyMC supports the Steam Deck, you can find the installation [instructions here](/wiki/installing/linux/steam-deck).

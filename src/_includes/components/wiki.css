@@ -1,5 +1,13 @@
+.wiki-content, .wiki-toc {
+  margin-top: 1em;
+}
+
 .wiki-toc {
-  font-size: 1rem; /* Reset */
+  background-color: var(--accent);
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1rem;
+  /* Reset */
   flex: 1;
 }
 
@@ -9,12 +17,15 @@
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
-  margin: 0 0 2.5em;
+  margin: 0;
   list-style: none;
 }
+
 .wiki-toc-list li {
-  line-height: 1.466666666667; /* 22px /15 */
+  line-height: 1.466666666667;
+  /* 22px /15 */
 }
+
 /* Nested lists */
 .wiki-toc-list ul {
   padding: 0 0 0.75em 0;
@@ -25,16 +36,12 @@
 /* Menus nested 2 or more deep */
 .wiki-toc-list ul ul {
   padding-bottom: 0;
-  padding-left: 0.625rem; /* 10px /16 */
+  padding-left: 0.625rem;
+  /* 10px /16 */
 }
 
 /* Hide inactive menus 3 or more deep */
-.wiki-toc-list
-  ul
-  ul
-  > li:not(.wiki-toc-active)
-  > ul
-  > li:not(.wiki-toc-active) {
+.wiki-toc-list ul ul>li:not(.wiki-toc-active)>ul>li:not(.wiki-toc-active) {
   display: none;
 }
 
@@ -47,30 +54,35 @@
 .wiki-toc-list a:not(:hover) {
   text-decoration: none;
 }
+
 .wiki-toc-list li {
   margin: 0;
   padding: 0;
 }
-.wiki-toc-list > li {
+
+.wiki-toc-list>li {
   flex-grow: 1;
-  flex-basis: 14.375rem; /* 230px /16 */
+  flex-basis: 14.375rem;
+  /* 230px /16 */
 }
+
 /* Top level links */
-.wiki-toc-list > li > a {
+.wiki-toc-list>li>a {
   color: var(--primary-text);
   font-weight: 700;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 0.25em; /* 4px /16 */
+  margin-bottom: 0.25em;
+  /* 4px /16 */
 }
 
 /* Active links */
-.wiki-toc-list li.wiki-toc-active > a {
+.wiki-toc-list li.wiki-toc-active>a {
   background-color: var(--accent);
 }
 
 /* Show only active nested lists */
 .wiki-toc-list ul.wiki-toc-active,
-.wiki-toc-list li.wiki-toc-active > ul {
+.wiki-toc-list li.wiki-toc-active>ul {
   display: block;
 }
 
@@ -80,12 +92,12 @@
 }
 
 .inlinelist {
-	padding: 0;
+  padding: 0;
 }
 
 .inlinelist-no-nest ul,
 .inlinelist-no-nest ol {
-	display: none;
+  display: none;
 }
 
 .wiki-tag {
@@ -116,7 +128,10 @@
 }
 
 @media (min-width: 64em) {
-  .wiki-content{
-    width: 85%
+  .wiki-content {
+    width: 80%
+  }
+  .wiki-toc {
+    margin-right: 1em;
   }
 }

@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Code of conduct
+  key: Code of Conduct
   parent: Overview
   order: 2
 ---
@@ -70,8 +70,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement via email at
-[polymc-enforcement@scrumplex.net](mailto:polymc-enforcement@scrumplex.net) (Email
-address subject to change).
+[polymc-enforcement@scrumplex.net](mailto:polymc-enforcement@scrumplex.net) (Email address subject to change).
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

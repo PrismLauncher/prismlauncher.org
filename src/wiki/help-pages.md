@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
   key: Help pages
+  order: 3
 --- 
 # Help pages
 

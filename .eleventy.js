@@ -48,20 +48,18 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
   return `<picture>
     ${Object.values(metadata_dark)
       .map((imageFormat) => {
-        return `  <source type="${
-          imageFormat[0].sourceType
-        }" srcset="${imageFormat
-          .map((entry) => entry.srcset)
-          .join(", ")}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`;
+        return `  <source type="${imageFormat[0].sourceType
+          }" srcset="${imageFormat
+            .map((entry) => entry.srcset)
+            .join(", ")}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`;
       })
       .join("\n")}
     ${Object.values(metadata)
       .map((imageFormat) => {
-        return `  <source type="${
-          imageFormat[0].sourceType
-        }" srcset="${imageFormat
-          .map((entry) => entry.srcset)
-          .join(", ")}" sizes="${sizes}">`;
+        return `  <source type="${imageFormat[0].sourceType
+          }" srcset="${imageFormat
+            .map((entry) => entry.srcset)
+            .join(", ")}" sizes="${sizes}">`;
       })
       .join("\n")}
       <img
@@ -82,6 +80,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/inter": "assets/fonts/inter",
   });
+  eleventyConfig.addPassthroughCopy({
+    "src/_includes/components/forkawesome": "assets/forkawesome",
+  });
+
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -129,23 +131,11 @@ module.exports = function (eleventyConfig) {
 
   function filterTagList(tags) {
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts", "wiki"].indexOf(tag) === -1
     );
   }
 
   eleventyConfig.addFilter("filterTagList", filterTagList);
-
-  // Navigation
-
-  // Header Navigation
-  eleventyConfig.addCollection("nav", function (collections) {
-    return collections.getFilteredByGlob("src/*");
-  });
-
-  // Wiki navigation
-  eleventyConfig.addCollection("wiki", function (collections) {
-    return collections.getFilteredByGlob("src/wiki/**/*");
-  });
 
   // Create an array of all tags
   eleventyConfig.addCollection("tagList", function (collection) {
