@@ -12,8 +12,8 @@ eleventyNavigation:
       <div>
         <h1>Windows Download</h1>
         <br>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-x86_64-setup-{{version.current}}.zip">Installer (.exe)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-x86_64-portable-{{version.current}}.zip">Portable (.zip)</a>
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-x86_64-Setup-{{version.current}}.exe">Installer (.exe)</a>
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-x86_64-Portable-{{version.current}}.zip">Portable (.zip)</a>
       </div>
     </div>
     <div class="column">
