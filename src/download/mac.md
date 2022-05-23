@@ -27,7 +27,7 @@ eleventyNavigation:
 
 ### Homebrew Package (community-maintained)
 
-Installation instructions
+#### Installation instructions
 
 ```
 brew install --cask polymc
