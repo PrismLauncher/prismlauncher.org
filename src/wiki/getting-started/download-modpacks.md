@@ -16,6 +16,7 @@ You can now use the sidebar to the left of the window to choose from the followi
 * FTB
 * FTB Legacy
 * Technic
+* Modrinth
 
 After selecting which service you wish to use, you can browse the modpacks which available to install. 
 
