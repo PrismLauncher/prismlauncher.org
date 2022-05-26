@@ -31,11 +31,17 @@ eleventyNavigation:
 
 ### CLI (community-maintained)
 
+#### Winget Package
+
+```
+winget install -e PolyMC.PolyMC
+```
+
 #### Scoop Package
 
 ```
 scoop bucket add games
-install polymc
+scoop install polymc
 ```
 
 #### Chocolatey Package
