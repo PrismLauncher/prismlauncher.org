@@ -35,11 +35,11 @@ Go into the **Mods** tab on the left side and then in the right menu select **Do
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
+## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Quilt
+
+There's no way of running OptiFine on Quilt at the time of writing.
+
 ## Adding the .jar file into PolyMC
 Go into the **Mods** tab on the left side of the **Edit Instance** menu, and then click on the **Add .jar** option to the right of the window. 
 
 Now, find and select the **.jar** file you downloaded earlier, and it should now be added to your instance. Enjoy!
-
-## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Quilt
-
-There's no way of running OptiFine on Quilt at the time of writing.
