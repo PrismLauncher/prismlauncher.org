@@ -20,6 +20,36 @@ If you aren't sure which version you will need, **it is recommended to just inst
 
 You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
 
+# Java on linux
+
+On Linux, it's recommended to use your package manager for installing Java.
+
+## Fedora
+
+On the COPR package all required java versions should be installed, but this is the command to install it:
+
+> sudo dnf install java-1.8.0-openjdk java-17-openjdk
+
+## Void Linux
+
+> sudo xbps-install openjdk17-jre openjdk8-jre
+
+## Arch Linux
+
+> sudo pacman -S jre17-openjdk jre8-openjdk
+
+## Ubuntu
+
+> sudo apt install openjdk-17-jre openjdk-8-jre
+
+# Debian
+
+> sudo apt install openjdk-17-jre 
+
+Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
+
+# Special cases
+
 ## Forge 1.16.5 and Java 8u321+
 
 Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended 
