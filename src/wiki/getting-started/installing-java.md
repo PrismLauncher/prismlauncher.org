@@ -28,23 +28,33 @@ On Linux, it's recommended to use your package manager for installing Java.
 
 On the COPR package all required java versions should be installed, but this is the command to install it:
 
-> sudo dnf install java-1.8.0-openjdk java-17-openjdk
+```
+sudo dnf install java-1.8.0-openjdk java-17-openjdk
+```
 
 ## Void Linux
 
-> sudo xbps-install openjdk17-jre openjdk8-jre
+```
+sudo xbps-install openjdk17-jre openjdk8-jre
+```
 
 ## Arch Linux
 
-> sudo pacman -S jre17-openjdk jre8-openjdk
+```
+sudo pacman -S jre17-openjdk jre8-openjdk
+```
 
 ## Ubuntu
 
-> sudo apt install openjdk-17-jre openjdk-8-jre
+```
+sudo apt install openjdk-17-jre openjdk-8-jre
+```
 
-# Debian
+## Debian
 
-> sudo apt install openjdk-17-jre 
+```
+sudo apt install openjdk-17-jre 
+```
 
 Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
 
