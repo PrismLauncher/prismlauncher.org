@@ -58,6 +58,10 @@ sudo apt install openjdk-17-jre
 
 Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
 
+## Flatpak
+
+The PolyMC flatpak already bundles java.
+
 # Special cases
 
 ## Forge 1.16.5 and Java 8u321+
