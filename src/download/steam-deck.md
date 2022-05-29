@@ -82,7 +82,7 @@ To do so, right-click on the PolyMC Non-Steam Game, and select `Properties`. At 
 ### Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized`, and `Close PolyMC after game window opens` in the launcher's settings, under the `Minecraft` tab.
-- If you want Minecraft to launch without the PolyMC launcher, add `-l <instance-id>` in the launch options for your PolyMC Non-Steam Game. If you use this launch option, make sure that `Close PolyMC after game window opens` is disabled in the launcher's settings, so that the launcher does not show up when the game is closed. See [CLI launch options](../../../getting-started/command-line-interface/) for more.
-- Install a mod that enables controller support. See [Controller Support](../../../getting-started/controller-support) for more.
+- If you want Minecraft to launch without the PolyMC launcher, add `-l <instance-id>` in the launch options for your PolyMC Non-Steam Game. If you use this launch option, make sure that `Close PolyMC after game window opens` is disabled in the launcher's settings, so that the launcher does not show up when the game is closed. See [CLI launch options](../../wiki/getting-started/command-line-interface/) for more.
+- Install a mod that enables controller support. See [Controller Support](../../wiki/getting-started/controller-support) for more.
 
 </div>
