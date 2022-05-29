@@ -11,7 +11,7 @@ eleventyNavigation:
       <div>
         <h1>Steam Deck Download</h1>
         <br>
-        <a class="button is-big" href="{{ '/download' | url }}">Install from FlatHub</a>
+        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
       </div>
     </div>
     <div class="column">
