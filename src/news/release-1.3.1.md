@@ -1,5 +1,5 @@
 ---
-title: Release 1.3.1
+title: PolyMC Update 1.3.1, now available
 description: Fixing up the oopsies!
 date: 2022-05-29
 tags:

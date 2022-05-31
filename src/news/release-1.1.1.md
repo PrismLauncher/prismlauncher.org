@@ -1,5 +1,5 @@
 ---
-title: Release 1.1.1
+title: PolyMC Update 1.1.1, now available
 description: Bugfix release
 date: 2022-03-27
 tags:

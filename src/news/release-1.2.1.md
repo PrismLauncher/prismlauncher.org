@@ -1,5 +1,5 @@
 ---
-title: Release 1.2.1
+title: PolyMC Update 1.2.1, now available
 description: It's Wednesday my dudes.
 date: 2022-04-20
 tags:

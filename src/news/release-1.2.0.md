@@ -1,5 +1,5 @@
 ---
-title: Release 1.2.0
+title: PolyMC Update 1.2.0, now available
 description: A lot of refinement!
 date: 2022-04-17
 tags:

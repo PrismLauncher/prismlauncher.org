@@ -1,5 +1,5 @@
 ---
-title: Release 1.3.0
+title: PolyMC Update 1.3.0, now available
 description: A lot of new things to check out!
 date: 2022-05-22
 tags:

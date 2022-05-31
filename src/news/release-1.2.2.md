@@ -1,5 +1,5 @@
 ---
-title: Release 1.2.2 (CurseForge Hotfix)
+title: PolyMC Update 1.2.2, now available (CurseForge Hotfix)
 description: Fixing CurseForge just in time!
 date: 2022-05-08
 tags:
