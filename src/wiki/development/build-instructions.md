@@ -26,9 +26,9 @@ cd PolyMC
 
 **The rest of the documentation assumes you have already cloned the repository.**
 
-## Linux and FreeBSD
+## Linux
 
-Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.
+Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution.
 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
@@ -62,7 +62,7 @@ This is the preferred method of installation, and is suitable for packages.
 # configure everything
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"
+   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
@@ -106,30 +106,6 @@ rpmbuild -bb polymc.spec
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
-
-### Building a Slackware package
-
-To build a Slackware package, first install [qt5 SlackBuild](http://slackbuilds.org/repository/14.2/libraries/qt5/) (on 15.0 and newer installed by defualt), then set up a [JDK](https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/adoptium-jdk8.tar.gz).
-
-If you're using Slackware 14.2, update CMake with these commands:
-
-```bash
-mkdir -p /tmp/SBo
-cd /tmp/SBo
-wget -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz
-tar xzvf cmake-3.22.2.tar.gz
-cd cmake-3.22.2
-./configure --prefix=/usr
-make
-sudo make install
-```
-
-Next, download the [SlackBuild](https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/polymc.tar.gz), unpack it, and then type the following in the extracted directory:
-
-```
-sudo ./polymc.SlackBuild # script will do everything, just sit up and wait
-sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created package
-```
 
 ### Building a Flatpak
 
