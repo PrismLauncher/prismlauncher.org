@@ -26,14 +26,13 @@ eleventyNavigation:
 
 # <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD
 
-To install PolyMC to the system, add the delports repository:
+There are community-maintained binary packages available:
+  
+The port:
 
 ```mkdir -p /usr/local/etc/pkg/repos```
 ```fetch -o /usr/local/etc/pkg/repos/delports.conf http://codeberg.org/glowiak/delports/raw/branch/master/delports.conf```
 ```pkg update```
-  
-Then install the package:
-
 ```pkg install polymc```
   
 You can find runtimes in /usr/local/share/mc-rts
