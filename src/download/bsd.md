@@ -26,7 +26,19 @@ eleventyNavigation:
 
 # <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD
 
-There are community-maintained binary packages available:
+To install PolyMC to the system, add the delports repository:
+
+```mkdir -p /usr/local/etc/pkg/repos```
+```fetch -o /usr/local/etc/pkg/repos/delports.conf http://codeberg.org/glowiak/delports/raw/branch/master/delports.conf```
+```pkg update```
+  
+Then install the package:
+
+```pkg install polymc```
+  
+You can find runtimes in /usr/local/share/mc-rts
+  
+Alternatively you can use portable packages:
 
 - [Gzipped binaries](http://glowiak.github.io/file/polymc-latest-fbsd64-raw) - traditional way to distribute, unpack and run.
 
