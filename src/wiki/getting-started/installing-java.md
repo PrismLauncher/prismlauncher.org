@@ -62,6 +62,13 @@ Java 8 is not available from Debian repos for unknown reasons, but you can [get 
 
 The PolyMC flatpak already bundles java.
 
+## NixOS
+
+```
+environment.systemPackages = [ pkgs.openjdk17 pkgs.openjdk8 ];
+```
+Add that to your NixOS config.
+
 # Special cases
 
 ## Forge 1.16.5 and Java 8u321+
