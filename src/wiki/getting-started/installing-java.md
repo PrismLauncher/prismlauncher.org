@@ -64,10 +64,11 @@ The PolyMC flatpak already bundles java.
 
 ## NixOS
 
+The PolyMC NixOS package should already depend on the required java versions, but if it doesn't add that to your NixOS config:
 ```
 environment.systemPackages = [ pkgs.openjdk17 pkgs.openjdk8 ];
 ```
-Add that to your NixOS config.
+
 
 # Special cases
 
