@@ -25,7 +25,7 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
+# <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
 There are several AUR packages available:  
 [![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)  
@@ -44,13 +44,14 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 <div class="infobox top">
 
-## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
 
 [![polymc](https://img.shields.io/badge/mpr-polymc-orange)](https://mpr.makedeb.org/packages/polymc)  
 [![polymc-bin](https://img.shields.io/badge/mpr-polymc--bin-orange)](https://mpr.makedeb.org/packages/polymc-bin)  
+
 ## Installation using Prebuilt MPR (recommended)
 
 ```
@@ -86,7 +87,7 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 <div class="infobox top">
 
-## <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora & CentOS Stream
+# <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora & CentOS Stream
 
 An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
@@ -98,7 +99,7 @@ sudo dnf install polymc
 
 <div class="infobox top">
 
-## <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
+# <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
 Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc). 
 Note that, for the time being, it is not stabilized, so it's masked for `~amd64` only.
@@ -119,14 +120,14 @@ Old ebuilds, as well as additional information, can be found [in the old polymc 
 
 <div class="infobox top">
 
-## <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
+# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
 A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/packages/nix/NIX.md) is available.
 </div>
 
 <div class="infobox top">
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
+# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
 
 An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
@@ -139,7 +140,7 @@ curl "https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/$ID/sentry-poly
 
 <div class="infobox top">
 
-## <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
+# <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
 
 PolyMC is available on the official Void repository.
 
