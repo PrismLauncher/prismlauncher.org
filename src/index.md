@@ -85,7 +85,7 @@ hero:
 
   ## Discord
 
-  to talk directly to us and get involved with development:
+  To talk directly to us and get involved with development:
   
   [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
 
