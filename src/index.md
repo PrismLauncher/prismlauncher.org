@@ -85,7 +85,7 @@ hero:
 
   ## Discord
 
-  to talk directly to us and get involved with development:
+  To talk directly to us and get involved with development:
   
   [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
 
@@ -95,7 +95,7 @@ hero:
 
   [![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
 
-  If there are any issues with the space or you are using a client that does not support the feature here are the individual rooms:
+  If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
 
   [![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)](https://matrix.to/#/#polymc-development:matrix.org)
   [![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)](https://matrix.to/#/#polymc-discussion:matrix.org)
@@ -109,7 +109,7 @@ hero:
   # Source code
   ---
 
-  PolyMC is focused on user freedom and free redistributability all code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
+  PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
   
   [Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
 
