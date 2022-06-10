@@ -95,7 +95,7 @@ hero:
 
   [![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
 
-  If there are any issues with the space or you are using a client that does not support the feature here are the individual rooms:
+  If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
 
   [![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)](https://matrix.to/#/#polymc-development:matrix.org)
   [![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)](https://matrix.to/#/#polymc-discussion:matrix.org)
