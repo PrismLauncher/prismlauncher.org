@@ -109,7 +109,7 @@ hero:
   # Source code
   ---
 
-  PolyMC is focused on user freedom and free redistributability all code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
+  PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
   
   [Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
 
