@@ -89,11 +89,15 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora & CentOS Stream
 
-An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
+Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
 ```
+# enables copr repo
 sudo dnf copr enable sentry/polymc
+# stable releases
 sudo dnf install polymc
+# nightly releases (git master)
+sudo dnf install polymc-nightly
 ```
 </div>
 
