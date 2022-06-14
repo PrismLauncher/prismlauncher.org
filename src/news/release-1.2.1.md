@@ -14,8 +14,6 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 - Specify build platform for about page by @DioEgizio in #449
 - [macOS] Enable hardened runtime by @kthchew in #454
 
-### Changed
-
 ### Fixed
 - Fix typos and capitalization by @kthchew in #442
 - Fix placeholder translations for mod downloader by @flowln in #443
