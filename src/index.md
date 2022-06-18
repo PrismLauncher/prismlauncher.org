@@ -20,7 +20,7 @@ hero:
         <h1>Modpack management</h1>
         <div class="subtitle">
           Install and launch modpacks easily, while keeping them clean.
-          No longer do you need to manually install and update. PolyMC can do that for you, without installing tons of separate launchers.
+          No longer do you need to manually install them, and updating feature is coming soon. PolyMC can do that for you, without installing tons of separate launchers.
         </div>
       </div>
     </div>
