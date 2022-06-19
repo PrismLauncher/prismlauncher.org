@@ -62,7 +62,6 @@ Initially this release should have included a workaround for download issues wit
 - Remove self-promotion from game client to reduce fingerprinting by @jamierocks in #606
 - [macOS] Remove old macOS migration code by @kthchew in #489
 
-
 **Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.2.2...1.3.0
 
 You can [grab the latest download here](/download) for your respective platform.

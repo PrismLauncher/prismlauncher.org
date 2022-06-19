@@ -20,7 +20,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 
 ### Changed
 - Clarify T&C for API keys by @Scrumplex in #659
-- Improve download speed when using the CurseForge API by @timoreo in #611
+- Improve download speed when using the CurseForge API by @timoreo22 in #611
 - Improve whitelisted hosts filtering code by @LennyMcLennington in #661
 - Make JVM arguments text-field multi-line by @ryanccn in #624
 - Remove CurseForge API workaround on modpacks by @Scrumplex in #645
