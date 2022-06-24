@@ -9,10 +9,6 @@ eleventyNavigation:
 
 Installing PolyMC on most platforms should be quite straightforward. Head over to our [Downloads](/download/) page, and choose the option that'll work best for your operating system.
 
-## But, how do I install PolyMC on "X" system?
-
-For all available system-specific installation guides, please refer to the [Installing](../../installing) section of the Wiki.
-
 # Common Issues
 
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Windows (8.1, 10, 11)
@@ -20,8 +16,6 @@ For all available system-specific installation guides, please refer to the [Inst
 ### How do I open a .zip file?
 
 Windows by default can "open" **.zip** archive files, but in order to use PolyMC, you will want to **extract** it instead.
-
-For more detailed instructions, please see our dedicated [Windows](../../installing/windows) install guide.
 
 ### Windows Protected my PC?
 
