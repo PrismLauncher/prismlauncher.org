@@ -52,7 +52,7 @@ choco install polymc
 
 *Chocolatey and Scoop packages are community-maintained, PolyMC is not responsible for outdated versions.*
 
-### PortableApps.com Installer
+### [PortableApps.com](https://portableapps.com) Installer
 
 A community maintained portable installer for PolyMC can be found [here](https://FayneAldan.github.io/PolyMCPortable/).
 </div>

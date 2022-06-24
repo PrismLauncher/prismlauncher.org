@@ -9,7 +9,7 @@ eleventyNavigation:
 ## Contents
 
 - [Getting the source](#getting-the-source)
-- [Linux and FreeBSD](#linux-and-freebsd)
+- [Linux](#linux)
 - [Windows](#windows)
 - [macOS](#macos)
 - [OpenBSD](#openbsd)
@@ -183,7 +183,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 - Install XCode Command Line tools.
 - Install the official build of CMake (https://cmake.org/download/).
-- Install JDK 8 (https://adoptium.net/releases.html?variant=openjdk8&jvmVariant=hotspot).
+- Install JDK 8 (https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot).
 - Install Qt 5.12 or newer
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:

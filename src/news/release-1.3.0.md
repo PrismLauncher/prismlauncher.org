@@ -53,7 +53,7 @@ Initially this release should have included a workaround for download issues wit
 - Hide temporary directory inside instances directory by @kthchew in #547
 - Fix icons not showing in some FTB modpacks by @flowln in #564
 - Fix toolbar disappearing in a certain circumstance by @LennyMcLennington in #577
-- Fix issue with Solder.cf Technic packs by @flowln in #592
+- Fix issue with [Solder.cf Technic packs](https://solder.io/) by @flowln in #592
 - [macOS] Fix Steam overlay on macOS by @kthchew in #568
 
 ### Removed

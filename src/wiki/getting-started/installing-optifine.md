@@ -22,7 +22,7 @@ Once found, click **mirror**. Now click the **download** button to download your
 Remember where you have kept your **.jar** file, and continue to the PolyMC launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge 
-Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-.jar-file) into PolyMC. 
+Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-the-.jar-file-into-polymc) into PolyMC. 
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
@@ -31,7 +31,7 @@ Forge does not require any extra steps besides [adding the **.jar** for OptiFine
 
 Fabric, unlike Forge, does not natively support OptiFine, and will require the installation of OptiFabric. 
 
-Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-.jar-file) for OptiFine into PolyMC. 
+Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-the-.jar-file-into-polymc) for OptiFine into PolyMC. 
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 

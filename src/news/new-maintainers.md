@@ -17,7 +17,7 @@ Based off recent controversies, and for the project's best interest, Swirl has s
 >
 > Thank you all for providing me a great community to work with. I pray for PolyMC to have a good future and for all of you to continue to do good for the Free Software community.
 
-Quote in news: [Discord](https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416), [Element](https://matrix.to/#/!oOkwnJBCfVOMgEOp:polymc.org/$yGu0hoOB36_bSVPnV8msXAHl7or12JHch7axAoCe-RY?via=polymc.org&via=swirl.funny.cl&via=matrix.org)
+Quote in news: [Discord](https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416)
 
 Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.
 
