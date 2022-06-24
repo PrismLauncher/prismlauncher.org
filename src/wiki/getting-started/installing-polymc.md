@@ -29,11 +29,6 @@ This is unfortunately **normal behaviour** due to the nature of the Windows app 
 
 If you are **comfortable** and **trust** PolyMC, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
-### I'm getting random OpenSSL errors on Windows. What can I do?
-**NOTE:** These issues have been resolved in PolyMC version 1.1.1 (and so it's on newer releases too, including latest release, {{version.current}}), so we do recommend upgrading. You can download the latest release [here](/download/), or upgrade through your system's package manager.
-
-For those still choosing to use PolyMC 1.1.0, you can fix these issues installing [vcredist 2010 x86](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe).
-
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
 
 ### macOS cannot verify that this app is free from malware?

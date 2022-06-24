@@ -15,7 +15,8 @@ In this page you can set the global Java settings.
 
 ![](/img/Java-settings-memory.png)
 
-Java memory settings. You'd use half of your ram for an optimal experience, with the maximum of 4096mb due to how GC works.
+Java memory settings.
+NOTE: MORE RAM ALLOCATED DOESN'T MEAN BETTER PERFORMANCE! In fact, in most use cases 4GB of ram allocated should be more than enough
 
 ## Java Runtime
 ![](/img/Java-settings-runtime.png)
