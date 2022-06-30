@@ -27,11 +27,10 @@ Left click on the tab and select the **View Instance Folder** option. This shoul
 
 Now that the PolyMC instance directory is open, you may **paste** the instance(s) that you previously copied from the MultiMC directory.
 
+*Optional: If you would like to transfer your pack icon selections, navigate up from the MultiMC instances folder to the main MultiMC folder. Do the same for PolyMC. Copy the* **icons** *folder from MultiMC to PolyMC.*
+
 ## Finishing up
 
 Now, in **PolyMC**, your instances should appear as they normally would in MultiMC.
 
 If you have transfered instances across devices or packaging formats, you may need to change the version of **Java** that'll be used to launch Minecraft. You can learn how to do so on [this page](../installing-java).
-
-
-
