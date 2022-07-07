@@ -34,6 +34,7 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 - A C++ compiler capable of building C++11 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
 - cmake 3.1 or newer (`cmake` on Debian-based system)
+- extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
 - Java JDK (`openjdk-17-jdk` on Debian-based system)
 - GL headers (`libgl1-mesa-dev` on Debian-based system)
@@ -164,7 +165,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
   - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
   - If you are on a 32-bit Windows machine, you probably need to start *MSYS2 MinGW x86* instead.
 2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p`.
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p extra-cmake-modules:p`.
   - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
@@ -183,6 +184,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 - Install XCode Command Line tools.
 - Install the official build of CMake (https://cmake.org/download/).
+- Install extra-cmake-modules
 - Install JDK 8 (https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot).
 - Install Qt 5.12 or newer
 
@@ -190,7 +192,7 @@ Using [homebrew](https://brew.sh) you can install these dependencies with a sing
 
 ```
 brew update # in the case your repositories weren't updated
-brew install qt@5 openjdk@17 cmake ninja 
+brew install qt@5 openjdk@17 cmake ninja extra-cmake-modules
 ```
 
 
@@ -237,6 +239,7 @@ Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.
 - A C++ compiler capable of building C++11 code (included in base system).
 - Qt Development tools 5.12 or newer ([meta/qt5](https://openports.se/meta/qt5)).
 - cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake)).
+- extra-cmake-modules ([devel/kf5/extra-cmake-modules](https://openports.se/devel/kf5/extra-cmake-modules))
 - zlib (included in base system).
 - Java JDK ([devel/jdk-1.8](https://openports.se/devel/jdk/1.8)).
 - GL headers (included in base system).
