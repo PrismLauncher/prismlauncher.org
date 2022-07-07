@@ -51,15 +51,15 @@ While on some modpacks/with some mods they're going to work good, with others th
 
 ## <img src="https://raw.githubusercontent.com/Asek3/Rubidium/e3aea98992e110b41ceed5ab128c81ff6fd98fa0/src/main/resources/icon.png" height="20"> Rubidium 
 
-[Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
+[Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
 
-To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**, then **CurseForge**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
+To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
 
-## <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.16.5/src/main/resources/oculus-logo.png" height="20"> Oculus 
+## <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.16.5/src/main/resources/oculus-logo.png" height="20"> Oculus
 
-[Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
+[Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
 
-To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**, then **CurseForge**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
+To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
 
 ## Other mods
 
