@@ -60,7 +60,7 @@ echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https
 sudo apt update
 sudo apt install polymc
 ```
-NOTE: Prebuilt MPR only officially supports Debian 11 and Ubuntu 20.04, but you can change the '$(lsb_release -cs)' to focal or bullseye if you are in another distribution.    
+NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
 
 ## Installing with an MPR helper 
 
