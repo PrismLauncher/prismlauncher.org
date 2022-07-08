@@ -82,7 +82,7 @@ If you installed Java after already completing the first time setup process, you
 ## A note about Intel HD 2000/3000 on Windows 10
 Since those igpus are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround, you need to install an older java binary:
+*For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
 - [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
 - [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
 
