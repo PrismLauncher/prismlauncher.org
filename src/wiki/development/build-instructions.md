@@ -33,7 +33,7 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian-based systems), if you prefer it.
+  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
@@ -163,14 +163,15 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
   - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
   - We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.
 2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6:p extra-cmake-modules:p`.
-  - Alternatively you can use Qt 5 (for older Windows versions), by replacing `qt6` with `qt5`
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p`.
+  - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p`
   - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
 
 1. Open the correct **MSYS2 MinGW x86** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
+  - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
 3. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
