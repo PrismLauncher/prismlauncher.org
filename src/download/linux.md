@@ -45,6 +45,24 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 <div class="infobox top">
 
+# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
+
+Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
+
+```bash
+# load in system information
+source /etc/os-release
+# enables the copr repo
+sudo dnf copr enable sentry/polymc epel-${VERSION}-$(uname -m)
+# stable releases
+sudo dnf install polymc
+# nightly releases (git master)
+sudo dnf install polymc-nightly
+```
+</div>
+  
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
@@ -89,12 +107,12 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora & CentOS Stream
+# <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
 Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
-```
-# enables copr repo
+```bash
+# enables the copr repo
 sudo dnf copr enable sentry/polymc
 # stable releases
 sudo dnf install polymc
@@ -137,10 +155,15 @@ A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is 
 
 An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
 
-```
-. /etc/os-release
-
-curl "https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/$ID/sentry-polymc-$ID.repo" | sudo tee "/etc/zypp/repos.d/sentry-polymc-$ID.repo"
+```bash
+# load in system information
+source /etc/os-release
+# enables the copr repo
+sudo zypper ar -f "https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/${ID}/sentry-polymc-${ID}.repo"
+# stable releases
+sudo zypper install polymc
+# nightly releases (git master)
+sudo zypper install polymc-nightly
 ```
 </div>
 
