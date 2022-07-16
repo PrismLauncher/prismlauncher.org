@@ -93,7 +93,7 @@ sudo apt install polymc
 ```
 NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
 
-## Installing with an MPR helper 
+## Installing with an MPR helper
 
 Installing UNA
 
@@ -102,8 +102,8 @@ bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
 
 una update
 ```
-            
-Installing PolyMC 
+
+Installing PolyMC
 
 ```
 # stable source package:
@@ -136,7 +136,7 @@ sudo dnf install polymc-nightly
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
-Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc). 
+Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc).
 Note that, for the time being, it is not stabilized, so it's masked for `~amd64` only.
 
 ```bash

@@ -12,7 +12,7 @@ This release mainly contains bug fixes.
 
 ### Added
 - Support builds without Git by @oynqr in #280
-- Limit offline username to 16 characters by @lack in #292 
+- Limit offline username to 16 characters by @lack in #292
 - [Windows] Support 64-Bit builds by @oynqr in #294
 - Allow fractional DPI scaling by @txtsd in #315
 - [Windows] Provide portable and system builds by @DioEgizio in #330

@@ -26,7 +26,7 @@ Initially this release should have included a workaround for download issues wit
 - Modrinth modpack support by @flowln and @Scrumplex in #565
 - Quilt mod metadata support by @Scrumplex in #567 and @DioEgizio in #590
 - Support Mojang's new split natives by @Scrumplex in #594
-- Allow changing CurseForge api key settings by @dada513 in #607 
+- Allow changing CurseForge api key settings by @dada513 in #607
 - [macOS] Add Big Sur-style icon by @ryanccn in #495
 - [Windows] Add Windows installer by @kthchew in #576
 

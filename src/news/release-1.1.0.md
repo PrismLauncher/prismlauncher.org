@@ -26,7 +26,7 @@ You can [read more about that here](/news/moving-on).
 
 ### Changed
 - Default to the system locale on first startup by @oynqr in #52
-- Replaced `paste.ee` with `0x0.st` and `paste.polymc.org` by @binex-dsk in #67 
+- Replaced `paste.ee` with `0x0.st` and `paste.polymc.org` by @binex-dsk in #67
 - Updated information in the About dialog by @redstrate in #108
 - Migrated to upstream QuaZip 1.2 by @Scrumplex in #92
 - QuaZip is now linked statically by @Scrumplex in #126

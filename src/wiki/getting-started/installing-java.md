@@ -70,10 +70,10 @@ The PolyMC NixOS package already bundles java.
 
 ### Forge 1.16.5 and Java 8u321+
 
-Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended 
+Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended
 
 ### Using Java
-Once you have **installed** Java, PolyMC will be able to detect it during the first time set-up wizard. 
+Once you have **installed** Java, PolyMC will be able to detect it during the first time set-up wizard.
 
 If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
 > Settings > Java > Java Runtime > Auto-detect...

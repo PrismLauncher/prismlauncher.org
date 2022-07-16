@@ -205,7 +205,7 @@ xcode-select --install
 
 ### Build
 
-Choose an installation path. 
+Choose an installation path.
 
 This is where the final `PolyMC.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PolyMC.
 
