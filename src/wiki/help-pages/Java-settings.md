@@ -8,18 +8,18 @@ eleventyNavigation:
 
 In this page you can set the global Java settings.
 
-![](/img/Java-settings.png)
+![Java tab under PolyMC settings](/img/Java-settings.png)
 
 ## Memory
 
-![](/img/Java-settings-memory.png)
+![Memory section of java tab under PolyMC settings](/img/Java-settings-memory.png)
 
 Java memory settings.
 NOTE: MORE RAM ALLOCATED DOESN'T MEAN BETTER PERFORMANCE! In fact, in most use cases (except you're playing big modpacks) 4GB of ram allocated should be more than enough
 
 ## Java Runtime
 
-![](/img/Java-settings-runtime.png)
+![Java Runtime section of java tab under PolyMC settings](/img/Java-settings-runtime.png)
 
 This is where the settings for the Java runtime live, like the location of the runtime and any Java arguments to use.
 
