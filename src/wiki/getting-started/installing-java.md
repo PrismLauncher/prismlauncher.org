@@ -85,8 +85,8 @@ Since those igpus are not *officially* supported on Windows 10, with them the ga
 
 *For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
 
-- [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
-- [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
+* [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
+* [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
 
 After you download the required java binary for your architecture, *extract* the zip, and move the folder to your PolyMC data folder (%appdata%/PolyMC for notportable, the PolyMC folder for portable builds), you need to go to the *PolyMC java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
 This should fix your issue.
@@ -103,6 +103,6 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 
 Well, for you there's a resolution too!
 
-- first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
-- then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
-- select this java binary on PolyMC and it should fix your issue!
+* first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
+* then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+* select this java binary on PolyMC and it should fix your issue!
