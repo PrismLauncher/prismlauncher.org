@@ -13,7 +13,7 @@ Once upon a time, OptiFine was *the* way, to make your game better, faster, and 
 
 **NOTE:** Most Fabric loader mods require the [Fabric API](../download-mods/#fabric) mod in order to work, while most Quilt Loader mods require [Quilt Standard Libraries](https://quiltmc.org/install/polymc/) to work.
 
-###  <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
+### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
 
 [Sodium](https://modrinth.com/mod/sodium) is the best client-side optimisation mod available at the moment, and we **highly recommend** installing it when possible.
 
