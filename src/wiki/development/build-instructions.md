@@ -180,7 +180,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 ## macOS
 
-### Install prerequisites:
+### Install prerequisites
 
 - Install XCode Command Line tools.
 - Install the official build of CMake (<https://cmake.org/download/>).
