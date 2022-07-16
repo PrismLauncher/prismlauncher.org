@@ -28,31 +28,31 @@ cd PolyMC
 
 ## Linux
 
-Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution.
+Getting the project to build and run on Linux is easy if you use any modern and up-to-date Linux distribution.
 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
-- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
-- cmake 3.1 or newer (`cmake` on Debian-based system)
+- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
+  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+- cmake 3.15 or newer (`cmake` on Debian-based system)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
 - Java JDK (`openjdk-17-jdk` on Debian-based system)
 - GL headers (`libgl1-mesa-dev` on Debian-based system)
-- games/lwjgl port if using FreeBSD
+- scdoc if you want to generate manpages (`scdoc` on Debian-based system)
 
-You can use IDEs, like KDevelop or QtCreator to open the CMake project, if you want to work on the code.
+You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, if you want to work on the code.
 
 ### Building a portable binary
 
 ```bash
-mkdir install
-# configure the project
 cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install
-# build
-cd build
-make -j$(nproc) install
-cmake --install . --prefix ../install --component portable
+   -DCMAKE_INSTALL_PREFIX=install
+#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+
+cmake --build build -j$(nproc)
+cmake --install build
+cmake --install build --component portable
 ```
 
 ### Building & installing to the system
@@ -60,19 +60,15 @@ cmake --install . --prefix ../install --component portable
 This is the preferred method of installation, and is suitable for packages.
 
 ```bash
-# configure everything
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
-cd build
-make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
-```
+#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
 
-### Notes
- * At the time of writing, when building on FreeBSD or arm64, you may need to use an alternate meta repository for your system. 
-   The only way to do so is to add `-DLauncher_META_URL:STRING="[METAURL]"` to your cmake command. There are plans to make this
-   an in-launcher setting the next release.
+cmake --build build -j$(nproc)
+cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
+```
 
 ### Building a .deb
 
@@ -125,12 +121,13 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 1. Run the Qt installer.
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
-   - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-   - You need Tools/Qt Creator ticked.
-   - Other components are selected by default, you can un-tick them if you don't need them.
+  - You need Qt 5.12.x 64-bit ticked. (or a newer version)
+    - Alternatively you can choose Qt 6.0 or newer
+  - You need Tools/Qt Creator ticked.
+  - Other components are selected by default, you can un-tick them if you don't need them.
 4. Accept the license agreements.
 5. Double-check the install details and then click "Install".
-   - Installation can take a very long time, go grab a cup of tea or something and let it work.
+  - Installation can take a very long time, go grab a cup of tea or something and let it work.
 
 ### Loading the project in Qt Creator (optional)
 
@@ -139,12 +136,13 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
-   - Hit the "Run CMake" button.
-   - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
-   - Hit "Finish" if CMake ran successfully.
+  - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
+    - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
+  - Hit the "Run CMake" button.
+  - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
+  - Hit "Finish" if CMake ran successfully.
 6. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
-   - If the project builds successfully it will run and the Launcher window will pop up.
+  - If the project builds successfully it will run and the Launcher window will pop up.
 
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
@@ -161,22 +159,24 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 ### Preparing MSYS2
 
-1. Open the *MSYS2 MinGW x64* shortcut from the start menu
+1. Open the *MSYS2 MinGW x86* shortcut from the start menu
   - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
-  - If you are on a 32-bit Windows machine, you probably need to start *MSYS2 MinGW x86* instead.
+  - We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.
 2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt5:p extra-cmake-modules:p`.
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p`.
+  - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p`
   - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
 
-1. Open the right **MSYS2 MinGW** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
+1. Open the correct **MSYS2 MinGW x86** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
+  - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
 3. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 6. If you don't want PolyMC to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
-7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install`. This should copy the required OpenSSL DLLs to log in.
+7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 ## macOS
 
