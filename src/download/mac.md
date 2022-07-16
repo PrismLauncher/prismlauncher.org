@@ -32,4 +32,5 @@ eleventyNavigation:
 ```zsh
 brew install --cask polymc
 ```
+
 </div>

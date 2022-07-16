@@ -42,6 +42,7 @@ yay -S polymc-git
 ```
 
 If you want to use Qt 5 to build the packages instead:
+
 ```bash
 # stable Qt 5 source package:
 yay -S polymc-qt5
@@ -70,6 +71,7 @@ sudo dnf install polymc
 # nightly releases (git master)
 sudo dnf install polymc-nightly
 ```
+
 </div>
   
 <div class="infobox top">
@@ -91,6 +93,7 @@ echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https
 sudo apt update
 sudo apt install polymc
 ```
+
 NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
 
 ## Installing with an MPR helper
@@ -113,6 +116,7 @@ una install polymc-bin
 # latest git package:
 una install polymc-git
 ```
+
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
 </div>
 
@@ -130,6 +134,7 @@ sudo dnf install polymc
 # nightly releases (git master)
 sudo dnf install polymc-nightly
 ```
+
 </div>
 
 <div class="infobox top">
@@ -177,4 +182,5 @@ PolyMC is available on the official Void repository.
 ```bash
 sudo xbps-install PolyMC
 ```
+
 </div>

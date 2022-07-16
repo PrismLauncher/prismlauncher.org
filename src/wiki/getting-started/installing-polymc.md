@@ -48,6 +48,7 @@ You can do this by opening your system's terminal application, **making sure to 
 ```bash
 sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.AppImage
 ```
+
 **Please note,** that depending on the version of PolyMC that you have downloaded, you may have to **change the version number** in the command above.
 
 If you want to simplify the installation of the AppImage, use [AppimageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system and we reccomend just using packages.
