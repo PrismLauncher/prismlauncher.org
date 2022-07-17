@@ -33,7 +33,7 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable), Ubuntu 22.04 based systems (note: on Ubuntu, Qt 6 is available only on 22.04 or higher in official repositories, however you can use [ppa:okirby/qt6-backports])https://bugs.launchpad.net/~okirby/+archive/ubuntu/qt6-backports) on older versions)), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
@@ -186,13 +186,13 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 - Install the official build of CMake (https://cmake.org/download/).
 - Install extra-cmake-modules
 - Install JDK 8 (https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot).
-- Install Qt 5.12 or newer
+- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
-```
+```bash
 brew update # in the case your repositories weren't updated
-brew install qt@5 openjdk@17 cmake ninja extra-cmake-modules
+brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
 
 
@@ -220,7 +220,8 @@ cmake \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
+ -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  ..
 make install
