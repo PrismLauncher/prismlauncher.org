@@ -186,13 +186,13 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 - Install the official build of CMake (https://cmake.org/download/).
 - Install extra-cmake-modules
 - Install JDK 8 (https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot).
-- Install Qt 5.12 or newer
+- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
-```
+```bash
 brew update # in the case your repositories weren't updated
-brew install qt@5 openjdk@17 cmake ninja extra-cmake-modules
+brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
 
 
@@ -220,7 +220,8 @@ cmake \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
+ -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  ..
 make install
