@@ -33,7 +33,7 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 ### Build dependencies
 - A C++ compiler capable of building C++11 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable), Ubuntu 22.04 based systems (note: on Ubuntu, Qt 6 is available only on 22.04 or higher in official repositories, however you can use [ppa:okirby/qt6-backports])https://bugs.launchpad.net/~okirby/+archive/ubuntu/qt6-backports) on older versions)), if you prefer it.
+  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
