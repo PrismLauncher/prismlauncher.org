@@ -11,7 +11,7 @@ Installing PolyMC on most platforms should be quite straightforward. Head over t
 
 # Common Issues
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/M_box.svg" height="20" /> Windows (8.1, 10, 11)
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/240px-Windows_logo_-_2012.svg.png" height="20" /> Windows (8.1, 10, 11)
 
 ### How do I open a .zip file?
 
