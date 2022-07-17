@@ -12,7 +12,10 @@ tags:
 Whoa! There have been a few things since our last feature release almost two months ago!
 
 Major new features include the new mod updater and Qt 6 support.
+Don't worry, Qt 5 will still be supported and packages using it will still be available for some time.
+
 If you are a macOS user, you might be delighted to hear, that this will be the first version that ships with an updater!
+
 As a Linux user, you should definitely take a look at the new `Performance` tab in the settings.
 No longer should you need to deal with wrapper commands to enable [MangoHud](https://github.com/flightlessmango/MangoHud), [GameMode](https://github.com/FeralInteractive/gamemode) or to utilize your dedicated GPU in a hybrid GPU setup.
 
