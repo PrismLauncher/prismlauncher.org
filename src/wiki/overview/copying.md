@@ -5,38 +5,41 @@ eleventyNavigation:
   order: 2
 --- 
 
-# PolyMC
+## PolyMC
 
-    Copyright (C) 2012-2021 MultiMC Contributors
-    Copyright (C) 2021-2022 PolyMC Contributors
+     PolyMC - Minecraft Launcher
+     Copyright (C) 2021-2022 PolyMC Contributors
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, version 3 of the License.
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, version 3.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# Launcher (https://github.com/MultiMC/Launcher)
-    Copyright 2012-2021 MultiMC Contributors
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+    This file incorporates work covered by the following copyright and
+    permission notice:
 
-        http://www.apache.org/licenses/LICENSE-2.0
+         Copyright 2013-2021 MultiMC Contributors
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+         Licensed under the Apache License, Version 2.0 (the "License");
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
 
-# MinGW runtime (Windows)
+             http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+
+## MinGW runtime (Windows)
 
     Copyright (c) 2012 MinGW.org project
 
@@ -58,14 +61,14 @@ eleventyNavigation:
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
     DEALINGS IN THE SOFTWARE.
 
-# Qt 5
+## Qt 5/6
 
-    Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
-    Contact: http://www.qt-project.org/legal
+    Copyright (C) 2022 The Qt Company Ltd and other contributors.
+    Contact: https://www.qt.io/licensing
 
-    Licensed under LGPL v2.1
+    Licensed under LGPL v3
 
-# libnbt++
+## libnbt++
 
     libnbt++ - A library for the Minecraft Named Binary Tag format.
     Copyright (C) 2013, 2015  ljfa-ag
@@ -83,7 +86,7 @@ eleventyNavigation:
     You should have received a copy of the GNU Lesser General Public License
     along with libnbt++.  If not, see <http://www.gnu.org/licenses/>.
 
-# rainbow (KGuiAddons)
+## rainbow (KGuiAddons)
 
     Copyright (C) 2007 Matthew Woehlke <mw_triad@users.sourceforge.net>
     Copyright (C) 2007 Olaf Schmidt <ojschmidt@kde.org>
@@ -106,7 +109,7 @@ eleventyNavigation:
     the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
     Boston, MA 02110-1301, USA.
 
-# Hoedown
+## Hoedown
 
     Copyright (c) 2008, Natacha Porté
     Copyright (c) 2011, Vicent Martí
@@ -124,7 +127,7 @@ eleventyNavigation:
     ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
     OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-# Batch icon set
+## Batch icon set
 
     You are free to use Batch (the "icon set") or any part thereof (the "icons")
     in any personal, open-source or commercial work without obligation of payment
@@ -140,7 +143,7 @@ eleventyNavigation:
     PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THE USE OF THE ICONS,
     EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-# Material Design Icons
+## Material Design Icons
 
     Copyright (c) 2014, Austin Andrews (http://materialdesignicons.com/),
     with Reserved Font Name Material Design Icons.
@@ -151,30 +154,31 @@ eleventyNavigation:
     This license is copied below, and is also available with a FAQ at:
     http://scripts.sil.org/OFL
 
-# Quazip
+## Quazip
 
-    Copyright (C) 2005-2011 Sergey A. Tachenov
+    Copyright (C) 2005-2021 Sergey A. Tachenov
 
-    This program is free software; you can redistribute it and/or modify it
-    under the terms of the GNU Lesser General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or (at
-    your option) any later version.
+    The QuaZip library is licensed under the GNU Lesser General Public
+    License V2.1 plus a static linking exception.
 
-    This program is distributed in the hope that it will be useful, but
-    WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
-    General Public License for more details.
+    The original ZIP/UNZIP package (MiniZip) is copyrighted by Gilles
+    Vollant and contributors, see quazip/(un)zip.h files for details.
+    Basically it's the zlib license.
 
-    You should have received a copy of the GNU Lesser General Public License
-    along with this program; if not, write to the Free Software Foundation,
-    Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+    STATIC LINKING EXCEPTION
+
+    The copyright holders give you permission to link this library with
+    independent modules to produce an executable, regardless of the license
+    terms of these independent modules, and to copy and distribute the
+    resulting executable under terms of your choice, provided that you also
+    meet, for each linked independent module, the terms and conditions of
+    the license of that module. An independent module is a module which is
+    not derived from or based on this library. If you modify this library,
+    you must extend this exception to your version of the library.
 
     See COPYING file for the full LGPL text.
 
-    Original ZIP package is copyrighted by Gilles Vollant, see
-    quazip/(un)zip.h files for details, basically it's zlib license.
-
-# xz-minidec
+## xz-minidec
 
     XZ decompressor
 
@@ -184,7 +188,7 @@ eleventyNavigation:
     This file has been put into the public domain.
     You can do whatever you want with this file.
 
-# ColumnResizer
+## ColumnResizer
 
     Copyright (c) 2011-2016 Aurélien Gâteau and contributors.
 
@@ -220,7 +224,58 @@ eleventyNavigation:
     OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
     IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# lionshead
+## launcher (`libraries/launcher`)
+
+     PolyMC - Minecraft Launcher
+     Copyright (C) 2021-2022 PolyMC Contributors
+
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, version 3.
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     Linking this library statically or dynamically with other modules is
+     making a combined work based on this library. Thus, the terms and
+     conditions of the GNU General Public License cover the whole
+     combination.
+
+     As a special exception, the copyright holders of this library give
+     you permission to link this library with independent modules to
+     produce an executable, regardless of the license terms of these
+     independent modules, and to copy and distribute the resulting
+     executable under terms of your choice, provided that you also meet,
+     for each linked independent module, the terms and conditions of the
+     license of that module. An independent module is a module which is
+     not derived from or based on this library. If you modify this
+     library, you may extend this exception to your version of the
+     library, but you are not obliged to do so. If you do not wish to do
+     so, delete this exception statement from your version.
+
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+    This file incorporates work covered by the following copyright and
+    permission notice:
+
+         Copyright 2013-2021 MultiMC Contributors
+
+         Licensed under the Apache License, Version 2.0 (the "License");
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
+
+             http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+
+## lionshead
 
     Code has been taken from https://github.com/natefoo/lionshead and loosely
     translated to C++ laced with Qt.
@@ -247,7 +302,7 @@ eleventyNavigation:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-# optional-bare
+## optional-bare
 
     Code from https://github.com/martinmoene/optional-bare/
 
@@ -275,7 +330,7 @@ eleventyNavigation:
     ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
     DEALINGS IN THE SOFTWARE.
 
-# tomlc99
+## tomlc99
 
     MIT License
 
@@ -300,7 +355,7 @@ eleventyNavigation:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-# O2 (Katabasis fork)
+## O2 (Katabasis fork)
 
     Copyright (c) 2012, Akos Polster
     All rights reserved.
