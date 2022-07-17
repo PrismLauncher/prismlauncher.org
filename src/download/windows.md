@@ -26,7 +26,7 @@ eleventyNavigation:
 
 ## Legacy version
 
-There is a legacy version of PolyMC, primarily for older versions of Windows.
+There is a legacy version of PolyMC, primarily for older versions of Windows like Windows 7 or Windows 8.1.
 You can download it here:
 
 - [Legacy installer (.exe)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-Setup-{{version.current}}.exe)
