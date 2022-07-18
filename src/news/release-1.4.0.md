@@ -76,13 +76,13 @@ Thanks to all contributors, who have worked on this release!
 - Fix Technic instances using Forge by @Scrumplex in #890
 - Fix translations by @Scrumplex in #917
 - Fix warnings reported by LGTM.com by @Scrumplex in #808
-- [Linux] Fix mods relying on `libstdc++` on Nix by @virchau13 in #904
+- [Linux] Fix mods relying on `libstdc++` on Nix by @virchau13 in #904 #928
 - [macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827
 
 ### Removed
  - Remove Offline Accounts in favour of "Play Offline" by @Scrumplex in #877
 
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.1...1.3.2
+**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0
 
 You can [grab the latest download here](/download) for your respective platform.
