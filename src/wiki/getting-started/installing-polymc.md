@@ -46,7 +46,7 @@ Depending on your system, you may need to grant the PolyMC AppImage **executable
 You can do this by opening your system's terminal application, **making sure to navigate to the location of the downloaded AppImage,** before granting the execute permission using this command:
 
 ```
-sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.appimage
+sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.AppImage
 ```
 **Please note,** that depending on the version of PolyMC that you have downloaded, you may have to **change the version number** in the command above.
 
