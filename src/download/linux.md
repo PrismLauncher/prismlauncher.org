@@ -40,6 +40,15 @@ yay -S polymc-bin
 # latest git package:
 yay -S polymc-git
 ```
+
+If you want to use Qt 5 to build the packages instead:
+```
+# stable Qt 5 source package:
+yay -S polymc-qt5
+# latest Qt 5 git package:
+yay -S polymc-qt5-git
+```
+
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
 </div>
 
