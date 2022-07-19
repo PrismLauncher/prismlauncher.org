@@ -153,18 +153,8 @@ A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is 
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
 
-An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
+PolyMC is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=polymc) community repository.
 
-```bash
-# load in system information
-source /etc/os-release
-# enables the copr repo
-sudo zypper ar -f "https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/${ID}/sentry-polymc-${ID}.repo"
-# stable releases
-sudo zypper install polymc
-# nightly releases (git master)
-sudo zypper install polymc-nightly
-```
 </div>
 
 <div class="infobox top">
