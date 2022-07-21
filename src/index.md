@@ -77,6 +77,7 @@ hero:
 <div class="infobox top">
 
 # Get involved
+
 ---
 
 ## Reddit
@@ -107,6 +108,7 @@ If there are any issues with the space or you are using a client that does not s
 [![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)](https://matrix.to/#/#polymc-voice:matrix.org)
 
 # Source code
+
 ---
 
 PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.

@@ -73,12 +73,14 @@ The PolyMC NixOS package already bundles java.
 Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended
 
 ### Using Java
+
 Once you have **installed** Java, PolyMC will be able to detect it during the first time set-up wizard.
 
 If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
 > Settings > Java > Java Runtime > Auto-detect...
 
 ### A note about Intel HD 2000/3000 on Windows 10
+
 Since those igpus are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
 *For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
@@ -92,6 +94,7 @@ Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
 ### Older Minecraft on MacOS
+
 If you use some older Minecraft versions, you might have had this error:
 
 ```
