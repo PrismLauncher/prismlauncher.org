@@ -4,14 +4,15 @@ title: About
 background: ./src/img/background/about.png
 templateClass: tmpl-post
 tags: nav
+hero:
+  title: About PolyMC
 eleventyNavigation:
   key: About
   order: 3
 ---
-<div class="content top">
+<div class="content">
 
-  # About PolyMC
-
+  # What is PolyMC?
   PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, resource packs, settings, and more. While originally being forked over packaging/redistribution concerns, PolyMC brings new and exciting features developed by the community for the community. Furthermore, PolyMC is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected. 
 
   ## I'm in! Now tell me more about these features?
@@ -25,4 +26,35 @@ eleventyNavigation:
   - Access all your logs easily.
   - Built using Qt technologies, allowing the launcher to be both very performant, as well as light on system resources.
   - And much, much more.
+</div>
+<div class="infobox top">
+
+# Maintainers
+
+<ul class="user-list">
+  {% for user in people.users %}
+  <li class="user-info">
+    <a href="{{user[2]}}">
+      <img src="{{user[1]}}" alt="Avatar">
+      <div class="user-info-overlay">
+        <div class="user-name">{{user[0]}}</div>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+<div class="content top">
+
+# Contributors
+
+<ul class="user-list">
+  {% for user in contributors.users %}
+  <li class="user-info user-contrib">
+    <a href="{{user[1]}}">
+      <img src="{{user[0]}}" alt="Avatar">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 </div>
