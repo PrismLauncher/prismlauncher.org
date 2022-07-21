@@ -121,10 +121,10 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 1. Run the Qt installer.
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
-  - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-    - Alternatively you can choose Qt 6.0 or newer
-  - You need Tools/Qt Creator ticked.
-  - Other components are selected by default, you can un-tick them if you don't need them.
+   - You need Qt 5.12.x 64-bit ticked. (or a newer version)
+      - Alternatively you can choose Qt 6.0 or newer
+   - You need Tools/Qt Creator ticked.
+   - Other components are selected by default, you can un-tick them if you don't need them.
 4. Accept the license agreements.
 5. Double-check the install details and then click "Install".
   - Installation can take a very long time, go grab a cup of tea or something and let it work.
@@ -136,13 +136,13 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
-  - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
-    - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
-  - Hit the "Run CMake" button.
-  - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
-  - Hit "Finish" if CMake ran successfully.
+   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
+      - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
+   - Hit the "Run CMake" button.
+   - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
+   - Hit "Finish" if CMake ran successfully.
 6. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
-  - If the project builds successfully it will run and the Launcher window will pop up.
+   - If the project builds successfully it will run and the Launcher window will pop up.
 
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
@@ -160,18 +160,18 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Preparing MSYS2
 
 1. Open the *MSYS2 MinGW x86* shortcut from the start menu
-  - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
-  - We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.
+   - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
+   - We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.
 2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
 3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p`.
-  - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p`
-  - This might take a while, as it will install Qt and all the build tools required.
+   - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p`
+   - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
 
 1. Open the correct **MSYS2 MinGW x86** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
-  - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
+   - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
 3. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
@@ -336,18 +336,18 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
 3. Navigate to the source folder
 4. Go to settings `Ctrl+Alt+S`
 5. Navigate to `Toolchains` in `Build, Execution, Deployment`
-    - Set the correct build tools ([see here](https://i.imgur.com/daFAdVe.png))
-    - CMake: `cmake` (optional)
-    - Make: `make` (optional)
-    - C Compiler: `gcc`
-    - C++ Compiler: `g++`
-    - Debugger: `gdb` (optional)
+   - Set the correct build tools ([see here](https://i.imgur.com/daFAdVe.png))
+   - CMake: `cmake` (optional)
+   - Make: `make` (optional)
+   - C Compiler: `gcc`
+   - C++ Compiler: `g++`
+   - Debugger: `gdb` (optional)
 6. Navigate to `CMake` in `Build, Execution, Deployment`
-    - Set `Build directory` to `build`
+   - Set `Build directory` to `build`
 7. Navigate to `Edit Configurations`  ([see here](https://i.imgur.com/fu53nc3.png))
-    - Create a new configuration
-    - Name: `All`
-    - Target: `All targets`
-    - Choose the newly added configuration as default
+   - Create a new configuration
+   - Name: `All`
+   - Target: `All targets`
+   - Choose the newly added configuration as default
 
 Now you should be able to build and test PolyMC with the `Build` and `Run` buttons.
