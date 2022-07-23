@@ -45,6 +45,8 @@ If you want to use Qt 5 to build the packages instead:
 ```
 # stable Qt 5 source package:
 yay -S polymc-qt5
+# stable Qt 5 binary package:
+yay -S polymc-qt5-bin
 # latest Qt 5 git package:
 yay -S polymc-qt5-git
 ```
