@@ -30,12 +30,12 @@ There is a legacy version of PolyMC, primarily for older versions of Windows lik
 You can download it here:
 
 - [Legacy installer (.exe)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-Setup-{{version.current}}.exe)
-- [Legacy portable (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-Portable-{{version.current}}.exe)
+- [Legacy portable (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-Portable-{{version.current}}.zip)
 
 ## Advanced Windows install options
 
 - [System Install (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-{{version.current}}.zip)
-- [Legacy system install (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-{{version.current}}.exe)
+- [Legacy system install (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
