@@ -19,11 +19,6 @@ If you are a macOS user, you might be delighted to hear, that this will be the f
 As a Linux user, you should definitely take a look at the new `Performance` tab in the settings.
 No longer should you need to deal with wrapper commands to enable [MangoHud](https://github.com/flightlessmango/MangoHud), [GameMode](https://github.com/FeralInteractive/gamemode) or to utilize your dedicated GPU in a hybrid GPU setup.
 
-Sadly, we have to say goodbye to the offline-accounts feature.
-We decided that its implementation isn't quite what we want in PolyMC.
-As an alternative you can use the "Play Offline" button.
-With this update, PolyMC will handle network issues with Mojang's auth-servers more gracefully and should allow you to play using that offline-mode more reliably.
-
 Thanks to all contributors, who have worked on this release!
 
 ## Changelog
@@ -37,7 +32,7 @@ Thanks to all contributors, who have worked on this release!
 - Preliminary work for modpack-updates by @jamierocks in #665
 - Qt 6 support by @Scrumplex in #575 #902 #911 #936
 - [Linux] Add Performance settings (MangoHud, GameMode and PRIME) by @Jan200101 in #707
-- [Linux) Add more metadata to Nix package by @TheOPtimal in #930
+- [Linux] Add more metadata to Nix package by @TheOPtimal in #930
 - [macOS] Implement updater using Sparkle by @kthchew and @Scrumplex in #479
 - [OpenBSD] Add support for OpenBSD by @Technous285 in #694
 
@@ -81,9 +76,6 @@ Thanks to all contributors, who have worked on this release!
 - [Linux] Fix mods relying on `libstdc++` on Nix by @virchau13 in #904 #934
 - [Linux] Use our fork of libnbtplusplus on Nix by @Scrumplex in #932
 - [macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827
-
-### Removed
- - Remove Offline Accounts in favour of "Play Offline" by @Scrumplex in #877
 
 
 **Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0
