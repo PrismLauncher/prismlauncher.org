@@ -1,10 +1,10 @@
 ---
 title: PolyMC Update 1.4.0, now available
 description: Just Enough Changes
-date: 2022-07-17
+date: 2022-07-23
 release_version: 1.4.0
 minimum_macos_version: 10.14.0
-mac_signature: epiclmao
+mac_signature: v2Lgqsiw8Zs/Qq87k80BmaUvT+yLIE5P4iY9H80iKQ30GExflxF1WaUAQnVHYRHGxiZyFNwwWwQuLVAegy1RBQ==
 tags:
   - release
 ---
