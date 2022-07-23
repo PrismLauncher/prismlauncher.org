@@ -29,12 +29,12 @@ Thanks to all contributors, who have worked on this release!
 - Add news reader in the launcher by @flowln in #845
 - Add on-disk mod metadata information by @flowln and @Scrumplex in #426 #714 #716 #759
 - Implement mod updater by @flowln in #588
-- Preliminary work for modpack-updates by @jamierocks in #665
+- Preliminary work for modpack updates by @jamierocks in #665
 - Qt 6 support by @Scrumplex in #575 #902 #911 #936
 - [Linux] Add Performance settings (MangoHud, GameMode and PRIME) by @Jan200101 in #707
 - [Linux] Add more metadata to Nix package by @TheOPtimal in #930
 - [macOS] Implement updater using Sparkle by @kthchew and @Scrumplex in #479
-- [OpenBSD] Add support for OpenBSD by @Technous285 in #694
+- [OpenBSD] Readd support for OpenBSD by @Technous285 in #694
 
 ### Changed
 - Allow the cape to be changed without changing the skin by @Gingeh in #913
@@ -43,8 +43,8 @@ Thanks to all contributors, who have worked on this release!
 - Improve handling of environment variables by @Scrumplex in #893
 - Improve resolving of JARs by @Scrumplex in #794
 - Improve the account selection window by @Gingeh and @Scrumplex in #855 #870
-- Improve UX in mod-downloader by @flowln in #505
-- Improve UX in modpack-downloader by @flowln in #839
+- Improve UX in the mod downloader by @flowln in #505
+- Improvements for Modrinth/CurseForge modpacks by @flowln in #839
 - Improvements around APIs page by @Scrumplex in #678
 - Improvements to Windows installer by @kthchew in #788 #797
 - Make version labels in About dialog selectable by @jn64 in #812
