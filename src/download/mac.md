@@ -11,8 +11,7 @@ eleventyNavigation:
       <div>
         <h1>macOS Download</h1>
         <br>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (x86)</a>
-        <a class="button-disabled is-big" disabled>Coming Soon (ARM)</a>
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
       </div>
     </div>
     <div class="column">
