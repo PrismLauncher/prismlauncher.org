@@ -30,7 +30,7 @@ Thanks to all contributors, who have worked on this release!
 - Add on-disk mod metadata information by @flowln and @Scrumplex in #426 #714 #716 #759
 - Implement mod updater by @flowln in #588
 - Preliminary work for modpack updates by @jamierocks in #665
-- Qt 6 support by @Scrumplex in #575 #902 #911 #936
+- Qt 6 support by @Scrumplex and @DioEgizio in #575 #902 #911 #922 #936
 - [Linux] Add Performance settings (MangoHud, GameMode and PRIME) by @Jan200101 in #707
 - [Linux] Add more metadata to Nix package by @TheOPtimal in #930
 - [macOS] Implement updater using Sparkle by @kthchew and @Scrumplex in #479
@@ -63,6 +63,7 @@ Thanks to all contributors, who have worked on this release!
 - Always scale mod icons to the right size by @flowln in #818
 - Don't censor offline access token by @ivanpu in #864
 - Don't create unnecessary folders when extracting ZIPs by @flowln in #817
+- Fix broken output in mod list by @flowln in #947
 - Fix contrast of placeholder text with dark theme by @flowln in #929
 - Fix duplicate name in window title by @jn64 in #811
 - Fix hangs when aborting some tasks by @flowln in #831
@@ -71,7 +72,7 @@ Thanks to all contributors, who have worked on this release!
 - Fix "Play Offline" not working when auth servers are partially offline by @Scrumplex in #877
 - Fix sorting for Modrinth resources by @DioEgizio in #837
 - Fix Technic instances using Forge by @Scrumplex in #890
-- Fix translations by @Scrumplex in #917
+- Fix translations by @Scrumplex in #917 #938
 - Fix warnings reported by LGTM.com by @Scrumplex in #808
 - [Linux] Fix mods relying on `libstdc++` on Nix by @virchau13 in #904 #934
 - [Linux] Use our fork of libnbtplusplus on Nix by @Scrumplex in #932
