@@ -30,6 +30,6 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 ### Removed
 - [FreeBSD] Revert "Force system LWJGL natives" by @Scrumplex in #467
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1>
 
 You can [grab the latest download here](/download) for your respective platform.

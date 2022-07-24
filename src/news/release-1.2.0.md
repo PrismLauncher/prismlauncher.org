@@ -50,6 +50,6 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 ### Removed
 - Remove unused notification system by @binex-dsk in #188
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.1.1...1.2.0
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.1.1...1.2.0>
 
 You can [grab the latest download here](/download) for your respective platform.

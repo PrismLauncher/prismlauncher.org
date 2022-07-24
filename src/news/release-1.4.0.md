@@ -79,6 +79,6 @@ Thanks to all contributors, who have worked on this release!
 - [macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827
 
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0>
 
 You can [grab the latest download here](/download) for your respective platform.

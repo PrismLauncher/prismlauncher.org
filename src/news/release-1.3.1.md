@@ -45,6 +45,6 @@ Please make sure to download all those mods, otherwise you won't have the full m
 ### Removed
 - [Windows] Remove explicit Vista support by @DioEgizio in #667
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.0...1.3.1
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.0...1.3.1>
 
 You can [grab the latest download here](/download) for your respective platform.

@@ -15,7 +15,7 @@ Therefore, you should consider the use of OptiFine alternatives whenever possibl
 # <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
 
-Go to https://optifine.net/downloads and find your respective Minecraft version (eg. 1.18.2).
+Go to <https://optifine.net/downloads> and find your respective Minecraft version (eg. 1.18.2).
 
 Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
 

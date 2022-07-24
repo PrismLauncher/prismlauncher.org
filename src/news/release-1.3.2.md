@@ -36,6 +36,6 @@ Yet again we have some fixes for you!
 ### Removed
 - [OpenBSD] Drop support for OpenBSD by @glowiak in #692
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.1...1.3.2
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.1...1.3.2>
 
 You can [grab the latest download here](/download) for your respective platform.

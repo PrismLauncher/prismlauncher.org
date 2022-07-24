@@ -18,6 +18,6 @@ Thanks to everyone who collaborated on this solution in our community channels.
 - Move to new CurseForge Core API by @ryanccn in #530
 - [Linux] Fix AppImage scaling issues by @DioEgizio in #492
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2>
 
 You can [grab the latest download here](/download) for your respective platform.

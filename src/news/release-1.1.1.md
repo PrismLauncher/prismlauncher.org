@@ -38,6 +38,6 @@ This release mainly contains bug fixes.
 ### Removed
 - Remove paste.polymc.org by @flowln in #299
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.1.0...1.1.1
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.1.0...1.1.1>
 
 You can [grab the latest download here](/download) for your respective platform.

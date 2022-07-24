@@ -183,9 +183,9 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Install prerequisites:
 
 - Install XCode Command Line tools.
-- Install the official build of CMake (https://cmake.org/download/).
+- Install the official build of CMake (<https://cmake.org/download/>).
 - Install extra-cmake-modules
-- Install JDK 8 (https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot).
+- Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
 - Install Qt 5.12 or newer or any version of Qt 6 (recommended)
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
