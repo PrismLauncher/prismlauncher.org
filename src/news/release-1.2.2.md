@@ -13,6 +13,7 @@ Thanks to everyone who collaborated on this solution in our community channels.
 ## Changelog
 
 ### Fixed
+
 - Hide sensitive tokens from logs by @Scrumplex in #475
 - Implemented a workaround to allow Mojang logins by @TheCodex6824 in #482
 - Move to new CurseForge Core API by @ryanccn in #530

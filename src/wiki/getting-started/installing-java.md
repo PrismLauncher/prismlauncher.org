@@ -82,6 +82,7 @@ If you installed Java after already completing the first time setup process, you
 Since those igpus are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
 *For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
+
 - [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
 - [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
 
@@ -98,6 +99,7 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 ```
 
 Well, for you there's a resolution too!
+
 - first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
 - then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
 - select this java binary on PolyMC and it should fix your issue!

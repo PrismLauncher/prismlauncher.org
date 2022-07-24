@@ -12,6 +12,7 @@ You can [read more about that here](/news/moving-on).
 ## Changelog
 
 ### Added
+
 - New option to close PolyMC after launch by @binex-dsk in #79
 - Now detects Java from environment by @muscaln in #46
 - New `Open page & copy code` button in MSA login dialog by @Scrumplex  in #88
@@ -25,6 +26,7 @@ You can [read more about that here](/news/moving-on).
 - Added Matrix space link by @dada513 in #243
 
 ### Changed
+
 - Default to the system locale on first startup by @oynqr in #52
 - Replaced `paste.ee` with `0x0.st` and `paste.polymc.org` by @binex-dsk in #67
 - Updated information in the About dialog by @redstrate in #108
@@ -41,6 +43,7 @@ You can [read more about that here](/news/moving-on).
 - [macOS] Move app data to `Application Support` by @dada513 in #146
 
 ### Fixed
+
 - Add some logging to profile fetching failures in #96
 - Ignore invalid lines altogether in java checker in #96
 - Correctly set http status code in auth reply in #96
@@ -51,6 +54,7 @@ You can [read more about that here](/news/moving-on).
 - [macOS] Fixed GUI identifier by @DioEgizio in #171
 
 ### Removed
+
 - Removed MultiMC news by @Scrumplex in #105
 - Removed legacy instance support by @Scrumplex in #192 #201
 

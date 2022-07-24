@@ -26,6 +26,7 @@ PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allow
 - Access all your logs easily.
 - Built using Qt technologies, allowing the launcher to be both very performant, as well as light on system resources.
 - And much, much more.
+
 </div>
 <div class="infobox top">
 

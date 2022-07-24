@@ -14,11 +14,13 @@ Please make sure to download all those mods, otherwise you won't have the full m
 ## Changelog
 
 ### Added
+
 - Add code style configuration by @ryanccn in #623
 - Add modpack version in the name for FTB legacy packs by @Scrumplex in #672
 - [Windows] Add desktop shortcut in the installer by @kthchew in #629
 
 ### Changed
+
 - Clarify T&C for API keys by @Scrumplex in #659
 - Improve download speed when using the CurseForge API by @timoreo22 in #611
 - Improve whitelisted hosts filtering code by @LennyMcLennington in #661
@@ -30,6 +32,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 - [macOS] Switch background of icon to white by @ryanccn in #625
 
 ### Fixed
+
 - Correctly handle ATL packs when `mainClass` has a `depends` field by @jamierocks in #630
 - Fix crash when aborting instance import by @JJL772 in #657
 - Fix icon importing when using non-standard icon paths by @flowln in #650
@@ -43,6 +46,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 - [Windows] Correctly set PolyMC's version for binaries by @Scrumplex in #669
 
 ### Removed
+
 - [Windows] Remove explicit Vista support by @DioEgizio in #667
 
 **Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.0...1.3.1>
