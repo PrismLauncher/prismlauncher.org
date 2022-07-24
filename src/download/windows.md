@@ -49,7 +49,8 @@ winget install -e PolyMC.PolyMC
 
 ```
 scoop bucket add games
-scoop install polymc
+scoop install polymc 
+scoop install polymc-qt5 #if you want Windows-Legacy instead
 ```
 
 #### Chocolatey Package
