@@ -21,7 +21,7 @@ The philosophy behind the PolyMC project, and wider community as a whole, is to 
 
 PolyMC looks to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native as well as Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.
 
-Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, PolyMC is already shaping up to be quite the opposite. This can already be seen in our recent 1.1.0 release, which brings our new in-launcher mod installer. And this, is just the first of many new changes and features to come.
+Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, PolyMC is already shaping up to be quite the opposite. This can already be seen in our recent 1.1.0 release, which brings our new in-launcher mod installer. And this, is just the first of many new changes and features to come. PolyMC 1.4.0 also added the Mod Updater.
 
 ### Theming not working
 
