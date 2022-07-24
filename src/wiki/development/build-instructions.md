@@ -195,7 +195,6 @@ brew update # in the case your repositories weren't updated
 brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
 
-
 ### XCode Command Line tools
 
 If you don't have XCode Command Line tools installed, you can install them with this command:

@@ -54,7 +54,6 @@ You can [read more about that here](/news/moving-on).
 - Removed MultiMC news by @Scrumplex in #105
 - Removed legacy instance support by @Scrumplex in #192 #201
 
-
 **Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.0.6...1.1.0>
 
 You can [grab the latest download here](/download) for your respective platform.

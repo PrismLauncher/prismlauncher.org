@@ -78,7 +78,6 @@ Thanks to all contributors, who have worked on this release!
 - [Linux] Use our fork of libnbtplusplus on Nix by @Scrumplex in #932
 - [macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827
 
-
 **Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0>
 
 You can [grab the latest download here](/download) for your respective platform.

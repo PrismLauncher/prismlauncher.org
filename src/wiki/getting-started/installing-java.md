@@ -66,7 +66,6 @@ The PolyMC flatpak already bundles java.
 
 The PolyMC NixOS package already bundles java.
 
-
 # Special cases
 
 ## Forge 1.16.5 and Java 8u321+

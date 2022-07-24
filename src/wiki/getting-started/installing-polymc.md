@@ -52,8 +52,6 @@ sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.AppImage
 
 If you want to simplify the installation of the AppImage, use [AppimageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system and we reccomend just using packages.
 
-
 ### I want to make my system install portable 
 
 Since PolyMC 1.2.0, you can make any install portable (or making portable installs system) just by adding (or removing) portable.txt to the PolyMC root directory.
-

@@ -21,4 +21,3 @@ You can now use the sidebar to the left of the window to choose from the followi
 After selecting which service you wish to use, you can browse the modpacks which available to install. 
 
 The "**Import from zip**" option assumes that you have manually downloaded a modpack to your computer through other means, and will ask for a **.zip** archive containing a PolyMC compatible pack.
-

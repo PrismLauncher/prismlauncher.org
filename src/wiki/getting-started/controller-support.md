@@ -50,7 +50,6 @@ Within the in-game controls menu, you may need to change the "Mode" setting to *
 
 If it doesn't work, try to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
 
-
 # <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge 
 
 ## <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (Forge)
