@@ -28,31 +28,31 @@ On Linux, it's recommended to use your package manager for installing Java.
 
 On the COPR package all required java versions should be installed, but this is the command to install it:
 
-```
+```bash
 sudo dnf install java-1.8.0-openjdk java-17-openjdk
 ```
 
 ### Void Linux
 
-```
+```bash
 sudo xbps-install openjdk17-jre openjdk8-jre
 ```
 
 ### Arch Linux
 
-```
+```bash
 sudo pacman -S jre17-openjdk jre8-openjdk
 ```
 
 ### Ubuntu
 
-```
+```bash
 sudo apt install openjdk-17-jre openjdk-8-jre
 ```
 
 ### Debian
 
-```
+```bash
 sudo apt install openjdk-17-jre 
 ```
 

@@ -32,7 +32,7 @@ There are several AUR packages available:
 [![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)  
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
 
-```
+```bash
 # stable source package:
 yay -S polymc
 # stable binary package:
@@ -42,7 +42,7 @@ yay -S polymc-git
 ```
 
 If you want to use Qt 5 to build the packages instead:
-```
+```bash
 # stable Qt 5 source package:
 yay -S polymc-qt5
 # stable Qt 5 binary package:
@@ -85,7 +85,7 @@ Several MPR packages are available:
 
 ## Installation using Prebuilt MPR (recommended)
 
-```
+```bash
 curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
@@ -97,7 +97,7 @@ NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 2
 
 Installing UNA
 
-```
+```bash
 bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
 
 una update
@@ -105,7 +105,7 @@ una update
 
 Installing PolyMC
 
-```
+```bash
 # stable source package:
 una install polymc
 # stable binary package:
@@ -174,7 +174,7 @@ PolyMC is available on the [game:tools](https://software.opensuse.org/download.h
 
 PolyMC is available on the official Void repository.
 
-```
+```bash
 sudo xbps-install PolyMC
 ```
 </div>
