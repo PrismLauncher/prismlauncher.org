@@ -1,5 +1,5 @@
 ---
-title: Download Windows
+title: Download PolyMC for Windows
 permalink: /download/
 eleventyNavigation:
   key: <i class="fa fa-windows" aria-hidden="true"></i> Windows

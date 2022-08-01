@@ -1,5 +1,5 @@
 ---
-title: Download Linux
+title: Download PolyMC for Linux
 eleventyNavigation:
   key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
   order: 3
