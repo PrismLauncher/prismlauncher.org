@@ -11,10 +11,12 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 ## Changelog
 
 ### Added
+
 - Specify build platform for about page by @DioEgizio in #449
 - [macOS] Enable hardened runtime by @kthchew in #454
 
 ### Fixed
+
 - Fix typos and capitalization by @kthchew in #442
 - Fix placeholder translations for mod downloader by @flowln in #443
 - Fix missing files in release workflow by @Scrumplex in #444
@@ -28,8 +30,9 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 - [macOS] Fix instance rename using return-key @txtsd in #463
 
 ### Removed
+
 - [FreeBSD] Revert "Force system LWJGL natives" by @Scrumplex in #467
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1>
 
 You can [grab the latest download here](/download) for your respective platform.

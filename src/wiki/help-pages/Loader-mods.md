@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: Help pages
 --- 
 
-![](/img/loader-mods.png)
+![Mods tab under PolyMC settings](/img/loader-mods.png)
 
 This page reflects the contents of the instance's mods folder and is used for mods that loaders like Forge, Fabric, Quilt and LiteLoader can read and add to the game. Unlike an ordinary file explorer, it also shows details about the mods like version and name.
 

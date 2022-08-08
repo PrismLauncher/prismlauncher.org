@@ -41,13 +41,13 @@ You can download it here:
 
 #### Winget Package
 
-```
+```powershell
 winget install -e PolyMC.PolyMC
 ```
 
 #### Scoop Package
 
-```
+```powershell
 scoop bucket add games
 scoop install polymc 
 scoop install polymc-qt5 #if you want Windows-Legacy instead
@@ -55,7 +55,7 @@ scoop install polymc-qt5 #if you want Windows-Legacy instead
 
 #### Chocolatey Package
 
-```
+```powershell
 choco install polymc
 ```
 

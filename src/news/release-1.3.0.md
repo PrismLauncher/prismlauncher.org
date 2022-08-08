@@ -17,6 +17,7 @@ Initially this release should have included a workaround for download issues wit
 ## Changelog
 
 ### Added
+
 - Support ATLauncher share codes by @jamierocks in #408
 - Allow changing metadata-server settings by @dada513 in #425
 - Add PolyMC icon as instance icon by @ryanccn in #498
@@ -26,11 +27,12 @@ Initially this release should have included a workaround for download issues wit
 - Modrinth modpack support by @flowln and @Scrumplex in #565
 - Quilt mod metadata support by @Scrumplex in #567 and @DioEgizio in #590
 - Support Mojang's new split natives by @Scrumplex in #594
-- Allow changing CurseForge api key settings by @dada513 in #607 
+- Allow changing CurseForge api key settings by @dada513 in #607
 - [macOS] Add Big Sur-style icon by @ryanccn in #495
 - [Windows] Add Windows installer by @kthchew in #576
 
 ### Changed
+
 - Bump Qt requirement to 5.12 by @Scrumplex in #127
 - Refactor launcher code by @icelimetea in #486 #520
 - Refactor network code by @flowln in #500
@@ -43,6 +45,7 @@ Initially this release should have included a workaround for download issues wit
 - Improve compile parameters by @Scrumplex in #616 #620
 
 ### Fixed
+
 - Always build iconfix as static library by @flowln in #477
 - Added and fixed mnemonics by @dschemp in #480 and @txtsd in #503
 - Fix selection of .zip files by @flowln in #528
@@ -57,11 +60,12 @@ Initially this release should have included a workaround for download issues wit
 - [macOS] Fix Steam overlay on macOS by @kthchew in #568
 
 ### Removed
+
 - Remove unneeded build files by @Scrumplex in #519
 - Remove references to legacy Minecraft accounts by @Ozynt in #531
 - Remove self-promotion from game client to reduce fingerprinting by @jamierocks in #606
 - [macOS] Remove old macOS migration code by @kthchew in #489
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.2.2...1.3.0
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.2.2...1.3.0>
 
 You can [grab the latest download here](/download) for your respective platform.

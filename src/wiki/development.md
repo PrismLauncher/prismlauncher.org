@@ -11,7 +11,6 @@ If you would like to contribute to PolyMC, you might find it useful to join our 
 
 If you want to build PolyMC yourself and/or contribute, check out our [Build Instructions](./build-instructions) page for a handy guide.
 
-
 ## Code formatting
 
 Please follow the existing formatting.

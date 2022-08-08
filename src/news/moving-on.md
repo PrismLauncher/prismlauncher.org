@@ -41,8 +41,9 @@ We want to decouple this project from its controversial origins and start work o
 While we are working on getting 1.1.0 out, check out our future plans:
 
 **Sneak peak of future plans**:
- - Rewrite of metadata generators, to make them easier to work with. See progress over on [PolyMC/polymorphosis][gh-polymorphosis]
- - Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on [PolyMC/PolyMC#167][rfc-0001]
+
+- Rewrite of metadata generators, to make them easier to work with. See progress over on [PolyMC/polymorphosis][gh-polymorphosis]
+- Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on [PolyMC/PolyMC#167][rfc-0001]
 
 If you want to be involved in PolyMC, check out the following links:
 
@@ -67,4 +68,3 @@ If you want to be involved in PolyMC, check out the following links:
 [matrix-space]: https://matrix.to/#/#polymc:matrix.org
 [mmc-drops-aur]: https://www.reddit.com/r/linux_gaming/comments/riitbs/multimc_is_dropping_all_support_for_aur_packages/
 [rfc-0001]: https://github.com/PolyMC/PolyMC/issues/167
-

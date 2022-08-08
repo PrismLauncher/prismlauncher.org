@@ -32,7 +32,7 @@ There are several AUR packages available:
 [![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)  
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
 
-```
+```bash
 # stable source package:
 yay -S polymc
 # stable binary package:
@@ -42,7 +42,8 @@ yay -S polymc-git
 ```
 
 If you want to use Qt 5 to build the packages instead:
-```
+
+```bash
 # stable Qt 5 source package:
 yay -S polymc-qt5
 # stable Qt 5 binary package:
@@ -70,6 +71,7 @@ sudo dnf install polymc
 # nightly releases (git master)
 sudo dnf install polymc-nightly
 ```
+
 </div>
   
 <div class="infobox top">
@@ -85,27 +87,28 @@ Several MPR packages are available:
 
 ## Installation using Prebuilt MPR (recommended)
 
-```
+```bash
 curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
 sudo apt install polymc
 ```
+
 NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
 
-## Installing with an MPR helper 
+## Installing with an MPR helper
 
 Installing UNA
 
-```
+```bash
 bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
 
 una update
 ```
-            
-Installing PolyMC 
 
-```
+Installing PolyMC
+
+```bash
 # stable source package:
 una install polymc
 # stable binary package:
@@ -113,6 +116,7 @@ una install polymc-bin
 # latest git package:
 una install polymc-git
 ```
+
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
 </div>
 
@@ -130,13 +134,14 @@ sudo dnf install polymc
 # nightly releases (git master)
 sudo dnf install polymc-nightly
 ```
+
 </div>
 
 <div class="infobox top">
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
-Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc). 
+Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc).
 Note that, for the time being, it is not stabilized, so it's masked for `~amd64` only.
 
 ```bash
@@ -174,7 +179,8 @@ PolyMC is available on the [game:tools](https://software.opensuse.org/download.h
 
 PolyMC is available on the official Void repository.
 
-```
+```bash
 sudo xbps-install PolyMC
 ```
+
 </div>
