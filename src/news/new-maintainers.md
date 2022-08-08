@@ -22,6 +22,7 @@ Quote in news: [Discord](https://discordapp.com/channels/923671181020766230/9236
 Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.
 
 In lighter news, congratulations to our new Core Team consisting of:
+
 - LennyMcLennington
 - Scumplex
 - timoreo

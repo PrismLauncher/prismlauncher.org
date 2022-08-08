@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 9
 ---
 
-# Making use of Controllers 
+# Making use of Controllers
 
 This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 
@@ -18,11 +18,11 @@ This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 
-# <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt 
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt
 
-Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilt Standard Libraries** mod on **Quilt** for your instance is installed. 
+Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilt Standard Libraries** mod on **Quilt** for your instance is installed.
 
-## <img src="https://cdn-raw.modrinth.com//data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
+### <img src="https://cdn-raw.modrinth.com//data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
 
 For Minecraft 1.16.5 to 1.17.1 we recommend the **LambdaControls** mod.
 
@@ -50,10 +50,9 @@ Within the in-game controls menu, you may need to change the "Mode" setting to *
 
 If it doesn't work, try to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
 
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
-# <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge 
-
-## <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (Forge)
+### <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (Forge)
 
 For Minecraft 1.12.2 to 1.19 on Forge we recommend the **Controllable** mod.
 

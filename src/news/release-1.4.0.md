@@ -24,6 +24,7 @@ Thanks to all contributors, who have worked on this release!
 ## Changelog
 
 ### Added
+
 - Add concurrent tasks by @flowln in #786
 - Add more links to mod and modpack descriptions by @flowln and @DioEgizio in #634 #799
 - Add news reader in the launcher by @flowln in #845
@@ -37,6 +38,7 @@ Thanks to all contributors, who have worked on this release!
 - [OpenBSD] Readd support for OpenBSD by @Technous285 in #694
 
 ### Changed
+
 - Allow the cape to be changed without changing the skin by @Gingeh in #913
 - Cleanup Java code by @Scrumplex and @icelimetea in #778 #785 #800 #863
 - Hide channel from version for tagged commits by @Scrumplex in #810
@@ -60,6 +62,7 @@ Thanks to all contributors, who have worked on this release!
 - [macOS] Build on macOS 12 in CI by @DioEgizio in #787
 
 ### Fixed
+
 - Always scale mod icons to the right size by @flowln in #818
 - Don't censor offline access token by @ivanpu in #864
 - Don't create unnecessary folders when extracting ZIPs by @flowln in #817
@@ -78,7 +81,6 @@ Thanks to all contributors, who have worked on this release!
 - [Linux] Use our fork of libnbtplusplus on Nix by @Scrumplex in #932
 - [macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827
 
-
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0>
 
 You can [grab the latest download here](/download) for your respective platform.

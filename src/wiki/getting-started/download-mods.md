@@ -10,7 +10,7 @@ Make sure you know how to [Create an Instance](../create-instance) before attemp
 
 Inside the **Edit Instance** menu, select the **version** tab on the left sidebar. From here, you will need to decide on which mod loader you would like to use. **Fabric** and **Forge** are the most popular, with Forge having the most mods available. Fabric and Forge mods are generally not cross-compatible, so choosing between them will change your selection of mods.
 
-Once you have picked out your ideal mod loader, go to the **Mods** tab, and select the **Download Mods** option that's to the right. From here, you can choose to install from both *Modrinth* and *CurseForge* services. Modrinth focuses more towards free and open-source mods, however, CurseForge has a much larger selection. 
+Once you have picked out your ideal mod loader, go to the **Mods** tab, and select the **Download Mods** option that's to the right. From here, you can choose to install from both *Modrinth* and *CurseForge* services. Modrinth focuses more towards free and open-source mods, however, CurseForge has a much larger selection.
 
 It is worth noting that many mods will be available on **both platforms**.
 

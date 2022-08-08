@@ -50,7 +50,7 @@ hero:
         <div class="subtitle">
           <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
           Are you tired of manually switching mods for different versions, installing modloaders?<p>
-          <p>PolyMC can help. Each Minecraft instance has it's own folder, with separate mods, resourcepacks and other things.</p>
+          <p>PolyMC can help. Each Minecraft instance has its own folder, with separate mods, resourcepacks and other things.</p>
         </div>
         <br>
       </div>
@@ -76,42 +76,44 @@ hero:
 </div>
 <div class="infobox top">
 
-  # Get involved
-  ---
+# Get involved
 
-  ## Reddit
+---
+
+## Reddit
   
-  [![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
+[![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
 
-  ## Discord
+## Discord
 
-  To talk directly to us and get involved with development:
-  
-  [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
+To talk directly to us and get involved with development:
 
-  ## Element
+[![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
 
-  For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
+## Element
 
-  [![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
+For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
-  If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
+[![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
 
-  [![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)](https://matrix.to/#/#polymc-development:matrix.org)
-  [![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)](https://matrix.to/#/#polymc-discussion:matrix.org)
-  [![Github](https://img.shields.io/matrix/polymc-github:matrix.org?label=PolyMC%20Github)](https://matrix.to/#/#polymc-github:matrix.org)
-  [![Maintainers](https://img.shields.io/matrix/polymc-maintainers:matrix.org?label=PolyMC%20Maintainers)](https://matrix.to/#/#polymc-maintainers:matrix.org)
-  [![News](https://img.shields.io/matrix/polymc-news:matrix.org?label=PolyMC%20News)](https://matrix.to/#/#polymc-news:matrix.org)
-  [![Offtopic](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)](https://matrix.to/#/#polymc-offtopic:matrix.org)
-  [![Support](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)](https://matrix.to/#/#polymc-support:matrix.org)
-  [![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)](https://matrix.to/#/#polymc-voice:matrix.org)
+If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
 
-  # Source code
-  ---
+[![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)](https://matrix.to/#/#polymc-development:matrix.org)
+[![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)](https://matrix.to/#/#polymc-discussion:matrix.org)
+[![Github](https://img.shields.io/matrix/polymc-github:matrix.org?label=PolyMC%20Github)](https://matrix.to/#/#polymc-github:matrix.org)
+[![Maintainers](https://img.shields.io/matrix/polymc-maintainers:matrix.org?label=PolyMC%20Maintainers)](https://matrix.to/#/#polymc-maintainers:matrix.org)
+[![News](https://img.shields.io/matrix/polymc-news:matrix.org?label=PolyMC%20News)](https://matrix.to/#/#polymc-news:matrix.org)
+[![Offtopic](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)](https://matrix.to/#/#polymc-offtopic:matrix.org)
+[![Support](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)](https://matrix.to/#/#polymc-support:matrix.org)
+[![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)](https://matrix.to/#/#polymc-voice:matrix.org)
 
-  PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
-  
-  [Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
+# Source code
 
-  The logo and related assets are under the CC BY-SA 4.0 license.
+---
+
+PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
+
+[Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
+
+The logo and related assets are under the CC BY-SA 4.0 license.
 </div>

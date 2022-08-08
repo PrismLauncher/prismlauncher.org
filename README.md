@@ -1,7 +1,6 @@
 # Official Website for PolyMC
 
-https://polymc.org
-
+<https://polymc.org>
 
 ## Serve site for local development
 

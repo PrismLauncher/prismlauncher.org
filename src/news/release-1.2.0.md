@@ -10,6 +10,7 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 ## Changelog
 
 ### Added
+
 - Allow components to specify Java agents and JVM arguments by @unascribed in #175
 - Add support for Quilt loader by @Scrumplex in #185 #431
 - Add buttons to Matrix space and Reddit by @dada513 in #243 and @ZekeSmith in #390
@@ -29,6 +30,7 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 - [Windows] Add support for POLYMC_JAVA_PATHS by @FayneAldan in #357 #360
 
 ### Changed
+
 - Improve mod downloader by @flowln in #220 #356 and @dada513 in #375 and @HarryPeach in #395
 - Switch logo font to Josefin Sans by @Scrumplex in #250
 - Updated Nix Flake by @Kranzes in #272
@@ -41,6 +43,7 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 - [macOS] Switch to Qt 5.15.3 by @DioEgizio in #439
 
 ### Fixed
+
 - Fix and improve translatable strings by @Scrumplex in #364
 - Switch to newer Discord logo by @Regular-Baf in #413
 - [Linux] Flatpak fixes by @dada513 in #355
@@ -48,8 +51,9 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 - [FreeBSD] Force system LWJGL natives by @Irgendwer01 in #429
 
 ### Removed
+
 - Remove unused notification system by @binex-dsk in #188
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.1.1...1.2.0
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.1.1...1.2.0>
 
 You can [grab the latest download here](/download) for your respective platform.

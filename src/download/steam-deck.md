@@ -76,8 +76,8 @@ Now, you can again, right-click the cover, and select `Set custom artwork` under
 <img src="/img/Steam_Deck_Cover_vertical.png" height="360">
 Navigate to where you have saved the images, and select the **vertical cover-art**.
 
-Additionally, you can add an icon and rename the Non-Steam Game to Minecraft. 
-To do so, right-click on the PolyMC Non-Steam Game, and select `Properties`. At the top, you can rename PolyMC to Minecraft, and you can change the Icon by clicking the empty square that is to the left of the name, and then select the image you want to use. 
+Additionally, you can add an icon and rename the Non-Steam Game to Minecraft.
+To do so, right-click on the PolyMC Non-Steam Game, and select `Properties`. At the top, you can rename PolyMC to Minecraft, and you can change the Icon by clicking the empty square that is to the left of the name, and then select the image you want to use.
 
 ### Tips and Tricks
 
