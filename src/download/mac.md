@@ -29,7 +29,7 @@ eleventyNavigation:
 
 #### Installation instructions
 
-```zsh
+```bash
 brew install --cask polymc
 ```
 
