@@ -32,14 +32,15 @@ hero:
   <div class="row">
     <div class="column">
       <div>
-        <h1>Download Mods</h1>
+        <h1>Download & Update Mods</h1>
         <div class="subtitle">
-          <p>Are you sick of finding and adding that one mod you need? PolyMC is able to download individual mods from outside of modpacks using Modrinth and CurseForge.
+          <p>Are you sick of finding and adding that one mod you need? PolyMC is able to download & update individual mods from outside of modpacks using Modrinth and CurseForge.
         </div>
       </div>
     </div>
     <div class="column">
       {% image "Mod Installer", "./src/img/screenshots/ModInstallLight.png", "./src/img/screenshots/ModInstallDark.png" %}
+      {% image "Mod Installer", "./src/img/screenshots/ModUpdateLight.png", "./src/img/screenshots/ModUpdateDark.png" %}
     </div>
   </div>
 
@@ -65,7 +66,7 @@ hero:
       <div>
         <h1>Lightweight & Customizable</h1>
         <div class="subtitle">
-          You don't need an embedded web browser for a game launcher. PolyMC uses the Qt toolkit, which requires little system resources.
+          You don't need an embedded web browser for a game launcher. PolyMC uses the Qt toolkit, which requires little system resources. PolyMC also supports customizing the instance window and theme.
         </div>
       </div>
     </div>
