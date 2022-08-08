@@ -37,7 +37,6 @@
 .user-name {
     color: white;
     font-size: 1.2em;
-    overflow-y: scroll;
     overflow-wrap: break-word;
     text-align: center;
 }
