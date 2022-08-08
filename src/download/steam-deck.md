@@ -1,5 +1,5 @@
 ---
-title: Download Steam Deck
+title: Download PolyMC for SteamOS/Steam Deck
 eleventyNavigation:
   key: <i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck
   order: 4

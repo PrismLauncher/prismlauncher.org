@@ -1,5 +1,5 @@
 ---
-title: Download macOS
+title: Download PolyMC for macOS
 eleventyNavigation:
   key: <i class="fa fa-apple" aria-hidden="true"></i> macOS 
   order: 2
