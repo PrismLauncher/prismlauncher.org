@@ -17,4 +17,4 @@ Portable dev-builds are also provided; for both Windows and Linux.
 
 For Arch, Debian and Gentoo, respectively, you can use these packages for the latest development versions:
 
-[![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-qt5-git/) [![polymc-git](https://img.shields.io/badge/aur-polymc--qt5--git-blue)](https://aur.archlinux.org/packages/polymc-git/)    [![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git)   [![polymc-9999](https://img.shields.io/badge/gentoo-polymc--9999-purple)](https://packages.gentoo.org/packages/games-action/polymc)
+[![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-qt5-git/) [![polymc-git](https://img.shields.io/badge/aur-polymc--qt5--git-blue)](https://aur.archlinux.org/packages/polymc-git/) [![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git) [![polymc-9999](https://img.shields.io/badge/gentoo-polymc--9999-purple)](https://packages.gentoo.org/packages/games-action/polymc)
