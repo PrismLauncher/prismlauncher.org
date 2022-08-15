@@ -11,7 +11,7 @@ Once upon a time, OptiFine was *the* way, to make your game better, faster, and 
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt
 
-**NOTE:** Most Fabric loader mods require the [Fabric API](../download-mods/#fabric) mod in order to work, while most Quilt Loader mods require [Quilt Standard Libraries](https://quiltmc.org/install/polymc/) to work.
+**NOTE:** Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
 
