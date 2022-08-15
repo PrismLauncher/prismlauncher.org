@@ -11,7 +11,7 @@ Installing PolyMC on most platforms should be quite straightforward. Head over t
 
 ## Common Issues
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (8.1, 10, 11)
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
 
 #### How do I open a .zip file?
 
@@ -22,6 +22,14 @@ Windows by default can "open" **.zip** archive files, but in order to use PolyMC
 This is unfortunately **normal behaviour** due to the nature of the Windows app signing process. PolyMC has yet to purchase a signature, however, with enough funding, we may choose to do so in the future. PolyMC is an **open-source** application. As a result of this, all of the source code is public, and can be audited by any individual or group. If you would like to do so yourself, you can do so [here](https://github.com/PolyMC/PolyMC).
 
 If you are **comfortable** and **trust** PolyMC, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
+
+### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" height="20" /> Windows 7 and 8.1
+
+#### api-ms-win-core-synch-l1-2.0.dll not found?
+
+PolyMC 1.4.0 and higher started using Qt 6 by default on Windows, which does *not* support Windows 7 and Windows 8.1.
+
+For this reason, we still provide a build that uses Qt 5 in [our download page](https://polymc.org/download/) called "Legacy version", you'll have to use that on those legacy versions of Windows.
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
 
@@ -52,6 +60,15 @@ sudo chmod +x PolyMC-Linux-{{version.current}}-x86_64.AppImage
 **Please note,** that depending on the version of PolyMC that you have downloaded, you may have to **change the version number** in the command above.
 
 If you want to simplify the installation of the AppImage, use [AppimageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system and we reccomend just using packages.
+
+#### PolyMC isn't using my system theme
+
+PolyMC added support for Qt 6 in the 1.4.0 update.  
+This means that some themes and theming platforms, like Breeze and KDE Plasma's theming will not work on builds using that version of the Qt toolkit.  
+But don't worry, we still provide Qt 5 builds.
+You can find them on the [download page](https://polymc.org/download/linux).
+
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
 
 #### I want to make my system install portable
 

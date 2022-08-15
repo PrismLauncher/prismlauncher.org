@@ -20,7 +20,7 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt
 
-Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilt Standard Libraries** mod on **Quilt** for your instance is installed.
+Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilted Fabric API** mod on **Quilt** for your instance is installed.
 
 ### <img src="https://cdn-raw.modrinth.com//data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
 
