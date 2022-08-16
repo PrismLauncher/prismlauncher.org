@@ -1,10 +1,12 @@
 ---
-title: Rewrite in electron
-description: Baftastic Release
+title: Rewrite in electron (April Fools 2022)
+description: Baftastic Release, THIS IS A JOKE RELEASE
 date: 2022-04-01
 tags:
   - April Fools
 ---
+
+<b>DISCLAIMER: THIS POST IS A JOKE!!!! THIS POST IS NOT SERIOUS!!!!!!!!!!</b>
  
 <p><audio src="/img/af/vineboom.mp3" autoplay></audio></p>
 
@@ -19,9 +21,10 @@ PolyMC has been fully re-written from the ground up in **Electron**! Not just is
 
 <img width="200px" src="/img/af/arrow.png"><a class="button" href="/download/2/">Download NOW!</a></img>
 
-## Revolutionary extension and theming support
+## Revolutionary extension and theming support *image redacted*
 
-![ThemingPolyMC](/img/af/polymc-themes.png)
+![ThemingPolyMCSS](/img/af/polymc-themes.jpg)
+
 Whatever your style, express it with PolyMC 2.0.0! We have full support for all Chrome extensions, and themes, so you can really make *your* launcher your own.
 
 <img width="200px" src="/img/af/arrow.png"><a class="button" href="/download/2/">Download NOW!</a></img>
