@@ -91,7 +91,7 @@ To talk directly to us and get involved with development:
 
 [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
 
-## Element
+## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
