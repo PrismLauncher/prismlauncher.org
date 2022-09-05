@@ -24,7 +24,7 @@ Execute the OptiFine jar file and change the selected folder location if require
 
 Now in PolyMC edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
-OptiFine will now be copied to and installed as a jarmod for that instance so it is safe to delete the installer and extracted mod. 
+OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod. 
 
 
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
