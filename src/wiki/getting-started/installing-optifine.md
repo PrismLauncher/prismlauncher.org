@@ -22,7 +22,7 @@ Once found, click **mirror**. Now click the **download** button to download your
 
 Execute the OptiFine jar file and change the selected folder location if required, then hit the **"Extract"** button and save the jarmod file somewhere you'll remember.
 
-Now in the PolyMC launcher edit the instance you wish to install OptiFine on, open the **Version** tab and on the right click **Add to Minecraft.jar**, select the extracted OptiFine mod(the file ending in \_MOD.jar) and confirm.
+Now in PolyMC edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
 OptiFine will now be copied to and installed as a jarmod for that instance so it is safe to delete the installer and extracted mod. 
 
