@@ -34,7 +34,7 @@ Within the in-game controls menu, you may need to change the "Mode" setting to *
 
 Remember to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
 
-### <img src="https://cdn-raw.modrinth.com//data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 - 1.19)
+### <img src="https://cdn-raw.modrinth.com//data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 - 1.19.2)
 
 Since LambdaControls got deprecated, someone decided to fork it and update it.
 
@@ -54,7 +54,7 @@ If it doesn't work, try to get the mapping using [**the app linked in the mod**]
 
 ### <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (Forge)
 
-For Minecraft 1.12.2 to 1.19 on Forge we recommend the **Controllable** mod.
+For Minecraft 1.12.2 to 1.19.2 on Forge we recommend the **Controllable** mod.
 
 Controllable can be be installed using PolyMC's mod downloader function from the **CurseForge** service.
 
