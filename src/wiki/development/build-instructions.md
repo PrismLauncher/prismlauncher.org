@@ -32,9 +32,9 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 
 ### Build dependencies
 
-- A C++ compiler capable of building C++11 code.
+- A C++ compiler capable of building C++17 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
@@ -225,8 +225,6 @@ This is where the final `PolyMC.app` will be constructed when you run `make inst
 mkdir build
 cd build
 cmake \
- -DCMAKE_C_COMPILER=/usr/bin/clang \
- -DCMAKE_CXX_COMPILER=/usr/bin/clang++ \
  -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
@@ -234,11 +232,13 @@ cmake \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
  -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
+ -DLauncher_BUILD_PLATFORM=macOS
+#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)
  ..
 make install
 ```
 
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt@5`.
+Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
 
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
