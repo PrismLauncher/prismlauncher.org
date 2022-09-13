@@ -33,4 +33,12 @@ eleventyNavigation:
 brew install --cask polymc
 ```
 
+### MacPorts Package (community-maintained)
+
+#### Installation instructions
+
+```bash
+sudo port install PolyMC
+```
+  
 </div>
