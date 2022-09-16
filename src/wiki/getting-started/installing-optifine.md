@@ -14,7 +14,7 @@ Therefore, you should consider the use of OptiFine alternatives whenever possibl
 
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine standalone
 
-This method requires you either have the minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like /.minecraft/versions/*1.18.2*/*1.18.2*.jar).
+This method requires you either have the Minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like /.minecraft/versions/*1.18.2*/*1.18.2*.jar).
 
 Go to <https://optifine.net/downloads> and find your respective Minecraft version (eg. 1.18.2).
 
