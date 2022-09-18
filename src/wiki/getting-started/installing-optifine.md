@@ -12,7 +12,22 @@ Also, if you're using the Fabric mod loader, there's no native support for it, a
 
 Therefore, you should consider the use of OptiFine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
 
-## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine
+## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine standalone
+
+This method requires you either have the Minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like /.minecraft/versions/*1.18.2*/*1.18.2*.jar).
+
+Go to <https://optifine.net/downloads> and find your respective Minecraft version (eg. 1.18.2).
+
+Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
+
+Execute the OptiFine jar file and change the selected folder location if required, then hit the **"Extract"** button and save the jarmod file somewhere you'll remember.
+
+Now in PolyMC edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
+
+OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod. 
+
+
+## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
 
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
 
