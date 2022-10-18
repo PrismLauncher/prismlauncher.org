@@ -22,7 +22,7 @@ Once found, click **mirror**. Now click the **download** button to download your
 
 Execute the OptiFine jar file and change the selected folder location if required, then hit the **"Extract"** button and save the jarmod file somewhere you'll remember.
 
-Now in PolyMC edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
+Now in PrismLauncher edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
 OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod. 
 
@@ -35,11 +35,11 @@ Go to <https://optifine.net/downloads> and find your respective Minecraft versio
 
 Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
 
-Remember where you have kept your **.jar** file, and continue to the PolyMC launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
+Remember where you have kept your **.jar** file, and continue to the PrismLauncher launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
 
 ### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
-Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-the-.jar-file-into-polymc) into PolyMC.
+Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-the-.jar-file-into-prismlauncher) into PrismLauncher.
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
@@ -49,7 +49,7 @@ Forge does not require any extra steps besides [adding the **.jar** for OptiFine
 
 Fabric, unlike Forge, does not natively support OptiFine, and will require the installation of OptiFabric.
 
-Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-the-.jar-file-into-polymc) for OptiFine into PolyMC.
+Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-the-.jar-file-into-prismlauncher) for OptiFine into PrismLauncher.
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
@@ -57,7 +57,7 @@ If there were results shown in the search, your Minecraft version may not be com
 
 There's no way of running OptiFine on Quilt at the time of writing.
 
-### Adding the .jar file into PolyMC
+### Adding the .jar file into PrismLauncher
 
 Go into the **Mods** tab on the left side of the **Edit Instance** menu, and then click on the **Add .jar** option to the right of the window.
 

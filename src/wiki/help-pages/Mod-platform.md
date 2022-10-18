@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: Help pages
 --- 
 
-![Mod downloader on mods tab under PolyMC settings](/img/Mod-platform.png)
+![Mod downloader on mods tab under PrismLauncher settings](/img/Mod-platform.png)
 
 In this page, you can download mods from Modrinth and CurseForge.
 

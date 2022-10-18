@@ -17,7 +17,7 @@ Once upon a time, OptiFine was *the* way, to make your game better, faster, and 
 
 [Sodium](https://modrinth.com/mod/sodium) is the best client-side optimisation mod available at the moment, and we **highly recommend** installing it when possible.
 
-To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
+To install in PrismLauncher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
@@ -25,7 +25,7 @@ To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, 
 
 You can find a list of currently supported shaderpacks [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md).
 
-To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
+To install in PrismLauncher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods
 
@@ -37,7 +37,7 @@ If you would like to go a bit further, LambdAurora maintains a very detailed lis
 
 If you don't want to search, and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
 
-See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for PolyMC too.
+See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for PrismLauncher too.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
@@ -53,13 +53,13 @@ While on some modpacks/with some mods they're going to work good, with others th
 
 [Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
 
-To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
+To install in PrismLauncher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.16.5/src/main/resources/oculus-logo.png" height="20"> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
 
-To install in PolyMC, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
+To install in PrismLauncher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
 
 ### Other mods
 
