@@ -2,7 +2,7 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 
 module.exports = async function () {
 	// https://developer.github.com/v3/repos/#get
-	let json = await EleventyFetch("https://api.github.com/orgs/PlaceholderMC/members", {
+	let json = await EleventyFetch("https://api.github.com/orgs/PrismLauncher/members", {
 		duration: "1d", // 1 day
 		type: "json" // also supports "text" or "buffer"
 	});
