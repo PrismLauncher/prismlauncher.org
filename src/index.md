@@ -89,7 +89,7 @@ hero:
 
 To talk directly to us and get involved with development:
 
-[![PrismLauncher Discord](https://img.shields.io/discord/1031648380885147709?label=PrismLauncher%20Discord)](https://discord.gg/KSkaP5wGpx)
+[![PrismLauncher Discord](https://img.shields.io/discord/1031648380885147709?label=PrismLauncher%20Discord)](https://discord.gg/PrismLauncher)
 
 ## Matrix
 
