@@ -89,24 +89,13 @@ hero:
 
 To talk directly to us and get involved with development:
 
-[![PrismLauncher Discord](https://img.shields.io/discord/1031648380885147709?label=PrismLauncher%20Discord)](https://discord.gg/PrismLauncher)
+[![PrismLauncher Discord](https://img.shields.io/discord/1031648380885147709?label=PrismLauncher%20Discord)](https://discord.gg/prismlauncher)
 
 ## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
 [![PrismLauncher Space](https://img.shields.io/matrix/prismlauncher:matrix.org?label=PrismLauncher%20space)](https://matrix.to/#/#prismlauncher:matrix.org)
-
-If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
-
-[![Development](https://img.shields.io/matrix/prismlauncher-development:matrix.org?label=PrismLauncher%20Development)](https://matrix.to/#/#prismlauncher-development:matrix.org)
-[![Discussion](https://img.shields.io/matrix/prismlauncher-discussion:matrix.org?label=PrismLauncher%20Discussion)](https://matrix.to/#/#prismlauncher-discussion:matrix.org)
-[![Github](https://img.shields.io/matrix/prismlauncher-github:matrix.org?label=PrismLauncher%20Github)](https://matrix.to/#/#prismlauncher-github:matrix.org)
-[![Maintainers](https://img.shields.io/matrix/prismlauncher-maintainers:matrix.org?label=PrismLauncher%20Maintainers)](https://matrix.to/#/#prismlauncher-maintainers:matrix.org)
-[![News](https://img.shields.io/matrix/prismlauncher-news:matrix.org?label=PrismLauncher%20News)](https://matrix.to/#/#prismlauncher-news:matrix.org)
-[![Offtopic](https://img.shields.io/matrix/prismlauncher-offtopic:matrix.org?label=PrismLauncher%20Offtopic)](https://matrix.to/#/#prismlauncher-offtopic:matrix.org)
-[![Support](https://img.shields.io/matrix/prismlauncher-support:matrix.org?label=PrismLauncher%20Support)](https://matrix.to/#/#prismlauncher-support:matrix.org)
-[![Voice](https://img.shields.io/matrix/prismlauncher-voice:matrix.org?label=PrismLauncher%20Voice)](https://matrix.to/#/#prismlauncher-voice:matrix.org)
 
 # Source code
 
