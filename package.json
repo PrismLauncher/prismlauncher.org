@@ -1,7 +1,7 @@
 {
-  "name": "polymc",
-  "version": "6.0.0",
-  "description": "Official PolyMC website",
+  "name": "prismlauncher",
+  "version": "1.0.0",
+  "description": "Official Prism Launcher website",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/PolyMC/polymc.org.git"
+    "url": "git://github.com/PlaceholderMC/prismlauncher.github.io.git"
   },
   "author": {
     "name": "Ezekiel Smith",
@@ -20,9 +20,9 @@
   },
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/PolyMC/polymc.org/issues"
+    "url": "https://github.com/PlaceholderMC/prismlauncher.github.io/issues"
   },
-  "homepage": "https://polymc.org/",
+  "homepage": "https://prismlauncher.org/",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-img": "^1.1.0",
