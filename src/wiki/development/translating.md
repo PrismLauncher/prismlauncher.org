@@ -7,4 +7,4 @@ eleventyNavigation:
 
 # Translating PrismLauncher
 
-The translation effort for PrismLauncher is hosted on [Weblate](https://hosted.weblate.org/projects/prismlauncher/prismlauncher/), and information about translating PrismLauncher is available at <https://github.com/placeholdermc/Translations>
+The translation effort for PrismLauncher is hosted on [Weblate](https://hosted.weblate.org/projects/prismlauncher/launcher/), and information about translating PrismLauncher is available at <https://github.com/prismlauncher/Translations>
