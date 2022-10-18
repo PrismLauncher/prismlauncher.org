@@ -1,6 +1,6 @@
-# Official Website for PolyMC
+# Official Website for Prism Launcher
 
-<https://polymc.org>
+<https://prismlauncher.org>
 
 ## Serve site for local development
 
