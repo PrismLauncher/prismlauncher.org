@@ -7,7 +7,7 @@ tags:
 ---
 
 <b>DISCLAIMER: THIS POST IS A JOKE!!!! THIS POST IS NOT SERIOUS!!!!!!!!!!</b>
- 
+
 <p><audio src="/img/af/vineboom.mp3" autoplay></audio></p>
 
 Here at PolyMC, we have always been very proud of our community, and this release is just the latest example of that. A sincere thank you goes out to all our maintainers, and community members, who made this possible.
