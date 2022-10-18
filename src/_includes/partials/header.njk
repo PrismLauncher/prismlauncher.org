@@ -25,7 +25,6 @@
             <a href="https://github.com/placeholdermc/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
           </div>
           <div>
-            <a class="button" href="{{ '/download/' | url }}">Download</a>
             <a class="button" href="https://opencollective.com/prismlauncher">Donate</a>
           </div>
         </div>
@@ -39,10 +38,6 @@
           <div class="hero-description">
             <h1 class="hero-title">{{ hero.title }}</h1>
             <p class="subtitle">{{ hero.description }}</p>
-            {%- if hero.download == true %}
-              <br>
-                <a class="button is-big" href="{{ '/download' | url }}">Download Now</a>
-              {%- endif %}
           </div>
           </div class="image">
           {%- if hero.image %}
