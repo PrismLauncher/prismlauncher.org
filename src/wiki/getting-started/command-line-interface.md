@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Using Prism Launcher via the Command Line
 
-```
+```text
 Usage: prismlauncher [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
 
 Options & Switches:

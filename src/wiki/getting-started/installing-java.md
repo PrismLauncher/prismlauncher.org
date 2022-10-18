@@ -97,7 +97,7 @@ If you want to try, [there's this guide that could work](https://gist.github.com
 
 If you use some older Minecraft versions, you might have had this error:
 
-```
+```text
 Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
 ```
 

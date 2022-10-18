@@ -86,7 +86,7 @@ The .deb will be located in the directory the repo was cloned in.
 ### Building an .rpm
 
 Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
-in order to fetch sources and setup your tree.  
+in order to fetch sources and setup your tree.
 You don't need to clone the repo for this; the spec file handles that.
 
 ```bash
@@ -123,15 +123,15 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
 
-   - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-      - Alternatively you can choose Qt 6.0 or newer
-   - You need Tools/Qt Creator ticked.
-   - Other components are selected by default, you can un-tick them if you don't need them.
+    - You need Qt 5.12.x 64-bit ticked. (or a newer version)
+    - Alternatively you can choose Qt 6.0 or newer
+    - You need Tools/Qt Creator ticked.
+    - Other components are selected by default, you can un-tick them if you don't need them.
 
 4. Accept the license agreements.
 5. Double-check the install details and then click "Install".
 
-  - Installation can take a very long time, go grab a cup of tea or something and let it work.
+    - Installation can take a very long time, go grab a cup of tea or something and let it work.
 
 ### Loading the project in Qt Creator (optional)
 
@@ -266,7 +266,7 @@ You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you w
 mkdir install
 # configure the project
 cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON 
+   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON
 # build
 cd build
 make -j$(nproc) install
