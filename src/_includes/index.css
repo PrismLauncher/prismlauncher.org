@@ -176,8 +176,6 @@ code {
   background-color: var(--background);
   border-radius: 1em;
   padding: 1em;
-  -webkit-backdrop-filter: blur(2em);
-  backdrop-filter: blur(10px);
 }
 
 .center {
