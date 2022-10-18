@@ -7,6 +7,20 @@ eleventyNavigation:
 
 # Frequently asked questions
 
+## Is PolyMC still safe to use?
+
+PolyMC versions **1.4.2 and below are probably safe to continue using** for now atleast. With that said, **please do not update the lancher**, and it is advised that you change a few things within the launcher just to be safe.
+
+In the PolyMC settings page, under the APIs tab, please replace the following:
+
+> APIs > Services...
+
+**Metadata Server:** `https://meta.prismlauncher.org/v1/`
+
+> APIs > API Keys...
+
+**Microsoft Authentication:** `c36a9fb6-4f2a-41ff-90bd-ae7cc92031eb`
+
 ## Why did our community choose to fork?
 
 For some more insight, please refer to: [Moving on](/news/moving-on) 
