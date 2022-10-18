@@ -8,7 +8,7 @@ eleventyNavigation:
 
 Because OptiFine is an old, closed-source project, it has evolved to cause many mod incompatibilities, and doesn't do as good of a job as some the alternatives out there.
 
-Also, if you're using the Fabric mod loader, there's no native support for it, and the current [workaround](#fabric) is known to be buggy and quite unstable, due to the very nature of OptiFine and OptiFabric.
+Also, if you're using the Fabric mod loader, there's no native support for it, and the current workaround is known to be buggy and quite unstable, due to the very nature of OptiFine and OptiFabric.
 
 Therefore, you should consider the use of OptiFine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
 
@@ -26,7 +26,6 @@ Now in Prism Launcher edit the instance you wish to install OptiFine on, open th
 
 OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod.
 
-
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
 
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
@@ -35,11 +34,11 @@ Go to <https://optifine.net/downloads> and find your respective Minecraft versio
 
 Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
 
-Remember where you have kept your **.jar** file, and continue to the Prism Launcher launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric([!warning](#fabric)).
+Remember where you have kept your **.jar** file, and continue to the Prism Launcher launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
 
 ### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
-Forge does not require any extra steps besides [adding the **.jar** for OptiFine](#adding-the-.jar-file-into-prismlauncher) into Prism Launcher.
+Forge does not require any extra steps besides adding the **.jar** for OptiFine into Prism Launcher.
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
@@ -49,7 +48,7 @@ Forge does not require any extra steps besides [adding the **.jar** for OptiFine
 
 Fabric, unlike Forge, does not natively support OptiFine, and will require the installation of OptiFabric.
 
-Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now procede with [adding the .jar file](#adding-the-.jar-file-into-prismlauncher) for OptiFine into Prism Launcher.
+Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now proceed with adding the .jar file for OptiFine into Prism Launcher.
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
