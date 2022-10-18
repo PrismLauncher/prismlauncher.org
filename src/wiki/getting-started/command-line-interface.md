@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 10
 ---
 
-# Using PrismLauncher via the Command Line
+# Using Prism Launcher via the Command Line
 
 ```
 Usage: prismlauncher [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
@@ -29,8 +29,8 @@ To find it, **right-click** on the instance you want to know the ID of, and then
 
 Now, just copy the name of the folder that opened.
 
-## PrismLauncher is still opening after I close Minecraft
+## Prism Launcher is still opening after I close Minecraft
 
-Currently, the *Close PrismLauncher after game window opens* option opens PrismLauncher after closing Minecraft, even when launched from the CLI.
+Currently, the *Close Prism Launcher after game window opens* option opens Prism Launcher after closing Minecraft, even when launched from the CLI.
 
-To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PrismLauncher after game window opens* or check *Quit the launcher after game window closes*.
+To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close Prism Launcher after game window opens* or check *Quit the launcher after game window closes*.

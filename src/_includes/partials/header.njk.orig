@@ -22,23 +22,16 @@
             <a href="https://discord.gg/KSkaP5wGpx" target="_blank"><i class="fa fa-discord"></i></a>
             <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank"><i class="fa fa-matrix-org"></i></a>
             <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank"><i class="fa fa-reddit"></i></a>
-            <a href="https://github.com/placeholdermc/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
           </div>
           <div>
-<<<<<<< HEAD
             <a class="button" href="{{ '/download/' | url }}">Download</a>
             <a class="button" href="https://opencollective.com/prismlauncher">Donate</a>
-||||||| parent of 12e370e (fix: remove downloads temporarily)
-            <a class="button" href="{{ '/download/' | url }}">Download</a>
-            <a class="button" href="https://opencollective.com/polymc">Donate</a>
-=======
-            <a class="button" href="https://opencollective.com/polymc">Donate</a>
->>>>>>> 12e370e (fix: remove downloads temporarily)
           </div>
         </div>
       </nav>
     </div>
-    
+
     {% if hero %}
     <div class="hero-body">
       <div class="row container">

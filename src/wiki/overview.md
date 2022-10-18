@@ -5,10 +5,10 @@ eleventyNavigation:
   order: 1
 --- 
 
-# Welcome to the PrismLauncher Wiki!
+# Welcome to the Prism Launcher Wiki!
 
-If you're new to PrismLauncher and not quite sure where to begin, please go to [Getting Started](./getting-started).
+If you're new to Prism Launcher and not quite sure where to begin, please go to [Getting Started](./getting-started).
 
-PrismLauncher is a free and open source Minecraft launcher forked from the MultiMC project, with the ability to manage multiple accounts, as well as instances, each with their own mods, reasource packs, and more! Our project has a much greater focus on both user-freedom, as well as the incorporation of new and exciting features and functionality.
+Prism Launcher is a free and open source Minecraft launcher forked from the MultiMC project, with the ability to manage multiple accounts, as well as instances, each with their own mods, reasource packs, and more! Our project has a much greater focus on both user-freedom, as well as the incorporation of new and exciting features and functionality.
 
-Please **do not** contact the MultiMC team regarding issues related PrismLauncher.
+Please **do not** contact the MultiMC team regarding issues related Prism Launcher.
