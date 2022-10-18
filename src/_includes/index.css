@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-text: #333;
+    --primary-text: #ffffff;
     --background: #ffffff;
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
@@ -33,7 +33,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter", -apple-system, system-ui, sans-serif;
+  font-family: "Quicksand", -apple-system, system-ui, sans-serif;
   color: var(--primary-text);
 }
 
@@ -172,21 +172,19 @@ code {
   position: relative;
 }
 
-.content {
-  background-color: var(--background);
+.content, .infobox {
+  background-color: #33333333;
   border-radius: 1em;
   padding: 1em;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #33333333;
 }
 
 .center {
   text-align: center;
   margin: auto;
-}
-
-.infobox {
-  background-color: var(--accent);
-  padding: 1em;
-  border-radius: 1em;
 }
 
 .button-disabled {
@@ -197,7 +195,7 @@ code {
   margin: 0.25em;
   list-style: none;
   font-size: 1.2em;
-  font-family: "Inter", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   text-decoration: none;
   background-color: var(--primary);
@@ -221,26 +219,17 @@ code {
   margin: 0.25em;
   list-style: none;
   font-size: 1.2em;
-  font-family: "Inter", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  background-color: var(--primary);
-  background-image: var(--grad-primary);
-  background-size: 200%;
-  clip-path: polygon(0.6em 0,
-      calc(100% - 0.6em) 0,
-      100% 50%,
-      calc(100% - 0.6em) 100%,
-      0.6em 100%,
-      0 50%);
   transition: 250ms ease;
-  background-position-x: 100%;
+  border-radius: 3rem;
+  background: #ffffff55;
 }
 
 .button:hover,
 .button:focus {
-  background-position-x: 0%;
-  /* slide the gradient */
+  background: #ffffff77;
 }
 
 .button {
