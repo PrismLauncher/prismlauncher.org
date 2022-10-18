@@ -5,10 +5,10 @@ eleventyNavigation:
   order: 10
 ---
 
-# Using PolyMC via the Command Line
+# Using PrismLauncher via the Command Line
 
 ```
-Usage: polymc [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
+Usage: prismlauncher [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
 
 Options & Switches:
   -h, --help            Display this help and exit.
@@ -29,8 +29,8 @@ To find it, **right-click** on the instance you want to know the ID of, and then
 
 Now, just copy the name of the folder that opened.
 
-## PolyMC is still opening after I close Minecraft
+## PrismLauncher is still opening after I close Minecraft
 
-Currently, the *Close PolyMC after game window opens* option opens PolyMC after closing Minecraft, even when launched from the CLI.
+Currently, the *Close PrismLauncher after game window opens* option opens PrismLauncher after closing Minecraft, even when launched from the CLI.
 
-To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PolyMC after game window opens* or check *Quit the launcher after game window closes*.
+To disable this, open *Settings*, then select *Minecraft*, and finally, un-check *Close PrismLauncher after game window opens* or check *Quit the launcher after game window closes*.

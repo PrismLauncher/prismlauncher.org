@@ -5,11 +5,11 @@ eleventyNavigation:
 --- 
 # Development
 
-If you would like to contribute to PolyMC, you might find it useful to join our Discord Server or Matrix Space.
+If you would like to contribute to PrismLauncher, you might find it useful to join our Discord Server or Matrix Space.
 
 ## Building
 
-If you want to build PolyMC yourself and/or contribute, check out our [Build Instructions](./build-instructions) page for a handy guide.
+If you want to build PrismLauncher yourself and/or contribute, check out our [Build Instructions](./build-instructions) page for a handy guide.
 
 ## Code formatting
 

@@ -5,10 +5,10 @@ eleventyNavigation:
   order: 2
 --- 
 
-## PolyMC
+## PrismLauncher
 
-     PolyMC - Minecraft Launcher
-     Copyright (C) 2021-2022 PolyMC Contributors
+     PrismLauncher - Minecraft Launcher
+     Copyright (C) 2021-2022 PrismLauncher Contributors
 
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by
@@ -226,8 +226,8 @@ eleventyNavigation:
 
 ## launcher (`libraries/launcher`)
 
-     PolyMC - Minecraft Launcher
-     Copyright (C) 2021-2022 PolyMC Contributors
+     PrismLauncher - Minecraft Launcher
+     Copyright (C) 2021-2022 PrismLauncher Contributors
 
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by

@@ -20,8 +20,8 @@ After you've choosen your mod provider, you can search or browse for any desired
 
 If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
-If it is missing, you can find it by right clicking on your instance in PolyMC and selecting the **Edit Instance** option in the menu.
+If it is missing, you can find it by right clicking on your instance in PrismLauncher and selecting the **Edit Instance** option in the menu.
 
 ## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Quilt
 
-For installing Quilt in PolyMC, follow the [quilt wiki](https://quiltmc.org/install/polymc/).
+For installing Quilt in PrismLauncher, follow the [quilt wiki](https://quiltmc.org/install/prismlauncher/).

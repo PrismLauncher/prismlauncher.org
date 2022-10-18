@@ -1,5 +1,5 @@
 ---
-title: Download PolyMC for Linux
+title: Download PrismLauncher for Linux
 eleventyNavigation:
   key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
   order: 3
@@ -11,12 +11,12 @@ eleventyNavigation:
       <div>
         <h1>Linux Download</h1>
         <br>
-        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a> 
+        <a class="button is-big" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher">Install from FlatHub</a>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a> 
      </div>
     </div>
     <div class="column">
@@ -30,28 +30,28 @@ eleventyNavigation:
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
 There are several AUR packages available:  
-[![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)  
-[![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)  
-[![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
+[![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
+[![prismlauncher-bin](https://img.shields.io/badge/aur-prismlauncher--bin-blue)](https://aur.archlinux.org/packages/prismlauncher-bin/)  
+[![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
 
 ```bash
 # stable source package:
-yay -S polymc
+yay -S prismlauncher
 # stable binary package:
-yay -S polymc-bin
+yay -S prismlauncher-bin
 # latest git package:
-yay -S polymc-git
+yay -S prismlauncher-git
 ```
 
 If you want to use Qt 5 to build the packages instead:
 
 ```bash
 # stable Qt 5 source package:
-yay -S polymc-qt5
+yay -S prismlauncher-qt5
 # stable Qt 5 binary package:
-yay -S polymc-qt5-bin
+yay -S prismlauncher-qt5-bin
 # latest Qt 5 git package:
-yay -S polymc-qt5-git
+yay -S prismlauncher-qt5-git
 ```
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
@@ -61,17 +61,17 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
+Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
 
 ```bash
 # load in system information
 source /etc/os-release
 # enables the copr repo
-sudo dnf copr enable sentry/polymc epel-${VERSION}-$(uname -m)
+sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
 # stable releases
-sudo dnf install polymc
+sudo dnf install prismlauncher
 # nightly releases (git master)
-sudo dnf install polymc-nightly
+sudo dnf install prismlauncher-nightly
 ```
 
 </div>
@@ -83,9 +83,9 @@ sudo dnf install polymc-nightly
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
 
-[![polymc](https://img.shields.io/badge/mpr-polymc-orange)](https://mpr.makedeb.org/packages/polymc)  
-[![polymc-bin](https://img.shields.io/badge/mpr-polymc--bin-orange)](https://mpr.makedeb.org/packages/polymc-bin)  
-[![polymc-git](https://img.shields.io/badge/mpr-polymc--git-orange)](https://mpr.makedeb.org/packages/polymc-git)
+[![prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)  
+[![prismlauncher-bin](https://img.shields.io/badge/mpr-prismlauncher--bin-orange)](https://mpr.makedeb.org/packages/prismlauncher-bin)  
+[![prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
 
 ## Installation using Prebuilt MPR (recommended)
 
@@ -93,7 +93,7 @@ Several MPR packages are available:
 curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
-sudo apt install polymc
+sudo apt install prismlauncher
 ```
 
 NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
@@ -108,15 +108,15 @@ bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
 una update
 ```
 
-Installing PolyMC
+Installing PrismLauncher
 
 ```bash
 # stable source package:
-una install polymc
+una install prismlauncher
 # stable binary package:
-una install polymc-bin
+una install prismlauncher-bin
 # latest git package:
-una install polymc-git
+una install prismlauncher-git
 ```
 
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
@@ -126,15 +126,15 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/polymc/).
+Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
 
 ```bash
 # enables the copr repo
-sudo dnf copr enable sentry/polymc
+sudo dnf copr enable sentry/prismlauncher
 # stable releases
-sudo dnf install polymc
+sudo dnf install prismlauncher
 # nightly releases (git master)
-sudo dnf install polymc-nightly
+sudo dnf install prismlauncher-nightly
 ```
 
 </div>
@@ -143,35 +143,35 @@ sudo dnf install polymc-nightly
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
-Ebuilds are available in the official Gentoo repository, under [`games-action/polymc`](https://packages.gentoo.org/packages/games-action/polymc).
+Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher).
 Note that, for the time being, it is not stabilized, so it's masked for `~amd64` only.
 
 ```bash
 sudo emaint sync -a
 
 # If you need to unmask the package, and considering `package.accept_keywords` to be a folder.
-echo ">=games-action/polymc-1.1.1" | sudo tee -a /etc/portage/package.accept_keywords/polymc
+echo ">=games-action/prismlauncher-1.1.1" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
 # Or do this if you want to build from the latest commit instead of a release
-echo "=games-action/polymc-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/polymc
+echo "=games-action/prismlauncher-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
 
-emerge games-action/polymc
+emerge games-action/prismlauncher
 ```
 
-Old ebuilds, as well as additional information, can be found [in the old polymc overlay repository](https://gitlab.com/flowln/polymc-gentoo/). Have fun! :)
+Old ebuilds, as well as additional information, can be found [in the old prismlauncher overlay repository](https://gitlab.com/flowln/prismlauncher-gentoo/). Have fun! :)
 </div>
 
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
-A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is available.
+A [Nix derivation](https://github.com/placeholdermc/PrismLauncher/blob/develop/nix/NIX.md) is available.
 </div>
 
 <div class="infobox top">
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
 
-PolyMC is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=polymc) community repository.
+PrismLauncher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
 
 </div>
 
@@ -179,10 +179,10 @@ PolyMC is available on the [game:tools](https://software.opensuse.org/download.h
 
 # <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
 
-PolyMC is available on the official Void repository.
+PrismLauncher is available on the official Void repository.
 
 ```bash
-sudo xbps-install PolyMC
+sudo xbps-install PrismLauncher
 ```
 
 </div>

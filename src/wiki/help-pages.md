@@ -5,4 +5,4 @@ eleventyNavigation:
 --- 
 # Help pages
 
-The UI help pages for PolyMC!
+The UI help pages for PrismLauncher!

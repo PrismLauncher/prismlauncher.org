@@ -5,4 +5,4 @@ eleventyNavigation:
 --- 
 # Getting Started
 
-How to set-up and use PolyMC to its fullest!
+How to set-up and use PrismLauncher to its fullest!

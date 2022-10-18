@@ -1,5 +1,5 @@
 ---
-title: Download PolyMC for macOS
+title: Download PrismLauncher for macOS
 eleventyNavigation:
   key: <i class="fa fa-apple" aria-hidden="true"></i> macOS 
   order: 2
@@ -11,8 +11,8 @@ eleventyNavigation:
       <div>
         <h1>macOS Download</h1>
         <br>
-        <p><strong>Note:</strong> Although the PolyMC binary is universal, old versions of Minecraft still run on Rosetta.</p>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{ version.current }}/PolyMC-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
+        <p><strong>Note:</strong> Although the PrismLauncher binary is universal, old versions of Minecraft still run on Rosetta.</p>
+        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
       </div>
     </div>
     <div class="column">
@@ -30,7 +30,7 @@ eleventyNavigation:
 #### Installation instructions
 
 ```bash
-brew install --cask polymc
+brew install --cask prismlauncher
 ```
 
 ### MacPorts Package (community-maintained)
@@ -38,7 +38,7 @@ brew install --cask polymc
 #### Installation instructions
 
 ```bash
-sudo port install PolyMC
+sudo port install PrismLauncher
 ```
   
 </div>
