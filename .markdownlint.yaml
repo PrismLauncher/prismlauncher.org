@@ -4,6 +4,7 @@ MD013: false
 # MD024/no-duplicate-heading/no-duplicate-header - Multiple headings with the same content
 MD024:
   siblings-only: true
+  allow_different_nesting: true
 
 # MD025/single-title/single-h1 - Multiple top-level headings in the same document
 MD025:

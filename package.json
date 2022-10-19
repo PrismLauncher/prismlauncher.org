@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/PlaceholderMC/prismlauncher.github.io.git"
+    "url": "git://github.com/PrismLauncher/prismlauncher.github.io.git"
   },
   "author": {
     "name": "Ezekiel Smith",
@@ -20,7 +20,7 @@
   },
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/PlaceholderMC/prismlauncher.github.io/issues"
+    "url": "https://github.com/PrismLauncher/prismlauncher.github.io/issues"
   },
   "homepage": "https://prismlauncher.org/",
   "devDependencies": {

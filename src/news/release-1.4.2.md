@@ -19,9 +19,11 @@ Thanks to all contributors, who have worked on this release!
 ## Changelog
 
 ### Added
+
 - [OpenBSD] Add root path detection by @Scrumplex in #1019
 
 ### Changed
+
 - Bump to C++17 by @Scrumplex and @LennyMcLennington in #941
 - Hide 'More news...' button if the news aren't loaded yet by @flowln in #1049
 - Make 'About' dialog smaller by @DioEgizio in #1107
@@ -30,6 +32,7 @@ Thanks to all contributors, who have worked on this release!
 - [macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014
 
 ### Fixed
+
 - Allow user to interrupt launch after 3 tries by @Scrumplex in #1018
 - Cleanup old mod metadata by @flowln in #1017 #1044
 - Disable "Check for Updates" while the game is running or if all mods are removed by @Gingeh in #1007
@@ -43,7 +46,6 @@ Thanks to all contributors, who have worked on this release!
 - [Linux] Implement workaround for Ubuntu 22.04 OpenSSL issues by @DioEgizio in #1006
 - [Linux] Update AppStream info by @DioEgizio in #1058
 
-
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.4.1...1.4.2
+**Full Changelog**: <https://github.com/PolyMC/PolyMC/compare/1.4.1...1.4.2>
 
 You can [grab the latest download here](/download) for your respective platform.

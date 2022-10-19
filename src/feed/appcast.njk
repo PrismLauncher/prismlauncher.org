@@ -27,7 +27,7 @@ eleventyExcludeFromCollections: true
         {% if post.data.phased_rollout_interval %}<sparkle:phasedRolloutInterval>{{ post.data.phased_rollout_interval }}</sparkle:phasedRolloutInterval>{% endif %}
         {%- if post.data.mac_signature %}
         <enclosure sparkle:os="macos"
-            url="https://github.com/placeholdermc/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-macOS-{{ post.data.release_version }}.tar.gz"
+            url="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-macOS-{{ post.data.release_version }}.tar.gz"
             length="0"
             type="application/octet-stream"
             sparkle:edSignature="{{ post.data.mac_signature }}"/>
@@ -50,14 +50,14 @@ eleventyExcludeFromCollections: true
         {% if post.data.phased_rollout_interval %}<sparkle:phasedRolloutInterval>{{ post.data.phased_rollout_interval }}</sparkle:phasedRolloutInterval>{% endif %}
         {%- if post.data.win32_signature %}
         <enclosure sparkle:os="windows-x86"
-            url="https://github.com/placeholdermc/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-Windows-i686-Setup-{{ post.data.release_version }}.zip"
+            url="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-Windows-i686-Setup-{{ post.data.release_version }}.zip"
             length="0"
             type="application/octet-stream"
             sparkle:dsaSignature="{{ post.data.win32_signature }}"/>
         {%- endif %}
         {%- if post.data.win64_signature %}
         <enclosure sparkle:os="windows-x64"
-            url="https://github.com/placeholdermc/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-Windows-x86_64-Setup-{{ post.data.release_version }}.zip"
+            url="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-Windows-x86_64-Setup-{{ post.data.release_version }}.zip"
             length="0"
             type="application/octet-stream"
             sparkle:dsaSignature="{{ post.data.win64_signature }}"/>

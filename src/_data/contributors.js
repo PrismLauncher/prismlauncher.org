@@ -7,7 +7,7 @@ module.exports = async function () {
     let i = 0
     do {
         i = i + 1;
-        json = await EleventyFetch(`https://api.github.com/repos/PlaceholderMC/PrismLauncher/contributors?page=${i}`, {
+        json = await EleventyFetch(`https://api.github.com/repos/PrismLauncher/PrismLauncher/contributors?page=${i}`, {
             duration: "1d", // 1 day
             type: "json" // also supports "text" or "buffer"
         });
