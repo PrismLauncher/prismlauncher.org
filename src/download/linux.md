@@ -1,5 +1,5 @@
 ---
-title: Download PrismLauncher for Linux
+title: Download Prism Launcher for Linux
 eleventyNavigation:
   key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
   order: 3
@@ -12,11 +12,11 @@ eleventyNavigation:
         <h1>Linux Download</h1>
         <br>
         <a class="button is-big" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher">Install from FlatHub</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a> 
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a>
      </div>
     </div>
     <div class="column">
@@ -108,7 +108,7 @@ bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
 una update
 ```
 
-Installing PrismLauncher
+Installing Prism Launcher
 
 ```bash
 # stable source package:
@@ -122,6 +122,7 @@ una install prismlauncher-git
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
 </div>
 
+<!--
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
@@ -138,7 +139,6 @@ sudo dnf install prismlauncher-nightly
 ```
 
 </div>
-
 <div class="infobox top">
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
@@ -159,19 +159,21 @@ emerge games-action/prismlauncher
 
 Old ebuilds, as well as additional information, can be found [in the old prismlauncher overlay repository](https://gitlab.com/flowln/prismlauncher-gentoo/). Have fun! :)
 </div>
+--!>
 
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
-A [Nix derivation](https://github.com/placeholdermc/PrismLauncher/blob/develop/nix/NIX.md) is available.
+A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
 </div>
 
+<!--
 <div class="infobox top">
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
 
-PrismLauncher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
+Prism Launcher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
 
 </div>
 
@@ -179,10 +181,11 @@ PrismLauncher is available on the [game:tools](https://software.opensuse.org/dow
 
 # <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
 
-PrismLauncher is available on the official Void repository.
+Prism Launcher is available on the official Void repository.
 
 ```bash
 sudo xbps-install PrismLauncher
 ```
 
 </div>
+-->

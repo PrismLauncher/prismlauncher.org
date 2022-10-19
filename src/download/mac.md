@@ -1,5 +1,5 @@
 ---
-title: Download PrismLauncher for macOS
+title: Download Prism Launcher for macOS
 eleventyNavigation:
   key: <i class="fa fa-apple" aria-hidden="true"></i> macOS 
   order: 2
@@ -12,7 +12,8 @@ eleventyNavigation:
         <h1>macOS Download</h1>
         <br>
         <p><strong>Note:</strong> Although the PrismLauncher binary is universal, old versions of Minecraft still run on Rosetta.</p>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-Legacy-{{ version.current }}.tar.gz">Download Legacy (Mojave or older)</a>
       </div>
     </div>
     <div class="column">
@@ -30,9 +31,10 @@ eleventyNavigation:
 #### Installation instructions
 
 ```bash
-brew install --cask prismlauncher
+brew install --cask prism
 ```
 
+<!--
 ### MacPorts Package (community-maintained)
 
 #### Installation instructions
@@ -42,3 +44,4 @@ sudo port install PrismLauncher
 ```
   
 </div>
+-->

@@ -1,5 +1,5 @@
 ---
-title: Download PrismLauncher for Windows
+title: Download Prism Launcher for Windows
 permalink: /download/
 eleventyNavigation:
   key: <i class="fa fa-windows" aria-hidden="true"></i> Windows
@@ -7,13 +7,13 @@ eleventyNavigation:
 ---
 
 <div class="download-content">
-    <div class="row">
+  <div class="row">
     <div class="column">
       <div>
         <h1>Windows Download</h1>
         <br>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
-        <a class="button is-big" href="https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
+        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
       </div>
     </div>
     <div class="column">
@@ -26,16 +26,16 @@ eleventyNavigation:
 
 ## Legacy version
 
-There is a legacy version of PrismLauncher, primarily for older versions of Windows like Windows 7 or Windows 8.1.
+There is a legacy version of Prism Launcher, primarily for older versions of Windows like Windows 7 or Windows 8.1.
 You can download it here:
 
-- [Legacy installer (.exe)](https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Setup-{{version.current}}.exe)
-- [Legacy portable (.zip)](https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Portable-{{version.current}}.zip)
+- [Legacy installer (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Setup-{{version.current}}.exe)
+- [Legacy portable (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Portable-{{version.current}}.zip)
 
 ## Advanced Windows install options
 
-- [System Install (.zip)](https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-{{version.current}}.zip)
-- [Legacy system install (.zip)](https://github.com/placeholdermc/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-{{version.current}}.zip)
+- [System Install (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-{{version.current}}.zip)
+- [Legacy system install (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
@@ -62,9 +62,11 @@ choco install prismlauncher
 choco install prismlauncher --params='/legacy'
 ```
 
-*Chocolatey and Scoop packages are community-maintained, PrismLauncher is not responsible for outdated versions.*
+*Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
 
+<!--
 #### [PortableApps.com](https://portableapps.com) Installer
 
-A community maintained portable installer for PrismLauncher can be found [here](https://FayneAldan.github.io/PrismLauncherPortable/).
+A community maintained portable installer for Prism Launcher can be found [here](https://FayneAldan.github.io/PrismLauncherPortable/).
 </div>
+-->

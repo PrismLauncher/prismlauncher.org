@@ -1,12 +1,12 @@
 ---
-title: Download PrismLauncher for SteamOS/Steam Deck
+title: Download Prism Launcher for SteamOS/Steam Deck
 eleventyNavigation:
   key: <i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck
   order: 4
 ---
 
 <div class="download-content">
-    <div class="row">
+  <div class="row">
     <div class="column">
       <div>
         <h1>Steam Deck Download</h1>
@@ -14,9 +14,11 @@ eleventyNavigation:
         <a class="button is-big" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher">Install from FlatHub</a>
       </div>
     </div>
+<!--
     <div class="column">
       <iframe width="692" height="389" src="https://www.youtube.com/embed/UTVBqyvFCV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+-->
   </div>
 </div>
 
@@ -25,18 +27,19 @@ eleventyNavigation:
 ## Installation infomation
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
-This can be done by searching for `PrismLauncher` in the Discover software center, in *Desktop Mode*.
+This can be done by searching for `Prism Launcher` in the Discover software center, in *Desktop Mode*.
 
 <a href='https://flathub.org/apps/details/org.prismlauncher.PrismLauncher'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
 
-After installing PrismLauncher, set it up as usual.
+After installing Prism Launcher, set it up as usual.
 When you are done, open up Steam (still in *Desktop Mode*), click on `Games` in the menubar, and then click on `Add a Non-Steam Game to My Library...`.
-There you can find and select `PrismLauncher` and click `ADD SELECTED PROGRAMS`.
-Now PrismLauncher should be in your Steam Library.
+There you can find and select `Prism Launcher` and click `ADD SELECTED PROGRAMS`.
+Now Prism Launcher should be in your Steam Library.
 
+<!--
 ### Artwork
 
-Now that you have PrismLauncher in your Steam Library, you might want to change the artwork of your PrismLauncher Non-Steam Game, so that it looks better in your library.
+Now that you have Prism Launcher in your Steam Library, you might want to change the artwork of your Prism Launcher Non-Steam Game, so that it looks better in your library.
 
 #### Examples
 
@@ -47,7 +50,7 @@ Now that you have PrismLauncher in your Steam Library, you might want to change 
 
 #### Setting up Artwork
 
-You first need to find artwork for PrismLauncher.
+You first need to find artwork for Prism Launcher.
 One option is to check out [PrismLauncher's SteamGridDB page](https://www.steamgriddb.com/game/5321639) for our official artwork, as well as community-provided artwork.
 Alternatively, there also is a [SteamGridDB page of Minecraft](https://www.steamgriddb.com/game/38365).
 In any case, select the artwork you'd like to use, and download it onto your Steam Deck.
@@ -78,6 +81,7 @@ Navigate to where you have saved the images, and select the **vertical cover-art
 
 Additionally, you can add an icon and rename the Non-Steam Game to Minecraft.
 To do so, right-click on the PrismLauncher Non-Steam Game, and select `Properties`. At the top, you can rename PrismLauncher to Minecraft, and you can change the Icon by clicking the empty square that is to the left of the name, and then select the image you want to use.
+-->
 
 ### Tips and Tricks
 
