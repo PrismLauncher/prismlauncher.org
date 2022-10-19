@@ -27,7 +27,7 @@ The process is a bit convoluted currently, but we hope to make it easier in the 
 Please make a backup of your files before updating a modpack, as it is still a very early feature and we don't want you to lose anything you might want to keep.
 
 As always we need to thank EVERYONE who contributed to PolyMC as well as Prism Launcher.
-Special thanks to our community members [Boba](https://cmdplusv.neocities.org/), [David Rafael](https://auti.one/), @elyrodso, [Fulmine](https://www.fulmine.xyz), @gonsawa, Pankakes and @tobimori who collaborated on our gorgeous logo.
+Special thanks to our community members [Boba](https://cmdplusv.neocities.org/), [Davi Rafael](https://auti.one/), @elyrodso, [Fulmine](https://www.fulmine.xyz), @gonsawa, Pankakes and @tobimori who collaborated on our gorgeous logo.
 
 ## Changelog
 
