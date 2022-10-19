@@ -5,18 +5,22 @@ eleventyNavigation:
   order: 3
 ---
 
-# Frequently asked questions
+# Frequently Asked Questions
 
 ## What happened to PolyMC? Why is there a new fork?
 
-Prism Launcher was forked from PolyMC due to certain commits and actions taken on behalf of the project's organization.
+### TL;DR
 
-On October 17th, 2022, LennyMcLennington ("Lenny") made [a politically charged commit](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee) to the development branch of PolyMC. Lenny proceeded to remove every maintainer at the time and has since made it clear that he does not want anyone on the project to be supportive of his percieved left-wing ideologies. None of these changes were made with any consultation from the rest of the PolyMC team.
+Prism Launcher was forked from PolyMC due to specific commits & executive decisions made by a maliciously inclined individual.
 
-We at Prism Launcher adhere to our [Code of Conduct](https://github.com/PrismLauncher/PrismLauncher/blob/develop/CODE_OF_CONDUCT.md) as we develop Prism Launcher. We do not agree with Lenny's actions, and thus have created this fork called **Prism Launcher** as a way to prevent any further politically inspired damage to the project. Locking maintainers out of the project sets a bad precedent for many of us, and does not give us good faith that the PolyMC project will remain in good hands in the future. We sincerely hope that you enjoy using Prism Launcher as we strive to deliver a consistent experience to our users.
+### What Happened?
+
+Prism Launcher was forked from PolyMC due to a sequence of actions by Lenny McLennington on the 17th of October, 2022. Lenny made several politically charged changes to the PolyMC GitHub repository and organization to remove those supporting "left-wing ideologies". In a commit, Lenny removed the PolyMC Code of Conduct, which outlined and prohibited discrimination against the LGBTQIA+ community and subsequently removed all maintainers. The commit and subsequent mass purge of maintainers were done without prior warning or discussion with the rest of the PolyMC team; the incident can be considered a hostile takeover.
+
+Development of Prism Launcher requires community members & contributors to adhere to our [Code of Conduct](https://github.com/PrismLauncher/PrismLauncher/blob/develop/CODE_OF_CONDUCT.md). We disagree with Lenny's actions and have created **Prism Launcher** to prevent any further politically inspired damage. Locking maintainers out of a project sets an unfavourable precedent and does not ensure that the PolyMC project will remain in good hands. We sincerely hope that you enjoy using Prism Launcher as we strive to deliver a consistent experience to our users.
 
 ### What does this mean for the future? Is PolyMC safe to use?
 
-Prism Launcher will continue to have the same functionality as PolyMC did prior to [the malicious commit in question](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee). All contributors who were removed from the project have also moved over to this one; as the end user, as long as you switch to Prism Launcher, nothing should change aside from the logo and name.
+Prism Launcher will continue to have the same functionality as PolyMC did before [this malicious commit](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee), and we will continue to add features from there. All contributors who were removed from the project have begun developing Prism Launcher. As an end-user, switching to Prism Launcher will manifest as a change in logo & name for the time being.
 
-As for PolyMC, we cannot guarantee that new changes will be non-malicious or not; it is up to you whether or not you wish to continue to use the project, but we recommend against it. We suggest that you back up any important config files or instances to Prism Launcher instead of continuing to use PolyMC.
+We cannot guarantee that new changes to PolyMC will be non-malicious, and we advise that you migrate to Prism Launcher instead of continuing to risk using PolyMC. It is up to you whether or not you wish to continue using PolyMC. Prism Launcher's Code of Conduct assures development will always occur in a fair manner that does not involve political motivation.
