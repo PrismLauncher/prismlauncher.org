@@ -7,18 +7,16 @@ eleventyNavigation:
 
 # Frequently asked questions
 
-## Why did our community choose to fork?
+## What happened to PolyMC? Why is there a new fork?
 
-For some more insight, please refer to: [Moving on](/news/moving-on)
+Prism Launcher was forked from PolyMC due to certain commits and actions taken on behalf of the project's organization.
 
-Prism Launcher was forked from the MultiMC project in late 2021. This was primarily a result of continuing disagreements between a portion of the community, and MultiMC’s lead maintainer, mainly surrounding the topics of 3rd party packaging and re-distribution.
+On October 17th, 2022, LennyMcLennington ("Lenny") made [a politically charged commit](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee) to the development branch of PolyMC. Lenny proceeded to remove every maintainer at the time and has since made it clear that he does not want anyone on the project to be supportive of his percieved left-wing ideologies. None of these changes were made with any consultation from the rest of the PolyMC team.
 
-Many users, especially across Linux, and other Unix-like platforms, which lacked officially built packages were eventually unable to even use newer self-built versions MultiMC. This was due to the launcher’s source code not building with the necessary API keys for the successful authentication of Microsoft Accounts.
+We at Prism Launcher adhere to our [Code of Conduct](https://github.com/PrismLauncher/PrismLauncher/blob/develop/CODE_OF_CONDUCT.md) as we develop Prism Launcher. We do not agree with Lenny's actions, and thus have created this fork called **Prism Launcher** as a way to prevent any further politically inspired damage to the project. Locking maintainers out of the project sets a bad precedent for many of us, and does not give us good faith that the PolyMC project will remain in good hands in the future. We sincerely hope that you enjoy using Prism Launcher as we strive to deliver a consistent experience to our users.
 
-The philosophy behind the Prism Launcher project, and wider community as a whole, is to not take a hostile stance on those who wish to use, modify, or re-distribute our software in a way that works for them. In-keeping with these values, the source code of the launcher is distributed under the GNU General Public License Version 3.
+### What does this mean for the future? Is PolyMC safe to use?
 
-### What does this mean for the future?
+Prism Launcher will continue to have the same functionality as PolyMC did prior to [the malicious commit in question](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee). All contributors who were removed from the project have also moved over to this one; as the end user, as long as you switch to Prism Launcher, nothing should change aside from the logo and name.
 
-Prism Launcher looks to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native as well as Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.
-
-Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, Prism Launcher is already shaping up to be quite the opposite. This can already be seen in recent releases, for example 1.1.0 brought our in-launcher mod installer, and other releases like 1.4.0 added in-launcher mod updating. And those are just the first of many new changes and features to come.
+As for PolyMC, we cannot guarantee that new changes will be non-malicious or not; it is up to you whether or not you wish to continue to use the project, but we recommend against it. We suggest that you back up any important config files or instances to Prism Launcher instead of continuing to use PolyMC.
