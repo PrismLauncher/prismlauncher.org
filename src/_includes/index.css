@@ -6,6 +6,7 @@
   --primary: #88b858;
   --secondary: #a87953;
   --background: #333333;
+  --background-translucent: #33333333;
   --accent: #444444;
   --accent-light: #555555;
   --link: #88b858ff;
@@ -17,8 +18,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-text: #ffffff;
+    --primary-text: #333;
     --background: #ffffff;
+    --background-translucent: #ffffff33;
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
   }
@@ -173,7 +175,7 @@ code {
 }
 
 .content, .infobox {
-  background-color: #33333333;
+  background-color: var(--background-translucent);
   border-radius: 1em;
   padding: 1em;
   -webkit-backdrop-filter: blur(5px);
