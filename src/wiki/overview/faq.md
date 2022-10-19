@@ -9,7 +9,9 @@ eleventyNavigation:
 
 ## Is PolyMC still safe to use?
 
-PolyMC versions **1.4.2 and below are probably safe to continue using** for now atleast. With that said, **please do not update the lancher**, and it is advised that you change a few things within the launcher just to be safe.
+PolyMC versions **1.4.2 and below are probably safe to continue using** for now atleast. With that said, **please do not update PolyMC**, as the security of future versions cannot be garunteed.
+
+### All current users are advised to change a few things within the launcher just to be safe
 
 In the PolyMC settings page, under the **APIs** tab, please replace the following:
 
