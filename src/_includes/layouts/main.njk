@@ -4,7 +4,9 @@ templateClass: tmpl-home
 ---
 {% include "partials/header.njk" %}
 
-{% if background %}
+{% if background and darkBackground %}
+  {% image "Background", background, darkBackground, "background", false %}
+{% elif background %}
   {% image "Background", background, "", "background", false %}
 {% endif %}
 
