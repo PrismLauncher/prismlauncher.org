@@ -1,0 +1,7 @@
+{
+    "background": "./src/img/background/download.png",
+    "layout": "layouts/download.njk",
+    "tags": [
+        "download"
+    ]
+}
