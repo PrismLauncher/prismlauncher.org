@@ -11,7 +11,7 @@ eleventyNavigation:
 
 PolyMC versions **1.4.2 and below are probably safe to continue using** for now atleast. With that said, **please do not update the lancher**, and it is advised that you change a few things within the launcher just to be safe.
 
-In the PolyMC settings page, under the APIs tab, please replace the following:
+In the PolyMC settings page, under the **APIs** tab, please replace the following:
 
 > APIs > Services...
 
@@ -21,12 +21,13 @@ In the PolyMC settings page, under the APIs tab, please replace the following:
 
 **Microsoft Authentication:** `c36a9fb6-4f2a-41ff-90bd-ae7cc92031eb`
 
+## When will Prism Launcher be available?
+
+*Soon*™ (Probably within the next few days...)
+
 ## Why did our community choose to fork?
 
-For some more insight, please refer to: [Moving on](/news/moving-on) 
-
-(*We probably need a new article explaining what happened in detail.*)
-
+*For some more insight, please refer to: [Moving on](/news/moving-on)*
 
 Prism, both the project, and the community surrounding it, descends directly from PolyMC, which was forked from the MultiMC project in late 2021. 
 
@@ -35,7 +36,6 @@ The original fork was primarily a result of continuing disagreements between a p
 Prism Launcher itself, was born in October 2022 due to a hostile takeover of the PolyMC project by a lead maintainer. Our aim as a community is to both preserve, and continue the work we started with PolyMC, and to provide a welcoming space for all those who wish to do the same.
 
 And as it was before, it remains a key philosophy behind the Prism project to not take a hostile stance on those who wish to use, modify, or re-distribute our software in a way that works for them. In-keeping with these values, the source code of the launcher will continue to be distributed under the GNU General Public License Version 3.
-
 
 ### What does this mean for the future?
 
