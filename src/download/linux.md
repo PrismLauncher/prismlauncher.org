@@ -122,7 +122,6 @@ una install prismlauncher-git
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
 </div>
 
-
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
