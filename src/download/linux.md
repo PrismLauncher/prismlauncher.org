@@ -167,6 +167,8 @@ Old ebuilds, as well as additional information, can be found [in the old prismla
 
 A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
 
+A package is available on `nixos-unstable-small` and will soon be available on `nixos-unstable`.
+
 </div>
 
 <!--
