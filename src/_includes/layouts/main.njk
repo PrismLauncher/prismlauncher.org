@@ -4,12 +4,6 @@ templateClass: tmpl-home
 ---
 {% include "partials/header.njk" %}
 
-{% if background %}
-  {% image "Background", background, "", "background", false %}
-{% else %}
-  {% image "Background", "./src/img/background/prism-background.jpg", "", "background", false %}
-{% endif %}
-
 <main class="container {{ templateClass }}">
   {{ content | safe }}
 </main>

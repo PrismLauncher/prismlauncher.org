@@ -11,7 +11,7 @@ eleventyNavigation:
       <div>
         <h1>Steam Deck Download</h1>
         <br>
-        <button class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" disabled>Install from FlatHub</button>
+        <button class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank" disabled>Install from FlatHub</button>
       </div>
     </div>
 <!--

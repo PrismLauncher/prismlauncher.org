@@ -82,19 +82,19 @@ hero:
 
 ## Reddit
 
-<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/">r/PrismLauncher</a>
+<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
 
 ## Discord
 
 To talk directly to us and get involved with development:
 
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher">Prism Launcher Discord</a>
+<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
 
 ## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
-<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org">Prism Launcher Space</a>
+<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
 
 # Source code
 
