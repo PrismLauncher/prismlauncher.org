@@ -26,6 +26,13 @@ Now in Prism Launcher edit the instance you wish to install OptiFine on, open th
 
 OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod.
 
+From OptiFine Version **H1_pre2** the instructions for installing OptiFine on PrismLauncher have changed. Make sure to have the version of optifine that you wish to install, installed through the vanilla launcher.
+
+1. Extract the MOD jar with the OptiFine installer
+2. Open it with any archiver
+4. Move all files from folder the folder called **notch** to the root folder and click **save** (By root folder, I mean the top level folder of the archive file)
+5. Open Prism Launcher, edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted / modfied OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
+
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
 
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
