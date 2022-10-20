@@ -82,7 +82,7 @@ hero:
 
 ## Reddit
 
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher">r/PrismLauncher</a>
+<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/">r/PrismLauncher</a>
 
 ## Discord
 
