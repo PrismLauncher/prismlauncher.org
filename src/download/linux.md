@@ -159,7 +159,7 @@ emerge games-action/prismlauncher
 
 Old ebuilds, as well as additional information, can be found [in the old prismlauncher overlay repository](https://gitlab.com/flowln/prismlauncher-gentoo/). Have fun! :)
 </div>
---!>
+-->
 
 <div class="infobox top">
 
