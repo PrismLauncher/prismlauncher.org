@@ -1,14 +1,12 @@
 /* Colors */
 :root {
-  --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);
-  --grad-secondary: linear-gradient(126deg, #b7835a 0%, #765338 25%, #5b422d 50%);
-  --grad-disabled: linear-gradient(126deg, #969696 0%, #cecece 25%, #bebebe 50%);
-  --primary: #88b858;
+  --grad-primary: #df6277ff;
+  --primary: #df6277ff;
   --secondary: #a87953;
-  --background: #333333;
-  --accent: #444444;
-  --accent-light: #555555;
-  --link: #88b858ff;
+  --background: #15181c;
+  --accent: #21242b;
+  --accent-light: #313540;
+  --link: #4b7cbc;
   --visited: #72b147ff;
   --primary-text: #ffffff;
   --code: #222;
@@ -189,30 +187,6 @@ code {
   border-radius: 1em;
 }
 
-.button-disabled {
-  display: inline-block;
-  position: relative;
-  color: white;
-  padding: 0.5em 1.5em;
-  margin: 0.25em;
-  list-style: none;
-  font-size: 1.2em;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: var(--primary);
-  background-image: var(--grad-disabled);
-  background-size: 200%;
-  clip-path: polygon(0.6em 0,
-      calc(100% - 0.6em) 0,
-      100% 50%,
-      calc(100% - 0.6em) 100%,
-      0.6em 100%,
-      0 50%);
-  transition: 250ms ease;
-  background-position-x: 100%;
-}
-
 .button {
   display: inline-block;
   position: relative;
@@ -225,14 +199,7 @@ code {
   font-weight: 600;
   text-decoration: none;
   background-color: var(--primary);
-  background-image: var(--grad-primary);
-  background-size: 200%;
-  clip-path: polygon(0.6em 0,
-      calc(100% - 0.6em) 0,
-      100% 50%,
-      calc(100% - 0.6em) 100%,
-      0.6em 100%,
-      0 50%);
+  border-radius: .365em;
   transition: 250ms ease;
   background-position-x: 100%;
 }

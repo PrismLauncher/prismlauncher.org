@@ -6,6 +6,8 @@ templateClass: tmpl-home
 
 {% if background %}
   {% image "Background", background, "", "background", false %}
+{% else %}
+  {% image "Background", "./src/img/background/prism-background.jpg", "", "background", false %}
 {% endif %}
 
 <main class="container {{ templateClass }}">

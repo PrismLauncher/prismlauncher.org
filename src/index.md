@@ -1,7 +1,6 @@
 ---
 layout: layouts/main.njk
 title: Home
-background: ./src/img/background/home.jpg
 hero:
   title: 'Prism Launcher'
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
