@@ -12,8 +12,8 @@ eleventyNavigation:
       <div>
         <h1>Windows Download</h1>
         <br>
-        <button class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</button>
-        <button class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</button>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
       </div>
     </div>
     <div class="column">
