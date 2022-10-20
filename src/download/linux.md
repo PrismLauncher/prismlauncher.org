@@ -166,6 +166,7 @@ Old ebuilds, as well as additional information, can be found [in the old prismla
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
 A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
+
 </div>
 
 <!--
