@@ -35,7 +35,7 @@ If you don't see Prism available for your platform yet, please be patient. Trust
 
 ### Can I transfer my instances from MultiMC or PolyMC?
 
-Absolutely! It's quick and easy to get set up with all of your favourite mods, worlds, resource packs, and modpacks from before. 
+Absolutely! It's quick and easy to get set up with all of your favourite mods, worlds, resource packs, and modpacks from before.
 
 To find out how, [please see here](/wiki/getting-started/migrating-multimc).
 
