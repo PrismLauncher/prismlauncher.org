@@ -12,8 +12,8 @@ eleventyNavigation:
         <h1>macOS Download</h1>
         <br>
         <p><strong>Note:</strong> Although the PrismLauncher binary is universal, old versions of Minecraft still run on Rosetta.</p>
-        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
-        <a class="button is-big" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-Legacy-{{ version.current }}.tar.gz">Download Legacy (Mojave or older)</a>
+        <button class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</button>
+        <button class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-Legacy-{{ version.current }}.tar.gz">Download Legacy (Mojave or older)</button>
       </div>
     </div>
     <div class="column">
