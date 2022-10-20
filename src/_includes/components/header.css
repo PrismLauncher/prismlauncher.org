@@ -47,17 +47,28 @@ nav {
 }
 
 .social-links i:hover {
-  color: var(--primary);
+  color: var(--link);
   cursor: pointer;
 }
 
 .links .button {
-  font-size: 1.2em;
+  margin: 0.25em;
 }
 
 .navbar {
   flex-direction: column;
 }
+
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a svg {
+  height: 4em;
+  width: auto;
+}
+
 
 .nav-item {
   display: inline-block;

@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-.download-content .button, .button-disabled {
+.download-content .button {
     width: 100%;
     display: block;
     margin-bottom: 1em;

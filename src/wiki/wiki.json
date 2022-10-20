@@ -1,5 +1,4 @@
 {
-    "background": "./src/img/background/wiki.png",
     "layout": "layouts/wiki.njk",
     "tags": [
         "wiki"
