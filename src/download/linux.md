@@ -61,17 +61,15 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
+An RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
 
 ```bash
 # load in system information
 source /etc/os-release
 # enables the copr repo
-sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
+sudo dnf copr enable g3tchoo/prismlauncher epel-${VERSION}-$(uname -m)
 # stable releases
 sudo dnf install prismlauncher
-# nightly releases (git master)
-sudo dnf install prismlauncher-nightly
 ```
 
 </div>
