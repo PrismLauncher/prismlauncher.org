@@ -10,7 +10,7 @@ eleventyNavigation:
     <div class="column">
       <div>
         <h1>macOS Download</h1>
-        <p>Universal supports both arm and intel macs</p>
+        <p>Universal supports both Apple Silicon and Intel Macs</p>
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-{{ version.current }}.tar.gz">Download (Universal)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ version.current }}/PrismLauncher-macOS-Legacy-{{ version.current }}.tar.gz">Download Legacy (Mojave or older)</a>
