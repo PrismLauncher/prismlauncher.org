@@ -13,7 +13,6 @@ hero:
 ---
 
 <div class="content">
-  <div class="bg"></div>
   <div class="row row-reverse">
     <div class="column">
       <div>
