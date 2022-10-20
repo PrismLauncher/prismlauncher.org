@@ -1,7 +1,6 @@
 ---
 layout: layouts/main.njk
 title: Home
-background: ./src/img/background/home.jpg
 hero:
   title: 'Prism Launcher'
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
@@ -83,19 +82,19 @@ hero:
 
 ## Reddit
 
-[![r/PrismLauncher](https://img.shields.io/reddit/subreddit-subscribers/PrismLauncher?label=r%2FPrismLauncher)](https://www.reddit.com/r/PrismLauncher/)
+<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
 
 ## Discord
 
 To talk directly to us and get involved with development:
 
-[![Prism Launcher Discord](https://img.shields.io/discord/1031648380885147709?label=Prism%20Launcher%20Discord)](https://discord.gg/prismlauncher)
+<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
 
 ## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
-[![Prism Launcher Space](https://img.shields.io/matrix/prismlauncher:matrix.org?label=Prism%20Launcher%20space)](https://matrix.to/#/#prismlauncher:matrix.org)
+<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
 
 # Source code
 

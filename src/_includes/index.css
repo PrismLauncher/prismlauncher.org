@@ -1,17 +1,37 @@
 /* Colors */
 :root {
-  --grad-primary: linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);
-  --grad-secondary: linear-gradient(126deg, #b7835a 0%, #765338 25%, #5b422d 50%);
-  --grad-disabled: linear-gradient(126deg, #969696 0%, #cecece 25%, #bebebe 50%);
-  --primary: #88b858;
-  --secondary: #a87953;
-  --background: #333333;
-  --accent: #444444;
-  --accent-light: #555555;
-  --link: #88b858ff;
-  --visited: #72b147ff;
   --primary-text: #ffffff;
-  --code: #222;
+  --grad-primary: #df6277ff;
+
+  --background: #15181c;
+  --accent: #21242b;
+  --accent-light: #313540;
+
+  --code: #313540;
+
+  --disabled: #666;
+
+  --primary: hsl(350, 66%, 63%);
+  --link: hsl(214, 46%, 52%);
+  --info: hsl(274, 32%, 42%);
+  --success: hsl(145, 27%, 59%);
+  --warn: hsl(49, 85%, 69%);
+  --danger: hsl(17, 95%, 70%);
+
+  --primary-dark: hsl(350, 66%, 55%);
+  --link-dark: hsl(214, 46%, 42%);
+  --info-dark: hsl(274, 32%, 32%);
+  --success-dark: hsl(145, 27%, 49%);
+  --warn-dark: hsl(49, 85%, 60%);
+  --danger-dark: hsl(17, 95%, 65%);
+
+  --primary-light: hsl(350, 66%, 70%);
+  --link-light: hsl(214, 46%, 67%);
+  --info-light: hsl(274, 32%, 56%);
+  --success-light: hsl(145, 27%, 67%);
+  --warn-light: hsl(49, 85%, 79%);
+  --danger-light: hsl(17, 95%, 80%);
+  
   background-color: var(--background);
 }
 
@@ -37,15 +57,14 @@ body {
   color: var(--primary-text);
 }
 
-.background {
-  top: 0;
-  pointer-events: none;
+.bg {
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(50%);
-  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ '/img/background/prism-background.svg' | url }});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -189,82 +208,81 @@ code {
   border-radius: 1em;
 }
 
-.button-disabled {
+.button {
   display: inline-block;
+  border: none;
   position: relative;
   color: white;
   padding: 0.5em 1.5em;
-  margin: 0.25em;
   list-style: none;
   font-size: 1.2em;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   text-decoration: none;
   background-color: var(--primary);
-  background-image: var(--grad-disabled);
-  background-size: 200%;
-  clip-path: polygon(0.6em 0,
-      calc(100% - 0.6em) 0,
-      100% 50%,
-      calc(100% - 0.6em) 100%,
-      0.6em 100%,
-      0 50%);
-  transition: 250ms ease;
+  border-radius: .365em;
+  transition: 200ms ease;
   background-position-x: 100%;
+  cursor: pointer;
 }
 
-.button {
-  display: inline-block;
-  position: relative;
-  color: white;
-  padding: 0.5em 1.5em;
-  margin: 0.25em;
-  list-style: none;
-  font-size: 1.2em;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: var(--primary);
-  background-image: var(--grad-primary);
-  background-size: 200%;
-  clip-path: polygon(0.6em 0,
-      calc(100% - 0.6em) 0,
-      100% 50%,
-      calc(100% - 0.6em) 100%,
-      0.6em 100%,
-      0 50%);
-  transition: 250ms ease;
-  background-position-x: 100%;
+.button[disabled] {
+  opacity: .5;
+  pointer-events: none;
 }
 
-.button:hover,
-.button:focus {
-  background-position-x: 0%;
-  /* slide the gradient */
+.button:hover {
+  background-color: var(--primary-dark);
 }
 
-.button {
-  color: white;
+.button.type-link {
+  background-color: var(--link);
 }
 
-.is-big {
+.button.type-link:hover {
+  background-color: var(--link-dark);
+}
+
+.button.type-info {
+  background-color: var(--info);
+}
+
+.button.type-info:hover {
+  background-color: var(--info-dark);
+}
+
+.button.type-success {
+  background-color: var(--success);
+}
+
+.button.type-success:hover {
+  background-color: var(--success-dark);
+}
+
+.button.type-warn {
+  background-color: var(--warn);
+  color: #000
+}
+
+.button.type-warn:hover {
+  background-color: var(--warn-dark);
+  color: #000
+}
+
+.button.type-danger {
+  background-color: var(--danger);
+}
+
+.button.type-danger:hover {
+  background-color: var(--danger-dark);
+}
+
+.button.size-large {
   font-size: 1.5em;
 }
 
-.button.secondary {
-  background-color: var(--secondary);
-  background-image: var(--grad-secondary);
-}
-
-/* Warning */
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em;
-  /* 16px 10px /16 */
-}
-
-.warning ol:only-child {
-  margin: 0;
+.button.size-small {
+  font-size: 1em;
 }
 
 /* Direct Links / Markdown Headers */
@@ -341,18 +359,36 @@ a.direct-link:focus:visited,
 
 /* Notifications */
 .notification {
+  border-radius: 1em;
   position: relative;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   margin-bottom: 1em;
+  color: #fff;
 }
 
-.notification.is-info {
+.notification.type-primary {
   background-color: var(--primary);
-  color: white;
 }
 
-.notification a {
-  color: white;
+.notification.type-link {
+  background-color: var(--link);
+}
+
+.notification.type-info {
+  background-color: var(--info);
+}
+
+.notification.type-success {
+  background-color: var(--success);
+}
+
+.notification.type-warn {
+  background-color: var(--warn);
+  color: #000
+}
+
+.notification.type-danger {
+  background-color: var(--danger);
 }
 
 /* footer */

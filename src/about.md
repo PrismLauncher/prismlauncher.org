@@ -1,7 +1,6 @@
 ---
 layout: layouts/main.njk
 title: About
-background: ./src/img/background/about.png
 templateClass: tmpl-post
 tags: nav
 hero:
