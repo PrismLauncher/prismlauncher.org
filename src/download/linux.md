@@ -139,27 +139,28 @@ sudo dnf install prismlauncher-nightly
 ```
 
 </div>
+-->
+
 <div class="infobox top">
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
 Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher).
-Note that, for the time being, it is not stabilized, so it's masked for `~amd64` only.
+Note that, for the time being, it is not stabilized, so it's masked for `~amd64` and `~arm64` only.
 
 ```bash
 sudo emaint sync -a
 
 # If you need to unmask the package, and considering `package.accept_keywords` to be a folder.
-echo ">=games-action/prismlauncher-1.1.1" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
+echo ">=games-action/prismlauncher-5.0" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
 # Or do this if you want to build from the latest commit instead of a release
 echo "=games-action/prismlauncher-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
 
 emerge games-action/prismlauncher
 ```
 
-Old ebuilds, as well as additional information, can be found [in the old prismlauncher overlay repository](https://gitlab.com/flowln/prismlauncher-gentoo/). Have fun! :)
+Have fun! :)
 </div>
--->
 
 <div class="infobox top">
 
