@@ -17,7 +17,7 @@ Left click on the tab and select the **View Instance Folder** option. This shoul
 
 Now that the MultiMC instance directory is open, you may **select**, and then **copy** the instances that you wish to transfer.
 
-## <img src="https://raw.githubusercontent.com/PrismLauncher/PrismLauncher/e909cc363d2236ad99601222728bad5b1ea71c31/program_info/org.prismlauncher.PrismLauncher.svg" height="20" /> In Prism Launcher
+## <img src="https://raw.githubusercontent.com/PrismLauncher/PrismLauncher/develop/program_info/org.prismlauncher.PrismLauncher.svg" height="20" /> In Prism Launcher
 
 To complete the transfer process, you must now open Prism Launcher.
 
