@@ -32,7 +32,7 @@
     "@11ty/eleventy-plugin-rss": "1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.2.2",
     "@fontsource/inter": "4.5.14",
-    "@fortawesome/fontawesome-free": "6.1.1",
+    "@fortawesome/fontawesome-free": "6.2.0",
     "clean-css": "5.3.1",
     "luxon": "2.5.0",
     "markdown-it": "12.3.2",
