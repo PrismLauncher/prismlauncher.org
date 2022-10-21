@@ -27,6 +27,18 @@ eleventyNavigation:
 
 <div class="infobox top">
 
+# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+
+[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are avalible on Alpine Linux Edge for multiple architectures
+
+```bash
+apk add prismlauncher
+```
+
+</div>
+
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
 There are several AUR packages available:  
@@ -61,21 +73,18 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
+If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
 
 ```bash
-# load in system information
-source /etc/os-release
 # enables the copr repo
-sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
+sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
-# nightly releases (git master)
-sudo dnf install prismlauncher-nightly
 ```
 
 </div>
-  
+
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
@@ -122,24 +131,33 @@ una install prismlauncher-git
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
 </div>
 
-<!--
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
+## Copr
+  
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
 
 ```bash
 # enables the copr repo
-sudo dnf copr enable sentry/prismlauncher
+sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
-# nightly releases (git master)
-sudo dnf install prismlauncher-nightly
+```
+
+## Terra
+
+Only available for users running Fedora 37 and up.
+  
+```bash
+# enables the terra repository
+sudo dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+# stable releases
+sudo dnf install prismlauncher
 ```
 
 </div>
--->
 
 <div class="infobox top">
 
@@ -161,23 +179,41 @@ emerge games-action/prismlauncher
 
 Have fun! :)
 </div>
-
+  
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
 A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
 
-A package is available on `nixos-unstable-small` and will soon be available on `nixos-unstable`.
+Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixpkgs-unstable`. Packages will be available soon on `nix-22.05`.
 
 </div>
-
-<!--
+  
 <div class="infobox top">
 
-# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
+# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
-Prism Launcher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
+RPM packages are available on the [openSUSE Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
+  
+```bash
+# add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
+zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
+# refresh repository cache
+zypper refresh
+# stable releases (Qt6 version, only for Tumbleweed)
+zypper install prismlauncher
+# stable releases (Qt5 version, available for Leap and Tumbleweed)
+zypper install prismlauncher-qt5
+```
+  
+</div>
+  
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
+
+Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
 
 </div>
 
@@ -192,4 +228,3 @@ sudo xbps-install PrismLauncher
 ```
 
 </div>
--->
