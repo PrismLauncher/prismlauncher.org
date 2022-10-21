@@ -131,17 +131,33 @@ One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/g
 ```bash
 # enables the copr repo
 sudo dnf copr enable g3tchoo/prismlauncher
-# nightly releases (git master)
+# stable releases
 sudo dnf install prismlauncher
 ```
 <!-- 
   # nightly releases (git master)
 sudo dnf install prismlauncher-nightly 
   -->
+
+</div>
+
+<div class="infobox top">
+
+# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE Tumbleweed
+
+One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+  
+```bash
+# downloads copr repository file
+curl -Lo /etc/zypp/repos.d/g3tchoo-prismlauncher.repo https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/repo/opensuse-tumbleweed/g3tchoo-prismlauncher-opensuse-tumbleweed.repo
+# stable releases
+zypper in prismlauncher
+```
   
 <!--
-</div>
+Prism Launcher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
 -->
+</div>
 
 <div class="infobox top">
 
@@ -175,14 +191,6 @@ A package is available on `nixos-unstable-small` and will soon be available on `
 </div>
 
 <!--
-<div class="infobox top">
-
-# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse
-
-Prism Launcher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
-
-</div>
-
 <div class="infobox top">
 
 # <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
