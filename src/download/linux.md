@@ -156,6 +156,7 @@ sudo dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/r
 # stable releases
 sudo dnf install prismlauncher
 ```
+
 </div>
 
 <div class="infobox top">
