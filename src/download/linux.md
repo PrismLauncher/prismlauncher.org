@@ -27,6 +27,18 @@ eleventyNavigation:
 
 <div class="infobox top">
 
+# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+
+[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are avalible on Alpine Linux Edge for multiple architectures
+
+```bash
+apk add prismlauncher
+```
+
+</div>
+
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
 There are several AUR packages available:  
@@ -56,26 +68,23 @@ yay -S prismlauncher-qt5-git
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
 </div>
-<!--
+
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
+If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
 
 ```bash
-# load in system information
-source /etc/os-release
 # enables the copr repo
-sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
+sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
-# nightly releases (git master)
-sudo dnf install prismlauncher-nightly
 ```
 
 </div>
-  -->
+
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
@@ -151,6 +160,37 @@ sudo dnf install prismlauncher
 
 <div class="infobox top">
 
+# <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
+
+Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher).
+Note that, for the time being, it is not stabilized, so it's masked for `~amd64` and `~arm64` only.
+
+```bash
+sudo emaint sync -a
+
+# If you need to unmask the package, and considering `package.accept_keywords` to be a folder.
+echo ">=games-action/prismlauncher-5.0" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
+# Or do this if you want to build from the latest commit instead of a release
+echo "=games-action/prismlauncher-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
+
+emerge games-action/prismlauncher
+```
+
+Have fun! :)
+</div>
+  
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
+
+A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
+
+Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixpkgs-unstable`. Packages will be available soon on `nix-22.05`.
+
+</div>
+  
+<div class="infobox top">
+
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
 RPM packages are available on the [openSUSE Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
@@ -174,48 +214,9 @@ Prism Launcher is available on the [game:tools](https://software.opensuse.org/do
   
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
+# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
 
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
-If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
-
-```bash
-# enables the copr repo
-sudo dnf copr enable g3tchoo/prismlauncher
-# stable releases
-sudo dnf install prismlauncher
-```
-
-</div>
-
-<div class="infobox top">
-
-# <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
-
-Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher).
-Note that, for the time being, it is not stabilized, so it's masked for `~amd64` and `~arm64` only.
-
-```bash
-sudo emaint sync -a
-
-# If you need to unmask the package, and considering `package.accept_keywords` to be a folder.
-echo ">=games-action/prismlauncher-5.0" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
-# Or do this if you want to build from the latest commit instead of a release
-echo "=games-action/prismlauncher-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/prismlauncher
-
-emerge games-action/prismlauncher
-```
-
-Have fun! :)
-</div>
-
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
-
-A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
-
-Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixpkgs-unstable`. Packages will be available soon on `nix-22.05`.
+Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
 
 </div>
 
@@ -230,23 +231,24 @@ sudo xbps-install PrismLauncher
 ```
 
 </div>
-
+  
+<!--
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are avalible on Alpine Linux Edge for multiple architectures
+One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
 
 ```bash
-apk add prismlauncher
+# load in system information
+source /etc/os-release
+# enables the copr repo
+sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
+# stable releases
+sudo dnf install prismlauncher
+# nightly releases (git master)
+sudo dnf install prismlauncher-nightly
 ```
 
 </div>
-
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
-
-Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
-
-</div>
+  -->
