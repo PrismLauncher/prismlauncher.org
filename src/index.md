@@ -8,8 +8,9 @@ hero:
   image:
     dark: ./src/img/screenshots/LauncherDark.png
     light: ./src/img/screenshots/LauncherLight.png
-  background:
-  download: true
+  button:
+    url: /download
+    content: 'Download Now'
 ---
 
 <div class="content">
