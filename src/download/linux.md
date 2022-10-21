@@ -126,6 +126,8 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
+## Copr
+  
 RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
 
 ```bash
@@ -139,6 +141,16 @@ sudo dnf install prismlauncher
 sudo dnf install prismlauncher-nightly 
   -->
 
+## Terra
+
+Only available for users running Fedora 37 and up.
+  
+```bash
+# enables the terra repository
+sudo dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+# stable releases
+sudo dnf install prismlauncher
+```
 </div>
 
 <div class="infobox top">
