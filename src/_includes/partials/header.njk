@@ -36,7 +36,7 @@
           <p class="subtitle">{{ hero.description }}</p>
           {%- if hero.button %}
           <br>
-          <a class="button size-large" href="{{ 'hero.button.url' | url }}">{{ hero.button.content }}</a>
+          <a class="button size-large" href="{{ hero.button.url | url }}">{{ hero.button.content }}</a>
           {%- endif %}
         </div>
       </div>
