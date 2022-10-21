@@ -39,6 +39,13 @@ If you don't want to search, and install these mods manually, then try the [Fabu
 
 See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for Prism Launcher too.
 
+### <img src="https://cdn.modrinth.com/data/BYfVnHa7/9ebb06896c378743a875e58f60baaa8a8d5938e9.png" height="20"> Simply Optimized
+
+[Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed for just optimization. SO has better out of the box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized. SO works best when treated like a framework of optimization mods you can start with, and add the rest of the mods you see fit.
+
+
+
+
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
 ### Note about Forge
