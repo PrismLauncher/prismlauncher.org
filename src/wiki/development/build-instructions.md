@@ -93,9 +93,11 @@ You don't need to clone the repo for this; the spec file handles that.
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-misc repo
+# get the rpm spec file from the prismlauncher-rpm repo
 git clone https://pagure.io/prismlauncher-rpm.git
 cd prismlauncher-rpm
+# the package builds with Qt6 by default, but can build with Qt5 by using this
+sed -i 's/%bcond_without/%bcond_with/' prismlauncher.spec
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
 # download build sources
