@@ -43,7 +43,6 @@ See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/
 
 [Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just ptimization in mind. SO has better out of the box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
 
-
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
 ### Note about Forge
