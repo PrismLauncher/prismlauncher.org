@@ -64,9 +64,8 @@ choco install prismlauncher --params='/legacy'
 
 *Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
 
-<!--
 #### [PortableApps.com](https://portableapps.com) Installer
 
 A community maintained portable installer for Prism Launcher can be found [here](https://FayneAldan.github.io/PrismLauncherPortable/).
+
 </div>
--->
