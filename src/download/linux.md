@@ -143,15 +143,19 @@ sudo dnf install prismlauncher-nightly
 
 <div class="infobox top">
 
-# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE Tumbleweed
+# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
-One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+RPM packages are available on the [openSUSE Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
   
 ```bash
-# downloads copr repository file
-curl -Lo /etc/zypp/repos.d/g3tchoo-prismlauncher.repo https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/repo/opensuse-tumbleweed/g3tchoo-prismlauncher-opensuse-tumbleweed.repo
-# stable releases
-zypper in prismlauncher
+# add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
+zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
+# refresh repository cache
+zypper refresh
+# stable releases (prismlauncher is only for tumbleweed)
+zypper install prismlauncher
+# stable releases (prismlauncher-qt5 is avalible for leap *and* tumbleweed)
+zypper install prismlauncher-qt5
 ```
   
 <!--
