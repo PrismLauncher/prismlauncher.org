@@ -96,16 +96,16 @@ rpmdev-setuptree
 # get the rpm spec file from the prismlauncher-rpm repo
 git clone https://pagure.io/prismlauncher-rpm.git
 cd prismlauncher-rpm
-# the package builds with Qt6 by default, but can build with Qt5 by using this
-sed -i 's/%bcond_without/%bcond_with/' prismlauncher.spec
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
+sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
 # move patch to rpmbuild sources directory
 cp change-jars-path.patch ~/rpmbuild/SOURCES 
 # now build!
 rpmbuild -bb prismlauncher.spec
+rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
