@@ -18,7 +18,7 @@ Thanks to all contributors, who have worked on this release!
 ### Added
 - [OpenBSD] Add root path detection by @Scrumplex in #1019
 
-### Changed
+#### Changed
 - Bump to C++17 by @Scrumplex and @LennyMcLennington in #941
 - Hide 'More news...' button if the news aren't loaded yet by @flowln in #1049
 - Make 'About' dialog smaller by @DioEgizio in #1107
@@ -26,7 +26,7 @@ Thanks to all contributors, who have worked on this release!
 - Update copyright notices by @DioEgizio in #1073
 - [macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014
 
-### Fixed
+#### Fixed
 - Allow user to interrupt launch after 3 tries by @Scrumplex in #1018
 - Cleanup old mod metadata by @flowln in #1017 #1044
 - Disable "Check for Updates" while the game is running or if all mods are removed by @Gingeh in #1007
@@ -44,9 +44,10 @@ Thanks to all contributors, who have worked on this release!
 We have noticed that some things from our recent 1.4.0 release weren't working quite well. 
 This update should fix some of the issues you might have faced with 1.4.0.
 Thanks to all contributors, who have worked on this release!
-### Changed
+#### Changed
 - Hide empty "Performance" settings on non-Linux builds by @flowln in #951
-### Fixed
+- 
+#### Fixed
 
 - Fix crash when JAR-mods are applied by @flowln in #956
 - Fix filter on resources pages (e.g. Mods page) by @flowln in #961
@@ -57,7 +58,7 @@ Thanks to all contributors, who have worked on this release!
 ## 1.4.0
 Major new features include the new mod updater and Qt 6 support.
 Don't worry, Qt 5 will still be supported and packages using it will still be available for some time.
-### Added
+#### Added
 - Add concurrent tasks by @flowln in #786
 - Add more links to mod and modpack descriptions by @flowln and @DioEgizio in #634 #799
 - Add news reader in the launcher by @flowln in #845
@@ -70,7 +71,7 @@ Don't worry, Qt 5 will still be supported and packages using it will still be av
 - [macOS] Implement updater using Sparkle by @kthchew and @Scrumplex in #479
 - [OpenBSD] Readd support for OpenBSD by @Technous285 in #694
 
-### Changed
+#### Changed
 - Allow the cape to be changed without changing the skin by @Gingeh in #913
 - Cleanup Java code by @Scrumplex and @icelimetea in #778 #785 #800 #863
 - Hide channel from version for tagged commits by @Scrumplex in #810
@@ -93,7 +94,7 @@ Don't worry, Qt 5 will still be supported and packages using it will still be av
 - [Linux] Rewrite polymc.6 in scdoc by @EliteTK in #847 #901
 - [macOS] Build on macOS 12 in CI by @DioEgizio in #787
 
-### Fixed
+#### Fixed
 - Always scale mod icons to the right size by @flowln in #818
 - Don't censor offline access token by @ivanpu in #864
 - Don't create unnecessary folders when extracting ZIPs by @flowln in #817
@@ -114,18 +115,18 @@ Don't worry, Qt 5 will still be supported and packages using it will still be av
 
 ## 1.3.2
 Yet again we have some fixes for you!
-### Added
+#### Added
 - Add support for Quilt modpacks on Technic by @kthchew in #685
 - [Linux] Added support for Nix 2.7 by @TheOPtimal in #286
 - [Windows] Add version information to setup executable by @kthchew in #679
 
-### Changed
+#### Changed
 - Change build flags by @Scrumplex in #764
 - Do not enforce fractional scaling by @DioEgizio in #718
 - Sort icons in icon-selector alphabetically by @MrMelon54 in #732
 - [Linux] Allow adding more JDKs to Nix package by @babbaj in #734
 
-### Fixed
+#### Fixed
 - Allow importing .mrpack files on non-latin languages by @flowln and @Scrumplex in #780
 - Always store type of instance to allow compatibility with MultiMC by @Scrumplex in #709 #783
 - Fix crash with very old Forge versions by @icelimetea in #720
@@ -137,19 +138,19 @@ Yet again we have some fixes for you!
 - [Linux] Update Nix Flake lockfile by @muscaln in #762
 - [macOS] Fix lingering PolyMC icon in Dock by @ryanccn in #632
 
-### Removed
+#### Removed
 - [OpenBSD] Drop support for OpenBSD by @glowiak in #692
 
 ## 1.3.1
 Hey, it's that time again! This time you only get some small tweaks and fixes. 
 With this release downloading CurseForge packs should be a better experience, as now the launcher will tell you what mods could not be downloaded. 
 Please make sure to download all those mods, otherwise you won't have the full modpack.
-### Added
+#### Added
 - Add code style configuration by @ryanccn in #623
 - Add modpack version in the name for FTB legacy packs by @Scrumplex in #672
 - [Windows] Add desktop shortcut in the installer by @kthchew in #629
 
-### Changed
+#### Changed
 - Clarify T&C for API keys by @Scrumplex in #659
 - Improve download speed when using the CurseForge API by @timoreo22 in #611
 - Improve whitelisted hosts filtering code by @LennyMcLennington in #661
@@ -160,7 +161,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 - Warn the user of non-whitelisted hosts in mrpacks by @flowln in #661
 - [macOS] Switch background of icon to white by @ryanccn in #625
 
-### Fixed
+#### Fixed
 - Correctly handle ATL packs when `mainClass` has a `depends` field by @jamierocks in #630
 - Fix crash when aborting instance import by @JJL772 in #657
 - Fix icon importing when using non-standard icon paths by @flowln in #650
@@ -173,7 +174,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 - [Linux] Fix image sizes in Flathub by @byquanton in #637
 - [Windows] Correctly set PolyMC's version for binaries by @Scrumplex in #669
 
-### Removed
+#### Removed
 - [Windows] Remove explicit Vista support by @DioEgizio in #667
 
 ## 1.3.0
@@ -181,7 +182,7 @@ It's update-time again. This time we bring you some highlights, like Modrinth mo
 There is also a breaking change affecting older platforms.
 We have bumped our Qt dependency requirement to version 5.12.
 If you user an older platform, you might still be able to run PolyMC through our existing distribution methods (AppImage, Flatpak on Linux).
-### Added
+#### Added
 - Support ATLauncher share codes by @jamierocks in #408
 - Allow changing metadata-server settings by @dada513 in #425
 - Add PolyMC icon as instance icon by @ryanccn in #498
@@ -195,7 +196,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 - [macOS] Add Big Sur-style icon by @ryanccn in #495
 - [Windows] Add Windows installer by @kthchew in #576
 
-### Changed
+#### Changed
 - Bump Qt requirement to 5.12 by @Scrumplex in #127
 - Refactor launcher code by @icelimetea in #486 #520
 - Refactor network code by @flowln in #500
@@ -207,7 +208,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 - Switch to a better CurseForge icon by @DioEgizio in #612
 - Improve compile parameters by @Scrumplex in #616 #620
 
-### Fixed
+#### Fixed
 - Always build iconfix as static library by @flowln in #477
 - Added and fixed mnemonics by @dschemp in #480 and @txtsd in #503
 - Fix selection of .zip files by @flowln in #528
@@ -221,7 +222,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 - Fix issue with [Solder.cf Technic packs](https://solder.io/) by @flowln in #592
 - [macOS] Fix Steam overlay on macOS by @kthchew in #568
 
-### Removed
+#### Removed
 - Remove unneeded build files by @Scrumplex in #519
 - Remove references to legacy Minecraft accounts by @Ozynt in #531
 - Remove self-promotion from game client to reduce fingerprinting by @jamierocks in #606
@@ -230,7 +231,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 ## 1.2.2
 The old API we used for CurseForge will stop working soon.
 This update switches to the new CurseForge Core API to keep modpacks and mod downloads working.
-### Fixed
+#### Fixed
 - Hide sensitive tokens from logs by @Scrumplex in #475
 - Implemented a workaround to allow Mojang logins by @TheCodex6824 in #482
 - Move to new CurseForge Core API by @ryanccn in #530
@@ -239,11 +240,11 @@ This update switches to the new CurseForge Core API to keep modpacks and mod dow
 ## 1.2.1
 We have found some bugs in our last release on Sunday, which is why we are bringing you a truckload of bug fixes.
 Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://quiltmc.org)!
-### Added
+#### Added
 - Specify build platform for about page by @DioEgizio in #449
 - [macOS] Enable hardened runtime by @kthchew in #454
 
-### Fixed
+#### Fixed
 - Fix typos and capitalization by @kthchew in #442
 - Fix placeholder translations for mod downloader by @flowln in #443
 - Fix missing files in release workflow by @Scrumplex in #444
@@ -256,12 +257,12 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 - [macOS] Fix version string by @kthchew in #455
 - [macOS] Fix instance rename using return-key @txtsd in #463
 
-### Removed
+#### Removed
 - [FreeBSD] Revert "Force system LWJGL natives" by @Scrumplex in #467
 
 ## 1.2.0
 Hey! It's update-time again. We have added lots of new things in this one and improved a few things as well.
-### Added
+#### Added
 - Allow components to specify Java agents and JVM arguments by @unascribed in #175
 - Add support for Quilt loader by @Scrumplex in #185 #431
 - Add buttons to Matrix space and Reddit by @dada513 in #243 and @ZekeSmith in #390
@@ -280,7 +281,7 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 - [Linux] Provide portable builds by @DioEgizio in #351
 - [Windows] Add support for POLYMC_JAVA_PATHS by @FayneAldan in #357 #360
 
-### Changed
+#### Changed
 - Improve mod downloader by @flowln in #220 #356 and @dada513 in #375 and @HarryPeach in #395
 - Switch logo font to Josefin Sans by @Scrumplex in #250
 - Updated Nix Flake by @Kranzes in #272
@@ -292,20 +293,20 @@ Hey! It's update-time again. We have added lots of new things in this one and im
 - Use system libraries if possible by @flowln in #436
 - [macOS] Switch to Qt 5.15.3 by @DioEgizio in #439
 
-### Fixed
+#### Fixed
 - Fix and improve translatable strings by @Scrumplex in #364
 - Switch to newer Discord logo by @Regular-Baf in #413
 - [Linux] Flatpak fixes by @dada513 in #355
 - [Linux] Install missing manpage by @Scrumplex in #417
 - [FreeBSD] Force system LWJGL natives by @Irgendwer01 in #429
 
-### Removed
+#### Removed
 - Remove unused notification system by @binex-dsk in #188
 
 ## 1.1.1
 We are pleased to annouce, that PolyMC version 1.1.1 is now available. 
 This release mainly contains bug fixes.
-### Added
+#### Added
 - Support builds without Git by @oynqr in #280
 - Limit offline username to 16 characters by @lack in #292
 - [Windows] Support 64-Bit builds by @oynqr in #294
@@ -313,12 +314,12 @@ This release mainly contains bug fixes.
 - [Windows] Provide portable and system builds by @DioEgizio in #330
 - Improve release workflow by @oynqr in #337
 
-### Changed
+#### Changed
 - Add license headers by @Scrumplex in #200
 - Improve mod downloads by @flowln in #270 #296 #334
 - Bundle JRE 8u312 for AppImage by @DioEgizio in #297
 
-### Fixed
+#### Fixed
 - [Linux] Update metainfo URLs by @Scrumplex in #254
 - [Linux] Fix JavaCheck for AppImage by @Scrumplex in #265
 - [macOS] Fix branding by @DioEgizio in #273
@@ -330,13 +331,13 @@ This release mainly contains bug fixes.
 - Fix buttons on mods page when instance is running by @Scrumplex in #316
 - Statically link remaining internal libraries by @oynqr in #322
 
-### Removed
+#### Removed
 - Remove paste.polymc.org by @flowln in #299
 
 ## 1.1.0
 We are pleased to annouce, that PolyMC version 1.1.0 is now available!
 This is a major milestone, as this marks the first release since deciding to move on from our origins as a MultiMC fork.
-### Added
+#### Added
 - New option to close PolyMC after launch by @binex-dsk in #79
 - Now detects Java from environment by @muscaln in #46
 - New `Open page & copy code` button in MSA login dialog by @Scrumplex  in #88
@@ -349,7 +350,7 @@ This is a major milestone, as this marks the first release since deciding to mov
 - Added MSA Client ID change detection and prompt by @Scrumplex in #180
 - Added Matrix space link by @dada513 in #243
 
-### Changed
+#### Changed
 - Default to the system locale on first startup by @oynqr in #52
 - Replaced `paste.ee` with `0x0.st` and `paste.polymc.org` by @binex-dsk in #67
 - Updated information in the About dialog by @redstrate in #108
@@ -365,7 +366,7 @@ This is a major milestone, as this marks the first release since deciding to mov
 - [Windows] Now runs on WSL by @TheGlitch76 in #186
 - [macOS] Move app data to `Application Support` by @dada513 in #146
 
-### Fixed
+#### Fixed
 - Add some logging to profile fetching failures in #96
 - Ignore invalid lines altogether in java checker in #96
 - Correctly set http status code in auth reply in #96
@@ -375,6 +376,6 @@ This is a major milestone, as this marks the first release since deciding to mov
 - Fixed freedesktop icons by @dada513 in #150
 - [macOS] Fixed GUI identifier by @DioEgizio in #171
 
-### Removed
+#### Removed
 - Removed MultiMC news by @Scrumplex in #105
 - Removed legacy instance support by @Scrumplex in #192 #201
