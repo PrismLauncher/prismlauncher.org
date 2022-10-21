@@ -94,11 +94,14 @@ cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
 # get the rpm spec file from the prismlauncher-misc repo
-wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/prismlauncher/prismlauncher.git/plain/prismlauncher.spec
+git clone https://pagure.io/prismlauncher-rpm.git
+cd prismlauncher-rpm
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
 # download build sources
 spectool -g -R prismlauncher.spec
+# move patch to rpmbuild sources directory
+cp change-jars-path.patch ~/rpmbuild/SOURCES 
 # now build!
 rpmbuild -bb prismlauncher.spec
 ```
