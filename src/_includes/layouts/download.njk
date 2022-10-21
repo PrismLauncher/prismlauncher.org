@@ -11,10 +11,6 @@ eleventyComputed:
   }
 </style>
 
-<div class="notification type-warn">
-  <b>Flathub package has not yet been published</b>, approval is in process expect it soon, sorry steam deck users.
-</div>
-
 {{ collections.download | eleventyNavigation | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'download-tab-list', activeListItemClass: 'download-tab-active' }) | safe }}
 
 {{ content | safe }}
