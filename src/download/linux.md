@@ -206,10 +206,6 @@ zypper install prismlauncher
 zypper install prismlauncher-qt5
 ```
   
-<!--
-Prism Launcher is available on the [game:tools](https://software.opensuse.org/download.html?project=games%3Atools&package=prismlauncher) community repository.
--->
-  
 </div>
   
 <div class="infobox top">
@@ -231,24 +227,3 @@ sudo xbps-install PrismLauncher
 ```
 
 </div>
-  
-<!--
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
-
-One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/sentry/prismlauncher/).
-
-```bash
-# load in system information
-source /etc/os-release
-# enables the copr repo
-sudo dnf copr enable sentry/prismlauncher epel-${VERSION}-$(uname -m)
-# stable releases
-sudo dnf install prismlauncher
-# nightly releases (git master)
-sudo dnf install prismlauncher-nightly
-```
-
-</div>
-  -->
