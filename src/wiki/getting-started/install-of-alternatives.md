@@ -35,9 +35,9 @@ If you would like to go a bit further, LambdAurora maintains a very detailed lis
 
 ### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized
 
-If you don't want to search, and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack.
+If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack, which supports almost all OptiFine features.
 
-See the [MultiMC/MultiMC (auto-update)](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#multimc) guide for help installing it. These instructions will work for Prism Launcher too.
+[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
