@@ -18,7 +18,7 @@ If you aren't sure which version you will need, **it is recommended to just inst
 
 **NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
-You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
+You can also use Oracle Java, but openjdk is better here. Also, to download Oracle Java 9+ you need an Oracle account which is not a good thing.
 
 ## Java on linux
 
@@ -103,6 +103,6 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 
 Well, for you there's a resolution too!
 
-* first, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
-* then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
-* select this java binary on Prism Launcher and it should fix your issue!
+* First, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
+* Then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+* Select this java binary on Prism Launcher, and it should fix your issue!

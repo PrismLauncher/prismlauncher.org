@@ -59,7 +59,7 @@ sudo chmod +x PrismLauncher-Linux-{{version.current}}-x86_64.AppImage
 
 **Please note,** that depending on the version of Prism Launcher that you have downloaded, you may have to **change the version number** in the command above.
 
-If you want to simplify the installation of the AppImage, use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system and we recommend just using packages.
+If you want to simplify the installation of the AppImage, use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system, and we recommend just using packages.
 
 #### Prism Launcher isn't using my system theme
 

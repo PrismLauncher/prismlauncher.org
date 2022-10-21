@@ -13,7 +13,7 @@ In order to transfer an instance, or multiple instances from MultiMC to Prism La
 
 Now that MultiMC is open, navigate to the **Folders** tab located on the top menu bar, to the left of the Settings tab.
 
-Left click on the tab and select the **View Instance Folder** option. This should then open your system's file explorer application with the correct directory in view.
+Left-click on the tab and select the **View Instance Folder** option. This should then open your system's file explorer application with the correct directory in view.
 
 Now that the MultiMC instance directory is open, you may **select**, and then **copy** the instances that you wish to transfer.
 
@@ -23,7 +23,7 @@ To complete the transfer process, you must now open Prism Launcher.
 
 As you did in MultiMC previously, navigate to the **Folders** tab located on the top menu bar, to the left of the Settings tab.
 
-Left click on the tab and select the **View Instance Folder** option. This should once again open your system's file explorer application with the correct directory in view.
+Left-click on the tab and select the **View Instance Folder** option. This should once again open your system's file explorer application with the correct directory in view.
 
 Now that the Prism Launcher instance directory is open, you may **paste** the instance(s) that you previously copied from the MultiMC directory.
 
