@@ -222,3 +222,23 @@ sudo xbps-install PrismLauncher
 ```
 
 </div>
+
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+
+[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are avalible on Alpine Linux Edge for multiple architectures
+
+```bash
+apk add prismlauncher
+```
+
+</div>
+
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
+
+Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
+
+</div>
