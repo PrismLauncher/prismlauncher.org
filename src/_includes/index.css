@@ -55,7 +55,7 @@ body {
   margin: 0;
   font-family: "Inter", -apple-system, system-ui, sans-serif;
   color: var(--primary-text);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ '/img/background/prism-background.svg' | url }});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/background/prism-background.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
