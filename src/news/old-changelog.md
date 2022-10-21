@@ -1,7 +1,7 @@
 ---
 title: Old Changelog
 description: This contains every changelog prior to 5.0
-date: 2022-09-08
+date: 2022-10-18
 release_version: 1.4.2
 minimum_macos_version: 10.14.0
 mac_signature: dU+pOB6d8WvEROprt/tx3Fx3bda8NjbRAEBbpIhvM3es9BPGtfJTv/9hiXDDKBRBvNPtoCbWvuBnFAKmtMJKDA==
