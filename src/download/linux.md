@@ -126,7 +126,7 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
-One RPM package is available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
 
 ```bash
 # enables the copr repo
@@ -152,9 +152,9 @@ RPM packages are available on the [openSUSE Build Service](https://download.open
 zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
 # refresh repository cache
 zypper refresh
-# stable releases (prismlauncher is only for tumbleweed)
+# stable releases (Qt6 version, only for Tumbleweed)
 zypper install prismlauncher
-# stable releases (prismlauncher-qt5 is avalible for leap *and* tumbleweed)
+# stable releases (Qt5 version, available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5
 ```
   
@@ -168,7 +168,7 @@ Prism Launcher is available on the [game:tools](https://software.opensuse.org/do
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-Two RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
 If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
 
 ```bash
