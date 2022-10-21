@@ -136,10 +136,6 @@ sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
 ```
-<!-- 
-  # nightly releases (git master)
-sudo dnf install prismlauncher-nightly 
-  -->
 
 ## Terra
 
