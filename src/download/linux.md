@@ -211,7 +211,6 @@ A package is available on `nixos-unstable-small` and will soon be available on `
 
 </div>
 
-<!--
 <div class="infobox top">
 
 # <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
@@ -223,4 +222,3 @@ sudo xbps-install PrismLauncher
 ```
 
 </div>
--->
