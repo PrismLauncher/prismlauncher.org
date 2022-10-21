@@ -55,7 +55,7 @@ Thanks to all contributors, who have worked on this release!
 - Make adding multiple accounts possible again by @flowln in #974
 - Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699
 
-## 1.4.0
+# 1.4.0
 Major new features include the new mod updater and Qt 6 support.
 Don't worry, Qt 5 will still be supported and packages using it will still be available for some time.
 #### Added
@@ -177,7 +177,7 @@ Please make sure to download all those mods, otherwise you won't have the full m
 #### Removed
 - [Windows] Remove explicit Vista support by @DioEgizio in #667
 
-## 1.3.0
+# 1.3.0
 It's update-time again. This time we bring you some highlights, like Modrinth modpack support, a Windows installer, more paste services and improvements around our ATLauncher support.
 There is also a breaking change affecting older platforms.
 We have bumped our Qt dependency requirement to version 5.12.
@@ -260,7 +260,7 @@ Also check our friends' launch of the Quilt Beta over at [quiltmc.org](https://q
 #### Removed
 - [FreeBSD] Revert "Force system LWJGL natives" by @Scrumplex in #467
 
-## 1.2.0
+# 1.2.0
 Hey! It's update-time again. We have added lots of new things in this one and improved a few things as well.
 #### Added
 - Allow components to specify Java agents and JVM arguments by @unascribed in #175
@@ -334,7 +334,7 @@ This release mainly contains bug fixes.
 #### Removed
 - Remove paste.polymc.org by @flowln in #299
 
-## 1.1.0
+# 1.1.0
 We are pleased to annouce, that PolyMC version 1.1.0 is now available!
 This is a major milestone, as this marks the first release since deciding to move on from our origins as a MultiMC fork.
 #### Added
