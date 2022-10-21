@@ -166,8 +166,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
-    if (outputPath.endsWith('.html')) {
-      return htmlmin.minify(content, {
+    if (outputPath && outputPath.endsWith('.html')) {
+      return htmlmin(content, {
         collapseWhitespace: true,
         useShortDoctype: true,
       });
