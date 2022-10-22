@@ -31,7 +31,7 @@ eleventyNavigation:
 #### Installation instructions
 
 ```bash
-brew install --cask prism
+brew install --cask prismlauncher
 ```
 
 <!--
