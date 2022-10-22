@@ -11,14 +11,12 @@ eleventyNavigation:
       <div>
         <h1>Steam Deck Download</h1>
         <br>
-        <button class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" disabled>Install from FlatHub</button>
+        <a class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank">Install from FlatHub</a>
       </div>
     </div>
-<!--
     <div class="column">
-      <iframe width="692" height="389" src="https://www.youtube.com/embed/UTVBqyvFCV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="692" height="389" src="https://www.youtube.com/embed/M8oqFUl791Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
--->
   </div>
 </div>
 

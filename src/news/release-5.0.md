@@ -89,6 +89,4 @@ Special thanks to our community members [Boba](https://cmdplusv.neocities.org/),
 
 Full Changelog: <https://github.com/PrismLauncher/PrismLauncher/compare/1.4.2...5.0>
 
-You can [grab the latest download here](https://github.com/PrismLauncher/PrismLauncher/releases/tag/5.0) for your respective platform.
-
-Our dedicated download page is not available yet. :(
+You can [grab the latest download here](https://prismlauncher.org/download/) for your respective platform.
