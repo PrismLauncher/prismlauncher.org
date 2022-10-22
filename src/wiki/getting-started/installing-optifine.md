@@ -26,7 +26,7 @@ Now in Prism Launcher edit the instance you wish to install OptiFine on, open th
 
 OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod.
 
-From OptiFine Version **H1_pre2** the instructions for installing OptiFine on PrismLauncher have changed. Make sure to have the version of optifine that you wish to install, installed through the vanilla launcher.
+From OptiFine Version **H1_pre2** the instructions for installing OptiFine on Prism Launcher have changed. Make sure to have the version of optifine that you wish to install, installed through the vanilla launcher.
 
 1. Extract the MOD jar with the OptiFine installer
 2. Open it with any archiver
