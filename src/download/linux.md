@@ -194,7 +194,7 @@ Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixp
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
-RPM packages are available on the [openSUSE Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
+RPM packages are available on the [Open Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
   
 ```bash
 # add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
