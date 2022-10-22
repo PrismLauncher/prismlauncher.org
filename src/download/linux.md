@@ -139,6 +139,7 @@ You can replace una install with your preferred [MPR helper's](https://docs.make
 Prism Launcher is avalible in the [pi-apps](https://github.com/Botspot/pi-apps) store as a deb install.
   
 NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
+*Debian based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
 
 </div>
 
