@@ -73,7 +73,8 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 # <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
 
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). Please note that you must have the EPEL repositories enabled, please do so [here](https://www.redhat.com/sysadmin/install-epel-linux).
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
+If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
 
 ```bash
 # enables the copr repo
