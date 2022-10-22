@@ -17,7 +17,7 @@ hero:
   <div class="row row-reverse">
     <div class="column">
       <div>
-        <h1>Modpack management</h1>
+        <h1>Modpack Management</h1>
         <div class="subtitle">
           Install and launch modpacks easily, while keeping them clean.
           No longer do you need to manually install them, and updating feature is coming soon. Prism Launcher can do that for you, without installing tons of separate launchers.
@@ -47,7 +47,7 @@ hero:
   <div class="row row-reverse">
     <div class="column">
       <div>
-        <h1>Minecraft instance management </h1>
+        <h1>Minecraft Instance Management </h1>
         <div class="subtitle">
           <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
           Are you tired of manually switching mods for different versions, installing modloaders?<p>
