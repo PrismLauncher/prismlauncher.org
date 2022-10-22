@@ -49,6 +49,7 @@ Special thanks to our community members [Boba](https://cmdplusv.neocities.org/),
 ### Changed
 
 - Allow double clicking to mark mods for download by @ErogigGit in PolyMC/PolyMC#1165
+- Allow modifying some resource while the instance is running by @CutestNekoAqua in #59
 - Improve language model by @Scrumplex in PolyMC/PolyMC#1164
 - Improve loading speed of the application by @flowln in PolyMC/PolyMC#878
 - Merge Launch Buttons by @TayouVR in PolyMC/PolyMC#1190
