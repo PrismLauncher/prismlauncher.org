@@ -27,6 +27,12 @@ You can find a list of currently supported shaderpacks [here](https://github.com
 
 To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
+### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" height="20"> Indium
+
+[Indium](https://modrinth.com/mod/indium) is an addon for Sodium that provides support for the Fabric Rendering API. This is needed if you want to use Sodium with mods that use advanced rendering techniques.
+
+To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Indium*, click **Select mod for download**, and then press **OK**.
+
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods
 
 If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
