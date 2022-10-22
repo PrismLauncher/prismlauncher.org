@@ -34,8 +34,9 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 
 - A C++ compiler capable of building C++17 code.
 - Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-  - Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+- Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
+- ninja (`ninja-build` on Debian-based systems)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
 - Java JDK (`openjdk-17-jdk` on Debian-based system)
@@ -47,11 +48,11 @@ You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, i
 ### Building a portable binary
 
 ```bash
-cmake -S . -B build \
+cmake -S . -B build -G Ninja \
    -DCMAKE_INSTALL_PREFIX=install
 #  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
 
-cmake --build build -j$(nproc)
+cmake --build build
 cmake --install build
 cmake --install build --component portable
 ```
@@ -61,13 +62,13 @@ cmake --install build --component portable
 This is the preferred method of installation, and is suitable for packages.
 
 ```bash
-cmake -S . -B build \
+cmake -S . -B build -G Ninja \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
 #  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
 
-cmake --build build -j$(nproc)
+cmake --build build
 cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
 ```
 
