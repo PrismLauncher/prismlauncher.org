@@ -87,7 +87,7 @@ sudo dnf install prismlauncher
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64)
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
@@ -129,6 +129,17 @@ una install prismlauncher-git
 ```
 
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
+  
+</div>
+  
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
+
+Prism Launcher is avalible in the [pi-apps](https://github.com/Botspot/pi-apps) store as a deb install.
+  
+NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
+
 </div>
 
 <div class="infobox top">
@@ -207,14 +218,6 @@ zypper install prismlauncher
 zypper install prismlauncher-qt5
 ```
   
-</div>
-  
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
-
-Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
-
 </div>
 
 <div class="infobox top">
