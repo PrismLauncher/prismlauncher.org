@@ -94,14 +94,19 @@ You don't need to clone the repo for this; the spec file handles that.
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-misc repo
-wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/prismlauncher/prismlauncher.git/plain/prismlauncher.spec
+# get the rpm spec file from the prismlauncher-rpm repo
+git clone https://pagure.io/prismlauncher-rpm.git
+cd prismlauncher-rpm
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
+sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
+# move patch to rpmbuild sources directory
+cp change-jars-path.patch ~/rpmbuild/SOURCES 
 # now build!
 rpmbuild -bb prismlauncher.spec
+rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
