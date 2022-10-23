@@ -57,9 +57,9 @@ scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
 
 ```powershell
 # Install standard version
-choco install prismlauncher
+choco install prismlauncher --version 5.0
 # Install legacy version
-choco install prismlauncher --params='/legacy'
+choco install prismlauncher --version 5.0 --params='/legacy'
 ```
 
 *Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*

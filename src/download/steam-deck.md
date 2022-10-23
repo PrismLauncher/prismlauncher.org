@@ -22,7 +22,7 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Installation infomation
+## Installation information
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
 This can be done by searching for `Prism Launcher` in the Discover software center, in *Desktop Mode*.
@@ -52,7 +52,7 @@ First, we will set the **background** (also called "hero" on SteamGridDB) and th
 Now, navigate to where you have saved the images, and select the background. I saved them in my Downloads folder, which will have the path of `/home/deck/Downloads`.
 Then do the same thing for `Set Custom Logo`, and select the logo.
 
-Additionally you can change the **cover-art** (also called "grid" on SteamGridDB).
+Additionally, you can change the **cover-art** (also called "grid" on SteamGridDB).
 There are two types of cover-art, one is the normal vertical one, and the other is the wider one.
 
 To change these, you should first start Prism Launcher through Steam, and close it again.

@@ -19,12 +19,12 @@ Based off recent controversies, and for the project's best interest, Swirl has s
 
 Quote in news: [Discord](https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416)
 
-Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.
+Swirl contributed a lot to PolyMC, and we hope to see more contributions in the future.
 
 In lighter news, congratulations to our new Core Team consisting of:
 
 - LennyMcLennington
-- Scumplex
+- Scrumplex
 - timoreo
 - txtsd
 - dada513

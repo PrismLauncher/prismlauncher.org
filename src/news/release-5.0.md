@@ -9,13 +9,13 @@ tags:
   - release
 ---
 
-Hi there,
+Hi there!
 
-we are bringing you ~~PolyMC~~ Prism Launcher 5.0!
+We are bringing you ~~PolyMC~~ Prism Launcher 5.0!
 This major release not only comes with a new versioning system, but also a new name!
 But why you ask?
 Well, stuff happened and we are going to talk about everything that went down in a future blog post.
-For now we want you to regain access to the best Minecraft launcher out there.
+For now, we want you to regain access to the best Minecraft launcher out there.
 
 Let's go over the major changes since the last *PolyMC* release back in September.
 Our macOS users on Apple M1/M2 processors as well as our Nintendo Switch Linuxers can rejoice, as you can finally run all Minecraft versions on those platforms without needing to make any changes on your end.
