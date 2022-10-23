@@ -75,35 +75,52 @@ hero:
     </div>
   </div>
 </div>
-<div class="infobox top">
 
-# Get involved
-
----
-
-## Reddit
-
-<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
-
-## Discord
-
-To talk directly to us and get involved with development:
-
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
-
-## Matrix
-
-For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
-
-<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
-
-# Source code
-
----
-
-Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/prismlauncher/PrismLauncher/) under the GPL-3 license.
-
-[Source for this website](https://github.com/prismlauncher/prismlauncher.github.io) is hosted under the AGPL-3 License.
-
-The logo and related assets are under the CC BY-SA 4.0 license.
+<h1 style="text-align: center">Want to Get Involved?</h1>
+<div class="row top infobox involded">
+			<div class="">
+				<a class="brand-icon" href="https://www.reddit.com/r/PrismLauncher/">
+					{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
+				</a>
+				<div>
+					<h2>Reddit</h2>
+					<div class="subicon">
+						Post and read posts all about Prism Launcher
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="https://discord.gg/prismlauncher">
+					{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}
+				</a>
+				<div>
+					<h2>Discord</h2>
+					<div class="subicon">
+						To talk directly to us and get involved with development.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="https://matrix.to/#/#prismlauncher:matrix.org">
+					{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}
+				</a>
+				<div>
+					<h2>Matrix</h2>
+					<div class="subicon">
+						We have a Matrix Space which is bridged to the Discord server.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="https://github.com/prismlauncher/PrismLauncher/">
+					{% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
+				</a>
+				<div>
+					<h2>Github</h2>
+					<div class="subicon">
+						Prism Launcher is focused on user freedom and free redistributability all code is available on Github.
+					</div>
+				</div>
+			</div>
+		</div>
 </div>

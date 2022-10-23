@@ -337,6 +337,20 @@ a.direct-link:focus:visited,
   text-align: center;
 }
 
+.subicon {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* .brand-icon > picture > img { */
+/* 	width: 50% */
+/* } */
+
+.brand-icon {
+  padding: 1px !important;
+  margin: 0px !important;
+}
+
 /* card */
 .cards {
   display: flex;
