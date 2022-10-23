@@ -342,9 +342,9 @@ a.direct-link:focus:visited,
   text-align: center;
 }
 
-/* .brand-icon > picture > img { */
-/* 	width: 50% */
-/* } */
+.brand-icon > picture > img {
+  width: 50%
+}
 
 .brand-icon {
   padding: 1px !important;

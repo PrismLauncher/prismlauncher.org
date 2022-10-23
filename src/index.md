@@ -78,7 +78,7 @@ hero:
 
 <h1 style="text-align: center">Want to Get Involved?</h1>
 <div class="row top infobox involded">
-			<div class="">
+			<div class="column">
 				<a class="brand-icon" href="https://www.reddit.com/r/PrismLauncher/">
 					{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
 				</a>
