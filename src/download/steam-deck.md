@@ -22,7 +22,7 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Installation infomation
+## Installation information
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
 This can be done by searching for `Prism Launcher` in the Discover software center, in *Desktop Mode*.

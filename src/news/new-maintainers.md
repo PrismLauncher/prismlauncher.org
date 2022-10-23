@@ -24,7 +24,7 @@ Swirl contributed a lot to PolyMC and we hope to see more contributions in the f
 In lighter news, congratulations to our new Core Team consisting of:
 
 - LennyMcLennington
-- Scumplex
+- Scrumplex
 - timoreo
 - txtsd
 - dada513

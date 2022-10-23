@@ -239,7 +239,7 @@ cmake \
  -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  -DLauncher_BUILD_PLATFORM=macOS
-#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)
+#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
  ..
 make install
 ```

@@ -14,7 +14,7 @@ Once you have picked out your ideal mod loader, go to the **Mods** tab, and sele
 
 It is worth noting that many mods will be available on **both platforms**.
 
-After you've choosen your mod provider, you can search or browse for any desired mods. Click the **Select mod for download** button to add each mod to your download queue. Once finished, you can now press **OK**, and your mods should begin downloading.
+After you've chosen your mod provider, you can search or browse for any desired mods. Click the **Select mod for download** button to add each mod to your download queue. Once finished, you can now press **OK**, and your mods should begin downloading.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"> Fabric
 

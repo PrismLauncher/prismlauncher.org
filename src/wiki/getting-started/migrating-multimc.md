@@ -33,4 +33,4 @@ Now that the Prism Launcher instance directory is open, you may **paste** the in
 
 Now, in **Prism Launcher**, your instances should appear as they normally would in MultiMC.
 
-If you have transfered instances across devices or packaging formats, you may need to change the version of **Java** that'll be used to launch Minecraft. You can learn how to do so on [this page](../installing-java).
+If you have transferred instances across devices or packaging formats, you may need to change the version of **Java** that'll be used to launch Minecraft. You can learn how to do so on [this page](../installing-java).

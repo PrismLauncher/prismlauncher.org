@@ -5,7 +5,7 @@ date: 2022-03-12
 tags:
   - release
 ---
-We are pleased to annouce, that PolyMC version 1.1.0 is now available!
+We are pleased to announce, that PolyMC version 1.1.0 is now available!
 This is a major milestone, as this marks the first release since deciding to move on from our origins as a MultiMC fork.
 You can [read more about that here](/news/moving-on).
 

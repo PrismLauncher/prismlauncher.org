@@ -14,7 +14,7 @@ This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 * Please ensure that you comfortable with the mod installation process within Prism Launcher.
 * A full guide on this can be [found here](../download-mods/).
 * Not all game versions are supported at the time of writing, including those before 1.12.2.
-* Before proceeding, please ensure a compatable version of Java is selected. [You can learn how to do so here](../installing-java/).
+* Before proceeding, please ensure a compatible version of Java is selected. [You can learn how to do so here](../installing-java/).
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
 

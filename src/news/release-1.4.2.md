@@ -27,7 +27,7 @@ Thanks to all contributors, who have worked on this release!
 - Bump to C++17 by @Scrumplex and @LennyMcLennington in #941
 - Hide 'More news...' button if the news aren't loaded yet by @flowln in #1049
 - Make 'About' dialog smaller by @DioEgizio in #1107
-- Make Coremods / Mods seperation more clear by @Scrumplex in #1035
+- Make Coremods / Mods separation more clear by @Scrumplex in #1035
 - Update copyright notices by @DioEgizio in #1073
 - [macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014
 
