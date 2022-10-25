@@ -101,9 +101,9 @@ For people who don't want to use Discord, we have a Matrix Space which is bridge
 
 ---
 
-Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/prismlauncher/PrismLauncher/) under the GPL-3 license.
+Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PrismLauncher/PrismLauncher/) under the GPL-3 license.
 
-[Source for this website](https://github.com/prismlauncher/prismlauncher.github.io) is hosted under the AGPL-3 License.
+[Source for this website](https://github.com/PrismLauncher/prismlauncher.org) is hosted under the AGPL-3 License.
 
 The logo and related assets are under the CC BY-SA 4.0 license.
 </div>
