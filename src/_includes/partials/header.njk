@@ -2,8 +2,8 @@
   <div class="bg"></div>
   <nav class="container">
     <div class="navbar">
-      <a class="home" href="{{ '/' | url }}">
-        <img src="/img/logo.svg">
+      <a class="home" href="{{ '/' | url }}" aria-label="Prism Launcher">
+        <img src="/img/logo.svg" alt="Prism Launcher logo" />
       </a>
       <ul class="main-menu">
         {%- for entry in collections.nav | eleventyNavigation %}
@@ -15,10 +15,10 @@
     </div>
     <div class="links">
       <div class="social-links">
-        <a href="https://discord.gg/prismlauncher" target="_blank"><i class="fa fa-discord"></i></a>
-        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank"><i class="fa fa-matrix-org"></i></a>
-        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank"><i class="fa fa-reddit"></i></a>
-        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord"><i class="fa fa-discord"></i></a>
+        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix"><i class="fa fa-matrix-org"></i></a>
+        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
+        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
       </div>
       <div>
         <a class="button" href="{{ '/download/' | url }}">Download</a>
