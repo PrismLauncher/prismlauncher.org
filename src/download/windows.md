@@ -10,7 +10,7 @@ eleventyNavigation:
   <div class="row">
     <div class="column">
       <div>
-        <h1>Windows Download</h1>
+        <h1>Windows sdnload</h1>
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
