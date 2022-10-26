@@ -60,6 +60,7 @@ If you see a popup, you can close it and continue. If not, run the following com
 ```bash
   systemctl restart --user xdg-desktop-portal
 ```
+
 Then, click on the "Show a test popup" button again. You should now see a popup. If not, try reading the troubleshooting section on the [Steamgriddb Boop website](https://www.steamgriddb.com/boop).
 
 Next Enable the "Enable Steamgriddb Boop" option in the Steamgriddb Boop settings. You should see a green notification saying "BOOP buttons enabled".
