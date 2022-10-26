@@ -51,20 +51,20 @@ You can check out [Prism Launcher's SteamGridDB page](https://www.steamgriddb.co
 Alternatively, there also is a [SteamGridDB page of Minecraft](https://www.steamgriddb.com/game/38365).
 This page contains a lot of artwork for Minecraft, which can be used for Prism Launcher as well.
 
-Firstly install Steamgriddb Boop on your Steam Deck via the Discover software center.
+Firstly install SteamGridDB Boop on your Steam Deck via the Discover software center.
 Next right-click on Prism Launcher in your Start Menu and select "Add to Steam".
-After that, open the [Steamgriddb Boop website](https://www.steamgriddb.com/boop) and click on the "Show a test popup" button.
+After that, open the [SteamGridDB Boop website](https://www.steamgriddb.com/boop) and click on the "Show a test popup" button.
 If you see a popup, you can close it and continue. If not, run the following command in a terminal:
 
 ```bash
   systemctl restart --user xdg-desktop-portal
 ```
 
-Then, click on the "Show a test popup" button again. You should now see a popup. If not, try reading the troubleshooting section on the [Steamgriddb Boop website](https://www.steamgriddb.com/boop).
+Then, click on the "Show a test popup" button again. You should now see a popup. If not, try reading the troubleshooting section on the [SteamGridDB Boop website](https://www.steamgriddb.com/boop).
 
-Next Enable the "Enable Steamgriddb Boop" option in the Steamgriddb Boop settings. You should see a green notification saying "BOOP buttons enabled".
+Next Enable the "Enable SteamGridDB Boop" option in the SteamGridDB Boop settings. You should see a green notification saying "BOOP buttons enabled".
 
-Head to your preferred Steamgriddb page and click on the "BOOP" button on each artwork you want to use. It is recommended to set one of each type of artwork so that it looks good in your library. You will then get a popup asking you to select the game you want to add the artwork to. Select Prism Launcher and click "OK".
+Head to your preferred SteamGridDB page and click on the "BOOP" button on each artwork you want to use. It is recommended to set one of each type of artwork so that it looks good in your library. You will then get a popup asking you to select the game you want to add the artwork to. Select Prism Launcher and click "OK".
 
 That's it! You should now see the artwork in your Steam Library.
 
