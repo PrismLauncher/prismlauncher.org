@@ -54,7 +54,7 @@ Alternatively, there also is a [SteamGridDB page of Minecraft](https://www.steam
 This page contains a lot of artwork for Minecraft, which can be used for Prism Launcher as well.
 
 Firstly install Steamgriddb Boop on your Steam Deck via the Discover software center.
-Next right-click on Prism Launcher in your Start Menu and select "Add to Steam"
+Next right-click on Prism Launcher in your Start Menu and select "Add to Steam".
 After that, open the [Steamgriddb Boop website](https://www.steamgriddb.com/boop) and click on the "Show a test popup" button.
 If you see a popup, you can close it and continue. If not, run the following command in a terminal:
 
