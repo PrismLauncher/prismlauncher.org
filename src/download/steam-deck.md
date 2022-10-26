@@ -39,6 +39,7 @@ Now Prism Launcher should be in your Steam Library.
 Now that you have Prism Launcher in your Steam Library, you might want to change the artwork of your Prism Launcher Non-Steam Game, so that it looks better in your library.
 
 #### Examples
+
 <ul style="list-style-type: none;">
   <li><img src="/img/Steam_Deck_PrismLauncher_1.jpg" height="240"></li>
   <li><img src="/img/Steam_Deck_PrismLauncher_2.jpg" height="240"></li>
@@ -68,6 +69,7 @@ Next Enable the "Enable Steamgriddb Boop" option in the Steamgriddb Boop setting
 Head to your preferred Steamgriddb page and click on the "BOOP" button on each artwork you want to use. It is recommended to set one of each type of artwork so that it looks good in your library. You will then get a popup asking you to select the game you want to add the artwork to. Select Prism Launcher and click "OK".
 
 That's it! You should now see the artwork in your Steam Library.
+
 ### Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized`, and `Close Prism Launcher after game window opens` in the launcher's settings, under the `Minecraft` tab.
