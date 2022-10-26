@@ -112,7 +112,6 @@ hero:
     </div>
    </div>
    <div class="column">
-<<<<<<< HEAD
     <a class="brand-icon" href="https://github.com/PrismLauncher/PrismLauncher/" target="_blank">
      <i class="fa fa-github"></i>
     </a>

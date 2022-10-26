@@ -343,17 +343,8 @@ a.direct-link:focus:visited,
 }
 
 .brand-icon > i {
-  /* width: 100%; */
 	font-size: 10rem;
 	color: var(--primary-text);
-  padding: 0px !important;
-  margin: 0px !important;
-}
-
-.brand-icon {
-  padding: 0px !important;
-  margin: 0px !important;
-
 }
 
 /* card */
