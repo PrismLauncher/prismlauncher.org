@@ -79,8 +79,8 @@ hero:
 <h1 style="text-align: center">Want to Get Involved?</h1>
 <div class="row top infobox involded">
    <div class="column">
-    <a class="brand-icon" href="https://www.reddit.com/r/PrismLauncher/">
-     {% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}
+    <a class="brand-icon" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">
+     <i class="fa fa-reddit"></i>
     </a>
     <div>
      <h2>Reddit</h2>
@@ -90,8 +90,8 @@ hero:
     </div>
    </div>
    <div class="column">
-    <a class="brand-icon" href="https://discord.gg/prismlauncher">
-     {% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}
+    <a class="brand-icon" href="https://discord.gg/prismlauncher" target="_blank">
+     <i class="fa fa-discord"></i>
     </a>
     <div>
      <h2>Discord</h2>
@@ -101,8 +101,8 @@ hero:
     </div>
    </div>
    <div class="column">
-    <a class="brand-icon" href="https://matrix.to/#/#prismlauncher:matrix.org">
-     {% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}
+    <a class="brand-icon" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">
+     <i class="fa fa-matrix-org"></i>
     </a>
     <div>
      <h2>Matrix</h2>
@@ -112,8 +112,8 @@ hero:
     </div>
    </div>
    <div class="column">
-    <a class="brand-icon" href="https://github.com/prismlauncher/PrismLauncher/">
-     {% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
+    <a class="brand-icon" href="https://github.com/prismlauncher/PrismLauncher/" target="_blank">
+     <i class="fa fa-github"></i>
     </a>
     <div>
      <h2>Github</h2>
