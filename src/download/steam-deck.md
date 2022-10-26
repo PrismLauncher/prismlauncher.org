@@ -38,6 +38,13 @@ Now Prism Launcher should be in your Steam Library.
 
 Now that you have Prism Launcher in your Steam Library, you might want to change the artwork of your Prism Launcher Non-Steam Game, so that it looks better in your library.
 
+#### Examples
+<ul style="list-style-type: none;">
+  <li><img src="/img/Steam_Deck_PrismLauncher_1.jpg" height="240"></li>
+  <li><img src="/img/Steam_Deck_PrismLauncher_2.jpg" height="240"></li>
+  <li><img src="/img/Steam_Deck_PrismLauncher_3.jpg" height="240"></li>
+</ul>
+
 #### Setting up Artwork
 
 You first need to find artwork for Prism Launcher.
