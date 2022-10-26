@@ -40,9 +40,9 @@ Now that you have Prism Launcher in your Steam Library, you might want to change
 
 #### Examples
 
-![](/img/Steam_Deck_PrismLauncher_1.jpg)
-![](/img/Steam_Deck_PrismLauncher_2.jpg)
-![](/img/Steam_Deck_PrismLauncher_3.jpg)
+![Prism Launcher on the homescreen of the deck](/img/Steam_Deck_PrismLauncher_1.jpg)
+![Prism Launcher in the library of the deck](/img/Steam_Deck_PrismLauncher_2.jpg)
+![Prism Launcher's page in the deck](/img/Steam_Deck_PrismLauncher_3.jpg)
 
 #### Setting up Artwork
 
