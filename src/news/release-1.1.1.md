@@ -5,7 +5,7 @@ date: 2022-03-27
 tags:
   - release
 ---
-We are pleased to annouce, that PolyMC version 1.1.1 is now available.
+We are pleased to announce, that PolyMC version 1.1.1 is now available.
 This release mainly contains bug fixes.
 
 ## Changelog

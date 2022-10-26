@@ -24,14 +24,14 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Advanced MacOS install options
+## Advanced macOS install options
 
 ### Homebrew Package (community-maintained)
 
 #### Installation instructions
 
 ```bash
-brew install --cask prismlauncher
+brew install --cask --no-quarantine prismlauncher
 ```
 
 <!--

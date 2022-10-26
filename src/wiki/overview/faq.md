@@ -29,12 +29,12 @@ Development of Prism Launcher requires community members & contributors to adher
 
 ### Should I use Prism Launcher? Is PolyMC safe to use?
 
-We cannot guarantee that new changes to PolyMC will be non-malicious, and we advise that you migrate to Prism Launcher instead of continuing to risk using PolyMC. It is up to you whether or not you wish to continue using PolyMC. Prism Launcher's Code of Conduct assures development will always occur in a fair manner that does not involve political motivation.
+We cannot guarantee that new changes to PolyMC will be non-malicious, and we advise that you migrate to Prism Launcher instead of continuing to risk using PolyMC. It is up to you whether you wish to continue using PolyMC. Prism Launcher's Code of Conduct assures development will always occur in a fair manner that does not involve political motivation.
 
 ## What does this mean for the future?
 
 Prism Launcher will continue to have the same functionality as PolyMC did before [this malicious commit](https://github.com/PolyMC/PolyMC/commit/ccf282593dcdbe189c99b81b8bc90cb203aed3ee), and we will continue to add features from there. All contributors who were removed from the project have begun developing Prism Launcher. As an end-user, switching to Prism Launcher will manifest as a change in logo & name for the time being.
 
-Prism Launcher will continue to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native as well as Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.
+Prism Launcher will continue to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native and Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.
 
 Furthermore, while the MultiMC project is stated to focus on "predictability" without seeking to incorporate any "flashy features", Prism will continue to do the complete opposite, with many new and exciting features already on the horizon.

@@ -112,7 +112,7 @@ hero:
     </div>
    </div>
    <div class="column">
-    <a class="brand-icon" href="https://github.com/prismlauncher/PrismLauncher/">
+    <a class="brand-icon" href="https://github.com/PrismLauncher/PrismLauncher/">
      {% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
     </a>
     <div>

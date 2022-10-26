@@ -6,7 +6,7 @@ tags:
   - Feature
 ---
 
-Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.
+Thanks to @timoreo it is now possible to download individual mods from both curseforge and modrinth. This pull request is the first of many big changes coming to PolyMC.
 
 Screenshots of the new feature:
 
