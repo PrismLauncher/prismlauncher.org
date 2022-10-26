@@ -87,21 +87,26 @@ The .deb will be located in the directory the repo was cloned in.
 ### Building an .rpm
 
 Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
-in order to fetch sources and setup your tree.
+in order to fetch sources and set up your tree.
 You don't need to clone the repo for this; the spec file handles that.
 
 ```bash
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-misc repo
-wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/prismlauncher/prismlauncher.git/plain/prismlauncher.spec
+# get the rpm spec file from the prismlauncher-rpm repo
+git clone https://pagure.io/prismlauncher-rpm.git
+cd prismlauncher-rpm
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
+sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
+# move patch to rpmbuild sources directory
+cp change-jars-path.patch ~/rpmbuild/SOURCES 
 # now build!
 rpmbuild -bb prismlauncher.spec
+rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
@@ -145,7 +150,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
    - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
       - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
    - Hit the "Run CMake" button.
-   - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
+   - You'll see warnings, and it might not be clear that it succeeded until you scroll to the bottom of the window.
    - Hit "Finish" if CMake ran successfully.
 
 6. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
@@ -156,7 +161,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 
 ## Windows
 
-We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
+We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.
 
 ### Dependencies
 
@@ -234,12 +239,12 @@ cmake \
  -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  -DLauncher_BUILD_PLATFORM=macOS
-#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)
+#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
  ..
 make install
 ```
 
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
+Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
 
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
@@ -303,7 +308,7 @@ You can [download it here](https://ccache.dev/download.html). After setting up, 
 
 To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
 
-Then, you need to setup the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.
+Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.
 
 1. Add the path to your Qt `include` folder to `includePath`
 2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
