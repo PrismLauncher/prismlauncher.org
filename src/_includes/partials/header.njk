@@ -3,7 +3,10 @@
   <nav class="container">
     <div class="navbar">
       <a class="home" href="{{ '/' | url }}" aria-label="Prism Launcher">
-        <img src="/img/logo.svg" alt="Prism Launcher logo" />
+        <picture>
+          <source srcset="/img/logo-text.svg" media="(prefers-color-scheme: light)">
+          <img class="prismLogo" src="/img/logo-text-darkmode.svg" alt="Prism Launcher logo" />
+        </picture>
       </a>
       <ul class="main-menu">
         {%- for entry in collections.nav | eleventyNavigation %}
