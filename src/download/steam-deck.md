@@ -40,11 +40,9 @@ Now that you have Prism Launcher in your Steam Library, you might want to change
 
 #### Examples
 
-<ul style="list-style-type: none;">
-  <li><img src="/img/Steam_Deck_PrismLauncher_1.jpg" height="240"></li>
-  <li><img src="/img/Steam_Deck_PrismLauncher_2.jpg" height="240"></li>
-  <li><img src="/img/Steam_Deck_PrismLauncher_3.jpg" height="240"></li>
-</ul>
+![](/img/Steam_Deck_PrismLauncher_1.jpg)
+![](/img/Steam_Deck_PrismLauncher_2.jpg)
+![](/img/Steam_Deck_PrismLauncher_3.jpg)
 
 #### Setting up Artwork
 
