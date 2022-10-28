@@ -179,6 +179,12 @@ Only available for users running Fedora 37 and up.
 sudo dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 # stable releases
 sudo dnf install prismlauncher
+# latest builds
+sudo dnf install prismlauncher-nightly
+# stable Qt 5 releases
+sudo dnf install prismlauncher-qt5
+# latest Qt 5 builds
+sudo dnf install prismlauncher-qt5-nightly
 ```
 
 </div>
