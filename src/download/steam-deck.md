@@ -22,7 +22,7 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Installation infomation
+## Installation information
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
 This can be done by searching for `Prism Launcher` in the Discover software center, in *Desktop Mode*.
@@ -38,39 +38,35 @@ Now Prism Launcher should be in your Steam Library.
 
 Now that you have Prism Launcher in your Steam Library, you might want to change the artwork of your Prism Launcher Non-Steam Game, so that it looks better in your library.
 
+#### Examples
+
+![Prism Launcher on the homescreen of the deck](/img/Steam_Deck_PrismLauncher_1.jpg)
+![Prism Launcher in the library of the deck](/img/Steam_Deck_PrismLauncher_2.jpg)
+![Prism Launcher's page in the deck](/img/Steam_Deck_PrismLauncher_3.jpg)
+
 #### Setting up Artwork
 
-You first need to find artwork for Prism Launcher.
-One option is to check out [Prism Launcher's SteamGridDB page](https://www.steamgriddb.com/game/5359069) for our official artwork, as well as community-provided artwork.
+The easiest way to setup artwork on the steam deck is to use [SteamGridDBBoop](https://www.steamgriddb.com/boop).
+You can check out [Prism Launcher's SteamGridDB page](https://www.steamgriddb.com/game/5359069) for our official artwork, as well as community-provided artwork.
 Alternatively, there also is a [SteamGridDB page of Minecraft](https://www.steamgriddb.com/game/38365).
-In any case, select the artwork you'd like to use, and download it onto your Steam Deck.
+This page contains a lot of artwork for Minecraft, which can be used for Prism Launcher as well.
 
-First, we will set the **background** (also called "hero" on SteamGridDB) and the **logo**. In desktop mode, go to your steam library, and select the Prism Launcher Non-Steam Game. Right-click at the top, and select `Set Custom Background`.
+Firstly install SteamGridDB Boop on your Steam Deck via the Discover software center.
+Next right-click on Prism Launcher in your Start Menu and select "Add to Steam".
+After that, open the [SteamGridDB Boop website](https://www.steamgriddb.com/boop) and click on the "Show a test popup" button.
+If you see a popup, you can close it and continue. If not, run the following command in a terminal:
 
-<img src="https://i.imgur.com/jaqjRob.png" height="360">
+```bash
+  systemctl restart --user xdg-desktop-portal
+```
 
-Now, navigate to where you have saved the images, and select the background. I saved them in my Downloads folder, which will have the path of `/home/deck/Downloads`.
-Then do the same thing for `Set Custom Logo`, and select the logo.
+Then, click on the "Show a test popup" button again. You should now see a popup. If not, try reading the troubleshooting section on the [SteamGridDB Boop website](https://www.steamgriddb.com/boop).
 
-Additionally you can change the **cover-art** (also called "grid" on SteamGridDB).
-There are two types of cover-art, one is the normal vertical one, and the other is the wider one.
+Next Enable the "Enable SteamGridDB Boop" option in the SteamGridDB Boop settings. You should see a green notification saying "BOOP buttons enabled".
 
-To change these, you should first start Prism Launcher through Steam, and close it again.
-This way, you can now head over to your library, and right click Prism Launcher in the `RECENT GAMES` shelf.
-It should be using a **wide cover** as it's the last-played game.
-Now, right-click the cover, and select `Set custom artwork` under `Manage`.
+Head to your preferred SteamGridDB page and click on the "BOOP" button on each artwork you want to use. It is recommended to set one of each type of artwork so that it looks good in your library. You will then get a popup asking you to select the game you want to add the artwork to. Select Prism Launcher and click "OK".
 
-<img src="/img/Steam_Deck_Cover_wide.png" height="360">
-
-Navigate to where you have saved the images, and select the **wide cover-art**.
-
-Then start a different game, and close it, so that Prism Launcher is now the second game in the shelf (with a *vertical cover*).
-Now, you can again, right-click the cover, and select `Set custom artwork` under `Manage`.
-<img src="/img/Steam_Deck_Cover_vertical.png" height="360">
-Navigate to where you have saved the images, and select the **vertical cover-art**.
-
-Additionally, you can add an icon and rename the Non-Steam Game to Minecraft.
-To do so, right-click on the Prism Launcher Non-Steam Game, and select `Properties`. At the top, you can rename PrismLauncher to Minecraft, and you can change the Icon by clicking the empty square that is to the left of the name, and then select the image you want to use.
+That's it! You should now see the artwork in your Steam Library.
 
 ### Tips and Tricks
 

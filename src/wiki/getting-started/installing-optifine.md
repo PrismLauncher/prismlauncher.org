@@ -24,7 +24,14 @@ Execute the OptiFine jar file and change the selected folder location if require
 
 Now in Prism Launcher edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
-OptiFine will now be installed as a jarmod in that instance so you can remove the installer and extracted jarmod.
+OptiFine will now be installed as a jarmod in that instance, so you can remove the installer and extracted jarmod.
+
+From OptiFine Version **H1_pre2** the instructions for installing OptiFine on Prism Launcher have changed. Make sure to have the version of Minecraft that you wish to install OptiFine on installed through the vanilla launcher.
+
+1. Extract the MOD jar with the OptiFine installer
+2. Open it with any archiver
+3. Move all files from the folder called **notch** to the top folder of the archive file and click **save**.
+4. Open Prism Launcher, edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted / modified OptiFine jarmod (the file ending in _MOD.jar) and confirm.
 
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
 
@@ -34,7 +41,7 @@ Go to <https://optifine.net/downloads> and find your respective Minecraft versio
 
 Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
 
-Remember where you have kept your **.jar** file, and continue to the Prism Launcher launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
+Remember where you have kept your **.jar** file, and continue to Prism Launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
 
 ### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 

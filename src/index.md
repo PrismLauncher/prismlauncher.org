@@ -17,7 +17,7 @@ hero:
   <div class="row row-reverse">
     <div class="column">
       <div>
-        <h1>Modpack management</h1>
+        <h1>Modpack Management</h1>
         <div class="subtitle">
           Install and launch modpacks easily, while keeping them clean.
           No longer do you need to manually install them, and updating feature is coming soon. Prism Launcher can do that for you, without installing tons of separate launchers.
@@ -47,7 +47,7 @@ hero:
   <div class="row row-reverse">
     <div class="column">
       <div>
-        <h1>Minecraft instance management </h1>
+        <h1>Minecraft Instance Management </h1>
         <div class="subtitle">
           <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
           Are you tired of manually switching mods for different versions, installing modloaders?<p>
@@ -101,9 +101,9 @@ For people who don't want to use Discord, we have a Matrix Space which is bridge
 
 ---
 
-Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/prismlauncher/PrismLauncher/) under the GPL-3 license.
+Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PrismLauncher/PrismLauncher/) under the GPL-3 license.
 
-[Source for this website](https://github.com/prismlauncher/prismlauncher.github.io) is hosted under the AGPL-3 License.
+[Source for this website](https://github.com/PrismLauncher/prismlauncher.org) is hosted under the AGPL-3 License.
 
 The logo and related assets are under the CC BY-SA 4.0 license.
 </div>

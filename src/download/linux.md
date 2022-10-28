@@ -39,7 +39,7 @@ apk add prismlauncher
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
+# <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
 
 There are several AUR packages available:  
 [![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
@@ -71,7 +71,7 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux
+# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" height="20"> Red Hat Enterprise Linux
 
 RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
 If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
@@ -81,13 +81,19 @@ If you do not have the EPEL repositories enabled, please enable them [here](http
 sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
+# latest builds
+sudo dnf install prismlauncher-nightly
+# stable Qt 5 releases
+sudo dnf install prismlauncher-qt5
+# latest Qt 5 builds
+sudo dnf install prismlauncher-qt5-nightly
 ```
 
 </div>
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64)
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
@@ -129,6 +135,18 @@ una install prismlauncher-git
 ```
 
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
+  
+</div>
+  
+<div class="infobox top">
+
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
+
+Prism Launcher is avalible in the [pi-apps](https://github.com/Botspot/pi-apps) store as a deb install.
+  
+NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
+*Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+
 </div>
 
 <div class="infobox top">
@@ -144,6 +162,12 @@ RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3t
 sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
+# latest builds
+sudo dnf install prismlauncher-nightly
+# stable Qt 5 releases
+sudo dnf install prismlauncher-qt5
+# latest Qt 5 builds
+sudo dnf install prismlauncher-qt5-nightly
 ```
 
 ## Terra
@@ -194,7 +218,7 @@ Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixp
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
-RPM packages are available on the [openSUSE Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
+RPM packages are available on the [Open Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
   
 ```bash
 # add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
@@ -207,14 +231,6 @@ zypper install prismlauncher
 zypper install prismlauncher-qt5
 ```
   
-</div>
-  
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20"> Raspberry Pi
-
-Prism Launcher is avalible in [pi-apps](https://github.com/Botspot/pi-apps) repository.
-
 </div>
 
 <div class="infobox top">
