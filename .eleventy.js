@@ -75,6 +75,7 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy({
