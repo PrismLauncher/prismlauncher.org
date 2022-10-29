@@ -1,0 +1,114 @@
+- type: embed
+  embeds:
+    - title: Welcome to the Prism Launcher Discord server!
+      url: https://prismlauncher.org/
+      color: 0xdfdfdf
+      description: Prism is an open source Minecraft launcher with the ability to manage multiple instances, accounts, and mods, focused on user freedom and free redistributability.
+      image:
+        url: https://cdn.discordapp.com/attachments/1031663678979838103/1033124128141607003/prism-background.jpg
+        width: 2560
+        height: 1440
+
+- type: rules
+  rules:
+    Follow Discord's rules: "These include the [Community Guidelines](https://discord.com/guidelines) and the [Terms of Service](https://discord.com/terms)."
+    Follow our Code of Conduct: The [Code of Conduct](https://github.com/PrismLauncher/PrismLauncher/blob/develop/CODE_OF_CONDUCT.md) applies not only on GitHub but in all Prism Launcher community spaces. Those who do not intend to follow the Code of Conduct should not interact in Prism spaces.
+    Listen to and respect all community team members: Please take requests from community team members seriously and listen when one asks you to do something. If you have a problem with what a team member is asking you to do, we advise that you step away from the situation and send a private message to another team member.
+    Keep all activity legal, legitimate, and appropriate: We do not tolerate users breaking any laws, breaching a Terms of Service or an EULA, sexual content, or anything the moderators determine to be malicious or inappropriate.
+    Don't spam and don't scam: No advertisement outside of the showcase channels. Also, no NFTs.
+    Follow the given channel topic: Don't derail a discussion, and don't start conversations outside of the channel in which they're most appropriate. For example, if you start to get off-topic in an on-topic channel, ask other participants to move to an off-topic channel.
+    When requesting help, specify all relevant information and provide error logs: Help us to help you! Without this information, we won't be able to help with your issue as easily or as quickly.
+    Don't import drama or controversy from other communities: In these topics, emotions run high and opinions run even higher. To avoid arguments and other similar problems, simply avoid discussion of controversial topics from other communities.
+    Leave other launcher developers alone: We will not tolerate bashing on the developers of other launchers, including those which we have forked from.
+    Do not misuse accessibility tools: "[PluralKit](https://pluralkit.me) is here as aid for self identification purposes. Role-playing with PluralKit is not allowed."
+
+- type: links
+  title: ":link: Links"
+  color: 0xdfdfdf
+  links:
+    Website: https://prismlauncher.org
+    About: https://prismlauncher.org/about
+    News: https://prismlauncher.org/news
+    Wiki: https://prismlauncher.org/wiki
+    Support us: https://opencollective.com/prismlauncher
+    Source code: https://github.com/PrismLauncher
+    Subreddit: https://reddit.com/r/PrismLauncher
+    Twitter: https://twitter.com/PrismLauncher
+
+- type: roles
+  id: contributor-roles
+  title: Contributor roles
+  description: "These roles are for people contributing to Prism Launcher. This is on an [honor/trust system](https://en.wikipedia.org/wiki/Honor_system). If you select a role when you never actually contributed, punishments may be given.\n\nClick the button below to assign yourself any of the following roles."
+  template: "**»** {EMOJI} {MENTION}"
+
+  roles:
+    1031845074847416352:
+      description: Packager
+      emoji: 📦
+    1031856797570572329:
+      description: Design
+      emoji: 🎨
+    1031856922128830475:
+      description: Programmer
+      emoji: 🧑‍💻
+    1031856744239996928:
+      description: Documentation
+      emoji: 📚
+
+- type: roles
+  id: community-roles
+  title: Community roles
+  template: "**»** {EMOJI} {MENTION}"
+
+  roles:
+    1032568692040548373:
+      description: Programmer socks
+      emoji: "<:programmer_socks:1033131933464539146>"
+    1032829153961054230:
+      description: Trans Rights
+      emoji: "<:Trans_Launcher:1032778916705865738>"
+
+- type: roles
+  id: notification-roles
+  title: Notification roles
+  template: "**»** {MENTION}"
+
+  roles:
+    1032916758560002088:
+      description: Alert
+    1032916855641341952:
+      description: Community
+    1032917872881696780:
+      description: Linux
+    1032917907614748722:
+      description: Steam Deck
+    1032917774458175518:
+      description: macOS
+    1032917740786286623:
+      description: Windows
+
+- type: roles
+  id: pronoun-roles
+  title: Pronoun roles
+  template: "**»** {MENTION}"
+
+  roles:
+    1032833115980312607:
+      description: he/him
+    1032833117205053490:
+      description: she/her
+    1032833118203289621:
+      description: they/them
+    1032833119243481128:
+      description: it/its
+    1032833120044601445:
+      description: no pronouns (use name)
+    1032833121776844920:
+      description: any pronouns
+    1032833122884124672:
+      description: ask for pronouns
+    1032834876401012737:
+      description: check pk
+
+- type: text
+  text: https://discord.gg/prismlauncher
