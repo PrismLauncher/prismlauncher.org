@@ -166,36 +166,56 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Dependencies
 
 - [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
-  - Make sure to follow all instructions on the webpage.
 - [Java JDK 8 or later](https://adoptium.net/)
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 
 ### Preparing MSYS2
 
-1. Open either the *MSYS2 MinGW CLANG x64* (reccomended), the *MSYS2 MinGW UCRT x64*, the *MSYS2 MinGW x64*, the *MSYS2 MinGW CLANG x86* or the *MSYS2 MinGW x86* shortcut from the start menu
+1. Open one of the shortcuts from the MSYS2 folder in the Start menu
 
-   - We recommend building using the CLANG msystems of MSYS2, as they compile considerably faster and with a few less bugs.
+   - We recommend building using the CLANG64 msystems of MSYS2, as they compile considerably faster and with a few less bugs.
 
 2. Install helpers: Run `pacman -Syu pactoys git mingw-w64-x86_64-binutils` in the MSYS2 shell.
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p ninja:p`.
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p ninja:p ccache:p`.
 
-   - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p ninja:p`
+   - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p ninja:p ccache:p`
    - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
 
-1. Clone Prism Launcher by doing `git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git`, and change directory to the folder you cloned to.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -G Ninja`. These options will copy the final build to `C:\msys64\home\<your username>\PrismLauncher\install` after the build.
+1. `cd` into the folder you cloned Prism Launcher to. Put quotes around the path.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -G Ninja`. These options will copy the final build to `install` after the build.
 
-   - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
+   - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
+   - If you want to use [ccache](#ccache) to speed up recompilations, add the parameter `-DCMAKE_CXX_COMPILER_LAUNCHER=ccache`
 
 3. Now you need to run the build itself: Run `cmake --build build`.
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 5. Run the command `cmake --install build`, and it should install Prism Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 6. If you don't want Prism Launcher to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
-7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where Prism Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `cp /(msystem))/bin/libcrypto-1_1.dll /(msystem))/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
+7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where Prism Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `cp /(msystem)/bin/libcrypto-1_1.dll /(msystem)/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
 
-   - Replace *(msystem)* with the msystem you're using (e.g. on *MSYS2 MinGW CLANG x86* clang32). On 64 bit msystems like *MSYS2 MinGW CLANG x64*, you have to add a -x64 to the dlls.
+   - Replace `(msystem)` with the msystem you're using (e.g. clang64). On 64-bit msystems, like *MSYS2 CLANG64*, you have to add `-x64` to the dlls.
+
+### Using Qt Creator (optional)
+
+1. Install Qt Creator within MSYS2 using `pacboy -S qt-creator:p`
+
+   - NOTE: If you install Qt Creator within Windows itself, Qt Creator will not be able to find anything installed in MSYS2.
+
+2. (Optional) Create a shortcut to `C:\msys64\(msystem).exe qtcreator`
+
+   - Replace `(msystem)` with the msystem you're using (e.g. clang64).
+
+3. Open Qt Creator with the `qtcreator` command in MSYS2.
+4. Choose `File->Open File or Project`.
+5. Navigate to the Launcher source folder you cloned and choose `CMakeLists.txt`.
+6. When prompted to configure the project, scroll past the **many** Desktop Qt options without changing anything and click "Configure Project" at the bottom right.
+7. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
+
+   - If the project builds successfully it will run and the Launcher window will pop up.
+
+**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
 ## macOS
 
