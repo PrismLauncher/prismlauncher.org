@@ -173,7 +173,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 1. Open one of the shortcuts from the MSYS2 folder in the Start menu
 
-   - We recommend building using the CLANG64 msystems of MSYS2, as they compile considerably faster and with a few less bugs.
+   - We recommend building using the CLANG64 msystem of MSYS2, as it compiles considerably faster and with a few less bugs.
 
 2. Install helpers: Run `pacman -Syu pactoys git mingw-w64-x86_64-binutils` in the MSYS2 shell.
 3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p ninja:p ccache:p`.
