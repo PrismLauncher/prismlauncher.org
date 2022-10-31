@@ -49,12 +49,6 @@ nav {
   align-items: center;
 }
 
-.home img {
-  height: 4em;
-  width: auto;
-}
-
-
 .nav-item {
   display: inline-block;
   font-size: 1.2em;
