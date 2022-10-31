@@ -166,7 +166,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Dependencies
 
 - [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
-- [Java JDK 8 or later](https://adoptium.net/)
+- [Java Development Kit 8 or later](https://adoptium.net/)
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 
 ### Preparing MSYS2
@@ -183,7 +183,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 ### Compile from command line on Windows
 
-1. `cd` into the folder you cloned Prism Launcher to. Put quotes around the path.
+1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -G Ninja`. These options will copy the final build to the `install` folder after the build.
 
    - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
@@ -201,7 +201,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 1. Install Qt Creator within MSYS2 using `pacboy -S qt-creator:p`
 
-   - NOTE: If you install Qt Creator within Windows itself, Qt Creator will not be able to find anything installed in MSYS2.
+   - NOTE: If you install or run Qt Creator outside of MSYS2, Qt Creator will fail to find the compiler.
 
 2. (Optional) Create a shortcut to `C:\msys64\(msystem).exe qtcreator`
 
