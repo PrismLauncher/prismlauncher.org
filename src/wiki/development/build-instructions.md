@@ -184,7 +184,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 ### Compile from command line on Windows
 
 1. `cd` into the folder you cloned Prism Launcher to. Put quotes around the path.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -G Ninja`. These options will copy the final build to `install` after the build.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -G Ninja`. These options will copy the final build to the `install` folder after the build.
 
    - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
    - If you want to use [ccache](#ccache) to speed up recompilations, add the parameter `-DCMAKE_CXX_COMPILER_LAUNCHER=ccache`
