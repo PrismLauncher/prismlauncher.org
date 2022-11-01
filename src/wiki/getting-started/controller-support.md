@@ -22,7 +22,7 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilted Fabric API** mod on **Quilt** for your instance is installed.
 
-### <img src="https://cdn-raw.modrinth.com//data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
+### <img src="https://cdn-raw.modrinth.com/data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
 
 For Minecraft 1.16.5 to 1.17.1 we recommend the **LambdaControls** mod.
 
@@ -34,7 +34,7 @@ Within the in-game controls menu, you may need to change the "Mode" setting to *
 
 Remember to get the mapping using [**the app linked in the mod**](https://generalarcade.com/gamepadtool/)
 
-### <img src="https://cdn-raw.modrinth.com//data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 - 1.19.2)
+### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 - 1.19.2)
 
 Since LambdaControls got deprecated, someone decided to fork it and update it.
 
