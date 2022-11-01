@@ -26,7 +26,7 @@ eleventyNavigation:
 
 ## Legacy version
 
-There is a legacy version of Prism Launcher, primarily for older versions of Windows like Windows 7 or Windows 8.1.
+There is a legacy version of Prism Launcher, primarily for older versions of Windows like Windows 7 or Windows 8.1 and/or 32 bit Windows.
 You can download it here:
 
 - [Legacy installer (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Setup-{{version.current}}.exe)
