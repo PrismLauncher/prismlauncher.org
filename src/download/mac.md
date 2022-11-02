@@ -34,7 +34,6 @@ eleventyNavigation:
 brew install --cask --no-quarantine prismlauncher
 ```
 
-<!--
 ### MacPorts Package (community-maintained)
 
 #### Installation instructions
@@ -42,6 +41,3 @@ brew install --cask --no-quarantine prismlauncher
 ```bash
 sudo port install PrismLauncher
 ```
-  
-</div>
--->
