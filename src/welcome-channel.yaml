@@ -67,6 +67,9 @@
     1032829153961054230:
       description: Trans Rights
       emoji: "<:Trans_Launcher:1032778916705865738>"
+    1037726911616536577:
+      description: Blobfox Fanatic
+      emoji: "<:blobfox:1037727909630201857>"
 
 - type: roles
   id: notification-roles
