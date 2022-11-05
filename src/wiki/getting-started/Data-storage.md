@@ -1,9 +1,9 @@
 ---
 eleventyNavigation:
-  key: Data Storage
-  parent: Help pages
+  key: Data Locationn
+  parent: Getting Started
 --- 
-# Data Storage
+# Data Location
 
 Prism Launcher stores your data in your OS's standard application data folder. Below is a table containing the default locations:
 
