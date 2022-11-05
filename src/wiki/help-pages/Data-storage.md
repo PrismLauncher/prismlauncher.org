@@ -18,8 +18,8 @@ Prism Launcher stores your data in your OS's standard application data folder. B
 
 | Folder       | Purpose                        |
 |--------------|--------------------------------|
-| icons        | Stores instance icons.         |
-| instances    | Stores user instances.         |
+| icons        | Stores instance icons. (default) |
+| instances    | Stores user instances. (default) |
 | libraries    | Stores libraries used by Java. |
 | themes       | Stores themes.                 |
 | translations | Stores GUI translations.        |
