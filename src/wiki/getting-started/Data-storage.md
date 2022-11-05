@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Data Locationn
+  key: Data storage
   parent: Getting Started
 --- 
 # Data Location
