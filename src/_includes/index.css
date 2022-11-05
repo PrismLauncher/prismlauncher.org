@@ -1,6 +1,7 @@
 /* Colors */
 :root {
-  --primary-text: #ffffff;
+  --primary-text: #fff;
+  --primary-text-muted: #aaa;
   --grad-primary: #df6277ff;
 
   --background: #15181c;
@@ -38,6 +39,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --primary-text: #333;
+    --primary-text-muted: #666;
     --background: #ffffff;
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
