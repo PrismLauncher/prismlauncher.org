@@ -1,3 +1,7 @@
+.wiki-content h1, .wiki-content h2 {
+    border-bottom: 2px solid var(--primary-text-muted);
+}
+
 .wiki-content, .wiki-toc {
   margin-top: 1em;
 }
