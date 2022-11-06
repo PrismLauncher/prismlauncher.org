@@ -6,7 +6,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const cleanCSS = require("clean-css");
-const htmlmin = require('htmlmin');
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
@@ -164,17 +163,6 @@ module.exports = function (eleventyConfig) {
     slugify: eleventyConfig.getFilter("slug"),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
-    if (outputPath && outputPath.endsWith('.html')) {
-      return htmlmin(content, {
-        collapseWhitespace: true,
-        useShortDoctype: true,
-      });
-    } else {
-      return content;
-    }
-  });
 
   // Override Browsersync defaults (used only with --serve)
   eleventyConfig.setBrowserSyncConfig({
