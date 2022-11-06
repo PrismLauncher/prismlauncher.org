@@ -1,4 +1,6 @@
 _site/
 node_modules/
 .cache/
+
 .vscode/
+.DS_Store
