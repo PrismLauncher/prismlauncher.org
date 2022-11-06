@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTableOfContents = require("markdown-it-table-of-contents");
 const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
@@ -161,7 +162,7 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4],
     }),
     slugify: eleventyConfig.getFilter("slug"),
-  });
+  }).use(markdownItTableOfContents, {"includeLevel": [1,2,3]});
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Override Browsersync defaults (used only with --serve)
