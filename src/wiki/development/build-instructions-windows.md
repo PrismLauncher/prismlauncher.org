@@ -1,19 +1,16 @@
 ---
 eleventyNavigation:
-  key: Build instructions
+  key: Windows Build instructions
   parent: Development
-  order: 2
+  order: 3
 ---
 # Build Instructions
 
 ## Contents
 
 - [Getting the source](#getting-the-source)
-- [Linux](#linux)
-- [Windows MSVC](#windows-msvc)
-- [Windows MinGW](#windows-mingw)
-- [macOS](#macos)
-- [OpenBSD](#openbsd)
+- [MSVC](#building-with-msvc)
+- [MSYS2](#building-with-msys2)
 - [IDEs and Tooling](#ides-and-tooling)
 
 ## Getting the source
@@ -27,140 +24,7 @@ cd PrismLauncher
 
 **The rest of the documentation assumes you have already cloned the repository.**
 
-## Linux
-
-Getting the project to build and run on Linux is easy if you use any modern and up-to-date Linux distribution.
-
-### Build dependencies
-
-- A C++ compiler capable of building C++17 code.
-- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-- Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
-- cmake 3.15 or newer (`cmake` on Debian-based system)
-- ninja (`ninja-build` on Debian-based systems)
-- extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
-- zlib (`zlib1g-dev` on Debian-based system)
-- Java JDK (`openjdk-17-jdk` on Debian-based system)
-- GL headers (`libgl1-mesa-dev` on Debian-based system)
-- scdoc if you want to generate manpages (`scdoc` on Debian-based system)
-
-You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, if you want to work on the code.
-
-### Building a portable binary
-
-```bash
-cmake -S . -B build -G Ninja \
-   -DCMAKE_INSTALL_PREFIX=install
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
-
-cmake --build build
-cmake --install build
-cmake --install build --component portable
-```
-
-### Building & installing to the system
-
-This is the preferred method of installation, and is suitable for packages.
-
-```bash
-cmake -S . -B build -G Ninja \
-   -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
-   -DENABLE_LTO=ON # if you want to enable LTO/IPO
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
-
-cmake --build build
-cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
-```
-
-### Building a .deb
-
-Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
-
-```bash
-git clone https://mpr.makedeb.org/prismlauncher.git
-cd prismlauncher
-makedeb -s
-```
-
-The .deb will be located in the directory the repo was cloned in.
-
-### Building an .rpm
-
-Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
-in order to fetch sources and set up your tree.
-You don't need to clone the repo for this; the spec file handles that.
-
-```bash
-cd ~
-# setup your ~/rpmbuild directory, required for rpmbuild to work.
-rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-rpm repo
-git clone https://pagure.io/prismlauncher-rpm.git
-cd prismlauncher-rpm
-# install build dependencies
-sudo dnf builddep prismlauncher.spec
-sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
-# download build sources
-spectool -g -R prismlauncher.spec
-# move patch to rpmbuild sources directory
-cp change-jars-path.patch ~/rpmbuild/SOURCES 
-# now build!
-rpmbuild -bb prismlauncher.spec
-rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
-```
-
-The path to the .rpm packages will be printed once the build is complete.
-
-### Building a Flatpak
-
-You don't need to clone the entire Prism Launcher repo for this; the Flatpak file handles that.
-Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
-
-```bash
-git clone https://github.com/flathub/org.prismlauncher.PrismLauncher
-cd org.prismlauncher.PrismLauncher
-# remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
-```
-
-### Installing Qt using the installer (optional)
-
-1. Run the Qt installer.
-2. Choose a place to install Qt.
-3. Choose the components that you wish install.
-
-    - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-    - Alternatively you can choose Qt 6.0 or newer
-    - You need Tools/Qt Creator ticked.
-    - Other components are selected by default, you can un-tick them if you don't need them.
-
-4. Accept the license agreements.
-5. Double-check the install details and then click "Install".
-
-    - Installation can take a very long time, go grab a cup of tea or something and let it work.
-
-### Loading the project in Qt Creator (optional)
-
-1. Open Qt Creator.
-2. Choose `File->Open File or Project`.
-3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.
-4. Read the instructions that just popped up about a build location and choose one.
-5. You should see "Run CMake" in the window.
-
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
-      - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
-   - Hit the "Run CMake" button.
-   - You'll see warnings, and it might not be clear that it succeeded until you scroll to the bottom of the window.
-   - Hit "Finish" if CMake ran successfully.
-
-6. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
-
-   - If the project builds successfully it will run and the Launcher window will pop up.
-
-**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
-
-## Windows MSVC
+## Building With MSVC
 
 ### Dependencies
 
@@ -211,7 +75,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
-## Windows MinGW
+## Building with MSYS2
 
 ### Dependencies
 
@@ -248,123 +112,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
    - Replace `(msystem)` with the msystem you're using (e.g. clang64). On 64-bit msystems, like *MSYS2 CLANG64*, you have to add `-x64` to the dlls.
 
-### Using Qt Creator (optional)
-
-1. Install Qt Creator within MSYS2 using `pacboy -S qt-creator:p`
-
-   - NOTE: If you install or run Qt Creator outside of MSYS2, Qt Creator will fail to find the compiler.
-
-2. (Optional) Create a shortcut to `C:\msys64\(msystem).exe qtcreator`
-
-   - Replace `(msystem)` with the msystem you're using (e.g. clang64).
-
-3. Open Qt Creator with the `qtcreator` command in MSYS2.
-4. Choose `File->Open File or Project`.
-5. Navigate to the Launcher source folder you cloned and choose `CMakeLists.txt`.
-6. When prompted to configure the project, scroll past the **many** Desktop Qt options without changing anything and click "Configure Project" at the bottom right.
-7. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
-
-   - If the project builds successfully it will run and the Launcher window will pop up.
-
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
-
-## macOS
-
-### Install prerequisites
-
-- Install XCode Command Line tools.
-- Install the official build of CMake (<https://cmake.org/download/>).
-- Install extra-cmake-modules
-- Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
-- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
-
-Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
-
-```bash
-brew update # in the case your repositories weren't updated
-brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
-```
-
-### XCode Command Line tools
-
-If you don't have XCode Command Line tools installed, you can install them with this command:
-
-```bash
-xcode-select --install
-```
-
-### Build
-
-Choose an installation path.
-
-This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
-
-```bash
-mkdir build
-cd build
-cmake \
- -DCMAKE_BUILD_TYPE=Release \
- -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
- -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
- -DQt5_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
- -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
- -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
- -DLauncher_BUILD_PLATFORM=macOS
-#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
- ..
-make install
-```
-
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
-
-**Note:** The final app bundle may not run due to code signing issues, which
-need to be fixed with `codesign -fs -`.
-
-## OpenBSD
-
-Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.
-
-### Build dependencies
-
-- A C++ compiler capable of building C++11 code (included in base system).
-- Qt Development tools 5.12 or newer ([meta/qt5](https://openports.se/meta/qt5)).
-- cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake)).
-- extra-cmake-modules ([devel/kf5/extra-cmake-modules](https://openports.se/devel/kf5/extra-cmake-modules))
-- zlib (included in base system).
-- Java JDK ([devel/jdk-1.8](https://openports.se/devel/jdk/1.8)).
-- GL headers (included in base system).
-- lwjgl ([games/lwjgl](https://openports.se/games/lwjgl) and [games/lwjgl3](https://openports.se/games/lwjgl3)).
-
-You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.
-
-### Building a portable binary
-
-```bash
-mkdir install
-# configure the project
-cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON
-# build
-cd build
-make -j$(nproc) install
-cmake --install install --component portable
-```
-
-### Building & installing to the system
-
-This is the preferred method of installation, and is suitable for packages.
-
-```bash
-# configure everything
-cmake -S . -B build \
-   -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX="/usr/local" \ # /usr/local is default in OpenBSD and FreeBSD
-   -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
-   -DENABLE_LTO=ON # if you want to enable LTO/IPO
-cd build
-make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
-```
 
 ## IDEs and Tooling
 
@@ -375,6 +123,8 @@ There are a few tools that you can set up to make your development workflow smoo
 **ccache** is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.
 
 You can [download it here](https://ccache.dev/download.html). After setting up, builds will be incremental, and the builds after the first one will be much faster.
+
+<!-- TODO: The VS-Code instructions could be done better for windows (and in general) -->
 
 ### VS Code
 
@@ -442,3 +192,17 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
    - Choose the newly added configuration as default
 
 Now you should be able to build and test Prism Launcher with the `Build` and `Run` buttons.
+
+### Qt Creator
+
+1. Install Qt Creator within MSYS2 using `pacboy -S qt-creator:p` if building with it, otherwise you may use the regular installer or your package manager of choice (e.g. scoop)
+   - NOTE: If you install or run Qt Creator outside of MSYS2 when compiling through it, Qt Creator will fail to find the compiler.
+2. (Optional) Create a shortcut to `C:\msys64\(msystem).exe qtcreator`
+   - Replace `(msystem)` with the msystem you're using (e.g. clang64).
+3. Open Qt Creator (with the `qtcreator` command in MSYS2).
+4. Choose `File->Open File or Project`.
+5. Navigate to the Launcher source folder you cloned and choose `CMakeLists.txt`.
+6. When prompted to configure the project, scroll past the **many** Desktop Qt options without changing anything and click "Configure Project" at the bottom right.
+7. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
+
+   - If the project builds successfully it will run and the Launcher window will pop up.
