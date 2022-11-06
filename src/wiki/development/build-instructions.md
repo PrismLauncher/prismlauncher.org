@@ -10,7 +10,8 @@ eleventyNavigation:
 
 - [Getting the source](#getting-the-source)
 - [Linux](#linux)
-- [Windows](#windows)
+- [Windows MSVC](#windows-msvc)
+- [Windows MinGW](#windows-mingw)
 - [macOS](#macos)
 - [OpenBSD](#openbsd)
 - [IDEs and Tooling](#ides-and-tooling)
@@ -159,9 +160,58 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 
 **If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
-## Windows
+## Windows MSVC
 
-We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.
+### Dependencies
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/) - Software Distribution and Building Platform for Windows
+  - If you don't want install the Visual Studio IDE, go to 'Tools For Visual Studio' and download 'Build Tools for Visual Studio' instead
+  - Select 'Desktop development with C++', note that in the optional components (right side) CMake will be selected
+- [Java Development Kit 8 or later](https://adoptium.net/)
+  - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
+- [Qt](https://www.qt.io/download-qt-installer)
+  - For Qt 5 (Qt 5.15.2 is the recommended one), OpenSSL Toolkit is required
+  - For Qt 6 (Qt 6.4.0 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
+  - If you don't want to use the Qt installer, than you can use [aqt](https://github.com/miurahr/aqtinstall), see [aqt-list](https://ddalcino.github.io/aqt-list-server/) for help with command arguments.
+
+### Compile from command line on Windows using msbuild
+
+You will need to run commands from `x64 Native Tools Command Prompt` or `x86 Native Tools Command Prompt` depending on if you are building 64bit or 32bit.
+These instructions assume you are using the `x64 Native Tools Command Prompt` to build for 64bit.
+All commands are for a debug build, for release builds, replace `Debug` with `Release` in the cmake build and install commands.
+
+1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_PREFIX_PATH=C:\Qt\6.4.0\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
+
+   - If you have installed Qt in a non-default location, then change the `CMAKE_PREFIX_PATH` to `-DCMAKE_PREFIX_PATH=<Path to Qt Install>\6.4.0\msvc2019_64\lib\cmake`, replacing `<Path to Qt Install>` with the path to your Qt install.
+   - If you are building for 32bit, change `msvc2019_64` to `msvc2019`.
+   - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter and change `CMAKE_PREFIX_PATH` to point to Qt 5.
+
+3. Now you need to run the build itself: Run `cmake --build build --config Debug -- /p:UseMultiToolTask=true /p:EnforceProcessCountAcrossBuilds=true`.
+
+   - If preferred, `UseMultiToolTask` & `EnforceProcessCountAcrossBuilds` can be set as environment variables instead of passing as arguments.
+
+4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
+5. Run the command `cmake --install build --config Debug`, and it should install Prism Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+6. If you don't want Prism Launcher to store its data in `%APPDATA%`, run `cmake --install build --config Debug --component portable` after the install process.
+7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where Prism Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `robocopy D:/Qt/Tools/OpenSSL/Win_x64/bin/ install libcrypto-1_1-x64.dll libssl-1_1-x64.dll`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
+
+   - Replace `<Path to Qt Install>` with the path to your Qt install.
+   - If building for 32bit, replace `Win_x64` with `Win_x86` and remove `-x64` from the dlls names.
+
+#### Using ccache
+
+CMake with the msbuild generator currently does not support `CMAKE_CXX_COMPILER_LAUNCHER`, so the process of setting up [ccache](#ccache) differs from other build systems.
+ccache 4.7.x or newer is required for MSVC support.
+
+1. Copy `ccache.exe` and rename that copy to `cl.exe`
+2. In the build command, add `/p:TrackFileAccess=false /p:CLToolExe=cl.exe /p:CLToolPath=<path to ccache cl>` to the end of the build arguments
+
+   - Replace `<path to ccache cl>` with the path to the copy of `ccache.exe` you renamed to `cl.exe`
+
+**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
+
+## Windows MinGW
 
 ### Dependencies
 
