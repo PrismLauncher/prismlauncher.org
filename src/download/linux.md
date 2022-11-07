@@ -236,11 +236,11 @@ zypper refresh
 # stable releases (Qt6 version, only for Tumbleweed)
 zypper install prismlauncher
 # latest builds (Qt6 version, only for Tumbleweed)
-sudo dnf install prismlauncher-nightly
+zypper install prismlauncher-nightly
 # stable releases (Qt5 version, available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5
 # latest builds (avalible for Leap and Tumbleweed)
-sudo dnf install prismlauncher-qt5-nightly
+zypper install prismlauncher-qt5-nightly
 ```
   
 </div>
