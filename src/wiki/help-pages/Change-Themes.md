@@ -12,26 +12,27 @@ Themes can help you spice up your launcher appearance.
 
 Some themes are only on discord for now, but we will try to transfer them to our repository.
 
+Prism Launcher use Qt stylesheet, to make themes please look at [Qt Documentation](https://doc.qt.io/qt-6/stylesheet-reference.html).
+
 ## Themes Downloads:
 [![Prism Themes Repository](https://img.shields.io/badge/Prism--Themes--Repository-76AE88?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes)
 
 ### Themes Downloads:
 [![Breeze Dark](https://img.shields.io/badge/Breeze--Dark-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Breeze-Dark.zip)
-[![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
+[![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
 [![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
-[![Catppuccin Macchiato](https://img.shields.io/badge/Catppuccin--Macchiato-A6DA95?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Macchiato.zip)
-[![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Macchiato-DDB6F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
+[![Catppuccin Macchiato](https://img.shields.io/badge/Catppuccin--Macchiato-A6DA95?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Macchiato.zip)
+[![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Macchiato-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
 [![Dracula](https://img.shields.io/badge/Dracula-BD93F9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Dracula.zip)
-[![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
-[![Nord](https://img.shields.io/badge/Breeze--Dark-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
+[![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
+[![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
 
-#### Themes available (only on Discord for now):
+### Themes available (only on Discord for now):
 [![Borest Theme](https://img.shields.io/badge/Borest--Theme-1E1E2E?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
-[![Rangoon Lighting](https://img.shields.io/badge/Rangoon--Lighting-FFBF22?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033899002644668456)
+[![Rangoon Lighting](https://img.shields.io/badge/Rangoon--Lighting-FFBF22?style=for-the-badge&logo=discord&logoColor=333333)](https://discord.com/channels/1031648380885147709/1033899002644668456)
 [![Dark Legacy Theme](https://img.shields.io/badge/Legacy--Dark-32373C?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1032990022447661096)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033097334927654952)
 [![Deep Dark Theme](https://img.shields.io/badge/Deep--Dark--Theme-141414?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033025016910053436)
-
 
 ### Icons packs (only on Discord for now):
 [![Fluent Icons](https://img.shields.io/badge/Fluent--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033100137121194014)
@@ -43,7 +44,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 Here are the instructions to get your themes & icons up and working. 
 
 ### Themes
- - Download a theme above and copy the zip file to your Themes Directory
+ - Download a theme above and copy the zip file to your Themes Directory.
 
     - Open your local Prism Launcher Themes folder:
    
@@ -61,13 +62,13 @@ Here are the instructions to get your themes & icons up and working.
 
 - Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Colors (make sure you're changing Colors and not Icons), choose the Custom theme. Click the Close button, and enjoy your new Prism Launcher.
 
-#### Discord Themes:
+### Discord Themes:
 [![Prism Launcher Discord server](https://discordapp.com/api/guilds/1031648380885147709/widget.png?style=banner2)](https://discord.gg/prismlauncher)
 
 Instructions to install themes from Discord are located in the [#launcher-themes](https://discord.com/channels/1031648380885147709/1032673754955923598/1032673754955923598) discord channel.
 
 ### Icons Pack
-- Download a theme above and copy the zip file to your Prism Launcher Directory
+- Download a Icons pack above and copy the zip file to your Prism Launcher Directory
 
    - Open your local Prism Launcher Directory:
 
@@ -84,3 +85,38 @@ Instructions to install themes from Discord are located in the [#launcher-themes
    - In the `PrismLauncher` folder, create a new folder named `iconthemes` (you should only have to do this once).
    
 - Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Icons (make sure you're changing Icons and not Colors), choose the Custom icons. Click the Close button, and enjoy your new icons. 
+
+## Submitting Themes
+- Fork the [PrismLauncher/Themes](https://github.com/PrismLauncher/Themes) repository.
+
+- Create a folder in the [themes](https://github.com/PrismLauncher/Themes/tree/main/themes) folder named after your theme name (Example: `Rainbow-Cake`).
+
+   - In this newly created folder add files named `README.md`, `theme.json`, `themeStyle.css` and `theme.json.license`.
+   
+     - In `theme.json.license` add the text below, and replace `"Year"` with the current year, replace `"Theme Owner"` with the theme creator nickname, `"License name"` with the license of your theme.
+     
+     ```
+     SPDX-FileCopyrightText: "Year" "Theme owner"
+
+     License-Identifier: "License name"
+     ```
+   
+     - (Note: `theme.json` and `themeStyle.css` are the files that contain your theme.)
+   
+     - Format your `README.md` just like this [Template Readme](https://github.com/PrismLauncher/Themes/blob/main/README-Template.md) and replace every text between a `"` like `"This"` with their respective use.
+     
+   - Add a screenshot of your theme and rename it to `preview.png`.
+     
+     - Then create a file named `preview.png.license` and add the text below, and replace `"Year"` and `Screenshot owner"` with their respective use.
+     ```
+     SPDX-FileCopyrightText: "Year" "Screenshot owner"
+
+     SPDX-License-Identifier: CC0-1.0
+     ```
+     
+- Verify that you did everything correctly, if you did please proceed to the next and last step.
+     
+- Now you can open a Pull Request, and we will add your theme as fast as possible to the repository and website.
+
+## Submitting Icons
+- Soon
