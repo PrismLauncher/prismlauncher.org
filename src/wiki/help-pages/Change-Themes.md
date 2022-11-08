@@ -106,7 +106,8 @@ Instructions to install themes from Discord are located in the [#launcher-themes
 
     - In `theme.json.license` add the text below, and replace `"Year"` with the current year, replace `"Theme Owner"` with the theme creator nickname, `"License name"` with the license of your theme.
 
-     ```SPDX-FileCopyrightText: "Year" "Theme owner"
+     ```text
+     SPDX-FileCopyrightText: "Year" "Theme owner"
 
      License-Identifier: "License name"
      ```
@@ -119,7 +120,8 @@ Instructions to install themes from Discord are located in the [#launcher-themes
 
     - Then create a file named `preview.png.license` and add the text below, and replace `"Year"` and `Screenshot owner"` with their respective use.
 
-     ```SPDX-FileCopyrightText: "Year" "Screenshot owner"
+     ```text
+     SPDX-FileCopyrightText: "Year" "Screenshot owner"
 
      SPDX-License-Identifier: CC0-1.0
      ```
