@@ -14,11 +14,9 @@ Prism Launcher 6.0 will add support for multiple custom themes at once
 
 Some themes are only on discord for now, but we will try to transfer them to our repository.
 
-Prism Launcher use Qt stylesheet, to make themes please look at [Qt Documentation](https://doc.qt.io/qt-6/stylesheet-reference.html).
-
 ## Themes Downloads
 
-[![Prism Themes Repository](https://img.shields.io/badge/Prism--Themes--Repository-76AE88?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes)
+[![Prism Themes Repository](https://img.shields.io/badge/Prism--Themes--Repository-FDFDFC?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes)
 
 ### Themes Currently Available
 
