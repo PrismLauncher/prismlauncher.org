@@ -1,8 +1,8 @@
 ---
 eleventyNavigation:
   key: Copying
-  parent: Development
-  order: 2
+  parent: Overview
+  order: 5
 ---
 
 ## Prism Launcher
