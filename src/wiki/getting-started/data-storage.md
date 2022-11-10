@@ -2,6 +2,7 @@
 eleventyNavigation:
   key: Data storage
   parent: Getting Started
+  order: 11
 --- 
 # Data Location
 
