@@ -45,6 +45,8 @@ There are several AUR packages available:
 [![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
 [![prismlauncher-bin](https://img.shields.io/badge/aur-prismlauncher--bin-blue)](https://aur.archlinux.org/packages/prismlauncher-bin/)  
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
+  
+## Installing with an AUR helper
 
 ```bash
 # stable source package:
@@ -67,6 +69,27 @@ yay -S prismlauncher-qt5-git
 ```
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
+  
+## Installation using Chaotic-AUR
+
+If you have not already enabled the Chaotic-AUR follow their instructions on <https://aur.chaotic.cx/> to enable it.
+  
+```bash
+# stable package:
+sudo pacman -S prismlauncher
+# latest git package:
+sudo pacman -S prismlauncher-git
+```
+
+If you want to use Qt 5 to build the packages instead:
+
+```bash
+# stable Qt 5 package:
+sudo pacman -S prismlauncher-qt5
+# latest Qt 5 git package:
+sudo pacman -S prismlauncher-qt5-git
+```
+
 </div>
 
 <div class="infobox top">
