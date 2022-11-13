@@ -16,7 +16,7 @@ Older versions of Minecraft Forge for Minecraft 1.16.5 cause the game to crash o
 You can fix this by changing the Forge version in the launcher to the latest or recommended version.
 For that go to **Version** → **Select Forge** → **Change Version** → **Select newest version** → **OK**
 
-Alternatively you can download and use an older Java version (i.e. Java 8u320)
+Alternatively you can download and use an older Java version (i.e. Java 8u312)
 
 ## Common Launcher-related issues
 
