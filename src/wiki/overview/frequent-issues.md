@@ -34,9 +34,7 @@ If you are **comfortable** and **trust** Prism Launcher, then you can click on t
 
 ### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" height="20" /> Windows 7 and 8.1
 
-#### api-ms-win-core-synch-l1-2.0.dll not found?
-
-#### "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
+#### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"
 
 Prism Launcher uses Qt 6 by default on Windows, which does *not* support Windows 7 and Windows 8.1.
 
