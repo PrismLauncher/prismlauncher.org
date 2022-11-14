@@ -345,6 +345,16 @@ a.direct-link:focus:visited,
   text-align: center;
 }
 
+.subicon {
+  font-size: 1em;
+  text-align: center;
+}
+
+.brand-icon > i {
+	font-size: 10rem;
+	color: var(--primary-text);
+}
+
 /* card */
 .cards {
   display: flex;
