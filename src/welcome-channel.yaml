@@ -70,6 +70,9 @@
     1037726911616536577:
       description: Blobfox Fanatic
       emoji: "<:blobfox:1037727909630201857>"
+    1041912460803842168:
+      description: Catquake Catquake
+      emoji: "<:catquake:1039218794528247888>"
 
 - type: roles
   id: notification-roles
