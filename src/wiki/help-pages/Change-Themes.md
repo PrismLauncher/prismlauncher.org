@@ -24,7 +24,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
 [![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
 [![Catppuccin Macchiato](https://img.shields.io/badge/Catppuccin--Macchiato-A6DA95?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Macchiato.zip)
-[![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Macchiato-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
+[![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Mocha-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
 [![Dracula](https://img.shields.io/badge/Dracula-BD93F9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Dracula.zip)
 [![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
