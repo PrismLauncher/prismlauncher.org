@@ -24,4 +24,4 @@ Prism Launcher stores your data in your OS's standard application data folder. B
 | libraries    | Stores libraries used by Java. |
 | themes       | Stores themes.                 |
 | translations | Stores GUI translations.        |
-| cache        | Contains cached downloads.     |
+| cache        | Stores cached downloads.     |
