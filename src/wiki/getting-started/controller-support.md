@@ -22,17 +22,17 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilted Fabric API** mod on **Quilt** for your instance is installed.
 
-### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.17 to 1.19.2)
+### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 to 1.19.2)
 
-For Minecraft 1.17 to 1.19.2, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
+For Minecraft 1.18 to 1.19.2, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
 
 It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controls menu. Within the in-game controls menu, you may need to change the "Mode" setting to **Controller** in order for the game to respond to input from the gamepad. If it doesn't work, you can use [**the app linked in the mod**](https://generalarcade.com/gamepadtool/) to edit the controller mappings.
 
-### <img src="https://cdn-raw.modrinth.com/data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.5 to 1.17.1)
+### <img src="https://cdn-raw.modrinth.com/data/W1D3UXEc/icon.png" height="20">  LambdaControls (for Minecraft Versions 1.16.2 to 1.17.1)
 
 **NOTE:** This mod is currently unmaintained and hasn't been updated since June of 2021, so unless you really need to, use MidnightControls.
 
-For Minecraft 1.16.5 to 1.17.1, we recommend [**LambdaControls**](https://modrinth.com/mod/lambdacontrols).
+For Minecraft 1.16.2 to 1.17.1, we recommend [**LambdaControls**](https://modrinth.com/mod/lambdacontrols).
 
 It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controls menu. Within the in-game controls menu, you may need to change the "Mode" setting to **Controller** in order for the game to respond to input from the gamepad. If it doesn't work, you can use [**the app linked in the mod**](https://generalarcade.com/gamepadtool/) to edit the controller mappings.
 
