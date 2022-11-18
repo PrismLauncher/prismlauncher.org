@@ -138,7 +138,7 @@ NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 2
 
 ## Installing with an MPR helper
 
-Installing UNA
+Installing [UNA](https://github.com/AFK-OS/una)
 
 ```bash
 bash <(curl -fsL https://github.com/AFK-OS/una/raw/main/install.sh)
@@ -158,7 +158,24 @@ una install prismlauncher-git
 ```
 
 You can replace una install with your preferred [MPR helper's](https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/) install command.
-  
+
+## Installing with Pacstall
+
+Installing [Pacstall](https://pacstall.dev/)
+
+```bash
+sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)"
+```
+
+NOTE: Pacstall is unstable on Debian, due to outdated dependencies.
+
+Installing Prism Launcher
+
+```bash
+# latest git package:
+pacstall -I prismlauncher-git
+```
+
 </div>
   
 <div class="infobox top">
