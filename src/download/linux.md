@@ -241,7 +241,7 @@ Have fun! :)
 
 A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
 
-Packages are available on `nixos-small-unstable`, `nixos-unstable`, and on `nixpkgs-unstable`. Packages will be available soon on `nix-22.05`.
+Packages are available for all current Nix distributions.
 
 </div>
   
