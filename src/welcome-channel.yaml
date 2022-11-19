@@ -34,6 +34,7 @@
     Source code: https://github.com/PrismLauncher
     Subreddit: https://reddit.com/r/PrismLauncher
     Twitter: https://twitter.com/PrismLauncher
+    Mastodon: https://floss.social/@PrismLauncher
 
 - type: roles
   id: contributor-roles
@@ -92,6 +93,20 @@
       description: macOS
     1032917740786286623:
       description: Windows
+
+- type: roles
+  id: test-subject-roles
+  title: Test subject roles
+  description: "These roles are for people who want to get pinged for trying out indev test builds of Prism Launcher (such as PRs)."
+  template: "**»** {MENTION}"
+
+  roles:
+    1034838916395708536:
+      description: Test Subjects (Windows)
+    1040146494176636959:
+      description: Test Subjects (macOS)
+    1040146569506336809:
+      description: Test Subjects (Linux)
 
 - type: roles
   id: pronoun-roles
