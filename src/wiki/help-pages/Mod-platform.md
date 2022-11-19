@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: Help pages
 --- 
 
-![Mod downloader on mods tab under Prism Launcher settings](/img/Mod-platform.png)
+{% image "Mod downloader on mods tab under Prism Launcher settings", "./src/img/screenshots/ModInstallLight.png", "./src/img/screenshots/ModInstallDark.png" %}
 
 In this page, you can download mods from Modrinth and CurseForge.
 
