@@ -130,7 +130,7 @@ Instructions to install themes from Discord are located in the [#launcher-themes
 
 - Verify that you did everything correctly, if you did please proceed to the next and last step.
 
-- Make sure to ensure REUSE compliance learn more at the [reuse.software](https://reuse.software)
+- Make sure to ensure REUSE compliance learn more at [reuse.software](https://reuse.software)
 
 - Now you can open a Pull Request, and we will add your theme as fast as possible to the repository and website.
 
