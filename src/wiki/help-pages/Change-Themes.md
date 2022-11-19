@@ -20,6 +20,8 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 ### Themes Currently Available
 
+[![Amoled](https://img.shields.io/badge/Amoled-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Amoled.zip)
+[![BD Blue](https://img.shields.io/badge/BD--Blue-4989E6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/BD-Blue.zip)
 [![Breeze Dark](https://img.shields.io/badge/Breeze--Dark-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Breeze-Dark.zip)
 [![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
 [![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
@@ -27,6 +29,8 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Mocha-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
 [![Dracula](https://img.shields.io/badge/Dracula-BD93F9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Dracula.zip)
 [![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
+[![Nord Polar Night](https://img.shields.io/badge/Nord--Polar--Night-4C566A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Polar-Night.zip)
+[![Nord Snow Storm](https://img.shields.io/badge/Nord--Snow--Storm-E5E9F0?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Snow-Storm.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
 
 ### Themes Available only on Discord for now
@@ -125,6 +129,8 @@ Instructions to install themes from Discord are located in the [#launcher-themes
      ```
 
 - Verify that you did everything correctly, if you did please proceed to the next and last step.
+
+- Make sure to ensure REUSE compliance learn more at [reuse.software](https://reuse.software)
 
 - Now you can open a Pull Request, and we will add your theme as fast as possible to the repository and website.
 
