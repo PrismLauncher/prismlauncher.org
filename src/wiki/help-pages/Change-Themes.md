@@ -111,7 +111,7 @@ Instructions to install themes from Discord are located in the [#launcher-themes
      ```text
      SPDX-FileCopyrightText: "Year" "Theme owner"
 
-     License-Identifier: "License name"
+     SPDX-License-Identifier: "License SPDX Identifier"
      ```
 
     - (Note: `theme.json` and `themeStyle.css` are the files that contain your theme.)
