@@ -93,7 +93,7 @@ To talk directly to us and get involved with development:
 
 ## Matrix
 
-For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
+For people who don't want to use Discord, we have a Matrix Space:
 
 <a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
 
