@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: Launcher Settings
+  key: APIs
   parent: Help pages
 --- 
 
