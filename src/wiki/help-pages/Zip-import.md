@@ -6,7 +6,7 @@ eleventyNavigation:
 
 <div class="row">
   <div class="column">
-      {% image "Import von zip tab under PrismLauncher New Instances", "./src/img/screenshots/NewInstanceImportFromZipLight.png", "./src/img/screenshots/NewInstanceImportFromZipDark.png" %}
+      {% image "Import from zip tab under PrismLauncher New Instances", "./src/img/screenshots/NewInstanceImportFromZipLight.png", "./src/img/screenshots/NewInstanceImportFromZipDark.png" %}
   </div>
 </div>
 
