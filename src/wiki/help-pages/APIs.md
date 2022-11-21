@@ -8,7 +8,7 @@ eleventyNavigation:
 
 <div class="row">
   <div class="column">
-      {% image "Features tab under Launcher tab in settings", "./src/img/screenshots/SettingsAPIsServicesLight.png", "./src/img/screenshots/SettingsAPIsServicesDark.png" %}
+      {% image "Services tab under APIs tab in settings", "./src/img/screenshots/SettingsAPIsServicesLight.png", "./src/img/screenshots/SettingsAPIsServicesDark.png" %}
   </div>
 </div>
 
@@ -28,7 +28,7 @@ This is where you can set where the launcher gets it metadata.
 
 <div class="row">
   <div class="column">
-      {% image "User Interface tab under Launcher tab in settings", "./src/img/screenshots/SettingsAPIsAPIKeysLight.png", "./src/img/screenshots/SettingsAPIsAPIKeysDark.png" %}
+      {% image "User API Keys tab under APIs tab in settings", "./src/img/screenshots/SettingsAPIsAPIKeysLight.png", "./src/img/screenshots/SettingsAPIsAPIKeysDark.png" %}
   </div>
 </div>
 
@@ -48,7 +48,7 @@ Set this if you want to use your own CurseForge API key.
 
 <div class="row">
   <div class="column">
-      {% image "Console tab under Launcher tab in settings", "./src/img/screenshots/SettingsAPIsMiscellaneousLight.png", "./src/img/screenshots/SettingsAPIsMiscellaneousDark.png" %}
+      {% image "Miscellaneous tab under APIs tab in settings", "./src/img/screenshots/SettingsAPIsMiscellaneousLight.png", "./src/img/screenshots/SettingsAPIsMiscellaneousDark.png" %}
   </div>
 </div>
 

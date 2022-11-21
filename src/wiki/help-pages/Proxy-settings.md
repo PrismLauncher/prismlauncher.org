@@ -6,7 +6,7 @@ eleventyNavigation:
 
 <div class="row">
   <div class="column">
-      {% image "Mods tab under PrismLauncher settings", "./src/img/screenshots/SettingsProxyLight.png", "./src/img/screenshots/SettingsProxyDark.png" %}
+      {% image "Proxy tab under PrismLauncher settings", "./src/img/screenshots/SettingsProxyLight.png", "./src/img/screenshots/SettingsProxyDark.png" %}
   </div>
 </div>
 
