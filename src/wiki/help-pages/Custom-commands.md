@@ -6,7 +6,7 @@ eleventyNavigation:
 
 <div class="row">
   <div class="column">
-      {% image "Mods tab under PrismLauncher settings", "./src/img/screenshots/SettingsCustomCommandsLight.png", "./src/img/screenshots/SettingsCustomCommandsDark.png" %}
+      {% image "Custom Commands tab in settings", "./src/img/screenshots/SettingsCustomCommandsLight.png", "./src/img/screenshots/SettingsCustomCommandsDark.png" %}
   </div>
 </div>
 
