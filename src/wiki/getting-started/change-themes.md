@@ -1,7 +1,8 @@
 ---
 eleventyNavigation:
   key: Change Themes
-  parent: Help pages
+  parent: Getting Started
+  order: 11
 --- 
 
 # How to change your Themes in Prism Launcher
