@@ -171,7 +171,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 - [Qt](https://www.qt.io/download-qt-installer)
   - For Qt 5 (Qt 5.15.2 is the recommended one), OpenSSL Toolkit is required
-  - For Qt 6 (Qt 6.4.0 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
+  - For Qt 6 (Qt 6.4.1 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
   - If you don't want to use the Qt installer, than you can use [aqt](https://github.com/miurahr/aqtinstall), see [aqt-list](https://ddalcino.github.io/aqt-list-server/) for help with command arguments.
 
 ### Compile from command line on Windows using msbuild
@@ -181,9 +181,10 @@ These instructions assume you are using the `x64 Native Tools Command Prompt` to
 All commands are for a debug build, for release builds, replace `Debug` with `Release` in the cmake build and install commands.
 
 1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_PREFIX_PATH=C:\Qt\6.4.0\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_PREFIX_PATH=C:\Qt\6.4.1\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
 
-   - If you have installed Qt in a non-default location, then change the `CMAKE_PREFIX_PATH` to `-DCMAKE_PREFIX_PATH=<Path to Qt Install>\6.4.0\msvc2019_64\lib\cmake`, replacing `<Path to Qt Install>` with the path to your Qt install.
+   - If you have installed Qt in a non-default location, then change the `CMAKE_PREFIX_PATH` to `-DCMAKE_PREFIX_PATH=<Path to Qt Install>\6.4.1\msvc2019_64\lib\cmake`, replacing `<Path to Qt Install>` with the path to your Qt install.
+   - Change `6.4.1` to whatever version of Qt you're using if necessary.
    - If you are building for 32bit, change `msvc2019_64` to `msvc2019`.
    - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter and change `CMAKE_PREFIX_PATH` to point to Qt 5.
 
