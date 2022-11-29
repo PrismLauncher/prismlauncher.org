@@ -23,9 +23,9 @@
     Leave other launcher developers alone: We will not tolerate bashing on the developers of other launchers, including those which we have forked from.
 
 - type: rules
+  startingIndex: 11
   rules:
     Do not misuse accessibility tools: "[PluralKit](https://pluralkit.me) is here as aid for self identification purposes. Role-playing with PluralKit is not allowed."
-  startingIndex: 11
 
 - type: links
   title: ":link: Links"
