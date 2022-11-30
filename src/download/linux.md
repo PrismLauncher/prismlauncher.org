@@ -12,6 +12,7 @@ eleventyNavigation:
         <h1>Linux Download</h1>
         <br>
         <a class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank">Install from FlatHub</a>
+        <a class="button size-large type-link" href="https://snapcraft.io/prismlauncher" target="_blank">Install from Snapcraft</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
@@ -283,6 +284,25 @@ zypper install prismlauncher-qt5
 zypper install prismlauncher-qt5-nightly
 ```
   
+</div>
+
+<div class="infobox top">
+
+# <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_snapcraft.svg" height="20" /> Snap Package
+
+Prism Launcher is available in the [Snapcraft Store](https://snapcraft.io/) store as a snap install:
+
+[![snap-status-badge](https://snapcraft.io/prismlauncher/badge.svg)](https://snapcraft.io/prismlauncher)
+
+[![snap-store-badge](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/prismlauncher)
+
+```bash
+# stable releases
+sudo snap install prismlauncher
+# latest builds
+sudo snap install prismlauncher --edge
+```
+
 </div>
 
 <div class="infobox top">
