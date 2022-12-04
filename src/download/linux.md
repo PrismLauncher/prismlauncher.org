@@ -196,8 +196,10 @@ NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
 ## Copr
-  
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+
+RPM packages for Fedora are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+
+Nightly builds are updated in the [Terra repository](https://terra.fyralabs.com/) and built on Copr every 24 hours.
 
 ```bash
 # enables the copr repo
