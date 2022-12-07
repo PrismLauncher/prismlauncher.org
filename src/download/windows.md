@@ -15,7 +15,7 @@ eleventyNavigation:
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
-        <p>Windows 7/8 32/64 bit</p>
+        <p>Windows 7/8.1 32/64 bit and Windows 10 32 bit</p>
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Setup-{{version.current}}.exe">Legacy Installer (.exe)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Portable-{{version.current}}.zip">Legacy Portable (.zip)</a>
