@@ -65,7 +65,7 @@ While on some modpacks/with some mods they're going to work good, with others th
 
 To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
 
-### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.16.5/src/main/resources/oculus-logo.png" height="20"> Oculus
+### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" height="20"> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
 
