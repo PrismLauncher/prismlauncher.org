@@ -8,17 +8,17 @@ eleventyNavigation:
 # Using Prism Launcher via the Command Line
 
 ```text
-Usage: prismlauncher [-h] [-V] [-d <dir>] [-l <launch>] [-s <server>] [-a <profile>] [--alive] [-I <import>]
+Usage: prismlauncher [-h] [-V] [-d &lt;dir&gt;] [-l &lt;launch&gt;] [-s &lt;server&gt;] [-a &lt;profile&gt;] [--alive] [-I &lt;import&gt;]
 
 Options & Switches:
   -h, --help            Display this help and exit.
   -V, --version         Display program version and exit.
-  -d, --dir <dir>       Use the supplied folder as application root instead of the binary location (use '.' for current)
-  -l, --launch <launch> Launch the specified instance (by instance ID)
-  -s, --server <server> Join the specified server on launch (only valid in combination with --launch)
-  -a, --profile <profile> Use the account specified by its profile name (only valid in combination with --launch)
+  -d, --dir &lt;dir&gt;       Use the supplied folder as application root instead of the binary location (use '.' for current)
+  -l, --launch &lt;launch&gt; Launch the specified instance (by instance ID)
+  -s, --server &lt;server&gt; Join the specified server on launch (only valid in combination with --launch)
+  -a, --profile &lt;profile&gt; Use the account specified by its profile name (only valid in combination with --launch)
   --alive               Write a small 'live.check' file after the launcher starts
-  -I, --import <import> Import instance from specified zip (local path or URL)
+  -I, --import &lt;import&gt; Import instance from specified zip (local path or URL)
 ```
 
 ## What is an instance ID, and where do I find it?
