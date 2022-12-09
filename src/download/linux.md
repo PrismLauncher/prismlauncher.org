@@ -198,30 +198,13 @@ NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and 
 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
 
-## Copr
-  
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+RPM packages for Fedora are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
+
+Nightly builds are updated in the [Terra repository](https://terra.fyralabs.com/) and built on Copr every 24 hours.
 
 ```bash
 # enables the copr repo
 sudo dnf copr enable g3tchoo/prismlauncher
-# stable releases
-sudo dnf install prismlauncher
-# latest builds
-sudo dnf install prismlauncher-nightly
-# stable Qt 5 releases
-sudo dnf install prismlauncher-qt5
-# latest Qt 5 builds
-sudo dnf install prismlauncher-qt5-nightly
-```
-
-## Terra
-
-Only available for users running Fedora 37 and up.
-  
-```bash
-# enables the terra repository
-sudo dnf config-manager --add-repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 # stable releases
 sudo dnf install prismlauncher
 # latest builds
