@@ -97,21 +97,23 @@ sudo pacman -S prismlauncher-qt5-git
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" height="20"> Red Hat Enterprise Linux
+# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" height="20"> Red Hat Enterprise Linux
 
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/). <br />
-If you do not have the EPEL repositories enabled, please enable them [here](https://www.redhat.com/sysadmin/install-epel-linux).
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/) for x86_64 and aarch64.
+If you are on an Enterprise Linux distribution (RHEL, CentOS, Rocky, etc.) and do not have the EPEL repositories enabled, please enable them [here](https://docs.fedoraproject.org/en-US/epel/#_el9).
+
+Nightly builds are updated automatically in the [Terra repository](https://terra.fyralabs.com/) and built on Copr every 24 hours.
 
 ```bash
 # enables the copr repo
 sudo dnf copr enable g3tchoo/prismlauncher
 # stable releases
 sudo dnf install prismlauncher
-# latest builds
+# nightly builds
 sudo dnf install prismlauncher-nightly
 # stable Qt 5 releases
 sudo dnf install prismlauncher-qt5
-# latest Qt 5 builds
+# nightly Qt 5 builds
 sudo dnf install prismlauncher-qt5-nightly
 ```
 
@@ -191,29 +193,6 @@ Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps)
 
 NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
 *Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
-
-</div>
-
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora
-
-RPM packages for Fedora are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/).
-
-Nightly builds are updated in the [Terra repository](https://terra.fyralabs.com/) and built on Copr every 24 hours.
-
-```bash
-# enables the copr repo
-sudo dnf copr enable g3tchoo/prismlauncher
-# stable releases
-sudo dnf install prismlauncher
-# latest builds
-sudo dnf install prismlauncher-nightly
-# stable Qt 5 releases
-sudo dnf install prismlauncher-qt5
-# latest Qt 5 builds
-sudo dnf install prismlauncher-qt5-nightly
-```
 
 </div>
 
