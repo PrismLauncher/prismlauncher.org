@@ -35,7 +35,7 @@ eleventyNavigation:
 
 - [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
 - [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
-- [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-MSVC-Windows-Legacy-{{version.current}}.zip)
+- [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
