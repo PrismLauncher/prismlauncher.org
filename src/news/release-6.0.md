@@ -2,7 +2,7 @@
 title: Prism Launcher Release 6.0, now available
 description: Bees, bees, bees, bees!
 date: 2022-12-12
-release_version: 6.0
+release_version: "6.0"
 minimum_macos_version: 10.15.0
 mac_signature: QY1DCk7gQrngyD8qLdLY3a3GOO27NpktQo8EsJDkAV5M1RoB3krnonYL30rFJihIlNDszOvPopPRNGYJKIeADQ==
 tags:

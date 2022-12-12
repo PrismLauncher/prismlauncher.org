@@ -2,7 +2,7 @@
 title: Prism Launcher Release 5.1, now available
 description: Too Many Fixes
 date: 2022-11-01
-release_version: 5.1
+release_version: "5.1"
 minimum_macos_version: 10.14.0
 mac_signature: zhCyEPFNlcFExp/OSulGn4HXU6fv66vQ/gWDUN+99mqyMJ1HiPcVpJ2/u4e8hyaPGn8hU/jTHHOrRqxC5xIVDg==
 tags:
