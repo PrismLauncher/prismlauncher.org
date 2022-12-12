@@ -7,11 +7,7 @@ eleventyNavigation:
 
 # How to change your Themes in Prism Launcher
 
-Themes can help you spice up your launcher appearance
-
-Prism Launcher 6.0 will add support for multiple custom themes at once
-
-***This section will be updated accordingly***
+Themes can help you spice up your launcher appearance.
 
 Some themes are only on discord for now, but we will try to transfer them to our repository.
 
@@ -53,6 +49,8 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 Here are the instructions to get your themes & icons up and working.
 
+***Make sure you are using Prism Launcher 6.0 or later***
+
 ### Themes
 
 - Download a theme above and copy the zip file to your Themes Directory.
@@ -67,11 +65,9 @@ Here are the instructions to get your themes & icons up and working.
 
     - on **Flatpak:** `~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/themes`
 
-- Rename the `custom` folder to whatever you want (Example `old` or `previous`).
+- Unzip the newly downloaded theme in the `themes` folder.
 
-- Unzip the theme and rename the newly added folder to `custom`.
-
-- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Colors (make sure you're changing Colors and not Icons), choose the Custom theme. Click the Close button, and enjoy your new Prism Launcher.
+- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Colors (make sure you're changing Colors and not Icons), choose the newly added theme. Click the Close button, and enjoy your fresh new Prism Launcher.
 
 ### Discord Themes
 
