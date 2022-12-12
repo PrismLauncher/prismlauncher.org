@@ -2,7 +2,7 @@
 title: Prism Launcher Release 5.0, now available
 description: Your game has crashed!
 date: 2022-10-19
-release_version: 5.0
+release_version: "5.0"
 minimum_macos_version: 10.14.0
 mac_signature: tTJSqjcCl47ih9LxrsMQLhcFjerfeVxW4rWXfEZ60wuR0Z0if1ZyHIEHrd26pYrL5/WyihgJbN1FLFQKyl/lCg==
 tags:
