@@ -18,9 +18,9 @@ Thanks to all contributors, who have worked on this release!
 
 ### Added
 
-- Add Add agents button to instance settings by @TheKodeToad in #423
-- add Breeze icons by @TayouVR and @DioEgizio in #487 #572 #584
-- Add Create shortcut button by @Leo40Git, @Scrumplex and @DioEgizio in #227 #521 #565 #568
+- Add agents button to instance settings by @TheKodeToad in #423
+- Add breeze icons by @TayouVR and @DioEgizio in #487 #572 #584
+- Add shortcut creation button by @Leo40Git, @Scrumplex and @DioEgizio in #227 #521 #565 #568
 - Add new cats by @santiagocezar in #372
 - Add an option to lock the toolbars by @leo78913 in #383
 - Add commit hash to `--version` by @FayneAldan in #431
