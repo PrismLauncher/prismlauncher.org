@@ -11,14 +11,16 @@ eleventyNavigation:
     <div class="column">
       <div>
         <h1>Windows Download</h1>
-        <p>Windows 10/11 64bit ONLY</p>
+        <h2>Windows 10/11 64bit</h2>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Setup-{{version.current}}.exe">Installer (.exe)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Portable-{{version.current}}.zip">Portable (.zip)</a>
+        <h2>Windows 10/11 ARM64</h2>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Setup-{{version.current}}.exe">Installer (ARM64) (.exe)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Portable-{{version.current}}.zip">Portable (ARM64) (.zip)</a>
+        <h2>Windows 7/8.1 32/64 bit and Windows 10 32 bit</h2>
         <br>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Setup-{{version.current}}.exe">Installer (.exe)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Portable-{{version.current}}.zip">Portable (.zip)</a>
-        <p>Windows 7/8.1 32/64 bit and Windows 10 32 bit</p>
-        <br>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Setup-{{version.current}}.exe">Legacy Installer (.exe)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-Portable-{{version.current}}.zip">Legacy Portable (.zip)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-Setup-{{version.current}}.exe">Installer (Legacy) (.exe)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-Portable-{{version.current}}.zip">Portable (Legacy) (.zip)</a>
       </div>
     </div>
     <div class="column">
@@ -31,8 +33,9 @@ eleventyNavigation:
 
 ## Advanced Windows install options
 
-- [System Install (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-{{version.current}}.zip)
-- [Legacy system install (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-Legacy-{{version.current}}.zip)
+- [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
+- [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
+- [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-MSVC-Windows-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
