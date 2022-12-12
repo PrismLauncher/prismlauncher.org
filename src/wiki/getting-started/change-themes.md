@@ -49,7 +49,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 Here are the instructions to get your themes & icons up and working.
 
-**Make sure you are using Prism Launcher 6.0 or later**
+***Make sure you are using Prism Launcher 6.0 or later***
 
 ### Themes
 
