@@ -110,7 +110,7 @@ rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead 
 
 The path to the .rpm packages will be printed once the build is complete.
 
-### Build an .rpm for openSUSE
+### Building an .rpm for openSUSE
 
 Unlike Fedora, the openSUSE packages depend on the [Open Build Service](https://build.opensuse.org/), so you will need to install the command line tool `osc` by following [this](https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.osc.html#sec.obs.osc.install) guide.
 It also uses the [obs_scm](https://github.com/openSUSE/obs-service-tar_scm) service, which is available in the `obs-service-obs_scm` package if it's not already installed.
