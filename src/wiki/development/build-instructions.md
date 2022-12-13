@@ -87,7 +87,7 @@ The .deb will be located in the directory the repo was cloned in.
 
 ### Building an .rpm for Fedora
 
-Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
+Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package,
 in order to fetch sources and set up your tree.
 You don't need to clone the repo for this; the spec file handles that.
 
