@@ -22,6 +22,16 @@ Alternatively you can download and use an older Java version (i.e. Java 8u312)
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
 
+#### "MSVCP140_2.dll was not found"?
+
+Since Prism Launcher 6.0, Prism is compiled using [MSVC](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B) on Windows.
+As a consequence of this, like most apps on Windows, you have to install vcredist for Prism to run.
+You need:
+
+- [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
+- [vcredist 2022 x86](https://aka.ms/vs/17/release/vc_redist.x86.exe) if you're using PrismLauncher-Windows-MSVC-Legacy (the reccomended version for Windows 7/8.1 and Windows 10 32 bit)
+- [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
+
 #### How do I open a .zip file?
 
 Windows by default can "open" **.zip** archive files, but in order to use Prism Launcher, you will want to **extract** it instead.
