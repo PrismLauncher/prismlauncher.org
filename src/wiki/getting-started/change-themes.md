@@ -34,7 +34,6 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 [![Borest Theme](https://img.shields.io/badge/Borest--Theme-1E1E2E?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
 [![Rangoon Lighting](https://img.shields.io/badge/Rangoon--Lighting-FFBF22?style=for-the-badge&logo=discord&logoColor=333333)](https://discord.com/channels/1031648380885147709/1033899002644668456)
-[![Dark Legacy Theme](https://img.shields.io/badge/Legacy--Dark-32373C?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1032990022447661096)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033097334927654952)
 [![Deep Dark Theme](https://img.shields.io/badge/Deep--Dark--Theme-141414?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033025016910053436)
 
@@ -42,7 +41,6 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 [![Fluent Icons](https://img.shields.io/badge/Fluent--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033100137121194014)
 [![Borest Icons](https://img.shields.io/badge/Borest--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
-[![Flat White Icons](https://img.shields.io/badge/Flat--White--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033064498631811112)
 [![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033564896807362641)
 
 ## How to install Themes & Icons
