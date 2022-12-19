@@ -11,6 +11,9 @@ tags:
 
 Hello!
 
+This is a small update that fixes some issues, most of which were introduced by our previous 6.0 release.
+Thanks to all contributors!
+
 ## Changelog
 
 ### Changed
