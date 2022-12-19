@@ -1,6 +1,10 @@
 ---
 layout: layouts/main.njk
 title: Home
+tags: nav
+eleventyNavigation:
+  key: Home
+  order: 1
 hero:
   title: 'Prism Launcher'
   description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
