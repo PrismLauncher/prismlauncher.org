@@ -15,7 +15,7 @@ Hello!
 
 ### Changed
 
-- Move cat to the bottom right by [@DioEgizio](https://github.com/DioEgizio) in [#612](https://github.com/PrismLauncher/PrismLauncher/pull/612)85)
+- Move cat to the bottom right by [@DioEgizio](https://github.com/DioEgizio) in [#612](https://github.com/PrismLauncher/PrismLauncher/pull/612)
 - Only show scrollbars when needed by [@leo78913](https://github.com/leo78913) in [#630](https://github.com/PrismLauncher/PrismLauncher/pull/630)
 - [Linux] Update Nix packaging by [@Scrumplex](https://github.com/Scrumplex) in [#647](https://github.com/PrismLauncher/PrismLauncher/pull/647)
 - [Windows] Improve MSVC build flags by [@getchoo](https://github.com/getchoo) in [#631](https://github.com/PrismLauncher/PrismLauncher/pull/631)
