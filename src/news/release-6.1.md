@@ -4,7 +4,7 @@ description: More addictive than lemonade!
 date: 2022-12-19
 release_version: "6.1"
 minimum_macos_version: 10.15.0
-mac_signature: QY1DCk7gQrngyD8qLdLY3a3GOO27NpktQo8EsJDkAV5M1RoB3krnonYL30rFJihIlNDszOvPopPRNGYJKIeADQ==
+mac_signature: 76S99OXja/WJbqYQvV9BoEAlTV4khWeZWCjcXKFHnXkgkZD18yXcBXAdY/BK0dhQrX1IbHZu3JKhEVyjFwKmCA==
 tags:
   - release
 ---
