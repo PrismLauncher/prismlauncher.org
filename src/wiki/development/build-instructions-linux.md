@@ -8,15 +8,7 @@ eleventyNavigation:
 
 ## Contents
 
-- [Getting the source](#getting-the-source)
-- [Dependencies](#build-dependencies)
-- [Portable Build](#building-a-portable-binary)
-- [Installing to System](#building-and-installing-to-the-system)
-- [Debian Package](#building-a-.deb)
-- [RPM Package](#building-an-.rpm)
-- [Flatpak Package](#building-a-flatpak)
-- [Installing Qt using Qt Installer](#installing-qt-using-the-installer-(optional))
-- [IDEs and Tooling](#ides-and-tooling)
+[[toc]]
 
 ## Getting the source
 

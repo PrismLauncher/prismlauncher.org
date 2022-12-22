@@ -8,10 +8,7 @@ eleventyNavigation:
 
 ## Contents
 
-- [Getting the source](#getting-the-source)
-- [Install Prerequisites](#install-prerequisites)
-- [Build](#build)
-- [IDEs and Tooling](#ides-and-tooling)
+[[toc]]
 
 ## Getting the source
 

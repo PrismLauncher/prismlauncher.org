@@ -8,10 +8,7 @@ eleventyNavigation:
 
 ## Contents
 
-- [Getting the source](#getting-the-source)
-- [MSVC](#building-with-msvc)
-- [MSYS2](#building-with-msys2)
-- [IDEs and Tooling](#ides-and-tooling)
+[[toc]]
 
 ## Getting the source
 
