@@ -85,6 +85,10 @@ hero:
 
 <a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
 
+## GitHub Discussions
+
+<a class="button type-link size-small" href="https://github.com/PrismLauncher/PrismLauncher/discussions" target="_blank">PrismLauncher GitHub Discussions</a>
+
 ## Discord
 
 To talk directly to us and get involved with development:
