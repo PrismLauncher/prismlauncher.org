@@ -8,12 +8,7 @@ eleventyNavigation:
 
 ## Contents
 
-- [Getting the source](#getting-the-source)
-- [Build Dependencies](#build-dependencies)
-- [Portable Build](#building-a-portable-binary)
-- [System Install](#building-and-installing-to-the-system)
-<!-- no IDEs and Tooling for OpenBSD for now, If someone wants to add any tools here feel free to do so
-- [IDEs and Tooling](#ides-and-tooling) -->
+[[toc]]
 
 ## Getting the source
 
