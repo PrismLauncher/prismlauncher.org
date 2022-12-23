@@ -1,56 +1,72 @@
 <header>
-  <div class="bg"></div>
-  <nav class="container">
-    <div class="navbar">
-      <a class="home" href="{{ '/' | url }}" aria-label="Prism Launcher">
-        <picture>
-          <source srcset="/img/logo-text-darkmode.svg" media="(prefers-color-scheme: dark)">
-          <img src="/img/logo-text.svg" alt="Prism Launcher logo" style="height: 4em; width: 12em" />
-        </picture>
-      </a>
-      <ul class="main-menu">
-        {%- for entry in collections.nav | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-        </li>
-        {%- endfor %}
-      </ul>
-    </div>
-    <div class="links">
-      <div class="social-links">
-        <a href="https://twitter.com/PrismLauncher" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://floss.social/@PrismLauncher" target="_blank" aria-label="Mastodon" rel="me"><i class="fa fa-mastodon"></i></a>
-        <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord"><i class="fa fa-discord"></i></a>
-        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix"><i class="fa fa-matrix-org"></i></a>
-        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
-      </div>
-      <div class="github-link"><a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i>Github</a></div>
-            <div>
-        <a class="button type-link" href="https://opencollective.com/prismlauncher" target="_blank">Donate</a>
-        <a class="button" href="{{ '/download/' | url }}">Download</a>
-      </div>
-    </div>
-  </nav>
+    <div class="bg"></div>
+    <nav class="container">
+        <div class="navbar">
+            <a class="home" href="{{ '/' | url }}" aria-label="Prism Launcher">
+                <picture>
+                    <source srcset="/img/logo-text-darkmode.svg" media="(prefers-color-scheme: dark)">
+                        <img src="/img/logo-text.svg" alt="Prism Launcher logo" style="height: 4em; width: 12em"/>
+                    </picture>
+                </a>
+                <ul class="main-menu">
+                    {%- for entry in collections.nav | eleventyNavigation %}
+                        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+                            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+            <div class="links">
+                <div class="social-links">
+                    <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix">
+                        <i class="fa fa-matrix-org"></i>
+                    </a>
+                    <a href="https://twitter.com/PrismLauncher" target="_blank" aria-label="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://floss.social/@PrismLauncher" target="_blank" aria-label="Mastodon" rel="me">
+                        <i class="fa fa-mastodon"></i>
+                    </a>
+                    <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord">
+                        <i class="fa fa-discord"></i>
+                    </a>
 
-  {% if hero %}
-  <div class="hero-body">
-    <div class="row container">
-      <div class="column">
-        <div class="hero-description">
-          <h1 class="hero-title">{{ hero.title }}</h1>
-          <p class="subtitle">{{ hero.description }}</p>
-          {%- if hero.button %}
-          <br>
-          <a class="button size-large" href="{{ hero.button.url | url }}">{{ hero.button.content }}</a>
-          {%- endif %}
-        </div>
-      </div>
-      {%- if hero.image %}
-      <div class="column">
-        {% image hero.title, hero.image.light, hero.image.dark %}
-      </div>
-      {%- endif %}
-    </div>
-  </div>
-  {% endif %}
-</header>
+                    <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit">
+                        <i class="fa fa-reddit"></i>
+                    </a>
+                </div>
+                <div class="donate-gh-container">
+                    <div class="github-link"><a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i>Github</a></div>
+                    <div class="donate"><a class="button type-link" href="https://opencollective.com/prismlauncher" target="_blank">Donate</a></div>
+                    <div></div>
+                    <div class="download"><a class="button" href="{{ '/download/' | url }}">Download</a></div>
+                </div>
+            </div>
+            <button class="burger">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </nav>
+
+        {% if hero %}
+            <div class="hero-body">
+                <div class="row container">
+                    <div class="column">
+                        <div class="hero-description">
+                            <h1 class="hero-title">{{ hero.title }}</h1>
+                            <p class="subtitle">{{ hero.description }}</p>
+                            {%- if hero.button %}
+                                <br>
+                                    <a class="button size-large" href="{{ hero.button.url | url }}">{{ hero.button.content }}</a>
+                                {%- endif %}
+                            </div>
+                        </div>
+                        {%- if hero.image %}
+                            <div class="column">
+                                {% image hero.title, hero.image.light, hero.image.dark %}
+                            </div>
+                        {%- endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </header>
