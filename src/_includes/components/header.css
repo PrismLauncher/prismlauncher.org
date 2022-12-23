@@ -156,6 +156,9 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+  .social-links > a i{
+    transition: 150ms ease-in-out;
+  }
   .social-links > a:nth-child(1) i:hover {
     color: #1DA1F2;
     filter: drop-shadow(3px 0 5px #1DA1F288);
