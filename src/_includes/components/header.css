@@ -206,7 +206,7 @@
     user-select: none;
     background: white;
     border-radius: 1em;
-    box-shadow: 0 0.5em 2em 0em #eeeeff4a;
+    box-shadow: 0 0.5em 2em 0em #2626294a;
     height: 4em;
     width: 4em;
     display: flex;
@@ -245,6 +245,7 @@
 
   #menuToggle input:checked ~ span {
     opacity: 1;
+    background-color: var(--primary);
     transform:translateY(0.65em)  rotate(45deg) ;
   }
 
@@ -258,6 +259,7 @@
 
   #menuToggle input:checked ~ span:nth-last-child(2) {
     transform:  translateY(-0.65em) rotate(-45deg);
+    background-color: var(--primary);
   }
 
 
@@ -275,7 +277,7 @@
     right: 2em;
     background: var(--primary-text);
     list-style-type: none;
-    transform-origin: 100% 100%;
+    transform-origin: 90% 100%;
     transform: scale(0%);
     transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
     border-radius: 2em 2em 1em 2em;
