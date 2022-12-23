@@ -106,7 +106,7 @@
     margin-right: calc(0.5em + 4px*2);
   }
   .github-link:hover{
-    box-shadow: 0 8px 16px #eeeeff99;
+    box-shadow: 0 4px 8px #eeeeff99;
   }
   .github-link > a{
     font-size: 1.2em;
@@ -128,7 +128,7 @@
     margin-right: calc(2em + 4px*2);
   }
   .donate:hover{
-    box-shadow: 0 8px 16px #64a6e9aa;
+    box-shadow: 0 4px 8px #64a6e9aa;
   }
   .donate > a{
     background: none !important;
@@ -175,5 +175,8 @@
   .social-links > a:nth-child(5) i:hover {
     color: #FF4500;
     filter: drop-shadow(3px 0 5px #FF450088);
+  }
+  .home:hover{
+    filter: brightness(0.95);
   }
 }
