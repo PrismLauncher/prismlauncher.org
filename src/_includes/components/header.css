@@ -268,8 +268,9 @@
   .main-menu {
     position: fixed;
     z-index: -1;
-    width: 25em;
+    width: fit-content;
     padding: 2em;
+    max-width: calc(100vw - 2em*2);
     bottom: 6em;
     right: 2em;
     background: var(--primary-text);
