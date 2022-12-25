@@ -3,7 +3,7 @@ eleventyNavigation:
   key: Change Themes
   parent: Getting Started
   order: 11
---- 
+---
 
 # How to change your Themes in Prism Launcher
 
@@ -20,28 +20,28 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Amoled](https://img.shields.io/badge/Amoled-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Amoled.zip)
 [![BD Blue](https://img.shields.io/badge/BD--Blue-4989E6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/BD-Blue.zip)
 [![Breeze Dark](https://img.shields.io/badge/Breeze--Dark-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Breeze-Dark.zip)
-[![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
 [![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
+[![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
 [![Catppuccin Macchiato](https://img.shields.io/badge/Catppuccin--Macchiato-A6DA95?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Macchiato.zip)
 [![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Mocha-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
+[![Deep Dark](https://img.shields.io/badge/Deep--Dark-141414?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Deep-Dark.zip)
 [![Dracula](https://img.shields.io/badge/Dracula-BD93F9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Dracula.zip)
 [![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
+[![Jvne](https://img.shields.io/badge/Jvne-7455FE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Jvne.zip)
 [![Nord Polar Night](https://img.shields.io/badge/Nord--Polar--Night-4C566A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Polar-Night.zip)
 [![Nord Snow Storm](https://img.shields.io/badge/Nord--Snow--Storm-E5E9F0?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Snow-Storm.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
+[![Rangoon Lightning](https://img.shields.io/badge/Rangoon--Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning.zip)
 
 ### Themes Available only on Discord for now
 
 [![Borest Theme](https://img.shields.io/badge/Borest--Theme-1E1E2E?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
-[![Rangoon Lighting](https://img.shields.io/badge/Rangoon--Lighting-FFBF22?style=for-the-badge&logo=discord&logoColor=333333)](https://discord.com/channels/1031648380885147709/1033899002644668456)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033097334927654952)
-[![Deep Dark Theme](https://img.shields.io/badge/Deep--Dark--Theme-141414?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033025016910053436)
 
 ### Icons packs only on Discord for now
 
-[![Fluent Icons](https://img.shields.io/badge/Fluent--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033100137121194014)
-[![Borest Icons](https://img.shields.io/badge/Borest--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
-[![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-yellow?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033564896807362641)
+[![Fluent Icons](https://img.shields.io/badge/Fluent--Icons-60CDFF?style=for-the-badge&logo=discord&logoColor=333333)](https://discord.com/channels/1031648380885147709/1033100137121194014)
+[![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-1d9bf0?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033564896807362641)
 
 ## How to install Themes & Icons
 
