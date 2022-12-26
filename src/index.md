@@ -71,7 +71,7 @@ hero:
       </div>
     </div>
     <div class="column">
-      {% image "Mod Installer", "./src/img/screenshots/Customize.png" %}
+      {% image "Mod Installer", "./src/img/screenshots/CustomizeLight.png", "./src/img/screenshots/CustomizeDark.png" %}
     </div>
   </div>
 </div>
