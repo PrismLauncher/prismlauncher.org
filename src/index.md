@@ -20,12 +20,13 @@ hero:
         <h1>Modpack Management</h1>
         <div class="subtitle">
           Install and launch modpacks easily, while keeping them clean.
-          No longer do you need to manually install them, and updating feature is coming soon. Prism Launcher can do that for you, without installing tons of separate launchers.
+          No longer do you need to manually install them, and easily update modpacks, Prism Launcher can do these tasks for you, without installing tons of separate launchers.
         </div>
       </div>
     </div>
     <div class="column">
       {% image "Modpack Installer", "./src/img/screenshots/ModpackInstallLight.png", "./src/img/screenshots/ModpackInstallDark.png" %}
+      {% image "Mod Installer", "./src/img/screenshots/ModpackUpdateLight.png", "./src/img/screenshots/ModpackUpdateDark.png" %}
     </div>
   </div>
 
@@ -66,7 +67,7 @@ hero:
       <div>
         <h1>Lightweight & Customizable</h1>
         <div class="subtitle">
-          You do not need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires little system resources. Prism Launcher also let you customize the menu and supports [custom themes](https://prismlauncher.org/wiki/getting-started/change-themes/).
+          You don't need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires little system resources. Prism Launcher also lets you customize the menu and supports <a href="https://prismlauncher.org/wiki/getting-started/change-themes/">custom themes</a>.
         </div>
       </div>
     </div>
