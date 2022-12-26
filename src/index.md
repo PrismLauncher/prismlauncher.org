@@ -66,12 +66,12 @@ hero:
       <div>
         <h1>Lightweight & Customizable</h1>
         <div class="subtitle">
-          You don't need an embedded web browser for a game launcher. Prism Launcher uses the Qt toolkit, which requires little system resources. Prism Launcher also supports customizing the instance window and theme.
+          You do not need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires little system resources. Prism Launcher also let you customize the menu and supports [custom themes](https://prismlauncher.org/wiki/getting-started/change-themes/).
         </div>
       </div>
     </div>
     <div class="column">
-      {% image "Mod Installer", "./src/img/screenshots/CustomizeLight.png", "./src/img/screenshots/CustomizeDark.png" %}
+      {% image "Mod Installer", "./src/img/screenshots/Customize.png" %}
     </div>
   </div>
 </div>
