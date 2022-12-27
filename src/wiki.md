@@ -2,7 +2,7 @@
 tags: nav
 eleventyNavigation:
   key: Wiki
-  order: 4
+  order: 3
   url: /wiki/
 permalink: false
 ---

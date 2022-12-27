@@ -7,7 +7,7 @@ hero:
   title: About Prism Launcher
 eleventyNavigation:
   key: About
-  order: 3
+  order: 4
 ---
 <div class="content">
 
