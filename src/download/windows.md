@@ -2,8 +2,8 @@
 title: Download Prism Launcher for Windows
 permalink: /download/
 eleventyNavigation:
-    key: <i class="fa-brands fa-windows" aria-hidden="true"></i> Windows
-    order: 1
+  key: <i class="fa-brands fa-windows" aria-hidden="true"></i> Windows
+  order: 1
 ---
 
 <div class="download-content">
@@ -36,9 +36,9 @@ eleventyNavigation:
 
 ## Advanced Windows install options
 
--   [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
--   [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
--   [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-{{version.current}}.zip)
+- [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
+- [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
+- [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 

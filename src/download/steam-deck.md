@@ -1,8 +1,8 @@
 ---
 title: Download Prism Launcher for SteamOS/Steam Deck
 eleventyNavigation:
-    key: <i class="fa-brands fa-steam-square" aria-hidden="true"></i> Steam Deck
-    order: 4
+  key: <i class="fa-brands fa-steam-square" aria-hidden="true"></i> Steam Deck
+  order: 4
 ---
 
 <div class="download-content">
@@ -70,8 +70,8 @@ That's it! You should now see the artwork in your Steam Library.
 
 ### Tips and Tricks
 
--   For the best experience, go ahead and enable `Start Minecraft maximized`, and `Close Prism Launcher after game window opens` in the launcher's settings, under the `Minecraft` tab.
--   If you want Minecraft to launch without showing Prism Launcher, add `-l <instance-id>` in the launch options for your Prism Launcher Non-Steam Game. If you use this launch option, make sure that `Close Prism Launcher after game window opens` is disabled in the launcher's settings, so that the launcher does not show up when the game is closed. See [CLI launch options](../../wiki/getting-started/command-line-interface/) for more.
--   Install a mod that enables controller support. See [Controller Support](../../wiki/getting-started/controller-support) for more.
+- For the best experience, go ahead and enable `Start Minecraft maximized`, and `Close Prism Launcher after game window opens` in the launcher's settings, under the `Minecraft` tab.
+- If you want Minecraft to launch without showing Prism Launcher, add `-l <instance-id>` in the launch options for your Prism Launcher Non-Steam Game. If you use this launch option, make sure that `Close Prism Launcher after game window opens` is disabled in the launcher's settings, so that the launcher does not show up when the game is closed. See [CLI launch options](../../wiki/getting-started/command-line-interface/) for more.
+- Install a mod that enables controller support. See [Controller Support](../../wiki/getting-started/controller-support) for more.
 
 </div>
