@@ -2,8 +2,8 @@
 title: Download Prism Launcher for Windows
 permalink: /download/
 eleventyNavigation:
-  key: <i class="fa fa-windows" aria-hidden="true"></i> Windows
-  order: 1
+    key: <i class="fa-brands fa-windows" aria-hidden="true"></i> Windows
+    order: 1
 ---
 
 <div class="download-content">
@@ -36,9 +36,9 @@ eleventyNavigation:
 
 ## Advanced Windows install options
 
-- [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
-- [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
-- [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-{{version.current}}.zip)
+-   [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
+-   [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
+-   [System Install (Legacy) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Legacy-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
@@ -52,7 +52,7 @@ winget install -e PrismLauncher.PrismLauncher
 
 ```powershell
 scoop bucket add games
-scoop install prismlauncher 
+scoop install prismlauncher
 scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
 ```
 
@@ -65,7 +65,7 @@ choco install prismlauncher
 choco install prismlauncher --package-parameters="'/legacy'"
 ```
 
-*Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+_Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions._
 
 #### [PortableApps.com](https://portableapps.com) Installer
 
