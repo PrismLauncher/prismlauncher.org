@@ -52,7 +52,7 @@ hero:
         <div class="subtitle">
           <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
           Are you tired of manually switching mods for different versions, installing modloaders?<p>
-          <p>Prism Launcher can help. Each Minecraft instance has its own folder, with separate mods, resourcepacks and other things.</p>
+          <p>Prism Launcher can help. Each Minecraft instance has its own folder, with separate mods, resource packs and other things.</p>
         </div>
         <br>
       </div>
