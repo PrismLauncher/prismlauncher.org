@@ -21,7 +21,7 @@ To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** 
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
+[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium.
 
 Iris supports almost every shaderpack at this point, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
 
