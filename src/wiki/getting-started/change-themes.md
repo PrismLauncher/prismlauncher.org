@@ -19,6 +19,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 
 [![Amoled](https://img.shields.io/badge/Amoled-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Amoled.zip)
 [![BD Blue](https://img.shields.io/badge/BD--Blue-4989E6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/BD-Blue.zip)
+[![Borest](https://img.shields.io/badge/Borest-1E1E2E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Borest.zip)
 [![Breeze Dark](https://img.shields.io/badge/Breeze--Dark-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Breeze-Dark.zip)
 [![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
 [![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
@@ -33,10 +34,6 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
 [![Rangoon Lightning](https://img.shields.io/badge/Rangoon--Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning.zip)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Steam-Classic.zip)
-
-### Themes Available only on Discord for now
-
-[![Borest Theme](https://img.shields.io/badge/Borest--Theme-1E1E2E?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1031648380885147709/1033569391931047957)
 
 ### Icons packs only on Discord for now
 
