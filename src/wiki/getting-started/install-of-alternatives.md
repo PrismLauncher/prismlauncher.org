@@ -21,9 +21,9 @@ To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** 
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
+[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium.
 
-You can find a list of currently supported shaderpacks [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md).
+Iris supports almost every shaderpack at this point, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
 
 To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
@@ -45,7 +45,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
 
-### <img src="https://cdn-raw.modrinth.com/data/BYfVnHa7/d7692ec3be5ba158e9efc3bdfaa3f5710bc0f875.webp" height="20"> Simply Optimized
+### <img src="https://cdn.modrinth.com/data/BYfVnHa7/397b05e74707cc8150866fc1ccc345a2b68379e3.webp" height="20"> Simply Optimized
 
 [Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just optimization in mind. SO has better out-of-the-box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
 
