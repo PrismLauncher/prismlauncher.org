@@ -20,6 +20,10 @@ If you aren't sure which version you will need, **it is recommended to just inst
 
 You can also use Oracle Java, but openjdk is better here. Also, to download Oracle Java 9+ you need an Oracle account which is not a good thing.
 
+## Java on Windows
+
+The Adoptium builds mentioned above can be manually downloaded from the website, or automatically installed in one go with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) by typing `winget install EclipseAdoptium.Temurin.17.JDK; winget install EclipseAdoptium.Temurin.8.JDK` into the Terminal app.
+
 ## Java on linux
 
 On Linux, it's recommended to use your package manager for installing Java.
