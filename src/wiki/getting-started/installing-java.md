@@ -24,9 +24,9 @@ You can also use Oracle Java, but openjdk is better here. Also, to download Orac
 
 The Adoptium builds mentioned above can be manually downloaded from the website, or automatically installed in one go with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) by typing `winget install EclipseAdoptium.Temurin.17.JDK; winget install EclipseAdoptium.Temurin.8.JDK` into the Terminal app.
 
-## Java on linux
+## Java on Linux
 
-On Linux, it's recommended to use your package manager for installing Java.
+On Linux distributions, it's recommended to use your package manager for installing Java.
 
 ### Fedora
 
@@ -64,7 +64,7 @@ Java 8 is not available from Debian repos for unknown reasons, but you can [get 
 
 ### Flatpak
 
-The Prism Launcher flatpak already bundles java.
+The Prism Launcher Flatpak already bundles java.
 
 ### NixOS
 
