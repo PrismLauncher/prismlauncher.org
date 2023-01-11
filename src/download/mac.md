@@ -1,8 +1,8 @@
 ---
 title: Download Prism Launcher for macOS
 eleventyNavigation:
-  key: <i class="fa fa-apple" aria-hidden="true"></i> macOS 
-  order: 2
+    key: <i class="fa-brands fa-apple" aria-hidden="true"></i> macOS
+    order: 2
 ---
 
 <div class="download-content">

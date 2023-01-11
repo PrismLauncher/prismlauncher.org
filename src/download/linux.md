@@ -1,7 +1,7 @@
 ---
 title: Download Prism Launcher for Linux
 eleventyNavigation:
-  key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
+  key: <i class="fa-brands fa-linux" aria-hidden="true"></i>Linux
   order: 3
 ---
 
@@ -48,7 +48,7 @@ There are several AUR packages available:
 [![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
 [![prismlauncher-bin](https://img.shields.io/badge/aur-prismlauncher--bin-blue)](https://aur.archlinux.org/packages/prismlauncher-bin/)  
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
-  
+
 ## Installing with an AUR helper
 
 ```bash
@@ -72,11 +72,11 @@ yay -S prismlauncher-qt5-git
 ```
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-  
+
 ## Installation using Chaotic-AUR
 
 If you have not already enabled the Chaotic-AUR follow their instructions on <https://aur.chaotic.cx/> to enable it.
-  
+
 ```bash
 # stable package:
 sudo pacman -S prismlauncher
@@ -192,7 +192,7 @@ Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps)
 [![pi-apps-badge](https://img.shields.io/badge/dynamic/json?color=c51a4a&label=Pi-Apps&prefix=Prism%20Launcher%20&query=%24..%5B%3F%28%40.Name%3D%3D%22Minecraft%20Java%20Prism%20Launcher%22%29%5D.Version&url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data.json)](https://github.com/Botspot/pi-apps)
 
 NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
-*Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+_Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions._
 
 </div>
 
@@ -215,6 +215,7 @@ emerge games-action/prismlauncher
 ```
 
 Have fun! :)
+
 </div>
   
 <div class="infobox top">
@@ -232,7 +233,7 @@ Packages are available for all current Nix distributions.
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
 RPM packages are available on the [Open Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
-  
+
 ```bash
 # add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
 zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
@@ -247,7 +248,7 @@ zypper install prismlauncher-qt5
 # latest builds (avalible for Leap and Tumbleweed)
 zypper install prismlauncher-qt5-nightly
 ```
-  
+
 </div>
 
 <div class="infobox top">
