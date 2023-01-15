@@ -38,7 +38,7 @@
     "markdown-it": "13.0.1",
     "markdown-it-anchor": "8.6.6",
     "markdown-it-table-of-contents": "0.6.0",
-    "markdownlint-cli": "0.32.2"
+    "markdownlint-cli": "0.33.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "3.0.0"
