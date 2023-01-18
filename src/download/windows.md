@@ -2,7 +2,7 @@
 title: Download Prism Launcher for Windows
 permalink: /download/
 eleventyNavigation:
-  key: <i class="fa fa-windows" aria-hidden="true"></i> Windows
+  key: <i class="fa-brands fa-windows" aria-hidden="true"></i> Windows
   order: 1
 ---
 
@@ -52,7 +52,7 @@ winget install -e PrismLauncher.PrismLauncher
 
 ```powershell
 scoop bucket add games
-scoop install prismlauncher 
+scoop install prismlauncher
 scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
 ```
 
@@ -65,7 +65,7 @@ choco install prismlauncher
 choco install prismlauncher --package-parameters="'/legacy'"
 ```
 
-*Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+_Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions._
 
 #### [PortableApps.com](https://portableapps.com) Installer
 
