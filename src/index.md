@@ -9,7 +9,7 @@ hero:
     dark: ./src/img/screenshots/LauncherDark.png
     light: ./src/img/screenshots/LauncherLight.png
   button:
-    url: /download
+    url: /download?from=button
     content: 'Download Now'
 ---
 
