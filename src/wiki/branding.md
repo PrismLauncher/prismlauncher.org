@@ -55,8 +55,8 @@ colors:
 --accent-light: #d0d0d0;
 ```
 
-
 Logo colors:
+
 ```css
 --grass-green: #99CD61;
 --dirt-light-brown: #7A573B;
