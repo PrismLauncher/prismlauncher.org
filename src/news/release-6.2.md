@@ -24,7 +24,7 @@ Thanks to all contributors!
 
 - Detect jars from within build folder for development builds by [@Ryex](https://github.com/Ryex) in [#781](https://github.com/PrismLauncher/PrismLauncher/pull/781)
 - Improve the reliability of the Task's stack overflow test by [@flowln](https://github.com/flowln) in [#804](https://github.com/PrismLauncher/PrismLauncher/pull/804)
-- Prevent crash when parsing some Forge mods by [@flowln](https://github.com/flowln) in [#743](https://github.com/PrismLauncher/PrismLauncher/pull/743)
+- Correctly parse metadata from some misbehaving Forge mods by [@flowln](https://github.com/flowln) in [#743](https://github.com/PrismLauncher/PrismLauncher/pull/743)
 - Remove commit hash from builds where git wasn't installed at build time by [@getchoo](https://github.com/getchoo) in [#666](https://github.com/PrismLauncher/PrismLauncher/pull/666)
 - Skip some HTML in markdown rendering by [@redstrate](https://github.com/redstrate) in [#713](https://github.com/PrismLauncher/PrismLauncher/pull/713)
 - Update application metadata by [@AshtakaOOf](https://github.com/AshtakaOOf) in [#680](https://github.com/PrismLauncher/PrismLauncher/pull/680)
@@ -35,7 +35,7 @@ Thanks to all contributors!
 
 ### Fixed
 
-- Better check file paths in .mrpack import and json components by [@flowln](https://github.com/flowln) in [#810](https://github.com/PrismLauncher/PrismLauncher/pull/810)
+- Better check file paths in .mrpack import and json components by [@flowln](https://github.com/flowln) and [@Scrumplex](https://github.com/Scrumplex) in [#810](https://github.com/PrismLauncher/PrismLauncher/pull/810)
 - Fix crashes when running a lot of concurrent tasks by [@flowln](https://github.com/flowln) in [#758](https://github.com/PrismLauncher/PrismLauncher/pull/758) [#784](https://github.com/PrismLauncher/PrismLauncher/pull/784)
 - Fix importing 1.16+ Forge Technic Launcher packs by [@byquanton](https://github.com/byquanton) in [#710](https://github.com/PrismLauncher/PrismLauncher/pull/710)
 - Improve handing of ZLib submodule by [@TheLastRar](https://github.com/TheLastRar) in [#772](https://github.com/PrismLauncher/PrismLauncher/pull/772) [#779](https://github.com/PrismLauncher/PrismLauncher/pull/779)
