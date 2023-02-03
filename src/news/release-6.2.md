@@ -4,7 +4,7 @@ description: 90% bug free!
 date: 2023-02-03
 release_version: "6.2"
 minimum_macos_version: 10.15.0
-mac_signature: 76S99OXja/WJbqYQvV9BoEAlTV4khWeZWCjcXKFHnXkgkZD18yXcBXAdY/BK0dhQrX1IbHZu3JKhEVyjFwKmCA==
+mac_signature: KdRk6KaEtFauy1Rz4oF6zEUsGgYgUAreWHS4pDcXFF1NhsNdOXqti65Khsmf7iM1idXc4GvuerxWiL/vaIQ/Dw==
 tags:
   - release
 ---
