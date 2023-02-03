@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  key: OptiFine alternatives
+  key: OptiFine Alternatives
   parent: Getting Started
   order: 7
 ---
