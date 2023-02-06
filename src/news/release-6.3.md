@@ -1,5 +1,5 @@
 ---
-title: Prism Launcher Release 6.3, now available
+title: [SECURITY UPDATE] Prism Launcher Release 6.3, now available
 description: 91% bug free!
 date: 2023-02-03
 release_version: "6.3"
@@ -8,6 +8,8 @@ mac_signature: ddgRaenV1h5Rwnci+fQskurWkHb2WUZZSNmW1AkwplFsN8RIzum3VQNJ5xHS08WBd
 tags:
   - release
 ---
+
+Update: If you are on a version before 6.2, you should upgrade to this release to avoid a security bug regarding `.mrpack` modpack imports. You can read more about this in [this blog post from QuiltMC](https://quiltmc.org/en/blog/2023-02-04-five-installer-vulnerabilities/).
 
 Hello!
 
