@@ -1,5 +1,5 @@
 ---
-title: [SECURITY UPDATE] Prism Launcher Release 6.3, now available
+title: "[SECURITY UPDATE] Prism Launcher Release 6.3, now available"
 description: 91% bug free!
 date: 2023-02-03
 release_version: "6.3"
