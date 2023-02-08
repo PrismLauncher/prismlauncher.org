@@ -11,7 +11,7 @@ Updating Prism Launcher will depend a little on the method of installation you c
 
 ## Any kind of package management system
 
-This includes Scoop, Chocolatey, Winget, Homebrew, MacPorts, FlatHub, `apk`, any aur helper, `dnf`, `apt`, any MPR helper, Pacstall, the pi-apps store, `emerge`, `zypper`, and `xbps`.
+This includes Scoop, Chocolatey, Winget, Homebrew, MacPorts, FlatHub, `apk`, any AUR helper, `dnf`, `apt`, any MPR helper, Pacstall, the pi-apps store, `emerge`, `zypper`, and `xbps`.
 
 For these, just let your package manager handle the update for you. Run the command to update packages through the package manager and you should be good to go!
 
