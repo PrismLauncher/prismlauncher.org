@@ -55,6 +55,9 @@
     1031856744239996928:
       description: Documentation
       emoji: 📚
+    1072593656256659520:
+      description: Translator
+      emoji: 💬
 
 - type: roles
   id: community-roles
