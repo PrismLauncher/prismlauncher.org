@@ -69,6 +69,6 @@ choco install prismlauncher --package-parameters="'/legacy'"
 
 #### [PortableApps.com](https://portableapps.com) Installer
 
-A community maintained portable installer for Prism Launcher can be found [here](https://FayneAldan.github.io/PrismLauncherPortable/).
+A community maintained portable installer for Prism Launcher can be found [here](https://RuiNtD.github.io/PrismLauncherPortable/).
 
 </div>
