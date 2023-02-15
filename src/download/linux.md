@@ -172,8 +172,6 @@ Installing [Pacstall](https://pacstall.dev/)
 sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)"
 ```
 
-NOTE: Pacstall is unstable on Debian, due to outdated dependencies.
-
 Installing Prism Launcher
 
 ```bash
