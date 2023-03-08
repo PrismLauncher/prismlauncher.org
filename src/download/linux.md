@@ -135,6 +135,7 @@ Several MPR packages are available:
 ```bash
 curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
+sudo echo -e "Package: *\nPin: origin proget.makedeb.org\nPin-Priority: 1\n\nPackage: prismlauncher\nPin: origin proget.makedeb.org\nPin-Priority: 500" >> /etc/apt/preferences.d/99mpr-prismlauncher
 sudo apt update
 sudo apt install prismlauncher
 ```
