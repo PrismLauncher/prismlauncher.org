@@ -48,12 +48,22 @@ eleventyNavigation:
 winget install -e PrismLauncher.PrismLauncher
 ```
 
-#### Scoop Package
+#### Stable Scoop Package
 
 ```powershell
 scoop bucket add games
 scoop install prismlauncher 
 scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
+```
+
+#### Unstable Scoop Package
+
+Like the package above, but it's an unstable git [development build](/wiki/development/development-builds) instead of a stable build.
+
+```powershell
+scoop bucket add versions
+scoop install prismlauncher-git
+scoop install prismlauncher-qt5-git #if you want Windows-Legacy instead
 ```
 
 #### Chocolatey Package
