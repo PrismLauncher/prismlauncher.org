@@ -58,7 +58,7 @@ scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
 
 #### Unstable Scoop Package
 
-Like the package above, but it's an unstable git [development build](/wiki/development/development-builds) instead of a stable build.
+Same as above, but it's an unstable git [development build](/wiki/development/development-builds) rather than a stable build.
 
 ```powershell
 scoop bucket add versions
