@@ -9,6 +9,12 @@
   --accent-light: #313540;
 
   --code: #313540;
+  --code-fg: #ffffff;
+
+  --inline-code: #313540;
+  --inline-code-fg: #ffffff;
+
+  --table-border: #484848;
 
   --disabled: #666;
 
@@ -43,6 +49,9 @@
     --background: #ffffff;
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
+    --inline-code: #eff1f3;
+    --inline-code-fg: #24292f;
+    --table-border: #d9d9d9;
   }
 }
 
@@ -95,11 +104,13 @@ a {
 
 table {
   margin: 1em 0;
+  border-collapse: collapse;
 }
 
 table td,
 table th {
-  padding-right: 1em;
+  padding: 0.3em;
+  border: 1px solid var(--table-border);
 }
 
 blockquote {
@@ -121,7 +132,10 @@ pre {
 }
 
 :not(pre) > code {
-  border-radius: 0.15em;
+  border-radius: 4px;
+  padding: .2em .4em;
+  color: var(--inline-code-fg);
+  background-color: var(--inline-code);
 }
 
 .top {
@@ -152,7 +166,7 @@ pre {
 
 code {
   word-break: break-all;
-  color: white;
+  color: var(--code-fg);
   background-color: var(--code);
 }
 

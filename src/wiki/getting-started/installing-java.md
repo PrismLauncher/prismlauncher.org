@@ -9,24 +9,69 @@ eleventyNavigation:
 
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
 
-Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)**, while anything below will require **Temurin 8 (LTS).**
+Oracle Java is not recommended. As of 2019, it has licensing that prohibits certain uses, and it requires an account to download certain versions. Their downloads are intended for those who have purchased a support contract from Oracle.
 
-* 1.17 or newer: **Temurin 17 (LTS)**
-* 1.16.5 or older: **Temurin 8 (LTS)**
+Instead, this guide recommends installing **OpenJDK** from one of the reputable vendors. OpenJDK is a source code only distribution of Java made by a collaboration between Oracle and industry partners such as Adoptium, Microsoft, Red Hat, and Azul. Unlike Oracle Java, it is released under a license that minimizes legal risk for users and does not require payment.
 
-If you aren't sure which version you will need, **it is recommended to just install both.**
+If you would like to learn more about OpenJDK and the vendors mentioned in this page, here are their websites:
 
-**NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
+- [Adoptium Temurin](https://adoptium.net/)
+- [Microsoft OpenJDK](https://www.microsoft.com/openjdk)
+- [Azul OpenJDK](https://www.azul.com/downloads/)
+- [OpenJDK source distribution](https://openjdk.org/)
 
-You can also use Oracle Java, but openjdk is better here. Also, to download Oracle Java 9+ you need an Oracle account which is not a good thing.
+Otherwise, continue reading for quick download links and a guide for which one to choose.
 
-## Java on linux
+## Installing Java on Windows
+
+**First, check your CPU architecture.** Here is a method that works on all Windows versions:
+
+1. Open command prompt
+2. Type in `echo %PROCESSOR_ARCHITECTURE%` and press enter
+3. Read the result.
+   * If it says `AMD64`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
+   * If it says `X86`, you have a 32-bit **x86** CPU. This is sometimes called **x32** or **x86-32**.
+   * If it says `ARM64`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
+
+Then, download the appropriate Java:
+
+| Minecraft | CPU type | Download page | Viable alternatives |
+|:---:|:---:|---|---|
+| Minecraft **1.17** or above | x86-64 | [Microsoft OpenJDK 17 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-x64.msi) | Azul, Coretto, Temurin, GraalVM |
+|  | x86 | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?release=17) | Azul, Coretto |
+|  | aarch64 | [Microsoft OpenJDK 17 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-aarch64.msi) | Azul |
+| Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?release=8) | Azul, Coretto |
+|  | x86 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?release=8) | Azul, Coretto |
+|  | aarch64 | Not available :( |  |
+
+**Tip:** If you are on Windows 11, you can automatically install 8 and 17 by running `winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
+
+## Installing Java on macOS
+
+**First, check your CPU architecture.**
+
+1. Open the Apple menu in the top left corner of the screen
+2. Click "About This Mac"
+3. Check what it says after "Processor"
+   * If it contains `Intel`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
+   * If it contains `Apple`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
+
+Then, download the appropriate Java:
+
+| Minecraft | CPU type | Download page | Viable alternatives |
+|:---:|:---:|---|---|
+| Minecraft **1.17** or above | x86-64 | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
+|  | aarch64 | [Microsoft OpenJDK 17 for macOS aarch64, `.msi` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
+| Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8) | Azul, Coretto |
+|  | aarch64 | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto |
+
+## Installing Java on Linux
 
 On Linux, it's recommended to use your package manager for installing Java.
 
-### Fedora
+### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
 
-On the COPR package all required java versions should be installed, but this is the command to install it:
+On the COPR package all required Java versions should be installed, but this is the command to install it:
 
 ```bash
 sudo dnf install java-1.8.0-openjdk java-17-openjdk
@@ -35,49 +80,62 @@ sudo dnf install java-1.8.0-openjdk java-17-openjdk
 ### Void Linux
 
 ```bash
-sudo xbps-install openjdk17-jre openjdk8-jre
+sudo xbps-install openjdk17 openjdk8
 ```
 
-### Arch Linux
+### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
-sudo pacman -S jre17-openjdk jre8-openjdk
+sudo pacman -S jdk17-openjdk jdk8-openjdk
 ```
 
-### Ubuntu
+### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
-sudo apt install openjdk-17-jre openjdk-8-jre
+sudo apt install openjdk-17-jdk openjdk-8-jdk
 ```
 
-### Debian
+### Debian, MX Linux
 
 ```bash
-sudo apt install openjdk-17-jre
+sudo apt install openjdk-17-jdk
 ```
 
-Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
+Java 8 is not available in Debian 10+ due to lack of security support, but you can use the Adoptium repository for security support until 2026:
+
+```bash
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
+sudo add-apt-repository --yes https://packages.adoptium.net/artifactory/deb/
+sudo apt-get update && sudo apt-get install temurin-8-jdk
+```
+
+### Alpine Linux
+
+```bash
+sudo apk add openjdk17 openjdk8
+```
 
 ### Flatpak
 
-The Prism Launcher flatpak already bundles java.
+The Prism Launcher Flatpak already bundles Java.
 
 ### NixOS
 
-The Prism Launcher NixOS package already bundles java.
+The Prism Launcher NixOS package already bundles Java.
+
+## Using Java
+
+Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
+
+If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
+
+> Settings > Java > Java Runtime > Auto-detect...
 
 ## Special cases
 
 ### Forge 1.16.5 and Java 8u321+
 
 Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended
-
-### Using Java
-
-Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
-
-If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
-> Settings > Java > Java Runtime > Auto-detect...
 
 ### A note about Intel HD 2000/3000 on Windows 10
 
@@ -101,8 +159,8 @@ If you use some older Minecraft versions, you might have had this error:
 Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
 ```
 
-Well, for you there's a resolution too!
+Here is a fix:
 
-* First, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
-* Then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+* First, remove, if you had, [your current Oracle Java](https://explainjava.com/uninstall-java-macos/)
+* Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
 * Select this java binary on Prism Launcher, and it should fix your issue!
