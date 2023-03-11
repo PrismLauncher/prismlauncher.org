@@ -29,9 +29,9 @@ Otherwise, continue reading for quick download links and a guide for which one t
 1. Open command prompt
 2. Type in `echo %PROCESSOR_ARCHITECTURE%` and press enter
 3. Read the result.
-   * If it says `AMD64`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
-   * If it says `X86`, you have a 32-bit **x86** CPU. This is sometimes called **x32** or **x86-32**.
-   * If it says `ARM64`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
+   - If it says `AMD64`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
+   - If it says `X86`, you have a 32-bit **x86** CPU. This is sometimes called **x32** or **x86-32**.
+   - If it says `ARM64`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
 
 Then, download the appropriate Java:
 
