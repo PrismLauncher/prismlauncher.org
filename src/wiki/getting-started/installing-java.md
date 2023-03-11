@@ -53,8 +53,8 @@ Then, download the appropriate Java:
 1. Open the Apple menu in the top left corner of the screen
 2. Click "About This Mac"
 3. Check what it says after "Processor"
-   * If it contains `Intel`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
-   * If it contains `Apple`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
+   - If it contains `Intel`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
+   - If it contains `Apple`, you have a 64-bit **ARM** CPU. This is sometimes called **aarch64** or **ARM64**.
 
 Then, download the appropriate Java:
 
@@ -143,8 +143,8 @@ Since those iGPUs are not *officially* supported on Windows 10, with them the ga
 
 *For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
 
-* [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
-* [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
+- [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
+- [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
 
 After you download the required java binary for your architecture, *extract* the zip, and move the folder to your Prism Launcher data folder (%appdata%/Prism Launcher for non-portable, the Prism Launcher folder for portable builds), you need to go to the *Prism Launcher java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
 This should fix your issue.
@@ -161,6 +161,6 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 
 Here is a fix:
 
-* First, remove, if you had, [your current Oracle Java](https://explainjava.com/uninstall-java-macos/)
-* Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
-* Select this java binary on Prism Launcher, and it should fix your issue!
+- First, remove, if you had, [your current Oracle Java](https://explainjava.com/uninstall-java-macos/)
+- Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+- Select this java binary on Prism Launcher, and it should fix your issue!
