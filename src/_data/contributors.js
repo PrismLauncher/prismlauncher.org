@@ -1,4 +1,5 @@
 const EleventyFetch = require("@11ty/eleventy-fetch");
+EleventyFetch.concurrency = 1
 
 module.exports = async function () {
 	// https://developer.github.com/v3/repos/#get
