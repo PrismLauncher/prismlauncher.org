@@ -41,6 +41,6 @@
     "markdownlint-cli": "0.33.0"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "3.0.0"
+    "@11ty/eleventy-fetch": "4.0.0"
   }
 }
