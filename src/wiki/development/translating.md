@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Translating Prism Launcher
   parent: Development
-  order: 3
+  order: 6
 ---
 
 # Translating Prism Launcher
