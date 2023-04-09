@@ -103,6 +103,8 @@ sudo dnf builddep prismlauncher.spec
 sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
+# move patches to rpmbuild sources directory
+cp *.patch ~/rpmbuild/SOURCES
 # now build!
 rpmbuild -bb prismlauncher.spec
 rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
