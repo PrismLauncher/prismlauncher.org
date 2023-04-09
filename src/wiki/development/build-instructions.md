@@ -120,7 +120,7 @@ It also uses the [obs_scm](https://github.com/openSUSE/obs-service-tar_scm) serv
 ```bash
 osc checkout home:getchoo
 
-# there will be 4 directories in home:getchoo, with some having a -qt5 and/or -nightly prefix
+# there will be 4 directories in home:getchoo, with some having a -qt5 and/or -nightly suffix
 # -qt5 packages will build with Qt 5 instead of Qt 6, while -nightly packages will build with the latest commit (updated every 24h)
 # for this example, we're just using the stable release package that builds with Qt 6
 # NOTE: only -qt5 will build on Leap
