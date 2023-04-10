@@ -85,7 +85,7 @@ makedeb -s
 
 The .deb will be located in the directory the repo was cloned in.
 
-### Building an .rpm
+### Building an .rpm for Fedora
 
 Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
 in order to fetch sources and set up your tree.
@@ -103,11 +103,31 @@ sudo dnf builddep prismlauncher.spec
 sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
-# move patch to rpmbuild sources directory
-cp change-jars-path.patch ~/rpmbuild/SOURCES 
+# move patches to rpmbuild sources directory
+cp *.patch ~/rpmbuild/SOURCES
 # now build!
 rpmbuild -bb prismlauncher.spec
 rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
+```
+
+The path to the .rpm packages will be printed once the build is complete.
+
+### Building an .rpm for openSUSE
+
+Unlike Fedora, the openSUSE packages depend on the [Open Build Service](https://build.opensuse.org/), so you will need to install the command line tool `osc` by following [this](https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.osc.html#sec.obs.osc.install) guide.
+It also uses the [obs_scm](https://github.com/openSUSE/obs-service-tar_scm) service, which is available in the `obs-service-obs_scm` package if it's not already installed.
+
+```bash
+osc checkout home:getchoo
+
+# there will be 4 directories in home:getchoo, with some having a -qt5 and/or -nightly suffix
+# -qt5 packages will build with Qt 5 instead of Qt 6, while -nightly packages will build with the latest commit (updated every 24h)
+# for this example, we're just using the stable release package that builds with Qt 6
+# NOTE: only -qt5 will build on Leap
+cd home:getchoo/prismlauncher
+
+# to build against the current version of Leap, replace `openSUSE_Tumbleweed` with 15.4
+osc build --sccache openSUSE_Tumbleweed
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
