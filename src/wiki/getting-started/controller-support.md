@@ -24,7 +24,7 @@ Before you continue, ensure that the correct version of the **Fabric API** mod o
 
 ### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 to 1.19.4)
 
-For Minecraft 1.18 to 1.19.4, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
+For Minecraft 1.18 or newer, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
 
 It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controls menu. Within the in-game controls menu, you may need to change the "Mode" setting to **Controller** in order for the game to respond to input from the gamepad. If it doesn't work, you can use [**the app linked in the mod**](https://generalarcade.com/gamepadtool/) to edit the controller mappings.
 
