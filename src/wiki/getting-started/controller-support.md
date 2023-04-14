@@ -22,7 +22,7 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilted Fabric API** mod on **Quilt** for your instance is installed.
 
-### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 to newer)
+### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 or newer)
 
 For Minecraft 1.18 or newer, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
 
@@ -38,7 +38,7 @@ It can be installed using Prism Launcher's mod downloader function through eithe
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
-### <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (for Minecraft Versions 1.12.2 to newer)
+### <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (for Minecraft Versions 1.12.2 or newer)
 
 For Minecraft 1.12.2 to 1.19.2, we recommend [**Controllable**](https://www.curseforge.com/minecraft/mc-mods/controllable).
 
