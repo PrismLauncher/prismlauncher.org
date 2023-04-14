@@ -32,7 +32,7 @@ It can be installed using Prism Launcher's mod downloader function through eithe
 
 **NOTE:** This mod is currently unmaintained and hasn't been updated since June of 2021, so unless you really need to, use MidnightControls.
 
-For Minecraft 1.16.2 to 1.17.1, we recommend [**LambdaControls**](https://modrinth.com/mod/lambdacontrols).
+For Minecraft 1.16.2 to 1.18, we recommend [**LambdaControls**](https://modrinth.com/mod/lambdacontrols).
 
 It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controls menu. Within the in-game controls menu, you may need to change the "Mode" setting to **Controller** in order for the game to respond to input from the gamepad. If it doesn't work, you can use [**the app linked in the mod**](https://generalarcade.com/gamepadtool/) to edit the controller mappings.
 
@@ -40,6 +40,6 @@ It can be installed using Prism Launcher's mod downloader function through eithe
 
 ### <img src="https://raw.githubusercontent.com/MrCrayfish/Controllable/6caef1a4ac113e5c6ac1d1abde0f0cabc3e6ad97/src/main/resources/controllable_icon.png" height="20">  Controllable (for Minecraft Versions 1.12.2 or newer)
 
-For Minecraft 1.12.2 to 1.19.2, we recommend [**Controllable**](https://www.curseforge.com/minecraft/mc-mods/controllable).
+For Minecraft versions 1.12.2 or above, we also recommend [**Controllable**](https://www.curseforge.com/minecraft/mc-mods/controllable).
 
 Controllable can be installed using Prism Launcher's mod downloader function through CurseForge. Once installed, you may now launch your instance, and find that the mod should begin working immediately.
