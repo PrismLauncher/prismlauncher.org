@@ -44,4 +44,5 @@ In the pictures some parts are blurred out due to Privacy concerns.
 
 ~ PrismLauncher Team
 
+
 [Github-PR]: https://github.com/PrismLauncher/PrismLauncher/pull/1040
