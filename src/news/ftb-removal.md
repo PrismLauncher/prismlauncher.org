@@ -28,7 +28,7 @@ In the pictures some parts are blurred out due to Privacy concerns.
 <br/>
 <img alt="Screenshot of chat with FTB Team" src="/img/news/ftb-removal/request3.png" style="width: 40em">
 
-### Request to Remove FTB  Modpack Downloading
+### Request to Remove FTB Modpack Downloading
 
 <img alt="Screenshot of chat with FTB Team" src="/img/news/ftb-removal/request4.png" style="width: 40em">
 <br/>
