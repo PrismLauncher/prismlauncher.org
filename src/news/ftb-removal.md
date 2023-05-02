@@ -8,7 +8,7 @@ tags:
 
 At the request of Slowpoke, representing the FTB team, we have removed the feature that allows downloading FTB modpacks from Prism Launcher. [Github PR][pr-ftb-removal]
 
-Existing instances of FTB modpacks will remain functional, but once the PR is merged, downloading FTB packs directly will no longer be possible.
+Existing instances of FTB modpacks will remain functional, but with the next release, downloading FTB packs directly will no longer be possible.
 
 We will start working on a feature that allows importing FTB Modpacks from the FTB App, as this is acceptable to the FTB team.
 
