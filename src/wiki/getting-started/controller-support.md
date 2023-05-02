@@ -40,7 +40,7 @@ It can be installed using Prism Launcher's mod downloader function through eithe
 
 If you're on the Steam Deck, [DeckCraft](https://modrinth.com/project/deckcraft) might be useful to you. This is a modpack designed to make it easier to play Minecraft on the Deck. It includes MidnightControls, various optimizations, features, configurations, pre-installed shaders, and more.
 
-You can install it through the launcher by heading to `Add Instance`, select the `Modrinth` tab, then press `STEAM` + `X` together to open the keyboard and search for "DeckCraft." After this, select your preferred version and install it.
+You can install it through the launcher by heading to `Add Instance`, select the `Modrinth` tab, then press `STEAM` + `X` together to open the keyboard and search for "DeckCraft". After this, select your preferred version and install it.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
