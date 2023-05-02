@@ -72,7 +72,7 @@ That's it! You should now see the artwork in your Steam Library.
 
 [DeckCraft](https://modrinth.com/project/deckcraft) is a modpack designed to make it easier to play Minecraft on the Steam Deck. It includes a variety of optimizations, extra features, pre-installed shaders, and more. It works out-of-the-box and doesn't require any manual configuration to start playing.
 
-You can install it through the launcher by heading to `Add Instance`, select the `Modrinth` tab, then press `STEAM` + `X` together to open the keyboard and search for "DeckCraft." After this, select your preferred version and install it.
+You can install it through the launcher by heading to `Add Instance`, select the `Modrinth` tab, then press `STEAM` + `X` together to open the keyboard and search for "DeckCraft". After this, select your preferred version and install it.
 
 ### Tips and Tricks
 
