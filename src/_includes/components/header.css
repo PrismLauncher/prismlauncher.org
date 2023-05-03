@@ -1,106 +1,302 @@
-/* Nav */
-nav {
-  padding: 0.5em;
-  overflow: auto;
-  display: flex;
-  justify-content: center;
-  background-color: var(--background);
-  border-radius: 0 0 1em 1em;
-}
-
-.main-menu {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.navbar,
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-.social-links i {
-  font-size: 1.75em;
-  margin: 0.25em;
-  color: var(--primary-text);
-}
-
-.social-links i:hover {
-  color: var(--link);
-  cursor: pointer;
-}
-
-.links .button {
-  margin: 0.25em;
-}
-
-.navbar {
-  flex-direction: column;
-}
-
-.navbar a {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item {
-  display: inline-block;
-  font-size: 1.2em;
-  margin: 0.5em;
-}
-
-.nav-item a {
-  color: var(--primary-text);
-  text-decoration: none;
-}
-
-.nav-item-active {
-  font-weight: 700;
-  font-size: 1.25em;
-}
-
-.hero {
-  position: relative;
-  color: white;
-  z-index: 0;
-}
-
-.hero-description {
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 3em;
-}
-
-header .container {
-  flex-direction: column;
-}
-
-header .links {
-  flex-direction: column;
-}
-
-@media (min-width: 64em) {
-  nav {
+@media only screen and (min-width: 64em) {
+  nav.container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    max-width: 90em;
+    width: 100%;
+    background-color: var(--nav-background);
+    position: fixed;
+    z-index: 999;
+    backdrop-filter: blur(1em);
+    box-shadow: 0 0.5em 1em 0.4em #22222799;
+    border-radius: 0 0 1em 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6em; /**/
+    padding-inline: calc(1em + 4px * 2);
   }
-
   .navbar {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+  }
+  .main-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    height: 4em;
+    margin: 0 !important;
+  }
+  .nav-item > a {
+    color: var(--secondary-text);
+    transition: 150ms;
+    line-height: 2; /* new */
+    text-decoration: none;
+    font-size: 1.3em;
+    position: relative;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-item > a::after {
+    box-shadow: 0 0 0.4em var(--link-light);
+    width: 0%; /*!*/
+    height: 15%;
+    background: linear-gradient(to right, var(--link-light), var(--link-dark));
+    content: '';
+    bottom: -20%;
+    left: 0;
+    border-radius: 100vmax;
+    position: absolute;
+    transition: 150ms ease-in-out;
   }
 
-  header .container {
-    flex-direction: row;
+  .nav-item > a:hover::after {
+    width: 100%;
+  }
+  .nav-item > a:hover {
+    color: var(--primary-text);
+  }
+  .nav-item.nav-item-active > a {
+    color: var(--primary-text);
+    font-weight: bold;
+  }
+  .nav-item.nav-item-active > a::after {
+    width: 100%;
+  }
+  .links {
+    display: flex;
+    height: 4em;
+    align-items: center;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    margin-right: 1em;
+  }
+  .social-links > a {
+    color: var(--secondary-text);
+    font-size: 1.6em;
+  }
+  .burger {
+    display: none;
+  }
+  .donate-gh-container {
+    display: flex;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+  }
+  .donate-gh-container > div {
+    height: 3em;
+    display: grid;
+    place-content: center;
+    transition: 150ms ease-in-out;
+  }
+  .github-link {
+    background: #eeeeff4a;
+    border-radius: 0.5em;
+    padding-inline: 1em;
+    border: 4px solid #eeeeff99;
+    margin-right: calc(0.5em + 4px * 2);
+  }
+  .github-link:hover {
+    box-shadow: 0 4px 8px #eeeeff99;
+  }
+  .github-link > a {
+    font-size: 1.2em;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.4em;
+    color: var(--primary-text);
+  }
+  .github-link > a > i {
+    font-size: 1.4em;
+  }
+  .donate {
+    background: #64a6e94a;
+    border-radius: 0.5em;
+    padding-inline: 1em;
+    border: 4px solid #64a6e999;
+    margin-right: calc(2em + 4px * 2);
+  }
+  .donate:hover {
+    box-shadow: 0 4px 8px #64a6e9aa;
+  }
+  .donate > a {
+    background: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    color: var(--primary-text);
+  }
+  .download {
+    height: 3em;
+    background: var(--primary);
+    padding-inline: 2em;
+    border-radius: 0.5em;
+    margin: 0;
+    border: 4px solid var(--primary-light);
+    box-shadow: 0 8px 16px #f47068aa;
+    align-items: center;
+    transition: 250ms ease-in-out;
+  }
+  .download:hover {
+    box-shadow: 0 8px 16px -16px #f47068aa;
+  }
+  .download > a {
+    background: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .social-links > a i {
+    transition: 150ms ease-in-out;
+  }
+  .social-links > a:nth-child(1) i:hover {
+    color: #1da1f2;
+    filter: drop-shadow(3px 0 5px #1da1f288);
+  }
+  .social-links > a:nth-child(2) i:hover {
+    color: #5c4fe5;
+    filter: drop-shadow(3px 0 5px #5c4fe588);
+  }
+  .social-links > a:nth-child(3) i:hover {
+    color: #5865f2;
+    filter: drop-shadow(3px 0 5px #5865f288);
+  }
+  .social-links > a:nth-child(4) i:hover {
+    color: #0098d4;
+    filter: drop-shadow(3px 0 5px #0098d488);
+  }
+  .social-links > a:nth-child(5) i:hover {
+    color: #ff4500;
+    filter: drop-shadow(3px 0 5px #ff450088);
+  }
+  .home:hover {
+    filter: brightness(0.9);
+  }
+  .mobile-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .desktop {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
   }
 
-  header .links {
-    flex-direction: row;
+  #menuToggle {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 999;
+    -webkit-user-select: none;
+    user-select: none;
+    background: white;
+    border-radius: 1em;
+    box-shadow: 0 0.5em 2em 0em #2626294a;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background: var(--background);
+    border-radius: 2em;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    background-color: var(--primary);
+    transform:translateY(0.65em)  rotate(45deg) ;
+  }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform:  translateY(-0.65em) rotate(-45deg);
+    background-color: var(--primary);
+  }
+
+
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  .main-menu {
+    position: fixed;
+    z-index: -1;
+    width: fit-content;
+    padding: 2em;
+    max-width: calc(100vw - 2em*2);
+    bottom: 6em;
+    right: 2em;
+    background: var(--primary-text);
+    list-style-type: none;
+    transform-origin: 90% 100%;
+    transform: scale(0%);
+    transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+    border-radius: 2em 2em 1em 2em;
+    box-shadow: none;
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  .main-menu li a {
+    color: var(--background);
+  }
+
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    box-shadow: 0.5em 0.5em 2em 1em #22222299;
+    display: block;
   }
 }
