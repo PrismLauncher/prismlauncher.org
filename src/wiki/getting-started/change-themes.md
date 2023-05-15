@@ -21,8 +21,8 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![BD Blue](https://img.shields.io/badge/BD--Blue-4989E6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/BD-Blue.zip)
 [![Borest](https://img.shields.io/badge/Borest-1E1E2E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Borest.zip)
 [![Breeze Dark](https://img.shields.io/badge/Breeze--Dark-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Breeze-Dark.zip)
-[![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
 [![Catppuccin Frappe](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Frappe.zip)
+[![Catppuccin Latte](https://img.shields.io/badge/Catppuccin--Latte-DC8A78?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Latte.zip)
 [![Catppuccin Macchiato](https://img.shields.io/badge/Catppuccin--Macchiato-A6DA95?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Macchiato.zip)
 [![Catppuccin Mocha](https://img.shields.io/badge/Catppuccin--Mocha-DDB6F2?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Catppuccin-Mocha.zip)
 [![Deep Dark](https://img.shields.io/badge/Deep--Dark-141414?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Deep-Dark.zip)
@@ -35,6 +35,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Rangoon Lightning](https://img.shields.io/badge/Rangoon--Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning.zip)
 [![Solarized Dark](https://img.shields.io/badge/Solarized--Dark-073642?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Solarized-Dark.zip)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Steam-Classic.zip)
+[![Tokyo Night](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Tokyo-Night.zip)
 
 ### Icons packs only on Discord for now
 
