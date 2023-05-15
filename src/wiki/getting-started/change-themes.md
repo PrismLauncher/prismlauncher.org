@@ -35,7 +35,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Rangoon Lightning](https://img.shields.io/badge/Rangoon--Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning.zip)
 [![Solarized Dark](https://img.shields.io/badge/Solarized--Dark-073642?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Solarized-Dark.zip)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Steam-Classic.zip)
-[![Tokyo Night](https://img.shields.io/badge/Catppuccin--Frappe-EF9F76?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Tokyo-Night.zip)
+[![Tokyo Night](https://img.shields.io/badge/Tokyo--Night-7aa2f7?style=for-the-badge&logo=github&logoColor=c0caf5)](https://github.com/PrismLauncher/Themes/releases/latest/download/Tokyo-Night.zip)
 
 ### Icons packs only on Discord for now
 
