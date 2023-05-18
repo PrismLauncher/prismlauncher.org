@@ -90,7 +90,7 @@ hero:
 
 To talk directly to us and get involved with development:
 
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
+<a class="button type-link size-small" href="https://discord.gg/prism-community-1031648380885147709" target="_blank">Prism Launcher Discord</a>
 
 ## Matrix
 
