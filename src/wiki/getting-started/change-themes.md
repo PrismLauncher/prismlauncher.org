@@ -68,7 +68,7 @@ Here are the instructions to get your themes & icons up and working.
 
 ### Discord Themes
 
-[![Prism Launcher Discord server](https://discordapp.com/api/guilds/1031648380885147709/widget.png?style=banner2)](https://discord.gg/prism-community-1031648380885147709)
+[![Prism Launcher Discord server](https://discordapp.com/api/guilds/1031648380885147709/widget.png?style=banner2)](https://discord.gg/ArX2nafFz2)
 
 Instructions to install themes from Discord are located in the [#launcher-themes](https://discord.com/channels/1031648380885147709/1032673754955923598/1032673754955923598) discord channel.
 
