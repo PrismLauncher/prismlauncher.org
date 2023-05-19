@@ -79,6 +79,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.well-known");
+  eleventyConfig.addPassthroughCopy("src/_redirects"); // Netlify redirects
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/inter": "assets/fonts/inter",
   });
