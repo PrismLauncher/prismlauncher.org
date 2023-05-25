@@ -34,15 +34,20 @@
   --danger-light: hsl(17, 95%, 80%);
   
   background-color: var(--background);
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    --code: #F6F8FA;
     --primary-text: #333;
     --primary-text-muted: #666;
     --background: #ffffff;
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
+    
+    background-color: var(--background);
+    color-scheme: light;
   }
 }
 
@@ -152,8 +157,18 @@ pre {
 
 code {
   word-break: break-all;
-  color: white;
+  color: #f8f8f2;
   background-color: var(--code);
+}
+
+:not(pre)>code {
+  padding: 0.18em;
+}
+
+@media (prefers-color-scheme: light) {
+  code {
+    color: #1F2328;
+  }
 }
 
 .highlight-line {
@@ -176,7 +191,7 @@ code {
 }
 
 .highlight-line-isdir {
-  color: #b0b0b0;
+  color: #b00808;
   background-color: #222;
 }
 
