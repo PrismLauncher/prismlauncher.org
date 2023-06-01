@@ -12,7 +12,6 @@ hero:
     url: /download
     content: 'Download Now'
 ---
-
 <div class="content">
   <div class="row row-reverse">
     <div class="column">
@@ -90,7 +89,7 @@ hero:
 
 To talk directly to us and get involved with development:
 
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
+<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">Prism Launcher Discord</a>
 
 ## Matrix
 
