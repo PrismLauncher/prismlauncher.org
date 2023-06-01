@@ -12,6 +12,56 @@
 
   --disabled: #666;
 
+  --rainbow: linear-gradient(90deg,
+    hsl(0, 100%, 30%),
+    hsl(30, 100%, 30%),
+    hsl(60, 100%, 30%),
+    hsl(90, 100%, 30%),
+    hsl(120, 100%, 30%),
+    hsl(150, 100%, 30%),
+    hsl(180, 100%, 30%),
+    hsl(210, 100%, 30%),
+    hsl(240, 100%, 30%),
+    hsl(270, 100%, 30%),
+    hsl(300, 100%, 30%),
+    hsl(330, 100%, 30%),
+    hsl(360, 100%, 30%)
+  );
+
+  --rainbow-dark: linear-gradient(90deg,
+    hsl(0, 100%, 20%),
+    hsl(30, 100%, 20%),
+    hsl(60, 100%, 20%),
+    hsl(90, 100%, 20%),
+    hsl(120, 100%, 20%),
+    hsl(150, 100%, 20%),
+    hsl(180, 100%, 20%),
+    hsl(210, 100%, 20%),
+    hsl(240, 100%, 20%),
+    hsl(270, 100%, 20%),
+    hsl(300, 100%, 20%),
+    hsl(330, 100%, 20%),
+    hsl(360, 100%, 20%)
+  );
+
+  --rainbow-light: linear-gradient(90deg,
+    hsl(0, 100%, 40%),
+    hsl(30, 100%, 40%),
+    hsl(60, 100%, 40%),
+    hsl(90, 100%, 40%),
+    hsl(120, 100%, 40%),
+    hsl(150, 100%, 40%),
+    hsl(180, 100%, 40%),
+    hsl(210, 100%, 40%),
+    hsl(240, 100%, 40%),
+    hsl(270, 100%, 40%),
+    hsl(300, 100%, 40%),
+    hsl(330, 100%, 40%),
+    hsl(360, 100%, 40%)
+  );
+
+
+
   --primary: hsl(350, 66%, 63%);
   --link: hsl(214, 46%, 52%);
   --info: hsl(274, 32%, 42%);
@@ -33,7 +83,7 @@
   --warn-light: hsl(49, 85%, 79%);
   --danger-light: hsl(17, 95%, 80%);
   
-  background-color: var(--background);
+  background: var(--background);
   color-scheme: dark;
 }
 
@@ -46,7 +96,7 @@
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
     
-    background-color: var(--background);
+    background: var(--background);
     color-scheme: light;
   }
 }
@@ -150,7 +200,7 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: 0.5em 0;
-  background-color: var(--code);
+  background: var(--code);
   color: white;
   overflow: auto;
 }
@@ -158,7 +208,7 @@ pre {
 code {
   word-break: break-all;
   color: #f8f8f2;
-  background-color: var(--code);
+  background: var(--code);
 }
 
 :not(pre)>code {
@@ -192,20 +242,20 @@ code {
 
 .highlight-line-isdir {
   color: #b00808;
-  background-color: #222;
+  background: #222;
 }
 
 .highlight-line-active {
-  background-color: #444;
-  background-color: hsla(0, 0%, 27%, 0.8);
+  background: #444;
+  background: hsla(0, 0%, 27%, 0.8);
 }
 
 .highlight-line-add {
-  background-color: #45844b;
+  background: #45844b;
 }
 
 .highlight-line-remove {
-  background-color: #902f2f;
+  background: #902f2f;
 }
 
 .container {
@@ -215,7 +265,7 @@ code {
 }
 
 .content {
-  background-color: var(--background);
+  background: var(--background);
   border-radius: 1em;
   padding: 1em;
 }
@@ -226,7 +276,7 @@ code {
 }
 
 .infobox {
-  background-color: var(--accent);
+  background: var(--accent);
   padding: 1em;
   border-radius: 1em;
 }
@@ -242,7 +292,7 @@ code {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  background-color: var(--primary);
+  background: var(--rainbow);
   border-radius: .365em;
   transition: 200ms ease;
   background-position-x: 100%;
@@ -255,49 +305,49 @@ code {
 }
 
 .button:hover {
-  background-color: var(--primary-dark);
+  background: var(--rainbow-dark);
 }
 
 .button.type-link {
-  background-color: var(--link);
+  background: var(--rainbow);
 }
 
 .button.type-link:hover {
-  background-color: var(--link-dark);
+  background: var(--rainbow-dark);
 }
 
 .button.type-info {
-  background-color: var(--info);
+  background: var(--rainbow);
 }
 
 .button.type-info:hover {
-  background-color: var(--info-dark);
+  background: var(--rainbow-dark);
 }
 
 .button.type-success {
-  background-color: var(--success);
+  background: var(--rainbow);
 }
 
 .button.type-success:hover {
-  background-color: var(--success-dark);
+  background: var(--rainbow-dark);
 }
 
 .button.type-warn {
-  background-color: var(--warn);
+  background: var(--warn);
   color: #000
 }
 
 .button.type-warn:hover {
-  background-color: var(--warn-dark);
+  background: var(--warn-dark);
   color: #000
 }
 
 .button.type-danger {
-  background-color: var(--danger);
+  background: var(--danger);
 }
 
 .button.type-danger:hover {
-  background-color: var(--danger-dark);
+  background: var(--danger-dark);
 }
 
 .button.size-large {
@@ -372,7 +422,7 @@ a.direct-link:focus:visited,
   flex: 1;
   padding: 1em;
   text-align: center;
-  background-color: var(--accent);
+  background: var(--accent);
 }
 
 .card .button {
@@ -390,28 +440,28 @@ a.direct-link:focus:visited,
 }
 
 .notification.type-primary {
-  background-color: var(--primary);
+  background: var(--rainbow);
 }
 
 .notification.type-link {
-  background-color: var(--link);
+  background: var(--rainbow);
 }
 
 .notification.type-info {
-  background-color: var(--info);
+  background: var(--rainbow);
 }
 
 .notification.type-success {
-  background-color: var(--success);
+  background: var(--rainbow-light);
 }
 
 .notification.type-warn {
-  background-color: var(--warn);
+  background: var(--warn);
   color: #000
 }
 
 .notification.type-danger {
-  background-color: var(--danger);
+  background: var(--danger);
 }
 
 /* footer */
