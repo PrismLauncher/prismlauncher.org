@@ -95,8 +95,8 @@ You don't need to clone the repo for this; the spec file handles that.
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-rpm repo
-git clone https://pagure.io/prismlauncher-rpm.git
+# get the rpm spec file from the prismlauncher repo on pagure
+git clone https://pagure.io/prismlauncher.git
 cd prismlauncher-rpm
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
