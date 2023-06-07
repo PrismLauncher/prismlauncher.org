@@ -1,11 +1,11 @@
 ---
-title: "!ALERT! Security vulnerability in the CurseForge platform"
+title: "!ALERT! Security vulnerability in the CurseForge and Bukkit platform"
 description: Curseforge Compromised
 date: 2023-06-07
 ---
 
 
-Multiple groups are reporting CurseForge as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the CurseForge platform. **We recommend not downloading or updating any mods from CurseForge at the moment**, and we will update y'all with the latest news as more information becomes available.
+Multiple groups are reporting CurseForge and Bukkit as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the Overwolf platform. **We recommend not downloading or updating any mods from CurseForge and Bukkit at the moment**, and we will update y'all with the latest news as more information becomes available.
 
 Table of contents:
 
