@@ -8,8 +8,6 @@ For the latest news, check out this document: <https://github.com/fractureiser-i
 
 Multiple groups are reporting many CurseForge and Bukkit projects as compromised. Malware has been uploaded to several projects and it's now known that the virus is self-replicating and spreading. **We recommend that you do not download or update any mods, modpacks, or plugins at this time**, and we'll keep you updated as more information becomes available.
 
-Additionally there are indicators that the malware is self-replicating, which is why **you should avoid playing Minecraft at all for now**.
-
 Table of contents:
 
 [[toc]]
