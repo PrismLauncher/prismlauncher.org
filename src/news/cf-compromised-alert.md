@@ -1,6 +1,6 @@
 ---
 title: "!ALERT! Security vulnerability in the CurseForge and Bukkit platform"
-description: Curseforge Compromised
+description: CurseForge Compromised
 date: 2023-06-07
 ---
 
@@ -14,7 +14,7 @@ Table of contents:
 ## What can I do?
 
 <div class="notification type-warn top">
-Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
+Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on CurseForge aren't safe old releases have been found to be modifed.
 </div>
 
 ### Manual Check
@@ -131,7 +131,7 @@ The currently confirmed affected mods and modpacks are as follows:
 
 *At this point, we have enough samples to know this is quite widespread.*
 
-Curseforge:
+CurseForge:
 
 - Dungeons Arise
 - Sky Villages
@@ -143,7 +143,7 @@ Curseforge:
 - AutoBroadcast
 - Museum Curator Advanced
 - Vault Integrations Bug fix
-- Create Infernal Expansion Plus - Mod removed from curseforge
+- Create Infernal Expansion Plus - Mod removed from CurseForge
 
 Bukkit:
 
@@ -163,17 +163,17 @@ Bukkit:
 - Floating Damage
 
 
-Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large curseforge profiles. The curseforge profiles are also showing someone logging into them directly.
+Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large CurseForge profiles. The CurseForge profiles are also showing someone logging into them directly.
 
 ## What we know about the malware
 
 **Notice: Plugins with similar malware have been found as early as mid-April.**
 
-A number of Curseforge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
+A number of CurseForge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
 
-**Until further notice, do not use the official Curseforge launcher, or download anything from Curseforge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from Curseforge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
+**Until further notice, do not use the official CurseForge launcher, or download anything from CurseForge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from CurseForge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
 
-If you have downloaded any mods from Curseforge, or plugins from Bukkit, even through clients such as Prism Launcher or the official Curseforge launcher, it is recommended that you follow the "Am I infected?" guide below.
+If you have downloaded any mods from CurseForge, or plugins from Bukkit, even through clients such as Prism Launcher or the official CurseForge launcher, it is recommended that you follow the "Am I infected?" guide below.
 
 The affected accounts had two-factor authentication enabled. It's unlikely this is a simple password compromise situation; it may be auth token compromise or something bigger on the CF side. Multiple accounts are affected so we don't believe this is isolated.
 
@@ -210,16 +210,16 @@ https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
 > 
 > Several new files have been uploaded to projects by Luna Pixel Studios, including Sky Villages, When Dungeons Arise, and Better MC. These may or may not include malicious files. We are not responsible for this, and currently doing everything we can to remove these files.
 > 
-> This could be due to a Curseforge bug or someone with access to the Luna Pixel Studios account, or even Curseforge itself. 
+> This could be due to a CurseForge bug or someone with access to the Luna Pixel Studios account, or even CurseForge itself. 
 > 
-> Currently, it is best to avoid downloading files off Curseforge until this is resolved. I will let you all know when this is resolved. 
+> Currently, it is best to avoid downloading files off CurseForge until this is resolved. I will let you all know when this is resolved. 
 > 
 > Thank you.
 
 
 > To clear up some questions:
 > 
-> Any launcher that uses Curseforge API is affected, but you are safe as long as you aren't downloading these files.
+> Any launcher that uses CurseForge API is affected, but you are safe as long as you aren't downloading these files.
 > 
 > Nothing will auto-update unless you specifically told a launcher to do so.
 > 
@@ -228,9 +228,9 @@ https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
 
 > Summary:
 > 
-> As of a couple hours ago, tens of mods & modpacks, mostly on 1.16.5, 1.18.2 and 1.19.2 have been updated to include malicious files. These projects include When Dungeons Arise, Sky Villages, and the Better MC modpack series. The Curseforge profile of these accounts show someone logging into them directly.
+> As of a couple hours ago, tens of mods & modpacks, mostly on 1.16.5, 1.18.2 and 1.19.2 have been updated to include malicious files. These projects include When Dungeons Arise, Sky Villages, and the Better MC modpack series. The CurseForge profile of these accounts show someone logging into them directly.
 > 
-> It is very likely that someone has access to several large Curseforge profiles and have found a way of bypassing 2FA to log into them.
+> It is very likely that someone has access to several large CurseForge profiles and have found a way of bypassing 2FA to log into them.
 > 
 > You can see here that the Fabulously Optimized team was also affected: <https://cdn.discordapp.com/attachments/790275974503202857/1115801834746023946/image.png>
 > 
@@ -251,5 +251,5 @@ https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
 
 ### The Iris Project
 
-> We have reason to believe many accounts on Curseforge have been hacked and are uploading malicious files containing bot-nets. Luna Pixel Studios, the owner of many big modpacks, is one of the affected accounts.
+> We have reason to believe many accounts on CurseForge have been hacked and are uploading malicious files containing bot-nets. Luna Pixel Studios, the owner of many big modpacks, is one of the affected accounts.
 > The situation is being actively looked into.
