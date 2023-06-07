@@ -7,6 +7,8 @@ date: 2023-06-07
 
 Multiple groups are reporting CurseForge and Bukkit as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the Overwolf platform. **We recommend not downloading or updating any mods from CurseForge and Bukkit at the moment**, and we will update y'all with the latest news as more information becomes available.
 
+Additionally there are indicators that the malware is self-replicating, which is why **you should avoid playing Minecraft at all for now**.
+
 Table of contents:
 
 [[toc]]
@@ -14,7 +16,7 @@ Table of contents:
 ## What can I do?
 
 <div class="notification type-warn top">
-Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on CurseForge aren't safe old releases have been found to be modifed.
+Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on CurseForge aren't safe old releases have been found to be modifed. Additionally there are indicators that the malware is self-replicating, which is why you should avoid playing Minecraft at all for now.
 </div>
 
 ### Manual Check
@@ -39,7 +41,9 @@ Before downloading, the malware will create the enclosing directory if it does n
 If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry, or dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
 
 <div class="notification type-warn top">
-If you have the virus and have successfully removed it please make sure to change <b>ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.
+If you have the virus and have successfully removed it please make sure to change <b>ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.<br>
+
+There are indicators that the malware is self-replicating. Apparently the malware scans your computer for mods and Minecraft jars and injects itself into those. Don't start Minecraft for now.
 </div>
 
 
