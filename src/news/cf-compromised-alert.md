@@ -11,7 +11,7 @@ Table of contents:
 
 [[toc]]
 
-## What you can do?
+## What can I do?
 
 <div class="notification type-warn top">
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
