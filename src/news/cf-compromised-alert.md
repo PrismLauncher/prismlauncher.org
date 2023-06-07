@@ -151,8 +151,52 @@ TODO
 
 https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# - public wiki can be trolled and compromised procede with caution
 
-![Lunar Pixel Studios First Report](/img/news/cf-compromised/image.png)
+### Luna Pixel Studios
 
-![Lunar Pixel Studios Second Report/Announcement](/img/news/cf-compromised/image2.png)
+> **DO NOT UPDATE MODS OR MODPACKS ON CURSEFORGE.**
+> 
+> Several new files have been uploaded to projects by Luna Pixel Studios, including Sky Villages, When Dungeons Arise, and Better MC. These may or may not include malicious files. We are not responsible for this, and currently doing everything we can to remove these files.
+> 
+> This could be due to a Curseforge bug or someone with access to the Luna Pixel Studios account, or even Curseforge itself. 
+> 
+> Currently, it is best to avoid downloading files off Curseforge until this is resolved. I will let you all know when this is resolved. 
+> 
+> Thank you.
 
-![Lunar Pixel Studios Who is affected](/img/news/cf-compromised/image3.png)
+
+> To clear up some questions:
+> 
+> Any launcher that uses Curseforge API is affected, but you are safe as long as you aren't downloading these files.
+> 
+> Nothing will auto-update unless you specifically told a launcher to do so.
+> 
+> These files are not confirmed to be malicious, but we still recommend doing an antivirus scan using Windows Defender.
+
+
+> Summary:
+> 
+> As of a couple hours ago, tens of mods & modpacks, mostly on 1.16.5, 1.18.2 and 1.19.2 have been updated to include malicious files. These projects include When Dungeons Arise, Sky Villages, and the Better MC modpack series. The Curseforge profile of these accounts show someone logging into them directly.
+> 
+> It is very likely that someone has access to several large Curseforge profiles and have found a way of bypassing 2FA to log into them.
+> 
+> You can see here that the Fabulously Optimized team was also affected: <https://cdn.discordapp.com/attachments/790275974503202857/1115801834746023946/image.png>
+> 
+> One of the malicious mods, DungeonsX, shows this code when decompiled: <https://cdn.discordapp.com/attachments/790275974503202857/1115801511411335228/image.png>
+> 
+> The main payload being sent from this code can be viewed here: <https://pastebin.com/k2ZQKbEz>
+> 
+> The DungeonsX mod downloads a jar file and loads it into minecraft, executes a function that downloads the program again, and saves it as a self running file. This mod has been added to all of Luna Pixel Studio's modpacks, and the files were immediately archived by the bad actor. It can be assumed that these files will become available again later, exposing hundreds of thousands of people to malware.
+> 
+> This code allows the mod to be used as a botnet and leave a backdoor on devices: <https://chorb.is-from.space/DiscordPTB_gzDJsWklzc.png>
+> 
+> The code being executed mainly targets Linux users, likely with the intent of infecting servers. This will still affect people on Windows. 
+> 
+> The only file from this incident which is not already archived is https://www.curseforge.com/minecraft/mc-mods/skyblock-core/files/4570565.
+> This file was archived, but gained 10 downloads in that time, implying it's being shared on other platforms: <https://cdn.discordapp.com/attachments/856652644113580072/1115811476591095908/image.png>
+> 
+> ### It is recommended to hold off on updating any mods or modpacks until this is resolved.
+
+### The Iris Project
+
+> We have reason to believe many accounts on Curseforge have been hacked and are uploading malicious files containing bot-nets. Luna Pixel Studios, the owner of many big modpacks, is one of the affected accounts.
+> The situation is being actively looked into.
