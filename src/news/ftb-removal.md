@@ -18,6 +18,8 @@ The reason for this request from the FTB team seems to be related to some launch
 
 Note some parts have been removed due to privacy concerns.
 
+Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
+
 ### People Involved in these conversations shown below
 
 > IThundxr
@@ -106,9 +108,37 @@ Note some parts have been removed due to privacy concerns.
 
 ### Request to Remove FTB Modpack Downloading
 
-<img alt="Scrumplex is reached by slowpoke where slowpoke asks for FTB modpack downloading to be removed" src="/img/news/ftb-removal/request4.png" style="width: 40em">
+> Hi, I see your a community manager, but do you also work on Prism Launcher?
+> - Slowpoke
+
 <br/>
-<img alt="Slowpoke clarifies that prism hasn't done anything wrong that has ended up causing this" src="/img/news/ftb-removal/request5.png" style="width: 40em">
+
+> Hi, yes i do
+> - Scrumplex
+
+<br/>
+
+> Hi, I am not sure if you can point me in the direction of someone who can help me. I work for Feed The Beast (the pack developers) We have recently been contacted by our legal advisors and been told that we unfortunately going to have to change some things that we have overlooked in the past when it comes to other launchers that have been downloading FTB modpacks without permission. Due to this I am contacting the developers of launchers that are currently distributing our packs in the hopes of resolving this without having to take it any further. Can you find out weather you are open to voluntarily removing our packs from the Prism Launcher for me. If you need me to send something official I can do that, but I am hoping we can do this in the easiest way possible.
+> I was hoping that this was something we would be able to continue to overlook, however that is apparently no longer possible.
+> - Slowpoke
+
+<br/>
+
+> I assume this is similar to what MultiMC did last year already?
+
+> Our main reasoning for not following MultiMC was that we were not contacted ourselves yet. Though we did confirm with FTB team members if our implementations were fine.
+
+> Of course i am sad to hear the situation has changed since then, but we would of course comply. We always try to respect upstreams even if it means that we lose a feature or two
+> Is it okay if I screenshot this and send it to the other maintainers?
+> - Scrumplex
+
+<br/>
+
+> Of course
+> and as I said, nothing you have done has led to this in any way
+> We have just found out that there are other launchers on the horizon that intent to make financial gains from the installation of our modpacks and that can cause issues for us, especially if we have no history of being seen to be protecting our IP.
+> As long as launchers were operating for free, we were able to overlook things. But thats not the case any more.
+> - Slowpoke
 
 ### Additional
 
@@ -152,7 +182,25 @@ Note some parts have been removed due to privacy concerns.
 > To be clear this only applies to anything that comes from modpacks.ch. If you get it from api.feed-the-beast.com then it is OK. We are not going to lock off access to the legacy packs. If you choose to continue to support those packs then your OK to allow those.
 > - Slowpoke
 
+## Raw screenshots
+
+<img alt="Reaching out to FTB to ask for permission to use FTB modpacks in prism and they ask for more info how we use the api." src="/img/news/ftb-removal/request1.png" style="width: 40em">
+<br/>
+<img alt="Info on how we use the api is provided and they forwarded it to higher ups and reply saying how we use it is fine." src="/img/news/ftb-removal/request2.png" style="width: 40em">
+<br/>
+<img alt="They clarify its only confirmation that how we use it is fine." src="/img/news/ftb-removal/request3.png" style="width: 40em">
+<br/>
+<img alt="Scrumplex is reached by slowpoke where slowpoke asks for FTB modpack downloading to be removed" src="/img/news/ftb-removal/request4.png" style="width: 40em">
+<br/>
+<img alt="Slowpoke clarifies that prism hasn't done anything wrong that has ended up causing this" src="/img/news/ftb-removal/request5.png" style="width: 40em">
+<br/>
+<img alt="IThundxr reaches out to slowpoke for further clarification" src="/img/news/ftb-removal/request6.png" style="width: 40em">
+<br/>
+<img alt="Slowpoke says overwolf has nothing to do with this decision to make launchers remove FTB modpack downloading" src="/img/news/ftb-removal/request7.png" style="width: 40em">
+<br/>
+<img alt="More info is given and basically the decision was made due to a launcher trying to monetize ftb packs." src="/img/news/ftb-removal/request8.png" style="width: 40em">
 
 
 [pr-ftb-removal]: https://github.com/PrismLauncher/PrismLauncher/pull/1040
 [issue-ftb-app-import]: https://github.com/PrismLauncher/PrismLauncher/issues/235
+[raw-screenshots]: https://prismlauncher.org/news/ftb-removal/#raw-screenshots
