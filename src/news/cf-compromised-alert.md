@@ -20,7 +20,7 @@ The currently confirmed affected mods and modpacks are as follows:
 - Dungeons Arise
 - Sky Villages
 - Better MC modpack series
-- Fabuously Optimized
+- ~~Fabuously Optimized~~ (Found to not be compromised)
 - DungeonsX
 - Haven Elytra (bukkit plugin)
 - Skyblock Core
@@ -145,7 +145,7 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 
 ## Technical info
 
-Please refer to https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# as it contains more up to date technical information
+TODO
 
 ## References
 
