@@ -18,6 +18,12 @@ windows users should be checking for libWebGL64.jar in %localappdata%\Microsoft 
 You will need to enable "View Hidden Files" for the file to appear, if it exists. You can find guides for this online
 </div>
 
+<div class="infobox top">
+@PandaNinjas has reported:
+
+use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include 0.0.0.0 files-8ie.pages.dev On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
+</div>
+
 <div class="notification type-warn top">
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe
 </div>
