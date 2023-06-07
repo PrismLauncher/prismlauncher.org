@@ -220,11 +220,11 @@ Taking a quick look over the decompiled source code, it will indeed fail to func
 </div>
 
 <div class="infobox top">
-@getchoo says:
+@getchoo and @Scrumplex says:
 
-**Note: when running prism launcher at a user level (i.e., not as root), the serviced installed by stage 1 of the malware will only be made at a user level - however, due to an invalid `WantedBy` field this will not work.
+**Note: When running Prism Launcher at a user level (i.e., not as root), the services installed by stage 1 of the malware will only be made at a user level - however, due to an invalid `WantedBy` field these will not work.
 
-this means most linux users may be unaffected by this, but as the files are still there and could pose a threat, it is still recommended to manually check for the files or the run the script to delete them from your system.
+This means most Linux users may be unaffected by this, but as the files are still there and could pose a threat, it is still recommended to manually check for the files or the run the script to delete them from your system.
 
 </div>
 
