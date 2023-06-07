@@ -107,7 +107,7 @@ linux users should be checking for systemd-utility.service in ~/.config/systemd/
 
 windows users should be checking for libWebGL64.jar in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup and a run.bat in %localappdata%\Microsoft Edge
 
-You will need to enable "View Hidden Files" for the file to appear, if it exists. You can find guides for this online
+You will need to enable "View Hidden Files" AND disable "Hide protected operating system files" for the file to appear, if it exists. You can find guides for this online.
 </div>
 
 <div class="infobox top">
