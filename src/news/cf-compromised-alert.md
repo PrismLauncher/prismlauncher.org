@@ -109,7 +109,7 @@ Linux:
 ```bash
 #!/usr/bin/env bash
 
-service_file="systemd-utility"
+service_file="systemd-utility.service"
 data_dir="$HOME/.config/.data"
 bad_paths=(
         "$data_dir/.ref"
