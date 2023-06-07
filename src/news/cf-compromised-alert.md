@@ -141,15 +141,13 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 
 </div>
 
-
-
 ## Technical info
 
-TODO
+Please find up to date technical information on the hakmd document (now not public editable) - https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
 
 ## References
 
-https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# - public wiki can be trolled and compromised procede with caution
+https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
 
 ![Lunar Pixel Studios First Report](/img/news/cf-compromised/image.png)
 
