@@ -4,7 +4,7 @@ description: Malware is being distributed through Minecraft mods and modpacks ma
 date: 2023-06-07
 ---
 
-For the latest news, check out this document: <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
+For the latest news, check out this document: <https://github.com/fractureiser-investigation/fractureiser>
 
 Multiple groups are reporting CurseForge and Bukkit as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the Overwolf platform. **We recommend not downloading or updating any mods from CurseForge and Bukkit at the moment**, and we will update y'all with the latest news as more information becomes available.
 
