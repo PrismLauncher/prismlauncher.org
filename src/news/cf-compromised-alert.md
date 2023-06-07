@@ -11,7 +11,7 @@ Table of contents:
 
 [[toc]]
 
-## Am I infected?
+## What you can do?
 
 <div class="notification type-warn top">
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
@@ -19,7 +19,7 @@ Please be aware that this is only for the known compromised jars there is possib
 
 ### Manual Check
 
-> When checking if you are infected, make sure to make `hidden files visible` AND disable `Hide protected operating system files`, for your respective platform.
+> When checking if you are infected, make sure to make `hidden files visible` and for windows disable `Hide protected operating system files`, for your respective platform.
 
 Stage 1 of the malware attempts to drop a file into the following locations:
 * **Linux**: 
@@ -37,6 +37,26 @@ Stage 1 of the malware attempts to drop a file into the following locations:
 Before downloading, the malware will create the enclosing directory if it does not exist. Windows/MS Edge does not use the "Microsoft Edge"-with-a-space directory, and Linux software likely does not use `~/.config/.data`, so these folders existing may be a sign that stage1 has executed on a victim computer.
 
 If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry, or dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
+
+<div class="notification type-warn top">
+If you have the virus and have successfully removed it please make sure to change <b>ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.
+</div>
+
+
+<div class="infobox top">
+@PandaNinjas has reported:
+
+use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include `0.0.0.0 files-8ie.pages.dev` On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
+</div>
+
+<div class="infobox top">
+@orowith2os suggests:
+
+If you use Linux, use the [PrismLauncher Flatpak](https://flathub.org/apps/org.prismlauncher.PrismLauncher) and be very careful of what you give it access to through utilities such as Flatseal. By default, it has no access to the needed directories to compromise the system.
+
+Other sandbox escapes may be possible, but the malware most likely doesn't account for running inside of a sandbox of this sort.
+
+</div>
 
 ### Automated Script
 
@@ -159,38 +179,13 @@ The affected accounts had two-factor authentication enabled. It's unlikely this 
 
 Currently, we do not suspect other platforms such as Modrinth to be affected.
 
+It has been found that the information this virus steals is highly likely related to microsoft credentials and browser saved passwords. **RESET ALL OF YOUR PASSWORDS** after you have removed the virus
+
 ### Distribution
 
 Some modpacks have had updates published for them without the knowledge of the authors, adding a dependency on malicious mods. These updates were archived immediately after uploading, meaning they *do not show on the web UI, only via the API.*
 
 We cannot tell if the malicious mods were always malicious, or if they got edited. They have upload dates multiple weeks in the past. A CDN compromise or cache poisoning is not out of the question due to Curse's usage of the extremely outdated and insecure MD5 to verify downloads.
-
-## What you can do
-
-<div class="infobox">
-@Getchoo has reported that decompiling compromised jars have found that they compromise these locations:
-
-linux users should be checking for systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data
-
-windows users should be checking for libWebGL64.jar in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup and a run.bat in %localappdata%\Microsoft Edge
-
-You will need to enable "View Hidden Files" AND disable "Hide protected operating system files" for the file to appear, if it exists. You can find guides for this online.
-</div>
-
-<div class="infobox top">
-@PandaNinjas has reported:
-
-use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include `0.0.0.0 files-8ie.pages.dev` On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
-</div>
-
-<div class="infobox top">
-@orowith2os suggests:
-
-If you use Linux, use the [PrismLauncher Flatpak](https://flathub.org/apps/org.prismlauncher.PrismLauncher) and be very careful of what you give it access to through utilities such as Flatseal. By default, it has no access to the needed directories to compromise the system.
-
-Other sandbox escapes may be possible, but the malware most likely doesn't account for running inside of a sandbox of this sort.
-
-</div>
 
 ## Technical info
 
