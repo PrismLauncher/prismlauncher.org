@@ -17,13 +17,39 @@ According to Luna Pixel Studios "tenos of mods & modpacks, mostly on 1.16.5 1.18
 
 The currently confirmed affected mods and modpacks are as follows:
 
+*At this point, we have enough samples to know this is quite widespread.*
+
+Curseforge:
+
 - Dungeons Arise
 - Sky Villages
 - Better MC modpack series
 - ~~Fabuously Optimized~~ (Found to not be compromised)
-- DungeonsX
-- Haven Elytra (bukkit plugin)
+- Dungeonz
 - Skyblock Core
+- Vault Integrations
+- AutoBroadcast
+- Museum Curator Advanced
+- Vault Integrations Bug fix
+- Create Infernal Expansion Plus - Mod removed from curseforge
+
+Bukkit:
+
+- Display Entity Editor
+- Haven Elytra
+- The Nexus Event Custom Entity Editor
+- Simple Harvesting
+- MCBounties
+- Easy Custom Foods
+- Anti Command Spam Bungeecord Support
+- Ultimate Leveling
+- Anti Redstone Crash
+- Hydration
+- Fragment Permission Plugin
+- No VPNS
+- Ultimate Titles Animations Gradient RGB
+- Floating Damage
+
 
 Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large curseforge profiles. The curseforge profiles are also showing someone logging into them directly.
 
@@ -33,19 +59,36 @@ Luna Pixel Studios has stated its very likely someone has found a way to bypass 
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
 </div>
 
+**Notice: Plugins with similar malware have been found as early as mid-April.**
+
+A number of Curseforge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
+
+**Until further notice, do not use the official Curseforge launcher, or download anything from Curseforge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from Curseforge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
+
+If you have downloaded any mods from Curseforge, or plugins from Bukkit, even through clients such as Prism Launcher or the official Curseforge launcher, it is recommended that you follow the "Am I infected?" guide below.
+
+The affected accounts had two-factor authentication enabled. It's unlikely this is a simple password compromise situation; it may be auth token compromise or something bigger on the CF side. Multiple accounts are affected so we don't believe this is isolated.
+
+Currently, we do not suspect other platforms such as Modrinth to be affected.
+
 ### Am I infected?
+
+> When checking if you are infected, make sure to make `hidden files visible`, for your respective platform.
+
+There are scripts available [here](https://prismlauncher.org/news/cf-compromised-alert/) which can help you check easily.
+
 Stage 1 of the malware attempts to drop a file into the following locations:
 * **Linux**: `~/.config/.data/lib.jar`
 * **Windows**: `%LOCALAPPDATA%\Microsoft Edge\libWebGL64.jar` (or `~\AppData\Local\Microsoft Edge\libWebGL64.jar`)
     * Yes, "Microsoft Edge" with a space
     * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run` 
-    * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
+    * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup` 
 * **All other OSes**: Unaffected. The malware is hardcoded for Windows and Linux only. It is possible it will receive an update adding payloads for other OSes in the future.
 
 
-Before downloading, the malware will create the enclosing directory if it does not exist. Windows/MS Edge does not use the "Microsoft Edge"-with-a-space directory, and Linux software likely does not use `~/.config/.data`; this may be a sign that stage1 has executed on a victim computer.
+Before downloading, the malware will create the enclosing directory if it does not exist. Windows/MS Edge does not use the "Microsoft Edge"-with-a-space directory, and Linux software likely does not use `~/.config/.data`, so these folders existing may be a sign that stage1 has executed on a victim computer.
 
-If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry and dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
+If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry, or dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
 
 ### Distribution
 
@@ -100,6 +143,10 @@ if (!($res)) {
 
 Read-Host -Prompt "press any button to exit"
 ```
+
+<div class="notification type-warn">
+"To use this file, open PowerShell, run Unblock-File .\Downloads\check_cf.ps1 (or Unblock-File .\OneDrive\Downloads\check_cf.ps1), then right click the file explorer, and run it with powershell"
+</div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
 
