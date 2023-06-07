@@ -1,6 +1,6 @@
 ---
-title: "!ALERT! Security vulnerability in the CurseForge and Bukkit platform"
-description: CurseForge Compromised
+title: "[MALWARE WARNING] \"fractureiser\" malware in many popular Minecraft mods and modpacks"
+description: Malware is being distributed through Minecraft mods and modpacks mainly through CurseForge
 date: 2023-06-07
 ---
 
