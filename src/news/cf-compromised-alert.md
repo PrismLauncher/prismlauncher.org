@@ -25,7 +25,7 @@ Please be aware that this is only for the known compromised jars there is possib
 <div class="infobox top">
 @PandaNinjas has reported:
 
-use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include 0.0.0.0 files-8ie.pages.dev On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
+use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include `0.0.0.0 files-8ie.pages.dev` On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
 </div>
 
 <div class="infobox top">
