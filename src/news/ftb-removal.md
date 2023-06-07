@@ -41,7 +41,7 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > Discord ID: 104950896491823104
 
 ### Initial Permission Request
->
+
 > Hi,
 > I’m a mod from prism and just confirming that your okay with us using the ftb api as we already do
 
