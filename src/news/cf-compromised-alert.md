@@ -29,7 +29,7 @@ use your firewall to block outbound connections to 85[.]217[.]144[.]130, and mod
 </div>
 
 <div class="infobox top">
-Getchoo has released a linux and windows command line script to quickly check if these files exist:
+@Getchoo has released a linux and windows command line script to quickly check if these files exist:
 
 Windows:
 ```powershell
