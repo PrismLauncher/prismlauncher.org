@@ -43,6 +43,7 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 ### Initial Permission Request
 > Hi, 
 > I’m a mod from prism and just confirming that your okay with us using the ftb api as we already do
+
 > - IThundxr
 
 <br/>
@@ -50,21 +51,25 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > Thank you for reaching out. Right now, the kinda, "official" statement is that other launchers shouldn't be using our API as it bypasses our ads and thus causes financial loss... I can take this up to my boss and get you an official response. 
 
 > Do you know the exact way you use our API? The details are kinda important at this stage as how you use it depends on where the line is drawn. We have some relatively strict restrictions on how we're allow to use the Curse API and that propagates down to our API.
+
 > - Mikey
 
 <br/>
 
 > we use it for modpacks but CF mods are downloaded through the official curseforge API so it shows a dialog for mods with mod distribution disabled
+
 > - IThundxr
 
 <br/>
 
 > Using the curseforge object inside our files array?
+
 > - Mikey
 
 <br/>
 
 > Do u mean like using the curse forge array to find mods with the official api?
+
 > - IThundxr
 
 <br/>
@@ -77,49 +82,58 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 <br/>
 
 > Yea we use that for searching stuff in the official cf api
+
 > - IThundxr
 
 <br/>
 
 > Then you're not breaking CF's policy. Where that stands with us, I honestly don't know. I'm only the lead software dev, I don't actually deal with business decisions but I'll happily get you an answer to your question.
+
 > - Mikey
 
 <br/>
 
 > Thanks as we wanna comply with legal rules and regulations and tos
 > We don’t wanna end up doing or using smt that we aren’t allowed to use
+
 > - IThundxr
 
 <br/>
 
 > Forwarded this up the chain and I'm being told that as long as you're doing it the way you've said you're doing it then you're all good 👍
+
 > - Mikey
 
 <br/>
 
 > Ok good to know!
+
 > - IThundxr
 
 <br/>
 
 > Obviously, this us just saying that what you're doing isn't breaking any official rules. It's not explicit permission. It's just not us revoking permission if that makes sense.
 > Effectively, it's only confirmation for your use case very specifically 👍
+
 > - Mikey
 
 ### Request to Remove FTB Modpack Downloading
 
 > Hi, I see your a community manager, but do you also work on Prism Launcher?
+
 > - Slowpoke
 
 <br/>
 
 > Hi, yes i do
+
 > - Scrumplex
 
 <br/>
 
 > Hi, I am not sure if you can point me in the direction of someone who can help me. I work for Feed The Beast (the pack developers) We have recently been contacted by our legal advisors and been told that we unfortunately going to have to change some things that we have overlooked in the past when it comes to other launchers that have been downloading FTB modpacks without permission. Due to this I am contacting the developers of launchers that are currently distributing our packs in the hopes of resolving this without having to take it any further. Can you find out weather you are open to voluntarily removing our packs from the Prism Launcher for me. If you need me to send something official I can do that, but I am hoping we can do this in the easiest way possible.
 > I was hoping that this was something we would be able to continue to overlook, however that is apparently no longer possible.
+
 > - Slowpoke
 
 <br/>
@@ -130,6 +144,7 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 
 > Of course i am sad to hear the situation has changed since then, but we would of course comply. We always try to respect upstreams even if it means that we lose a feature or two
 > Is it okay if I screenshot this and send it to the other maintainers?
+
 > - Scrumplex
 
 <br/>
@@ -138,6 +153,7 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > and as I said, nothing you have done has led to this in any way
 > We have just found out that there are other launchers on the horizon that intent to make financial gains from the installation of our modpacks and that can cause issues for us, especially if we have no history of being seen to be protecting our IP.
 > As long as launchers were operating for free, we were able to overlook things. But thats not the case any more.
+
 > - Slowpoke
 
 ### Additional
@@ -146,6 +162,7 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 
 > Reaching out for Prism and I’m wondering what’s lead to us not being allowed to use the api for what we are doing.
 > Since we got permission before that said we were allowed, anyway I’m not saying we won’t comply just want some more info about this
+
 > - IThundxr
 
 <br/>
@@ -155,11 +172,13 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > I am not a legal expert, so I don’t really have much to say on this other than that this is the advice we have been given so we have to follow it
 > With regards to permission, as far as I know the only thing that has ever been said is we wont actively chase after people. I don’t think (unless I am remembering wrong and I would in that case want to see evidence of this) we have ever
 > We have never given anyone permission to distribute our packs other than Curseforge and we don’t upload our packs there any more either
+
 > - Slowpoke
 
 <br/>
 
 > Basically Mikey told me the way we were using the api is fine and we are good to continue using it
+
 > - IThundxr
 
 <br/>
@@ -170,16 +189,19 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > This is not going to be good for us either.
 > People will assume its about making as much money as we can, and in reality that does not really have anything to do with it.
 > The percentage of downloads and plays of our packs from launchers other than our own is less than 10%
+
 > - Slowpoke
 
 <br/>
 
 > So for now you just want us to remove ftb modpack downloading and later that might change?
+
 > - IThundxr
 
 <br/>
 
 > To be clear this only applies to anything that comes from modpacks.ch. If you get it from api.feed-the-beast.com then it is OK. We are not going to lock off access to the legacy packs. If you choose to continue to support those packs then your OK to allow those.
+
 > - Slowpoke
 
 ## Raw screenshots
@@ -199,7 +221,6 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 <img alt="Slowpoke says overwolf has nothing to do with this decision to make launchers remove FTB modpack downloading" src="/img/news/ftb-removal/request7.png" style="width: 40em">
 <br/>
 <img alt="More info is given and basically the decision was made due to a launcher trying to monetize ftb packs." src="/img/news/ftb-removal/request8.png" style="width: 40em">
-
 
 [pr-ftb-removal]: https://github.com/PrismLauncher/PrismLauncher/pull/1040
 [issue-ftb-app-import]: https://github.com/PrismLauncher/PrismLauncher/issues/235
