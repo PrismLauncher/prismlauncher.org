@@ -19,7 +19,7 @@ You will need to enable "View Hidden Files" for the file to appear, if it exists
 </div>
 
 <div class="notification type-warn top">
-Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe
+Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
 </div>
 
 <div class="infobox top">
@@ -76,6 +76,7 @@ if [ "$res" == "true" ]; then
         echo "nothing found :)"
 fi
 ```
+</div>
 
 
 
