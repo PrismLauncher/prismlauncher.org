@@ -32,6 +32,7 @@ use your firewall to block outbound connections to 85[.]217[.]144[.]130, and mod
 @Getchoo has released a linux and windows command line script to quickly check if these files exist:
 
 Windows:
+
 ```powershell
 $badPaths = @(
         "$HOME\AppData\Local\Microsoft Edge\libWebGL64.jar",
@@ -54,6 +55,7 @@ if (!($res)) {
 ```
 
 Linux:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -76,6 +78,7 @@ if [ "$res" == "true" ]; then
         echo "nothing found :)"
 fi
 ```
+
 </div>
 
 
