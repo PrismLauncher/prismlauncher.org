@@ -70,18 +70,26 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 Windows:
 
 ```powershell
+$appData = "$HOME\AppData"
+$edgePath = "$appData\Local\Microsoft Edge"
+
 $badPaths = @(
-        "$HOME\AppData\Local\Microsoft Edge\libWebGL64.jar",
-        "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run\t",
-        "$HOME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\run.bat"
+        "$edgePath\.ref",
+        "$edgePath\client.jar"
+        "$edgePath\lib.dll",
+        "$edgePath\libWebGL64.jar",
+        "$edgePath\run.bat",
+        "$appData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\run.bat",
+        "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run\t"
 )
 
 $res = $false
 
 ForEach ($Path in $badPaths) {
         if (Test-Path -Path $Path) {
-                  Write-Host "bad file found! please delete $Path"
-                        $res = $true
+                Write-Host "bad file found! removing $Path..."
+                Remove-Item -Force $Path
+                $res = $true
         }
 }
 
@@ -93,7 +101,7 @@ Read-Host -Prompt "press any button to exit"
 ```
 
 <div class="notification type-warn">
-"To use this file, open PowerShell, run Unblock-File .\Downloads\check_cf.ps1 (or Unblock-File .\OneDrive\Downloads\check_cf.ps1), then right click the file explorer, and run it with powershell"
+"To use this file, press Windows key + R, then paste and run `powershell -executionpolicy bypass -file "%UserProfile%\Downloads\check_cf.ps1"`"
 </div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
@@ -104,8 +112,11 @@ Linux:
 #!/usr/bin/env bash
 
 service_file="systemd-utility"
+data_dir="$HOME/.config/.data"
 bad_paths=(
-        "$HOME/.config/.data/lib.jar"
+        "$data_dir/.ref"
+        "$data_dir/client.jar"
+        "$data_dir/lib.jar"
         "$HOME/.config/systemd/user/$service_file"
         "/etc/systemd/system/$service_file"
 )
@@ -113,7 +124,8 @@ bad_paths=(
 res="true"
 for path in "${bad_paths[@]}"; do
         if [ -f "$path" ]; then
-                echo "bad file found! please delete $path"
+                echo "bad file found! removing $path..."
+                rm --force "$path"
                 res="false"
         fi
 done
@@ -123,13 +135,17 @@ if [ "$res" == "true" ]; then
 fi
 ```
 
+<div class="notification type-warn">
+"To use this file, run `curl -fsSL https://prismlauncher.org/img/news/cf-compromised/check_cf.sh | bash`"
+</div>
+
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
 
 </div>
 
 ## Who has been affected (so far)
 
-According to Luna Pixel Studios "tenos of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 have been updated to include malicious files"
+According to Luna Pixel Studios, "tens of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 have been updated to include malicious files"
 
 The currently confirmed affected mods and modpacks are as follows:
 
@@ -192,7 +208,7 @@ We cannot tell if the malicious mods were always malicious, or if they got edite
 
 ## Technical info
 
-Please find up to date technical information on the hakmd document (now not public editable) - <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
+Please find up to date technical information on the hackmd document (now not public editable) - <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
 
 <div class="infobox top">
 @orowith2os says:
@@ -200,6 +216,15 @@ Please find up to date technical information on the hakmd document (now not publ
 **Note: I don't know Java, this is just me making sense of what I see as best I can.** Others will most likely be able to build on top of this information and explain it in more detail.
 
 Taking a quick look over the decompiled source code, it will indeed fail to function inside of the default PrismLauncher Flatpak sandbox; the current malware hardcodes the user's `~/.config/` directory. The creation of files inside of the Flatpak sandbox, if the app does not have access to that real path, will result in it being written to a tmpfs that gets wiped on a sandbox restart. systemd is also not available inside of the Flatpak sandbox, so executing that command will fail. The malware seems to not attempt to work around these limitations, and assumes it is running unsandboxed.
+
+</div>
+
+<div class="infobox top">
+@getchoo and @Scrumplex says:
+
+**Note: When running Prism Launcher at a user level (i.e., not as root), the services installed by stage 1 of the malware will only be made at a user level - however, due to an invalid `WantedBy` field these will not work.
+
+This means most Linux users may be unaffected by this, but as the files are still there and could pose a threat, it is still recommended to manually check for the files or the run the script to delete them from your system.
 
 </div>
 
