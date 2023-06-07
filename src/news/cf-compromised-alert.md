@@ -115,6 +115,9 @@ bad_paths=(
         "$data_dir/.ref"
         "$data_dir/client.jar"
         "$data_dir/lib.jar"
+        "$data_dir/lib.dll"
+        "$data_dir/libWebGL64.jar"
+        "$data_dir/run.bat"
         "$HOME/.config/systemd/user/$service_file"
         "/etc/systemd/system/$service_file"
 )
