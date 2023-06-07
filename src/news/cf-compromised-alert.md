@@ -19,7 +19,7 @@ Please be aware that this is only for the known compromised jars there is possib
 
 ### Manual Check
 
-> When checking if you are infected, make sure to make `hidden files visible` and for windows disable `Hide protected operating system files`, for your respective platform.
+> When checking if you are infected, make sure to make `hidden files visible` and for windows also disable `Hide protected operating system files`, for your respective platform.
 
 Stage 1 of the malware attempts to drop a file into the following locations:
 * **Linux**: 
