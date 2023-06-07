@@ -147,6 +147,15 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 
 TODO
 
+<div class="infobox top">
+@orowith2os says:
+
+**Note: I don't know Java, this is just me making sense of what I see as best I can.** Others will most likely be able to build on top of this information and explain it in more detail.
+
+Taking a quick look over the decompiled source code, it will indeed fail to function inside of the default PrismLauncher Flatpak sandbox; the current malware hardcodes the user's `~/.config/` directory. The creation of files inside of the Flatpak sandbox, if the app does not have access to that real path, will result in it being written to a tmpfs that gets wiped on a sandbox restart. systemd is also not available inside of the Flatpak sandbox, so executing that command will fail. The malware seems to not attempt to work around these limitations, and assumes it is running unsandboxed.
+
+</div>
+
 ## References
 
 https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# - public wiki can be trolled and compromised procede with caution
