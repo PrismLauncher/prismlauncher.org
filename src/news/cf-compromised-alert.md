@@ -4,7 +4,7 @@ description: CurseForge Compromised
 date: 2023-06-07
 ---
 
-For the latest news, check out this document: https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
+For the latest news, check out this document: <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
 
 Multiple groups are reporting CurseForge and Bukkit as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the Overwolf platform. **We recommend not downloading or updating any mods from CurseForge and Bukkit at the moment**, and we will update y'all with the latest news as more information becomes available.
 
@@ -25,17 +25,17 @@ Please be aware that this is only for the known compromised jars there is possib
 > When checking if you are infected, make sure to make `hidden files visible` and for windows also disable `Hide protected operating system files`, for your respective platform.
 
 Stage 1 of the malware attempts to drop a file into the following locations:
-* **Linux**: 
-  *  Locate it in systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data and check SystemCTL for any changes 
+
+* **Linux**:
+  * Locate it in systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data and check SystemCTL for any changes
 * **Windows**: `%LOCALAPPDATA%\Microsoft Edge\libWebGL64.jar` (or `~\AppData\Local\Microsoft Edge\libWebGL64.jar`)
-    * Yes, "Microsoft Edge" with a space
-    * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run` 
-    * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup` 
-    * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns or CCleaner to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
-    * Another solution is to delete java so it cannot run in the Java Runtime Enviroment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup 
+  * Yes, "Microsoft Edge" with a space
+  * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
+  * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
+  * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns> or CCleaner to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
+  * Another solution is to delete java so it cannot run in the Java Runtime Enviroment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 
 * **All other OSes**: Unaffected. The malware is hardcoded for Windows and Linux only. It is possible it will receive an update adding payloads for other OSes in the future.
-
 
 Before downloading, the malware will create the enclosing directory if it does not exist. Windows/MS Edge does not use the "Microsoft Edge"-with-a-space directory, and Linux software likely does not use `~/.config/.data`, so these folders existing may be a sign that stage1 has executed on a victim computer.
 
@@ -46,7 +46,6 @@ If you have the virus and have successfully removed it please make sure to chang
 
 There are indicators that the malware is self-replicating. Apparently the malware scans your computer for mods and Minecraft jars and injects itself into those. Don't start Minecraft for now.
 </div>
-
 
 <div class="infobox top">
 @PandaNinjas has reported:
@@ -138,35 +137,34 @@ The currently confirmed affected mods and modpacks are as follows:
 
 CurseForge:
 
-- Dungeons Arise
-- Sky Villages
-- Better MC modpack series
-- ~~Fabuously Optimized~~ (Found to not be compromised)
-- Dungeonz
-- Skyblock Core
-- Vault Integrations
-- AutoBroadcast
-- Museum Curator Advanced
-- Vault Integrations Bug fix
-- Create Infernal Expansion Plus - Mod removed from CurseForge
+* Dungeons Arise
+* Sky Villages
+* Better MC modpack series
+* ~~Fabuously Optimized~~ (Found to not be compromised)
+* Dungeonz
+* Skyblock Core
+* Vault Integrations
+* AutoBroadcast
+* Museum Curator Advanced
+* Vault Integrations Bug fix
+* Create Infernal Expansion Plus - Mod removed from CurseForge
 
 Bukkit:
 
-- Display Entity Editor
-- Haven Elytra
-- The Nexus Event Custom Entity Editor
-- Simple Harvesting
-- MCBounties
-- Easy Custom Foods
-- Anti Command Spam Bungeecord Support
-- Ultimate Leveling
-- Anti Redstone Crash
-- Hydration
-- Fragment Permission Plugin
-- No VPNS
-- Ultimate Titles Animations Gradient RGB
-- Floating Damage
-
+* Display Entity Editor
+* Haven Elytra
+* The Nexus Event Custom Entity Editor
+* Simple Harvesting
+* MCBounties
+* Easy Custom Foods
+* Anti Command Spam Bungeecord Support
+* Ultimate Leveling
+* Anti Redstone Crash
+* Hydration
+* Fragment Permission Plugin
+* No VPNS
+* Ultimate Titles Animations Gradient RGB
+* Floating Damage
 
 Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large CurseForge profiles. The CurseForge profiles are also showing someone logging into them directly.
 
@@ -174,7 +172,7 @@ Luna Pixel Studios has stated its very likely someone has found a way to bypass 
 
 **Notice: Plugins with similar malware have been found as early as mid-April.**
 
-A number of CurseForge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
+A number of CurseForge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd.
 
 **Until further notice, do not use the official CurseForge launcher, or download anything from CurseForge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from CurseForge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
 
@@ -194,7 +192,7 @@ We cannot tell if the malicious mods were always malicious, or if they got edite
 
 ## Technical info
 
-Please find up to date technical information on the hakmd document (now not public editable) - https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
+Please find up to date technical information on the hakmd document (now not public editable) - <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
 
 <div class="infobox top">
 @orowith2os says:
@@ -207,51 +205,49 @@ Taking a quick look over the decompiled source code, it will indeed fail to func
 
 ## References
 
-https://hackmd.io/B46EYzKXSfWSF35DeCZz9A
+<https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
 
 ### Luna Pixel Studios
 
 > **DO NOT UPDATE MODS OR MODPACKS ON CURSEFORGE.**
-> 
+>
 > Several new files have been uploaded to projects by Luna Pixel Studios, including Sky Villages, When Dungeons Arise, and Better MC. These may or may not include malicious files. We are not responsible for this, and currently doing everything we can to remove these files.
-> 
-> This could be due to a CurseForge bug or someone with access to the Luna Pixel Studios account, or even CurseForge itself. 
-> 
-> Currently, it is best to avoid downloading files off CurseForge until this is resolved. I will let you all know when this is resolved. 
-> 
+>
+> This could be due to a CurseForge bug or someone with access to the Luna Pixel Studios account, or even CurseForge itself.
+>
+> Currently, it is best to avoid downloading files off CurseForge until this is resolved. I will let you all know when this is resolved.
+>
 > Thank you.
-
-
+>
 > To clear up some questions:
-> 
+>
 > Any launcher that uses CurseForge API is affected, but you are safe as long as you aren't downloading these files.
-> 
+>
 > Nothing will auto-update unless you specifically told a launcher to do so.
-> 
+>
 > These files are not confirmed to be malicious, but we still recommend doing an antivirus scan using Windows Defender.
-
-
+>
 > Summary:
-> 
+>
 > As of a couple hours ago, tens of mods & modpacks, mostly on 1.16.5, 1.18.2 and 1.19.2 have been updated to include malicious files. These projects include When Dungeons Arise, Sky Villages, and the Better MC modpack series. The CurseForge profile of these accounts show someone logging into them directly.
-> 
+>
 > It is very likely that someone has access to several large CurseForge profiles and have found a way of bypassing 2FA to log into them.
-> 
+>
 > You can see here that the Fabulously Optimized team was also affected: <https://cdn.discordapp.com/attachments/790275974503202857/1115801834746023946/image.png>
-> 
+>
 > One of the malicious mods, DungeonsX, shows this code when decompiled: <https://cdn.discordapp.com/attachments/790275974503202857/1115801511411335228/image.png>
-> 
+>
 > The main payload being sent from this code can be viewed here: <https://pastebin.com/k2ZQKbEz>
-> 
+>
 > The DungeonsX mod downloads a jar file and loads it into minecraft, executes a function that downloads the program again, and saves it as a self running file. This mod has been added to all of Luna Pixel Studio's modpacks, and the files were immediately archived by the bad actor. It can be assumed that these files will become available again later, exposing hundreds of thousands of people to malware.
-> 
+>
 > This code allows the mod to be used as a botnet and leave a backdoor on devices: <https://chorb.is-from.space/DiscordPTB_gzDJsWklzc.png>
-> 
-> The code being executed mainly targets Linux users, likely with the intent of infecting servers. This will still affect people on Windows. 
-> 
-> The only file from this incident which is not already archived is https://www.curseforge.com/minecraft/mc-mods/skyblock-core/files/4570565.
+>
+> The code being executed mainly targets Linux users, likely with the intent of infecting servers. This will still affect people on Windows.
+>
+> The only file from this incident which is not already archived is <https://www.curseforge.com/minecraft/mc-mods/skyblock-core/files/4570565>.
 > This file was archived, but gained 10 downloads in that time, implying it's being shared on other platforms: <https://cdn.discordapp.com/attachments/856652644113580072/1115811476591095908/image.png>
-> 
+>
 > ### It is recommended to hold off on updating any mods or modpacks until this is resolved.
 
 ### The Iris Project
