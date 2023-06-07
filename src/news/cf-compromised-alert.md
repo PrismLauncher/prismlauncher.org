@@ -6,7 +6,7 @@ date: 2023-06-07
 
 For the latest news, check out this document: <https://github.com/fractureiser-investigation/fractureiser>
 
-Multiple groups are reporting CurseForge and Bukkit as compromised. Malware has been uploaded in various projects and it may be a security vulnerability in the Overwolf platform. **We recommend not downloading or updating any mods from CurseForge and Bukkit at the moment**, and we will update y'all with the latest news as more information becomes available.
+Multiple groups are reporting many CurseForge and Bukkit projects as compromised. Malware has been uploaded to several projects and it's now known that the virus is self-replicating and spreading. **We recommend that you do not download or update any mods, modpacks, or plugins at this time**, and we'll keep you updated as more information becomes available.
 
 Additionally there are indicators that the malware is self-replicating, which is why **you should avoid playing Minecraft at all for now**.
 
