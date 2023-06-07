@@ -81,8 +81,6 @@ fi
 
 </div>
 
-
-
 Report from Lunar Pixel Studios:
 
 ![Lunar Pixel Studios First Report](/img/news/cf-compromised/image.png)
