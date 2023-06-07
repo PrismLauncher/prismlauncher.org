@@ -134,7 +134,7 @@ fi
 
 ## Technical info
 
-Please refer to https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# as it contains more up to date technical information
+TODO
 
 ## References
 
