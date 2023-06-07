@@ -11,78 +11,26 @@ Table of contents:
 
 [[toc]]
 
-## Who has been affected (so far)
-
-According to Luna Pixel Studios "tenos of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 have been updated to include malicious files"
-
-The currently confirmed affected mods and modpacks are as follows:
-
-*At this point, we have enough samples to know this is quite widespread.*
-
-Curseforge:
-
-- Dungeons Arise
-- Sky Villages
-- Better MC modpack series
-- ~~Fabuously Optimized~~ (Found to not be compromised)
-- Dungeonz
-- Skyblock Core
-- Vault Integrations
-- AutoBroadcast
-- Museum Curator Advanced
-- Vault Integrations Bug fix
-- Create Infernal Expansion Plus - Mod removed from curseforge
-
-Bukkit:
-
-- Display Entity Editor
-- Haven Elytra
-- The Nexus Event Custom Entity Editor
-- Simple Harvesting
-- MCBounties
-- Easy Custom Foods
-- Anti Command Spam Bungeecord Support
-- Ultimate Leveling
-- Anti Redstone Crash
-- Hydration
-- Fragment Permission Plugin
-- No VPNS
-- Ultimate Titles Animations Gradient RGB
-- Floating Damage
-
-
-Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large curseforge profiles. The curseforge profiles are also showing someone logging into them directly.
-
-## What we know about the malware
+## Am I infected?
 
 <div class="notification type-warn top">
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
 </div>
 
-**Notice: Plugins with similar malware have been found as early as mid-April.**
+### Manual Check
 
-A number of Curseforge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
-
-**Until further notice, do not use the official Curseforge launcher, or download anything from Curseforge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from Curseforge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
-
-If you have downloaded any mods from Curseforge, or plugins from Bukkit, even through clients such as Prism Launcher or the official Curseforge launcher, it is recommended that you follow the "Am I infected?" guide below.
-
-The affected accounts had two-factor authentication enabled. It's unlikely this is a simple password compromise situation; it may be auth token compromise or something bigger on the CF side. Multiple accounts are affected so we don't believe this is isolated.
-
-Currently, we do not suspect other platforms such as Modrinth to be affected.
-
-### Am I infected?
-
-> When checking if you are infected, make sure to make `hidden files visible`, for your respective platform.
-
-There are scripts available [here](https://prismlauncher.org/news/cf-compromised-alert/) which can help you check easily.
+> When checking if you are infected, make sure to make `hidden files visible` AND disable `Hide protected operating system files`, for your respective platform.
 
 Stage 1 of the malware attempts to drop a file into the following locations:
-* **Linux**: `~/.config/.data/lib.jar`
+* **Linux**: 
+  *  Locate it in systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data and check SystemCTL for any changes 
 * **Windows**: `%LOCALAPPDATA%\Microsoft Edge\libWebGL64.jar` (or `~\AppData\Local\Microsoft Edge\libWebGL64.jar`)
     * Yes, "Microsoft Edge" with a space
     * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run` 
     * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup` 
+    * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns or CCleaner to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
+    * Another solution is to delete java so it cannot run in the Java Runtime Enviroment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup 
+
 * **All other OSes**: Unaffected. The malware is hardcoded for Windows and Linux only. It is possible it will receive an update adding payloads for other OSes in the future.
 
 
@@ -90,31 +38,7 @@ Before downloading, the malware will create the enclosing directory if it does n
 
 If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry, or dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
 
-### Distribution
-
-Some modpacks have had updates published for them without the knowledge of the authors, adding a dependency on malicious mods. These updates were archived immediately after uploading, meaning they *do not show on the web UI, only via the API.*
-
-We cannot tell if the malicious mods were always malicious, or if they got edited. They have upload dates multiple weeks in the past. A CDN compromise or cache poisoning is not out of the question due to Curse's usage of the extremely outdated and insecure MD5 to verify downloads.
-
-## What you can do
-
-<div class="infobox">
-Update 12:15 AEST
-
-@Getchoo has reported that decompiling compromised jars have found that they compromise these locations:
-
-linux users should be checking for systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data
-
-windows users should be checking for libWebGL64.jar in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup and a run.bat in %localappdata%\Microsoft Edge
-
-You will need to enable "View Hidden Files" AND disable "Hide protected operating system files" for the file to appear, if it exists. You can find guides for this online.
-</div>
-
-<div class="infobox top">
-@PandaNinjas has reported:
-
-use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include `0.0.0.0 files-8ie.pages.dev` On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
-</div>
+### Automated Script
 
 <div class="infobox top">
 @Getchoo has released a linux and windows command line script to quickly check if these files exist:
@@ -177,6 +101,86 @@ fi
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
 
+</div>
+
+## Who has been affected (so far)
+
+According to Luna Pixel Studios "tenos of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 have been updated to include malicious files"
+
+The currently confirmed affected mods and modpacks are as follows:
+
+*At this point, we have enough samples to know this is quite widespread.*
+
+Curseforge:
+
+- Dungeons Arise
+- Sky Villages
+- Better MC modpack series
+- ~~Fabuously Optimized~~ (Found to not be compromised)
+- Dungeonz
+- Skyblock Core
+- Vault Integrations
+- AutoBroadcast
+- Museum Curator Advanced
+- Vault Integrations Bug fix
+- Create Infernal Expansion Plus - Mod removed from curseforge
+
+Bukkit:
+
+- Display Entity Editor
+- Haven Elytra
+- The Nexus Event Custom Entity Editor
+- Simple Harvesting
+- MCBounties
+- Easy Custom Foods
+- Anti Command Spam Bungeecord Support
+- Ultimate Leveling
+- Anti Redstone Crash
+- Hydration
+- Fragment Permission Plugin
+- No VPNS
+- Ultimate Titles Animations Gradient RGB
+- Floating Damage
+
+
+Luna Pixel Studios has stated its very likely someone has found a way to bypass 2fa and login to multiple large curseforge profiles. The curseforge profiles are also showing someone logging into them directly.
+
+## What we know about the malware
+
+**Notice: Plugins with similar malware have been found as early as mid-April.**
+
+A number of Curseforge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd. 
+
+**Until further notice, do not use the official Curseforge launcher, or download anything from Curseforge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from Curseforge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
+
+If you have downloaded any mods from Curseforge, or plugins from Bukkit, even through clients such as Prism Launcher or the official Curseforge launcher, it is recommended that you follow the "Am I infected?" guide below.
+
+The affected accounts had two-factor authentication enabled. It's unlikely this is a simple password compromise situation; it may be auth token compromise or something bigger on the CF side. Multiple accounts are affected so we don't believe this is isolated.
+
+Currently, we do not suspect other platforms such as Modrinth to be affected.
+
+### Distribution
+
+Some modpacks have had updates published for them without the knowledge of the authors, adding a dependency on malicious mods. These updates were archived immediately after uploading, meaning they *do not show on the web UI, only via the API.*
+
+We cannot tell if the malicious mods were always malicious, or if they got edited. They have upload dates multiple weeks in the past. A CDN compromise or cache poisoning is not out of the question due to Curse's usage of the extremely outdated and insecure MD5 to verify downloads.
+
+## What you can do
+
+<div class="infobox">
+@Getchoo has reported that decompiling compromised jars have found that they compromise these locations:
+
+linux users should be checking for systemd-utility.service in ~/.config/systemd/user or /etc/systemd/system/ and lib.jar in ~/.config/.data
+
+windows users should be checking for libWebGL64.jar in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup and a run.bat in %localappdata%\Microsoft Edge
+
+You will need to enable "View Hidden Files" AND disable "Hide protected operating system files" for the file to appear, if it exists. You can find guides for this online.
+</div>
+
+<div class="infobox top">
+@PandaNinjas has reported:
+
+use your firewall to block outbound connections to 85[.]217[.]144[.]130, and modify your hosts file to include `0.0.0.0 files-8ie.pages.dev` On linux add that line to /etc/hosts, on windows add that line to C:\Windows\system32\drivers\etc\hosts
 </div>
 
 <div class="infobox top">
