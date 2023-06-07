@@ -20,7 +20,7 @@ The currently confirmed affected mods and modpacks are as follows:
 - Dungeons Arise
 - Sky Villages
 - Better MC modpack series
-- Fabuously Optimized
+- ~~Fabuously Optimized~~ (Found to not be compromised)
 - DungeonsX
 - Haven Elytra (bukkit plugin)
 - Skyblock Core
