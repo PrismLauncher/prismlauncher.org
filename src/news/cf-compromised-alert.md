@@ -101,7 +101,7 @@ if (!($res)) {
 Read-Host -Prompt "press any button to exit"
 ```
 
-<a class="button size-medium" href="/img/news/cf-compromised/scripts/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
+<a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
 
 Linux:
 
@@ -128,7 +128,7 @@ if [ "$res" == "true" ]; then
 fi
 ```
 
-<a class="button size-medium" href="/img/news/cf-compromised/scripts/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
+<a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
 
 </div>
 
