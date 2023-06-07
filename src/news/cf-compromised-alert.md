@@ -132,6 +132,17 @@ fi
 
 </div>
 
+<div class="infobox top">
+@orowith2os suggests:
+
+If you use Linux, use the [PrismLauncher Flatpak](https://flathub.org/apps/org.prismlauncher.PrismLauncher) and be very careful of what you give it access to through utilities such as Flatseal. By default, it has no access to the needed directories to compromise the system.
+
+Other sandbox escapes may be possible, but the malware most likely doesn't account for running inside of a sandbox of this sort.
+
+</div>
+
+
+
 ## Technical info
 
 TODO
