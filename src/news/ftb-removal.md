@@ -41,14 +41,15 @@ Raw screenshots can be found here: [Raw Screenshots][raw-screenshots]
 > Discord ID: 104950896491823104
 
 ### Initial Permission Request
-> Hi, 
+>
+> Hi,
 > I’m a mod from prism and just confirming that your okay with us using the ftb api as we already do
 
 > - IThundxr
 
 <br/>
 
-> Thank you for reaching out. Right now, the kinda, "official" statement is that other launchers shouldn't be using our API as it bypasses our ads and thus causes financial loss... I can take this up to my boss and get you an official response. 
+> Thank you for reaching out. Right now, the kinda, "official" statement is that other launchers shouldn't be using our API as it bypasses our ads and thus causes financial loss... I can take this up to my boss and get you an official response.
 
 > Do you know the exact way you use our API? The details are kinda important at this stage as how you use it depends on where the line is drawn. We have some relatively strict restrictions on how we're allow to use the Curse API and that propagates down to our API.
 
