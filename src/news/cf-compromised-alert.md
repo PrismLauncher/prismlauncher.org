@@ -32,7 +32,7 @@ Stage 1 of the malware attempts to drop a file into the following locations:
   * Yes, "Microsoft Edge" with a space
   * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
   * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
-  * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns> or CCleaner to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
+  * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns> to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
   * Another solution is to delete java so it cannot run in the Java Runtime Enviroment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 
 * **All other OSes**: Unaffected. The malware is hardcoded for Windows and Linux only. It is possible it will receive an update adding payloads for other OSes in the future.
