@@ -208,7 +208,7 @@ We cannot tell if the malicious mods were always malicious, or if they got edite
 
 ## Technical info
 
-Please find up to date technical information on the hackmd document (now not public editable) - <https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
+Please find up to date technical information on the hackmd document (now not public editable) - <https://github.com/fractureiser-investigation/fractureiser>
 
 <div class="infobox top">
 @orowith2os says:
@@ -230,7 +230,7 @@ This means most Linux users may be unaffected by this, but as the files are stil
 
 ## References
 
-<https://hackmd.io/B46EYzKXSfWSF35DeCZz9A>
+<https://github.com/fractureiser-investigation/fractureiser>
 
 ### Luna Pixel Studios
 
