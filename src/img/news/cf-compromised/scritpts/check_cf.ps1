@@ -16,3 +16,5 @@ ForEach ($Path in $badPaths) {
 if (!($res)) {
                 Write-Host "nothing found! :)"
 }
+
+Read-Host -Prompt "press any button to exit"
