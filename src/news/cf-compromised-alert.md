@@ -67,7 +67,7 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 <div class="infobox top">
 @Getchoo has released a linux and windows command line script to quickly check if these files exist:
 
-Windows:
+Windows (powershell, not cmd):
 
 ```powershell
 $appData = "$HOME\AppData"
