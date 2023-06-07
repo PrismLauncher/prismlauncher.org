@@ -33,8 +33,6 @@ Luna Pixel Studios has stated its very likely someone has found a way to bypass 
 Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on curseforge aren't safe old releases have been found to be modifed.
 </div>
 
-Credit to: https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ#
-
 ### Am I infected?
 Stage 1 of the malware attempts to drop a file into the following locations:
 * **Linux**: `~/.config/.data/lib.jar`
@@ -99,7 +97,11 @@ ForEach ($Path in $badPaths) {
 if (!($res)) {
                 Write-Host "nothing found! :)"
 }
+
+Read-Host -Prompt "press any button to exit"
 ```
+
+<a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
 
 Linux:
 
@@ -126,6 +128,8 @@ if [ "$res" == "true" ]; then
 fi
 ```
 
+<a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
+
 </div>
 
 <div class="infobox top">
@@ -145,7 +149,7 @@ Please refer to https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# as it contains m
 
 ## References
 
-https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ#
+https://pad.snopyta.org/rQ9-f6mPRWCZbH4Gyv6fnQ# - public wiki can be trolled and compromised procede with caution
 
 ![Lunar Pixel Studios First Report](/img/news/cf-compromised/image.png)
 
