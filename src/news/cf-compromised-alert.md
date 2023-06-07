@@ -101,7 +101,7 @@ Read-Host -Prompt "press any button to exit"
 ```
 
 <div class="notification type-warn">
-"To use this file, press Windows key + R, then paste and run `powershell -executionpolicy bypass -file "%UserProfile%\Downloads\check_cf.ps1"`"
+"To use this file after downloading it to your "Downloads" folder, press Windows key + R, then paste and run `powershell -executionpolicy bypass -file "%UserProfile%\Downloads\check_cf.ps1"`"
 </div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
@@ -136,7 +136,7 @@ fi
 ```
 
 <div class="notification type-warn">
-"To use this file, run `curl -fsSL https://prismlauncher.org/img/news/cf-compromised/check_cf.sh | bash`"
+"To automatically download and run this file, run `curl -fsSL https://prismlauncher.org/img/news/cf-compromised/check_cf.sh | bash`"
 </div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
