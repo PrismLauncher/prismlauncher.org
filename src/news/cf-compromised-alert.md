@@ -4,9 +4,9 @@ description: Malware is being distributed through Minecraft mods and modpacks ma
 date: 2023-06-07
 ---
 
-For the latest news, check out this document: <https://github.com/fractureiser-investigation/fractureiser>
+For a full summary, check out this GitHub repository: <https://github.com/fractureiser-investigation/fractureiser>
 
-Multiple groups are reporting many CurseForge and Bukkit projects as compromised. Malware has been uploaded to several projects and it's now known that the virus is self-replicating and spreading. **We recommend that you do not download or update any mods, modpacks, or plugins at this time**, and we'll keep you updated as more information becomes available.
+Starting June 6th, 2023 UTC, multiple groups reported many CurseForge and Bukkit projects as compromised. Malware was been uploaded to several projects and it's now known that the virus was self-replicating and spreading. Since then, both [Modrinth](https://twitter.com/modrinth/status/1666853947804463115) and [Curseforge](https://twitter.com/CurseForge/status/1666741580022128641) have stated all infected files have been removed or they were unaffected. It should be safe to use these services now, however users should still take caution in downloading files, especially from less trustworthy services.
 
 <div class="notification type-warn">
 Following the steps below if you find that you have the virus, remove it then <b>CHANGE ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.
@@ -18,11 +18,15 @@ Table of contents:
 
 ## What can I do?
 
-<div class="notification type-warn top">
-Please be aware that this is only for the known compromised jars there is possibility for more advanced malware to be spread, deleting these files does not mean you are 100% safe. Please currently assume that any files on CurseForge aren't safe old releases have been found to be modifed. Additionally there are indicators that the malware is self-replicating, which is why you should avoid playing Minecraft at all for now.
-</div>
+### Checking Mods
 
-### Manual Check
+When downloading mods and plugins you may be suspicious of, douira's [Fractureiser Web Scanner](https://douira.github.io/fractureiser-web-detector/) can be used to detect if they are infected.
+
+### Finding out if you have already been infected
+
+Fractureiser drops multiple files on your system. These steps may be used to see if an infected mod has already been run:
+
+#### Manual Check
 
 > When checking if you are infected, make sure to make `hidden files visible` and for windows also disable `Hide protected operating system files`, for your respective platform.
 
@@ -35,7 +39,7 @@ Stage 1 of the malware attempts to drop a file into the following locations:
   * Also check the registry for an entry at `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
   * Or a shortcut in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
   * If the file cannot be deleted due to being open in the "Open JDK Binary" you can use <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns> to see what applications are on start-up and disable/remove the start up rule for "libWebGL64.jar"
-  * Another solution is to delete java so it cannot run in the Java Runtime Enviroment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
+  * Another solution is to delete java so it cannot run in the Java Runtime Environment, and then you can delete the jar by locating it in in %localappdata%\Microsoft Edge and an entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Run or a shortcut in %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 
 * **All other OSes**: Unaffected. The malware is hardcoded for Windows and Linux only. It is possible it will receive an update adding payloads for other OSes in the future.
 
@@ -58,7 +62,7 @@ Other sandbox escapes may be possible, but the malware most likely doesn't accou
 
 </div>
 
-### Automated Script
+#### Automated Script
 
 <div class="infobox top">
 @Getchoo has released a linux and windows command line script to quickly check if these files exist:
@@ -97,7 +101,7 @@ Read-Host -Prompt "press any button to exit"
 ```
 
 <div class="notification type-warn">
-"To use this file after downloading it to your "Downloads" folder, press Windows key + R, then paste and run `powershell -executionpolicy bypass -file "%UserProfile%\Downloads\check_cf.ps1"`"
+To use this file after downloading it to your "Downloads" folder, press Windows key + R, then paste and run `powershell -executionpolicy bypass -file "%UserProfile%\Downloads\check_cf.ps1"`
 </div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.ps1" download="check_cf.ps1">Download Windows Script</a>
@@ -132,20 +136,28 @@ fi
 ```
 
 <div class="notification type-warn">
-"To automatically download and run this file, run `curl -fsSL https://prismlauncher.org/img/news/cf-compromised/check_cf.sh | bash`"
+ To automatically download and run this file, run `curl -fsSL https://prismlauncher.org/img/news/cf-compromised/check_cf.sh | bash`
 </div>
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
 
+### Files were found! What can I do?
+
+As said before, you should first <b>CHANGE ALL OF YOUR PASSWORDS</b>, as it is possible that the virus extracted all of your browsers saved passwords. You should also use MCRcortex's [nekodetector](https://github.com/MCRcortex/nekodetector), which will allow you to scan your entire system for other Java files that may try to create these files again.
+
 </div>
 
-## Who has been affected (so far)
+## Who was affected
 
-According to Luna Pixel Studios, "tens of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 have been updated to include malicious files"
+<div class="infobox top">
+ This is by no means a complete list, as it is possible other mods were affected. Keep in mind the mods included in this list should be safe now when downloaded from Curseforge, Modrinth, etc.
+</div>
+
+According to Luna Pixel Studios, "tens of mods & modpacks, mostly on 1.16.5 1.18.2 and 1.19.2 were updated to include malicious files"
 
 The currently confirmed affected mods and modpacks are as follows:
 
-*At this point, we have enough samples to know this is quite widespread.*
+*At this point, we have enough samples to know this was quite widespread.*
 
 CurseForge:
 
@@ -184,15 +196,13 @@ Luna Pixel Studios has stated its very likely someone has found a way to bypass 
 
 **Notice: Plugins with similar malware have been found as early as mid-April.**
 
-A number of CurseForge and dev.bukkit.org (not the Bukkit software itself) accounts have been compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd.
-
-**Until further notice, do not use the official CurseForge launcher, or download anything from CurseForge or the Bukkit plugin repository.** While the control server for this malware is currently offline, **any download from CurseForge or the Bukkit plugin repository in in the last 2-3 weeks should be treated as potentially malicious**. This malware is unlikely to be detected by Windows Defender or similar antimalware products.
+A number of CurseForge and dev.bukkit.org (not the Bukkit software itself) accounts were compromised, and malicious software was injected into many popular plugins and mods. There are reports of malicious plugin/mod JARs as early as May 22nd.
 
 If you have downloaded any mods from CurseForge, or plugins from Bukkit, even through clients such as Prism Launcher or the official CurseForge launcher, it is recommended that you follow the "Am I infected?" guide below.
 
 The affected accounts had two-factor authentication enabled. It's unlikely this is a simple password compromise situation; it may be auth token compromise or something bigger on the CF side. Multiple accounts are affected so we don't believe this is isolated.
 
-Currently, we do not suspect other platforms such as Modrinth to be affected.
+We know platforms such as Modrinth to be unaffected.
 
 It has been found that the information this virus steals is highly likely related to microsoft credentials and browser saved passwords. **RESET ALL OF YOUR PASSWORDS** after you have removed the virus
 
@@ -229,6 +239,10 @@ This means most Linux users may be unaffected by this, but as the files are stil
 <https://github.com/fractureiser-investigation/fractureiser>
 
 ### Luna Pixel Studios
+
+<div class="infobox top">
+ This is an archive of statements by Luna Pixel Studios. Information may or may not be current, and Curseforge should be safe to use now.
+</div>
 
 > **DO NOT UPDATE MODS OR MODPACKS ON CURSEFORGE.**
 >
