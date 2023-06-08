@@ -141,11 +141,11 @@ fi
 
 <a class="button size-medium" href="/img/news/cf-compromised/check_cf.sh" download="check_cf.sh">Download Linux Script</a>
 
+</div>
+
 ### Files were found! What can I do?
 
 As said before, you should first <b>CHANGE ALL OF YOUR PASSWORDS</b>, as it is possible that the virus extracted all of your browsers saved passwords. You should also use MCRcortex's [nekodetector](https://github.com/MCRcortex/nekodetector), which will allow you to scan your entire system for other Java files that may try to create these files again.
-
-</div>
 
 ## Who was affected
 
