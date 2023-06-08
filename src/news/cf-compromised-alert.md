@@ -8,6 +8,10 @@ For the latest news, check out this document: <https://github.com/fractureiser-i
 
 Multiple groups are reporting many CurseForge and Bukkit projects as compromised. Malware has been uploaded to several projects and it's now known that the virus is self-replicating and spreading. **We recommend that you do not download or update any mods, modpacks, or plugins at this time**, and we'll keep you updated as more information becomes available.
 
+<div class="notification type-warn">
+Following the steps below if you find that you have the virus, remove it then <b>CHANGE ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.
+</div>
+
 Table of contents:
 
 [[toc]]
@@ -38,12 +42,6 @@ Stage 1 of the malware attempts to drop a file into the following locations:
 Before downloading, the malware will create the enclosing directory if it does not exist. Windows/MS Edge does not use the "Microsoft Edge"-with-a-space directory, and Linux software likely does not use `~/.config/.data`, so these folders existing may be a sign that stage1 has executed on a victim computer.
 
 If stage2 successfully downloads, it will attempt to make itself start on boot by modifying the Windows registry, or dropping a systemd unit into `/etc/systemd`. (The Linux side of this payload is unlikely to work as it requires root privileges.)
-
-<div class="notification type-warn top">
-If you have the virus and have successfully removed it please make sure to change <b>ALL OF YOUR PASSWORDS</b> as it is highly likely that the virus is extracting all of your browsers saved passwords.<br>
-
-There are indicators that the malware is self-replicating. Apparently the malware scans your computer for mods and Minecraft jars and injects itself into those. Don't start Minecraft for now.
-</div>
 
 <div class="infobox top">
 @PandaNinjas has reported:
@@ -206,7 +204,7 @@ We cannot tell if the malicious mods were always malicious, or if they got edite
 
 ## Technical info
 
-Please find up to date technical information on the hackmd document (now not public editable) - <https://github.com/fractureiser-investigation/fractureiser>
+Please find up to date technical information on the fracturiser github - <https://github.com/fractureiser-investigation/fractureiser>
 
 <div class="infobox top">
 @orowith2os says:
