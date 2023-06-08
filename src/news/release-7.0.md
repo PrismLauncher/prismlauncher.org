@@ -4,7 +4,7 @@ description: The bee's knees!
 date: 2023-06-08
 release_version: "7.0"
 minimum_macos_version: 11.0.0
-mac_signature: foo
+mac_signature: nZkz4u7KJsOrH9kQjSMdyzwGnBa8A9q9Dz9RBkNb0/hcUtKG92N4iog905uxb4hdpk4zAYeEbYbbrVHXsfTgAg==
 tags:
   - release
 ---
