@@ -171,7 +171,7 @@ Bukkit:
 * Easy Custom Foods
 * Anti Command Spam Bungeecord Support
 * Ultimate Leveling
-* Anti Redstone Crash
+* Anti Redstone Crash (Not to be confused with "NTD AntiRedstoneCrash")
 * Hydration
 * Fragment Permission Plugin
 * No VPNS
