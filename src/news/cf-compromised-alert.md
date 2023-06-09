@@ -18,6 +18,14 @@ Table of contents:
 
 ## What can I do?
 
+<div class="notification type-warn">
+ Windows 10 versions older than 22H2 may not have received this intelligence update yet due to being out of support. We recommend you upgrade to 22H2 in order to continue receiving support from Microsoft.
+</div>
+
+<b>As of June 8th, 2023 UTC</b>, Windows Defender has started detecting some jars infected with stage 0, along with files from stage 2 (specifically libWebGL64.jar). You should make you have the latest security intelligence updates from Microsoft by going to settings and running Windows Update. To confirm, go to Windows Defender, click "Virus and Threat Protection," scroll down to "Virus and Threat Protection Updates," and press "Protection Updates." It should say the last update was today and the version was created on <b>June 9th, 2023</b>. This will help reduce any damage or further infection caused by jars containing fractureiser.
+
+It is still recommended to read the following steps if you haven't already run a scan or are suspicious of a mod you have downloaded. It is still possible infected jars are on your system, as currently the detection done by Windows Defender for stage 0 files can be inconsistent.
+
 ### Checking Mods
 
 When downloading mods and plugins you may be suspicious of, douira's [Fractureiser Web Scanner](https://douira.github.io/fractureiser-web-detector/) can be used to detect if they are infected.
