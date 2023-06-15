@@ -1,5 +1,5 @@
 ---
-title: "Prism Launcher Release 7.0"
+title: "Prism Launcher Release 7.0, now available"
 description: The bee's knees! 
 date: 2023-06-08
 release_version: "7.0"
