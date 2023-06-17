@@ -30,6 +30,18 @@ eleventyNavigation:
 
 <div class="infobox top">
 
+# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+
+[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are available on Alpine Linux Edge for multiple architectures
+
+```bash
+apk add prismlauncher
+```
+
+</div>
+
+<div class="infobox top">
+
 # <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux
 
 RPM Packages of ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures
@@ -44,12 +56,14 @@ su -c "apt-get install prismlauncher"
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+# <img src="https://static-00.iconduck.com/assets.00/aosc-icon-512x512-tv7gwhzl.png" height="20"> AOSC
 
-[APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are available on Alpine Linux Edge for multiple architectures
+[Prism Launcher](https://packages.aosc.io/packages/prismlauncher) is available on AOSC.
 
 ```bash
-apk add prismlauncher
+sudo apt install prismlauncher
+# or
+su -c "apt install prismlauncher"
 ```
 
 </div>
