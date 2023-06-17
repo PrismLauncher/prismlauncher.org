@@ -30,6 +30,20 @@ eleventyNavigation:
 
 <div class="infobox top">
 
+# <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux
+
+RPM Packages of ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures
+
+```bash
+sudo apt-get install prismlauncher
+# or
+su -c "apt-get install prismlauncher"
+```
+
+</div>
+
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
 
 [APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are available on Alpine Linux Edge for multiple architectures
