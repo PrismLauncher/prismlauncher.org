@@ -245,7 +245,8 @@ zypper install prismlauncher-qt5-nightly
 # <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" height="20"> Slackware
 
 Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
-*Note: You may need to edit the PrismLauncher.SlackBuild file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file.*
+*Note: You may need to edit the ```PrismLauncher.SlackBuild``` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file.*
+
 ```bash
 # download launcher slackbuild archive
 wget https://slackbuilds.org/slackbuilds/15.0/games/PrismLauncher.tar.gz
