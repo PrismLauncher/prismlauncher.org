@@ -242,6 +242,31 @@ zypper install prismlauncher-qt5-nightly
 
 <div class="infobox top">
 
+# <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" height="20"> Slackware
+
+Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
+*Note: You may need to edit the PrismLauncher.SlackBuild file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file.*
+```bash
+# download launcher slackbuild archive
+wget https://slackbuilds.org/slackbuilds/15.0/games/PrismLauncher.tar.gz
+# extract archive
+tar -xpvf PrismLauncher.tar.gz; cd PrismLauncher-*
+# download source specified in PrismLauncher.info, for example for version 7.1:
+wget https://github.com/PrismLauncher/PrismLauncher/releases/download/7.1/PrismLauncher-7.1.tar.gz
+# verify integrity
+md5sum PrismLauncher-*.tar.gz # compare the result with the md5 in PrismLauncher.info
+# enter root environment and grant permissions
+su -l; chmod +x PrismLauncher.SlackBuild
+# build package
+./PrismLauncher.SlackBuild
+# install package (name dependent on version, cpu arch)
+cd /tmp; installpkg PrismLauncher-*.tgz
+```
+
+</div>
+
+<div class="infobox top">
+
 # <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
 
 Prism Launcher is available on the official Void repository.
