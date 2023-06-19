@@ -1,0 +1,35 @@
+name: Update contributors
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch: # allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies & update contributors
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm ci
+          npm run update-contributors
+
+      - name: Commit files
+        run: |
+          git config --local user.email "gitbot@scrumplex.net"
+          git config --local user.name "PrismAutomata"
+          git commit -m "Update contributors" -a || true
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

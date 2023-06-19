@@ -22,7 +22,7 @@ This is where you can set the location for the Instances, Mods & Icons folders.
 
 <!-- TODO: add image of mods section -->
 
-Disable the usage of metadata provided by Modrinth and CursForge for mods.
+Disable the usage of metadata provided by Modrinth and CurseForge for mods.
 
 ## User Interface
 

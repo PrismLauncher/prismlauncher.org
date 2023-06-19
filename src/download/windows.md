@@ -48,12 +48,22 @@ eleventyNavigation:
 winget install -e PrismLauncher.PrismLauncher
 ```
 
-#### Scoop Package
+#### Stable Scoop Package
 
 ```powershell
 scoop bucket add games
 scoop install prismlauncher 
 scoop install prismlauncher-qt5 #if you want Windows-Legacy instead
+```
+
+#### Unstable Scoop Package
+
+Same as above, but it's an unstable git [development build](/wiki/development/development-builds) rather than a stable build.
+
+```powershell
+scoop bucket add versions
+scoop install prismlauncher-git
+scoop install prismlauncher-qt5-git #if you want Windows-Legacy instead
 ```
 
 #### Chocolatey Package
@@ -69,6 +79,6 @@ choco install prismlauncher --package-parameters="'/legacy'"
 
 #### [PortableApps.com](https://portableapps.com) Installer
 
-A community maintained portable installer for Prism Launcher can be found [here](https://FayneAldan.github.io/PrismLauncherPortable/).
+A community maintained portable installer for Prism Launcher can be found [here](https://RuiNtD.github.io/PrismLauncherPortable/).
 
 </div>
