@@ -50,7 +50,6 @@ There are several AUR packages available:
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
 [![prismlauncher-qt5-git](https://img.shields.io/badge/aur-prismlauncher--qt5--git-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5-git/)
   
-
 ## Installing with an AUR helper
 
 ```bash
@@ -65,6 +64,8 @@ If you want to use Qt 5 to build the packages instead:
 ```bash
 # stable Qt 5 source package:
 yay -S prismlauncher-qt5
+# stable Qt 5 binary package:
+yay -S prismlauncher-qt5-bin
 # latest Qt 5 git package:
 yay -S prismlauncher-qt5-git
 ```
