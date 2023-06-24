@@ -138,7 +138,7 @@ You don't need to clone the entire Prism Launcher repo for this; the Flatpak fil
 Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
 
 ```bash
-git clone https://github.com/flathub/org.prismlauncher.PrismLauncher
+git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
 cd org.prismlauncher.PrismLauncher
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
