@@ -179,7 +179,7 @@ with
         sha256: # the sha256sum you copied earlier
 ```
 
-*Note that flatpak-builder uses curl to download files, so ensure that you have included a valid url ([https://example.com/path/to/PrismLauncher.tar.gz](https://example.com/path/to/PrismLauncher.tar.gz) or file:///path/to/PrismLauncher {you need three ///}).*
+*Note that flatpak-builder uses curl to download files, so ensure that you have included a valid url ([https://example.com/path/to/PrismLauncher.tar.gz](https://example.com/path/to/PrismLauncher.tar.gz) or file:///path/to/PrismLauncher {you need three ///, two for the base url (file://) and one for the root folder (/)}).*
 
 Finally, to install:
 
