@@ -155,7 +155,8 @@ tar -czvf PrismLauncher.tar.gz PrismLauncher/ # MUST BE IN GZIP FORMAT!
 sha256sum PrismLauncher.tar.gz # copy the output (the first string, the file name not necessary)
 cd org.prismlauncher.PrismLauncher; nano org.prismlauncher.PrismLauncher.yml
 ```
-For editing the .yml, replace 
+
+For editing the .yml, replace
 
 ```bash
     sources:
@@ -168,6 +169,7 @@ For editing the .yml, replace
           version-query: .tag_name
           url-query: .assets[] | select(.name == "PrismLauncher-" + $version + ".tar.gz") | .browser_download_url
 ```
+
 with
 
 ```bash
@@ -176,7 +178,8 @@ with
         url: file:///path/to/PrismLauncher.tar.gz # the path to the PrismLauncher.tar.gz you compressed earlier
         sha256: # the sha256sum you copied earlier
 ```
-*Note that flatpak-builder uses curl to download files, so ensure that you have included a valid url (https://example.com/path/to/PrismLauncher.tar.gz or file:///path/to/PrismLauncher {you need three ///}).*
+
+*Note that flatpak-builder uses curl to download files, so ensure that you have included a valid url ([https://example.com/path/to/PrismLauncher.tar.gz](https://example.com/path/to/PrismLauncher.tar.gz) or file:///path/to/PrismLauncher {you need three ///}).*
 
 Finally, to install:
 
