@@ -22,6 +22,12 @@ Finally, if you don't have one already, you must create an **instance** with the
 
 Before you continue, ensure that the correct version of the **Fabric API** mod on **Fabric** or the **Quilted Fabric API** mod on **Quilt** for your instance is installed.
 
+### <img src="https://cdn.modrinth.com/data/DOUdJVEm/4f8cdb3933f9efa0c5dfd5574d3ad6b101c7f3ef.png" height="20">  Controlify (for Minecraft Versions 1.19.4 or newer)
+
+For Minecraft 1.19.4 or newer, we recommend [**Controlify**](https://modrinth.com/mod/controlify). It's a new controller mod that has [a lot of features that aren't in MidnightControls](https://github.com/isXander/Controlify/blob/1.20.x/dev/mod-comparison.md).
+
+It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controller menu (Options -> Controls -> Controller Settings) and do the calibration. Once that's done, you're ready to use your controller!
+
 ### <img src="https://cdn-raw.modrinth.com/data/bXX9h73M/icon.svg" height="20">  MidnightControls (for Minecraft Versions 1.18 or newer)
 
 For Minecraft 1.18 or newer, we recommend [**MidnightControls**](https://modrinth.com/mod/midnightcontrols), an updated fork of LambdaControls.
