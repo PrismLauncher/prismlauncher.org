@@ -137,9 +137,49 @@ The path to the .rpm packages will be printed once the build is complete.
 You don't need to clone the entire Prism Launcher repo for this; the Flatpak file handles that.
 Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
 
+#### Latest Stable
+
 ```bash
 git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
 cd org.prismlauncher.PrismLauncher
+# remove --user --install if you want to build without installing
+flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
+```
+
+#### Latest Commit
+
+```bash
+git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher # flathub repo
+git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo (this is necessary, as the .zip file downloaded from github does not contain the submodules)
+tar -czvf PrismLauncher.tar.gz PrismLauncher/ # MUST BE IN GZIP FORMAT!
+sha256sum PrismLauncher.tar.gz # copy the output (the first string, the file name not necessary)
+cd org.prismlauncher.PrismLauncher; nano org.prismlauncher.PrismLauncher.yml
+```
+For editing the .yml, replace 
+
+```bash
+    sources:
+      - type: archive
+        url: https://github.com/PrismLauncher/PrismLauncher/releases/download/7.1/PrismLauncher-7.1.tar.gz
+        sha256: dc7aeff6e0dc12f4f2065e718418a4110ccdbad3e49fbd58e416a213fde7ebb1
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name == "PrismLauncher-" + $version + ".tar.gz") | .browser_download_url
+```
+with
+
+```bash
+    sources:
+      - type: archive
+        url: file:///path/to/PrismLauncher.tar.gz # the path to the PrismLauncher.tar.gz you compressed earlier
+        sha256: # the sha256sum you copied earlier
+```
+
+Finally, to install:
+
+```bash
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
