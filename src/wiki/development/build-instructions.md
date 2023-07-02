@@ -134,7 +134,7 @@ The path to the .rpm packages will be printed once the build is complete.
 
 ### Building a Flatpak
 
-You don't need to clone the entire Prism Launcher repo for this; the Flatpak file handles that.
+You don't need to clone the entire Prism Launcher repo for the latest stable; the Flatpak file handles that. However, editing of the file is required if you desire to build from the latest commit (cloning the source repo).
 Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
 
 #### Latest Stable
