@@ -176,6 +176,7 @@ with
         url: file:///path/to/PrismLauncher.tar.gz # the path to the PrismLauncher.tar.gz you compressed earlier
         sha256: # the sha256sum you copied earlier
 ```
+*Note that flatpak-builder uses curl to download files, so ensure that you have included a valid url (https://example.com/path/to/PrismLauncher.tar.gz or file:///path/to/PrismLauncher {you need three ///}).*
 
 Finally, to install:
 
