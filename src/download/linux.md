@@ -52,7 +52,7 @@ sudo apt install prismlauncher
 su -c "apt install prismlauncher"
 ```
 
-*Note: Prism Launcher in both distributions appears to be unmaintained, with AOSC still on version 6.1 and both versions of ALT Linux on version 6.3, so use packages at your own risk. If you are a user of these distributions, it is recommended that you either install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/src/wiki/development/build-instructions.md/#linux) yourself.*
+*Note: Prism Launcher in both distributions appears to be unmaintained, with AOSC still on version 6.1 and both versions of ALT Linux on version 6.3, so use packages at your own risk. If you are a user of these distributions, it is recommended that you either install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/wiki/development/build-instructions/#linux) yourself.*
 
 </div>
 
