@@ -44,7 +44,7 @@ apk add prismlauncher
 
 # <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux / <img src="https://static-00.iconduck.com/assets.00/aosc-icon-512x512-tv7gwhzl.png" height="20"> AOSC
 
-RPM Packages of ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures. [Prism Launcher](https://packages.aosc.io/packages/prismlauncher) is also available on AOSC.
+RPM Packages for ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures. [Prism Launcher](https://packages.aosc.io/packages/prismlauncher) is also available on AOSC.
 
 ```bash
 sudo apt install prismlauncher
