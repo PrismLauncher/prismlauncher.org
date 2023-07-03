@@ -50,8 +50,6 @@ Prism Launcher in both distributions are unmaintained, so either install the [fl
 
 <summary>Advanced - Use at Own Risk</summary>
 
-<br>
-
 RPM Packages for ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures. [Prism Launcher](https://packages.aosc.io/packages/prismlauncher) is also available on AOSC.
 
 Please be warned that versions of PrismLauncher prior to 7.0 have high security vulnerabilities ([GHSA-gq28-qx55-mh2r](https://github.com/PrismLauncher/PrismLauncher/security/advisories/GHSA-gq28-qx55-mh2r) and [GHSA-wxgx-8v36-mj2m](https://github.com/PrismLauncher/PrismLauncher/security/advisories/GHSA-wxgx-8v36-mj2m)), so use these packages at your own risk.
