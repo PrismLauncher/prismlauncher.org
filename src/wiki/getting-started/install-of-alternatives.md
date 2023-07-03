@@ -35,7 +35,7 @@ To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** 
 
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods
 
-If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
+If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) or [Starlight](https://modrinth.com/mod/starlight)!
 
 If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
 
