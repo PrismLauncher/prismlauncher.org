@@ -44,7 +44,8 @@ apk add prismlauncher
 
 # <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux / <img src="https://static-00.iconduck.com/assets.00/aosc-icon-512x512-tv7gwhzl.png" height="20"> AOSC
 
-Prism Launcher in both distributions are unmaintained, so either install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/wiki/development/build-instructions/#linux) yourself.
+Prism Launcher in both distributions may be behind the current version, so please check the version of Prism Launcher in the repositories before installing. See the dropdown menu for details.
+If the launcher is out-of-date, please install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/wiki/development/build-instructions/#linux) yourself.
 
 <details>
 
