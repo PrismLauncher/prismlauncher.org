@@ -29,6 +29,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Dracula](https://img.shields.io/badge/Dracula-BD93F9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Dracula.zip)
 [![Fluent Dark](https://img.shields.io/badge/Fluent--Dark-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark.zip)
 [![Jvne](https://img.shields.io/badge/Jvne-7455FE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Jvne.zip)
+[![Mellow](https://img.shields.io/badge/Mellow-%23161617?style=for-the-badge&logo=github)](https://github.com/PrismLauncher/Themes/releases/latest/download/Mellow.zip)
 [![Nord Polar Night](https://img.shields.io/badge/Nord--Polar--Night-4C566A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Polar-Night.zip)
 [![Nord Snow Storm](https://img.shields.io/badge/Nord--Snow--Storm-E5E9F0?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Snow-Storm.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
