@@ -44,22 +44,8 @@ apk add prismlauncher
 
 # <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux / <img src="https://static-00.iconduck.com/assets.00/aosc-icon-512x512-tv7gwhzl.png" height="20"> AOSC
 
-Prism Launcher in both distributions may be behind the current version, so please check the version of Prism Launcher in the repositories before installing. See the dropdown menu for details.
+Prism Launcher in both distributions may be behind the current version (due possible packager issues), so please check the version of Prism Launcher in the repositories before installing.
 If the launcher is out-of-date, please install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/wiki/development/build-instructions/#linux) yourself.
-
-<details>
-
-<summary>Advanced - Use at Own Risk</summary>
-
-RPM Packages for ALT Linux on versions [sisyphus](https://packages.altlinux.org/en/sisyphus/srpms/prismlauncher/) and [p10](https://packages.altlinux.org/en/p10/srpms/prismlauncher/) are available for multiple architectures. [Prism Launcher](https://packages.aosc.io/packages/prismlauncher) is also available on AOSC.
-
-Please be warned that versions of PrismLauncher prior to 7.0 have high security vulnerabilities ([GHSA-gq28-qx55-mh2r](https://github.com/PrismLauncher/PrismLauncher/security/advisories/GHSA-gq28-qx55-mh2r) and [GHSA-wxgx-8v36-mj2m](https://github.com/PrismLauncher/PrismLauncher/security/advisories/GHSA-wxgx-8v36-mj2m)), so use these packages at your own risk.
-
-```bash
-sudo apt install prismlauncher
-```
-
-</details>
 
 </div>
 
