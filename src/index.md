@@ -12,6 +12,7 @@ hero:
     url: /download
     content: 'Download Now'
 ---
+
 <div class="content">
   <div class="row row-reverse">
     <div class="column">

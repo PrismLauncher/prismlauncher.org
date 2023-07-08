@@ -7,8 +7,8 @@
    version="1.1"
    viewBox="0 0 38.1 12.7"
    id="svg66"
-   sodipodi:docname="logo-text-darkmode.svg"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="org.prismlauncher.PrismLauncher.logo-dark.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +29,10 @@
      inkscape:deskcolor="#000000"
      showgrid="false"
      inkscape:zoom="8.9305556"
-     inkscape:cx="70.824261"
-     inkscape:cy="41.430793"
+     inkscape:cx="65.001555"
+     inkscape:cy="23.962675"
      inkscape:window-width="2560"
-     inkscape:window-height="1371"
+     inkscape:window-height="1386"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -47,10 +47,9 @@
        fill="#99cd61"
        id="path4" />
     <path
-       d="M 6.35,0.52917 3.7204,1.7953 6.350712,6.349924 8.8703,4.89477 8.97985,1.79517 C 7.82875,1.13058 6.64105,0.52907 6.35005,0.52907 Z"
+       d="m6.35 0.52917-2.5208 4.3656 2.5208 1.4552 2.5203-1.4552 0.10955-3.0996c-1.1511-0.66459-2.3388-1.2661-2.6298-1.2661z"
        fill="#df6277"
-       id="path6"
-       sodipodi:nodetypes="ccccccc" />
+       id="path6" />
     <path
        d="m8.9798 1.7952-2.6298 4.5548 2.5203 1.4552 2.5208-4.3656c-0.14552-0.25205-1.2601-0.97975-2.4112-1.6443z"
        fill="#fb9168"
@@ -68,45 +67,21 @@
        fill="#4b7cbc"
        id="path14" />
     <path
-       d="m 6.35,6.35 -2.6296,4.5548 2.6296,1.266 c 0.29104,0 1.4787,-0.60148 2.6298,-1.2661 z"
+       d="m6.35 6.35-2.5208 1.4552 2.5208 4.3656c0.29104 0 1.4787-0.60148 2.6298-1.2661z"
        fill="#6f488c"
-       id="path16"
-       sodipodi:nodetypes="ccccc" />
-  </g>
-  <g
-     stroke-width="0.26458"
-     id="g1685"
-     transform="rotate(180,6.3501,6.35)">
+       id="path16" />
     <path
-       d="M 6.35,6.35"
+       d="m3.8292 4.8948-2.5203 4.3656c0.29104 0.5041 4.459 2.9104 5.041 2.9104v-5.8208z"
+       fill="#4d3f33"
+       id="path18" />
+    <path
+       d="m1.309 3.4396c-0.29104 0.5041-0.29104 5.3167 0 5.8208l5.041-2.9104v-2.9104z"
+       fill="#7a573b"
+       id="path20" />
+    <path
+       d="m6.35 0.52917c-0.58208-2e-8 -4.75 2.4063-5.041 2.9104l5.041 2.9104z"
        fill="#99cd61"
-       id="path1671" />
-    <path
-       d="M 6.35,0.52917 V 6.35 6.34997 L 8.8703,4.89477 8.97985,1.79517 C 7.82875,1.13058 6.64105,0.52907 6.35005,0.52907 Z"
-       fill="#df6277"
-       id="path1673"
-       sodipodi:nodetypes="ccccccc" />
-    <path
-       d="M 8.9798,1.7952 6.35,6.35 8.8703,7.8052 11.3911,3.4396 C 11.24558,3.18755 10.131,2.45985 8.9799,1.7953 Z"
-       fill="#fb9168"
-       id="path1675" />
-    <path
-       d="M 11.391,3.4396 6.35,6.35 8.8703,7.8052 11.6092,6.35 c 0,-1.3292 -0.07255,-2.6584 -0.21808,-2.9104 z"
-       fill="#f3db6c"
-       id="path1677" />
-    <path
-       d="m 6.35,6.35 v 2.9104 h 5.041 C 11.53652,9.00835 11.60907,7.6792 11.60908,6.35 Z"
-       fill="#7ab392"
-       id="path1679" />
-    <path
-       d="m 6.35,6.35 v 2.9104 l 2.6298,1.6443 c 1.1511,-0.66459 2.2657,-1.3923 2.4112,-1.6443 z"
-       fill="#4b7cbc"
-       id="path1681" />
-    <path
-       d="M 6.35,6.35 6.350712,6.349924 6.35,12.1708 c 0.29104,0 1.4787,-0.60148 2.6298,-1.2661 z"
-       fill="#6f488c"
-       id="path1683"
-       sodipodi:nodetypes="ccccc" />
+       id="path22" />
   </g>
   <g
      transform="matrix(.88 0 0 .88 -10.906 -1.2421)"
