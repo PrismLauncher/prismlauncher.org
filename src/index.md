@@ -16,7 +16,6 @@ hero:
 <div class="notification type-success center">
 
 # Happy Pride Month!
-
 </div>
 
 <div class="content">
