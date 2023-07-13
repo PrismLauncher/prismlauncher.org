@@ -20,7 +20,7 @@ Prism Launcher is a custom launcher for Minecraft that was forked from MultiMC. 
 - Managing multiple, isolated instances of Minecraft.
 - Easy installation of mod loaders, such as Forge, Fabric, LiteLoader and Quilt.
 - Manage your worlds, resource packs, and shader packs in just a few clicks.
-- Install modpacks from many platforms such as CurseForge, Technic, FTB, FTB Legacy and Modrinth.
+- Install modpacks from many platforms such as CurseForge, Technic, FTB Legacy and Modrinth.
 - Install individual mods from CurseForge and Modrinth, automatically tailored to match your loader and game version.
 - Kill Minecraft easily in the event of a crash or freeze.
 - Access all your logs easily.
