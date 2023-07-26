@@ -4,7 +4,7 @@ description: Absolutely no memes!
 date: 2023-07-26
 release_version: "7.2"
 minimum_macos_version: 11.0.0
-mac_signature: tim apple
+mac_signature: oSJkIb6qFA7YUCyCKxY8YHtungtYgDii/pCw9BBRkWSn2SRUO1qWz0spuhW3N4bpsE54p7H0LOYW0iHWqBleBg==
 tags:
   - release
 ---
