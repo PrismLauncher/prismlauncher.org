@@ -19,8 +19,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm ci
-          npm run update-contributors
+          pnpm install --frozen-lockfile
+          pnpm run update-contributors
 
       - name: Commit files
         run: |
