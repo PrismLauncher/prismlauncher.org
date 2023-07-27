@@ -19,6 +19,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
           pnpm install --frozen-lockfile
           pnpm run update-contributors
 
