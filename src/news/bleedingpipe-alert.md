@@ -1,5 +1,5 @@
 ---
-title: "[MALWARE WARNING] Bleeding Pipe RCE Vulnerability on some Forge servers"
+title: "[MALWARE WARNING] Vulnerability on some modded servers - Bleeding Pipe RCE"
 description: Multiple vulnerable mods are being exploited in the wild to gain remote code execution
 date: 2023-07-30
 ---
