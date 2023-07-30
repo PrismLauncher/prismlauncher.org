@@ -30,20 +30,53 @@ If you use the mods listed below, it is recommended to update them to the latest
 
 ## Affected mods
 
-- EnderCore (dependency of EnderIO)
-- LogisticsPipes
+- AetherCraft
+- Advent of Ascension (Nevermine) (only affects 1.12.2)
+- Arrows Plus
+- Astral Sorcery (versions <=1.9.1)
 - BDLib (versions 1.7-1.12)
-- Smart Moving 1.12
 - Brazier
+- Carbonization
+- Custom Friends Capes
+- CustomOreGen
 - DankNull
+- Energy Manipulation
+- EnderCore (dependency of EnderIO, only affects 1.9-1.13)
+- EndermanEvolution
+- Extrafirma
 - Gadomancy
+- Giacomo's Bookshelf
+- Immersive Armors (only affects 1.17.1, 1.18.1, 1.19.0, and 1.19.1)
+- Immersive Aircraft
+- Immersive Paintings
+- JourneyMap (introduced in 1.16.5-5.7.1 and Fixed in 1.16.5-5.7.2 No other versions were effected)
+- LanteaCraft / SGCraft
+- LogisticsPipes (only affects 1.4.7-1.7.10)
+- Minecraft Comes Alive (MCA) (only affects 1.5.2-1.6.4)
+- MattDahEpic Core (MDECore) (only affects 1.8.8-1.12.2)
+- mxTune (only affects 1.12-1.16.5)
+- p455w0rd's Things
+- Project Blue
+- RadixCore
+- RebornCore (affects versions >= 3.13.8, <4.7.3)
+- SimpleAchievements
+- SmartMoving
+- Strange
+- SuperMartijn642's Config Lib (only affects versions <1.0.9)
+- Thaumic Tinkerer (fixed in version 2.3-138 for Minecraft 1.7.2, versions for 1.6-1.6.4 remain affected)
+- Tough Expansion
+- ttCore (only affects 1.7.10)
 
 ## References
 
 <https://blog.mmpa.info/posts/bleeding-pipe/>
 
+<https://unascribed.com/mc-mad-gadget.html>
+
 <https://discord.com/channels/1115852272245686334/1116187144973713518/1134919145268449361>
 
 ## Thanks
 
-We would like to thank the MMPA for the detailed blogpost explaining the situation and the release of Pipeblocker. If you are interested, you can join their Discord server here: <https://discord.gg/5NvpmUttDP>
+We would like to thank the MMPA for the detailed blogpost explaining the situation and the release of Pipeblocker. If you are interested, you can join their Discord server here: <https://discord.gg/5NvpmUttDP>.
+
+[unascribed](https://unascribed.com/) also did great work in collecting a larger lists of affected mods, which you can find [here](https://unascribed.com/mc-mad-gadget.html).
