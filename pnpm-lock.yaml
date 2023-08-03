@@ -27,8 +27,8 @@ devDependencies:
     specifier: 5.0.7
     version: 5.0.7
   '@fortawesome/fontawesome-free':
-    specifier: 6.4.0
-    version: 6.4.0
+    specifier: 6.4.2
+    version: 6.4.2
   axios:
     specifier: 1.4.0
     version: 1.4.0
@@ -234,8 +234,8 @@ packages:
     resolution: {integrity: sha512-PL6oNXuPyeidLd09U02RpQPemc1/KvvwJXICNkcmKm8bNqVL+deol6gPilV712ZfT5DpjLxmJ2yEhJS6Hi5n3Q==}
     dev: true
 
-  /@fortawesome/fontawesome-free@6.4.0:
-    resolution: {integrity: sha512-0NyytTlPJwB/BF5LtRV8rrABDbe3TdTXqNB3PdZ+UUUZAEIrdOJdmABqKjt4AXwIoJNaRVVZEXxpNrqvE1GAYQ==}
+  /@fortawesome/fontawesome-free@6.4.2:
+    resolution: {integrity: sha512-m5cPn3e2+FDCOgi1mz0RexTUvvQibBebOUlUlW0+YrMjDTPkiJ6VTKukA1GRsvRw+12KyJndNjj0O4AgTxm2Pg==}
     engines: {node: '>=6'}
     requiresBuild: true
     dev: true
