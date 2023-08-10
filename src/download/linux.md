@@ -120,7 +120,7 @@ sudo dnf install prismlauncher-qt5-nightly
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64)
+# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64, ARM64)
 
 We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
 Several MPR packages are available:
@@ -138,7 +138,7 @@ sudo apt update
 sudo apt install prismlauncher
 ```
 
-NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.
+Prebuilt MPR supports Debian 11, 12, and Ubuntu 20.04, 22.04, 22.10, and 23.04.
 
 ## Installing with mist, the MPR CLI
 
