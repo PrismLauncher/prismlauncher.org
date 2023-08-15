@@ -12,35 +12,6 @@
 
   --disabled: #666;
 
-  --rainbow: linear-gradient(90deg,
-    hsl(350, 66%, 53%),
-    hsl(17, 95%, 60%),
-    hsl(49, 85%, 59%),
-    hsl(145, 27%, 49%),
-    hsl(214, 46%, 42%),
-    hsl(274, 32%, 32%)
-  );
-
-  --rainbow-dark: linear-gradient(90deg,
-  hsl(350, 66%, 43%),
-  hsl(17, 95%, 50%),
-  hsl(49, 85%, 49%),
-  hsl(145, 27%, 39%),
-  hsl(214, 46%, 32%),
-  hsl(274, 32%, 22%)
-  );
-
-  --rainbow-light: linear-gradient(90deg,
-  hsl(350, 66%, 43%),
-  hsl(17, 95%, 50%),
-  hsl(49, 85%, 49%),
-  hsl(145, 27%, 39%),
-  hsl(214, 46%, 32%),
-  hsl(274, 32%, 22%)
-  );
-
-
-
   --primary: hsl(350, 66%, 63%);
   --link: hsl(214, 46%, 52%);
   --info: hsl(274, 32%, 42%);
@@ -62,7 +33,7 @@
   --warn-light: hsl(49, 85%, 79%);
   --danger-light: hsl(17, 95%, 80%);
   
-  background: var(--background);
+  background-color: var(--background);
   color-scheme: dark;
 }
 
@@ -75,7 +46,7 @@
     --accent: #e0e0e0;
     --accent-light: #d0d0d0;
     
-    background: var(--background);
+    background-color: var(--background);
     color-scheme: light;
   }
 }
@@ -179,7 +150,7 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: 0.5em 0;
-  background: var(--code);
+  background-color: var(--code);
   color: white;
   overflow: auto;
 }
@@ -187,7 +158,7 @@ pre {
 code {
   word-break: break-all;
   color: #f8f8f2;
-  background: var(--code);
+  background-color: var(--code);
 }
 
 :not(pre)>code {
@@ -221,20 +192,20 @@ code {
 
 .highlight-line-isdir {
   color: #b00808;
-  background: #222;
+  background-color: #222;
 }
 
 .highlight-line-active {
-  background: #444;
-  background: hsla(0, 0%, 27%, 0.8);
+  background-color: #444;
+  background-color: hsla(0, 0%, 27%, 0.8);
 }
 
 .highlight-line-add {
-  background: #45844b;
+  background-color: #45844b;
 }
 
 .highlight-line-remove {
-  background: #902f2f;
+  background-color: #902f2f;
 }
 
 .container {
@@ -244,7 +215,7 @@ code {
 }
 
 .content {
-  background: var(--background);
+  background-color: var(--background);
   border-radius: 1em;
   padding: 1em;
 }
@@ -255,7 +226,7 @@ code {
 }
 
 .infobox {
-  background: var(--accent);
+  background-color: var(--accent);
   padding: 1em;
   border-radius: 1em;
 }
@@ -271,7 +242,7 @@ code {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  background: var(--rainbow);
+  background-color: var(--primary);
   border-radius: .365em;
   transition: 200ms ease;
   background-position-x: 100%;
@@ -284,49 +255,49 @@ code {
 }
 
 .button:hover {
-  background: var(--rainbow-dark);
+  background-color: var(--primary-dark);
 }
 
 .button.type-link {
-  background: var(--rainbow);
+  background-color: var(--link);
 }
 
 .button.type-link:hover {
-  background: var(--rainbow-dark);
+  background-color: var(--link-dark);
 }
 
 .button.type-info {
-  background: var(--rainbow);
+  background-color: var(--info);
 }
 
 .button.type-info:hover {
-  background: var(--rainbow-dark);
+  background-color: var(--info-dark);
 }
 
 .button.type-success {
-  background: var(--rainbow);
+  background-color: var(--success);
 }
 
 .button.type-success:hover {
-  background: var(--rainbow-dark);
+  background-color: var(--success-dark);
 }
 
 .button.type-warn {
-  background: var(--warn);
+  background-color: var(--warn);
   color: #000
 }
 
 .button.type-warn:hover {
-  background: var(--warn-dark);
+  background-color: var(--warn-dark);
   color: #000
 }
 
 .button.type-danger {
-  background: var(--danger);
+  background-color: var(--danger);
 }
 
 .button.type-danger:hover {
-  background: var(--danger-dark);
+  background-color: var(--danger-dark);
 }
 
 .button.size-large {
@@ -401,7 +372,7 @@ a.direct-link:focus:visited,
   flex: 1;
   padding: 1em;
   text-align: center;
-  background: var(--accent);
+  background-color: var(--accent);
 }
 
 .card .button {
@@ -419,28 +390,28 @@ a.direct-link:focus:visited,
 }
 
 .notification.type-primary {
-  background: var(--rainbow);
+  background-color: var(--primary);
 }
 
 .notification.type-link {
-  background: var(--rainbow);
+  background-color: var(--link);
 }
 
 .notification.type-info {
-  background: var(--rainbow);
+  background-color: var(--info);
 }
 
 .notification.type-success {
-  background: var(--rainbow-light);
+  background-color: var(--success);
 }
 
 .notification.type-warn {
-  background: var(--warn);
+  background-color: var(--warn);
   color: #000
 }
 
 .notification.type-danger {
-  background: var(--danger);
+  background-color: var(--danger);
 }
 
 /* footer */

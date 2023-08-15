@@ -23,6 +23,6 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
-          npm run build
+          pnpm install --frozen-lockfile
+          pnpm run build
 

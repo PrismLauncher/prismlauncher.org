@@ -34,8 +34,9 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 ### Build dependencies
 
 - A C++ compiler capable of building C++17 code.
-- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-- Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+- Qt Development tools 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems).
+- Alternatively, you can also use Qt 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems), if you prefer it.
+
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - ninja (`ninja-build` on Debian-based systems)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
@@ -51,7 +52,7 @@ You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, i
 ```bash
 cmake -S . -B build -G Ninja \
    -DCMAKE_INSTALL_PREFIX=install
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
 
 cmake --build build
 cmake --install build
@@ -67,7 +68,7 @@ cmake -S . -B build -G Ninja \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
 
 cmake --build build
 cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
@@ -161,8 +162,8 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
 
-    - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-    - Alternatively you can choose Qt 6.0 or newer
+    - You need Qt 6.0.x 64-bit ticked. (or a newer version)
+    - Alternatively you can choose Qt 5.12.0 or newer
     - You need Tools/Qt Creator ticked.
     - Other components are selected by default, you can un-tick them if you don't need them.
 
@@ -179,8 +180,8 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
 
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
-      - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
+   - Make sure that Generator is set to "Unix Generator (Desktop Qt 6.x.x GCC 64bit)".
+      - Alternatively this is probably "Unix Generator (Desktop Qt 5.12.x GCC 64bit)"
    - Hit the "Run CMake" button.
    - You'll see warnings, and it might not be clear that it succeeded until you scroll to the bottom of the window.
    - Hit "Finish" if CMake ran successfully.
@@ -201,8 +202,8 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 - [Java Development Kit 8 or later](https://adoptium.net/)
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 - [Qt](https://www.qt.io/download-qt-installer)
-  - For Qt 5 (Qt 5.15.2 is the recommended one), OpenSSL Toolkit is required
   - For Qt 6 (Qt 6.4.0 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
+  - For Qt 5 (Qt 5.15.2 is the recommended one), OpenSSL Toolkit is required
   - If you don't want to use the Qt installer, than you can use [aqt](https://github.com/miurahr/aqtinstall), see [aqt-list](https://ddalcino.github.io/aqt-list-server/) for help with command arguments.
 
 ### Compile from command line on Windows using msbuild
@@ -212,11 +213,11 @@ These instructions assume you are using the `x64 Native Tools Command Prompt` to
 All commands are for a debug build, for release builds, replace `Debug` with `Release` in the cmake build and install commands.
 
 1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_PREFIX_PATH=C:\Qt\6.4.0\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=C:\Qt\6.4.0\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
 
    - If you have installed Qt in a non-default location, then change the `CMAKE_PREFIX_PATH` to `-DCMAKE_PREFIX_PATH=<Path to Qt Install>\6.4.0\msvc2019_64\lib\cmake`, replacing `<Path to Qt Install>` with the path to your Qt install.
    - If you are building for 32bit, change `msvc2019_64` to `msvc2019`.
-   - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter and change `CMAKE_PREFIX_PATH` to point to Qt 5.
+   - If you want to build using Qt 5, then add the `-DLauncher_QT_VERSION_MAJOR=5` parameter and change `CMAKE_PREFIX_PATH` to point to Qt 5.
 
 3. Now you need to run the build itself: Run `cmake --build build --config Debug -- /p:UseMultiToolTask=true /p:EnforceProcessCountAcrossBuilds=true`.
 
@@ -265,10 +266,10 @@ ccache 4.7.x or newer is required for MSVC support.
 ### Compile from command line on Windows
 
 1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
-2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6 -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -DCMAKE_BUILD_TYPE=Debug -G Ninja`. These options will copy the final build to the `install` folder after the build.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -DCMAKE_BUILD_TYPE=Debug -G Ninja`. These options will copy the final build to the `install` folder after the build.
 
    - Replace Debug with Release if you want to build a Release build.
-   - If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
+   - If you want to build using Qt 5, then add the `-DLauncher_QT_VERSION_MAJOR=5` parameter
    - If you want to use [ccache](#ccache) to speed up recompilations, add the parameter `-DCMAKE_CXX_COMPILER_LAUNCHER=ccache`
 
 3. Now you need to run the build itself: Run `cmake --build build`.
@@ -307,7 +308,7 @@ ccache 4.7.x or newer is required for MSVC support.
 - Install the official build of CMake (<https://cmake.org/download/>).
 - Install extra-cmake-modules
 - Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
-- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
+- Install any version of Qt 6 (recommended) or Qt 5.12 or newer
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
@@ -335,14 +336,14 @@ mkdir build
 cd build
 cmake \
  -DCMAKE_BUILD_TYPE=Release \
- -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
+ -DCMAKE_INSTALL_PREFIX="dist" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
- -DQt5_DIR="/path/to/Qt/" \
+ -DQt6_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
- -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  -DLauncher_BUILD_PLATFORM=macOS
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
+#-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
  ..
 make install
 ```
@@ -393,6 +394,7 @@ cmake -S . -B build \
    -DCMAKE_INSTALL_PREFIX="/usr/local" \ # /usr/local is default in OpenBSD and FreeBSD
    -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
+   -DLauncher_QT_VERSION_MAJOR="5"
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
@@ -431,7 +433,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             "name": "Mac (PrismLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/homebrew/opt/qt@5/include/**"
+                "/opt/homebrew/opt/qt@6/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -439,7 +441,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             ],
             "compilerPath": "/usr/bin/clang",
             "compilerArgs": [
-                "-L/opt/homebrew/opt/qt@5/lib"
+                "-L/opt/homebrew/opt/qt@6/lib"
             ],
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "cStandard": "c17",
