@@ -316,6 +316,11 @@ xcode-select --install
 
 ### Build
 
+[If you are on zsh](https://support.apple.com/kb/HT208050),zsh does not ignore comments by default, run the following to ignore comments for this session:
+```zsh
+setopt interactivecomments
+```
+
 Choose an installation path.
 
 This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
@@ -330,8 +335,7 @@ cmake \
  -DQt6_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
  -DLauncher_BUILD_PLATFORM=macOS \
-# if you want to enable LTO/IPO:
- -DENABLE_LTO=ON \ 
+ -DENABLE_LTO=ON # if you want to enable LTO/IPO:
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
 #-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
  ..
