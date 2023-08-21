@@ -301,7 +301,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
-```bash
+```zsh
 brew update # in the case your repositories weren't updated
 brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
@@ -310,13 +310,14 @@ brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you wan
 
 If you don't have XCode Command Line tools installed, you can install them with this command:
 
-```bash
+```zsh
 xcode-select --install
 ```
 
 ### Build
 
-[If you are on zsh](https://support.apple.com/kb/HT208050),zsh does not ignore comments by default, run the following to ignore comments for this session:
+[If you are on zsh](https://support.apple.com/kb/HT208050), zsh does not ignore comments by default, run the following to ignore comments for this session:
+
 ```zsh
 setopt interactivecomments
 ```
@@ -325,7 +326,7 @@ Choose an installation path.
 
 This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
 
-```bash
+```zsh
 mkdir build
 cd build
 cmake \
