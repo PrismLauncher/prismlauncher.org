@@ -224,7 +224,7 @@ RPM packages are available on the [Open Build Service](https://download.opensuse
   
 ```bash
 # add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
-zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/ prism-mc-launcher
+zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/
 # refresh repository cache
 zypper refresh
 # stable releases (Qt6 version, only for Tumbleweed)
