@@ -233,7 +233,7 @@ zypper install prismlauncher
 zypper install prismlauncher-nightly
 # stable releases (Qt5 version, available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5
-# latest builds (avalible for Leap and Tumbleweed)
+# latest builds (available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5-nightly
 ```
   
