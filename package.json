@@ -41,7 +41,7 @@
     "markdown-it": "13.0.1",
     "markdown-it-anchor": "8.6.7",
     "markdown-it-table-of-contents": "0.6.0",
-    "markdownlint-cli": "0.35.0"
+    "markdownlint-cli": "0.36.0"
   },
   "packageManager": "pnpm@8.7.0"
 }
