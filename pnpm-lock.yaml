@@ -39,11 +39,11 @@ devDependencies:
     specifier: 3.4.3
     version: 3.4.3
   markdown-it:
-    specifier: 13.0.1
-    version: 13.0.1
+    specifier: 13.0.2
+    version: 13.0.2
   markdown-it-anchor:
     specifier: 8.6.7
-    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2)
   markdown-it-table-of-contents:
     specifier: 0.6.0
     version: 0.6.0
@@ -163,7 +163,7 @@ packages:
       kleur: 4.1.5
       liquidjs: 10.8.4
       luxon: 3.4.3
-      markdown-it: 13.0.1
+      markdown-it: 13.0.2
       micromatch: 4.0.5
       minimist: 1.2.8
       moo: 0.5.2
@@ -1257,14 +1257,14 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1):
+  /markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2):
     resolution: {integrity: sha512-FlCHFwNnutLgVTflOYHPW2pPcl2AACqVzExlkGQNsi4CJgqOHN7YTgDd4LuhgN1BFO3TS0vLAruV1Td6dwWPJA==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
       '@types/markdown-it': 12.2.3
-      markdown-it: 13.0.1
+      markdown-it: 13.0.2
     dev: true
 
   /markdown-it-table-of-contents@0.6.0:
@@ -1274,6 +1274,17 @@ packages:
 
   /markdown-it@13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 3.0.1
+      linkify-it: 4.0.1
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: true
+
+  /markdown-it@13.0.2:
+    resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
