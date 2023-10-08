@@ -37,29 +37,6 @@
     Mastodon: https://floss.social/@PrismLauncher
 
 - type: roles
-  id: contributor-roles
-  title: Contributor roles
-  description: "These roles are for people contributing to Prism Launcher. This is on an [honor/trust system](https://en.wikipedia.org/wiki/Honor_system). If you select a role when you never actually contributed, punishments may be given.\n\nClick the button below to assign yourself any of the following roles."
-  template: "**»** {EMOJI} {MENTION}"
-
-  roles:
-    1031845074847416352:
-      description: Packager
-      emoji: 📦
-    1031856797570572329:
-      description: Design
-      emoji: 🎨
-    1031856922128830475:
-      description: Programmer
-      emoji: 🧑‍💻
-    1031856744239996928:
-      description: Documentation
-      emoji: 📚
-    1072593656256659520:
-      description: Translator
-      emoji: 💬
-
-- type: roles
   id: community-roles
   title: Community roles
   template: "**»** {EMOJI} {MENTION}"
