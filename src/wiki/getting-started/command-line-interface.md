@@ -11,13 +11,13 @@ eleventyNavigation:
 Usage: prismlauncher [-h] [-v] [-d &lt;dir&gt;] [-l &lt;launch&gt;] [-s &lt;server&gt;] [-a &lt;profile&gt;] [-I &lt;import&gt;] [--show &lt;show&gt;] [--alive] [--help-all]
 
 Options:
-  -d, --dir <directory>    Use a custom path as application root (use '.' for current directory)
-  -l, --launch <instance>  Launch the specified instance (by instance ID)
-  -s, --server <address>   Join the specified server on launch (only valid in combination with --launch)
-  -a, --profile <profile>  Use the account specified by its profile name (only valid in combination with --launch)
+  -d, --dir &lt;directory&gt;    Use a custom path as application root (use '.' for current directory)
+  -l, --launch &lt;instance&gt;  Launch the specified instance (by instance ID)
+  -s, --server &lt;address&gt;   Join the specified server on launch (only valid in combination with --launch)
+  -a, --profile &lt;profile&gt;  Use the account specified by its profile name (only valid in combination with --launch)
   --alive                  Write a small 'live.check' file after the launcher starts
-  -I, --import <file>      Import instance from specified zip (local path or URL)
-  --show <show>            Opens the window for the specified instance (by instance ID)
+  -I, --import &lt;file&gt;      Import instance from specified zip (local path or URL)
+  --show &lt;show&gt;            Opens the window for the specified instance (by instance ID)
   -h, --help               Displays help on commandline options.
   --help-all               Displays help, including generic Qt options.
   -v, --version            Displays version information.
