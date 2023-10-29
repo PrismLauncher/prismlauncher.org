@@ -12,8 +12,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0
   '@11ty/eleventy-img':
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.1.6
+    version: 3.1.6
   '@11ty/eleventy-navigation':
     specifier: 0.3.5
     version: 0.3.5
@@ -92,8 +92,8 @@ packages:
       - supports-color
     dev: true
 
-  /@11ty/eleventy-img@3.1.1:
-    resolution: {integrity: sha512-0UxJ5vSYZD/7bdS237j5d4YY5Nyv280/YJo+gMAE6ASeMn/FZiv3iXc1jf2extSSzmdsW3TjWHf1oojs6WSYrg==}
+  /@11ty/eleventy-img@3.1.6:
+    resolution: {integrity: sha512-tARr0DvoYzeIdasUZ9n8sViK68A2mKQa2En2j+eAad9bpdz27D4gyQ1oihP0ran1LwXkV6bokDKjTRNcuIiODg==}
     engines: {node: '>=14.15.0'}
     dependencies:
       '@11ty/eleventy-fetch': 4.0.0
