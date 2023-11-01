@@ -12,8 +12,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0
   '@11ty/eleventy-img':
-    specifier: 3.1.6
-    version: 3.1.6
+    specifier: 3.1.8
+    version: 3.1.8
   '@11ty/eleventy-navigation':
     specifier: 0.3.5
     version: 0.3.5
@@ -92,11 +92,12 @@ packages:
       - supports-color
     dev: true
 
-  /@11ty/eleventy-img@3.1.6:
-    resolution: {integrity: sha512-tARr0DvoYzeIdasUZ9n8sViK68A2mKQa2En2j+eAad9bpdz27D4gyQ1oihP0ran1LwXkV6bokDKjTRNcuIiODg==}
+  /@11ty/eleventy-img@3.1.8:
+    resolution: {integrity: sha512-9xVqbykggQAHTSiZEo6nUayS8l8nkM7RU8dCjGzikCc8FXSW/E17ytq7SaDngo24D3LZdD+3Gheh4zSeidrImA==}
     engines: {node: '>=14.15.0'}
     dependencies:
       '@11ty/eleventy-fetch': 4.0.0
+      brotli-size: 4.0.0
       debug: 4.3.4
       entities: 4.5.0
       image-size: 1.0.2
@@ -494,6 +495,13 @@ packages:
       fill-range: 7.0.1
     dev: true
 
+  /brotli-size@4.0.0:
+    resolution: {integrity: sha512-uA9fOtlTRC0iqKfzff1W34DXUA3GyVqbUaeo3Rw3d4gd1eavKVCETXrn3NzO74W+UVkG3UHu8WxUi+XvKI/huA==}
+    engines: {node: '>= 10.16.0'}
+    dependencies:
+      duplexer: 0.1.1
+    dev: true
+
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
     dependencies:
@@ -701,6 +709,10 @@ packages:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
+    dev: true
+
+  /duplexer@0.1.1:
+    resolution: {integrity: sha512-sxNZ+ljy+RA1maXoUReeqBBpBC6RLKmg5ewzV+x+mSETmWNoKdZN6vcQjpFROemza23hGFskJtFNoUWUaQ+R4Q==}
     dev: true
 
   /eastasianwidth@0.2.0:
