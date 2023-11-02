@@ -18,6 +18,16 @@ For that go to **Version** → **Select Forge** → **Change Version** → **Sel
 
 Alternatively you can download and use an older Java version (i.e. Java 8u312)
 
+## Minecraft Forge failing to run processor
+
+If you are getting an error saying `Failed to run processor: java.net.ConnectException: Connection refused` when trying to launch a Minecraft Forge instance, you might have connectivity issues with IPv6.
+
+A workaround for this issue is adding the following JVM argument:
+
+```text
+-Djava.net.preferIPv4Stack=true
+```
+
 ## Common Launcher-related issues
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
