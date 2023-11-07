@@ -4,7 +4,7 @@ description: Boats FTW
 date: 2023-11-07
 release_version: "8.0"
 minimum_macos_version: 11.0.0
-mac_signature: placeholder
+mac_signature: RXJXEogVYgN9qjLfuIBtHKT+ehzn7JcV/XxLyGaLUMAnbmtCwkZEFmjI5nW9lZaGKQt6lkO4av/wAKIR6nGMDA==
 tags:
   - release
 ---
