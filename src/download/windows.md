@@ -61,10 +61,7 @@ scoop install prismlauncher-git
 #### Chocolatey Package
 
 ```powershell
-# Install standard version
 choco install prismlauncher
-# Install legacy version
-choco install prismlauncher --package-parameters="'/legacy'"
 ```
 
 *Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
