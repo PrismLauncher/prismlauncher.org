@@ -5,7 +5,9 @@ eleventyNavigation:
   order: 12
 ---
 
-# Installation
+# CatPacks
+
+## Installation
 
 The CatPacks folder location is as follows:
 
@@ -18,13 +20,13 @@ After you move the CatPack to the mentioned folder restart Prism Launcher, then 
 In the Launcher section, click the User Interface tab, and under Cat, choose the newly added CatPack.
 Click the Close button, and enjoy your CatPack.
 
-# CatPack Types
+## CatPack Types
 
-## 1. Simple CatPack
+### 1. Simple CatPack
 
 The most basic CatPack is a simple image(that's all).
 
-## 2. Advanced CatPack
+### 2. Advanced CatPack
 
 Is a folder that contains a `catpack.json` file and some images.
 
