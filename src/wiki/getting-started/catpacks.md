@@ -32,68 +32,68 @@ Is a folder that contains a `catpack.json` file and some images.
 
 For example, the structure of a CatPack is as follows:
 
-```
+```text
 └── test_catpack
     ├── catpack.json
-    └── christmas.png
-    └── oneDay.png
-    └── maxwell.png
-    └── newyear.png
+    ├── christmas.png
+    ├── oneDay.png
+    ├── maxwell.png
+    ├── newyear.png
     └── newyear2.png
 ```
 
 The `catpack.json` looks as follows:
 
-```
+```json
 {
-    "name": "My Cute Cat",
-    "default": "maxwell.png",
-    "variants": [
-        {
-            "startTime": {
-                "day": 12,
-                "month": 4
-            },
-            "endTime": {
-                "day": 12,
-                "month": 4
-            },
-            "path": "oneDay.png"
-        },
-        {
-            "startTime": {
-                "day": 20,
-                "month": 12
-            },
-            "endTime": {
-                "day": 28,
-                "month": 12
-            },
-            "path": "christmas.png"
-        },
-        {
-            "startTime": {
-                "day": 30,
-                "month": 12
-            },
-            "endTime": {
-                "day": 1,
-                "month": 1
-            },
-            "path": "newyear2.png"
-        },
-        {
-            "startTime": {
-                "day": 28,
-                "month": 12
-            },
-            "endTime": {
-                "day": 3,
-                "month": 1
-            },
-            "path": "newyear.png"
-        }
-    ]
+  "name": "My Cute Cat",
+  "default": "maxwell.png",
+  "variants": [
+    {
+      "startTime": {
+        "day": 12,
+        "month": 4
+      },
+      "endTime": {
+        "day": 12,
+        "month": 4
+      },
+      "path": "oneDay.png"
+    },
+    {
+      "startTime": {
+        "day": 20,
+        "month": 12
+      },
+      "endTime": {
+        "day": 28,
+        "month": 12
+      },
+      "path": "christmas.png"
+    },
+    {
+      "startTime": {
+        "day": 30,
+        "month": 12
+      },
+      "endTime": {
+        "day": 1,
+        "month": 1
+      },
+      "path": "newyear2.png"
+    },
+    {
+      "startTime": {
+        "day": 28,
+        "month": 12
+      },
+      "endTime": {
+        "day": 3,
+        "month": 1
+      },
+      "path": "newyear.png"
+    }
+  ]
 }
 ```
 
