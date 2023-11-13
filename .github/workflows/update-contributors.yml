@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies & update contributors
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_MEMBERS_TOKEN }}
         run: |
           pnpm install --frozen-lockfile
           pnpm run update-contributors
