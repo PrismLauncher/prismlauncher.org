@@ -42,7 +42,8 @@ jobs:
         run: |
           git config --local user.email "gitbot@scrumplex.net"
           git config --local user.name "PrismAutomata"
-          git commit -m "Update contributors" -a || true
+          git add :/
+          git commit -m "Update contributors" || true
 
       - name: Push changes
         uses: ad-m/github-push-action@d91a481090679876dfc4178fef17f286781251df
