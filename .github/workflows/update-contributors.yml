@@ -45,7 +45,7 @@ jobs:
           git commit -m "Update contributors" -a || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@d91a481090679876dfc4178fef17f286781251df
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
