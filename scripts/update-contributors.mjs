@@ -6,7 +6,8 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const OUT_FILE_MEMBERS = path.join(__dirname, "../src/_data/members.json");
+const OUT_FILE_DEVELOPERS = path.join(__dirname, "../src/_data/developers.json");
+const OUT_FILE_MODERATORS = path.join(__dirname, "../src/_data/moderators.json");
 const OUT_FILE_CONTRIBUTORS = path.join(
   __dirname,
   "../src/_data/contributors.json"
@@ -17,10 +18,10 @@ let headers = {
 };
 if (GITHUB_TOKEN) headers["Authorization"] = `Bearer ${GITHUB_TOKEN}`;
 
-async function fetchMembers() {
+async function fetchTeam(slug) {
   // https://developer.github.com/v3/repos/#get
   let response = await axios.get(
-    `https://api.github.com/orgs/PrismLauncher/members?per_page=100`,
+    `https://api.github.com/orgs/PrismLauncher/teams/${slug}/members`,
     { headers }
   );
 
@@ -32,10 +33,9 @@ async function fetchMembers() {
       response.data[i].html_url,
     ]);
   }
+  users.sort((a, b) => a[0].localeCompare(b[0], "en-us"));
 
-  return {
-    users,
-  };
+  return { users };
 }
 
 async function fetchContributors() {
@@ -62,8 +62,11 @@ async function fetchContributors() {
   return { users };
 }
 
-const members = await fetchMembers();
-fs.writeFileSync(OUT_FILE_MEMBERS, JSON.stringify(members, null, "\t"));
+const developers = await fetchTeam("developers");
+fs.writeFileSync(OUT_FILE_DEVELOPERS, JSON.stringify(developers, null, "\t"));
+
+const moderators = await fetchTeam("moderators");
+fs.writeFileSync(OUT_FILE_MODERATORS, JSON.stringify(moderators, null, "\t"));
 
 const contributors = await fetchContributors();
 fs.writeFileSync(
