@@ -30,14 +30,14 @@ devDependencies:
     specifier: 6.4.2
     version: 6.4.2
   axios:
-    specifier: 1.6.0
-    version: 1.6.0
+    specifier: 1.6.2
+    version: 1.6.2
   clean-css:
     specifier: 5.3.2
     version: 5.3.2
   luxon:
-    specifier: 3.4.3
-    version: 3.4.3
+    specifier: 3.4.4
+    version: 3.4.4
   markdown-it:
     specifier: 13.0.2
     version: 13.0.2
@@ -163,7 +163,7 @@ packages:
       iso-639-1: 2.1.15
       kleur: 4.1.5
       liquidjs: 10.8.4
-      luxon: 3.4.3
+      luxon: 3.4.4
       markdown-it: 13.0.2
       micromatch: 4.0.5
       minimist: 1.2.8
@@ -414,8 +414,8 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
 
-  /axios@1.6.0:
-    resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
+  /axios@1.6.2:
+    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -1264,8 +1264,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luxon@3.4.3:
-    resolution: {integrity: sha512-tFWBiv3h7z+T/tDaoxA8rqTxy1CHV6gHS//QdaH4pulbq/JuBSGgQspQQqcgnwdAx6pNI7cmvz5Sv/addzHmUg==}
+  /luxon@3.4.4:
+    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
     engines: {node: '>=12'}
     dev: true
 
