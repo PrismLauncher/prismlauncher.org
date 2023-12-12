@@ -337,7 +337,7 @@ cmake \
  -DQt6_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.15 \
  -DLauncher_BUILD_PLATFORM=macOS \
- -DENABLE_LTO=ON # if you want to enable LTO/IPO:
+ -DENABLE_LTO=ON \ # if you want to enable LTO/IPO:
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
 #-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
  ..
