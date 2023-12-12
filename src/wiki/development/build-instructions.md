@@ -341,7 +341,7 @@ cmake \
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
 #-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
  ..
-ninja
+cmake --build build
 ```
 
 Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
