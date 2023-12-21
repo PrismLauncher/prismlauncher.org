@@ -85,6 +85,12 @@ You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many 
 
 **Don't report issues with those on upstream's Discord support channels!**
 
+### <img src="https://raw.githubusercontent.com/embeddedt/embeddium/16.x/forge/src/main/resources/icon.png" height="20"> Embeddium
+
+[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
+
+To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Embeddium*, click on it, click **Select mod for download**, and then press **OK**.
+
 ### <img src="https://raw.githubusercontent.com/Asek3/Rubidium/e3aea98992e110b41ceed5ab128c81ff6fd98fa0/src/main/resources/icon.png" height="20"> Rubidium
 
 [Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
