@@ -100,3 +100,8 @@ To install in Prism Launcher, create an instance with the **Forge** loader, and 
 You can find a list of performance mods for Forge [here](https://github.com/NordicGamerFE/usefulmods#performance-and-bug-fixing-mods).
 
 ## Modpacks
+
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/hammer/logo_512h.png" height="20"> Hammer
+
+[Hammer](https://modrinth.com/modpack/hammer) is like the Adrenaline modpack but made for Forge, utilizing Forge ports of mods and [Sinytra Connector](https://modrinth.com/mod/connector) to run Fabric/Quilt optimization mods.
+
