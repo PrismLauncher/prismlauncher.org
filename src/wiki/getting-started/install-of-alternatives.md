@@ -21,6 +21,10 @@ For a very long time, OptiFine was an essential mod that many enjoyed using as i
 
 In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
 
+## Installing things
+
+To install mods and modpacks, see the [Download mods](download-mods) and [Download modpacks](download-mods) pages.
+
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
 **NOTE:** Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
@@ -29,21 +33,15 @@ In the past few years, various mods have appeared to replace these features and 
 
 [Sodium](https://modrinth.com/mod/sodium) is a mod that greatly improves render performance through various optimizations. We **highly recommend** installing it when possible.
 
-To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
-
 If you use Sodium often, please consider supporting development of the mod by [donating](https://jellysquid.me/donate) to the developer!
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
 [Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
 
-To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
-
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" height="20"> Indium
 
 [Indium](https://modrinth.com/mod/indium) is an addon for Sodium that provides support for the Fabric Rendering API. This is needed if you want to use Sodium with mods that use advanced rendering techniques.
-
-To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Indium*, click **Select mod for download**, and then press **OK**.
 
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods
 
@@ -85,19 +83,13 @@ You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many 
 
 [Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
-To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Embeddium*, click on it, click **Select mod for download**, and then press **OK**.
-
 ### <img src="https://raw.githubusercontent.com/Asek3/Rubidium/e3aea98992e110b41ceed5ab128c81ff6fd98fa0/src/main/resources/icon.png" height="20"> Rubidium
 
 [Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
 
-To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
-
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" height="20"> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
-
-To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Oculus*, click on it, click **Select mod for download**, and then press **OK**.
 
 ### Other mods
 
