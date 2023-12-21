@@ -57,7 +57,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
 
-### <img src="https://cdn-raw.modrinth.com/data/BYfVnHa7/366754519a9702b43f0c9462b24de2757393efb9.png" height="20"> Simply Optimized
+### <img src="https://cdn-raw.modrinth.com/data/BYfVnHa7/7f8dc20fc0edd29fd95819a6f40938be0b9cadfa.png" height="20"> Simply Optimized
 
 [Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just optimization in mind. SO has better out-of-the-box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
 
