@@ -49,7 +49,7 @@ To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** 
 
 If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)! Do note that Starlight is no longer needed client-side if you're playing on Minecraft 1.20 or higher, as Mojang has optimized their lighting engine since then.
 
-If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
+If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/). There's also a list of mods made by the Additive modpack [here](https://github.com/skywardmc/additive/wiki/Give-up-OptiFine), which provides the Minecraft versions that each mod supports along with some extra information.
 
 ### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized
 
