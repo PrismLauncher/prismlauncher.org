@@ -27,9 +27,11 @@ In the past few years, various mods have appeared to replace these features and 
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
 
-[Sodium](https://modrinth.com/mod/sodium) is the best client-side optimisation mod available at the moment, and we **highly recommend** installing it when possible.
+[Sodium](https://modrinth.com/mod/sodium) is a mod that greatly improves render performance through various optimizations. We **highly recommend** installing it when possible.
 
 To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Sodium*, click **Select mod for download**, and then press **OK**.
+
+If you use Sodium often, please consider supporting development of the mod by [donating](https://jellysquid.me/donate) to the developer!
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
