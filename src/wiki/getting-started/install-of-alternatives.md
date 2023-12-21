@@ -27,7 +27,11 @@ To install mods and modpacks, see the [Download mods](../download-mods) and [Dow
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
-**NOTE:** Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
+<div class="notification type-note">
+
+Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
+
+</div>
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
 
@@ -71,9 +75,13 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge Mods
 
+<div class="notification type-warn">
+
 Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.
 
 While on some modpacks/with some mods they're going to work good, with others they might be *very* unstable so be well aware of what you're doing. If you have issues, use OptiFine.
+
+</div>
 
 You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many Fabric mods on Forge.
 
