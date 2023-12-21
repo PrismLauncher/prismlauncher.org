@@ -21,7 +21,7 @@ For a very long time, OptiFine was an essential mod that many people enjoyed usi
 
 In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, they often update faster due to community contributions and support, and each specific feature can be fully removed from the game if they're incompatible with a mod you're using or if you simply don't want it. Most of these are available on Fabric and Quilt, along with some of them natively supporting or working through compatibility layers on Forge.
 
-# <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt
 
 ## Mods
 
@@ -73,7 +73,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's built from Adrenaline for best performance. Additive supports both Fabric and Quilt and a wide range of Minecraft versions.
 
-# <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge
 
 ## Mods
 
