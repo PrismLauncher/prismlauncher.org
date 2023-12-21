@@ -105,3 +105,6 @@ You can find a list of performance mods for Forge [here](https://github.com/Nord
 
 [Hammer](https://modrinth.com/modpack/hammer) is like the Adrenaline modpack but made for Forge, utilizing Forge ports of mods and [Sinytra Connector](https://modrinth.com/mod/connector) to run Fabric/Quilt optimization mods.
 
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/drill/logo_512h.png" height="20"> Drill
+
+[Drill](https://modrinth.com/modpack/drill) is the Additive modpack but made for Forge, utilizing Forge ports of mods and [Sinytra Connector](https://modrinth.com/mod/connector) to run Fabric/Quilt optimization and OptiFine replacement mods.
