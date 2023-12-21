@@ -69,6 +69,9 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Adrenaline](https://modrinth.com/modpack/adrenaline) is a modpack which aims to improve performance as much as possible while not changing anything about the vanilla game or adding any QOL features, and remaining stable. Adrenaline supports both Fabric and Quilt and a wide range of Minecraft versions. However, like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/additive/logo_512h.png" height="20"> Additive
+
+[Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's built from Adrenaline for best performance. Additive supports both Fabric and Quilt and a wide range of Minecraft versions.
 
 # <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge
 
