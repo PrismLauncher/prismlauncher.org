@@ -21,9 +21,7 @@ For a very long time, OptiFine was an essential mod that many people enjoyed usi
 
 In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, they often update faster due to community contributions and support, and each specific feature can be fully removed from the game if they're incompatible with a mod you're using or if you simply don't want it. Most of these are available on Fabric and Quilt, along with some of them natively supporting or working through compatibility layers on Forge.
 
-## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt
-
-## Mods
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
 **NOTE:** Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
 
@@ -53,7 +51,7 @@ If you want to further improve your performance, please also consider installing
 
 If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/). There's also a list of mods made by the Additive modpack [here](https://github.com/skywardmc/additive/wiki/Give-up-OptiFine), which provides the Minecraft versions that each mod supports along with some extra information.
 
-## Modpacks
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Modpacks
 
 ### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized
 
@@ -73,9 +71,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's built from Adrenaline for best performance. Additive supports both Fabric and Quilt and a wide range of Minecraft versions.
 
-## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge
-
-## Mods
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge Mods
 
 Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.
 
@@ -107,7 +103,7 @@ To install in Prism Launcher, create an instance with the **Forge** loader, and 
 
 You can find a list of performance mods for Forge [here](https://github.com/NordicGamerFE/usefulmods#performance-and-bug-fixing-mods).
 
-## Modpacks
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge Modpacks
 
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/hammer/logo_512h.png" height="20"> Hammer
 
