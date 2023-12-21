@@ -23,7 +23,7 @@ In the past few years, various mods have appeared to replace these features and 
 
 ## Installing things
 
-To install mods and modpacks, see the [Download mods](download-mods) and [Download modpacks](download-mods) pages.
+To install mods and modpacks, see the [Download mods](../download-mods) and [Download modpacks](../download-modpacks) pages.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
