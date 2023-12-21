@@ -7,7 +7,19 @@ eleventyNavigation:
 
 # Why bother?
 
-Once upon a time, OptiFine was *the* way, to make your game better, faster, and stronger. Things have since changed.
+Once upon a time, OptiFine was *the* way, to make your game better, faster, and stronger through various useful features and optimizations. Things have since changed.
+
+## Detailed explanation
+
+For a very long time, OptiFine was an essential mod that many people enjoyed using as it offers many benefits such as performance improvements, extra quality of life features and more. However, it also has it's downsides:
+
+- OptiFine is closed-source which means that neither users or developers can easily inspect it's code. This makes much more difficult for developers to make their mods compatible with OptiFine, since they can't see what is conflicting between their mod and OptiFine.
+
+- OptiFine sometimes takes a long time to update to newer Minecraft versions as there is only one developer working on the mod.
+
+- OptiFine functions as an "all-in-one" mod (similar to a modpack) which makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
+
+In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, they often update faster due to community contributions and support, and each specific feature can be fully removed from the game if they're incompatible with a mod you're using or if you simply don't want it. Most of these are available on Fabric and Quilt, along with some of them natively supporting or working through compatibility layers on Forge.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="20"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Fabric/Quilt
 
