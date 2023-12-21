@@ -81,6 +81,8 @@ Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge
 
 While on some modpacks/with some mods they're going to work good, with others they might be *very* unstable so be well aware of what you're doing. If you have issues, use OptiFine.
 
+You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many Fabric mods on Forge.
+
 **Don't report issues with those on upstream's Discord support channels!**
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Rubidium/e3aea98992e110b41ceed5ab128c81ff6fd98fa0/src/main/resources/icon.png" height="20"> Rubidium
