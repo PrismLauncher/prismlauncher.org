@@ -7,19 +7,19 @@ eleventyNavigation:
 
 # Why bother?
 
-Once upon a time, OptiFine was *the* way, to make your game better, faster, and stronger through various useful features and optimizations. Things have since changed.
+Once upon a time, OptiFine was *the* way to make your game better, faster, and stronger through various useful features and optimizations. Things have since changed.
 
 ## Detailed explanation
 
-For a very long time, OptiFine was an essential mod that many people enjoyed using as it offers many benefits such as performance improvements, extra quality of life features and more. However, it also has it's downsides:
+For a very long time, OptiFine was an essential mod that many enjoyed using as it offers important benefits such as performance improvements, extra quality of life features, and more. However, it also has it's downsides:
 
-- OptiFine is closed-source which means that neither users or developers can easily inspect it's code. This makes much more difficult for developers to make their mods compatible with OptiFine, since they can't see what is conflicting between their mod and OptiFine.
+- OptiFine is closed-source. This means that no one can easily inspect it's code, and it is much more difficult for developers to make their mods compatible with OptiFine - since they can't see what could be conflicting between their mod and OptiFine.
 
 - OptiFine sometimes takes a long time to update to newer Minecraft versions as there is only one developer working on the mod.
 
-- OptiFine functions as an "all-in-one" mod (similar to a modpack) which makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
+- OptiFine functions as an "all-in-one" mod (similar to a modpack). This makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
 
-In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, they often update faster due to community contributions and support, and each specific feature can be fully removed from the game if they're incompatible with a mod you're using or if you simply don't want it. Most of these are available on Fabric and Quilt, along with some of them natively supporting or working through compatibility layers on Forge.
+In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
@@ -35,7 +35,7 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. Iris supports almost every shaderpack at this point, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
+[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
 
 To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Iris*, click **Select mod for download**, and then press **OK**.
 
@@ -65,11 +65,11 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/adrenaline/logo_512h.png" height="20"> Adrenaline
 
-[Adrenaline](https://modrinth.com/modpack/adrenaline) is a modpack which aims to improve performance as much as possible while not changing anything about the vanilla game or adding any QOL features, and remaining stable. Adrenaline supports both Fabric and Quilt and a wide range of Minecraft versions. However, like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
+[Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric/Quilt modpack which aims to improve performance as much as possible while not changing anything about the vanilla game, adding QOL features, or introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/additive/logo_512h.png" height="20"> Additive
 
-[Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's built from Adrenaline for best performance. Additive supports both Fabric and Quilt and a wide range of Minecraft versions.
+[Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's based on Adrenaline for better performance, supports both Fabric and Quilt, and can be installed on a wide range of Minecraft versions.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge Mods
 
