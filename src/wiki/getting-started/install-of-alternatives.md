@@ -27,10 +27,8 @@ To install mods and modpacks, see the [Download mods](../download-mods) and [Dow
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
-<div class="notification type-warn">
-
-Most Fabric mods require the [Fabric API](https://modrinth.com/mod/fabric-api) mod in order to work, while most Quilt mods require [Quilted Fabric API](https://modrinth.com/mod/qsl) to work.
-
+<div class="notification type-info">
+<p>Most Fabric mods require the <a href="https://modrinth.com/mod/fabric-api">Fabric API</a> mod in order to work, while most Quilt mods require <a href="https://modrinth.com/mod/qsl">Quilted Fabric API</a> to work.</p>
 </div>
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
@@ -76,15 +74,10 @@ If you don't want to search and install these mods manually, then try the [Fabul
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge Mods
 
 <div class="notification type-warn">
-
-**Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.**
-
-While on some modpacks/with some mods they're going to work good, with others they might be *very* unstable so be well aware of what you're doing. If you have issues, use OptiFine.
-
-You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many Fabric mods on Forge.
-
-**Don't report issues with those on upstream's Discord support channels!**
-
+<p><strong>Unlike on Fabric/Quilt, most unofficial ports of OptiFine alternatives for Forge might have some compatibility/stability issues.</strong></p>
+<p>While on some modpacks/with some mods they&#39;re going to work good, with others they might be <em>very</em> unstable so be well aware of what you&#39;re doing. If you have issues, use OptiFine.</p>
+<p>You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.</p>
+<p><strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong></p>
 </div>
 
 ### <img src="https://raw.githubusercontent.com/embeddedt/embeddium/16.x/forge/src/main/resources/icon.png" height="20"> Embeddium
