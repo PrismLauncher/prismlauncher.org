@@ -24,8 +24,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0
   '@fontsource/inter':
-    specifier: 5.0.15
-    version: 5.0.15
+    specifier: 5.0.16
+    version: 5.0.16
   '@fortawesome/fontawesome-free':
     specifier: 6.5.1
     version: 6.5.1
@@ -218,8 +218,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@fontsource/inter@5.0.15:
-    resolution: {integrity: sha512-/IoWYEXl8lqJEx50JqNPT+bI4VNwxb/bg2oOfvG8PiEsDsmHRFvWBVHlohBNn1+QdBf+KbAjU/gb4vlGOSsVWw==}
+  /@fontsource/inter@5.0.16:
+    resolution: {integrity: sha512-qF0aH5UiZvCmneX5orJbVRoc2VTyLTV3X/7laMp03Qt28L+B9tFlZODOGUL64wDWc69YVdi1LeJB0cIgd51lvw==}
     dev: true
 
   /@fortawesome/fontawesome-free@6.5.1:
