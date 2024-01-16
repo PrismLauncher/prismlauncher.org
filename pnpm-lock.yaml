@@ -39,11 +39,11 @@ devDependencies:
     specifier: 3.4.4
     version: 3.4.4
   markdown-it:
-    specifier: 13.0.2
-    version: 13.0.2
+    specifier: 14.0.0
+    version: 14.0.0
   markdown-it-anchor:
     specifier: 8.6.7
-    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2)
+    version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@14.0.0)
   markdown-it-table-of-contents:
     specifier: 0.6.0
     version: 0.6.0
@@ -1236,6 +1236,12 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
+  /linkify-it@5.0.0:
+    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+    dependencies:
+      uc.micro: 2.0.0
+    dev: true
+
   /liquidjs@10.8.4:
     resolution: {integrity: sha512-HSpYAFBVWxhwWsTKPBJgPm3bnwwIzAZjy17XhX7uJCKJ8H6A1YstZSFmPqMmWfSuJOg43RSx+qWVSA1Fu3+B2w==}
     engines: {node: '>=14'}
@@ -1269,14 +1275,14 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2):
+  /markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@14.0.0):
     resolution: {integrity: sha512-FlCHFwNnutLgVTflOYHPW2pPcl2AACqVzExlkGQNsi4CJgqOHN7YTgDd4LuhgN1BFO3TS0vLAruV1Td6dwWPJA==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
       '@types/markdown-it': 12.2.3
-      markdown-it: 13.0.2
+      markdown-it: 14.0.0
     dev: true
 
   /markdown-it-table-of-contents@0.6.0:
@@ -1293,6 +1299,18 @@ packages:
       linkify-it: 4.0.1
       mdurl: 1.0.1
       uc.micro: 1.0.6
+    dev: true
+
+  /markdown-it@14.0.0:
+    resolution: {integrity: sha512-seFjF0FIcPt4P9U39Bq1JYblX0KZCjDLFFQPHpL5AzHpqPEKtosxmdq/LTVZnjfH7tjt9BxStm+wXcDBNuYmzw==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.0
+      mdurl: 2.0.0
+      punycode.js: 2.3.1
+      uc.micro: 2.0.0
     dev: true
 
   /markdownlint-cli@0.38.0:
@@ -1336,6 +1354,10 @@ packages:
 
   /mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+    dev: true
+
+  /mdurl@2.0.0:
+    resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
     dev: true
 
   /merge2@1.4.1:
@@ -1768,6 +1790,11 @@ packages:
       once: 1.4.0
     dev: true
 
+  /punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+    dev: true
+
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
@@ -2107,6 +2134,10 @@ packages:
 
   /uc.micro@1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
+    dev: true
+
+  /uc.micro@2.0.0:
+    resolution: {integrity: sha512-DffL94LsNOccVn4hyfRe5rdKa273swqeA5DJpMOeFmEn1wCDc7nAbbB0gXlgBCL7TNzeTv6G7XVWzan7iJtfig==}
     dev: true
 
   /uglify-js@3.17.4:
