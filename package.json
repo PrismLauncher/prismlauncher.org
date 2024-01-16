@@ -38,7 +38,7 @@
     "axios": "1.6.5",
     "clean-css": "5.3.3",
     "luxon": "3.4.4",
-    "markdown-it": "13.0.2",
+    "markdown-it": "14.0.0",
     "markdown-it-anchor": "8.6.7",
     "markdown-it-table-of-contents": "0.6.0",
     "markdownlint-cli": "0.38.0"
