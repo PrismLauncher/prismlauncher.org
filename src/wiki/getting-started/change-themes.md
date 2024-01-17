@@ -34,6 +34,7 @@ Some themes are only on discord for now, but we will try to transfer them to our
 [![Nord Snow Storm](https://img.shields.io/badge/Nord--Snow--Storm-E5E9F0?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Snow-Storm.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord.zip)
 [![Rangoon Lightning](https://img.shields.io/badge/Rangoon--Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning.zip)
+[![Scarlett Pink](https://img.shields.io/badge/Scarlett--Pink-F8C8DC?style=for-the-badge&logo=github&logoColor=900000)](https://github.com/PrismLauncher/Themes/releases/latest/download/Scarlett-Pink.zip)
 [![Solarized Dark](https://img.shields.io/badge/Solarized--Dark-073642?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Solarized-Dark.zip)
 [![Steam Classic](https://img.shields.io/badge/Steam--Classic-4C5844?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Steam-Classic.zip)
 [![Tokyo Night](https://img.shields.io/badge/Tokyo--Night-C0CAF5?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Tokyo-Night.zip)
