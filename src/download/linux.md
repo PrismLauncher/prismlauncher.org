@@ -42,15 +42,6 @@ apk add prismlauncher
 
 <div class="infobox top">
 
-# <img src="https://cdn.freebiesupply.com/logos/large/2x/altlinux-logo-black-and-white.png" height="20"> ALT Linux / <img src="https://static-00.iconduck.com/assets.00/aosc-icon-512x512-tv7gwhzl.png" height="20"> AOSC
-
-Prism Launcher in both distributions may be behind the current version (due to possible packager issues), so please check the version of Prism Launcher in the repositories before installing.
-If the launcher is out-of-date, please install the [flatpak](https://flathub.org/apps/details/org.prismlauncher.PrismLauncher) or [build the binary](/wiki/development/build-instructions/#linux) yourself.
-
-</div>
-
-<div class="infobox top">
-
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
 
 There are several AUR packages available:  
@@ -255,7 +246,7 @@ zypper install prismlauncher-qt5-nightly
 
 Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
 
-*Note: You may need to edit the ```PrismLauncher.SlackBuild``` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file.*
+_Note: You may need to edit the ```PrismLauncher.SlackBuild``` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file._
 
 ```bash
 # download launcher slackbuild archive
