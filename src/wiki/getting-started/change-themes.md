@@ -131,4 +131,34 @@ Instructions to install themes from Discord are located in the [#launcher-themes
 
 ## Submitting Icons
 
-- Soon
+- Fork the [PrismLauncher/Themes](https://github.com/PrismLauncher/Themes) repository.
+
+- Create a folder in the [icons](https://github.com/PrismLauncher/Themes/tree/main/icons) folder named after your theme name (Example: `Twemoji`).
+
+  - In this newly created folder add files named `README.md`, `index.theme`, `index.theme.license` and a folder named `scalable` containing the .svgs of your icons.
+
+    - In `index.theme.license` add the text below, and replace `"Year"` with the current year, replace `"Theme Owner"` with the theme creator nickname, `"License name"` with the license of your theme.
+
+     ```text
+     SPDX-FileCopyrightText: "Year" "Theme owner"
+     SPDX-License-Identifier: "License SPDX Identifier"
+     ```
+
+    - (Note: `index.theme` is the file that contains your icon data.)
+
+    - Format your `README.md` just like this [Template Readme](https://github.com/PrismLauncher/Themes/blob/main/README-Template.md) and replace every text between a `"` like `"This"` with their respective use.
+
+  - Add a screenshot of your theme and rename it to `preview.png`.
+
+    - Then create a file named `preview.png.license` and add the text below, and replace `"Year"` and `Screenshot owner"` with their respective use.
+
+     ```text
+     SPDX-FileCopyrightText: "Year" "Screenshot owner"
+     SPDX-License-Identifier: CC0-1.0
+     ```
+
+- Verify that you did everything correctly, if you did please proceed to the next and last step.
+
+- Make sure to ensure REUSE compliance learn more at [reuse.software](https://reuse.software)
+
+- Now you can open a Pull Request, and we will add your theme as fast as possible to the repository and website.

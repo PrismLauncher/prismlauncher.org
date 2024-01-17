@@ -15,11 +15,11 @@ eleventyNavigation:
         <a class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank">Install from FlatHub</a>
         <p>x86_64 ONLY</p>
         <br>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-{{version.current}}.tar.gz">Download (tar.gz)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a>
      </div>
     </div>
     <div class="column">
@@ -58,7 +58,7 @@ There are several AUR packages available:
 [![prismlauncher-qt5](https://img.shields.io/badge/aur-prismlauncher--qt5-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5/)  
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
 [![prismlauncher-qt5-git](https://img.shields.io/badge/aur-prismlauncher--qt5--git-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5-git/)
-  
+
 ## Installing with an AUR helper
 
 ```bash
@@ -80,11 +80,11 @@ yay -S prismlauncher-qt5-git
 ```
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-  
+
 ## Installation using Chaotic-AUR
 
 If you have not already enabled the Chaotic-AUR follow their instructions on <https://aur.chaotic.cx/> to enable it.
-  
+
 ```bash
 # stable package:
 sudo pacman -S prismlauncher
@@ -190,7 +190,7 @@ Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps)
 [![pi-apps-badge](https://img.shields.io/badge/dynamic/json?color=c51a4a&label=Pi-Apps&prefix=Prism%20Launcher%20&query=%24..%5B%3F%28%40.Name%3D%3D%22Minecraft%20Java%20Prism%20Launcher%22%29%5D.Version&url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data.json)](https://github.com/Botspot/pi-apps)
 
 NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
-*Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+_Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions._
 
 </div>
 
@@ -213,13 +213,14 @@ emerge games-action/prismlauncher
 ```
 
 Have fun! :)
+
 </div>
   
 <div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
-A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/NIX.md) is available.
+A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available.
 
 Packages are available for all current Nix distributions.
 
@@ -230,7 +231,7 @@ Packages are available for all current Nix distributions.
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
 RPM packages are available on the [Open Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
-  
+
 ```bash
 # add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
 zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
@@ -242,10 +243,10 @@ zypper install prismlauncher
 zypper install prismlauncher-nightly
 # stable releases (Qt5 version, available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5
-# latest builds (avalible for Leap and Tumbleweed)
+# latest builds (available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5-nightly
 ```
-  
+
 </div>
 
 <div class="infobox top">

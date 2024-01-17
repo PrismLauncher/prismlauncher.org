@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies & update contributors
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_MEMBERS_TOKEN }}
         run: |
           pnpm install --frozen-lockfile
           pnpm run update-contributors
@@ -42,10 +42,11 @@ jobs:
         run: |
           git config --local user.email "gitbot@scrumplex.net"
           git config --local user.name "PrismAutomata"
-          git commit -m "Update contributors" -a || true
+          git add :/
+          git commit -m "Update contributors" || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@fc0cf17cf360e4df1e3d7964847365fdc40ae03f
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
