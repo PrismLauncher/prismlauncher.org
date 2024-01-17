@@ -4,7 +4,8 @@ description: More addictive than lemonade!
 date: 2022-12-19
 release_version: "6.1"
 minimum_macos_version: 10.15.0
-mac_signature: 76S99OXja/WJbqYQvV9BoEAlTV4khWeZWCjcXKFHnXkgkZD18yXcBXAdY/BK0dhQrX1IbHZu3JKhEVyjFwKmCA==
+macos_file_extension: tar.gz
+macos_signature: 76S99OXja/WJbqYQvV9BoEAlTV4khWeZWCjcXKFHnXkgkZD18yXcBXAdY/BK0dhQrX1IbHZu3JKhEVyjFwKmCA==
 tags:
   - release
 ---
@@ -25,7 +26,7 @@ Thanks to all contributors!
 
 ### Fixed
 
-- Avoid deadlock when there are a lot of resource packs in an instance  by [@flowln](https://github.com/flowln) in [#628](https://github.com/PrismLauncher/PrismLauncher/pull/628)
+- Avoid deadlock when there are a lot of resource packs in an instance by [@flowln](https://github.com/flowln) in [#628](https://github.com/PrismLauncher/PrismLauncher/pull/628)
 - Correctly set component versions in Modrinth pack updating by [@flowln](https://github.com/flowln) and [@Scrumplex](https://github.com/Scrumplex) in [#636](https://github.com/PrismLauncher/PrismLauncher/pull/636)
 - Fix crash when changing styles by [@TheLastRar](https://github.com/TheLastRar) in [#600](https://github.com/PrismLauncher/PrismLauncher/pull/600)
 - Fix importing modpacks using ZIP files by [@flowln](https://github.com/flowln) in [#607](https://github.com/PrismLauncher/PrismLauncher/pull/607)

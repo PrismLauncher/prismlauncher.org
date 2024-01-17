@@ -1,10 +1,11 @@
 ---
 title: "Prism Launcher Release 7.0, now available"
-description: The bee's knees! 
+description: The bee's knees!
 date: 2023-06-08
 release_version: "7.0"
 minimum_macos_version: 11.0.0
-mac_signature: nZkz4u7KJsOrH9kQjSMdyzwGnBa8A9q9Dz9RBkNb0/hcUtKG92N4iog905uxb4hdpk4zAYeEbYbbrVHXsfTgAg==
+macos_file_extension: tar.gz
+macos_signature: nZkz4u7KJsOrH9kQjSMdyzwGnBa8A9q9Dz9RBkNb0/hcUtKG92N4iog905uxb4hdpk4zAYeEbYbbrVHXsfTgAg==
 tags:
   - release
 ---
@@ -15,7 +16,7 @@ It has been a while, but we are finally ready to ship version 7.0. This one come
 
 Notable features in this release are advanced copy options, a downloader for resource packs, texturepacks and shaderpacks, a new improved progress dialog and support for exporting instances as Modrinth modpacks (.mrpack). This means that modpack authors can finally use Prism Launcher directly for making Modrinth modpacks.
 On the other hand we had to remove support for Feed-the-Beast modpacks as requested by the FTB team. Though a FTB App importer might replace this missing feature in a future release. For more information, you can read [our other blog post](../ftb-removal/).
-Finally, we want to remind users to be more cautious when downloading mods and modpacks as the [*fractureiser* malware has been discovered](../cf-compromised-alert/). While both Modrinth and CurseForge have checked and removed the infected mods if necessary, stay on guard for external websites and for the possibility of future Minecraft malware.
+Finally, we want to remind users to be more cautious when downloading mods and modpacks as the [_fractureiser_ malware has been discovered](../cf-compromised-alert/). While both Modrinth and CurseForge have checked and removed the infected mods if necessary, stay on guard for external websites and for the possibility of future Minecraft malware.
 
 We are also happy to have two new maintainers on board! [@Ryex](https://github.com/Ryex) and [@TayouVR](https://github.com/TayouVR) will be helping out with the development of the launcher. We hope we can get more releases out the door with more hands helping out. Of course we are always happy to see new contributors, so if you think you might be able to help, head over to our GitHub project and see if you might be able to help out.
 

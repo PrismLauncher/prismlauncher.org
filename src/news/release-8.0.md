@@ -1,10 +1,11 @@
 ---
 title: "Prism Launcher Release 8.0, now available"
-description: Boats FTW 
+description: Boats FTW
 date: 2023-11-07
 release_version: "8.0"
 minimum_macos_version: 11.0.0
-mac_signature: RXJXEogVYgN9qjLfuIBtHKT+ehzn7JcV/XxLyGaLUMAnbmtCwkZEFmjI5nW9lZaGKQt6lkO4av/wAKIR6nGMDA==
+macos_file_extension: tar.gz
+macos_signature: RXJXEogVYgN9qjLfuIBtHKT+ehzn7JcV/XxLyGaLUMAnbmtCwkZEFmjI5nW9lZaGKQt6lkO4av/wAKIR6nGMDA==
 tags:
   - release
 ---

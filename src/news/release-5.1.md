@@ -4,7 +4,8 @@ description: Too Many Fixes
 date: 2022-11-01
 release_version: "5.1"
 minimum_macos_version: 10.14.0
-mac_signature: zhCyEPFNlcFExp/OSulGn4HXU6fv66vQ/gWDUN+99mqyMJ1HiPcVpJ2/u4e8hyaPGn8hU/jTHHOrRqxC5xIVDg==
+macos_file_extension: tar.gz
+macos_signature: zhCyEPFNlcFExp/OSulGn4HXU6fv66vQ/gWDUN+99mqyMJ1HiPcVpJ2/u4e8hyaPGn8hU/jTHHOrRqxC5xIVDg==
 tags:
   - release
 ---
@@ -12,8 +13,8 @@ tags:
 Hi there!
 
 We are bringing you Prism Launcher 5.1!
-This is our first patch release after the *thing*.
-While we promised to bring you a blog article about the *thing*, it seems like interest has died down and there are many good write-ups/explanations of the situation on the internet.
+This is our first patch release after the _thing_.
+While we promised to bring you a blog article about the _thing_, it seems like interest has died down and there are many good write-ups/explanations of the situation on the internet.
 We did update [our FAQ](../../wiki/overview/faq) though, so feel free to read that.
 
 Now to the update.
@@ -25,7 +26,7 @@ We are already hyped for our next feature release though, which will bring some 
 
 ### Added
 
-- Add support for *certain* languages by @Scrumplex in #354
+- Add support for _certain_ languages by @Scrumplex in #354
 
 ### Changed
 
