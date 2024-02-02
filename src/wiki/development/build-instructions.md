@@ -247,7 +247,7 @@ ccache 4.7.x or newer is required for MSVC support.
    - We recommend building using the CLANG64 msystem of MSYS2, as it compiles considerably faster and with a few less bugs.
 
 2. Install helpers: Run `pacman -Syu pactoys git mingw-w64-x86_64-binutils` in the MSYS2 shell.
-3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p ninja:p ccache:p`.
+3. Install all build dependencies using `pacboy` (install `pacboy` first with `pacman -S pactoys` if needed): Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p ninja:p ccache:p`.
 
    - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p ninja:p ccache:p`
    - This might take a while, as it will install Qt and all the build tools required.
