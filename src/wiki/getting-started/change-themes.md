@@ -66,7 +66,7 @@ Here are the instructions to get your themes & icons up and working.
 
 - Unzip the newly downloaded theme in the `themes` folder.
 
-- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Colors (make sure you're changing Colors and not Icons), choose the newly added theme. Click the Close button, and enjoy your fresh new Prism Launcher.
+- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Widgets (make sure you're changing Widgets and not Icons), choose the newly added theme. Click the Close button, and enjoy your fresh new Prism Launcher.
 
 ### Discord Themes
 
@@ -92,7 +92,7 @@ Instructions to install themes from Discord are located in the [#launcher-themes
 
   - In the `PrismLauncher` folder, create a new folder named `iconthemes` (you should only have to do this once).
 
-- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Icons (make sure you're changing Icons and not Colors), choose the Custom icons. Click the Close button, and enjoy your new icons.
+- Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Icons (make sure you're changing Icons and not Widgets), choose the Custom icons. Click the Close button, and enjoy your new icons.
 
 ## Submitting Themes
 
