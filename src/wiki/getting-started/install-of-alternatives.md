@@ -11,15 +11,15 @@ Once upon a time, OptiFine was *the* way to make your game better, faster, and s
 
 ## Detailed explanation
 
-For a very long time, OptiFine was an essential mod that many enjoyed using as it offers important benefits such as performance improvements, extra quality of life features, and more. However, it also has it's downsides:
+For a very long time, OptiFine was an essential mod that many enjoyed using as it offers important benefits such as performance improvements, extra quality of life features, and more. However, it also has its downsides:
 
-- OptiFine is closed-source. This means that no one can easily inspect it's code, and it is much more difficult for developers to make their mods compatible with OptiFine - since they can't see what could be conflicting between their mod and OptiFine.
+- OptiFine is closed-source. This means that no one can easily inspect its code, and it is much more difficult for developers to make their mods compatible with OptiFine - since they can't see what could be conflicting between their mod and OptiFine.
 
 - OptiFine sometimes takes a long time to update to newer Minecraft versions as there is only one developer working on the mod.
 
 - OptiFine functions as an "all-in-one" mod (similar to a modpack). This makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
 
-In the past few years, various mods have appeared to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
+In the past few years, various mods have been made to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
 
 ## Installing things
 
