@@ -33,21 +33,21 @@ To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** 
 
 To install in Prism Launcher, create an instance with the **Fabric (or Quilt)** loader, and then go to the *Mods tab* and click **Download Mods**. There, click on *Indium*, click **Select mod for download**, and then press **OK**.
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" height="20"> Other Mods
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"> Other Mods
 
-If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium) and [Starlight](https://modrinth.com/mod/starlight)!
+If you want to further improve your performance, please also consider installing [Lithium](https://modrinth.com/mod/lithium)!
 
 If you would like to go a bit further, LambdAurora maintains a very detailed list of OptiFine alternatives for Fabric and Quilt, which you can find [here](https://lambdaurora.dev/optifine_alternatives/).
 
-### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" height="20"> Fabulously Optimized
+### <img src="https://cdn.modrinth.com/data/paoFU4Vl/icon.png" height="20"> Additive
 
-If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
+If you don't want to search and install these mods manually, then try the [Additive](https://modrinth.com/modpack/additive) modpack, which supports almost all OptiFine features.
 
-[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
+[See the installation instructions](https://additive.intergrav.xyz/downloads/#installing-with-third-party-launchers) for Prism Launcher.
 
-### <img src="https://cdn-raw.modrinth.com/data/BYfVnHa7/366754519a9702b43f0c9462b24de2757393efb9.png" height="20"> Simply Optimized
+### <img src="https://cdn.modrinth.com/data/BYN9yKrV/icon.png" height="20"> Adrenaline
 
-[Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just optimization in mind. SO has better out-of-the-box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
+[Adrenaline](https://modrinth.com/modpack/adrenaline) is a modpack designed with just optimization in mind. Adrenaline has better out-of-the-box performance than Additive, but it doesn't come with the QoL mods or full OptiFine parity you would see in Additive, so you're expected to add any additional mods you want yourself.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
@@ -64,6 +64,8 @@ While on some modpacks/with some mods they're going to work good, with others th
 [Rubidium](https://modrinth.com/mod/rubidium) is a Sodium port for Forge. Be aware of the statements above before using it.
 
 To install in Prism Launcher, create an instance with the **Forge** loader, and then go to the *Mods tab*, click **Download Mods**. There, search for *Rubidium*, click on it, click **Select mod for download**, and then press **OK**.
+
+**NOTE:** You can also use [Embeddium](https://modrinth.com/mod/embeddium) instead, which is intended for more compatibility with other mods.
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" height="20"> Oculus
 
