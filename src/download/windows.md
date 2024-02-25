@@ -29,10 +29,24 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Advanced Windows install options
+### Advanced Windows install options
+
+#### MinGW-w64
+
+These builds are built with MinGW and do not require the Visual C++ Redistributable to be installed on your system. They require Windows 10/11 64bit.
+
+Note: These builds are less tested than the MSVC builds.
+
+- [Installer (64bit) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Setup-{{version.current}}.exe)
+- [Portable (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Portable-{{version.current}}.zip)
+
+#### System Installs
+
+These are ZIP files, but they use the system directory for the data and are not portable.
 
 - [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
 - [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
+- [System Install (MinGW-w64) (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 
