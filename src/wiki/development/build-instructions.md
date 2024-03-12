@@ -191,7 +191,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 - [Java Development Kit 8 or later](https://adoptium.net/)
   - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 - [Qt](https://www.qt.io/download-qt-installer)
-  - For Qt 6 (Qt 6.4.0 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
+  - For Qt 6 (Qt 6.6.2 is the recommended one), 'Qt 5 Compatibility Module' & 'Qt Image Formats' are required
   - For Qt 5 (Qt 5.15.2 is the recommended one), OpenSSL Toolkit is required
   - If you don't want to use the Qt installer, than you can use [aqt](https://github.com/miurahr/aqtinstall), see [aqt-list](https://ddalcino.github.io/aqt-list-server/) for help with command arguments.
 
