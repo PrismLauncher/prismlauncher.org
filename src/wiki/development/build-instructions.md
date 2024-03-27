@@ -136,13 +136,14 @@ The path to the .rpm packages will be printed once the build is complete.
 ### Building a Flatpak
 
 You don't need to clone the entire Prism Launcher repo for the latest stable version; the Flatpak file handles that. However, cloning the source repository is necessary to build from the latest commit (contains upstream manifest).
-Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
+Both `flatpak` and `flatpak-builder` packages must be installed on your system to proceed.
 
 #### Latest Stable Release
 
 ```bash
 git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
 cd org.prismlauncher.PrismLauncher
+flatpak install org.kde.Sdk/x86_64/5.15-23.08 # build requirements
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
@@ -152,6 +153,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```bash
 git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo - contains upstream manifest
 cd PrismLauncher/flatpak
+flatpak install org.kde.Sdk/x86_64/5.15-23.08 # build requirements
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
