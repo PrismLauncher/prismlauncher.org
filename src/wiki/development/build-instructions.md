@@ -143,7 +143,7 @@ Both `flatpak` and `flatpak-builder` packages must be installed on your system t
 ```bash
 git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
 cd org.prismlauncher.PrismLauncher
-flatpak install org.kde.Sdk/x86_64/5.15-23.08 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 # build requirements
+flatpak install org.kde.Sdk/x86_64/5.15-23.08 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 # build requirements
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
@@ -153,7 +153,7 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```bash
 git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo - contains upstream manifest
 cd PrismLauncher/flatpak
-flatpak install org.kde.Sdk/x86_64/5.15-23.08 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 # build requirements
+flatpak install org.kde.Sdk/x86_64/5.15-23.08 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 # build requirements
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
