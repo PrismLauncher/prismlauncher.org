@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
           path: ${{ env.STORE_PATH }}
@@ -46,7 +46,7 @@ jobs:
           git commit -m "Update contributors" || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@fc0cf17cf360e4df1e3d7964847365fdc40ae03f
+        uses: ad-m/github-push-action@9870d48124da805820c70ebc6ba563c715551019
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}

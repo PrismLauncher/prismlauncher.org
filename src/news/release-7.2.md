@@ -1,10 +1,11 @@
 ---
 title: "Prism Launcher Release 7.2, now available"
-description: Absolutely no memes! 
+description: Absolutely no memes!
 date: 2023-07-26
 release_version: "7.2"
 minimum_macos_version: 11.0.0
-mac_signature: oSJkIb6qFA7YUCyCKxY8YHtungtYgDii/pCw9BBRkWSn2SRUO1qWz0spuhW3N4bpsE54p7H0LOYW0iHWqBleBg==
+macos_file_extension: tar.gz
+macos_signature: oSJkIb6qFA7YUCyCKxY8YHtungtYgDii/pCw9BBRkWSn2SRUO1qWz0spuhW3N4bpsE54p7H0LOYW0iHWqBleBg==
 tags:
   - release
 ---
@@ -44,7 +45,7 @@ Until next time!
 - Print build platform on launch by [@Scrumplex](https://github.com/Scrumplex) in [#1276](https://github.com/PrismLauncher/PrismLauncher/pull/1276)
 - Update developer credits by [@TheKodeToad](https://github.com/TheKodeToad) in [#1259](https://github.com/PrismLauncher/PrismLauncher/pull/1259)
 - Use default icon for unmanaged Modrinth packs by [@telans](https://github.com/telans) in [#1231](https://github.com/PrismLauncher/PrismLauncher/pull/1231)
-- [Linux] Update Nix lock by [@renovate[bot]](<https://github.com/renovate[bot]>), [@Scrumplex](https://github.com/Scrumplex), [@getchoo](https://github.com/getchoo) and [@github-actions[bot]](<https://github.com/github-actions[bot]>) in [#1214](https://github.com/PrismLauncher/PrismLauncher/pull/1214) [#1304](https://github.com/PrismLauncher/PrismLauncher/pull/1304) [#1310](https://github.com/PrismLauncher/PrismLauncher/pull/1310) [#1337](https://github.com/PrismLauncher/PrismLauncher/pull/1337) [#1372](https://github.com/PrismLauncher/PrismLauncher/pull/1372)
+- [Linux] Update Nix lock by [@renovate[bot]](https://github.com/renovate[bot]), [@Scrumplex](https://github.com/Scrumplex), [@getchoo](https://github.com/getchoo) and [@github-actions[bot]](https://github.com/github-actions[bot]) in [#1214](https://github.com/PrismLauncher/PrismLauncher/pull/1214) [#1304](https://github.com/PrismLauncher/PrismLauncher/pull/1304) [#1310](https://github.com/PrismLauncher/PrismLauncher/pull/1310) [#1337](https://github.com/PrismLauncher/PrismLauncher/pull/1337) [#1372](https://github.com/PrismLauncher/PrismLauncher/pull/1372)
 
 ### Fixed
 

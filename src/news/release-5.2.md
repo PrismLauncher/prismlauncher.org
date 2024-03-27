@@ -4,7 +4,8 @@ description: We ran out funny post descriptions
 date: 2022-11-15
 release_version: "5.2"
 minimum_macos_version: 10.15.0
-mac_signature: dfDjRcM5DErN4ZGJ70L7PBV5H0feadC+cKhLnjomV/hjBzh5iUR+aBpXRZMfa1OJ+muf2QpWDLeSUBWFg9LgAg==
+macos_file_extension: tar.gz
+macos_signature: dfDjRcM5DErN4ZGJ70L7PBV5H0feadC+cKhLnjomV/hjBzh5iUR+aBpXRZMfa1OJ+muf2QpWDLeSUBWFg9LgAg==
 tags:
   - release
 ---

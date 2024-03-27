@@ -39,7 +39,6 @@ As a consequence of this, like most apps on Windows, you have to install vcredis
 You need:
 
 - [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
-- [vcredist 2022 x86](https://aka.ms/vs/17/release/vc_redist.x86.exe) if you're using PrismLauncher-Windows-MSVC-Legacy (the reccomended version for Windows 7/8.1 and Windows 10 32 bit)
 - [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
 
 #### How do I open a .zip file?
@@ -56,9 +55,8 @@ If you are **comfortable** and **trust** Prism Launcher, then you can click on t
 
 #### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
 
-Prism Launcher uses Qt 6 by default on Windows, which does *not* support Windows 7 and Windows 8.1.
-
-For this reason, we still provide a build that uses Qt 5 in [our download page](https://prismlauncher.org/download/) called "Legacy version", you'll have to use that on those legacy versions of Windows.
+Prism Launcher hasn't supported Windows 7 and Windows 8.1 since version 8.0 due to dependencies. These operating systems have been EOL for years, so please upgrade your operating system for security reasons.
+[Prism Launcher 7.2](https://github.com/PrismLauncher/PrismLauncher/releases/tag/7.2) is the last version that has a legacy build for these EOL operating systems, but it's no longer supported.
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
 
