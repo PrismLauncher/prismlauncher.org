@@ -458,7 +458,7 @@ Now it's time to set up the project.
     - Open the folder you cloned the repository into in a step further up
     *or*
     - Clone the repository as a new project
-2. Visual Studio will inform you that CMake generation has failed. Click on manage configurations in the dropdown list, which you can find more about [here](https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings).
+2. Once loaded, Visual Studio will inform you that CMake generation has failed. Click on manage configurations in the drop-down list, which you can find more about [here](https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings).
 
 {% image "Vanilla tab under PrismLauncher New Instances", "./src/img/screenshots/CMakeChangeConfigurationLight.png", "./src/img/screenshots/CMakeChangeConfigurationDark.png" %}
 
@@ -492,12 +492,12 @@ Now it's time to set up the project.
 ```
 {% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
 
-4. At the top of the screen open the dropdown for the green start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
+4. At the top of the screen open the drop-down for the green start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
 
 You should now be able to build and run your code by clicking the launch button at the top. After the initial build, it will only compile changed files.
 
 - If the program builds and launches, but then tells you you're missing a .dll, you either have not installed Qt, or you have not added the proper environments line to your config.
-- If CMake is informing you that it cannot find a QT Cmake file, make sure to set the CMAKE_PREFIX_PATH to the lib/cmake folder of your QT version.
+- If CMake is informing you that it cannot find a QT CMake file, make sure to set the CMAKE_PREFIX_PATH to the lib/cmake folder of your QT version.
 
 ### CLion
 
