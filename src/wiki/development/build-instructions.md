@@ -473,21 +473,21 @@ Now it's time to set up the project.
     Your CMakeSettings.json file should end up looking like this, with the environments option in either position one or two
 ```json
 {
-  "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ], //Position one
-  "configurations": [
+    "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ], //Position one
+    "configurations": [
     {
-      "name": "x64-Debug",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "-DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=C:/Qt/6.6.2/msvc2019_64/lib/cmake",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": "",
-      "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ] //Position two
+        "name": "x64-Debug",
+        "generator": "Ninja",
+        "configurationType": "Debug",
+        "inheritEnvironments": [ "msvc_x64_x64" ],
+        "buildRoot": "${projectDir}\\out\\build\\${name}",
+        "installRoot": "${projectDir}\\out\\install\\${name}",
+        "cmakeCommandArgs": "-DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=C:/Qt/6.6.2/msvc2019_64/lib/cmake",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": "",
+        "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ] //Position two
     }
-  ]
+    ]
 }
 ```
 {% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
