@@ -459,9 +459,6 @@ Now it's time to set up the project.
     *or*
     - Clone the repository as a new project
 2. Once loaded, Visual Studio will inform you that CMake generation has failed. Click on manage configurations in the drop-down list, which you can find more about [here](https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings).
-
-{% image "Vanilla tab under PrismLauncher New Instances", "./src/img/screenshots/CMakeChangeConfigurationLight.png", "./src/img/screenshots/CMakeChangeConfigurationDark.png" %}
-
 3. Set up the CMake configuration as follows
     - Underneath CMake command arguments, put the following
     ```-DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=<Insert Path to your system's QT>/lib/cmake```
@@ -469,8 +466,12 @@ Now it's time to set up the project.
     - Click on the edit JSON in the top right
     - Put the following line into the file either before or in the configurations, replacing the path with your own path to the bin folder of Qt. Putting the environment outside the configurations will apply this to any additional configurations you create.
     ```"environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ]```
+4. At the top of the screen open the drop-down for the start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
 
-    Your CMakeSettings.json file should end up looking like this, with the environments option in either position one or two
+{% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
+
+Your CMakeSettings.json file should end up looking like this, with the environments option in either position one or two
+
 ```json
 {
     "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ], //Position one
@@ -490,9 +491,6 @@ Now it's time to set up the project.
     ]
 }
 ```
-{% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
-
-4. At the top of the screen open the drop-down for the start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
 
 You should now be able to build and run your code by clicking the launch button at the top. After the initial build, it will only compile changed files.
 
