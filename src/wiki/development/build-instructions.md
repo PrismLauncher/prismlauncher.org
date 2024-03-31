@@ -455,7 +455,7 @@ To set up Visual Studio, make sure you have installed the dependencies underneat
 Now it's time to set up the project.
 
 1. Open the project.
-    - Open the folder you cloned the repository into in a step further up
+    - Open the folder you cloned the repository into at the top of this page.
     *or*
     - Clone the repository as a new project
 2. Once loaded, Visual Studio will inform you that CMake generation has failed. Click on manage configurations in the drop-down list, which you can find more about [here](https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings).
@@ -492,7 +492,7 @@ Now it's time to set up the project.
 ```
 {% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
 
-4. At the top of the screen open the drop-down for the green start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
+4. At the top of the screen open the drop-down for the start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
 
 You should now be able to build and run your code by clicking the launch button at the top. After the initial build, it will only compile changed files.
 
