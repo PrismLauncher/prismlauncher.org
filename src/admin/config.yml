@@ -5,7 +5,7 @@ backend:
   repo: PrismLauncher/prismlauncher.org
   open_authoring: true
 publish_mode: editorial_workflow
-media_folder: "src/_includes/img/screenshots"
+media_folder: "src/img/screenshots"
 public_folder: "/img/screenshots"
 
 # Currently nesting functionality is limited, when updated to support flat nesting this should be changed.
