@@ -5,14 +5,6 @@ eleventyNavigation:
   order: 11
 ---
 
-
----
-eleventyNavigation:
-  key: Change Themes
-  parent: Getting Started
-  order: 11
----
-
 # How to change your Themes in Prism Launcher
 
 Themes can help you spice up your launcher appearance.
