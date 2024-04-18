@@ -1,4 +1,4 @@
-local_backend: true
+local_backend: false # use for testing
 
 backend:
   name: github
