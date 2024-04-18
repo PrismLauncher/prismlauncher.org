@@ -1,0 +1,94 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: PrismLauncher/prismlauncher.org
+  auth_scope: repo
+  open_authoring: true
+publish_mode: editorial_workflow
+media_folder: "img/screenshots"
+
+# Currently nesting functionality is limited, when updated to support flat nesting this should be changed.
+
+collections:
+  - name: "overview" # Used in routes, e.g., /admin/collections/blog
+    label: "Wiki: Overview" # Used in the UI
+    label_singular: 'Page'
+    identifier_field: "eleventyNavigation.key"
+    folder: "wiki/overview" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "key", widget: "string" }
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Overview"}
+          - { label: "Page Order", name: "order", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "getting-started"
+    label: "Wiki: Getting Started"
+    label_singular: 'Page'
+    identifier_field: "eleventyNavigation.key"
+    folder: "wiki/getting-started"
+    create: true 
+    fields:
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "key", widget: "string" }
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Getting Started"}
+          - { label: "Page Order", name: "order", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "help-pages" 
+    label: "Wiki: Help Pages" 
+    label_singular: 'Page'
+    identifier_field: "eleventyNavigation.key"
+    folder: "wiki/help-pages" 
+    create: true 
+    fields: 
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "key", widget: "string" }
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Help Pages"}
+          - { label: "Page Order", name: "order", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "development"
+    label: "Wiki: Development"
+    label_singular: 'Page'
+    identifier_field: "eleventyNavigation.key"
+    folder: "wiki/development"
+    create: true
+    fields:
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "key", widget: "string" }
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Development"}
+          - { label: "Page Order", name: "order", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "branding"
+    label: "Wiki: Branding"
+    label_singular: 'Page'
+    identifier_field: "eleventyNavigation.key"
+    folder: "wiki/branding"
+    create: true
+    fields:
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "key", widget: "string" }
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Branding"}
+          - { label: "Page Order", name: "order", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+# todo: add support for news and the W.I.P themes page.
