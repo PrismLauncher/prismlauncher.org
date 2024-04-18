@@ -5,7 +5,8 @@ backend:
   repo: PrismLauncher/prismlauncher.org
   open_authoring: true
 publish_mode: editorial_workflow
-media_folder: "img/screenshots"
+media_folder: "src/_includes/img/screenshots"
+public_folder: "/img/screenshots"
 
 # Currently nesting functionality is limited, when updated to support flat nesting this should be changed.
 
@@ -14,7 +15,7 @@ collections:
     label: "Wiki: Overview" # Used in the UI
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "wiki/overview" # The path to the folder where the documents are stored
+    folder: "src/_includes/wiki/overview" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - label: "Navigation"
@@ -30,7 +31,7 @@ collections:
     label: "Wiki: Getting Started"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "wiki/getting-started"
+    folder: "src/_includes/wiki/getting-started"
     create: true 
     fields:
       - label: "Navigation"
@@ -46,7 +47,7 @@ collections:
     label: "Wiki: Help Pages" 
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "wiki/help-pages" 
+    folder: "src/_includes/wiki/help-pages" 
     create: true 
     fields: 
       - label: "Navigation"
@@ -62,7 +63,7 @@ collections:
     label: "Wiki: Development"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "wiki/development"
+    folder: "src/_includes/wiki/development"
     create: true
     fields:
       - label: "Navigation"
@@ -78,7 +79,7 @@ collections:
     label: "Wiki: Branding"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "wiki/branding"
+    folder: "src/_includes/wiki/branding"
     create: true
     fields:
       - label: "Navigation"
