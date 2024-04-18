@@ -15,7 +15,7 @@ collections:
     label: "Wiki: Overview" # Used in the UI
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "src/_includes/wiki/overview" # The path to the folder where the documents are stored
+    folder: "src/wiki/overview" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - label: "Navigation"
@@ -31,7 +31,7 @@ collections:
     label: "Wiki: Getting Started"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "src/_includes/wiki/getting-started"
+    folder: "src/wiki/getting-started"
     create: true 
     fields:
       - label: "Navigation"
@@ -47,7 +47,7 @@ collections:
     label: "Wiki: Help Pages" 
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "src/_includes/wiki/help-pages" 
+    folder: "src/wiki/help-pages" 
     create: true 
     fields: 
       - label: "Navigation"
@@ -63,7 +63,7 @@ collections:
     label: "Wiki: Development"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "src/_includes/wiki/development"
+    folder: "src/wiki/development"
     create: true
     fields:
       - label: "Navigation"
@@ -79,7 +79,7 @@ collections:
     label: "Wiki: Branding"
     label_singular: 'Page'
     identifier_field: "eleventyNavigation.key"
-    folder: "src/_includes/wiki/branding"
+    folder: "src/wiki/branding"
     create: true
     fields:
       - label: "Navigation"
