@@ -3,7 +3,6 @@ local_backend: false # use for testing
 backend:
   name: github
   repo: PrismLauncher/prismlauncher.org
-  auth_scope: repo
   open_authoring: true
 publish_mode: editorial_workflow
 media_folder: "img/screenshots"
