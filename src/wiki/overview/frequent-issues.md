@@ -1,10 +1,9 @@
 ---
 eleventyNavigation:
-  key: Troubleshooting
+  key: Troubleshooting Troubleshooting
   parent: Overview
   order: 4
 ---
-
 # Troubleshooting
 
 This is a collection of helpful information for frequent problems when using Prism Launcher.
@@ -30,7 +29,7 @@ A workaround for this issue is adding the following JVM argument:
 
 ## Common Launcher-related issues
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows\_logo\_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
 
 #### "MSVCP140_2.dll was not found"?
 
@@ -38,8 +37,8 @@ Since Prism Launcher 6.0, Prism is compiled using [MSVC](https://en.wikipedia.or
 As a consequence of this, like most apps on Windows, you have to install vcredist for Prism to run.
 You need:
 
-- [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
-- [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
+* [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
+* [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
 
 #### How do I open a .zip file?
 
@@ -95,7 +94,7 @@ This means that some themes and theming platforms like KDE Plasma's theming will
 But don't worry, we still provide Qt 5 builds.
 You can find them on the [download page](https://prismlauncher.org/download/linux).
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows\_logo\_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
 
 #### I want to make my system install portable
 
