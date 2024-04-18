@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Overview
-  key: test
+  key: ZekeZ
   order: "1"
 ---
 test
