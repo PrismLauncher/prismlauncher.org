@@ -110,10 +110,6 @@ sudo dnf copr enable g3tchoo/prismlauncher
 sudo dnf install prismlauncher
 # nightly builds
 sudo dnf install prismlauncher-nightly
-# stable Qt 5 releases
-sudo dnf install prismlauncher-qt5
-# nightly Qt 5 builds
-sudo dnf install prismlauncher-qt5-nightly
 ```
 
 </div>
