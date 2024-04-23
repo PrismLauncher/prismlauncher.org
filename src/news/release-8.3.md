@@ -1,7 +1,7 @@
 ---
 title: "Prism Launcher Release 8.3, now available"
 description: I would wish you good luck, but luck won't carry you through the Nether.
-date: 2024-03-03
+date: 2024-04-23
 release_version: "8.3"
 minimum_macos_version: 11.0.0
 macos_file_extension: zip
