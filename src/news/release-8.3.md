@@ -35,7 +35,7 @@ Until next time!
 - Fix application close with file dialog by [@Trial97](https://github.com/Trial97) in [#2294](https://github.com/PrismLauncher/PrismLauncher/pull/2294)
 - Fix crash on invalid CurseForge link on import by [@Trial97](https://github.com/Trial97) in [#2291](https://github.com/PrismLauncher/PrismLauncher/pull/2291)
 - Fix crash on non-latin instance name by [@Trial97](https://github.com/Trial97) in [#2247](https://github.com/PrismLauncher/PrismLauncher/pull/2247)
-- Fix portable builds on Fedora  by [@DioEgizio](https://github.com/DioEgizio) in [#2231](https://github.com/PrismLauncher/PrismLauncher/pull/2231)
+- Fix portable builds on Fedora by [@DioEgizio](https://github.com/DioEgizio) in [#2231](https://github.com/PrismLauncher/PrismLauncher/pull/2231)
 - Replace invalid characters when extracting ZIP by [@TheKodeToad](https://github.com/TheKodeToad) in [#2275](https://github.com/PrismLauncher/PrismLauncher/pull/2275) and [#2277](https://github.com/PrismLauncher/PrismLauncher/pull/2277)
 - Set Forge version correctly when exporting to CurseForge by [@Trial97](https://github.com/Trial97) in [#2221](https://github.com/PrismLauncher/PrismLauncher/pull/2221)
 - Use UTF-8 for ZIP creation by [@TheKodeToad](https://github.com/TheKodeToad) in [#2225](https://github.com/PrismLauncher/PrismLauncher/pull/2225)
