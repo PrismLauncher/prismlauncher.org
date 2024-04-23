@@ -8,13 +8,13 @@ eleventyNavigation:
 
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
 
-Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.20.5 and up will require \*\*
+Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.20.5 and upwards will require **Temurin 21 (LTS)**, Minecraft 1.17 to Minecraft 1.20.4 will require **Temurin 17 (LTS)**, while anything below will require **Temurin 8 (LTS).**
 
-* 1.20.5 or newer: \*\*
+* 1.20.5 or newer: **Temurin 21 (LTS)**
 * 1.17 to 1.20.4: **Temurin 17 (LTS)**
 * 1.16.5 or older: **Temurin 8 (LTS)**
 
-If you aren't sure which version you will need, **it is recommended to just install all 3.**
+If you aren't sure which versions you will need, **it is recommended to just install all 3.**
 
 **NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
