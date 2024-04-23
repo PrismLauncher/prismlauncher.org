@@ -4,17 +4,17 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-
 # Installing Java
 
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
 
-Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)**, while anything below will require **Temurin 8 (LTS).**
+Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.20.5 and up will require \*\*
 
-* 1.17 or newer: **Temurin 17 (LTS)**
+* 1.20.5 or newer: \*\*
+* 1.17 to 1.20.4: **Temurin 17 (LTS)**
 * 1.16.5 or older: **Temurin 8 (LTS)**
 
-If you aren't sure which version you will need, **it is recommended to just install both.**
+If you aren't sure which version you will need, **it is recommended to just install all 3.**
 
 **NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
@@ -29,31 +29,31 @@ On Linux, it's recommended to use your package manager for installing Java.
 On the COPR package all required java versions should be installed, but this is the command to install it:
 
 ```bash
-sudo dnf install java-1.8.0-openjdk java-17-openjdk
+sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk
 ```
 
 ### Void Linux
 
 ```bash
-sudo xbps-install openjdk17-jre openjdk8-jre
+sudo xbps-install openjdk17-jre openjdk8-jre openjdk21-jre 
 ```
 
 ### Arch Linux
 
 ```bash
-sudo pacman -S jre17-openjdk jre8-openjdk
+sudo pacman -S jre17-openjdk jre8-openjdk jre21-openjdk
 ```
 
 ### Ubuntu
 
 ```bash
-sudo apt install openjdk-17-jre openjdk-8-jre
+sudo apt install openjdk-17-jre openjdk-8-jre openjdk-21-jre
 ```
 
 ### Debian
 
 ```bash
-sudo apt install openjdk-17-jre
+sudo apt install openjdk-17-jre openjdk-21-jre
 ```
 
 Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
@@ -77,6 +77,7 @@ Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 
 Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
 
 If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
+
 > Settings > Java > Java Runtime > Auto-detect...
 
 ### A note about Intel HD 2000/3000 on Windows 10
