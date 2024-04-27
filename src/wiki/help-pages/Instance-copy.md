@@ -62,24 +62,24 @@ This is where you can set more advanced options, such as links or cloning.
 
 You can't use these options if your partition is on FAT filesystem.
 
-**Use symbolic links**
+#### Use symbolic links
 
 This option will create a symbolic link between the two instances.
 
-**Use hard links**
+#### Use hard links
 
 This option will create a hard link between the two instances.
 
-**Link files recursively**
+#### Link files recursively
 
 This option will link all files, instead of just the parent folder. 
 
-**Don't link saves**
+#### Don't link saves
 
 This option will disable the link of the saves. The world saves will be copied instead.
 
 ### CoW (Copy-on-Write) Options
 
-**Clone instead of copying**
+#### Clone instead of copying
 
 This option is only supported on APFS, BTRFS, REFS, XFS and ZFS filesystems.
