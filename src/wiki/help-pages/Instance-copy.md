@@ -72,7 +72,7 @@ This option will create a hard link between the two instances.
 
 #### Link files recursively
 
-This option will link all files, instead of just the parent folder. 
+This option will link all files, instead of just the parent folder.
 
 #### Don't link saves
 
