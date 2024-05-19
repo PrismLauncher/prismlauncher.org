@@ -2,17 +2,17 @@
 eleventyNavigation:
   key: Branding
   order: 5
---- 
+---
 
 <div class="notification type-info">
-  This page is not yet complete
+  This page is not yet complete.
 </div>
 
 # Prism Launcher Branding
 
-Logos and style guides
+**Logo and Style Guides**
 
-colors:
+Colors:
 
 ```css
 --primary-text: #ffffff;
@@ -58,18 +58,16 @@ colors:
 Logo colors:
 
 ```css
---grass-green: #99CD61;
---dirt-light-brown: #7A573B;
---dirt-dark-brwon: #4D3F33
+--grass-green: #99cd61;
+--dirt-light-brown: #7a573b;
+--dirt-dark-brwon: #4d3f33 --rainbow-red: #df6277;
+--rainbow-orange: #fb9168;
+--rainbow-yellow: #f3db6c;
+--rainbow-green: #7ab392;
+--rainbow-blue: #4b7cbc;
+--rainbow-purple: #6f488c;
 
---rainbow-red: #DF6277;
---rainbow-orange: #FB9168;
---rainbow-yellow: #F3DB6C;
---rainbow-green: #7AB392;
---rainbow-blue: #4B7CBC;
---rainbow-purple: #6F488C;
-
---top-white: #FFFFFF;
---right-white: #D6D2D2;
---left-white: #DFDFDF;
+--top-white: #ffffff;
+--right-white: #d6d2d2;
+--left-white: #dfdfdf;
 ```

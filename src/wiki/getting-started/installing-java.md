@@ -9,7 +9,7 @@ eleventyNavigation:
 
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
 
-### Which version?
+## Which version?
 
 Minecraft 1.20.5 and upwards will require **Java 21 (LTS)**, Minecraft 1.17 to Minecraft 1.20.4 will require **Java 17 (LTS)**, while anything below will require **Java 8 (LTS).**
 

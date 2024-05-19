@@ -97,14 +97,14 @@ The `catpack.json` looks as follows:
 }
 ```
 
-Fields description:
+**Description of Fields**
 
-- `name` the name of the CatPack
-- `default` the path to the default cat
-- `variants` a list of the cats that are visible only on specific days/periods.
-- `startTime` the day from which the variant is visible (inclusive)
-- `endTime` the day until the variant is visible (inclusive)
-- `path` the path to the variant
+- `name` The name of the CatPack
+- `default` The path to the default cat
+- `variants` A list of the cats that are visible only on specific days/periods
+- `startTime` The day from which the variant is visible (inclusive)
+- `endTime` The day until the variant is visible (inclusive)
+- `path` The path to the variant
 
 All paths are relative, so you only need to put the name of the image from the CatPack(with extension).
 

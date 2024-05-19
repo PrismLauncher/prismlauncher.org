@@ -4,6 +4,7 @@ eleventyNavigation:
   parent: Overview
   order: 4
 ---
+
 # Troubleshooting
 
 This is a collection of helpful information for frequent problems when using Prism Launcher.
@@ -37,8 +38,8 @@ Since Prism Launcher 6.0, Prism is compiled using [MSVC](https://en.wikipedia.or
 As a consequence of this, like most apps on Windows, you have to install vcredist for Prism to run.
 You need:
 
-* [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
-* [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
+- [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
+- [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
 
 #### How do I open a .zip file?
 
