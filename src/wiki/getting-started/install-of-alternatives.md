@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Why bother?
 
-Once upon a time, OptiFine was *the* way to make your game better, faster, and stronger through various useful features and optimizations. Things have since changed.
+Once upon a time, OptiFine was _the_ way to make your game better, faster, and stronger through various useful features and optimizations. Things have since changed.
 
 ## Detailed explanation
 
@@ -19,11 +19,11 @@ For a very long time, OptiFine was an essential mod that many enjoyed using as i
 
 - OptiFine functions as an "all-in-one" mod (similar to a modpack). This makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
 
-In the past few years, various mods have been made to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
+In the past few years, various mods have been made to replace these features and offer a better experience for both mod developers _and_ users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) on Forge.
 
 ## Installing things
 
-To install mods and modpacks, see the [Download mods](../download-mods) and [Download modpacks](../download-modpacks) pages.
+To install mods and modpacks, see the [Downloading Mods](../download-mods) and [Downloading Modpacks](../download-modpacks) pages.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="30"> Fabric/Quilt Mods
 
@@ -81,6 +81,7 @@ While on some modpacks/with some mods they&#39;re going to work good, with other
 You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
 
 <strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
+
 </div>
 
 ### <img src="https://raw.githubusercontent.com/embeddedt/embeddium/16.x/forge/src/main/resources/icon.png" height="20"> Embeddium

@@ -4,6 +4,7 @@ eleventyNavigation:
   parent: Getting Started
   order: 7
 ---
+
 # Before you continue
 
 Because OptiFine is an old, closed-source project, it has evolved to cause many mod incompatibilities, and doesn't do as good of a job as some the alternatives out there.
@@ -14,7 +15,7 @@ Therefore, you should consider the use of OptiFine alternatives whenever possibl
 
 ## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine standalone
 
-This method requires you either have the Minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like /.minecraft/versions/*1.18.2*/*1.18.2*.jar).
+This method requires you either have the Minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like `/.minecraft/versions/_1.18.2_/_1.18.2_.jar`).
 
 Go to <https://optifine.net/downloads> and find your respective Minecraft version (eg. 1.18.2).
 
@@ -31,21 +32,21 @@ From OptiFine Version **H1_pre2** the instructions for installing OptiFine on Pr
 1. Extract the MOD jar with the OptiFine installer
 2. Open it with any archiver
 3. Move all files from the folder called **notch** to the top folder of the archive file and click **save**.
-4. Open Prism Launcher, edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted / modified OptiFine jarmod (the file ending in _MOD.jar) and confirm.
+4. Open Prism Launcher, edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted / modified OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
-## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a modloader
+## <img src="https://www.optifine.net/favicon.ico" height="20" /> Installing OptiFine on top of a mod loader
 
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
 
 Go to <https://optifine.net/downloads> and find your respective Minecraft version (eg. 1.18.2).
 
-Once found, click **mirror**. Now click the **download** button to download your OptiFine jar file.
+Once found, click **mirror**. Now click the **download** button to download your OptiFine JAR file.
 
-Remember where you have kept your **.jar** file, and continue to Prism Launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
+Remember where you have kept your JAR file, and continue to Prism Launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
 
 ### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="20"> Forge
 
-Forge does not require any extra steps besides adding the **.jar** for OptiFine into Prism Launcher.
+Forge does not require any extra steps besides adding the JAR for OptiFine into Prism Launcher.
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
@@ -55,7 +56,7 @@ Forge does not require any extra steps besides adding the **.jar** for OptiFine 
 
 Fabric, unlike Forge, does not natively support OptiFine, and will require the installation of OptiFabric.
 
-Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select *CurseForge* and search *OptiFabric*. Once found, click **Select mod for download**, and then press **OK**. You may now proceed with adding the .jar file for OptiFine into Prism Launcher.
+Go into the **Mods** tab on the left side and then in the right menu select **Download mods**, then select _CurseForge_ and search _OptiFabric_. Once found, click **Select mod for download**, and then press **OK**. You may now proceed with adding the JAR file for OptiFine into Prism Launcher.
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
@@ -63,8 +64,8 @@ If there were results shown in the search, your Minecraft version may not be com
 
 There's no way of running OptiFine on Quilt at the time of writing.
 
-### Adding the .jar file into Prism Launcher
+### Adding the JAR file into Prism Launcher
 
 Go into the **Mods** tab on the left side of the **Edit Instance** menu, and then click on the **Add .jar** option to the right of the window.
 
-Now, find and select the **.jar** file you downloaded earlier, and it should now be added to your instance. Enjoy!
+Now, find and select the JAR file you downloaded earlier, and it should now be added to your instance. Enjoy!
