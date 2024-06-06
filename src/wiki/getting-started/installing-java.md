@@ -105,5 +105,5 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 Well, for you there's a resolution too!
 
 * First, remove, if you had, [your current oracle java](https://explainjava.com/uninstall-java-macos/)
-* Then download and install [this java binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+* Then download and install [this java binary](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=6f92c7f0-dd4c-11ea-a8fe-fa163ed8e833)
 * Select this java binary on Prism Launcher, and it should fix your issue!
