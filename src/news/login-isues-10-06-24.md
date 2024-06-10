@@ -1,7 +1,7 @@
 ---
 title: Microsoft having authentication issues in some regions.
 description: Microsoft login and launch check not working currently in launcher, affects other launchers and official launcher in somes cases.
-date: 2022-02-07
+date: 2024-06-09
 tags:
   - Authentication
 ---
