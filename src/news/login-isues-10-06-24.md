@@ -1,5 +1,5 @@
 ---
-title: Microsoft having authentication issues in some regions.
+title: Microsoft authentication issues in some regions
 description: Microsoft login and launch check not currently working in the launcher
 date: 2024-06-09
 tags:
