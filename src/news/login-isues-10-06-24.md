@@ -12,7 +12,7 @@ Myself and many of the other maintainers have not been able to replicate the iss
 
 ## What can I do?
 
-Unfortunately for current version there is not much that can be done besides trying again if it does not launch, the faults seem to intermittent and sometimes allow users to login.
+Unfortunately in the current version, there is not much that can be done besides trying again if it does not launch. The faults seem to intermittent and only sometimes allow users to login.
 
 *Alternatively we are trialing a new authentication system for [Prism Launcher nightly version](https://nightly.link/PrismLauncher/PrismLauncher/workflows/trigger_builds/develop) that some have reported fixing the issue.*
 *The new nightly auth system currently has a http 426 error for some users and we are working to fix that if you have that error it is unrelated to Microsoft authentication issues.*
