@@ -22,4 +22,4 @@ Unfortunately in the current version, there is not much that can be done besides
 
 [WEB-7179 - Mojang Bug Tracker](https://bugs.mojang.com/browse/WEB-7179)
 
-This report was made around same time these issues have started happening and affected the official launcher, We are not sure if this is the same or a related issue but it seems highly likely.
+This report was made around same time these issues have started happening and also affected the official launcher. We are not sure if this is the same or a related issue, but it seems highly likely.
