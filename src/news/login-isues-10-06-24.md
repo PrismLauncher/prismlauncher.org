@@ -5,7 +5,7 @@ date: 2024-06-09
 tags:
   - Authentication
 ---
-Hi we are aware of a current ongoing issue with the Microsoft login in Prism Launcher, we belive the issue to be with Microsofts third party auth servers in some regions experiencing outages.
+Hi! We are aware of ongoing issues with the Microsoft login in Prism Launcher. We believe this is something to do with Microsoft's third party auth servers experiencing outages in some regions.
 The issue sometimes also affects the official Minecraft launcher and minecraft.net for some users.
 However there has not been any official statements or way to track this from Microsoft and not all users are affected.
 Myself and many of the other maintainers have not been able to replicate the issue as we seem to be in unaffected regions.
