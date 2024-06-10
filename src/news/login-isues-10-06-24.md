@@ -5,9 +5,8 @@ date: 2022-02-07
 tags:
   - Authentication
 ---
-
 Hi we are aware of a current ongoing issue with the microsoft login in Prism Launcher, we belive the issue to be with microsofts third party auth servers in some regions experiencing outages.
-However there has not been any official statements or way to track this from Microsoft and not all users are affected. 
+However there has not been any official statements or way to track this from Microsoft and not all users are affected.
 Myself and many of the other maintainers have not been able to replicate the issue as we seem to be in unaffected regions.
 
 ## What can I do?
@@ -20,7 +19,7 @@ Unfortunately for current version there is not much that can be done besides try
 
 ## Possibly related issues
 
-https://bugs.mojang.com/browse/WEB-7179
+[WEB-7179 - Mojang Bug Tracker](https://bugs.mojang.com/browse/WEB-7179)
 
 This report was made around same time these issues have started happening and affected the official launcher, We are not sure if this is the same or a related issue but it seems highly likely.
 
