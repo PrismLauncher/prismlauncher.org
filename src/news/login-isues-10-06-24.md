@@ -16,7 +16,7 @@ Unfortunately in the current version, there is not much that can be done besides
 
 *Alternatively we are trialing a new authentication system for [Prism Launcher nightly version](https://nightly.link/PrismLauncher/PrismLauncher/workflows/trigger_builds/develop) that some have reported fixing the issue.*
 *The new nightly auth system currently has a http 426 error for some users and we are working to fix that if you have that error it is unrelated to Microsoft authentication issues.*
-**The Nightly version is considered pre release software and is not stable, expect bugs.**
+**The Nightly version is considered pre-release software and not stable. Expect bugs.**
 
 ## Possibly related issues
 
