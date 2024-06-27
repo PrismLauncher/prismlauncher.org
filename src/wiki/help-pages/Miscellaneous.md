@@ -23,7 +23,7 @@ The crash may look as follows:
 
 ### Solution
 
-1. Create a file inside the instance minecraft(`.minecraft`/`minecraft`) folder with the following content:
+1. Create a file named `java.security` inside the instance minecraft(`.minecraft`/`minecraft`) folder with the following content:
 
     ```text
     jdk.certpath.disabledAlgorithms=MD2, MD5, SHA1 jdkCA & usage TLSServer, \
