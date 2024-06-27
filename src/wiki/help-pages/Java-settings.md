@@ -42,3 +42,23 @@ For information about how to get a correct Java version, see: [Installing Java](
 **Test** can be used to test the selected Java runtime along with your memory settings and JVM arguments without starting the game.
 
 **Skip java compatibility checks** skips java compatibility checks at game launch
+
+**Autodetect Java version** sets the correct java version at game launch(only looks at installed java and will change the java path in instance settings)
+
+**Auto-download Mojang Java** will automatically download needed java(works only when auto-detect is on)
+
+## Java Management
+
+<div class="row">
+  <div class="column">
+      {% image "Java Management section of java tab under Prism Launcher settings", "./src/img/screenshots/JavaSettingsManagementLight.png", "./src/img/screenshots/JavaSettingsManagementDark.png" %}
+  </div>
+</div>
+
+This is where you can download and remove the java that were installed by Prism Launcher.
+
+<div class="row">
+  <div class="column">
+      {% image "Java Download section of java tab under Prism Launcher settings", "./src/img/screenshots/JavaSettingsDownloadLight.png", "./src/img/screenshots/JavaSettingsDownloadDark.png" %}
+  </div>
+</div>
