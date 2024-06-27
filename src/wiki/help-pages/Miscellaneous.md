@@ -25,15 +25,15 @@ The crash may look as follows:
 
 1. Create a file inside the instance minecraft(`.minecraft`/`minecraft`) folder with the following content:
 
-```text
-jdk.certpath.disabledAlgorithms=MD2, MD5, SHA1 jdkCA & usage TLSServer, \
-    RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, \
-    include jdk.disabled.namedCurves
+    ```text
+    jdk.certpath.disabledAlgorithms=MD2, MD5, SHA1 jdkCA & usage TLSServer, \
+        RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, \
+        include jdk.disabled.namedCurves
 
-jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize < 1024, \
-    DSA keySize < 1024, \
-    include jdk.disabled.namedCurves
-```
+    jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize < 1024, \
+        DSA keySize < 1024, \
+        include jdk.disabled.namedCurves
+    ```
 
 2. Open Edit instance window
 3. Navigate to Java Setting
@@ -42,6 +42,5 @@ jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize < 1024, \
 
 ### Sources
 
-- https://gist.github.com/ThePixelbrain/a0fe3231b9a9d71d910e7f71895e0196
-- https://github.com/PrismLauncher/PrismLauncher/issues/747#issuecomment-1850676378
-
+- <https://gist.github.com/ThePixelbrain/a0fe3231b9a9d71d910e7f71895e0196>
+- <https://github.com/PrismLauncher/PrismLauncher/issues/747#issuecomment-1850676378>
