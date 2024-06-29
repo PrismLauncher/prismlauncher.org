@@ -6,7 +6,7 @@ eleventyNavigation:
 
 ## Fix crash with recent Java 8 versions for old forge modpacks
 
-This applies to old forge modpacks that crashed during standup with the new version of java.
+This applies to old Forge modpacks that crashed on startup with the new versions of Java.
 The crash may look as follows:
 
 ```text
