@@ -448,6 +448,55 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
 }
 ```
 
+### Visual Studio
+
+To set up Visual Studio, make sure you have installed the dependencies underneath Windows MSVC. You do not have to run anything under the [msbuild](#compile-from-command-line-on-windows-using-msbuild) section.
+
+Now it's time to set up the project.
+
+1. Open the project.
+    - Open the folder you cloned the repository into at the top of this page.
+    *or*
+    - Clone the repository as a new project
+2. Once loaded, Visual Studio will inform you that CMake generation has failed. Click on manage configurations in the drop-down list, which you can find more about [here](https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings).
+3. Set up the CMake configuration as follows
+    - Underneath CMake command arguments, put the following
+    ```-DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=<Insert Path to your system's QT>/lib/cmake```
+    - DO NOT put anything into Build command arguments
+    - Click on the edit JSON in the top right
+    - Put the following line into the file either before or in the configurations, replacing the path with your own path to the bin folder of Qt. Putting the environment outside the configurations will apply this to any additional configurations you create.
+    ```"environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ]```
+4. At the top of the screen open the drop-down for the start button. Select your application to build (likely prismlauncher.exe), and then click the button. It will take several minutes to build, but it should only have to do this once. When it finishes, the program should start.
+
+{% image "Visual Studio Launch", "./src/img/screenshots/VisualStudioLaunchLight.png", "./src/img/screenshots/VisualStudioLaunchDark.png" %}
+
+Your CMakeSettings.json file should end up looking like this, with the environments option in either position one or two
+
+```json
+{
+    "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ], //Position one
+    "configurations": [
+    {
+        "name": "x64-Debug",
+        "generator": "Ninja",
+        "configurationType": "Debug",
+        "inheritEnvironments": [ "msvc_x64_x64" ],
+        "buildRoot": "${projectDir}\\out\\build\\${name}",
+        "installRoot": "${projectDir}\\out\\install\\${name}",
+        "cmakeCommandArgs": "-DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=C:/Qt/6.6.2/msvc2019_64/lib/cmake",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": "",
+        "environments": [ { "PATH": "C:/Qt/6.6.2/msvc2019_64/bin;${env.PATH}" } ] //Position two
+    }
+    ]
+}
+```
+
+You should now be able to build and run your code by clicking the launch button at the top. After the initial build, it will only compile changed files.
+
+- If the program builds and launches, but then tells you you're missing a .dll, you either have not installed Qt, or you have not added the proper environments line to your config.
+- If CMake is informing you that it cannot find a QT CMake file, make sure to set the CMAKE_PREFIX_PATH to the lib/cmake folder of your QT version.
+
 ### CLion
 
 1. Open CLion
