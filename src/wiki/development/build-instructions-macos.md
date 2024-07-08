@@ -14,7 +14,7 @@ eleventyNavigation:
 
 Clone the source code using git, and grab all the submodules:
 
-```bash
+```zsh
 git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
 cd PrismLauncher
 ```
@@ -29,11 +29,11 @@ cd PrismLauncher
 - Install the official build of CMake (<https://cmake.org/download/>).
 - Install extra-cmake-modules
 - Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
-- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
+- Install any version of Qt 6 (recommended) or Qt 5.12 or newer
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
-```bash
+```zsh
 brew update # in the case your repositories weren't updated
 brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
@@ -42,7 +42,7 @@ brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you wan
 
 If you don't have XCode Command Line tools installed, you can install them with this command:
 
-```bash
+```zsh
 xcode-select --install
 ```
 
@@ -52,19 +52,30 @@ Choose an installation path.
 
 This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
 
-```bash
+[If you are on zsh](https://support.apple.com/kb/HT208050),zsh does not ignore comments by default, run the following to ignore comments for this session:
+
+```zsh
+setopt interactivecomments
+```
+
+```zsh
 mkdir build
 cd build
 cmake \
  -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
+ -DCMAKE_INSTALL_PREFIX="dist" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
+ -DQt6_DIR="/path/to/Qt/" \
  -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
  -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
- -DLauncher_BUILD_PLATFORM=macOS
+ -DLauncher_BUILD_PLATFORM=macOS \
+# if you want to enable LTO/IPO:
+ -DENABLE_LTO=ON
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
+#-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
  ..
 make install
 ```
@@ -108,7 +119,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             "name": "Mac (PrismLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/homebrew/opt/qt@5/include/**"
+                "/opt/homebrew/opt/qt@6/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -116,7 +127,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             ],
             "compilerPath": "/usr/bin/clang",
             "compilerArgs": [
-                "-L/opt/homebrew/opt/qt@5/lib"
+                "-L/opt/homebrew/opt/qt@6/lib"
             ],
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "cStandard": "c17",

@@ -28,8 +28,8 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 ### Build dependencies
 
 - A C++ compiler capable of building C++17 code.
-- Qt Development tools 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems)
-- Alternatively you can also use Qt 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems), if you prefer it.
+- Qt Development tools 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems).
+- Alternatively, you can also use Qt 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based systems), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
 - ninja (`ninja-build` on Debian-based systems)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
@@ -45,7 +45,7 @@ You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, i
 ```bash
 cmake -S . -B build -G Ninja \
    -DCMAKE_INSTALL_PREFIX=install
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
 
 cmake --build build
 cmake --install build
@@ -61,7 +61,7 @@ cmake -S . -B build -G Ninja \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
-#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
 
 cmake --build build
 cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
@@ -79,7 +79,7 @@ makedeb -s
 
 The .deb will be located in the directory the repo was cloned in.
 
-### Building an .rpm
+### Building an .rpm  for Fedora
 
 Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
 in order to fetch sources and set up your tree.
@@ -89,19 +89,41 @@ You don't need to clone the repo for this; the spec file handles that.
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher-rpm repo
-git clone https://pagure.io/prismlauncher-rpm.git
-cd prismlauncher-rpm
+# get the rpm spec file from the prismlauncher on pagure
+git clone https://pagure.io/prismlauncher.git
+cd prismlauncher
 # install build dependencies
 sudo dnf builddep prismlauncher.spec
 sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
 spectool -g -R prismlauncher.spec
+# move patches to rpmbuild sources directory
+cp *.patch ~/rpmbuild/SOURCES
 # copy any patches to rpmbuild sources directory
 cp *.patch ~/rpmbuild/SOURCES 
 # now build!
 rpmbuild -bb prismlauncher.spec
 rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
+```
+
+The path to the .rpm packages will be printed once the build is complete.
+
+### Building an .rpm for openSUSE
+
+Unlike Fedora, the openSUSE packages depend on the [Open Build Service](https://build.opensuse.org/), so you will need to install the command line tool `osc` by following [this](https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.osc.html#sec.obs.osc.install) guide.
+It also uses the [obs_scm](https://github.com/openSUSE/obs-service-tar_scm) service, which is available in the `obs-service-obs_scm` package if it's not already installed.
+
+```bash
+osc checkout home:getchoo
+
+# there will be 4 directories in home:getchoo, with some having a -qt5 and/or -nightly suffix
+# -qt5 packages will build with Qt 5 instead of Qt 6, while -nightly packages will build with the latest commit (updated every 24h)
+# for this example, we're just using the stable release package that builds with Qt 6
+# NOTE: only -qt5 will build on Leap
+cd home:getchoo/prismlauncher
+
+# to build against the current version of Leap, replace `openSUSE_Tumbleweed` with 15.4
+osc build --sccache openSUSE_Tumbleweed
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
@@ -124,8 +146,8 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 2. Choose a place to install Qt.
 3. Choose the components that you wish install.
 
-    - You need Qt 5.12.x 64-bit ticked. (or a newer version)
-    - Alternatively you can choose Qt 6.0 or newer
+    - You need Qt 6.0.x 64-bit ticked. (or a newer version)
+    - Alternatively you can choose Qt 5.12.0 or newer
     - You need Tools/Qt Creator ticked.
     - Other components are selected by default, you can un-tick them if you don't need them.
 
@@ -168,7 +190,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             "name": "Mac (PrismLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/homebrew/opt/qt@5/include/**"
+                "/opt/homebrew/opt/qt@6/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [
@@ -176,7 +198,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
             ],
             "compilerPath": "/usr/bin/clang",
             "compilerArgs": [
-                "-L/opt/homebrew/opt/qt@5/lib"
+                "-L/opt/homebrew/opt/qt@6/lib"
             ],
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "cStandard": "c17",
@@ -219,8 +241,8 @@ Now you should be able to build and test Prism Launcher with the `Build` and `Ru
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
 
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
-      - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
+   - Make sure that Generator is set to "Unix Generator (Desktop Qt 6.x.x GCC 64bit)".
+      - Alternatively this is probably "Unix Generator (Desktop Qt 5.12.x GCC 64bit)"
    - Hit the "Run CMake" button.
    - You'll see warnings, and it might not be clear that it succeeded until you scroll to the bottom of the window.
    - Hit "Finish" if CMake ran successfully.

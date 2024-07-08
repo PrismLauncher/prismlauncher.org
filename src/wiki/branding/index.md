@@ -10,7 +10,7 @@ eleventyNavigation:
 
 # Prism Launcher Branding
 
-logos and style guides
+Logos and style guides
 
 colors:
 
@@ -53,4 +53,23 @@ colors:
 --background: #ffffff;
 --accent: #e0e0e0;
 --accent-light: #d0d0d0;
+```
+
+Logo colors:
+
+```css
+--grass-green: #99CD61;
+--dirt-light-brown: #7A573B;
+--dirt-dark-brwon: #4D3F33
+
+--rainbow-red: #DF6277;
+--rainbow-orange: #FB9168;
+--rainbow-yellow: #F3DB6C;
+--rainbow-green: #7AB392;
+--rainbow-blue: #4B7CBC;
+--rainbow-purple: #6F488C;
+
+--top-white: #FFFFFF;
+--right-white: #D6D2D2;
+--left-white: #DFDFDF;
 ```

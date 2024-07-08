@@ -62,6 +62,7 @@ cmake -S . -B build \
    -DCMAKE_INSTALL_PREFIX="/usr/local" \ # /usr/local is default in OpenBSD and FreeBSD
    -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
    -DENABLE_LTO=ON # if you want to enable LTO/IPO
+   -DLauncher_QT_VERSION_MAJOR="5"
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
