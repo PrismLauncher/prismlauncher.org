@@ -220,6 +220,12 @@ code {
   padding: 1em;
 }
 
+.content.compact {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .center {
   text-align: center;
   margin: auto;
@@ -307,6 +313,11 @@ code {
 .button.size-small {
   font-size: 1em;
 }
+
+.button.fullwidth {
+  width: 100%;
+}
+
 
 /* Direct Links / Markdown Headers */
 .direct-link {
