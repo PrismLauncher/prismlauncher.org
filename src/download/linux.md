@@ -110,10 +110,6 @@ sudo dnf copr enable g3tchoo/prismlauncher
 sudo dnf install prismlauncher
 # nightly builds
 sudo dnf install prismlauncher-nightly
-# stable Qt 5 releases
-sudo dnf install prismlauncher-qt5
-# nightly Qt 5 builds
-sudo dnf install prismlauncher-qt5-nightly
 ```
 
 </div>
@@ -236,6 +232,33 @@ zypper install prismlauncher-nightly
 zypper install prismlauncher-qt5
 # latest builds (available for Leap and Tumbleweed)
 zypper install prismlauncher-qt5-nightly
+```
+
+</div>
+
+<div class="infobox top">
+
+# <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" height="20"> Slackware
+
+Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
+
+_Note: You may need to edit the ```PrismLauncher.SlackBuild``` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file._
+
+```bash
+# download launcher slackbuild archive
+wget https://slackbuilds.org/slackbuilds/15.0/games/PrismLauncher.tar.gz
+# extract archive
+tar -xpvf PrismLauncher.tar.gz; cd PrismLauncher-*
+# download source specified in PrismLauncher.info, for example for version 7.1:
+wget https://github.com/PrismLauncher/PrismLauncher/releases/download/7.1/PrismLauncher-7.1.tar.gz
+# verify integrity
+md5sum PrismLauncher-*.tar.gz # compare the result with the md5 in PrismLauncher.info
+# enter root environment and grant permissions
+su -l; chmod +x PrismLauncher.SlackBuild
+# build package
+./PrismLauncher.SlackBuild
+# install package (name dependent on version, cpu arch)
+cd /tmp; installpkg PrismLauncher-*.tgz
 ```
 
 </div>

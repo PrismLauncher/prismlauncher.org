@@ -2,66 +2,88 @@
     border-bottom: 2px solid var(--primary-text-muted);
 }
 
-.wiki-content, .wiki-toc {
+.wiki-content.wiki-content {
+  border-radius: 1em 1em 0 0;
+}
+
+.wiki-content {
   margin-top: 1em;
 }
 
 .wiki-toc {
+  padding: 1em 0 1em 1em;
   background-color: var(--accent);
-  border-radius: 1em;
-  padding: 1em;
-  font-size: 1rem;
+  border-radius: 0 0 1em 1em;
+  font-size: 1em;
   /* Reset */
   flex: 1;
 }
 
-.wiki-toc-list {
-  display: flex;
-  flex-wrap: wrap;
+.wiki-toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wiki-toc [href] {
+  color: var(--primary-text-muted);
+} 
+
+/* RAINBOW!!!!! */
+.wiki-toc>ul>li:nth-child(3n + 1) {
+  --toc-header-rainbow: var(--primary)
+}
+.wiki-toc>ul>li:nth-child(3n + 2) {
+  --toc-header-rainbow: var(--danger)
+}
+.wiki-toc>ul>li:nth-child(3n + 3) {
+  --toc-header-rainbow: var(--warn)
+}
+.wiki-toc>ul>li:nth-child(3n + 4) {
+  --toc-header-rainbow: var(--success)
+}
+.wiki-toc>ul>li:nth-child(3n + 5) {
+  --toc-header-rainbow: var(--link)
+}
+.wiki-toc>ul>li:nth-child(3n + 6) {
+  --toc-header-rainbow: var(--info)
+}
+
+.wiki-toc>ul>li.toggle>details>summary [href], .wiki-toc>ul>li.section [href]{
+  color: var(--toc-header-rainbow);
+  font-weight: bold;
+}
+
+.wiki-toc .section, .toggle>details>summary{
+  padding: 0.6em;
+  border-radius: 1em 0 0 1em;
+}
+
+
+/* fold dropdown + icon */
+summary {
+  position: relative;
+  align-items: center;
   justify-content: space-between;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
-  list-style: none;
+  color: var(--primary-text-muted);
 }
 
-.wiki-toc-list li {
-  line-height: 1.466666666667;
-  /* 22px /15 */
-}
-
-/* Nested lists */
-.wiki-toc-list ul {
-  padding: 0 0 0.75em 0;
-  margin: 0;
-  list-style: none;
+.toggle:not(.wiki-toc-active) > details[open] > summary {
+  background-color: var(--accent-light);
 }
 
 /* Menus nested 2 or more deep */
-.wiki-toc-list ul ul {
+.wiki-toc-list {
+  margin: 0;
+}
+
+.wiki-toc-list ul {
   padding-bottom: 0;
   padding-left: 0.625rem;
   /* 10px /16 */
 }
 
-/* Hide inactive menus 3 or more deep */
-.wiki-toc-list ul ul>li:not(.wiki-toc-active)>ul>li:not(.wiki-toc-active) {
-  display: none;
-}
-
-/* List items */
 .wiki-toc-list a {
-  padding: 0.15em 0.25em;
-  display: block;
-}
-
-.wiki-toc-list a:not(:hover) {
   text-decoration: none;
-}
-
-.wiki-toc-list li {
-  margin: 0;
-  padding: 0;
 }
 
 .wiki-toc-list>li {
@@ -70,29 +92,19 @@
   /* 230px /16 */
 }
 
-/* Top level links */
-.wiki-toc-list>li>a {
-  color: var(--primary-text);
-  font-weight: 700;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 0.25em;
-  /* 4px /16 */
+/* Active links */
+.wiki-toc-active.section, .wiki-toc-active.toggle>details>summary {
+  background-color: var(--background);
 }
 
-/* Active links */
-.wiki-toc-list li.wiki-toc-active>a {
-  background-color: var(--accent);
+.section:hover, .toggle summary:hover {
+  background-color: var(--accent-light);
 }
 
 /* Show only active nested lists */
 .wiki-toc-list ul.wiki-toc-active,
 .wiki-toc-list li.wiki-toc-active>ul {
   display: block;
-}
-
-/* Footer category navigation */
-.wiki-cat-list-active {
-  font-weight: 700;
 }
 
 .inlinelist {
@@ -110,13 +122,11 @@
 
 .wiki-tag a {
   display: inline-flex;
-  text-transform: uppercase;
-  font-size: 0.75em;
   /* 12px /16 */
-  padding: 0.08333333333333em 0.3333333333333em;
+  padding: 0.3em 0.3em;
   margin: 0.5em 0.5em 0.5em 0;
-  color: var(--primary-text);
-  border: 1px solid var(--accent);
+  color: var(--link);
+  background-color: var(--accent);
   border-radius: 0.25em;
   /* 3px /12 */
   text-decoration: none;
@@ -129,13 +139,18 @@
 
 .wiki-tag-active a {
   font-weight: 700;
+  text-decoration: underline;
 }
 
 @media (min-width: 64em) {
   .wiki-content {
     width: 80%
   }
+  .wiki-content.wiki-content {
+    border-radius: 0 1em 1em 0;
+  }
   .wiki-toc {
-    margin-right: 1em;
+    border-radius: 1em 0 0 1em;
+    margin-top: 1em;
   }
 }

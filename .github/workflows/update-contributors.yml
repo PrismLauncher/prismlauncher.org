@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
           path: ${{ env.STORE_PATH }}
@@ -45,8 +45,19 @@ jobs:
           git add :/
           git commit -m "Update contributors" || true
 
-      - name: Push changes
-        uses: ad-m/github-push-action@d91a481090679876dfc4178fef17f286781251df
+      - name: Create PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          base: "main"
+          branch: "update-contributors"
+          delete-branch: true
+          title: "chore: update contributors"
+          body: "Automated pull request to update contributors"
+
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: merge

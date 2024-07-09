@@ -4,7 +4,6 @@ eleventyNavigation:
   parent: Overview
   order: 4
 ---
-
 # Troubleshooting
 
 This is a collection of helpful information for frequent problems when using Prism Launcher.
@@ -30,7 +29,7 @@ A workaround for this issue is adding the following JVM argument:
 
 ## Common Launcher-related issues
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows\\_logo\\_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
 
 #### "MSVCP140_2.dll was not found"?
 
@@ -38,9 +37,8 @@ Since Prism Launcher 6.0, Prism is compiled using [MSVC](https://en.wikipedia.or
 As a consequence of this, like most apps on Windows, you have to install vcredist for Prism to run.
 You need:
 
-- [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
-- [vcredist 2022 x86](https://aka.ms/vs/17/release/vc_redist.x86.exe) if you're using PrismLauncher-Windows-MSVC-Legacy (the reccomended version for Windows 7/8.1 and Windows 10 32 bit)
-- [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
+* [vcredist 2022 x64](https://aka.ms/vs/17/release/vc_redist.x64.exe) if you're using PrismLauncher-Windows-MSVC (the reccomended version for Windows 10 64 bit/Windows 11)
+* [vcredist 2022 arm64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) if you're using PrismLauncher-Windows-MSVC-arm64 (the reccomended version for Windows 10/11 on ARM)
 
 #### How do I open a .zip file?
 
@@ -56,19 +54,8 @@ If you are **comfortable** and **trust** Prism Launcher, then you can click on t
 
 #### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
 
-Prism Launcher uses Qt 6 by default on Windows, which does *not* support Windows 7 and Windows 8.1.
-
-For this reason, we still provide a build that uses Qt 5 in [our download page](https://prismlauncher.org/download/) called "Legacy version", you'll have to use that on those legacy versions of Windows.
-
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" height="20" /> macOS
-
-#### macOS cannot verify that this app is free from malware?
-
-Much like the similar pop-up on Windows, this too is **normal behaviour.**
-
-If you face this obstacle, **right-click** on Prism Launcher.app, and click **Open**. Click the **Close** button on the pop-up window, and then **right-click** on Prism Launcher.app again. Click on open, and then click on **Open** once more.
-
-There's also another way to do this: open your Mac's **System Preferences** application, and make your way to the **Security & Privacy** page. Once there, near the bottom of the page, there should be an **"Open Anyway"** option. Click on that option, and then **re-open** the installer.
+Prism Launcher hasn't supported Windows 7 and Windows 8.1 since version 8.0 due to dependencies. These operating systems have been EOL for years, so please upgrade your operating system for security reasons.
+[Prism Launcher 7.2](https://github.com/PrismLauncher/PrismLauncher/releases/tag/7.2) is the last version that has a legacy build for these EOL operating systems, but it's no longer supported.
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Linux
 
@@ -97,7 +84,7 @@ This means that some themes and theming platforms like KDE Plasma's theming will
 But don't worry, we still provide Qt 5 builds.
 You can find them on the [download page](https://prismlauncher.org/download/linux).
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows\\_logo\\_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
 
 #### I want to make my system install portable
 
