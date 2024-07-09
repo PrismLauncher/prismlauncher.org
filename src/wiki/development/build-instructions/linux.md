@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: Linux Build instructions
-  parent: Development
+  key: Linux
+  parent: Build Instructions
   order: 2
 ---
 # Linux Build Instructions

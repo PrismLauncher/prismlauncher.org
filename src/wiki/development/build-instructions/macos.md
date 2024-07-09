@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: MacOS Build instructions
-  parent: Development
+  key: MacOS
+  parent: Build Instructions
   order: 4
 ---
 # Build Instructions

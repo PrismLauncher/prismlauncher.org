@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: OpenBSD Build instructions
-  parent: Development
+  key: OpenBSD
+  parent: Build Instructions
   order: 5
 ---
 # Build Instructions
