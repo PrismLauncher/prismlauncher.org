@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
-  key: Windows Build instructions
-  parent: Development
+  key: Windows
+  parent: Build Instructions
   order: 3
 ---
 # Build Instructions
