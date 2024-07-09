@@ -3,16 +3,17 @@
 }
 
 .wiki-content.wiki-content {
-  border-radius: 0 1em 1em 0;
+  border-radius: 1em 1em 0 0;
 }
 
-.wiki-content, .wiki-toc {
+.wiki-content {
   margin-top: 1em;
 }
 
 .wiki-toc {
+  padding: 1em 0 1em 1em;
   background-color: var(--accent);
-  border-radius: 1em 0 0 1em;
+  border-radius: 0 0 1em 1em;
   font-size: 1em;
   /* Reset */
   flex: 1;
@@ -71,6 +72,10 @@ summary {
 }
 
 /* Menus nested 2 or more deep */
+.wiki-toc-list {
+  margin: 0;
+}
+
 .wiki-toc-list ul {
   padding-bottom: 0;
   padding-left: 0.625rem;
@@ -140,5 +145,12 @@ summary {
 @media (min-width: 64em) {
   .wiki-content {
     width: 80%
+  }
+  .wiki-content.wiki-content {
+    border-radius: 0 1em 1em 0;
+  }
+  .wiki-toc {
+    border-radius: 1em 0 0 1em;
+    margin-top: 1em;
   }
 }
