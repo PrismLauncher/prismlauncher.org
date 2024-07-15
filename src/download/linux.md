@@ -44,17 +44,19 @@ apk add prismlauncher
 
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
 
+An official package is available in the Arch Linux repositories:
+[![prismlauncher](https://img.shields.io/badge/archlinux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
+
 There are several AUR packages available:  
-[![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
 [![prismlauncher-qt5](https://img.shields.io/badge/aur-prismlauncher--qt5-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5/)  
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
 [![prismlauncher-qt5-git](https://img.shields.io/badge/aur-prismlauncher--qt5--git-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5-git/)
 
-## Installing with an AUR helper
+## Installing
 
 ```bash
 # stable source package:
-yay -S prismlauncher
+pacman -S prismlauncher
 # latest git package:
 yay -S prismlauncher-git
 ```
@@ -242,7 +244,7 @@ zypper install prismlauncher-qt5-nightly
 
 Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
 
-_Note: You may need to edit the ```PrismLauncher.SlackBuild``` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file._
+_Note: You may need to edit the `PrismLauncher.SlackBuild` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file._
 
 ```bash
 # download launcher slackbuild archive
