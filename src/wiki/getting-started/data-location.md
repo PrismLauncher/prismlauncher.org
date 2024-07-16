@@ -17,8 +17,6 @@ Prism Launcher stores your data in your OS's standard application data folder. F
 | Linux                      | `~/.local/share/PrismLauncher`                                  |
 | Flatpak                    | `~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher` |
 
-*
-
 ## Internal folder structure
 
 | Folder       | Purpose                                                        |
