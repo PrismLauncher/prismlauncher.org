@@ -60,24 +60,27 @@ setopt interactivecomments
 
 ```zsh
 mkdir build
-cd build
 cmake \
+ -S . \
+ -B build \
+ -G Ninja \
  -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
  -DCMAKE_INSTALL_PREFIX="dist" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
  -DQt6_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=11 \
  -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
  -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  -DLauncher_BUILD_PLATFORM=macOS \
 # if you want to enable LTO/IPO:
  -DENABLE_LTO=ON
 #-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
-#-DLauncher_QT_VERSION_MAJOR=5 \ # if you want to use Qt 5
- ..
-make install
+#-DLauncher_QT_VERSION_MAJOR=5 # if you want to use Qt 5
+
+cmake --build build
+cmake --install build
 ```
 
 Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
