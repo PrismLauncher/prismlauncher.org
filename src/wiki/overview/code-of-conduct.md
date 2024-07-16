@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Code of Conduct
   parent: Overview
-  order: 2
+  order: 1
 ---
 
 # Contributor Covenant Code of Conduct

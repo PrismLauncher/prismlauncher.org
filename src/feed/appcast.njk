@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     <link>{{ absoluteUrl }}</link>
     <language>en</language>
     {%- for post in collections.posts | reverse %}
-    {%- if post.data.release_version and post.data.mac_signature %}
+    {%- if post.data.release_version and post.data.macos_signature %}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
       <item>
         <title>{{ post.data.title }} (macOS)</title>
@@ -25,12 +25,12 @@ eleventyExcludeFromCollections: true
         {% if post.data.critical_update %}<sparkle:criticalUpdate></sparkle:criticalUpdate>{% endif %}
         {% if post.data.minimum_autoupdate_version %}<sparkle:minimumAutoupdateVersion>{{ post.data.minimum_autoupdate_version }}</sparkle:minimumAutoupdateVersion>{% endif %}
         {% if post.data.phased_rollout_interval %}<sparkle:phasedRolloutInterval>{{ post.data.phased_rollout_interval }}</sparkle:phasedRolloutInterval>{% endif %}
-        {%- if post.data.mac_signature %}
+        {%- if post.data.macos_signature %}
         <enclosure sparkle:os="macos"
-            url="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-macOS-{{ post.data.release_version }}.tar.gz"
+            url="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{ post.data.release_version }}/PrismLauncher-macOS-{{ post.data.release_version }}.{{ post.data.macos_file_extension }}"
             length="0"
             type="application/octet-stream"
-            sparkle:edSignature="{{ post.data.mac_signature }}"/>
+            sparkle:edSignature="{{ post.data.macos_signature }}"/>
         {%- endif %}
       </item>
     {%- endif %}

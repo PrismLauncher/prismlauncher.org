@@ -2,22 +2,23 @@
 title: Prism Launcher Release 5.0, now available
 description: Your game has crashed!
 date: 2022-10-19
-release_version: 5.0
+release_version: "5.0"
 minimum_macos_version: 10.14.0
-mac_signature: tTJSqjcCl47ih9LxrsMQLhcFjerfeVxW4rWXfEZ60wuR0Z0if1ZyHIEHrd26pYrL5/WyihgJbN1FLFQKyl/lCg==
+macos_file_extension: tar.gz
+macos_signature: tTJSqjcCl47ih9LxrsMQLhcFjerfeVxW4rWXfEZ60wuR0Z0if1ZyHIEHrd26pYrL5/WyihgJbN1FLFQKyl/lCg==
 tags:
   - release
 ---
 
-Hi there,
+Hi there!
 
-we are bringing you ~~PolyMC~~ Prism Launcher 5.0!
+We are bringing you ~~PolyMC~~ Prism Launcher 5.0!
 This major release not only comes with a new versioning system, but also a new name!
 But why you ask?
 Well, stuff happened and we are going to talk about everything that went down in a future blog post.
-For now we want you to regain access to the best Minecraft launcher out there.
+For now, we want you to regain access to the best Minecraft launcher out there.
 
-Let's go over the major changes since the last *PolyMC* release back in September.
+Let's go over the major changes since the last _PolyMC_ release back in September.
 Our macOS users on Apple M1/M2 processors as well as our Nintendo Switch Linuxers can rejoice, as you can finally run all Minecraft versions on those platforms without needing to make any changes on your end.
 We have to thank [some](https://github.com/r58playz/) [community](https://github.com/theofficialgman/) [members](https://github.com/ViRb3) as well as the folks over at [MinecraftMachina](https://github.com/MinecraftMachina/) for helping out with this feature!
 
@@ -49,6 +50,7 @@ Special thanks to our community members [Boba](https://cmdplusv.neocities.org/),
 ### Changed
 
 - Allow double clicking to mark mods for download by @ErogigGit in PolyMC/PolyMC#1165
+- Allow modifying some resource while the instance is running by @CutestNekoAqua in #59
 - Improve language model by @Scrumplex in PolyMC/PolyMC#1164
 - Improve loading speed of the application by @flowln in PolyMC/PolyMC#878
 - Merge Launch Buttons by @TayouVR in PolyMC/PolyMC#1190

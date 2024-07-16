@@ -14,7 +14,7 @@ Yet again we have some fixes for you!
 
 - Add support for Quilt modpacks on Technic by @kthchew in #685
 - [Linux] Added support for Nix 2.7 by @TheOPtimal in #286
-- [Windows] Add version information to setup executable by @kthchew in #679
+- [Windows] Add version information to the setup executable by @kthchew in #679
 
 ### Changed
 

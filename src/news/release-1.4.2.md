@@ -4,7 +4,6 @@ description: Not Enough Fixes
 date: 2022-09-08
 release_version: 1.4.2
 minimum_macos_version: 10.14.0
-mac_signature: dU+pOB6d8WvEROprt/tx3Fx3bda8NjbRAEBbpIhvM3es9BPGtfJTv/9hiXDDKBRBvNPtoCbWvuBnFAKmtMJKDA==
 tags:
   - release
 ---
@@ -27,7 +26,7 @@ Thanks to all contributors, who have worked on this release!
 - Bump to C++17 by @Scrumplex and @LennyMcLennington in #941
 - Hide 'More news...' button if the news aren't loaded yet by @flowln in #1049
 - Make 'About' dialog smaller by @DioEgizio in #1107
-- Make Coremods / Mods seperation more clear by @Scrumplex in #1035
+- Make Coremods / Mods separation more clear by @Scrumplex in #1035
 - Update copyright notices by @DioEgizio in #1073
 - [macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014
 

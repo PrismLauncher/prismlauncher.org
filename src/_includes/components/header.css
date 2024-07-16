@@ -1,18 +1,3 @@
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.home {
-  color: var(--primary-text);
-  height: 3.5em;
-}
-
-.home :link:not(:hover) {
-  text-decoration: none;
-}
-
 /* Nav */
 nav {
   padding: 0.5em;
@@ -23,7 +8,7 @@ nav {
   border-radius: 0 0 1em 1em;
 }
 
-.nav {
+.main-menu {
   padding: 0;
   margin: 0;
   display: flex;
@@ -64,12 +49,6 @@ nav {
   align-items: center;
 }
 
-.navbar a svg {
-  height: 4em;
-  width: auto;
-}
-
-
 .nav-item {
   display: inline-block;
   font-size: 1.2em;
@@ -92,6 +71,9 @@ nav {
   z-index: 0;
 }
 
+.hero-description {
+  color: #fff;
+}
 
 .hero-title {
   font-size: 3em;
@@ -117,6 +99,7 @@ header .links {
   header .container {
     flex-direction: row;
   }
+
   header .links {
     flex-direction: row;
   }

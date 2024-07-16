@@ -4,7 +4,6 @@ description: Roughly Enough Fixes
 date: 2022-07-28
 release_version: 1.4.1
 minimum_macos_version: 10.14.0
-mac_signature: uANdz2kfHkcqN3Q+TFcZEF2j+tbFaHBcPaACwGi0AdRho1faw56g4yXWV1VGttSEslibY602knCCE+Zj6RIPAw==
 tags:
   - release
 ---
@@ -24,7 +23,7 @@ Thanks to all contributors, who have worked on this release!
 
 - Fix crash when JAR-mods are applied by @flowln in #956
 - Fix filter on resources pages (e.g. Mods page) by @flowln in #961
-- Fix variables in pre launch/post exit hooks by @Scrumplex in #952
+- Fix variables in pre-launch/post-exit hooks by @Scrumplex in #952
 - Make adding multiple accounts possible again by @flowln in #974
 - Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699
 

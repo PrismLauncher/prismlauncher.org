@@ -26,7 +26,7 @@ Sadly, our request was dismissed, and most of our team members were banned from 
 
 <img alt="Screenshot of public chat with MultiMC maintainer" src="/img/news/moving-on/discord.png" style="width: 40em">
 
-This has sparked many internal discussions both at PolyMC as well as MultiMC.
+This has sparked many internal discussions both at PolyMC and MultiMC.
 In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.
 
 In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.
@@ -34,13 +34,13 @@ The major new feature is the integrated mod downloader that supports Modrinth an
 We also plan to clean the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.
 
 Additionally, we have reorganized PolyMC since its inception to be more community-centric.
-One of the founders has stepped down as a maintainer and we have formed the *PolyMC Core Team*.
+One of the founders has stepped down as a maintainer, and we have formed the *PolyMC Core Team*.
 You can read more about it in [this blogpost](../new-maintainers/).
 
 We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.
 While we are working on getting 1.1.0 out, check out our future plans:
 
-**Sneak peak of future plans**:
+**Sneak peek of future plans**:
 
 - Rewrite of metadata generators, to make them easier to work with. See progress over on [PolyMC/polymorphosis][gh-polymorphosis]
 - Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on [PolyMC/PolyMC#167][rfc-0001]
