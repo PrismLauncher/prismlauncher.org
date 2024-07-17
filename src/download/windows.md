@@ -12,9 +12,9 @@ eleventyNavigation:
       <div>
         <h1>Windows Download</h1>
         <p>Windows 10/11 64bit</p>
-        <p>Requires <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable 2022 x64</a> to run</p>
+        <p>The Installer (.exe) variant requires <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable 2022 x64</a> to run</p>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Setup-{{version.current}}.exe">Installer (.exe)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Portable-{{version.current}}.zip">Portable (.zip)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Portable-{{version.current}}.zip">Portable (.zip)</a>
         <p>Windows 10/11 ARM64</p>
         <p>Requires <a href="https://aka.ms/vs/17/release/vc_redist.arm64.exe">Microsoft Visual C++ Redistributable 2022 arm64</a> to run</p>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Setup-{{version.current}}.exe">Installer (ARM64) (.exe)</a>
@@ -38,15 +38,6 @@ These builds are built with MinGW and do not require the Visual C++ Redistributa
 Note: These builds are less tested than the MSVC builds.
 
 - [Installer (64bit) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Setup-{{version.current}}.exe)
-- [Portable (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Portable-{{version.current}}.zip)
-
-#### System Installs
-
-These are ZIP files, but they use the system directory for the data and are not portable.
-
-- [System Install (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-{{version.current}}.zip)
-- [System Install (ARM64) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-{{version.current}}.zip)
-- [System Install (MinGW-w64) (64bit) (.zip)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-{{version.current}}.zip)
 
 ### CLI (community-maintained)
 

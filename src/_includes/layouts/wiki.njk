@@ -28,6 +28,40 @@ templateClass: tmpl-wiki
     {%- if eleventyNavigation -%}
       {%- set navKey = eleventyNavigation.key -%}
     {%- endif -%}
-    {{ collections.wiki | eleventyNavigation | eleventyNavigationToHtml({ activeKey: navKey, listClass: 'wiki-toc-list', activeListItemClass: 'wiki-toc-active' }) | safe }}
+    {% set navPages = collections.wiki | eleventyNavigation %}
+    {% macro renderNavListItem(entry) -%}
+    
+    {%- if entry.children.length -%}
+    <li class="toggle {% if entry.url == page.url %}wiki-toc-active{% endif %}">
+      {% macro openDetails(entry) -%}
+        {% if entry.url == page.url %}
+        open
+        {% else %}
+        {% for child in entry.children %}
+          {{ openDetails(child) }}
+        {% endfor %}
+        {% endif %}
+      {% endmacro %}
+      <details {{ openDetails(entry) }}>
+        <summary>
+          <a href="{{ entry.url }}">{{ entry.title }}</a>
+        </summary>
+        <ul>
+          {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+        </ul>
+      </details>
+    </li>
+    {%- else -%}
+    <li class="section {% if entry.url == page.url %}wiki-toc-active{% endif %}">
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+    {% endif %}
+    </li>
+    {%- endmacro %}
+
+    <ul class="wiki-toc-list">
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+    </ul>
+    <!--- {{ collections.wiki | eleventyNavigation | eleventyNavigationToHtml({ activeKey: navKey, listClass: 'wiki-toc-list', activeListItemClass: 'wiki-toc-active' }) | safe }} --->
   </div>
 </div>
