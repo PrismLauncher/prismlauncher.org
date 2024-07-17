@@ -55,7 +55,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "key", widget: "string" }
-          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Help Pages"}
+          - { label: "Parent Content", name: "parent", widget: "hidden", default: "Help pages"}
           - { label: "Page Order", name: "order", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 

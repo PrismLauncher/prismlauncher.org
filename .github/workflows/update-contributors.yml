@@ -45,8 +45,19 @@ jobs:
           git add :/
           git commit -m "Update contributors" || true
 
-      - name: Push changes
-        uses: ad-m/github-push-action@9870d48124da805820c70ebc6ba563c715551019
+      - name: Create PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          base: "main"
+          branch: "update-contributors"
+          delete-branch: true
+          title: "chore: update contributors"
+          body: "Automated pull request to update contributors"
+
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: merge
