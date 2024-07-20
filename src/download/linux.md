@@ -44,53 +44,20 @@ apk add prismlauncher
 
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
 
-There are several AUR packages available:  
-[![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://aur.archlinux.org/packages/prismlauncher/)  
-[![prismlauncher-qt5](https://img.shields.io/badge/aur-prismlauncher--qt5-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5/)  
+it's in [extra]:  
+[![prismlauncher](https://img.shields.io/badge/aur-prismlauncher-blue)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
+# for the git version
 [![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
-[![prismlauncher-qt5-git](https://img.shields.io/badge/aur-prismlauncher--qt5--git-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5-git/)
-
-## Installing with an AUR helper
+## Installing
 
 ```bash
 # stable source package:
-yay -S prismlauncher
+pacman -S prismlauncher
 # latest git package:
 yay -S prismlauncher-git
 ```
 
-If you want to use Qt 5 to build the packages instead:
-
-```bash
-# stable Qt 5 source package:
-yay -S prismlauncher-qt5
-# stable Qt 5 binary package:
-yay -S prismlauncher-qt5-bin
-# latest Qt 5 git package:
-yay -S prismlauncher-qt5-git
-```
-
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-
-## Installation using Chaotic-AUR
-
-If you have not already enabled the Chaotic-AUR follow their instructions on <https://aur.chaotic.cx/> to enable it.
-
-```bash
-# stable package:
-sudo pacman -S prismlauncher
-# latest git package:
-sudo pacman -S prismlauncher-git
-```
-
-If you want to use Qt 5 to build the packages instead:
-
-```bash
-# stable Qt 5 package:
-sudo pacman -S prismlauncher-qt5
-# latest Qt 5 git package:
-sudo pacman -S prismlauncher-qt5-git
-```
 
 </div>
 
