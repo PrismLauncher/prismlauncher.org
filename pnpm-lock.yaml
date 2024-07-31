@@ -27,8 +27,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       '@fontsource/inter':
-        specifier: 5.0.19
-        version: 5.0.19
+        specifier: 5.0.20
+        version: 5.0.20
       '@fortawesome/fontawesome-free':
         specifier: 6.6.0
         version: 6.6.0
@@ -114,8 +114,8 @@ packages:
   '@emnapi/runtime@0.45.0':
     resolution: {integrity: sha512-Txumi3td7J4A/xTTwlssKieHKTGl3j4A1tglBx72auZ49YK7ePY6XZricgIg9mnZT4xPfA+UPCUdnhRuEFDL+w==}
 
-  '@fontsource/inter@5.0.19':
-    resolution: {integrity: sha512-tVU77yjKnsoUotrXGYbbYxmL9nbm/MSo3deZietmf8V2FEDlbi9fvkJHMrYbo7ZsOqR1AYBBqRYmemz4pSE5Mg==}
+  '@fontsource/inter@5.0.20':
+    resolution: {integrity: sha512-rtw2F7xfM7rJmmnncXnR4ADr5wXsp4GyN1O1jmQJ1PMjAK+bm620/ZkQkeOYOkGoa09OksGinOeMA+Mkt6K9PQ==}
 
   '@fortawesome/fontawesome-free@6.6.0':
     resolution: {integrity: sha512-60G28ke/sXdtS9KZCpZSHHkCbdsOGEhIUGlwq6yhY74UpTiToIh8np7A8yphhM4BWsvNFtIvLpi4co+h9Mr9Ow==}
@@ -1434,7 +1434,7 @@ snapshots:
       tslib: 2.6.2
     optional: true
 
-  '@fontsource/inter@5.0.19': {}
+  '@fontsource/inter@5.0.20': {}
 
   '@fortawesome/fontawesome-free@6.6.0': {}
 
