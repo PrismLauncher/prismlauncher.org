@@ -37,7 +37,7 @@
     "@fortawesome/fontawesome-free": "6.6.0",
     "axios": "1.7.3",
     "clean-css": "5.3.3",
-    "luxon": "3.4.4",
+    "luxon": "3.5.0",
     "markdown-it": "14.1.0",
     "markdown-it-anchor": "9.0.1",
     "markdown-it-table-of-contents": "0.6.0",
