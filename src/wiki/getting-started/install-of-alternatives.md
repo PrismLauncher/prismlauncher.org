@@ -39,7 +39,7 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
 
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" height="20"> Indium
 
