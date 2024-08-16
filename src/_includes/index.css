@@ -40,10 +40,12 @@
   --danger-light: hsl(17, 95%, 80%);
   
   background-color: var(--background);
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    --code: #F6F8FA;
     --primary-text: #333;
     --primary-text-muted: #666;
     --background: #ffffff;
@@ -52,6 +54,8 @@
     --inline-code: #eff1f3;
     --inline-code-fg: #24292f;
     --table-border: #d9d9d9;
+    background-color: var(--background);
+    color-scheme: light;
   }
 }
 
@@ -170,6 +174,16 @@ code {
   background-color: var(--code);
 }
 
+:not(pre)>code {
+  padding: 0.18em;
+}
+
+@media (prefers-color-scheme: light) {
+  code {
+    color: #1F2328;
+  }
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -190,7 +204,7 @@ code {
 }
 
 .highlight-line-isdir {
-  color: #b0b0b0;
+  color: #b00808;
   background-color: #222;
 }
 
@@ -217,6 +231,12 @@ code {
   background-color: var(--background);
   border-radius: 1em;
   padding: 1em;
+}
+
+.content.compact {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {
@@ -307,6 +327,11 @@ code {
   font-size: 1em;
 }
 
+.button.fullwidth {
+  width: 100%;
+}
+
+
 /* Direct Links / Markdown Headers */
 .direct-link {
   text-decoration: none;
@@ -383,7 +408,7 @@ a.direct-link:focus:visited,
 .notification {
   border-radius: 1em;
   position: relative;
-  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  padding: 1em;
   margin-bottom: 1em;
   color: #fff;
 }

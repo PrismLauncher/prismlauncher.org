@@ -4,7 +4,6 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-
 # Installing Java
 
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
@@ -75,31 +74,31 @@ On Linux, it's recommended to use your package manager for installing Java.
 On the COPR package all required Java versions should be installed, but this is the command to install it:
 
 ```bash
-sudo dnf install java-1.8.0-openjdk java-17-openjdk
+sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk
 ```
 
 ### Void Linux
 
 ```bash
-sudo xbps-install openjdk17 openjdk8
+sudo xbps-install openjdk17-jre openjdk8-jre openjdk21-jre 
 ```
 
 ### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
-sudo pacman -S jdk17-openjdk jdk8-openjdk
+sudo pacman -S jre17-openjdk jre8-openjdk jre21-openjdk
 ```
 
 ### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
-sudo apt install openjdk-17-jdk openjdk-8-jdk
+sudo apt install openjdk-17-jre openjdk-8-jre openjdk-21-jre
 ```
 
 ### Debian, MX Linux
 
 ```bash
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jre openjdk-21-jre
 ```
 
 Java 8 is not available in Debian 10+ due to lack of security support, but you can use the Adoptium repository for security support until 2026:

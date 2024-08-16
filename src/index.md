@@ -9,7 +9,7 @@ hero:
     dark: ./src/img/screenshots/LauncherDark.png
     light: ./src/img/screenshots/LauncherLight.png
   button:
-    url: /download
+    url: /download?from=button
     content: 'Download Now'
 ---
 
@@ -90,7 +90,7 @@ hero:
 
 To talk directly to us and get involved with development:
 
-<a class="button type-link size-small" href="https://discord.gg/prismlauncher" target="_blank">Prism Launcher Discord</a>
+<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">Prism Launcher Discord</a>
 
 ## Matrix
 

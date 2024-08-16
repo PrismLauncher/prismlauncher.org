@@ -68,6 +68,12 @@ Head to your preferred SteamGridDB page and click on the "BOOP" button on each a
 
 That's it! You should now see the artwork in your Steam Library.
 
+### <img src="https://raw.githubusercontent.com/intergrav/Branding/main/deckcraft/mark/mark_svg.svg" height="20"> DeckCraft
+
+[DeckCraft](https://modrinth.com/project/deckcraft) is a modpack designed to make it easier to play Minecraft on the Steam Deck. It includes a variety of optimizations, extra features, pre-installed shaders, and more. It works out-of-the-box and doesn't require any manual configuration to start playing.
+
+You can install it through the launcher by heading to `Add Instance`, select the `Modrinth` tab, then press `STEAM` + `X` together to open the keyboard and search for "DeckCraft". After this, select your preferred version and install it.
+
 ### Tips and Tricks
 
 - For the best experience, go ahead and enable `Start Minecraft maximized`, and `Close Prism Launcher after game window opens` in the launcher's settings, under the `Minecraft` tab.

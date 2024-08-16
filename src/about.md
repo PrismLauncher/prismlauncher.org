@@ -33,7 +33,7 @@ Prism Launcher is a custom launcher for Minecraft that was forked from MultiMC. 
 # Maintainers
 
 <ul class="user-list">
-  {% for user in people.users %}
+  {% for user in developers.users %}
   <li class="user-info">
     <a href="{{user[2]}}">
       <img src="{{user[1]}}" alt="Avatar">
@@ -44,6 +44,22 @@ Prism Launcher is a custom launcher for Minecraft that was forked from MultiMC. 
   </li>
   {% endfor %}
 </ul>
+
+# Moderators
+
+<ul class="user-list">
+  {% for user in moderators.users %}
+  <li class="user-info">
+    <a href="{{user[2]}}">
+      <img src="{{user[1]}}" alt="Avatar">
+      <div class="user-info-overlay">
+        <div class="user-name">{{user[0]}}</div>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
 </div>
 <div class="content top">
 

@@ -4,7 +4,6 @@ description: Roughly Enough Fixes
 date: 2022-07-28
 release_version: 1.4.1
 minimum_macos_version: 10.14.0
-mac_signature: uANdz2kfHkcqN3Q+TFcZEF2j+tbFaHBcPaACwGi0AdRho1faw56g4yXWV1VGttSEslibY602knCCE+Zj6RIPAw==
 tags:
   - release
 ---

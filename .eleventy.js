@@ -76,15 +76,18 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/.well-known");
+  eleventyConfig.addPassthroughCopy("src/_redirects"); // Netlify redirects
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/inter": "assets/fonts/inter",
   });
   eleventyConfig.addPassthroughCopy({
     "src/_includes/components/forkawesome": "assets/forkawesome",
   });
+  
 
 
   // Add plugins
@@ -95,6 +98,10 @@ module.exports = function (eleventyConfig) {
 
   // Add shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", image);
+
+  eleventyConfig.addPairedShortcode("markdown", (content) => {
+    return markdownLibrary.render(content);
+  });
 
   // Alias `layout: post` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
