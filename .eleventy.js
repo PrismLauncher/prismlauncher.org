@@ -79,6 +79,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/giscus-theme.css");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy("src/_redirects"); // Netlify redirects
   eleventyConfig.addPassthroughCopy({
@@ -87,6 +88,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_includes/components/forkawesome": "assets/forkawesome",
   });
+  
 
 
   // Add plugins
