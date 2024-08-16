@@ -395,7 +395,7 @@ a.direct-link:focus:visited,
 .notification {
   border-radius: 1em;
   position: relative;
-  padding: 1em;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   margin-bottom: 1em;
   color: #fff;
 }

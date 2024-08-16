@@ -24,24 +24,4 @@ templateClass: tmpl-post
   </ul>
   {%- endif %}
   {%- endif %}
-
-  {% if comments != false %}
-    {% include "partials/comments.njk" %}
-    <script src="https://giscus.app/client.js"
-        data-repo="PrismLauncher/prismlauncher.org"
-        data-repo-id="R_kgDOIPwAOw"
-        data-category="News"
-        data-category-id="DIC_kwDOIPwAO84ChtRq"
-        data-mapping="{{ page.url }}"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
-  {% endif %}
 </div>
