@@ -3,6 +3,7 @@ permalink: /wiki/
 eleventyNavigation:
   key: Overview
   order: 1
+comments: false
 --- 
 
 # Welcome to the Prism Launcher Wiki!

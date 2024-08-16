@@ -4,13 +4,6 @@ templateClass: tmpl-wiki
 ---
 <div class="row row-reverse">
   <div class="wiki-content content">
-  <!---  {% if eleventyNavigation and eleventyNavigation.parent %}
-    <nav class="breadcrumb" aria-labelledby="breadcrumb">
-      <h2 class="sr-only" id="breadcrumb">Breadcrumbs: </h2>
-      {{ collections.wiki | eleventyNavigationBreadcrumb(eleventyNavigation.parent, {includeSelf: true}) | eleventyNavigationToHtml({ listClass: 'lo lo-inline', listItemClass: 'lo-c', activeListItemClass: 'breadcrumb-active' }) | safe }}
-    </nav> 
-    {% endif %} --->
-    
     {{ content | safe }}
     
     {% if eleventyNavigation and eleventyNavigation.key %}
@@ -22,6 +15,26 @@ templateClass: tmpl-wiki
     {{ otherPages | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'inlinelist inlinelist-no-nest', listItemClass: 'wiki-tag', activeListItemClass: 'wiki-tag-active' }) | safe }}
     {% endif %}
 
+    {% endif %}
+    {% if comments != false %}
+      {% include "partials/comments.njk" %}
+
+      <script src="https://giscus.app/client.js"
+        data-repo="PrismLauncher/prismlauncher.org"
+        data-repo-id="R_kgDOIPwAOw"
+        data-category="Wiki"
+        data-category-id="DIC_kwDOIPwAO84ChtRp"
+        data-mapping="{{ page.url }}"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
     {% endif %}
   </div>
   <div class="wiki-toc">
@@ -62,6 +75,5 @@ templateClass: tmpl-wiki
     <ul class="wiki-toc-list">
     {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
     </ul>
-    <!--- {{ collections.wiki | eleventyNavigation | eleventyNavigationToHtml({ activeKey: navKey, listClass: 'wiki-toc-list', activeListItemClass: 'wiki-toc-active' }) | safe }} --->
   </div>
 </div>
