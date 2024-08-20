@@ -33,7 +33,7 @@ or for a specific instance:
 
 > Right click an instance > Edit > Settings > Java > Java installation > Auto-Detect...
 
-If Java you just installed doesn't show up, try pressing Refresh. If you don't have your desired Java version installed, keep reading.
+If you have just installed a version of Java and it doesn't show up, try pressing Refresh or restart the launcher. If you don't have your desired Java version installed, keep reading.
 
 ## Installing Java on Windows
 
