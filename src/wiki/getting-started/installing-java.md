@@ -21,6 +21,20 @@ If you would like to learn more about OpenJDK and the vendors mentioned in this 
 
 Otherwise, continue reading for quick download links and a guide for which one to choose.
 
+## Selecting Java
+
+Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
+
+If you installed Java after already completing the first time setup process, you can access and modify your Java configuration globally for all instances through:
+
+> Settings > Java > Java Runtime > Auto-Detect...
+
+or for a specific instance:
+
+> Right click an instance > Edit > Settings > Java > Java installation > Auto-Detect...
+
+If you have just installed a version of Java and it doesn't show up, try pressing Refresh or restart the launcher. If you don't have your desired Java version installed, keep reading.
+
 ## Installing Java on Windows
 
 **First, check your CPU architecture.** Here is a method that works on all Windows versions:
@@ -37,14 +51,17 @@ Then, download the appropriate Java:
 
 | Minecraft | CPU type | Download page | Viable alternatives |
 |:---:|:---:|---|---|
-| Minecraft **1.17** or above | x86-64 | [Microsoft OpenJDK 17 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-x64.msi) | Azul, Coretto, Temurin, GraalVM |
-|  | x86 | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?release=17) | Azul, Coretto |
+| Minecraft **1.20.5** or above | x86-64 | [Microsoft OpenJDK 21 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-x64.msi) | Azul, Coretto, Temurin, GraalVM |
+|  | x86 | Not available :( |  |
+|  | aarch64 | [Microsoft OpenJDK 21 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-aarch64.msi) | Azul |
+| Minecraft **1.17** to **1.20.4** | x86-64 | [Microsoft OpenJDK 17 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-x64.msi) | Azul, Coretto, Temurin, GraalVM |
+|  | x86 | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?version=17&arch=x86&os=windows) | Azul, Coretto |
 |  | aarch64 | [Microsoft OpenJDK 17 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-aarch64.msi) | Azul |
-| Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?release=8) | Azul, Coretto |
-|  | x86 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?release=8) | Azul, Coretto |
+| Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x64&os=windows) | Azul, Coretto |
+|  | x86 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x86&os=windows) | Azul, Coretto |
 |  | aarch64 | Not available :( |  |
 
-**Tip:** If you are on Windows 11, you can automatically install 8 and 17 by running `winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
+**Tip:** If you are on Windows 11, you can automatically install 8, 17 and 21 by running `winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
 
 ## Installing Java on macOS
 
@@ -60,8 +77,10 @@ Then, download the appropriate Java:
 
 | Minecraft | CPU type | Download page | Viable alternatives |
 |:---:|:---:|---|---|
-| Minecraft **1.17** or above | x86-64 | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
-|  | aarch64 | [Microsoft OpenJDK 17 for macOS aarch64, `.msi` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
+| Minecraft **1.20.5** or above | x86-64 | [Microsoft OpenJDK 21 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
+|  | aarch64 | [Microsoft OpenJDK 21 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
+| Minecraft **1.17** to **1.20.4** | x86-64 | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
+|  | aarch64 | [Microsoft OpenJDK 17 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
 | Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8) | Azul, Coretto |
 |  | aarch64 | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto |
 
@@ -122,14 +141,6 @@ The Prism Launcher Flatpak already bundles Java.
 ### NixOS
 
 The Prism Launcher NixOS package already bundles Java.
-
-## Using Java
-
-Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
-
-If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:
-
-> Settings > Java > Java Runtime > Auto-detect...
 
 ## Special cases
 
