@@ -78,9 +78,9 @@ Then, download the appropriate Java:
 | Minecraft | CPU type | Download page | Viable alternatives |
 |:---:|:---:|---|---|
 | Minecraft **1.20.5** or above | x86-64 | [Microsoft OpenJDK 21 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
-|  | aarch64 | [Microsoft OpenJDK 21 for macOS aarch64, `.msi` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
+|  | aarch64 | [Microsoft OpenJDK 21 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
 | Minecraft **1.17** to **1.20.4** | x86-64 | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto, Temurin, GraalVM |
-|  | aarch64 | [Microsoft OpenJDK 17 for macOS aarch64, `.msi` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
+|  | aarch64 | [Microsoft OpenJDK 17 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download) | Azul, Coretto |
 | Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8) | Azul, Coretto |
 |  | aarch64 | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto |
 
