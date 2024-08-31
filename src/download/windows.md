@@ -1,9 +1,8 @@
 ---
 title: Download Prism Launcher for Windows
-permalink: /download/
 eleventyNavigation:
   key: <i class="fa fa-windows" aria-hidden="true"></i> Windows
-  order: 1
+  order: 4
 ---
 
 <div class="download-content">
@@ -18,7 +17,7 @@ eleventyNavigation:
         <p>Windows 10/11 ARM64</p>
         <p>Requires <a href="https://aka.ms/vs/17/release/vc_redist.arm64.exe">Microsoft Visual C++ Redistributable 2022 arm64</a> to run</p>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Setup-{{version.current}}.exe">Installer (ARM64) (.exe)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Portable-{{version.current}}.zip">Portable (ARM64) (.zip)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-arm64-Portable-{{version.current}}.zip">Portable (ARM64) (.zip)</a>
       </div>
     </div>
     <div class="column">

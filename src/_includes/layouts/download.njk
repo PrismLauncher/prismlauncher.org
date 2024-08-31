@@ -21,8 +21,8 @@ eleventyComputed:
     if (navigator.platform.indexOf("Mac") !== -1) {
       appendToURL(url, "mac");
       window.location.href = url.href;
-    } else if (navigator.platform.indexOf("nix") !== -1 || navigator.platform.indexOf("nux") !== -1 || navigator.userAgent.indexOf("X11") !== -1) {
-      appendToURL(url, "linux");
+    } else if (navigator.platform.indexOf("Win") !== -1) {
+      appendToURL(url, "windows");
       window.location.href = url.href;
     }
   }
