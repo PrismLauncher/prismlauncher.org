@@ -1,8 +1,9 @@
 ---
 title: Download Prism Launcher for Linux
+permalink: /download/
 eleventyNavigation:
   key: <i class="fa fa-linux" aria-hidden="true"></i>Linux
-  order: 3
+  order: 1
 ---
 
 <div class="download-content">
