@@ -1,33 +1,28 @@
-{
-  inputs,
-  self,
-  ...
-}: {
+{inputs, ...}: {
+  imports = [inputs.git-hooks.flakeModule];
   perSystem = {
-    system,
+    config,
     pkgs,
     ...
   }: {
-    checks = {
-      pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
-        src = self;
-        hooks = {
-          markdownlint.enable = true;
-
-          alejandra.enable = true;
-          deadnix.enable = true;
-          nil.enable = true;
-
-          prettier = {
-            enable = true;
-            excludes = ["pnpm-lock.yaml"];
-          };
-        };
+    pre-commit.settings = {
+      excludes = [
+        "flake.lock"
+        "pnpm-lock.yaml"
+      ];
+      hooks = {
+        markdownlint.enable = true;
+        alejandra.enable = true;
+        deadnix.enable = true;
+        nil.enable = true;
+        prettier.enable = true;
       };
     };
 
     devShells.default = pkgs.mkShell {
-      inherit (self.checks.${system}.pre-commit-check) shellHook;
+      shellHook = ''
+        ${config.pre-commit.installationScript}
+      '';
       packages = with pkgs; [
         nodejs
         pnpm
