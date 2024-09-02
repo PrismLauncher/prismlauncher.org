@@ -28,14 +28,10 @@
 
     devShells.default = pkgs.mkShell {
       inherit (self.checks.${system}.pre-commit-check) shellHook;
-      packages =
-        (with pkgs; [
-          nodejs
-        ])
-        ++ (with pkgs.nodePackages; [
-          pnpm
-          yarn
-        ]);
+      packages = with pkgs; [
+        nodejs
+        pnpm
+      ];
     };
 
     formatter = pkgs.alejandra;
