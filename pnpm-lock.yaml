@@ -48,8 +48,8 @@ importers:
         specifier: 9.2.0
         version: 9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
       markdown-it-table-of-contents:
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: 0.8.0
+        version: 0.8.0
       markdownlint-cli:
         specifier: 0.41.0
         version: 0.41.0
@@ -848,8 +848,8 @@ packages:
       '@types/markdown-it': '*'
       markdown-it: '*'
 
-  markdown-it-table-of-contents@0.7.0:
-    resolution: {integrity: sha512-wK15VoeasDlAyr4WM12rMzsdFEsG35LAt7eXCwgMiSbFEvszsZjWWDMqZucOQoyDTMxZDS8dUCYvWGSZX3q6rg==}
+  markdown-it-table-of-contents@0.8.0:
+    resolution: {integrity: sha512-ihgUROZLw4ZsojxXrNZJP+VxYL4yTino51TP7eVYccEwgsYGC6CNXxv5G5JI89NhUb52wiRaMhEtWpiMAeRirA==}
     engines: {node: '>6.4.0'}
 
   markdown-it@13.0.2:
@@ -2115,7 +2115,7 @@ snapshots:
       '@types/markdown-it': 14.1.2
       markdown-it: 14.1.0
 
-  markdown-it-table-of-contents@0.7.0: {}
+  markdown-it-table-of-contents@0.8.0: {}
 
   markdown-it@13.0.2:
     dependencies:

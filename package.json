@@ -40,7 +40,7 @@
     "luxon": "3.5.0",
     "markdown-it": "14.1.0",
     "markdown-it-anchor": "9.2.0",
-    "markdown-it-table-of-contents": "0.7.0",
+    "markdown-it-table-of-contents": "0.8.0",
     "markdownlint-cli": "0.41.0"
   },
   "packageManager": "pnpm@9.10.0"
