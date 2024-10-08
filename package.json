@@ -47,7 +47,8 @@
   "packageManager": "pnpm@9.12.2",
   "pnpm": {
     "overrides": {
-      "whatwg-url": "14.0.0"
+      "whatwg-url": "14.0.0",
+      "js-yaml" : "4.1.0"
     }
   }
 }
