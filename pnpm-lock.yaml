@@ -19,8 +19,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1
       '@11ty/eleventy-img':
-        specifier: 4.0.2
-        version: 4.0.2
+        specifier: 5.0.0
+        version: 5.0.0
       '@11ty/eleventy-navigation':
         specifier: 0.3.5
         version: 0.3.5
@@ -75,8 +75,8 @@ packages:
     resolution: {integrity: sha512-yIiLM5ziBmg86i4TlXpBdcIygJHvh/GgPJyAiFOckO9H4y9cQDM8eIcJCUQ4Mum0NEVui/OjhEut2R08xw0vlQ==}
     engines: {node: '>=14'}
 
-  '@11ty/eleventy-img@4.0.2':
-    resolution: {integrity: sha512-MSCkZRJk9rWa7nojx9HBMZJePOrm+V3XNpT091qguj61SG5UsgXbxAkoeejO3npmKIQJTyVIV/rrA6d7xZYOvw==}
+  '@11ty/eleventy-img@5.0.0':
+    resolution: {integrity: sha512-hJ4X5ZIRSOCooL0uXegj+nZi1abWNj22BR4PzF6e9iJg9DGYGxPrC0rg0Hy+7xzP7mzTYiOpDjZVv/NgrHNx6w==}
     engines: {node: '>=18'}
 
   '@11ty/eleventy-navigation@0.3.5':
@@ -1277,12 +1277,13 @@ snapshots:
       - encoding
       - supports-color
 
-  '@11ty/eleventy-img@4.0.2':
+  '@11ty/eleventy-img@5.0.0':
     dependencies:
       '@11ty/eleventy-fetch': 4.0.1
+      '@11ty/eleventy-utils': 1.0.3
       brotli-size: 4.0.0
-      debug: 4.3.6
-      entities: 4.5.0
+      debug: 4.3.7
+      entities: 5.0.0
       image-size: 1.1.1
       p-queue: 6.6.2
       sharp: 0.33.5
