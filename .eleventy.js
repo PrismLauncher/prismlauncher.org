@@ -1,14 +1,14 @@
-const { DateTime } = require("luxon");
-const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const markdownItTableOfContents = require("markdown-it-table-of-contents");
-const cleanCSS = require("clean-css");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const Image = require("@11ty/eleventy-img");
+import { DateTime } from "luxon";
+import fs from "fs";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItTableOfContents from "markdown-it-table-of-contents";
+import cleanCSS from "clean-css";
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+import Image from "@11ty/eleventy-img";
 
 async function image(alt, filepath, darkpath, classes, lossless = true, sizes = "100vw") {
   if (alt === undefined) {
@@ -74,7 +74,7 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
     </picture>`;
 }
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
@@ -171,23 +171,23 @@ module.exports = function (eleventyConfig) {
     slugify: eleventyConfig.getFilter("slug"),
   }).use(markdownItTableOfContents, {"includeLevel": [1,2,3]});
   eleventyConfig.setLibrary("md", markdownLibrary);
+};
 
-  return {
-    // Control which files Eleventy will process
-    // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: ["md", "njk", "html"],
+export const config = {
+  // Control which files Eleventy will process
+  // e.g.: *.md, *.njk, *.html, *.liquid
+  templateFormats: ["md", "njk", "html"],
 
-    // Pre-process *.md files with: (default: `liquid`)
-    markdownTemplateEngine: "njk",
+  // Pre-process *.md files with: (default: `liquid`)
+  markdownTemplateEngine: "njk",
 
-    // Pre-process *.html files with: (default: `liquid`)
-    htmlTemplateEngine: "njk",
+  // Pre-process *.html files with: (default: `liquid`)
+  htmlTemplateEngine: "njk",
 
-    dir: {
-      input: "src",
-      includes: "_includes",
-      data: "_data",
-      output: "_site",
-    },
-  };
+  dir: {
+    input: "src",
+    includes: "_includes",
+    data: "_data",
+    output: "_site",
+  },
 };
