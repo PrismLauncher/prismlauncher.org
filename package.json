@@ -44,5 +44,10 @@
     "markdown-it-table-of-contents": "0.8.0",
     "markdownlint-cli": "0.42.0"
   },
-  "packageManager": "pnpm@9.12.2"
+  "packageManager": "pnpm@9.12.2",
+  "pnpm": {
+    "overrides": {
+      "whatwg-url": "14.0.0"
+    }
+  }
 }
