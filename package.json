@@ -48,7 +48,8 @@
   "pnpm": {
     "overrides": {
       "whatwg-url": "14.0.0",
-      "js-yaml" : "4.1.0"
+      "js-yaml" : "4.1.0",
+      "path-to-regexp": "8.2.0"
     }
   }
 }
