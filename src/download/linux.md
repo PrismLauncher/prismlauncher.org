@@ -178,7 +178,7 @@ pacstall -I prismlauncher-git
 
 Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps) store as a deb install:
 
-[![pi-apps-badge](https://img.shields.io/badge/dynamic/json?color=c51a4a&label=Pi-Apps&prefix=Prism%20Launcher%20&query=%24..%5B%3F%28%40.Name%3D%3D%22Minecraft%20Java%20Prism%20Launcher%22%29%5D.Version&url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data.json)](https://github.com/Botspot/pi-apps)
+[![pi-apps-badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data_v2.json&query=%24.Minecraft%20Java%20Prism%20Launcher.Version&label=Pi-Apps&color=c51a4a)](https://github.com/Botspot/pi-apps)
 
 NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
 _Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions._
