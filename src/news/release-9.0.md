@@ -17,7 +17,7 @@ It's been a while since the last update. Today is our second birthday and we are
 - Automatic Java Management – No more manual Java setups! Everything is streamlined and handled for you.
 - Automatic Component Version Resolution – Managing component versions just got easier, with automatic updates for things like Fabric mappings.
 - Skin Management – A simple and intuitive way to manage your Minecraft skins right in the launcher.
-- Updated Login System – Enhanced security and a smoother login experience.
+- Updated Login System – Introduced direct login and QR code for a smoother experience.
 - More Filters in the Download Mods/Modpacks Dialog – Find your favorite mods/modpack faster with new filtering options.
 
 There's plenty more to explore, so feel free to dive in and check the changelog for the full list of updates!
