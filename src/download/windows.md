@@ -11,11 +11,9 @@ eleventyNavigation:
       <div>
         <h1>Windows Download</h1>
         <p>Windows 10/11 64bit</p>
-        <p>The Installer (.exe) variant requires <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable 2022 x64</a> to run</p>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-Setup-{{version.current}}.exe">Installer (.exe)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Portable-{{version.current}}.zip">Portable (.zip)</a>
         <p>Windows 10/11 ARM64</p>
-        <p>Requires <a href="https://aka.ms/vs/17/release/vc_redist.arm64.exe">Microsoft Visual C++ Redistributable 2022 arm64</a> to run</p>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MSVC-arm64-Setup-{{version.current}}.exe">Installer (ARM64) (.exe)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-arm64-Portable-{{version.current}}.zip">Portable (ARM64) (.zip)</a>
       </div>
