@@ -4,7 +4,7 @@ description: Do it all, everything!
 date: 2024-10-20
 release_version: "9.0"
 minimum_macos_version: 11.0.0
-macos_file_extension: tar.gz
+macos_file_extension: zip
 macos_signature: sX4NPzf7KNNotmy5AAYL3XuLadYStbDhMhc0qNB3CojlJt9Ye49DrNzXCBQ1zSwS22NGoJkt8vNRnOLuJFwlDg==
 tags:
   - release
