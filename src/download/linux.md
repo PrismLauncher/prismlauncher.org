@@ -17,10 +17,8 @@ eleventyNavigation:
         <p>x86_64 ONLY</p>
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-{{version.current}}.tar.gz">Download (tar.gz)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
-        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
+        <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (Qt 5, tar.gz)</a>
      </div>
     </div>
     <div class="column">
