@@ -10,26 +10,18 @@ eleventyNavigation:
 
 [[toc]]
 
-## Getting the source
+## Compiling manually
 
-Clone the source code using git, and grab all the submodules:
+### Prerequisites
 
-```zsh
-git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
-cd PrismLauncher
-```
+- XCode Command Line tools.
+  - Run `xcode-select --install`
+- Official build of CMake (<https://cmake.org/download/>).
+- `extra-cmake-modules`
+- JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
+- Any version of Qt 6 (recommended) or Qt 5.12 or newer
 
-**The rest of the documentation assumes you have already cloned the repository.**
-
-## Building
-
-### Install prerequisites
-
-- Install XCode Command Line tools.
-- Install the official build of CMake (<https://cmake.org/download/>).
-- Install extra-cmake-modules
-- Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
-- Install any version of Qt 6 (recommended) or Qt 5.12 or newer
+#### With Homebrew
 
 Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
 
@@ -38,55 +30,75 @@ brew update # in the case your repositories weren't updated
 brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
 ```
 
-### XCode Command Line tools
+### Getting the source
 
-If you don't have XCode Command Line tools installed, you can install them with this command:
+Clone the source code using Git, fetching submodules along with it:
 
-```zsh
-xcode-select --install
+```bash
+git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
+cd PrismLauncher
 ```
 
-### Build
+**The rest of the documentation assumes you have already cloned the repository.**
 
-Choose an installation path.
+### Building the source
 
-This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
+#### Configuration
 
-[If you are on zsh](https://support.apple.com/kb/HT208050),zsh does not ignore comments by default, run the following to ignore comments for this session:
+Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt``.
 
-```zsh
-setopt interactivecomments
+```bash
+cmake -S . -B build \
+  -G Ninja \ # If you installed Ninja
+# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
+# -D CMAKE_PREFIX_PATH="/path/to/Qt/" \
+  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
+  -D CMAKE_OSX_DEPLOYMENT_TARGET=11 \
+# -D CMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
+  -D Qt6_DIR="/path/to/Qt/" \
+# -D Qt5_DIR="/path/to/Qt/" \ # If you want to use Qt 5
+# -D ENABLE_LTO=ON \ # If you want to enable LTO
+# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
 ```
 
-```zsh
-mkdir build
-cmake \
- -S . \
- -B build \
- -G Ninja \
- -DCMAKE_BUILD_TYPE=Release \
- -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
- -DCMAKE_INSTALL_PREFIX="dist" \
- -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
- -DQt5_DIR="/path/to/Qt/" \
- -DQt6_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=11 \
- -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
- -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
- -DLauncher_BUILD_PLATFORM=macOS \
-# if you want to enable LTO/IPO:
- -DENABLE_LTO=ON
-#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not recommended for development)
-#-DLauncher_QT_VERSION_MAJOR=5 # if you want to use Qt 5
+#### Compilation
 
+```bash
+cmake --build build -j
+```
+
+#### Installation
+
+```bash
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+DESTDIR="$pkgdir" cmake --install build # If you're installing for a package
+```
+
+<div class="notification type-warn">
+
+The final app bundle may not run due to code signing issues, which need to be fixed with `codesign -fs -`.
+
+</div>
+
+## Building with Nix
+
+Nix is a tool for handling reproducible builds across multiple platforms.
+
+After [installing Nix](https://nix.dev/install-nix), you can run the following command to build a debug package:
+
+```bash
+nix build --print-build-logs github:PrismLauncher/PrismLauncher#prismlauncher-debug
+```
+
+You can also enter a development shell with all of the tools required to build manually:
+
+```bash
+nix develop
+cmake -S . -B build -G Ninja -D CMAKE_INSTALL_PREFIX="install"
 cmake --build build
 cmake --install build
 ```
-
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
-
-**Note:** The final app bundle may not run due to code signing issues, which
-need to be fixed with `codesign -fs -`.
 
 ## IDEs and Tooling
 
