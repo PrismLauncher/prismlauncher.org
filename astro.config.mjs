@@ -15,6 +15,9 @@ export default defineConfig({
 			customCss: [
 				'./src/styles/custom.css',
 			],
+			editLink: {
+				baseUrl: 'https://github.com/PrismLauncher/prismlauncher.org/tree/dev-wiki/',
+			},
 			social: {
 				github: 'https://github.com/PrismLauncher/PrismLauncher',
 			},
