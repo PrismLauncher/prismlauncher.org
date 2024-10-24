@@ -84,7 +84,7 @@ This means that some themes and theming platforms like KDE Plasma's theming will
 But don't worry, we still provide Qt 5 builds.
 You can find them on the [download page](https://prismlauncher.org/download/linux).
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows\\_logo\\_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
 
 #### I want to make my system install portable
 
