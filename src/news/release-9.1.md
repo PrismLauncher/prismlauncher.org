@@ -17,6 +17,7 @@ This is a very minor update - we had reports of unexpected reboots when installi
 Apologies for the delay - we were not initially quite aware of the impact that this had as Windows *should* warn users if they have any unsaved work.
 
 # Changelog
+
 ## Fixed
 
 - Fix Windows installer restarting device by [@TheKodeToad](https://github.com/TheKodeToad) in [#2948](https://github.com/PrismLauncher/PrismLauncher/pull/2948)
