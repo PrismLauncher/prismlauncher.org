@@ -10,150 +10,26 @@ eleventyNavigation:
 
 [[toc]]
 
-## Getting the source
+## Compiling manually
 
-Clone the source code using git, and grab all the submodules:
-
-```bash
-git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
-cd PrismLauncher
-```
-
-**The rest of the documentation assumes you have already cloned the repository.**
-
-## Building
+### Prerequisites
 
 Getting the project to build and run on Linux is easy if you use any modern and up-to-date Linux distribution.
 
-### Build dependencies
-
-- A C++ compiler capable of building C++17 code.
+- A C++ compiler supporting at least C++17.
 - Qt Development tools 6.0 or newer (`qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6` on Debian (testing/unstable) based systems).
 - Alternatively, you can also use Qt 5.12 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5 libqt5networkauth5-dev` on Debian-based systems), if you prefer it.
 - cmake 3.15 or newer (`cmake` on Debian-based system)
-- ninja (`ninja-build` on Debian-based systems)
+- ninja (optional, `ninja-build` on Debian-based systems)
 - extra-cmake-modules (`extra-cmake-modules` on Debian-based system)
 - zlib (`zlib1g-dev` on Debian-based system)
 - Java JDK (`openjdk-17-jdk` on Debian-based system)
 - GL headers (`libgl1-mesa-dev` on Debian-based system)
 - scdoc if you want to generate manpages (`scdoc` on Debian-based system)
 
-You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, if you want to work on the code.
+#### Installing Qt using the installer (optional)
 
-### Building a portable binary
-
-```bash
-cmake -S . -B build -G Ninja \
-   -DCMAKE_INSTALL_PREFIX=install
-#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
-
-cmake --build build
-cmake --install build
-cmake --install build --component portable
-```
-
-### Building & installing to the system
-
-This is the preferred method of installation, and is suitable for packages.
-
-```bash
-cmake -S . -B build -G Ninja \
-   -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
-   -DENABLE_LTO=ON # if you want to enable LTO/IPO
-#  -DLauncher_QT_VERSION_MAJOR="5" # if you want to use Qt 5
-
-cmake --build build
-cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
-```
-
-### Building a .deb
-
-Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
-
-```bash
-git clone https://mpr.makedeb.org/prismlauncher.git
-cd prismlauncher
-makedeb -s
-```
-
-The .deb will be located in the directory the repo was cloned in.
-
-### Building an .rpm  for Fedora
-
-Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
-in order to fetch sources and set up your tree.
-You don't need to clone the repo for this; the spec file handles that.
-
-```bash
-cd ~
-# setup your ~/rpmbuild directory, required for rpmbuild to work.
-rpmdev-setuptree
-# get the rpm spec file from the prismlauncher on pagure
-git clone https://pagure.io/prismlauncher.git
-cd prismlauncher
-# install build dependencies
-sudo dnf builddep prismlauncher.spec
-sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
-# download build sources
-spectool -g -R prismlauncher.spec
-# move patches to rpmbuild sources directory
-cp *.patch ~/rpmbuild/SOURCES
-# copy any patches to rpmbuild sources directory
-cp *.patch ~/rpmbuild/SOURCES 
-# now build!
-rpmbuild -bb prismlauncher.spec
-rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
-```
-
-The path to the .rpm packages will be printed once the build is complete.
-
-### Building an .rpm for openSUSE
-
-Unlike Fedora, the openSUSE packages depend on the [Open Build Service](https://build.opensuse.org/), so you will need to install the command line tool `osc` by following [this](https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.osc.html#sec.obs.osc.install) guide.
-It also uses the [obs_scm](https://github.com/openSUSE/obs-service-tar_scm) service, which is available in the `obs-service-obs_scm` package if it's not already installed.
-
-```bash
-osc checkout home:getchoo
-
-# there will be 4 directories in home:getchoo, with some having a -qt5 and/or -nightly suffix
-# -qt5 packages will build with Qt 5 instead of Qt 6, while -nightly packages will build with the latest commit (updated every 24h)
-# for this example, we're just using the stable release package that builds with Qt 6
-# NOTE: only -qt5 will build on Leap
-cd home:getchoo/prismlauncher
-
-# to build against the current version of Leap, replace `openSUSE_Tumbleweed` with 15.4
-osc build --sccache openSUSE_Tumbleweed
-```
-
-The path to the .rpm packages will be printed once the build is complete.
-
-### Building a Flatpak
-
-You don't need to clone the entire Prism Launcher repo for the latest stable version; the Flatpak file handles that. However, cloning the source repository is necessary to build from the latest commit (contains upstream manifest).
-Both `flatpak` and `flatpak-builder` packages must be installed on your system to proceed, including all build dependencies previously mentioned (at the top of page).
-
-#### Latest Stable Release
-
-```bash
-git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
-cd org.prismlauncher.PrismLauncher
-flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
-# remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
-```
-
-#### Latest Commit
-
-```bash
-git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo - contains upstream manifest
-cd PrismLauncher/flatpak
-flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
-# remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
-```
-
-### Installing Qt using the installer (optional)
+You may also use the [Qt installer](https://doc.qt.io/qt-6/qt-online-installation.html) to fetch Qt libraries:
 
 1. Run the Qt installer.
 2. Choose a place to install Qt.
@@ -168,6 +44,91 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 5. Double-check the install details and then click "Install".
 
     - Installation can take a very long time, go grab a cup of tea or something and let it work.
+
+### Getting the source
+
+Clone the source code using Git, fetching submodules along with it:
+
+```bash
+git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
+cd PrismLauncher
+```
+
+**The rest of the documentation assumes you have already cloned the repository.**
+
+### Building the source
+
+#### Configuration
+
+```bash
+cmake -S . -B build \
+  -G Ninja \ # If you installed Ninja
+# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
+  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
+# -D CMAKE_INSTALL_PREFIX="/usr" \ # For building packages. If only installing locally, use "/usr/local"
+# -D ENABLE_LTO=ON \ # If you want to enable LTO
+# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+```
+
+#### Compilation
+
+```bash
+cmake --build build -j
+```
+
+#### Installation
+
+```bash
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+DESTDIR="$pkgdir" cmake --install build # If you're installing for a package
+```
+
+## Building a Flatpak
+
+Flatpaks allow for you to quickly build Prism and run it on any distribution
+
+Make sure Flathub is [setup](https://flathub.org/setup).
+
+```bash
+# Install Flatpak build tools
+flatpak install flathub org.flatpak.Builder
+
+# Clone the source repository
+git clone --recursive https://github.com/prismlauncher/PrismLauncher
+
+# Enter the Flatpak directory
+cd PrismLauncher/flatpak
+
+# Run the build
+flatpak run org.flatpak.Builder \
+  --user \
+  --install \ # Comment if you only want to build, not install
+  --install-deps-from=flathub \
+  --ccache \
+  --repo=repo \
+  builddir \
+  org.prismlauncher.PrismLauncher.yml
+```
+
+## Building with Nix
+
+Nix is a tool for handling reproducible builds across multiple platforms.
+
+After [installing Nix](https://nix.dev/install-nix), you can run the following command to build a debug package:
+
+```bash
+nix build --print-build-logs github:PrismLauncher/PrismLauncher#prismlauncher-debug
+```
+
+You can also enter a development shell with all of the tools required to build manually:
+
+```bash
+nix develop
+cmake -S . -B build -G Ninja -D CMAKE_INSTALL_PREFIX="install"
+cmake --build build
+cmake --install build
+```
 
 ## IDEs and Tooling
 
