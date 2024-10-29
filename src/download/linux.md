@@ -63,10 +63,8 @@ An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/deve
 
 AppImages allow you to take a single file and run Prism anywhere*
 
-<div class="notification type-warn"
-
+<div class="notification type-warn">
 AppImage builds only support x86_64
-
 </div>
 
 ### With AppImageLauncher (Recommended)
@@ -194,9 +192,7 @@ Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps)
 [![pi-apps-badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data_v2.json&query=%24.Minecraft%20Java%20Prism%20Launcher.Version&label=Pi-Apps&color=c51a4a)](https://github.com/Botspot/pi-apps)
 
 <div class="notification type-info">
-
 Only Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer are supported.
-
 </div>
 
 ## <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
@@ -204,9 +200,7 @@ Only Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer are suppo
 Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher)
 
 <div class="notification type-info">
-
 For the time being, newer versions of the package are not stabilized, so they are masked for `~amd64` and `~arm64` only.
-
 </div>
 
 ```bash
@@ -245,16 +239,12 @@ zypper install prismlauncher
 
 Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) (maintained by Samuel Young)
 
-<div class="notification type-warn"
-
+<div class="notification type-warn">
 The package is currently only available for Slackware version 15.0!
-
 </div>
 
 <div class="notification type-info">
-
 You may need to edit the `PrismLauncher.SlackBuild` file and change the VERSION variable to reflect that of the source code -- although it is better if you wait for the maintainer to do so.
-
 </div>
 
 ```bash
