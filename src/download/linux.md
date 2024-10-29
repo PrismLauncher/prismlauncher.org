@@ -19,13 +19,12 @@ eleventyNavigation:
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (Qt 5, tar.gz)</a>
+       <br />
+       <div class="center notification type-info">
+         <h2>Qt 5 packages will be going away soon 😔</h2>
+         <p>Support will be removed after 9.x. Users are encouraged to update to Qt 6 builds where available</p>
+       </div>
      </div>
-     <!--
-     <div class="notification type-info">
-       <h2>Qt 5 packages will be going away soon 😔</h2>
-       <p>Support will be removed after 9.x. User are encouraged to update to the Qt 6 builds listed below</p>
-     </div>
-     -->
     </div>
     <div class="column">
       {% image "Modpack Installer", "./src/img/screenshots/LauncherLight.png", "./src/img/screenshots/LauncherDark.png" %}
