@@ -1,0 +1,309 @@
+---
+title: "Build Instructions"
+description: "A guide on building the launcher"
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Compiling manually
+
+### Prerequisites
+
+- A C++ compiler supporting at least C++17.
+  - This will be GCC >= 8, Clang >= 5, and MSVC >= 19.15
+- cmake >= 3.15
+- ninja (optional, speeds up builds)
+- extra-cmake-modules (optional, available in a submodule)
+- Java JDK
+- Qt 6.0 or later
+  - Alternatively, you can use Qt 5.12 or newer. ***This will be removed in Prism X (10.0)***.
+- cmark (optional, vendored in a submodule)
+- gamemode (used at runtime, only on Linux)
+- ghc-filesystem (optional, vendored in a submodule)
+- libGL headers (only on Linux)
+- quazip (optional, vendored in a submodule)
+- scdoc (optional, used to generate manpages)
+- tomlplusplus (optional, vendored in a submodule)
+- zlib (optional, vendored in a submodule)
+
+<Tabs>
+<TabItem label="Windows (MSVC)">
+
+:::note
+`winget` is installed by default on newer versions of Windows 11
+:::
+
+You should first install [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), a package manager for Windows.
+
+Once `winget` is available, install the MSVC toolchain with:
+
+```console
+$ winget install --exact --id Microsoft.VisualStudio.2022.BuildTools --source winget
+```
+
+We will also be using Git:
+
+```console
+$ winget install --exact --id Git.Git --source winget
+```
+
+Qt can then be installed with [`aqt`](https://aqtinstall.readthedocs.io/en/latest/):
+
+```console
+$ winget install --exact --id miurahr.aqtinstall --source winget
+$ aqt install-qt windows desktop 6.7.3 win64_msvc2019 -m qtimageformats qtnetworkauth qt5compat
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+[MSYS2](https://msys2.org) may be installed with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), or by following the setup guide [here](https://www.msys2.org/#installation):
+
+```console
+$ winget install --exact --id MSYS2.MSYS2 --source winget
+```
+
+We recommend the CLANG(ARM)64 [environment](https://www.msys2.org/docs/environments/) -- though MINGW64 may also work on x86_64.
+After starting the environment, you may run the following to install all dependencies:
+
+{/* TODO: Use tomlplusplus here when it's not broken in msys2 */}
+
+```console
+$ pacman -Syu pactoys git
+$ pacboy -S toolchain:p cmake:p ninja:p extra-cmake-modules:p qt6-base:p qt6-networkauth:p qt6-svg:p qt6-imageformats:p qt6-5compat:p cmark:p quazip-qt6:p zlib:p
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+The XCode toolchain can be installed with:
+
+```
+$ xcode-select --install
+```
+
+Qt and other dependencies can then be installed with the following [Homebrew](https://brew.sh/) command:
+
+```console
+$ brew install cmake ninja extra-cmake-modules qt openjdk@17
+```
+
+</TabItem>
+<TabItem label="Linux (Debian)">
+
+```console
+$ sudo apt install \
+  build-essential \
+  cmake ninja \
+  extra-cmake-modules \
+  qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6 qt6networkauth6 \
+  openjdk-17-jdk \
+  libg1l-mesa-dev \
+  scdoc
+```
+
+</TabItem>
+</Tabs>
+
+### Getting the source
+
+We use [Git](https://git-scm.com/) for our version control. The command below will clone the repository, and fetch all submodules that come with it
+
+```console
+$ git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
+$ cd PrismLauncher
+```
+
+**The rest of the documentation assumes you have already cloned the repository.**
+
+### Building the source
+
+#### Configuration
+
+<Tabs>
+<TabItem label="Windows (MSVC)">
+
+Open "x64 Native Tools PowerShell" in Windows Terminal
+
+```powershell
+cmake -S . -B build -G Ninja `
+  <# -D CMAKE_BUILD_TYPE="Release" #> ` # If you want to build with optimizations
+  -D CMAKE_PREFIX_PATH=".\6.7.0\win64_msvc2019\lib\cmake" `
+  -D CMAKE_INSTALL_PATH="install" `
+  <# -D ENABLE_LTO=ON #> ` # If you want to enable LTO
+  <# -D Launcher_QT_VERSION_MAJOR="5" #> # If you want to use Qt 5
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake -S . -B build \
+  -G Ninja \ 
+# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
+  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
+# -D ENABLE_LTO=ON \ # If you want to enable LTO
+# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake -S . -B build \
+  -G Ninja \
+# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
+  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt" \
+  -D CMAKE_INSTALL_PREFIX="install" \
+  -D CMAKE_OSX_DEPLOYMENT_TARGET=11 \
+# -D CMAKE_OSX_ARCHITECTURES="x86_64;arm64" \ # to build a universal binary (not recommended for development)
+# -D CMAKE_INSTALL_PREFIX="/usr" \ # For building packages. If only installing locally, use "/usr/local"
+# -D ENABLE_LTO=ON \ # If you want to enable LTO
+# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake -S . -B build \
+  -G Ninja \ # If you installed Ninja
+# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
+  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
+# -D CMAKE_INSTALL_PREFIX="/usr" \ # For building packages. If only installing locally, use "/usr/local"
+# -D ENABLE_LTO=ON \ # If you want to enable LTO
+# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+```
+
+</TabItem>
+</Tabs>
+
+#### Compilation
+
+<Tabs>
+<TabItem label="Windows (MSVC)">
+
+```bash
+cmake --build build -- /p:UseMultiToolTask=true /p:EnforceProcessCountAcrossBuilds=true
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake --build build
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake --build build
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake --build build
+```
+
+</TabItem>
+</Tabs>
+
+#### Installation
+
+<Tabs>
+<TabItem label="Windows (MSVC)">
+
+```powershell
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+```
+
+:::caution[Warning]
+When building on Qt 5, OpenSSL's DLLs aren't installed along with the launcher, meaning that you cannot log in.
+
+The solution is to run the following:
+
+```powershell
+robocopy <Path to Qt install>/Tools/OpenSSL/Win_x64/bin/ install libcrypto-1_1-x64.dll libssl-1_1-x64.dll
+```
+
+Replace `<Path to Qt Install>` with the path to your Qt install. If building for 32bit, replace Win_x64 with Win_x86 and remove -x64 from the DLLs' names.
+
+:::
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake --install build
+cmake --install build --component portable # If you want to install a portable version
+DESTDIR="$pkgdir" cmake --install build # If you're installing for a package
+```
+
+</TabItem>
+</Tabs>
+
+## Building with Nix (Linux and macOS)
+
+Nix is a tool for handling reproducible builds across multiple platforms.
+
+After [installing Nix](https://nix.dev/install-nix), you can run the following command to build a debug package:
+
+```bash
+nix build --print-build-logs github:PrismLauncher/PrismLauncher#prismlauncher-debug
+```
+
+You can also enter a development shell with all of the tools required to build manually:
+
+```bash
+nix develop
+cmake -S . -B build -G Ninja -D CMAKE_INSTALL_PREFIX="install"
+cmake --build build
+cmake --install build
+```
+
+## Building a Flatpak (Linux)
+
+Flatpaks allow for you to quickly build Prism and run it on any distribution
+
+Make sure Flathub is [setup](https://flathub.org/setup).
+
+```bash
+# Install Flatpak build tools
+flatpak install flathub org.flatpak.Builder
+
+# Clone the source repository
+git clone --recursive https://github.com/prismlauncher/PrismLauncher
+
+# Enter the Flatpak directory
+cd PrismLauncher/flatpak
+
+# Run the build
+flatpak run org.flatpak.Builder \
+  --user \
+  --install \ # Comment if you only want to build, not install
+  --install-deps-from=flathub \
+  --ccache \
+  --repo=repo \
+  builddir \
+  org.prismlauncher.PrismLauncher.yml
+```
