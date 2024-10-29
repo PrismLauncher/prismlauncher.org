@@ -63,6 +63,12 @@ An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/deve
 
 AppImages allow you to take a single file and run Prism anywhere*
 
+<div class="notification type-warn"
+
+AppImage builds only support x86_64
+
+</div>
+
 ### With AppImageLauncher (Recommended)
 
 Follow AppImageLauncher's [installation instructions](https://github.com/TheAssassin/AppImageLauncher/wiki#installation). Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
