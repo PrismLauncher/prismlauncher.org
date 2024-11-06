@@ -204,17 +204,17 @@ emerge games-action/prismlauncher
 Have fun! :)
 
 </div>
-  
+
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
+# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix / NixOS
 
-A [Nix derivation](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available.
+Installation instructions for stable releases are available on the [NixOS Wiki](https://wiki.nixos.org/wiki/Prism_Launcher). Additionally, an [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available for development builds.
 
-Packages are available for all current Nix distributions.
+[![prismlauncher](https://img.shields.io/badge/nixpkgs-prismlauncher-blue)](https://search.nixos.org/packages?query=prismlauncher)
 
 </div>
-  
+
 <div class="infobox top">
 
 # <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
