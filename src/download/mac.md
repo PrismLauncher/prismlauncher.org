@@ -24,20 +24,28 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-## Advanced macOS install options
+# Advanced macOS install options
 
-### Homebrew Package (community-maintained)
+## Nix
 
-#### Installation instructions
+See [the Linux section](/download#nix)
+
+</div>
+
+<div class="infobox top">
+
+# Community Packages
+
+## Homebrew Package
 
 ```bash
 brew install --cask --no-quarantine prismlauncher
 ```
 
-### MacPorts Package (community-maintained)
-
-#### Installation instructions
+## MacPorts Package
 
 ```bash
 sudo port install PrismLauncher
 ```
+
+</div>

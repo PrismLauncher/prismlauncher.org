@@ -26,9 +26,9 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-### Advanced Windows install options
+# Advanced Windows install options
 
-#### MinGW-w64
+## MinGW-w64
 
 These builds are built with MinGW and do not require the Visual C++ Redistributable to be installed on your system. They require Windows 10/11 64bit.
 
@@ -36,40 +36,40 @@ Note: These builds are less tested than the MSVC builds.
 
 - [Installer (64bit) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Windows-MinGW-w64-Setup-{{version.current}}.exe)
 
-### CLI (community-maintained)
-
-#### Winget Package
+## Winget Package
 
 ```powershell
-winget install -e PrismLauncher.PrismLauncher
+winget install --exact PrismLauncher.PrismLauncher
 ```
 
-#### Stable Scoop Package
+</div>
+
+<div class="infobox top">
+
+# Community Packages
+
+## Scoop Package
 
 ```powershell
 scoop bucket add games
 scoop install prismlauncher 
 ```
 
-#### Unstable Scoop Package
-
-Same as above, but it's an unstable git [development build](/wiki/development/development-builds) rather than a stable build.
+Unstable [development builds](/wiki/development/development-builds) are also available in the `versions` bucket.
 
 ```powershell
 scoop bucket add versions
 scoop install prismlauncher-git
 ```
 
-#### Chocolatey Package
+## Chocolatey Package
 
 ```powershell
 choco install prismlauncher
 ```
 
-*Chocolatey and Scoop packages are community-maintained, Prism Launcher is not responsible for outdated versions.*
+## [PortableApps.com](https://portableapps.com) Installer
 
-#### [PortableApps.com](https://portableapps.com) Installer
-
-A community maintained portable installer for Prism Launcher can be found [here](https://RuiNtD.github.io/PrismLauncherPortable/).
+A portable installer for Prism Launcher can be found [here](https://RuiNtD.github.io/PrismLauncherPortable/).
 
 </div>
