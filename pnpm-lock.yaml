@@ -30,8 +30,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       '@fortawesome/fontawesome-free':
-        specifier: 6.6.0
-        version: 6.6.0
+        specifier: 6.7.0
+        version: 6.7.0
       axios:
         specifier: 1.7.7
         version: 1.7.7
@@ -117,8 +117,8 @@ packages:
   '@fontsource/inter@5.1.0':
     resolution: {integrity: sha512-zKZR3kf1G0noIes1frLfOHP5EXVVm0M7sV/l9f/AaYf+M/DId35FO4LkigWjqWYjTJZGgplhdv4cB+ssvCqr5A==}
 
-  '@fortawesome/fontawesome-free@6.6.0':
-    resolution: {integrity: sha512-60G28ke/sXdtS9KZCpZSHHkCbdsOGEhIUGlwq6yhY74UpTiToIh8np7A8yphhM4BWsvNFtIvLpi4co+h9Mr9Ow==}
+  '@fortawesome/fontawesome-free@6.7.0':
+    resolution: {integrity: sha512-lXTP8oiLGM97Aqjn47nod9awKe574HRfCngFizr7FiHTadKTiPkoVn0Mzg+tZBLD1XpE4CRvcF7/UM3g1jyVYw==}
     engines: {node: '>=6'}
 
   '@iarna/toml@2.2.5':
@@ -1454,7 +1454,7 @@ snapshots:
 
   '@fontsource/inter@5.1.0': {}
 
-  '@fortawesome/fontawesome-free@6.6.0': {}
+  '@fortawesome/fontawesome-free@6.7.0': {}
 
   '@iarna/toml@2.2.5': {}
 
