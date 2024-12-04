@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-# Automatically installing Java (recommended)
+## Automatically installing Java (recommended)
 
 In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by ticking "Autodetect Java version" and "Auto-download Mojang Java" in:
 
@@ -14,7 +14,7 @@ This will make Prism automatically download the right Java version depending on 
 
 If the Java downloader is not available for you - which is the case on most Linux packages apart from the official Flatpak and AppImage downloads - manual installation is recommended instead.
 
-# Manually installing Java
+## Manually installing Java
 
 Oracle Java is not recommended. As of 2019, it has licensing that prohibits certain uses, and it requires an account to download certain versions. Their downloads are intended for those who have purchased a support contract from Oracle.
 
@@ -29,7 +29,7 @@ If you would like to learn more about OpenJDK and the vendors mentioned in this 
 
 Otherwise, continue reading for quick download links and a guide for which one to choose.
 
-## Selecting Java
+### Selecting Java
 
 Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
 
@@ -43,7 +43,7 @@ or for a specific instance:
 
 If you have just installed a version of Java and it doesn't show up, try pressing Refresh or restart the launcher. If you don't have your desired Java version installed, keep reading.
 
-## Installing Java on Windows
+### Installing Java on Windows
 
 **First, check your CPU architecture.** Here is a method that works on all Windows versions:
 
@@ -71,7 +71,7 @@ Then, download the appropriate Java:
 
 **Tip:** If you are on Windows 11, you can automatically install 8, 17 and 21 by running `winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
 
-## Installing Java on macOS
+### Installing Java on macOS
 
 **First, check your CPU architecture.**
 
@@ -92,11 +92,11 @@ Then, download the appropriate Java:
 | Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8) | Azul, Coretto |
 |  | aarch64 | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto |
 
-## Installing Java on Linux
+### Installing Java on Linux
 
 On Linux, it's recommended to use your package manager for installing Java.
 
-### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
+#### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
 
 On the COPR package all required Java versions should be installed, but this is the command to install it:
 
@@ -104,25 +104,25 @@ On the COPR package all required Java versions should be installed, but this is 
 sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk
 ```
 
-### Void Linux
+#### Void Linux
 
 ```bash
 sudo xbps-install openjdk17-jre openjdk8-jre openjdk21-jre 
 ```
 
-### Arch Linux, Manjaro, EndeavorOS, Garuda
+#### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
 sudo pacman -S jre17-openjdk jre8-openjdk jre21-openjdk
 ```
 
-### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
+#### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
 sudo apt install openjdk-17-jre openjdk-8-jre openjdk-21-jre
 ```
 
-### Debian, MX Linux
+#### Debian, MX Linux
 
 ```bash
 sudo apt install openjdk-17-jre openjdk-21-jre
@@ -136,27 +136,27 @@ sudo add-apt-repository --yes https://packages.adoptium.net/artifactory/deb/
 sudo apt-get update && sudo apt-get install temurin-8-jdk
 ```
 
-### Alpine Linux
+#### Alpine Linux
 
 ```bash
 sudo apk add openjdk17 openjdk8
 ```
 
-### Flatpak
+#### Flatpak
 
 The Prism Launcher Flatpak already bundles Java.
 
-### NixOS
+#### NixOS
 
 The Prism Launcher NixOS package already bundles Java.
 
-## Special cases
+### Special cases
 
-### Forge 1.16.5 and Java 8u321+
+#### Forge 1.16.5 and Java 8u321+
 
 Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended.
 
-### A note about Intel HD 2000/3000 on Windows 10
+#### A note about Intel HD 2000/3000 on Windows 10
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
@@ -165,7 +165,7 @@ Since those iGPUs are not *officially* supported on Windows 10, with them the ga
 Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
-### Older Minecraft on MacOS
+#### Older Minecraft on MacOS
 
 If you use some older Minecraft versions, you might have had this error:
 
