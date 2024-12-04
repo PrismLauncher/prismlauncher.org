@@ -4,6 +4,8 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
+# Installing Java
+
 ## Automatically installing Java (recommended)
 
 In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by ticking "Autodetect Java version" and "Auto-download Mojang Java" in:
