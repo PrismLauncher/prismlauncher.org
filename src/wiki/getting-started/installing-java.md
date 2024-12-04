@@ -4,9 +4,15 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-# Installing Java
+## Automatically installing Java (recommended)
 
-Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
+In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows and MacOS by ticking "Autodetect Java versin" and "Auto-download Mojang Java" in:
+
+> Prism's main screen > Settings (top toolbar) > Java
+
+This will make Prism automatically download the right Java version depending on your Minecraft version (Java 8 for pre-1.17, Java 17 for 1.17-1.20.4, and Java 21 for 1.20.5+). The rest of this page is going to explain downloading Java manually, and is probably not needed for you.
+
+## Manually installing Java
 
 Oracle Java is not recommended. As of 2019, it has licensing that prohibits certain uses, and it requires an account to download certain versions. Their downloads are intended for those who have purchased a support contract from Oracle.
 
@@ -146,20 +152,15 @@ The Prism Launcher NixOS package already bundles Java.
 
 ### Forge 1.16.5 and Java 8u321+
 
-Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended
+Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended.
 
 ### A note about Intel HD 2000/3000 on Windows 10
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
+*For 1.16.5 or older* there's a workaround, you need to install an older Java binary. To do that, you should be able to simply use Mojang Java 8u51, see [above](https://prismlauncher.org/wiki/getting-started/installing-java/#automatically-installing-java). This should fix your issue.
 
-- [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
-- [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
-
-After you download the required java binary for your architecture, *extract* the zip, and move the folder to your Prism Launcher data folder (%appdata%/Prism Launcher for non-portable, the Prism Launcher folder for portable builds), you need to go to the *Prism Launcher java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
-This should fix your issue.
-Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
+Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
 ### Older Minecraft on MacOS
