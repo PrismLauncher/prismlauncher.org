@@ -158,7 +158,7 @@ Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround, you need to install an older Java binary. To do that, you should be able to simply use Mojang Java 8u51, see [above](https://prismlauncher.org/wiki/getting-started/installing-java/#automatically-installing-java). This should fix your issue.
+*For 1.16.5 or older* there's a workaround, you need to install an older Java binary. To do that, you should be able to simply use Mojang Java 8u51, see [above](https://prismlauncher.org/wiki/getting-started/installing-java/#automatically-installing-java-(recommended)). This should fix your issue.
 
 Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
