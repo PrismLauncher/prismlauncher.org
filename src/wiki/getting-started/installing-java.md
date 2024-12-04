@@ -4,7 +4,7 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-## Automatically installing Java (recommended)
+# Automatically installing Java (recommended)
 
 In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by ticking "Autodetect Java version" and "Auto-download Mojang Java" in:
 
@@ -14,7 +14,7 @@ This will make Prism automatically download the right Java version depending on 
 
 If the Java downloader is not available for you - which is the case on most Linux packages apart from the official Flatpak and AppImage downloads - manual installation is recommended instead.
 
-## Manually installing Java
+# Manually installing Java
 
 Oracle Java is not recommended. As of 2019, it has licensing that prohibits certain uses, and it requires an account to download certain versions. Their downloads are intended for those who have purchased a support contract from Oracle.
 
