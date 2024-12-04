@@ -6,11 +6,13 @@ eleventyNavigation:
 ---
 ## Automatically installing Java (recommended)
 
-In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows and MacOS by ticking "Autodetect Java versin" and "Auto-download Mojang Java" in:
+In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by ticking "Autodetect Java version" and "Auto-download Mojang Java" in:
 
 > Prism's main screen > Settings (top toolbar) > Java
 
 This will make Prism automatically download the right Java version depending on your Minecraft version (Java 8 for pre-1.17, Java 17 for 1.17-1.20.4, and Java 21 for 1.20.5+). The rest of this page is going to explain downloading Java manually, and is probably not needed for you.
+
+If the Java downloader is not available for you - which is the case on most Linux packages apart from the official Flatpak and AppImage downloads - manual installation is recommended instead.
 
 ## Manually installing Java
 
