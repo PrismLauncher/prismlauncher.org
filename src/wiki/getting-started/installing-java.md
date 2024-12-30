@@ -136,7 +136,7 @@ sudo apk add openjdk17 openjdk8
 
 ### Flatpak
 
-The Prism Launcher Flatpak already bundles Java.
+The Prism Launcher Flatpak already bundles Java. You must manually download java binaries in Settings > Java > Management tab.
 
 ### NixOS
 
