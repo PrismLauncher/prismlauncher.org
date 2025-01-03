@@ -8,11 +8,11 @@ eleventyNavigation:
 
 ## Automatically installing Java (recommended)
 
-In PrismLauncher 9.0+, you can simply let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by ticking "Autodetect Java version" and "Auto-download Mojang Java" in:
+In Prism Launcher 9.0+, you can let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by enabling "Autodetect Java version" and "Auto-download Mojang Java" in:
 
 > Prism's main screen > Settings (top toolbar) > Java
 
-This will make Prism automatically download the right Java version depending on your Minecraft version (Java 8 for pre-1.17, Java 17 for 1.17-1.20.4, and Java 21 for 1.20.5+). The rest of this page is going to explain downloading Java manually, and is probably not needed for you.
+This will make the launcher automatically download the right version of Java for your version of Minecraft (Java 8 for pre-1.17, Java 17 for 1.17-1.20.4, etc.). The rest of this page is going to explain downloading Java manually, and is probably not needed for you.
 
 If the Java downloader is not available for you - which is the case on most Linux packages apart from the official Flatpak and AppImage downloads - manual installation is recommended instead.
 
@@ -162,7 +162,7 @@ Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround, you need to install an older Java binary. To do that, you should be able to simply use Mojang Java 8u51, see [above](https://prismlauncher.org/wiki/getting-started/installing-java/#automatically-installing-java-(recommended)). This should fix your issue.
+*For 1.16.5 or older* there's a workaround in installing an older Java binary. Mojang Java 8u51 is recommended, and can be automatically installed with the [above](#automatically-installing-java).
 
 Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
