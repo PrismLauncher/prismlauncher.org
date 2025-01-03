@@ -19,6 +19,11 @@ eleventyNavigation:
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (Qt 5, tar.gz)</a>
+       <br />
+       <div class="center notification type-info">
+         <h2>Qt 5 packages will be going away soon 😔</h2>
+         <p>Support will be removed after 9.x. Users are encouraged to update to Qt 6 builds where available</p>
+       </div>
      </div>
     </div>
     <div class="column">
@@ -29,7 +34,61 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
+# Official Packages
+
+## <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20" /> Flathub
+
+[Flathub](https://flathub.org/) is our primary method of distribution on Linux
+
+### App Center
+
+It may already be setup on your system, but if not, see how to enable it for your distribution [here](https://flathub.org/setup).
+After setup, Prism Launcher should now be available in your app center (i.e., GNOME Software, Discover)
+
+### CLI
+
+You can also enable Flathub and install the launcher with the following commands:
+
+```bash
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.prismlauncher.PrismLauncher
+````
+
+## <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix / NixOS
+
+An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available for development and release builds.
+
+## <img src="https://github.com/loganmarchione/homelab-svg-assets/raw/745e5d9249f2c847d58de5f1fd7ba4de2f63918e/assets/appimage.svg" height="20" /> AppImage
+
+AppImages allow you to take a single file and run Prism anywhere*
+
+<div class="notification type-warn">
+AppImage builds only support x86_64
+</div>
+
+### With AppImageLauncher (Recommended)
+
+Follow AppImageLauncher's [installation instructions](https://github.com/TheAssassin/AppImageLauncher/wiki#installation). Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
+
+### Making the AppImage Executable
+
+After downloading the AppImage, open your file manager and make it [executable](https://docs.appimage.org/introduction/quickstart.html#using-the-gui). You should now be able to run it with a click!
+
+### CLI
+
+```bash
+curl -fsSLo PrismLauncher.AppImage https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage
+chmod +x ./PrismLauncher.AppImage
+./PrismLauncher.AppImage
+```
+
+</div>
+
+<div class="infobox top">
+
+# Community Packages
+
+## <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" height="20"> Alpine Linux
 
 [APK Packages](https://pkgs.alpinelinux.org/packages?name=prismlauncher) are available on Alpine Linux Edge for multiple architectures
 
@@ -37,158 +96,111 @@ eleventyNavigation:
 apk add prismlauncher
 ```
 
-</div>
+## <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
 
-<div class="infobox top">
+Packages are available in both the official Arch Linux/Manjaro repositories and the AUR
 
-# <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" height="20"/> Manjaro
+[![prismlauncher](https://img.shields.io/badge/Arch%20Linux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
+[![prismlauncher-git](https://img.shields.io/badge/AUR-prismlauncher--git-blue?logo=archlinux&logoColor=white)](https://aur.archlinux.org/packages/prismlauncher-git/)
 
-An official package is available in the Arch Linux repositories:
-[![prismlauncher](https://img.shields.io/badge/archlinux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
-
-There are several AUR packages available:  
-[![prismlauncher-qt5](https://img.shields.io/badge/aur-prismlauncher--qt5-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5/)  
-[![prismlauncher-git](https://img.shields.io/badge/aur-prismlauncher--git-blue)](https://aur.archlinux.org/packages/prismlauncher-git/)
-[![prismlauncher-qt5-git](https://img.shields.io/badge/aur-prismlauncher--qt5--git-blue)](https://aur.archlinux.org/packages/prismlauncher-qt5-git/)
-
-## Installing
+### Installing
 
 ```bash
-# stable source package:
-pacman -S prismlauncher
-# latest git package:
+# Latest release (binary)
+sudo pacman -S prismlauncher
+# Newest Git commit (compiled from source)
 yay -S prismlauncher-git
 ```
 
-If you want to use Qt 5 to build the packages instead:
+You can replace `yay -S` with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
+
+### Installation using Chaotic-AUR
+
+If you would like to use `prismlauncher-git` without compiling from source, the Chaotic-AUR offers pre-built binaries.
+
+See their instructions on <https://aur.chaotic.cx/> to enable the repository, then run:
 
 ```bash
-# stable Qt 5 source package:
-yay -S prismlauncher-qt5
-# stable Qt 5 binary package:
-yay -S prismlauncher-qt5-bin
-# latest Qt 5 git package:
-yay -S prismlauncher-qt5-git
-```
-
-You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-
-## Installation using Chaotic-AUR
-
-If you have not already enabled the Chaotic-AUR follow their instructions on <https://aur.chaotic.cx/> to enable it.
-
-```bash
-# stable package:
-sudo pacman -S prismlauncher
-# latest git package:
 sudo pacman -S prismlauncher-git
 ```
 
-If you want to use Qt 5 to build the packages instead:
+## <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" height="20"> Red Hat Enterprise Linux
+
+RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/) for x86_64 and aarch64
+
+If you are on an Enterprise Linux distribution (RHEL, CentOS, Rocky, etc.) and do not have the EPEL repositories enabled, please enable them [here](https://docs.fedoraproject.org/en-US/epel/#_el9)
 
 ```bash
-# stable Qt 5 package:
-sudo pacman -S prismlauncher-qt5
-# latest Qt 5 git package:
-sudo pacman -S prismlauncher-qt5-git
-```
-
-</div>
-
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" height="20"> Red Hat Enterprise Linux
-
-RPM packages are available on [Copr](https://copr.fedorainfracloud.org/coprs/g3tchoo/prismlauncher/) for x86_64 and aarch64.
-If you are on an Enterprise Linux distribution (RHEL, CentOS, Rocky, etc.) and do not have the EPEL repositories enabled, please enable them [here](https://docs.fedoraproject.org/en-US/epel/#_el9).
-
-Nightly builds are updated automatically in the [Terra repository](https://terra.fyralabs.com/) and built on Copr every 24 hours.
-
-```bash
-# enables the copr repo
+# Enables the copr repo
 sudo dnf copr enable g3tchoo/prismlauncher
-# stable releases
+# Install the latest release
 sudo dnf install prismlauncher
-# nightly builds
-sudo dnf install prismlauncher-nightly
 ```
 
-</div>
+## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64, ARM64)
 
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (x86_64, ARM64)
-
-We use [makedeb](https://docs.makedeb.org/) for our Debian packages.  
-Several MPR packages are available:
+Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](https://mpr.makedeb.org/)
 
 [![prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)  
 [![prismlauncher-bin](https://img.shields.io/badge/mpr-prismlauncher--bin-orange)](https://mpr.makedeb.org/packages/prismlauncher-bin)  
 [![prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
 
-## Installation using Prebuilt MPR (recommended)
+### Installation using Prebuilt-MPR (recommended)
+
+Add the Prebuilt-MPR repository as described [here](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
 
 ```bash
-sudo apt install lsb-release # install if not installed
-curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
-echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
-sudo apt update
+# Latest stable release
 sudo apt install prismlauncher
+# Newest Git commit
+yay -S prismlauncher-git
 ```
 
 Prebuilt MPR supports Debian 11, 12, and Ubuntu 20.04, 22.04, 22.10, and 23.04.
 
-## Installing with mist, the MPR CLI
+### Installing with mist, the MPR CLI
 
-First, install [makedeb](https://www.makedeb.org/) and [mist](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist) using the instructions on their websites.
-
-You can then use it to easily install Prism Launcher:
+Install `mist` by following the [upostream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
 
 ```bash
-# stable source package:
+# Latest stable release (compiled from source)
 mist install prismlauncher
-# stable binary package:
+# Latest stable release (binary)
 mist install prismlauncher-bin
-# latest git package:
+# Newest Git commit (compiled from source)
 mist install prismlauncher-git
 ```
 
-## Installing with Pacstall
+### Installing with Pacstall
 
-Installing [Pacstall](https://pacstall.dev/)
-
-```bash
-sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)"
-```
-
-Installing Prism Launcher
+Install [`pacstall`](https://pacstall.dev/), then run:
 
 ```bash
-# latest git package:
+# Latest stable release (compiled from source)
+pacstall -I prismlauncher
+# Latest stable release (binary)
+pacstall -I prismlauncher-bin
+# Newest Git commit (compiled from source)
 pacstall -I prismlauncher-git
 ```
 
-</div>
-  
-<div class="infobox top">
+## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
 
-# <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
-
-Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps) store as a deb install:
+Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps) store
 
 [![pi-apps-badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data_v2.json&query=%24.Minecraft%20Java%20Prism%20Launcher.Version&label=Pi-Apps&color=c51a4a)](https://github.com/Botspot/pi-apps)
 
-NOTE: Only supports Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer.
-_Debian-based ARM packages are community-maintained, Prism Launcher is not responsible for outdated versions._
-
+<div class="notification type-info">
+Only Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer are supported.
 </div>
 
-<div class="infobox top">
+## <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
 
-# <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo
+Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher)
 
-Ebuilds are available in the official Gentoo repository, under [`games-action/prismlauncher`](https://packages.gentoo.org/packages/games-action/prismlauncher).
-Note that, for the time being, it is not stabilized, so it's masked for `~amd64` and `~arm64` only.
+<div class="notification type-info">
+For the time being, newer versions of the package are not stabilized, so they are masked for `~amd64` and `~arm64` only.
+</div>
 
 ```bash
 sudo emaint sync -a
@@ -203,73 +215,57 @@ emerge games-action/prismlauncher
 
 Have fun! :)
 
-</div>
+## <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nixpkgs
 
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix / NixOS
-
-Installation instructions for stable releases are available on the [NixOS Wiki](https://wiki.nixos.org/wiki/Prism_Launcher). Additionally, an [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available for development builds.
+Installation instructions for stable releases are available on the [NixOS Wiki](https://wiki.nixos.org/wiki/Prism_Launcher).
 
 [![prismlauncher](https://img.shields.io/badge/nixpkgs-prismlauncher-blue)](https://search.nixos.org/packages?query=prismlauncher)
 
-</div>
+## <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
 
-<div class="infobox top">
-
-# <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSUSE
-
-RPM packages are available on the [Open Build Service](https://download.opensuse.org/repositories/home:/getchoo/).
+An RPM package is available on the [Open Build Service](https://build.opensuse.org/package/show/home:getchoo/prismlauncher)
 
 ```bash
-# add repository (if on leap, replace 'openSUSE_Tumbleweed' with '15.4')
+# Add repository (if on Leap, replace 'openSUSE_Tumbleweed' with your release version)
 zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
-# refresh repository cache
+# Refresh the repository cache
 zypper refresh
-# stable releases (Qt6 version, only for Tumbleweed)
+# Install the latest release
 zypper install prismlauncher
-# latest builds (Qt6 version, only for Tumbleweed)
-zypper install prismlauncher-nightly
-# stable releases (Qt5 version, available for Leap and Tumbleweed)
-zypper install prismlauncher-qt5
-# latest builds (available for Leap and Tumbleweed)
-zypper install prismlauncher-qt5-nightly
 ```
 
+## <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" height="20"> Slackware
+
+Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) (maintained by Samuel Young)
+
+<div class="notification type-warn">
+The package is currently only available for Slackware version 15.0!
 </div>
 
-<div class="infobox top">
-
-# <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" height="20"> Slackware
-
-Prism Launcher is available on [SlackBuilds](https://slackbuilds.org/repository/15.0/games/PrismLauncher/) maintained by Samuel Young. The package is only available for Slackware version 15.0 (currently)!
-
-_Note: You may need to edit the `PrismLauncher.SlackBuild` file and change the VERSION variable to reflect that of the source code, although it is better if you wait for the maintainer to update the SlackBuild file._
+<div class="notification type-info">
+You may need to edit the `PrismLauncher.SlackBuild` file and change the VERSION variable to reflect that of the source code -- although it is better if you wait for the maintainer to do so.
+</div>
 
 ```bash
-# download launcher slackbuild archive
+# Download slackbuild archive
 wget https://slackbuilds.org/slackbuilds/15.0/games/PrismLauncher.tar.gz
-# extract archive
+# Extract archive
 tar -xpvf PrismLauncher.tar.gz; cd PrismLauncher-*
-# download source specified in PrismLauncher.info, for example for version 7.1:
+# Download source specified in PrismLauncher.info. For example for version 7.1:
 wget https://github.com/PrismLauncher/PrismLauncher/releases/download/7.1/PrismLauncher-7.1.tar.gz
-# verify integrity
-md5sum PrismLauncher-*.tar.gz # compare the result with the md5 in PrismLauncher.info
-# enter root environment and grant permissions
+# Verify integrity
+md5sum PrismLauncher-*.tar.gz # Compare the result with the MD5 in PrismLauncher.info
+# Enter root environment and grant permissions
 su -l; chmod +x PrismLauncher.SlackBuild
-# build package
+# Build package
 ./PrismLauncher.SlackBuild
-# install package (name dependent on version, cpu arch)
+# Install package (name dependent on version, cpu arch)
 cd /tmp; installpkg PrismLauncher-*.tgz
 ```
 
-</div>
+## <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
 
-<div class="infobox top">
-
-# <img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux
-
-Prism Launcher is available on the official Void repository.
+Prism Launcher is available in the official Void repository
 
 ```bash
 sudo xbps-install PrismLauncher
