@@ -156,7 +156,7 @@ Prebuilt MPR supports Debian 12, and Ubuntu 20.04, 22.04, and >= 23.04.
 
 ### Installing with mist, the MPR CLI
 
-Install `mist` by following the [upostream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
+Install `mist` by following the [upstream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
 
 Packages installed via `mist` will be compiled from source
 
