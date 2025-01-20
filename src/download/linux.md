@@ -142,7 +142,6 @@ sudo dnf install prismlauncher
 Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](https://mpr.makedeb.org/)
 
 [![prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)  
-[![prismlauncher-bin](https://img.shields.io/badge/mpr-prismlauncher--bin-orange)](https://mpr.makedeb.org/packages/prismlauncher-bin)  
 [![prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
 
 ### Installation using Prebuilt-MPR (recommended)
@@ -150,24 +149,21 @@ Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](h
 Add the Prebuilt-MPR repository as described [here](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
 
 ```bash
-# Latest stable release
 sudo apt install prismlauncher
-# Newest Git commit
-yay -S prismlauncher-git
 ```
 
-Prebuilt MPR supports Debian 11, 12, and Ubuntu 20.04, 22.04, 22.10, and 23.04.
+Prebuilt MPR supports Debian 12, and Ubuntu 20.04, 22.04, and >= 23.04.
 
 ### Installing with mist, the MPR CLI
 
 Install `mist` by following the [upostream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
 
+Packages installed via `mist` will be compiled from source
+
 ```bash
-# Latest stable release (compiled from source)
+# Latest stable release
 mist install prismlauncher
-# Latest stable release (binary)
-mist install prismlauncher-bin
-# Newest Git commit (compiled from source)
+# Newest Git commit
 mist install prismlauncher-git
 ```
 
