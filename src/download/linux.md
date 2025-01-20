@@ -171,19 +171,6 @@ mist install prismlauncher-bin
 mist install prismlauncher-git
 ```
 
-### Installing with Pacstall
-
-Install [`pacstall`](https://pacstall.dev/), then run:
-
-```bash
-# Latest stable release (compiled from source)
-pacstall -I prismlauncher
-# Latest stable release (binary)
-pacstall -I prismlauncher-bin
-# Newest Git commit (compiled from source)
-pacstall -I prismlauncher-git
-```
-
 ## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
 
 Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps) store
