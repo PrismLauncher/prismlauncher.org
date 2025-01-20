@@ -77,8 +77,8 @@ After downloading the AppImage, open your file manager and make it [executable](
 ### CLI
 
 ```bash
-curl -fsSLo PrismLauncher.AppImage https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage
-chmod +x ./PrismLauncher.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage
+chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 ./PrismLauncher.AppImage
 ```
 
