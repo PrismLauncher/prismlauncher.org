@@ -6,7 +6,17 @@ eleventyNavigation:
 ---
 # Installing Java
 
-Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with Prism Launcher.
+## Automatically installing Java (recommended)
+
+In Prism Launcher 9.0+, you can let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by enabling "Autodetect Java version" and "Auto-download Mojang Java" in:
+
+> Settings (top toolbar) > Java
+
+This will make the launcher automatically download the right version of Java for your version of Minecraft (Java 8 for pre-1.17, Java 17 for 1.17-1.20.4, etc.). The rest of this page is going to explain downloading Java manually, and is probably not needed for you.
+
+If the Java downloader is not available for you - which is the case on most Linux packages apart from the official Flatpak and AppImage downloads - manual installation is recommended instead.
+
+## Manually installing Java
 
 Oracle Java is not recommended. As of 2019, it has licensing that prohibits certain uses, and it requires an account to download certain versions. Their downloads are intended for those who have purchased a support contract from Oracle.
 
@@ -21,7 +31,7 @@ If you would like to learn more about OpenJDK and the vendors mentioned in this 
 
 Otherwise, continue reading for quick download links and a guide for which one to choose.
 
-## Selecting Java
+### Selecting Java
 
 Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
 
@@ -35,7 +45,7 @@ or for a specific instance:
 
 If you have just installed a version of Java and it doesn't show up, try pressing Refresh or restart the launcher. If you don't have your desired Java version installed, keep reading.
 
-## Installing Java on Windows
+### Installing Java on Windows
 
 **First, check your CPU architecture.** Here is a method that works on all Windows versions:
 
@@ -63,7 +73,7 @@ Then, download the appropriate Java:
 
 **Tip:** If you are on Windows 11, you can automatically install 8, 17 and 21 by running `winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
 
-## Installing Java on macOS
+### Installing Java on macOS
 
 **First, check your CPU architecture.**
 
@@ -84,11 +94,11 @@ Then, download the appropriate Java:
 | Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8) | Azul, Coretto |
 |  | aarch64 | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto |
 
-## Installing Java on Linux
+### Installing Java on Linux
 
 On Linux, it's recommended to use your package manager for installing Java.
 
-### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
+#### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
 
 On the COPR package all required Java versions should be installed, but this is the command to install it:
 
@@ -96,25 +106,25 @@ On the COPR package all required Java versions should be installed, but this is 
 sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk
 ```
 
-### Void Linux
+#### Void Linux
 
 ```bash
 sudo xbps-install openjdk17-jre openjdk8-jre openjdk21-jre 
 ```
 
-### Arch Linux, Manjaro, EndeavorOS, Garuda
+#### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
 sudo pacman -S jre17-openjdk jre8-openjdk jre21-openjdk
 ```
 
-### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
+#### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
 sudo apt install openjdk-17-jre openjdk-8-jre openjdk-21-jre
 ```
 
-### Debian, MX Linux
+#### Debian, MX Linux
 
 ```bash
 sudo apt install openjdk-17-jre openjdk-21-jre
@@ -128,41 +138,37 @@ sudo add-apt-repository --yes https://packages.adoptium.net/artifactory/deb/
 sudo apt-get update && sudo apt-get install temurin-8-jdk
 ```
 
-### Alpine Linux
+#### Alpine Linux
 
 ```bash
 sudo apk add openjdk17 openjdk8
 ```
 
-### Flatpak
+#### Flatpak
 
 The Prism Launcher Flatpak already bundles Java.
 
-### NixOS
+#### NixOS
 
 The Prism Launcher NixOS package already bundles Java.
 
-## Special cases
+### Special cases
 
-### Forge 1.16.5 and Java 8u321+
+#### Forge 1.16.5 and Java 8u321+
 
-Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended
+Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is recommended.
 
-### A note about Intel HD 2000/3000 on Windows 10
+#### A note about Intel HD 2000/3000 on Windows 10
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround, you need to install an older java binary (note: these links are official MultiMC links, and we can't guarantee the safety of the content on them):
+<!-- markdownlint-disable-next-line link-fragments -->
+*For 1.16.5 or older* there's a workaround in installing an older Java binary. Mojang Java 8u51 is recommended, and can be automatically installed with the [above](#automatically-installing-java-(recommended)).
 
-- [this for 64bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-x64.zip)
-- [this for 32bit Windows](https://files.multimc.org/downloads/jre-8u51-windows-i586.zip)
-
-After you download the required java binary for your architecture, *extract* the zip, and move the folder to your Prism Launcher data folder (%appdata%/Prism Launcher for non-portable, the Prism Launcher folder for portable builds), you need to go to the *Prism Launcher java settings*, then to *browse*, then go to the folder with this particular java, click *java.exe* then *open*.
-This should fix your issue.
-Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
+Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
-### Older Minecraft on MacOS
+#### Older Minecraft on MacOS
 
 If you use some older Minecraft versions, you might have had this error:
 
