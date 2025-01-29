@@ -6,7 +6,7 @@ eleventyNavigation:
 ---
 # Installing Java
 
-## Automatically installing Java (recommended) {#automatically-installing-java}
+## Automatically installing Java (recommended)
 
 In Prism Launcher 9.0+, you can let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by enabling "Autodetect Java version" and "Auto-download Mojang Java" in:
 
@@ -162,7 +162,8 @@ Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 
 
 Since those iGPUs are not *officially* supported on Windows 10, with them the game is likely going to crash with any modern java binary.
 
-*For 1.16.5 or older* there's a workaround in installing an older Java binary. Mojang Java 8u51 is recommended, and can be automatically installed with the [above](#automatically-installing-java).
+<!-- markdownlint-disable-next-line link-fragments -->
+*For 1.16.5 or older* there's a workaround in installing an older Java binary. Mojang Java 8u51 is recommended, and can be automatically installed with the [above](#automatically-installing-java-(recommended)).
 
 Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
