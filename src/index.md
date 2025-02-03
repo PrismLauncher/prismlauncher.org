@@ -98,6 +98,38 @@ For people who don't want to use Discord, we have a Matrix Space:
 
 <a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
 
+# Sponsors
+
+We thank all the wonderful backers over at Open Collective! Support Prism Launcher by [becoming a backer](https://opencollective.com/prismlauncher).
+
+[![OpenCollective Backers](https://opencollective.com/prismlauncher/backers.svg?width=890&limit=1000)](https://opencollective.com/prismlauncher#backers)
+
+We also have many wonderful companies who help us keep the lights on
+
+<div class="row corporate-sponsors">
+
+<a href="https://www.jetbrains.com/opensource/">
+  <img src= "https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" alt="JetBrains">
+</a>
+
+<a href="https://hosted.weblate.org/engage/prismlauncher/">
+  <img src="https://hosted.weblate.org/widgets/prismlauncher/-/open-graph.png" alt="Weblate translation status" />
+</a>
+
+<a href="https://www.macstadium.com">
+  <img src="https://uploads-ssl.webflow.com/5ac3c046c82724970fc60918/5c019d917bba312af7553b49_MacStadium-developerlogo.png" alt="Powered by MacStadium" width="300">
+</a>
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg" alt="Deploys by Netlify" />
+</a>
+
+<a href="https://tuta.com">
+  <img src="/img/tuta-logo.png" alt="Mail provided by Tuta">
+</a>
+
+</div>
+
 # Source code
 
 ---
