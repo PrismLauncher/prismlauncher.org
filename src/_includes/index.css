@@ -367,6 +367,16 @@ a.direct-link:focus:visited,
   flex-direction: column;
 }
 
+.row.corporate-sponsors {
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.row.corporate-sponsors img {
+	max-width: 256px;
+}
+
 .column {
   display: flex;
   align-items: center;
