@@ -109,7 +109,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
    - Replace `(msystem)` with the msystem you're using (e.g. clang64). On 64-bit msystems, like *MSYS2 CLANG64*, you have to add `-x64` to the dlls.
 
-**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
+**If this doesn't work for you, please let us know on our Discord server, or Matrix Space.**
 
 ## IDEs and Tooling
 
