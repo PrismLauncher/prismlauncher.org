@@ -13,7 +13,6 @@ You can now use the sidebar to the left of the window to choose from the followi
 * Import from zip
 * ATLauncher
 * CurseForge
-* FTB
 * FTB Legacy
 * Technic
 * Modrinth
