@@ -37,7 +37,7 @@ Note that if your AppImage is not called `PrismLauncher-Linux-x86_64.AppImage` y
 * To create the .desktop file we can use this command: `nano PrismLauncher.desktop`
 * Now paste the following inside:
   
-```
+```ini
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
