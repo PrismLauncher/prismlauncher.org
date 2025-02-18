@@ -16,13 +16,16 @@ Installing Prism Launcher on most platforms should be quite straightforward. Hea
 # Linux
 
 ## Flathub
+
 * To install the flatpack you must have flathub installed. Install instructions can be found [here](https://flathub.org/setup).
 * Now head to the [Flathub page for prism launcher](https://flathub.org/apps/org.prismlauncher.PrismLauncher). 
 * Find the dropdown next to "install" and run the commands listed there. 
 * Prism launcher should now be installed on your system.
 
 ## AppImage
+
 This is dependent on system, but I will cover Ubuntu here.
+
 * Head over to the [Downloads](/download/) page and download the AppImage.
 * To "install" the appimage you must create a .desktop file and put it in `/usr/share/applications`. I cover this in a later step.
 * Place your AppImage in `/usr/local/bin` with the following command:  
@@ -33,6 +36,7 @@ Note that if your AppImage is not called `PrismLauncher-Linux-x86_64.AppImage` y
 * Move it to the correct location: `sudo mv Downloads/favicon.ico /usr/share/icons/prismLauncherFavicon.ico`
 * To create the .desktop file we can use this command: `nano PrismLauncher.desktop`
 * Now paste the following inside:
+  
 ```
 [Desktop Entry]
 Encoding=UTF-8
@@ -43,6 +47,7 @@ Exec=/usr/local/bin/PrismLauncher-Linux-x86_64.AppImage
 Name=Prism Launcher
 Icon=/usr/share/icons/prismLauncherFavicon.ico
 ```
+
 * Press `ctrl+x` then `y` and `enter` to save the file.
 * Now move the file to `/usr/share/applications` so it shows up in your app dock. `sudo mv PrismLauncher.desktop /usr/share/applications`
 * Check that the app appears in your app dock and that it launches.
