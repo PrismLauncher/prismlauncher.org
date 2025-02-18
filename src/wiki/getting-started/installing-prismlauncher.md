@@ -25,9 +25,7 @@ Installing Prism Launcher on most platforms should be quite straightforward. Hea
 This is dependent on system, but I will cover Ubuntu here.
 * Head over to the [Downloads](/download/) page and download the AppImage.
 * To "install" the appimage you must create a .desktop file and put it in `/usr/share/applications`. I cover this in a later step.
-* Place your AppImage in `/usr/local/bin` with the command:
-`sudo mv Downloads/PrismLauncher-Linux-x86_64.AppImage /usr/local/bin/`
-Note that if your AppImage is not called `PrismLauncher-Linux-x86_64.AppImage` you will need to change that in the command as well.
+* Place your AppImage in `/usr/local/bin` with the command:\n`sudo mv Downloads/PrismLauncher-Linux-x86_64.AppImage /usr/local/bin/`\nNote that if your AppImage is not called `PrismLauncher-Linux-x86_64.AppImage` you will need to change that in the command as well.
 * Now you must allow the file to be executed with the following command: `sudo chmod a+x /usr/local/bin/PrismLauncher-Linux-x86_64.AppImage`
 * Now download the logo with this command: `wget https://github.com/PrismLauncher/prismlauncher.org/blob/main/src/favicon.ico` M
 * Move it to the correct location: `sudo mv Downloads/favicon.ico /usr/share/icons/prismLauncherFavicon.ico`
