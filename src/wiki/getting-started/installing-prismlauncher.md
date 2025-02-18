@@ -29,7 +29,7 @@ This is dependent on system, but I will cover Ubuntu here.
 `sudo mv Downloads/PrismLauncher-Linux-x86_64.AppImage /usr/local/bin/`  
 Note that if your AppImage is not called `PrismLauncher-Linux-x86_64.AppImage` you will need to change that in the command as well.
 * Now you must allow the file to be executed with the following command: `sudo chmod a+x /usr/local/bin/PrismLauncher-Linux-x86_64.AppImage`
-* Now download the logo with this command: `wget https://github.com/PrismLauncher/prismlauncher.org/blob/main/src/favicon.ico` M
+* Now download the logo with this command: `wget https://github.com/PrismLauncher/prismlauncher.org/blob/main/src/favicon.ico`
 * Move it to the correct location: `sudo mv Downloads/favicon.ico /usr/share/icons/prismLauncherFavicon.ico`
 * To create the .desktop file we can use this command: `nano PrismLauncher.desktop`
 * Now paste the following inside:
