@@ -11,9 +11,9 @@ eleventyNavigation:
     <div class="column">
       <div>
         <h1>Linux Download</h1>
-        <p>FlatHub supports both x86_64 and ARM64</p>
+        <p>Flathub supports both x86_64 and ARM64</p>
         <br>
-        <a class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank">Install from FlatHub</a>
+        <a class="button size-large type-link" href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher" target="_blank">Install from Flathub</a>
         <p>x86_64 ONLY</p>
         <br>
         <a class="button size-large" href="https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
@@ -77,8 +77,8 @@ After downloading the AppImage, open your file manager and make it [executable](
 ### CLI
 
 ```bash
-curl -fsSLo PrismLauncher.AppImage https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage
-chmod +x ./PrismLauncher.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/{{version.current}}/PrismLauncher-Linux-x86_64.AppImage
+chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 ./PrismLauncher.AppImage
 ```
 
@@ -142,7 +142,6 @@ sudo dnf install prismlauncher
 Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](https://mpr.makedeb.org/)
 
 [![prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)  
-[![prismlauncher-bin](https://img.shields.io/badge/mpr-prismlauncher--bin-orange)](https://mpr.makedeb.org/packages/prismlauncher-bin)  
 [![prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
 
 ### Installation using Prebuilt-MPR (recommended)
@@ -150,38 +149,22 @@ Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](h
 Add the Prebuilt-MPR repository as described [here](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
 
 ```bash
-# Latest stable release
 sudo apt install prismlauncher
-# Newest Git commit
-yay -S prismlauncher-git
 ```
 
-Prebuilt MPR supports Debian 11, 12, and Ubuntu 20.04, 22.04, 22.10, and 23.04.
+Prebuilt MPR supports Debian 12, and Ubuntu 20.04, 22.04, and >= 23.04.
 
 ### Installing with mist, the MPR CLI
 
-Install `mist` by following the [upostream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
+Install `mist` by following the [upstream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
+
+Packages installed via `mist` will be compiled from source
 
 ```bash
-# Latest stable release (compiled from source)
+# Latest stable release
 mist install prismlauncher
-# Latest stable release (binary)
-mist install prismlauncher-bin
-# Newest Git commit (compiled from source)
+# Newest Git commit
 mist install prismlauncher-git
-```
-
-### Installing with Pacstall
-
-Install [`pacstall`](https://pacstall.dev/), then run:
-
-```bash
-# Latest stable release (compiled from source)
-pacstall -I prismlauncher
-# Latest stable release (binary)
-pacstall -I prismlauncher-bin
-# Newest Git commit (compiled from source)
-pacstall -I prismlauncher-git
 ```
 
 ## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" height="20" /> Ubuntu (ARM32/64)
