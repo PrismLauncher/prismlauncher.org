@@ -11,15 +11,15 @@ eleventyNavigation:
 
 # <img src="https://raw.githubusercontent.com/PrismLauncher/PrismLauncher/a9d4370ad462b4ad3dd91f6bc38b40262967b5b2/program_info/org.prismlauncher.PrismLauncher.svg" height="20" /> Installing Prism Launcher
 
-Installing Prism Launcher on most platforms should be quite straightforward. Head over to our [Downloads](/download/) page, and choose the option that'll work best for your operating system, however the flathub and appimage options are detailed below:
+Installing Prism Launcher on most platforms should be quite straightforward. Head over to our [Downloads](/download/) page, and choose the option that will work best for your operating system, however the flathub and appimage options are detailed below:
 
 # Linux
 
 ## Flathub
 
 * To install the flatpack you must have flathub installed. Install instructions can be found [here](https://flathub.org/setup).
-* Now head to the [Flathub page for prism launcher](https://flathub.org/apps/org.prismlauncher.PrismLauncher). 
-* Find the dropdown next to "install" and run the commands listed there. 
+* Now head to the [Flathub page for prism launcher](https://flathub.org/apps/org.prismlauncher.PrismLauncher).
+* Find the dropdown next to "install" and run the commands listed there.
 * Prism launcher should now be installed on your system.
 
 ## AppImage
@@ -34,7 +34,7 @@ This is dependent on system, but I will cover Ubuntu here.
 * Move it to the correct location: `sudo mv Downloads/favicon.ico /usr/share/icons/prismLauncherFavicon.ico`
 * To create the .desktop file we can use this command: `nano PrismLauncher.desktop`
 * Now paste the following inside:
-  
+
 ```ini
 [Desktop Entry]
 Encoding=UTF-8
