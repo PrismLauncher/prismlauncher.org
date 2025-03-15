@@ -83,7 +83,7 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 <strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
 </div>
 
-### <img src="https://raw.githubusercontent.com/embeddedt/embeddium/16.x/forge/src/main/resources/icon.png" height="20"> Embeddium
+### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/refs/heads/21.4/neoforge/src/main/resources/icon.png" height="20"> Embeddium
 
 [Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
