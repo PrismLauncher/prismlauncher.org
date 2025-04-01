@@ -331,6 +331,16 @@ code {
   width: 100%;
 }
 
+.blog-image {
+  width: 80%;
+}
+
+@media(width >= 48rem) {
+  .blog-image {
+    width: 40%;
+  }
+}
+
 
 /* Direct Links / Markdown Headers */
 .direct-link {
