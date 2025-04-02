@@ -1,5 +1,5 @@
 ---
-title: Announcing Prism Premium
+title: "[April Fools 2025] Announcing Prism Premium"
 description: What everyone's been waiting for!
 date: 2025-04-01
 tags:
