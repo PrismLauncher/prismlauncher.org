@@ -53,9 +53,14 @@
   font-weight: bold;
 }
 
-.wiki-toc .section, .toggle>details>summary{
-  padding: 0.6em;
+.wiki-toc .section, .toggle>details>summary {
   border-radius: 1em 0 0 1em;
+  display: flex;
+}
+
+.wiki-toc .section>a, .toggle>details>summary>a {
+  padding: 0.6em;
+  flex-grow: 1;
 }
 
 
