@@ -53,13 +53,15 @@ Themes can help you spice up your launcher appearance.
 
 Here are the instructions to get your themes & icons up and working.
 
-**_Make sure you are using Prism Launcher 6.0 or later_**
+Make sure you are using Prism Launcher 6.0 or later.
 
 ### Themes
 
 - Download a theme above and copy the zip file to your Themes Directory.
 
   - Open your local Prism Launcher Themes folder:
+
+    - on **any OS:** in Prism, select **Folders** > **Widget Themes**
 
     - on **Windows:** `%appdata%\PrismLauncher\themes`
 
@@ -69,7 +71,7 @@ Here are the instructions to get your themes & icons up and working.
 
     - on **Flatpak:** `~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/themes`
 
-- Unzip the newly downloaded theme in the `themes` folder.
+- Unzip the newly downloaded theme in the `themes` folder. Make sure the folder structure looks like `.../PrismLauncher/themes/your_theme_name/theme.json`.
 
 - Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Widgets (make sure you're changing Widgets and not Icons), choose the newly added theme. Click the Close button, and enjoy your fresh new Prism Launcher.
 
@@ -79,6 +81,8 @@ Here are the instructions to get your themes & icons up and working.
 
   - Open your local Prism Launcher Directory:
 
+    - on **any OS:** in Prism, select **Folders** > **Icon Theme**
+
     - on **Windows:** `%appdata%\PrismLauncher`
 
     - on **Mac:** `~/Library/Application Support/PrismLauncher`
@@ -87,7 +91,7 @@ Here are the instructions to get your themes & icons up and working.
 
     - on **Flatpak:** `~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher`
 
-- Extract the contents of the zip into the `iconthemes` folder (if the folder doesn't exist do this next step).
+- Extract the contents of the zip into the `iconthemes` folder (if the folder doesn't exist do this next step). Make sure the folder structure looks like `.../PrismLauncher/iconthemes/your_theme_name/index.theme`.
 
   - In the `PrismLauncher` folder, create a new folder named `iconthemes` (you should only have to do this once).
 
