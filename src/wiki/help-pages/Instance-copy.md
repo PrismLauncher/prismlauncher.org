@@ -30,9 +30,9 @@ This option allows you to copy all saved games from your original instance to yo
 
 This option allows you to copy all game settings, if you want your configuration to be cloned.
 
-### Copy ressources packs
+### Copy resource packs
 
-This option allows you to copy all the ressources packs to your new instance.
+This option allows you to copy all the resource packs to your new instance.
 
 ### Copy screenshots
 
