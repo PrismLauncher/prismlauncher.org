@@ -3,7 +3,7 @@ layout: layouts/main.njk
 title: Home
 hero:
   title: 'Prism Launcher'
-  description: 'An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and
+  description: 'An open source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
   image:
     dark: ./src/img/screenshots/LauncherDark.png
@@ -19,8 +19,8 @@ hero:
       <div>
         <h1>Modpack Management</h1>
         <div class="subtitle">
-          Install and launch modpacks easily, while keeping them clean.
-          No longer do you need to manually install them, and easily update modpacks, Prism Launcher can do these tasks for you, without installing tons of separate launchers.
+          <p>Install and launch modpacks easily, while keeping them clean.
+          You no longer need to manually install and update modpacks—Prism Launcher can do these tasks for you without the hassle.</p>
         </div>
       </div>
     </div>
@@ -33,9 +33,10 @@ hero:
   <div class="row">
     <div class="column">
       <div>
-        <h1>Download & Update Mods</h1>
+        <h1>Download and Update Mods</h1>
         <div class="subtitle">
-          <p>Are you sick of finding and adding that one mod you need? Prism Launcher is able to download & update individual mods from outside of modpacks using Modrinth and CurseForge.
+          <p>Are you sick of constantly finding and re-adding that one mod you need?
+          Prism Launcher interfaces directly with Modrinth and CurseForge and can download and update individual mods in addition to modpacks.</p>
         </div>
       </div>
     </div>
@@ -50,9 +51,9 @@ hero:
       <div>
         <h1>Minecraft Instance Management </h1>
         <div class="subtitle">
-          <p>Did your settings ever reset after launching an older version? Did you ever accidentally break a world because you opened it in an old version?
-          Are you tired of manually switching mods for different versions, installing modloaders?<p>
-          <p>Prism Launcher can help. Each Minecraft instance has its own folder, with separate mods, resource packs and other things.</p>
+          <p>Have your settings ever reset after launching an older version? Have you ever accidentally broken a world because you opened it in an old version?
+          Are you tired of manually switching mods and installing modloaders for different versions?<p>
+          <p>Prism Launcher can help. Each Minecraft instance has its own folder, with completely separate mods, resource packs, and settings for each instance.</p>
         </div>
         <br>
       </div>
@@ -65,9 +66,10 @@ hero:
   <div class="row">
     <div class="column">
       <div>
-        <h1>Lightweight & Customizable</h1>
+        <h1>Lightweight and Customizable</h1>
         <div class="subtitle">
-          You don't need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires little system resources. Prism Launcher also lets you customize the menu and supports <a href="https://prismlauncher.org/wiki/getting-started/change-themes/">custom themes</a>.
+          You don't need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires very few system resources to run.
+          Prism Launcher also lets you customize the menu and supports <a href="https://prismlauncher.org/wiki/getting-started/change-themes/">custom themes</a>.
         </div>
       </div>
     </div>
@@ -134,7 +136,7 @@ We also have many wonderful companies who help us keep the lights on
 
 ---
 
-Prism Launcher is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PrismLauncher/PrismLauncher/) under the GPL-3 license.
+Prism Launcher is focused on user freedom and free redistributability. All code is available on [GitHub](https://github.com/PrismLauncher/PrismLauncher/) under the GPL-3 license.
 
 [Source for this website](https://github.com/PrismLauncher/prismlauncher.org) is hosted under the AGPL-3 License.
 
