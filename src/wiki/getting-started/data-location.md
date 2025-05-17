@@ -6,7 +6,7 @@ eleventyNavigation:
 --- 
 # Data Location
 
-Prism Launcher stores your data in your OS's standard application data folder. For the portable version, data is stored within its own directory. Below is a table containing the default locations for each OS:
+Prism Launcher stores your data in your OS's standard application data folder. For the portable version, data is stored within its own directory. To find it, select **Folders** > **Launcher Root** in Prism. Below is a table containing the default locations for each OS:
 
 | OS                         | Folder                                                          |
 | -------------------------- | --------------------------------------------------------------- |
