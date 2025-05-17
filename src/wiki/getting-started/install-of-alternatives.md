@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Why bother?
 
-For older Minecraft versions, OptiFine was *the* way to make your game better, faster, and stronger through various useful features and optimizations. However, on Minecraft versions since 1.16 there exist much better alternatives. However, there aren't really any stable Optifine alternatives on older versions.
+For older Minecraft versions, OptiFine was *the* way to make your game better, faster, and stronger through various useful features and optimizations. However, since Minecraft 1.16 there exist much better alternatives.
 
 ## Detailed explanation
 
@@ -71,21 +71,21 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/adrenaline/logo_512h.png" height="20"> Adrenaline
 
-[Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game, not adding QOL features, and not introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
+[Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game and not introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" height="30"> Forge/NeoForge Mods
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" height="20"> Sodium
 
-[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on Forge/NeoForge, see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
 
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" height="20"> Lithium
 
-[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on Forge/NeoForge, see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions Sodium exists for.
+[Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
 
 <div class="notification type-warn">
 <strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of OptiFine alternatives, which might have some compatibility/stability issues.</strong>
