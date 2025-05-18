@@ -8,9 +8,9 @@ eleventyNavigation:
 
 Make sure you know how to [Create an Instance](../create-instance) before attempting to download mods.
 
-Inside the **Edit Instance** menu, select the **version** tab on the left sidebar. From here, you will need to decide on which mod loader you would like to use. **Fabric** and **Forge** are the most popular, with Forge having the most mods available. Fabric and Forge mods are generally not cross-compatible, so choosing between them will change your selection of mods.
+Inside the **Edit** menu, select the **Version** tab on the left sidebar. From here, you will need to decide on which mod loader you would like to use. **Fabric** is available for all versions starting with **1.14**. If you are using Forge mods, for Minecraft versions **1.20.1** and below, select **Forge**; for versions above **1.20.1**, it's generally recommended to use **NeoForge** instead. Content-heavy mods are typically made for **Forge** or **NeoForge**, while **Fabric** mods focus more on performance and QOL features.
 
-Once you have picked out your ideal mod loader, go to the **Mods** tab, and select the **Download Mods** option that's to the right. From here, you can choose to install from both *Modrinth* and *CurseForge* services. Modrinth focuses more towards free and open-source mods, however, CurseForge has a much larger selection.
+Once you have picked out your ideal mod loader, go to the **Mods** tab, and select the **Download Mods** option that's to the right. From here, you can choose to install from both *Modrinth* and *CurseForge* services. Modrinth focuses more towards free and open-source mods and is generally recommended, however, some older mods may only exist on CurseForge.
 
 It is worth noting that many mods will be available on **both platforms**.
 
@@ -20,7 +20,7 @@ After you've chosen your mod provider, you can search or browse for any desired 
 
 If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
-If it is missing, you can find it by right-clicking on your instance in Prism Launcher and selecting the **Edit Instance** option in the menu.
+If it is missing, you can install it from **Edit** > **Mods** > **Download mods** like any other mod.
 
 ## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" height="20"> Quilt
 
