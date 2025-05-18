@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
       '@11ty/eleventy-fetch':
-        specifier: 4.0.1
-        version: 4.0.1
+        specifier: 5.1.0
+        version: 5.1.0
       '@11ty/eleventy-img':
         specifier: 4.0.2
         version: 4.0.2
@@ -68,6 +68,10 @@ packages:
     resolution: {integrity: sha512-yIiLM5ziBmg86i4TlXpBdcIygJHvh/GgPJyAiFOckO9H4y9cQDM8eIcJCUQ4Mum0NEVui/OjhEut2R08xw0vlQ==}
     engines: {node: '>=14'}
 
+  '@11ty/eleventy-fetch@5.1.0':
+    resolution: {integrity: sha512-gSmCA3olJxRwtTkXyS+KIanq1kEufCC+JsHyTa7ta5NqmeUQlWA8zEngtXrDl+ebrAvFz2bNaxLd+0ERpnnSPQ==}
+    engines: {node: '>=18'}
+
   '@11ty/eleventy-img@4.0.2':
     resolution: {integrity: sha512-MSCkZRJk9rWa7nojx9HBMZJePOrm+V3XNpT091qguj61SG5UsgXbxAkoeejO3npmKIQJTyVIV/rrA6d7xZYOvw==}
     engines: {node: '>=18'}
@@ -84,6 +88,10 @@ packages:
   '@11ty/eleventy-utils@1.0.3':
     resolution: {integrity: sha512-nULO91om7vQw4Y/UBjM8i7nJ1xl+/nyK4rImZ41lFxiY2d+XUz7ChAj1CDYFjrLZeu0utAYJTZ45LlcHTkUG4g==}
     engines: {node: '>=12'}
+
+  '@11ty/eleventy-utils@2.0.7':
+    resolution: {integrity: sha512-6QE+duqSQ0GY9rENXYb4iPR4AYGdrFpqnmi59tFp9VrleOl0QSh8VlBr2yd6dlhkdtj7904poZW5PvGr9cMiJQ==}
+    engines: {node: '>=18'}
 
   '@11ty/eleventy@2.0.1':
     resolution: {integrity: sha512-t8XVUbCJByhVEa1RzO0zS2QzbL3wPY8ot1yUw9noqiSHxJWUwv6jiwm1/MZDPTYtkZH2ZHvdQIRQ5/SjG9XmLw==}
@@ -244,6 +252,10 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@rgrove/parse-xml@4.2.0':
+    resolution: {integrity: sha512-UuBOt7BOsKVOkFXRe4Ypd/lADuNIfqJXv8GvHqtXaTYXPPKkj2nS2zPllVsrtRjcomDhIJVBnZwfmlI222WH8g==}
+    engines: {node: '>=14.0.0'}
 
   '@sindresorhus/slugify@1.1.2':
     resolution: {integrity: sha512-V9nR/W0Xd9TSGXpZ4iFUcFGhuOJtZX82Fzxj1YISlbSgKvIiNa7eLEZrT0vAraPOt++KHauIVNYgGRgjc13dXA==}
@@ -480,6 +492,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
 
@@ -625,6 +646,9 @@ packages:
 
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
+
+  flatted@3.3.3:
+    resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
   follow-redirects@1.15.6:
     resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
@@ -1059,6 +1083,9 @@ packages:
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
   multimatch@5.0.0:
     resolution: {integrity: sha512-ypMKuglUrZUD99Tk2bUQ+xNQj43lPEfAeX2o9cTteAmShXy2VHDJpuwu1o0xqoKCt9jLVAvwyFKdLTPXKAfJyA==}
     engines: {node: '>=10'}
@@ -1474,6 +1501,16 @@ snapshots:
       - encoding
       - supports-color
 
+  '@11ty/eleventy-fetch@5.1.0':
+    dependencies:
+      '@11ty/eleventy-utils': 2.0.7
+      '@rgrove/parse-xml': 4.2.0
+      debug: 4.4.1
+      flatted: 3.3.3
+      p-queue: 6.6.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@11ty/eleventy-img@4.0.2':
     dependencies:
       '@11ty/eleventy-fetch': 4.0.1
@@ -1506,6 +1543,8 @@ snapshots:
   '@11ty/eleventy-utils@1.0.3':
     dependencies:
       normalize-path: 3.0.0
+
+  '@11ty/eleventy-utils@2.0.7': {}
 
   '@11ty/eleventy@2.0.1':
     dependencies:
@@ -1674,6 +1713,8 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@rgrove/parse-xml@4.2.0': {}
 
   '@sindresorhus/slugify@1.1.2':
     dependencies:
@@ -1891,6 +1932,10 @@ snapshots:
     dependencies:
       ms: 2.1.2
 
+  debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
   decode-named-character-reference@1.0.2:
     dependencies:
       character-entities: 2.0.2
@@ -2022,6 +2067,8 @@ snapshots:
       rimraf: 3.0.2
 
   flatted@3.3.1: {}
+
+  flatted@3.3.3: {}
 
   follow-redirects@1.15.6: {}
 
@@ -2548,6 +2595,8 @@ snapshots:
   ms@2.0.0: {}
 
   ms@2.1.2: {}
+
+  ms@2.1.3: {}
 
   multimatch@5.0.0:
     dependencies:
