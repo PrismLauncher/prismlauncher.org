@@ -10,11 +10,13 @@ It’s that time of the year again: happy pride month! And we hope it’s a grea
 
 We’re proud to have such an amazing and queer community, who support us year-round through contributions, sending “meows” in our Discord server, creating guides and walkthroughs, in-game content we can all enjoy, and just using the launcher we’ve built. You’re all the best, and we wouldn’t be here without you. We hope to keep providing you with the same fun space we always have
 
-During this time, we also think it’s important to highlight some resources out there to help you or those close to you:
+During this time, we also think it’s important to highlight some resources out there to help you or those close to you*:
 
 - [The Trevor Project](https://www.thetrevorproject.org/get-help/) hosts a 24/7/365 crisis hotline for LGBTQ+ youth
 - The [Transgender Law Center](https://transgenderlawcenter.org/resources/) has educational resources for common challenges and questions transgender people may face
 - [InReach](https://inreach.org/) is an open source platform that helps LGTBQ+ people discover verified resources to assist them in their situations, with a focus on helping refugees, BIPOC, transgender people, and the youth.
+
+<sub><sup>*</sup> Please review the applicable Terms of Service for each resource. Mandatory reporting laws or policies may apply</sub>
 
 There are also many organizations that could use your help directly. Some of our favorites include:
 
