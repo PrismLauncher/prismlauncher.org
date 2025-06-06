@@ -83,24 +83,38 @@ hero:
 # Get involved
 
 ---
+<div class="content">
+  <div class="row row-reverse">
+    <div class="column">
+      <div>
+        <h1>Reddit</h1>
+                <h5>For people that want to discuss a bit:</h5>
+        <a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
+      </div>
+    </div>
+    <div class="column">
+    <div>
+      <h1>Discord</h1>
+      <h5>To talk directly to us and get involved with development:</h5>
+      <a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">Prism Launcher Discord</a></div>
+    </div>
+  </div>
+<div class="content">
+  <div class="row row-reverse">
+    <div class="column">
+      <div>
+        <h1>Matrix</h1>
+                <h5>For people who don't want to use Discord, we have a Matrix Space:</h5>
+        <a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
+      </div>
+    </div>
+  </div>
 
-## Reddit
 
-<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
-
-## Discord
-
-To talk directly to us and get involved with development:
-
-<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">Prism Launcher Discord</a>
-
-## Matrix
-
-For people who don't want to use Discord, we have a Matrix Space:
-
-<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
 
 # Sponsors
+
+---
 
 We thank all the wonderful backers over at Open Collective! Support Prism Launcher by [becoming a backer](https://opencollective.com/prismlauncher).
 
