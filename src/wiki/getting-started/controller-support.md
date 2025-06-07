@@ -42,7 +42,7 @@ For Minecraft 1.16.2 to 1.18, we recommend [**LambdaControls**](https://modrinth
 
 It can be installed using Prism Launcher's mod downloader function through either Modrinth (recommended) or CurseForge. Once installed, please launch your instance and navigate to the in-game controls menu. Within the in-game controls menu, you may need to change the "Mode" setting to **Controller** in order for the game to respond to input from the gamepad. If it doesn't work, you can use [**the app linked in the mod**](https://generalarcade.com/gamepadtool/) to edit the controller mappings.
 
-### <img src="https://raw.githubusercontent.com/intergrav/Branding/main/deckcraft/mark/mark_svg.svg" height="20"> DeckCraft (for Minecraft versions 1.18.2 or newer)
+### <img src="https://raw.githubusercontent.com/intergrav/Branding/main/deckcraft/mark/mark_svg.svg" height="20"> DeckCraft (for Minecraft versions 1.18.2 – 1.21.1)
 
 If you're on the Steam Deck, [DeckCraft](https://modrinth.com/project/deckcraft) might be useful to you. This is a modpack designed to make it easier to play Minecraft on the Deck. It includes MidnightControls, various optimizations, features, configurations, pre-installed shaders, and more.
 
