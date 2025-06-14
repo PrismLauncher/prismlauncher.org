@@ -131,16 +131,16 @@ The path to the .rpm packages will be printed once the build is complete.
 ### Building a Flatpak
 
 You don't need to clone the entire Prism Launcher repo for the latest stable version; the Flatpak file handles that. However, cloning the source repository is necessary to build from the latest commit (contains upstream manifest).
-Both `flatpak` and `flatpak-builder` packages must be installed on your system to proceed, including all build dependencies previously mentioned (at the top of page).
+Both the `flatpak` system package, and the `org.flatpak.Builder` flatpak must be installed to proceed, the previously mentioned build dependencies are not required.
 
 #### Latest Stable Release
 
 ```bash
 git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
 cd org.prismlauncher.PrismLauncher
-flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
+flatpak install org.kde.Sdk/x86_64/6.9 org.freedesktop.Sdk.Extension.openjdk17/x86_64/24.08 # build requirements
 # remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
+flatpak run org.flatpak.Builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
 
 #### Latest Commit
@@ -148,9 +148,9 @@ flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```bash
 git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo - contains upstream manifest
 cd PrismLauncher/flatpak
-flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
+flatpak install org.kde.Sdk/x86_64/6.8 org.freedesktop.Sdk.Extension.openjdk17/x86_64/24.08 # build requirements
 # remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
+flatpak run org.flatpak.Builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
 ```
 
 ### Installing Qt using the installer (optional)
