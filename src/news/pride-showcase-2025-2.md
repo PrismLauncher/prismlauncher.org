@@ -22,7 +22,7 @@ As a reminder, you can also send in your own through the [Pride 2025 Showcase th
 
 <img alt="A player named Marlowww with the tier 'HT1'" src="/img/news/pride-showcase-2025/tiertagger.webp" style="width: 40em">
 
-<small>Created by [Uku](http://uku3lig.net/)</small>
+<small>Created by [uku](http://uku3lig.net/)</small>
 
 [TierTagger](https://modrinth.com/mod/tiertagger) is a mod that displays a player's [PvP Tier](http://mctiers.com/) next to their name, as well as access to their profile in-game.
 
