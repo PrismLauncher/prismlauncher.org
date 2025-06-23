@@ -110,8 +110,6 @@ hero:
     </div>
   </div>
 
-
-
 # Sponsors
 
 ---
