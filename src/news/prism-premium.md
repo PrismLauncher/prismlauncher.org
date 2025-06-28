@@ -8,7 +8,7 @@ tags:
 
 <div class="center blog-image">
 
-![Silly handrawn image of the "Prism X Premium" logo, sponsored by Uku's mods](/img/news/prism-premium/prism-premium.png)
+![Silly handrawn image of the "Prism X Premium" logo, sponsored by uku's mods](/img/news/prism-premium/prism-premium.png)
 
 </div>
 
