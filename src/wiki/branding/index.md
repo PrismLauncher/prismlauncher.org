@@ -27,21 +27,21 @@ colors:
 --disabled: #666;
 
 --primary: hsl(350, 66%, 63%);
---link: hsl(214, 46%, 52%);
+--link: hsl(120, 61%, 50%);
 --info: hsl(274, 32%, 42%);
 --success: hsl(145, 27%, 59%);
 --warn: hsl(49, 85%, 69%);
 --danger: hsl(17, 95%, 70%);
 
 --primary-dark: hsl(350, 66%, 55%);
---link-dark: hsl(214, 46%, 42%);
+--link-dark: hsl(120, 61%, 38%);
 --info-dark: hsl(274, 32%, 32%);
 --success-dark: hsl(145, 27%, 49%);
 --warn-dark: hsl(49, 85%, 60%);
 --danger-dark: hsl(17, 95%, 65%);
 
 --primary-light: hsl(350, 66%, 70%);
---link-light: hsl(214, 46%, 67%);
+--link-light: hsl(120, 61%, 65%);
 --info-light: hsl(274, 32%, 56%);
 --success-light: hsl(145, 27%, 67%);
 --warn-light: hsl(49, 85%, 79%);
