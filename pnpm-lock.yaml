@@ -39,8 +39,8 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
       luxon:
-        specifier: 3.6.1
-        version: 3.6.1
+        specifier: 3.7.1
+        version: 3.7.1
       markdown-it:
         specifier: 14.1.0
         version: 14.1.0
@@ -884,8 +884,8 @@ packages:
     resolution: {integrity: sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A==}
     engines: {node: 20 || >=22}
 
-  luxon@3.6.1:
-    resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
+  luxon@3.7.1:
+    resolution: {integrity: sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==}
     engines: {node: '>=12'}
 
   markdown-it-anchor@9.2.0:
@@ -1530,7 +1530,7 @@ snapshots:
       iso-639-1: 2.1.15
       kleur: 4.1.5
       liquidjs: 10.16.7
-      luxon: 3.6.1
+      luxon: 3.7.1
       markdown-it: 13.0.2
       micromatch: 4.0.8
       minimist: 1.2.8
@@ -2264,7 +2264,7 @@ snapshots:
 
   lru-cache@11.1.0: {}
 
-  luxon@3.6.1: {}
+  luxon@3.7.1: {}
 
   markdown-it-anchor@9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0):
     dependencies:
