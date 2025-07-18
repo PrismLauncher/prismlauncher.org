@@ -13,6 +13,8 @@ const OUT_FILE_CONTRIBUTORS = path.join(
   "../src/_data/contributors.json"
 );
 
+const UNLISTED_CONTRIBUTORS = new Set([172450873 /* crueter */]);
+
 let headers = {
   Accept: "application/vnd.github+json",
 };
@@ -57,6 +59,7 @@ async function fetchContributors() {
 
   const users = [];
   for (i in pages) {
+    if (UNLISTED_CONTRIBUTORS.has(pages[i].id)) continue;
     users.push([pages[i].avatar_url, pages[i].html_url]);
   }
   return { users };
