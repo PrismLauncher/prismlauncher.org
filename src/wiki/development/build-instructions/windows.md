@@ -74,7 +74,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
 ## Building with MSYS2
 
-### Dependencies
+### MSYS2 Dependencies
 
 - [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
 - [Java Development Kit 8 or later](https://adoptium.net/)

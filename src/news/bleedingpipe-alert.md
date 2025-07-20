@@ -79,4 +79,4 @@ If you use the mods listed below, it is recommended to update them to the latest
 
 We would like to thank the MMPA for the detailed blogpost explaining the situation and the release of Pipeblocker. If you are interested, you can join their Discord server here: <https://discord.gg/5NvpmUttDP>.
 
-[unascribed](https://unascribed.com/) also did great work in collecting a larger lists of affected mods, which you can find [here](https://unascribed.com/mc-mad-gadget.html).
+[unascribed](https://unascribed.com/) also did great work in collecting a larger lists of affected mods, which you can find here: <https://unascribed.com/mc-mad-gadget.html>

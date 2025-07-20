@@ -68,7 +68,7 @@ Head to your preferred SteamGridDB page and click on the "BOOP" button on each a
 
 That's it! You should now see the artwork in your Steam Library.
 
-### <img src="https://raw.githubusercontent.com/intergrav/Branding/main/deckcraft/mark/mark_svg.svg" height="20"> DeckCraft
+### <img src="https://raw.githubusercontent.com/intergrav/Branding/main/deckcraft/mark/mark_svg.svg" alt="DeckCraft Logo" height="20"> DeckCraft
 
 [DeckCraft](https://modrinth.com/project/deckcraft) is a modpack designed to make it easier to play Minecraft on the Steam Deck. It includes a variety of optimizations, extra features, pre-installed shaders, and more. It works out-of-the-box and doesn't require any manual configuration to start playing.
 

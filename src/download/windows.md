@@ -70,6 +70,6 @@ choco install prismlauncher
 
 ## [PortableApps.com](https://portableapps.com) Installer
 
-A portable installer for Prism Launcher can be found [here](https://RuiNtD.github.io/PrismLauncherPortable/).
+A portable installer for Prism Launcher can be found here: <https://RuiNtD.github.io/PrismLauncherPortable/>
 
 </div>
