@@ -11,7 +11,7 @@ pkgs.mkShellNoCC {
   packages = [
     # Node tools
     pkgs.nodejs
-    pkgs.corepack
+    pkgs.pnpm
     pkgs.nrr
 
     # Nix tools
