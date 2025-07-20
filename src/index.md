@@ -127,7 +127,7 @@ We also have many wonderful companies who help us keep the lights on
 </a>
 
 <a href="https://tuta.com">
-  <img src="/img/tuta-logo.png" alt="Mail provided by Tuta">
+  <img src="/img/tuta-logo.webp" alt="Mail provided by Tuta">
 </a>
 
 </div>
