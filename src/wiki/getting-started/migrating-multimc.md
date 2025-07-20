@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # Migrating instances from MultiMC
 
-## <img src="https://avatars2.githubusercontent.com/u/5411890" height="20" /> In MultiMC
+## <img src="https://avatars2.githubusercontent.com/u/5411890" alt="MultiMC Logo" height="20" /> In MultiMC
 
 In order to transfer an instance, or multiple instances from MultiMC to Prism Launcher, you must begin the process by opening MultiMC on your computer.
 
@@ -17,7 +17,7 @@ Left-click on the tab and select the **View Instance Folder** option. This shoul
 
 Now that the MultiMC instance directory is open, you may **select**, and then **copy** the instances that you wish to transfer.
 
-## <img src="https://raw.githubusercontent.com/PrismLauncher/PrismLauncher/develop/program_info/org.prismlauncher.PrismLauncher.svg" height="20" /> In Prism Launcher
+## <img src="https://raw.githubusercontent.com/PrismLauncher/PrismLauncher/develop/program_info/org.prismlauncher.PrismLauncher.svg" alt="Prism Launcher Logo" height="20" /> In Prism Launcher
 
 To complete the transfer process, you must now open Prism Launcher.
 

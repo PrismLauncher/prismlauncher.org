@@ -22,7 +22,7 @@ After taking a break from our work on the upcoming [Prism 𝕏](https://prismlau
 
 This release primarily improves stability, compatibility, and introduces some quality of life changes. Highlights include many crashes being fixed, better support for themeing, better default themes, and our AppImage now (hopefully) working on many more Linux distributions.
 
-Feel free to grab the latest download [here](https://prismlauncher.org/download) for your respective platform, and until next time! 🌈
+Feel free to [grab the latest download here](https://prismlauncher.org/download) for your respective platform, and until next time! 🌈
 
 # Changelog
 

@@ -29,7 +29,7 @@ A workaround for this issue is adding the following JVM argument:
 
 ## Common Launcher-related issues
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> Windows (7, 8.1, 10, 11)
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" height="20" /> Windows (7, 8.1, 10, 11)
 
 #### "MSVCP140_2.dll was not found"?
 
@@ -46,22 +46,22 @@ Windows by default can "open" **.zip** archive files, but in order to use Prism 
 
 #### Windows Protected my PC?
 
-This is unfortunately **normal behaviour** due to the nature of the Windows app signing process. Prism Launcher has yet to purchase a signature, however, with enough funding, we may choose to do so in the future. Prism Launcher is an **open-source** application. As a result of this, all of the source code is public, and can be audited by any individual or group. If you would like to do so yourself, you can do so [here](https://github.com/PrismLauncher/PrismLauncher).
+This is unfortunately **normal behaviour** due to the nature of the Windows app signing process. Prism Launcher has yet to purchase a signature, however, with enough funding, we may choose to do so in the future. Prism Launcher is an **open-source** application. As a result of this, all of the source code is public, and can be audited by any individual or group. If you would like to do so yourself, you can do so here: <https://github.com/PrismLauncher/PrismLauncher>
 
 If you are **comfortable** and **trust** Prism Launcher, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
-### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" height="20" /> Windows 7 and 8.1
+### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" alt="Windows 7 Logo" height="20" /> Windows 7 and 8.1
 
 #### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
 
 Prism Launcher hasn't supported Windows 7 and Windows 8.1 since version 8.0 due to dependencies. These operating systems have been EOL for years, so please upgrade your operating system for security reasons.
 [Prism Launcher 7.2](https://github.com/PrismLauncher/PrismLauncher/releases/tag/7.2) is the last version that has a legacy build for these EOL operating systems, but it's no longer supported.
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" height="20" /> Linux
 
 #### How do I install the Prism Launcher Flatpak on my Linux system?
 
-Detailed instructions on setting-up your system to install Flatpak applications from Flathub, can be found [here](https://flatpak.org/setup/).
+Detailed instructions on setting-up your system to install Flatpak applications from Flathub, can be found here: <https://flatpak.org/setup/>
 
 #### How do I open the Prism Launcher AppImage on my Linux system?
 
@@ -84,7 +84,7 @@ This means that some themes and theming platforms like KDE Plasma's theming will
 But don't worry, we still provide Qt 5 builds.
 You can find them on the [download page](https://prismlauncher.org/download/linux).
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" height="20" /> Windows and Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" height="20" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" height="20" /> Windows and Linux
 
 #### I want to make my system install portable
 

@@ -44,7 +44,7 @@ Themes can help you spice up your launcher appearance.
 [![Steam Classic](https://img.shields.io/badge/Steam_Classic-4C5844?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Steam-Classic-theme.zip)
 [![Tokyo Night](https://img.shields.io/badge/Tokyo_Night-C0CAF5?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Tokyo-Night-theme.zip)
 
-### Icons packs
+### Icon Packs
 
 [![Fluent Dark Icons](https://img.shields.io/badge/Fluent--Icons-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark-icons.zip)
 [![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-1d9bf0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Twemoji-icons.zip)
@@ -55,7 +55,7 @@ Here are the instructions to get your themes & icons up and working.
 
 Make sure you are using Prism Launcher 6.0 or later.
 
-### Themes
+### Installing Themes
 
 - Download a theme above and copy the zip file to your Themes Directory.
 
@@ -75,7 +75,7 @@ Make sure you are using Prism Launcher 6.0 or later.
 
 - Restart Prism Launcher, then open the global settings. In the Launcher section, click the User Interface tab, and under Widgets (make sure you're changing Widgets and not Icons), choose the newly added theme. Click the Close button, and enjoy your fresh new Prism Launcher.
 
-### Icons Pack
+### Installing Icon Packs
 
 - Download a Icons pack above and copy the zip file to your Prism Launcher Directory
 
@@ -133,7 +133,7 @@ Make sure you are using Prism Launcher 6.0 or later.
 
 - Now you can open a Pull Request, and we will add your theme as fast as possible to the repository and website.
 
-## Submitting Icons
+## Submitting Icon Packs
 
 - Fork the [PrismLauncher/Themes](https://github.com/PrismLauncher/Themes) repository.
 
