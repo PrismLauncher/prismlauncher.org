@@ -30,8 +30,8 @@ importers:
         specifier: 5.2.6
         version: 5.2.6
       '@fortawesome/fontawesome-free':
-        specifier: 6.7.2
-        version: 6.7.2
+        specifier: 7.0.0
+        version: 7.0.0
       axios:
         specifier: 1.11.0
         version: 1.11.0
@@ -115,8 +115,8 @@ packages:
   '@fontsource/inter@5.2.6':
     resolution: {integrity: sha512-CZs9S1CrjD0jPwsNy9W6j0BhsmRSQrgwlTNkgQXTsAeDRM42LBRLo3eo9gCzfH4GvV7zpyf78Ozfl773826csw==}
 
-  '@fortawesome/fontawesome-free@6.7.2':
-    resolution: {integrity: sha512-JUOtgFW6k9u4Y+xeIaEiLr3+cjoUPiAuLXoyKOJSia6Duzb7pq+A76P9ZdPDoAoxHdHzq6gE9/jKBGXlZT8FbA==}
+  '@fortawesome/fontawesome-free@7.0.0':
+    resolution: {integrity: sha512-X48nISrSOa89zu2VMljC4XaRf8NmgTwQBVHfS2Nu5G00ZwM31oOVrAtGxZF3b6wDYf9lJsf/Eq4cCSFKIkOWPQ==}
     engines: {node: '>=6'}
 
   '@img/sharp-darwin-arm64@0.33.5':
@@ -1341,7 +1341,7 @@ snapshots:
 
   '@fontsource/inter@5.2.6': {}
 
-  '@fortawesome/fontawesome-free@6.7.2': {}
+  '@fortawesome/fontawesome-free@7.0.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
