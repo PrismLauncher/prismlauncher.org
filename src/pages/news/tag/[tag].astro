@@ -4,6 +4,7 @@ import ProseCard from "../../../components/ui/ProseCard.astro";
 import Card from "../../../components/ui/Card.astro";
 import NewsCard from "../../../components/NewsCard.astro";
 import Breadcrumb from "../../../components/ui/Breadcrumb.astro";
+import TagFilter from "../../../components/ui/TagFilter.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -33,11 +34,13 @@ const filteredPosts = allPosts.filter(({ data }) => data.tags.includes(tag));
 	description={`All news posts tagged with "${tag}"`}
 >
 	<ProseCard>
-		<Breadcrumb href="/news" text="News" class="mb-3" />
-		<h1 class="heading-1 mb-4">Posts tagged "{tag}"</h1>
+		<h1 class="heading-1 mb-6">News</h1>
 		<p>
-			{filteredPosts.length} post{filteredPosts.length !== 1 ? "s" : ""}
+			The latest and greatest news regarding updates, changes and more. Prism
+			Launcher now supports viewing news directly in the Launcher by clicking
+			the news icon at the bottom of the window.
 		</p>
+		<TagFilter activeTag={tag} />
 	</ProseCard>
 
 	{

@@ -1,0 +1,37 @@
+---
+import TagList from "./TagList.astro";
+import { getCollection } from "astro:content";
+
+interface Props {
+	activeTag?: string;
+	class?: string;
+}
+
+const { activeTag, class: className = "" } = Astro.props;
+
+const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+
+const popularTags = posts
+	.flatMap(({ data }) => data.tags)
+	.reduce(
+		(counts, tag) => counts.set(tag, (counts.get(tag) || 0) + 1),
+		new Map<string, number>(),
+	)
+	.entries()
+	.toArray()
+	.sort(([, a], [, b]) => b - a)
+	.map(([tag]) => tag);
+---
+
+{
+	popularTags.length > 0 && (
+		<TagList
+			tags={popularTags}
+			showAll
+			class={`gap-2 ${className}`}
+			activeTag={activeTag}
+		/>
+	)
+}
