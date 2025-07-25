@@ -1,0 +1,54 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	href: string;
+	variant?: "primary" | "secondary" | "accent" | "outline";
+	size?: "sm" | "md" | "lg";
+	icon?: string;
+	secondaryIcon?: string;
+	class?: string;
+}
+
+const {
+	href,
+	variant = "primary",
+	size = "md",
+	icon,
+	secondaryIcon,
+	class: className = "",
+} = Astro.props;
+
+const buttonVariants = {
+	primary: "bg-prism-rainbow-red text-white",
+	secondary: "bg-prism-rainbow-blue text-white",
+	accent:
+		"bg-prism-accent-light dark:bg-prism-accent-dark text-prism-text-light dark:text-prism-text-dark",
+	outline:
+		"border border-black/10 dark:border-white/10 bg-transparent text-prism-text-light dark:text-prism-text-dark",
+} as const;
+
+const buttonSizes = {
+	sm: "px-3 py-1.5 text-sm",
+	md: "px-4 py-2 text-base",
+	lg: "px-6 py-3 text-lg",
+} as const;
+
+const iconSize = size === "sm" ? "14" : size === "lg" ? "20" : "16";
+---
+
+<a
+	href={href}
+	class:list={[
+		"inline-flex items-center justify-center font-medium rounded-sm no-underline",
+		buttonVariants[variant],
+		buttonSizes[size],
+		(icon || secondaryIcon) && "gap-2",
+		"hover:brightness-110 focus:brightness-110 active:brightness-90",
+		className,
+	]}
+>
+	{icon && <Icon name={icon} size={iconSize} />}
+	<slot />
+	{secondaryIcon && <Icon name={secondaryIcon} size={iconSize} />}
+</a>

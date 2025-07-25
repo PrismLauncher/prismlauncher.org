@@ -1,0 +1,21 @@
+---
+interface Props {
+	variant?: "background" | "foreground";
+	class?: string;
+}
+
+const { variant = "background", class: className = "" } = Astro.props;
+
+const cardVariants = {
+	background:
+		"bg-prism-background-light/90 dark:bg-prism-background-dark/90 md:rounded-lg backdrop-blur-md",
+	foreground:
+		"bg-prism-background-light dark:bg-prism-background-dark rounded-lg border border-black/10 dark:border-white/10",
+} as const;
+
+const Element = variant === "foreground" ? "article" : "section";
+---
+
+<Element class={`${cardVariants[variant]} px-4 py-6 sm:px-6 ${className}`}>
+	<slot />
+</Element>

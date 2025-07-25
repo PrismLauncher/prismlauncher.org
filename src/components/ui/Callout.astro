@@ -1,0 +1,21 @@
+---
+interface Props {
+	type?: "info" | "success" | "warn" | "danger";
+	class?: string;
+}
+
+const { type = "info", class: className = "" } = Astro.props;
+
+const variants = {
+	info: "border-prism-info bg-prism-info/10",
+	success: "border-prism-success bg-prism-success/10",
+	warn: "border-prism-warn bg-prism-warn/10",
+	danger: "border-prism-danger bg-prism-danger/10",
+} as const;
+---
+
+<div
+	class={`rounded-md border border-l-5 px-6 my-6 ${variants[type]} ${className}`}
+>
+	<slot />
+</div>

@@ -1,0 +1,72 @@
+---
+import Logo from "./Logo.astro";
+import { Icon } from "astro-icon/components";
+
+const SOCIAL_LINKS = [
+	{
+		href: "https://floss.social/@PrismLauncher",
+		label: "Mastodon",
+		icon: "simple-icons:mastodon",
+	},
+	{
+		href: "https://bsky.app/profile/prismlauncher.org",
+		label: "Bluesky",
+		icon: "simple-icons:bluesky",
+	},
+	{
+		href: "https://discord.gg/ArX2nafFz2",
+		label: "Discord",
+		icon: "simple-icons:discord",
+	},
+	{
+		href: "https://matrix.to/#/#prismlauncher:matrix.org",
+		label: "Matrix",
+		icon: "simple-icons:matrix",
+	},
+	{
+		href: "https://www.reddit.com/r/PrismLauncher",
+		label: "Reddit",
+		icon: "simple-icons:reddit",
+	},
+	{
+		href: "https://github.com/PrismLauncher/PrismLauncher",
+		label: "GitHub",
+		icon: "simple-icons:github",
+	},
+	{
+		href: "mailto:contact@prismlauncher.org",
+		label: "Email",
+		icon: "lucide:mail",
+	},
+];
+---
+
+<footer
+	class="text-prism-text-light dark:text-prism-text-dark max-w-none text-center font-medium p-4"
+>
+	<!-- logo -->
+	<Logo class="mb-4" />
+
+	<!-- social links -->
+	<div class="flex justify-center items-center gap-4 mb-4">
+		{
+			SOCIAL_LINKS.map((social) => (
+				<a
+					href={social.href}
+					aria-label={social.label}
+					class="text-prism-text-light dark:text-prism-text-dark rounded-sm"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name={social.icon} size="24" />
+				</a>
+			))
+		}
+	</div>
+
+	<!-- footer text -->
+	<p class="text-sm mb-2">Not affiliated with Mojang or Microsoft</p>
+	<p class="text-xs">
+		© 2022-{new Date().getFullYear()} Prism Launcher Contributors
+	</p>
+</footer>

@@ -1,0 +1,159 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+import PersonCard from "../components/ui/PersonCard.astro";
+
+const MAINTAINERS = [
+	"cozyGalvinism",
+	"DioEgizio",
+	"getchoo",
+	"Ryex",
+	"Scrumplex",
+	"TayouVR",
+	"TheKodeToad",
+	"timoreo22",
+	"Trial97",
+	"txtsd",
+	"ZekeZDev",
+];
+
+const MODERATORS = [
+	"getchoo",
+	"lordofpipes",
+	"Lutitious",
+	"NotJansel",
+	"Regular-Baf",
+	"ryanccn",
+	"sakecode",
+	"Scrumplex",
+	"TheKodeToad",
+	"txtsd",
+	"ZekeZDev",
+];
+
+async function fetchContributors(): Promise<string[]> {
+	const contributors: string[] = [];
+
+	try {
+		for (let page = 1; ; page++) {
+			const response = await fetch(
+				`https://api.github.com/repos/PrismLauncher/PrismLauncher/contributors?per_page=100&page=${page}`,
+			);
+
+			if (!response.ok) break;
+
+			const data: { login: string }[] = await response.json();
+			if (data.length === 0) break;
+
+			contributors.push(
+				...data
+					.filter(({ login }) => !login.includes("[bot]"))
+					.map(({ login }) => login),
+			);
+		}
+	} catch {}
+
+	return contributors;
+}
+---
+
+<MainLayout title="About" description="Some information behind Prism Launcher">
+	<ProseCard>
+		<h1>About</h1>
+
+		<p>
+			Prism Launcher is a custom launcher for Minecraft. It allows the creation
+			and management of multiple installations of the game, each having separate
+			mods, resource packs, settings, and more.
+		</p>
+
+		<p>
+			The project was originally forked from MultiMC over
+			packaging/redistribution concerns. Since then, it has been vastly improved
+			and expanded upon with many new features.
+		</p>
+
+		<p>
+			We aim to not bring hostility to those looking to fork, redistribute, or
+			repackage, so long as the terms of our licenses are respected. You can
+			view licensing information below.
+		</p>
+
+		<h2>I'm in! Now, tell me more about these features?</h2>
+
+		<p>Prism Launcher offers a wide range of features, including:</p>
+
+		<ul>
+			<li>Managing multiple, isolated instances of Minecraft cleanly.</li>
+			<li>
+				Easy one-click installation of mod loaders, such as Forge, Fabric,
+				Quilt, and LiteLoader.
+			</li>
+			<li>
+				Managing your worlds, resource packs, and shader packs with just a few
+				clicks.
+			</li>
+			<li>
+				Install modpacks from many popular sources, including CurseForge,
+				Modrinth, Technic, FTB, and FTB Legacy.
+			</li>
+			<li>
+				Install individual mods from CurseForge and Modrinth, automatically
+				matching your loader and game version.
+			</li>
+			<li>
+				Easily kill the Minecraft instance in the event of a crash or freeze.
+			</li>
+			<li>
+				Access your game logs or upload your logs to <a href="https://mclo.gs"
+					>mclo.gs</a
+				> easily.
+			</li>
+			<li>
+				Built with QT, making the launcher very performant and light on
+				resources.
+			</li>
+			<li>A vast amount of settings to customize your experience.</li>
+			<li>Theming features to change the look and feel of the launcher.</li>
+			<li>And much more!</li>
+		</ul>
+	</ProseCard>
+	<ProseCard>
+		<h2>Maintainers</h2>
+		<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 not-prose">
+			{MAINTAINERS.map((username) => <PersonCard username={username} />)}
+		</div>
+		<h2>Moderators</h2>
+		<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 not-prose">
+			{MODERATORS.map((username) => <PersonCard username={username} />)}
+		</div>
+	</ProseCard>
+	<ProseCard>
+		<h2>Contributors</h2>
+		<div class="flex flex-wrap gap-2 not-prose">
+			{
+				(await fetchContributors()).map((username) => (
+					<a
+						href={`https://github.com/${username}`}
+						target="_blank"
+						class="block hover:scale-110"
+						title={username}
+					>
+						<img
+							class="rounded-full w-12 h-12 border border-black/10 dark:border-white/10"
+							src={`https://github.com/${username}.png?size=96`}
+							alt={`${username}'s GitHub avatar`}
+							loading="lazy"
+						/>
+					</a>
+				))
+			}
+		</div>
+		<p>
+			Want to contribute? Check out our <a
+				href="https://github.com/PrismLauncher/PrismLauncher"
+				class="underline">GitHub repository</a
+			> to get started!
+		</p>
+	</ProseCard>
+</MainLayout>

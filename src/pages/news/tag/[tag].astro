@@ -1,0 +1,54 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import ProseCard from "../../../components/ui/ProseCard.astro";
+import Card from "../../../components/ui/Card.astro";
+import NewsCard from "../../../components/NewsCard.astro";
+import Breadcrumb from "../../../components/ui/Breadcrumb.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+	const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
+		(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+	);
+
+	return [...new Set(posts.flatMap(({ data }) => data.tags))]
+		.sort()
+		.map((tag) => ({
+			params: { tag },
+			props: { tag, allPosts: posts },
+		}));
+}
+
+interface Props {
+	tag: string;
+	allPosts: Awaited<ReturnType<typeof getCollection<"news">>>;
+}
+
+const { tag, allPosts } = Astro.props;
+const filteredPosts = allPosts.filter(({ data }) => data.tags.includes(tag));
+---
+
+<MainLayout
+	title={`News: ${tag}`}
+	description={`All news posts tagged with "${tag}"`}
+>
+	<ProseCard>
+		<Breadcrumb href="/news" text="News" class="mb-3" />
+		<h1 class="heading-1 mb-4">Posts tagged "{tag}"</h1>
+		<p>
+			{filteredPosts.length} post{filteredPosts.length !== 1 ? "s" : ""}
+		</p>
+	</ProseCard>
+
+	{
+		filteredPosts.length > 0 && (
+			<Card>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{filteredPosts.map((post) => (
+						<NewsCard post={post} />
+					))}
+				</div>
+			</Card>
+		)
+	}
+</MainLayout>

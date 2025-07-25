@@ -1,0 +1,28 @@
+---
+import Card from "./Card.astro";
+
+interface Props {
+	username: string;
+}
+
+const { username } = Astro.props;
+---
+
+<Card
+	variant="foreground"
+	class="flex flex-col justify-center items-center p-2"
+>
+	<a
+		href=`https://github.com/${username}`
+		target="_blank"
+		class="flex flex-col items-center gap-3 hover:brightness-90 focus:brightness-90 active:brightness-110 dark:hover:brightness-110 dark:focus:brightness-110 dark:active:brightness-90"
+	>
+		<img
+			class="rounded-md w-24 h-24 border border-black/10 dark:border-white/10"
+			src=`https://github.com/${username}.png?size=192`
+			alt={`${username}'s GitHub avatar`}
+			loading="lazy"
+		/>
+		<span class="font-medium">{username}</span>
+	</a>
+</Card>

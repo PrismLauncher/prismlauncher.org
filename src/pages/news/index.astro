@@ -1,0 +1,78 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ProseCard from "../../components/ui/ProseCard.astro";
+import Card from "../../components/ui/Card.astro";
+import Button from "../../components/ui/Button.astro";
+import NewsCard from "../../components/NewsCard.astro";
+import TagList from "../../components/ui/TagList.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+const [latestPost, ...remainingPosts] = posts;
+
+const popularTags = posts
+	.flatMap(({ data }) => data.tags)
+	.reduce(
+		(counts, tag) => counts.set(tag, (counts.get(tag) || 0) + 1),
+		new Map<string, number>(),
+	)
+	.entries()
+	.toArray()
+	.sort(([, a], [, b]) => b - a)
+	.slice(0, 8)
+	.map(([tag]) => tag);
+---
+
+<MainLayout
+	title="News"
+	description="Latest news, updates, and announcements from Prism Launcher"
+>
+	<ProseCard>
+		<h1 class="heading-1 mb-6">News</h1>
+		<p>
+			The latest and greatest news regarding updates, changes and more. Prism
+			Launcher now supports viewing news directly in the Launcher by clicking
+			the news icon at the bottom of the window.
+		</p>
+
+		<!-- popular tags filter -->
+		{
+			popularTags.length > 0 && (
+				<TagList tags={popularTags} showAll class="gap-2" />
+			)
+		}
+	</ProseCard>
+
+	<!-- featured latest post -->
+	{
+		latestPost && (
+			<Card>
+				<h2 class="heading-2 mb-4">Latest</h2>
+				<NewsCard post={latestPost} />
+			</Card>
+		)
+	}
+
+	<!-- all posts -->
+	{
+		remainingPosts.length > 0 && (
+			<Card>
+				<h2 class="heading-2 mb-4">All Posts</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{remainingPosts.map((post) => (
+						<NewsCard post={post} />
+					))}
+				</div>
+			</Card>
+		)
+	}
+
+	<!-- rss feed link -->
+	<ProseCard class="text-center not-prose">
+		<Button href="/feed/feed.xml" variant="accent" icon="lucide:rss">
+			ATOM Feed
+		</Button>
+	</ProseCard>
+</MainLayout>

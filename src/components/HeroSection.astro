@@ -1,0 +1,32 @@
+---
+import Button from "./ui/Button.astro";
+---
+
+<section
+	class="text-prism-text-light dark:text-prism-text-dark max-w-none p-4 sm:p-6 flex flex-col items-center text-center gap-4 sm:text-left sm:flex-row sm:justify-start"
+>
+	<div class="sm:flex-1">
+		<h1 class="heading-1 mb-6">Prism Launcher</h1>
+		<p class="font-medium text-lg mb-6">
+			An open-source Minecraft launcher with the ability to manage multiple
+			instances, accounts and mods. Focused on user freedom and free
+			redistributability.
+		</p>
+		<div class="not-prose">
+			<Button href="/download" variant="primary" size="lg">
+				Download Now
+			</Button>
+		</div>
+	</div>
+
+	<picture class="sm:flex-1 not-prose">
+		<source
+			media="(prefers-color-scheme: dark)"
+			srcset="/img/screenshots/LauncherDark.png"
+		/>
+		<img
+			src="/img/screenshots/LauncherLight.png"
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+		/>
+	</picture>
+</section>

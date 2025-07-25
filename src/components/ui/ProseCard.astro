@@ -1,0 +1,15 @@
+---
+import Card from "./Card.astro";
+
+interface Props {
+	class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<Card
+	class={`prose dark:prose-invert prose-img:rounded-lg prose-video:rounded-lg max-w-none overflow-hidden ${className}`}
+>
+	<slot />
+</Card>

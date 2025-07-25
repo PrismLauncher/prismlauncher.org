@@ -1,47 +1,30 @@
 {
-  "name": "prismlauncher",
-  "version": "1.0.0",
-  "description": "Official Prism Launcher website",
-  "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "lint": "markdownlint .",
-    "lint:fix": "markdownlint --fix .",
-    "update-contributors": "node ./scripts/update-contributors.mjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/PrismLauncher/prismlauncher.org.git"
-  },
-  "author": {
-    "name": "Ezekiel Smith",
-    "email": "ezekielsmith@protonmail.com",
-    "url": "https://github.com/ZekeSmith"
-  },
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/PrismLauncher/prismlauncher.org/issues"
-  },
-  "homepage": "https://prismlauncher.org/",
-  "devDependencies": {
-    "@11ty/eleventy": "3.1.2",
-    "@11ty/eleventy-fetch": "5.1.0",
-    "@11ty/eleventy-img": "6.0.4",
-    "@11ty/eleventy-navigation": "1.0.4",
-    "@11ty/eleventy-plugin-rss": "2.0.4",
-    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.1",
-    "@fontsource/inter": "5.2.6",
-    "@fortawesome/fontawesome-free": "6.7.2",
-    "axios": "1.11.0",
-    "clean-css": "5.3.3",
-    "luxon": "3.7.1",
-    "markdown-it": "14.1.0",
-    "markdown-it-anchor": "9.2.0",
-    "markdown-it-table-of-contents": "0.9.0",
-    "markdownlint-cli": "0.45.0"
-  },
-  "packageManager": "pnpm@10.13.1"
+	"name": "prism-launcher-website",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.3.1",
+		"@astrojs/sitemap": "^3.4.1",
+		"@tailwindcss/typography": "^0.5.16",
+		"@tailwindcss/vite": "^4.1.11",
+		"astro": "^5.12.3",
+		"astro-icon": "^1.1.5",
+		"rehype-raw": "^7.0.0",
+		"rehype-stringify": "^10.0.1",
+		"remark": "^15.0.1",
+		"remark-rehype": "^11.1.2",
+		"tailwindcss": "^4.1.11"
+	},
+	"devDependencies": {
+		"@iconify-json/lucide": "^1.2.58",
+		"@iconify-json/simple-icons": "^1.2.44",
+		"prettier": "^3.6.2",
+		"prettier-plugin-astro": "^0.14.1"
+	}
 }

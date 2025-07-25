@@ -1,0 +1,23 @@
+---
+interface Props {
+	class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<h1 class={`m-0 ${className}`}>
+	<a href="/" class="inline-block w-36">
+		<picture>
+			<source
+				media="(prefers-color-scheme: dark)"
+				srcset="/img/logo-textDark.svg"
+			/>
+			<img
+				src="/img/logo-textLight.svg"
+				alt="Prism Launcher"
+				class="w-full h-auto"
+			/>
+		</picture>
+	</a>
+</h1>

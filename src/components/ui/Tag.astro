@@ -1,0 +1,24 @@
+---
+interface Props {
+	tag: string;
+	active?: boolean;
+	class?: string;
+	href?: string;
+}
+
+const { tag, active = false, class: className = "", href } = Astro.props;
+const Element = href ? "a" : "span";
+---
+
+<Element
+	href={href}
+	class:list={[
+		"rounded-full px-3 py-1.5 text-sm font-medium no-underline",
+		active
+			? "bg-prism-primary text-white hover:brightness-110 focus:brightness-110 active:brightness-90"
+			: "bg-prism-accent-light dark:bg-prism-accent-dark text-prism-text-light dark:text-prism-text-dark hover:brightness-90 focus:brightness-90 active:brightness-110 dark:hover:brightness-110 dark:focus:brightness-110 dark:active:brightness-90",
+		className,
+	]}
+>
+	{tag}
+</Element>

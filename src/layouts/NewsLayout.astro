@@ -1,0 +1,48 @@
+---
+import MainLayout from "./MainLayout.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+import PostMeta from "../components/ui/PostMeta.astro";
+import TagList from "../components/ui/TagList.astro";
+import Breadcrumb from "../components/ui/Breadcrumb.astro";
+
+interface Props {
+	title: string;
+	description: string;
+	date: Date;
+	tags?: string[];
+	author?: string;
+	release_version?: string;
+}
+
+const {
+	title,
+	description,
+	date,
+	tags = [],
+	author,
+	release_version,
+} = Astro.props;
+---
+
+<MainLayout title={`${title} - News`} description={description}>
+	<ProseCard>
+		<header class="not-prose mb-8">
+			<Breadcrumb href="/news" text="News" class="mb-3" />
+			<h1 class="heading-1 mb-6">{title}</h1>
+			<PostMeta
+				date={date}
+				readingTime={`${Math.ceil((await Astro.slots.render("default")).split(/\s+/).length / 200)} min`}
+				metadata={[
+					...(author ? [{ icon: "lucide:user", text: author }] : []),
+					...(release_version
+						? [{ icon: "lucide:tag", text: `v${release_version}` }]
+						: []),
+				]}
+				class="mb-4"
+			/>
+			{tags.length > 0 && <TagList tags={tags} />}
+		</header>
+
+		<slot />
+	</ProseCard>
+</MainLayout>

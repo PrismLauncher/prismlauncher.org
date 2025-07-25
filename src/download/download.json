@@ -1,6 +1,0 @@
-{
-    "layout": "layouts/download.njk",
-    "tags": [
-        "download"
-    ]
-}

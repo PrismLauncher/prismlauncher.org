@@ -1,0 +1,108 @@
+@import url("https://rsms.me/inter/inter.css");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	--font-sans: Inter, system-ui, sans-serif;
+
+	/* colors used here were taken from https://prismlauncher.org/wiki/branding */
+
+	/* colors */
+	--color-prism-primary: hsl(350, 66%, 63%);
+	--color-prism-primary-dark: hsl(350, 66%, 55%);
+	--color-prism-primary-light: hsl(350, 66%, 70%);
+
+	--color-prism-link: hsl(214, 46%, 52%);
+	--color-prism-link-dark: hsl(214, 46%, 42%);
+	--color-prism-link-light: hsl(214, 46%, 67%);
+
+	--color-prism-info: hsl(274, 32%, 42%);
+	--color-prism-info-dark: hsl(274, 32%, 32%);
+	--color-prism-info-light: hsl(274, 32%, 56%);
+
+	--color-prism-success: hsl(145, 27%, 59%);
+	--color-prism-success-dark: hsl(145, 27%, 49%);
+	--color-prism-success-light: hsl(145, 27%, 67%);
+
+	--color-prism-warn: hsl(49, 85%, 69%);
+	--color-prism-warn-dark: hsl(49, 85%, 60%);
+	--color-prism-warn-light: hsl(49, 85%, 79%);
+
+	--color-prism-danger: hsl(17, 95%, 70%);
+	--color-prism-danger-dark: hsl(17, 95%, 65%);
+	--color-prism-danger-light: hsl(17, 95%, 80%);
+
+	/* backgrounds and surfaces */
+	--color-prism-background-dark: #15181c;
+	--color-prism-background-light: #ffffff;
+	--color-prism-accent-dark: #21242b;
+	--color-prism-accent-light: #e0e0e0;
+	--color-prism-accent-light-bright: #d0d0d0;
+	--color-prism-accent-dark-bright: #313540;
+
+	/* text colors */
+	--color-prism-text-dark: #ffffff;
+	--color-prism-text-light: #15191e;
+	--color-prism-code-background: #313540;
+
+	/* ui colors from the logo */
+	--color-prism-grass-green: #99cd61;
+	--color-prism-dirt-light-brown: #7a573b;
+	--color-prism-dirt-dark-brown: #4d3f33;
+	--color-prism-rainbow-red: #df6277;
+	--color-prism-rainbow-orange: #fb9168;
+	--color-prism-rainbow-yellow: #f3db6c;
+	--color-prism-rainbow-green: #7ab392;
+	--color-prism-rainbow-blue: #4b7cbc;
+	--color-prism-rainbow-purple: #6f488c;
+	--color-prism-top-white: #ffffff;
+	--color-prism-right-white: #d6d2d2;
+	--color-prism-left-white: #dfdfdf;
+}
+
+/* prose styling for typography */
+@utility prose {
+	--tw-prose-body: var(--color-prism-text-light);
+	--tw-prose-links: var(--color-prism-link);
+	--tw-prose-headings: var(--color-prism-text-light);
+	--tw-prose-bold: var(--color-prism-text-light);
+	--tw-prose-quote-borders: var(--color-prism-text-light);
+	--tw-prose-quotes: var(--color-prism-text-light);
+	--tw-prose-code: var(--color-prism-text-light);
+	--tw-prose-invert-body: var(--color-prism-text-dark);
+	--tw-prose-invert-links: var(--color-prism-link);
+	--tw-prose-invert-headings: var(--color-prism-text-dark);
+	--tw-prose-invert-bold: var(--color-prism-text-dark);
+	--tw-prose-invert-quote-borders: var(--color-prism-text-dark);
+	--tw-prose-invert-quotes: var(--color-prism-text-dark);
+	--tw-prose-invert-code: var(--color-prism-text-dark);
+}
+
+.heading-1 {
+	@apply text-4xl font-bold text-prism-text-light dark:text-prism-text-dark;
+}
+
+.heading-2 {
+	@apply text-2xl font-semibold text-prism-text-light dark:text-prism-text-dark;
+}
+
+.heading-3 {
+	@apply text-xl font-semibold text-prism-text-light dark:text-prism-text-dark;
+}
+
+.heading-4 {
+	@apply text-lg font-semibold text-prism-text-light dark:text-prism-text-dark;
+}
+
+.heading-5 {
+	@apply text-base font-medium text-prism-text-light dark:text-prism-text-dark;
+}
+
+.heading-6 {
+	@apply text-sm font-medium text-prism-text-light dark:text-prism-text-dark;
+}
+
+/* base styles */
+:root {
+	color-scheme: light dark;
+}

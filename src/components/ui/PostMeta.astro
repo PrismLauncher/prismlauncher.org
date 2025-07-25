@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	date: Date;
+	readingTime?: string;
+	metadata?: Array<{
+		icon: string;
+		text: string;
+		href?: string;
+	}>;
+	class?: string;
+}
+
+const { date, readingTime, metadata = [], class: className = "" } = Astro.props;
+---
+
+<div class={`flex flex-wrap items-center gap-4 text-sm ${className}`}>
+	<time datetime={date.toISOString()}>
+		<Icon name="lucide:calendar" size="14" class="inline mr-1" />
+		{
+			date.toLocaleDateString("en-US", {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			})
+		}
+	</time>
+
+	{
+		[
+			...(readingTime ? [{ icon: "lucide:clock", text: readingTime }] : []),
+			...metadata,
+		].map((item) => {
+			const Tag = item.href ? "a" : "span";
+			return (
+				<Tag
+					href={item.href}
+					class={item.href ? "text-prism-link hover:underline" : ""}
+				>
+					<Icon name={item.icon} size="14" class="inline mr-1" />
+					{item.text}
+				</Tag>
+			);
+		})
+	}
+</div>

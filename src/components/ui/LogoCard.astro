@@ -1,0 +1,14 @@
+---
+import Card from "./Card.astro";
+
+interface Props {
+	src: string;
+	alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<Card variant="foreground" class="flex justify-center items-center gap-4">
+	<img class="rounded-md w-full" src={src} alt={alt} />
+</Card>
