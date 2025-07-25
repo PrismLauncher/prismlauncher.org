@@ -1,6 +1,7 @@
 ---
 import Logo from "./Logo.astro";
 import Button from "./ui/Button.astro";
+import DownloadButton from "./ui/DownloadButton.astro";
 ---
 
 <header
@@ -23,7 +24,7 @@ import Button from "./ui/Button.astro";
 	</div>
 
 	<div class="flex justify-center gap-2">
-		<Button href="/download" variant="primary" size="sm">Download</Button>
+		<DownloadButton size="sm" />
 		<Button
 			href="https://opencollective.com/prismlauncher"
 			variant="secondary"
