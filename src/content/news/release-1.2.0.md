@@ -5,7 +5,7 @@ date: 2022-04-17
 slug: release-1.2.0
 release_version: 1.2.0
 tags:
-  - release
+  - Release
 ---
 
 Hey! It's update-time again. We have added lots of new things in this one and improved a few things as well.

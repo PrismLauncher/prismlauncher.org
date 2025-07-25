@@ -5,7 +5,7 @@ date: 2022-04-20
 slug: release-1.2.1
 release_version: 1.2.1
 tags:
-  - release
+  - Release
 ---
 
 We have found some bugs in our last release on Sunday, which is why we are bringing you a truckload of bug fixes.

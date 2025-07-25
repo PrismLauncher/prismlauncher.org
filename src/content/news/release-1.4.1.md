@@ -6,7 +6,7 @@ slug: release-1.4.1
 release_version: 1.4.1
 minimum_macos_version: 10.14.0
 tags:
-  - release
+  - Release
 ---
 
 We have noticed that some things from our recent 1.4.0 release weren't working quite well.

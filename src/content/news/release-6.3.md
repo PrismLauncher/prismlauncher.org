@@ -8,7 +8,7 @@ minimum_macos_version: 10.15.0
 macos_file_extension: tar.gz
 macos_signature: ddgRaenV1h5Rwnci+fQskurWkHb2WUZZSNmW1AkwplFsN8RIzum3VQNJ5xHS08WBd2m6EWTjlVRsERU65YAtCg==
 tags:
-  - release
+  - Release
 ---
 
 Update: If you are on a version before 6.2, you should upgrade to this release to avoid a security bug regarding `.mrpack` modpack imports. You can read more about this in [this blog post from QuiltMC](https://quiltmc.org/en/blog/2023-02-04-five-installer-vulnerabilities/).

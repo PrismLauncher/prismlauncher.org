@@ -6,7 +6,7 @@ slug: release-1.4.2
 release_version: 1.4.2
 minimum_macos_version: 10.14.0
 tags:
-  - release
+  - Release
 ---
 
 It has been a while.

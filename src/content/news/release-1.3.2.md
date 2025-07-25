@@ -5,7 +5,7 @@ date: 2022-06-12
 slug: release-1.3.2
 release_version: 1.3.2
 tags:
-  - release
+  - Release
 ---
 
 Yet again we have some fixes for you!

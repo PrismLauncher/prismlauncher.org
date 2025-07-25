@@ -5,7 +5,7 @@ date: 2022-05-29
 slug: release-1.3.1
 release_version: 1.3.1
 tags:
-  - release
+  - Release
 ---
 
 Hey, it's that time again!

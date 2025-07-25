@@ -5,7 +5,7 @@ date: 2022-03-12
 slug: release-1.1.0
 release_version: 1.1.0
 tags:
-  - release
+  - Release
 ---
 
 We are pleased to announce, that PolyMC version 1.1.0 is now available!

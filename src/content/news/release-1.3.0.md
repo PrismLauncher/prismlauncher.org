@@ -5,7 +5,7 @@ date: 2022-05-22
 slug: release-1.3.0
 release_version: 1.3.0
 tags:
-  - release
+  - Release
 ---
 
 Hey!

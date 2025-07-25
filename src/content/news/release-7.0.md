@@ -8,7 +8,7 @@ minimum_macos_version: 11.0.0
 macos_file_extension: tar.gz
 macos_signature: nZkz4u7KJsOrH9kQjSMdyzwGnBa8A9q9Dz9RBkNb0/hcUtKG92N4iog905uxb4hdpk4zAYeEbYbbrVHXsfTgAg==
 tags:
-  - release
+  - Release
 ---
 
 Hello!

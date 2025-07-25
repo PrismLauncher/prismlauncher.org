@@ -8,7 +8,7 @@ minimum_macos_version: 11.0.0
 macos_file_extension: zip
 macos_signature: n2+V/d2Sm7FxuzGOBG6gCIZaOr/W13Y5FuH3vQUgNVAGfxdjjgZBuTNWaGnaztmW047qsmrhH8TfBbnjkYOvBg==
 tags:
-  - release
+  - Release
 ---
 
 Hey!

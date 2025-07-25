@@ -5,7 +5,7 @@ date: 2022-05-08
 slug: release-1.2.2
 release_version: 1.2.2
 tags:
-  - release
+  - Release
 ---
 
 The old API we used for CurseForge will stop working soon.
