@@ -1,0 +1,14 @@
+name: Code Quality Checks
+on: [pull_request]
+
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Install Dependencies
+        run: bun install
+      - name: Run Prettier Check
+        run: bun run format:check
