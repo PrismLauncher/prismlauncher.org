@@ -12,8 +12,8 @@
         "astro-icon": "1.1.5",
         "rehype-raw": "7.0.0",
         "rehype-stringify": "10.0.1",
-        "remark": "^15.0.1",
-        "remark-rehype": "^11.1.2",
+        "remark": "15.0.1",
+        "remark-rehype": "11.1.2",
         "tailwindcss": "4.1.11",
       },
       "devDependencies": {
