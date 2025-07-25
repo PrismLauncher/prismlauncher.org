@@ -5,6 +5,14 @@ import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import { getCollection, type CollectionEntry } from "astro:content";
 
+interface Post {
+	title: string;
+	url: string;
+	date: string;
+	description: string;
+	content: string;
+}
+
 const FEED_CONFIG = {
 	title: "Prism Launcher",
 	subtitle:
@@ -24,7 +32,10 @@ const escapeXml = (text: string): string =>
 		.replace(/>/g, "&gt;")
 		.replace(/"/g, "&quot;");
 
-async function processPost(post: CollectionEntry<"news">, siteUrl: string) {
+async function processPost(
+	post: CollectionEntry<"news">,
+	siteUrl: string,
+): Promise<Post> {
 	const slug = post.data.slug || post.slug;
 
 	try {
@@ -37,6 +48,7 @@ async function processPost(post: CollectionEntry<"news">, siteUrl: string) {
 			title: post.data.title,
 			url: `${siteUrl}news/${slug}/`,
 			date: post.data.date.toISOString(),
+			description: post.data.description,
 			content,
 		};
 	} catch (error) {
@@ -45,15 +57,17 @@ async function processPost(post: CollectionEntry<"news">, siteUrl: string) {
 			title: post.data.title,
 			url: `${siteUrl}news/${slug}/`,
 			date: post.data.date.toISOString(),
+			description: post.data.description || "No description available",
 			content: `<p>${escapeXml(post.data.description || "No description available")}</p>`,
 		};
 	}
 }
 
 function generateFeed(
-	entries: Array<{ title: string; url: string; date: string; content: string }>,
+	entries: Post[],
 	siteUrl: string,
 	updated: string,
+	short: boolean,
 ): string {
 	return `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -68,20 +82,28 @@ function generateFeed(
 		<email>${FEED_CONFIG.email}</email>
 	</author>
 ${entries
-	.map(
-		(entry) => `	<entry>
+	.map((entry) => {
+		let content = short
+			? `<content type="string">${escapeXml(entry.description)}</content>`
+			: `<content type="html">${escapeXml(entry.content)}</content>`;
+		return `	<entry>
 		<title>${escapeXml(entry.title)}</title>
 		<link href="${entry.url}"/>
 		<updated>${entry.date}</updated>
 		<id>${entry.url}</id>
-		<content type="html">${escapeXml(entry.content)}</content>
-	</entry>`,
-	)
+		${content}
+	</entry>`;
+	})
 	.join("\n")}
 </feed>`;
 }
 
-export const GET: APIRoute = async ({ site }) => {
+export const GET: APIRoute = async ({ site, params: { feedName } }) => {
+	if (feedName !== "feed" && feedName !== "short") {
+		return new Response(null, {
+			status: 404,
+		});
+	}
 	try {
 		const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
 			(a, b) => b.data.date.getTime() - a.data.date.getTime(),
@@ -95,6 +117,7 @@ export const GET: APIRoute = async ({ site }) => {
 				await Promise.all(posts.map((post) => processPost(post, siteUrl))),
 				siteUrl,
 				(posts[0]?.data.date || new Date()).toISOString(),
+				feedName === "short",
 			),
 			{
 				headers: {
@@ -115,4 +138,8 @@ export const GET: APIRoute = async ({ site }) => {
 			},
 		);
 	}
+};
+
+export const getStaticPaths = () => {
+	return [{ params: { feedName: "feed" } }, { params: { feedName: "short" } }];
 };
