@@ -34,10 +34,7 @@ const { date, readingTime, metadata = [], class: className = "" } = Astro.props;
 		].map((item) => {
 			const Tag = item.href ? "a" : "span";
 			return (
-				<Tag
-					href={item.href}
-					class={item.href ? "text-prism-link hover:underline" : ""}
-				>
+				<Tag href={item.href}>
 					<Icon name={item.icon} size="14" class="inline mr-1" />
 					{item.text}
 				</Tag>

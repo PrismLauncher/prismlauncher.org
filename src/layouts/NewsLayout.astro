@@ -33,7 +33,15 @@ const {
 				date={date}
 				readingTime={`${Math.ceil((await Astro.slots.render("default")).split(/\s+/).length / 200)} min`}
 				metadata={[
-					...(author ? [{ icon: "lucide:user", text: author }] : []),
+					...(author
+						? [
+								{
+									icon: "lucide:user",
+									text: author,
+									href: `https://github.com/${author}`,
+								},
+							]
+						: []),
 					...(release_version
 						? [{ icon: "lucide:tag", text: `v${release_version}` }]
 						: []),
