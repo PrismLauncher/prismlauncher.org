@@ -17,6 +17,7 @@ const {
 	icon,
 	secondaryIcon,
 	class: className = "",
+	...rest
 } = Astro.props;
 
 const buttonVariants = {
@@ -47,6 +48,7 @@ const iconSize = size === "sm" ? "14" : size === "lg" ? "20" : "16";
 		"hover:brightness-110 focus:brightness-110 active:brightness-90",
 		className,
 	]}
+	{...rest}
 >
 	{icon && <Icon name={icon} size={iconSize} />}
 	<slot />
