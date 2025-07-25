@@ -15,8 +15,22 @@ import DownloadButton from "./ui/DownloadButton.astro";
 			<ul
 				class="text-prism-text-light dark:text-prism-text-dark flex items-center gap-4 font-medium"
 			>
-				<li><a class="hover:underline" href="/news">News</a></li>
-				<li><a class="hover:underline" href="/about">About</a></li>
+				<li>
+					<a
+						class={`hover:underline ${Astro.url.pathname.startsWith("/news") ? "font-bold" : ""}`}
+						href="/news"
+					>
+						News
+					</a>
+				</li>
+				<li>
+					<a
+						class={`hover:underline ${Astro.url.pathname.startsWith("/about") ? "font-bold" : ""}`}
+						href="/about"
+					>
+						About
+					</a>
+				</li>
 				<li><a class="hover:underline" href="/wiki">Wiki</a></li>
 				<li><a class="hover:underline" href="/#get-involved">Community</a></li>
 			</ul>
