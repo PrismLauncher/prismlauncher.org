@@ -6,6 +6,7 @@
       "dependencies": {
         "@astrojs/mdx": "4.3.1",
         "@astrojs/sitemap": "3.4.1",
+        "@fontsource-variable/inter": "5.2.6",
         "@tailwindcss/typography": "0.5.16",
         "@tailwindcss/vite": "4.1.11",
         "astro": "5.12.3",
@@ -109,6 +110,8 @@
     "@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.25.8", "", { "os": "win32", "cpu": "ia32" }, "sha512-hiGgGC6KZ5LZz58OL/+qVVoZiuZlUYlYHNAmczOm7bs2oE1XriPFi5ZHHrS8ACpV5EjySrnoCKmcbQMN+ojnHg=="],
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.8", "", { "os": "win32", "cpu": "x64" }, "sha512-cn3Yr7+OaaZq1c+2pe+8yxC8E144SReCQjN6/2ynubzYjvyqZjTXfQJpAcQpsdJq3My7XADANiYGHoFC69pLQw=="],
+
+    "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.6", "", {}, "sha512-jks/bficUPQ9nn7GvXvHtlQIPudW7Wx8CrlZoY8bhxgeobNxlQan8DclUJuYF2loYRrGpfrhCIZZspXYysiVGg=="],
 
     "@iconify-json/lucide": ["@iconify-json/lucide@1.2.58", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-4ONe3ONaauEaf7wEQIvlWz2xHaMXUXuQeJVRBMu4PmsBrMEfdnc2vRZRyAudmcQo8yWmEsLu6WM7/5qWUdDJHQ=="],
 
