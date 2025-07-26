@@ -18,15 +18,6 @@ import ProseCard from "../components/ui/ProseCard.astro";
 </MainLayout>
 
 <script>
-	const { userAgent, platform } = navigator;
-	const ua = userAgent.toLowerCase();
-	const p = platform.toLowerCase();
-
-	if (ua.includes("windows") || p.includes("win")) {
-		window.location.href = "/download/windows";
-	} else if (ua.includes("mac") || p.includes("mac")) {
-		window.location.href = "/download/macos";
-	} else {
-		window.location.href = "/download/linux";
-	}
+	import { determineDownloadLink } from "../scripts/downloads";
+	window.location.href = determineDownloadLink();
 </script>
