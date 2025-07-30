@@ -109,10 +109,11 @@ Packages are available in both the official Arch Linux/Manjaro repositories and 
 # Latest release (binary)
 sudo pacman -S prismlauncher
 # Newest Git commit (compiled from source)
-yay -S prismlauncher-git
+git clone https://aur.archlinux.org/packages/prismlauncher-git
+cd prismlauncher-git
+makepkg -si
 ```
 
-You can replace `yay -S` with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
 
 ### Installation using Chaotic-AUR
 
