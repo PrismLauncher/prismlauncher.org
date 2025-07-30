@@ -19,7 +19,7 @@
         "tailwindcss": "4.1.11",
       },
       "devDependencies": {
-        "@iconify-json/lucide": "1.2.58",
+        "@iconify-json/lucide": "1.2.59",
         "@iconify-json/simple-icons": "1.2.44",
         "prettier": "3.6.2",
         "prettier-plugin-astro": "0.14.1",
@@ -113,7 +113,7 @@
 
     "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.6", "", {}, "sha512-jks/bficUPQ9nn7GvXvHtlQIPudW7Wx8CrlZoY8bhxgeobNxlQan8DclUJuYF2loYRrGpfrhCIZZspXYysiVGg=="],
 
-    "@iconify-json/lucide": ["@iconify-json/lucide@1.2.58", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-4ONe3ONaauEaf7wEQIvlWz2xHaMXUXuQeJVRBMu4PmsBrMEfdnc2vRZRyAudmcQo8yWmEsLu6WM7/5qWUdDJHQ=="],
+    "@iconify-json/lucide": ["@iconify-json/lucide@1.2.59", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-qHVs++9sGUxSNf8nJ0U/0UxHyVaut9TV4V7dc3i4K9jqxL/eg/sDpgKsX3+GrsWP3IwE8cARRgQHoLEb3Eru2Q=="],
 
     "@iconify-json/simple-icons": ["@iconify-json/simple-icons@1.2.44", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-CdWgSPygwDlDbKtDWjvi3NtUefnkoepXv90n3dQxJerqzD9kI+nEJOiWUBM+eOyMYQKtxBpLWFBrgeotF0IZKw=="],
 
