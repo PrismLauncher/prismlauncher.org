@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: nosborn/github-action-markdown-cli@63d4f11a615a0d5570357af729e4253c365d0890
+      - uses: nosborn/github-action-markdown-cli@9f1850dd5c81691701f159f429c58d1258814a15
         with:
           files: .
