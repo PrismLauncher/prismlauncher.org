@@ -48,6 +48,6 @@ As a reminder, you can also send your own submissions in the [Pride 2025 Showcas
 
 <small>Created by [AngelAura](https://github.com/AngelAuraMC)</small>
 
-[Amethyst](https://github.com/AngelAuraMC) is the successor to the recently archived [Pojav Launcher](https://pojavlauncher.app/), bringing Java Edition to mobile with a nice FOSS launcher! A stable release should be available soon, so stay updated with development by checking out their [Discord server](https://discord.gg/5ptqkyZxEy).
+[Amethyst](https://github.com/AngelAuraMC) is the successor to the recently archived [Pojav Launcher](https://pojavlauncherdl.com/), bringing Java Edition to mobile with a nice FOSS launcher! A stable release should be available soon, so stay updated with development by checking out their [Discord server](https://discord.gg/5ptqkyZxEy).
 
 ### Happy pride! And see you next week
