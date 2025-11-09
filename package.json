@@ -25,7 +25,7 @@
 		"tailwindcss": "4.1.11"
 	},
 	"devDependencies": {
-		"@iconify-json/lucide": "1.2.61",
+		"@iconify-json/lucide": "1.2.73",
 		"@iconify-json/simple-icons": "1.2.46",
 		"prettier": "3.6.2",
 		"prettier-plugin-astro": "0.14.1"
