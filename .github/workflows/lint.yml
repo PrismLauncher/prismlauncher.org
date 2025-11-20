@@ -4,7 +4,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: nosborn/github-action-markdown-cli@63d4f11a615a0d5570357af729e4253c365d0890
         with:
           files: .
