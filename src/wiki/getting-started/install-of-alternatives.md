@@ -75,15 +75,15 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge/NeoForge Mods
 
-### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for Forge
+### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for NeoForge
 
-[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium for Forge
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium for NeoForge
 
-[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris for Forge
+### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris for NeoForge
 
 [Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
 
