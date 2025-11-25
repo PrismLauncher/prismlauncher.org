@@ -90,7 +90,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 <div class="notification type-warn">
 <strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of OptiFine alternatives, which might have some compatibility/stability issues.</strong>
 
-While on some modpacks/with some mods they&#39;re going to work good, with others they might be <em>very</em> unstable so be well aware of what you&#39;re doing. If you have issues, use OptiFine.
+While on most modpacks/with most mods they&#39;re going to work well, other times they may not.
 
 You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
 
@@ -99,7 +99,7 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 
 ### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" height="20"> Embeddium
 
-[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
+[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" alt="Oculus Logo" height="20"> Oculus
 
