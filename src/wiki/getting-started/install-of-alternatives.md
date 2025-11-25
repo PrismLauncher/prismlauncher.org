@@ -43,7 +43,7 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris
 
-[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md#shaders-that-do-not-work-on-iris).
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
 
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" height="20"> Indium
 
@@ -75,22 +75,22 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge/NeoForge Mods
 
-### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for Forge
+### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for NeoForge
 
-[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium for Forge
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium for NeoForge
 
-[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on Forge/NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
+[Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris for Forge
+### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris for NeoForge
 
 [Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
 
 <div class="notification type-warn">
 <strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of OptiFine alternatives, which might have some compatibility/stability issues.</strong>
 
-While on some modpacks/with some mods they&#39;re going to work good, with others they might be <em>very</em> unstable so be well aware of what you&#39;re doing. If you have issues, use OptiFine.
+While on most modpacks/with most mods they&#39;re going to work well, other times they may not.
 
 You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
 
@@ -99,7 +99,7 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 
 ### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" height="20"> Embeddium
 
-[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We generally recommend using it instead of Rubidium. Be aware of the statements above before using it.
+[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" alt="Oculus Logo" height="20"> Oculus
 
