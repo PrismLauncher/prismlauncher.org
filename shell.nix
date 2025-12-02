@@ -1,4 +1,11 @@
-{ pkgs ? import <nixpkgs> }:
-pkgs.mkShell {
-  buildInputs = [ pkgs.bun ];
+{
+  pkgs ? import <nixpkgs> { },
+}:
+
+pkgs.mkShellNoCC {
+  buildInputs = [
+    pkgs.bun
+    pkgs.astro-language-server
+    pkgs.typescript-language-server
+  ];
 }
