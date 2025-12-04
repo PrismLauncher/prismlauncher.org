@@ -44,6 +44,19 @@ How the instances should be sorted.
 
 This is where you can choose which Icon Theme, Color Theme or Background Cat you want.
 
+### Randomcat and Gifcat
+
+Prism Launcher includes two optional built-in cat styles called randomcat and gifcat, which can be selected in the same menu as the Background Cat option.
+
+- randomcat displays a random static cat image  
+- gifcat displays a random animated cat GIF  
+
+These features are purely cosmetic and do not affect gameplay. They are available without installing external CatPacks and can be selected from:
+
+Settings → User Interface → Theme → Background Cat
+
+This documentation was added based on requests from Issues #1822, #3315, and #4370.
+
 ### Tools
 
 <!-- TODO: add image of Tools section -->
