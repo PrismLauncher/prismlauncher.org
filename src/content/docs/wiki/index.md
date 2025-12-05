@@ -1,9 +1,9 @@
 ---
 title: Prism Launcher Wiki
 description: In-development wiki for Prism Launcher
-template: splash
-sidebar:
-  hidden: true
+tableOfContents: false
+editUrl: false
+next: false
 hero:
   image:
     file: ../../../../public/img/logo.svg
@@ -11,7 +11,4 @@ hero:
     - text: Get Started
       link: /wiki/overview/faq
       icon: right-arrow
-    - text: Head back to the main site
-      link: /
-      icon: left-arrow
 ---
