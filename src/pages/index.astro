@@ -4,6 +4,9 @@ import HeroSection from "../components/HeroSection.astro";
 import ProseCard from "../components/ui/ProseCard.astro";
 import LogoCard from "../components/ui/LogoCard.astro";
 import DownloadLink from "../components/ui/DownloadLink.astro";
+import { SOCIAL_LINKS } from "../data/social.ts";
+import { Icon } from "astro-icon/components";
+import Card from "../components/ui/Card.astro";
 ---
 
 <MainLayout
@@ -121,6 +124,28 @@ import DownloadLink from "../components/ui/DownloadLink.astro";
 	</ProseCard>
 	<ProseCard>
 		<h2 id="get-involved">Get Involved</h2>
+		<div class="flex justify-center items-center gap-4 mb-4">
+			{
+				SOCIAL_LINKS.map((social) => (
+					<Card
+						variant="foreground"
+						class="flex justify-center items-center gap-4"
+					>
+						<a
+							href={social.href}
+							aria-label={social.label}
+							class="text-prism-text-light dark:text-prism-text-dark rounded-sm"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Icon name={social.icon} size="24" />
+						</a>
+					</Card>
+				))
+			}
+		</div>
+		<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 not-prose">
+		</div>
 		<p>
 			Prism Launcher is an open-source project and we welcome contributions from
 			the community. You can find the source code on <a
