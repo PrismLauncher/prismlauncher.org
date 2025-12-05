@@ -2,9 +2,12 @@
   pkgs ? import <nixpkgs> { },
 }:
 
-pkgs.mkShellNoCC {
-  buildInputs = [
-    pkgs.astro-language-server
-    pkgs.typescript-language-server
+pkgs.mkShell {
+  packages = with pkgs; [
+    nodejs_24
+    (pnpm.override {nodejs = nodejs_24;})
+
+    astro-language-server
+    typescript-language-server
   ];
 }
