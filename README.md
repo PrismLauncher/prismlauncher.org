@@ -10,7 +10,20 @@ root of this repository. You may use [`nix-direnv`][nix-direnv] by copying
 
 ### Manual
 
-Install [bun][bun-landing-page].
+Install [pnpm][pnpm-install].
 
-[bun-landing-page]: https://bun.sh/
+clone repository:
+```
+```
+```sh
+git clone https://github.com/PrismLauncher/prismlauncher.org.git
+```
+
+run local build:
+```sh
+pnpm run dev
+
+```
+```
+[pnpm-install]: https://pnpm.io/installation
 [nix-direnv]: https://github.com/nix-community/nix-direnv
