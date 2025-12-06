@@ -30,7 +30,7 @@
     "@11ty/eleventy": "3.1.2",
     "@11ty/eleventy-fetch": "5.1.1",
     "@11ty/eleventy-img": "6.0.4",
-    "@11ty/eleventy-navigation": "1.0.4",
+    "@11ty/eleventy-navigation": "1.0.5",
     "@11ty/eleventy-plugin-rss": "2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
     "@fontsource/inter": "5.2.8",
