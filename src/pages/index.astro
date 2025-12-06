@@ -124,7 +124,7 @@ import Card from "../components/ui/Card.astro";
 	</ProseCard>
 	<ProseCard>
 		<h2 id="get-involved">Get Involved</h2>
-		<div class="flex justify-center items-center gap-4 mb-4">
+		<div class="flex flex-wrap justify-center items-center gap-4 mb-4">
 			{
 				SOCIAL_LINKS.map((social) => (
 					<Card
@@ -143,8 +143,6 @@ import Card from "../components/ui/Card.astro";
 					</Card>
 				))
 			}
-		</div>
-		<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 not-prose">
 		</div>
 		<p>
 			Prism Launcher is an open-source project and we welcome contributions from
