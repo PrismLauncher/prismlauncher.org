@@ -34,7 +34,7 @@
     "@11ty/eleventy-plugin-rss": "2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
     "@fontsource/inter": "5.2.8",
-    "@fortawesome/fontawesome-free": "6.7.2",
+    "@fortawesome/fontawesome-free": "7.1.0",
     "axios": "1.13.2",
     "clean-css": "5.3.3",
     "luxon": "3.7.2",
