@@ -15,8 +15,8 @@ importers:
         specifier: 3.6.0
         version: 3.6.0
       '@fontsource-variable/inter':
-        specifier: 5.2.6
-        version: 5.2.6
+        specifier: 5.2.8
+        version: 5.2.8
       '@tailwindcss/typography':
         specifier: 0.5.16
         version: 0.5.16(tailwindcss@4.1.11)
@@ -310,8 +310,8 @@ packages:
   '@expressive-code/plugin-text-markers@0.41.3':
     resolution: {integrity: sha512-SN8tkIzDpA0HLAscEYD2IVrfLiid6qEdE9QLlGVSxO1KEw7qYvjpbNBQjUjMr5/jvTJ7ys6zysU2vLPHE0sb2g==}
 
-  '@fontsource-variable/inter@5.2.6':
-    resolution: {integrity: sha512-jks/bficUPQ9nn7GvXvHtlQIPudW7Wx8CrlZoY8bhxgeobNxlQan8DclUJuYF2loYRrGpfrhCIZZspXYysiVGg==}
+  '@fontsource-variable/inter@5.2.8':
+    resolution: {integrity: sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ==}
 
   '@iconify-json/lucide@1.2.79':
     resolution: {integrity: sha512-CcwoXfC2Y7UVW0PXopmXtB4Do/eUJkhAqQqOnVENEiw3FwU707TK4uyIUqdo9tlvBaFBl95wnJf3smqsTnSyKA==}
@@ -2539,7 +2539,7 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.41.3
 
-  '@fontsource-variable/inter@5.2.6': {}
+  '@fontsource-variable/inter@5.2.8': {}
 
   '@iconify-json/lucide@1.2.79':
     dependencies:
