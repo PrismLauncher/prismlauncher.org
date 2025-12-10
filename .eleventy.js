@@ -74,7 +74,7 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
     </picture>`;
 }
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
@@ -84,10 +84,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource/inter": "assets/fonts/inter",
   });
-  eleventyConfig.addPassthroughCopy({
-    "src/_includes/components/forkawesome": "assets/forkawesome",
-  });
-  
 
 
   // Add plugins
@@ -95,6 +91,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+  
+  const { default: pluginFontAwesome } = await import("@11ty/font-awesome");
+  eleventyConfig.addPlugin(pluginFontAwesome);
+  eleventyConfig.addBundle("css");
 
   // Add shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", image);

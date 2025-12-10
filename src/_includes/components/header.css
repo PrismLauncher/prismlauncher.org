@@ -25,13 +25,22 @@ nav {
   flex-wrap: wrap;
 }
 
-.social-links i {
-  font-size: 1.75em;
+
+.social-links a {
+  /* otherwise underline shows for matrix svg */
+  text-decoration: none;
+}
+
+
+.social-links svg {
+  display: inline;
+  height: 1.75em;
+  width: 1.75em;
   margin: 0.25em;
   color: var(--primary-text);
 }
 
-.social-links i:hover {
+.social-links svg:hover {
   color: var(--link);
   cursor: pointer;
 }
