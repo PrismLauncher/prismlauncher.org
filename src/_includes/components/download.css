@@ -29,9 +29,10 @@
     background-color: var(--accent-light);
 }
 
-.download-tab-list i {
+.download-tab-list svg {
     color: var(--primary-text);
-    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
     text-decoration: none;
     display: flex;
     justify-content: center;

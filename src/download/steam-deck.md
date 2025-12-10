@@ -1,7 +1,7 @@
 ---
 title: Download Prism Launcher for SteamOS/Steam Deck
 eleventyNavigation:
-  key: <i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck
+  key: <i class="fa-brands fa-steam-square" aria-hidden="true"></i> Steam Deck
   order: 3
 ---
 
