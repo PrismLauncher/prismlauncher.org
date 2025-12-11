@@ -14,7 +14,7 @@
 		"@astrojs/sitemap": "3.6.0",
 		"@fontsource-variable/inter": "5.2.8",
 		"@tailwindcss/typography": "0.5.19",
-		"@tailwindcss/vite": "4.1.17",
+		"@tailwindcss/vite": "4.1.18",
 		"astro": "5.16.5",
 		"astro-icon": "1.1.5",
 		"feed": "5.1.0",
@@ -22,7 +22,7 @@
 		"rehype-stringify": "10.0.1",
 		"remark": "15.0.1",
 		"remark-rehype": "11.1.2",
-		"tailwindcss": "4.1.17"
+		"tailwindcss": "4.1.18"
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "0.37.1",
