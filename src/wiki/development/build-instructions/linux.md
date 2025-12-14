@@ -69,15 +69,35 @@ cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${
 
 ### Building a .deb
 
-Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
-
 ```bash
-git clone https://mpr.makedeb.org/prismlauncher.git
-cd prismlauncher
-makedeb -s
+# Install Debian build tooling
+sudo apt install build-essential devscripts debhelper fakeroot
+
+# Clone the Debian package source
+git clone https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
+cd prismlauncher 
+# [Checkout the branch or tag for the version you wish to build]
+
+# Install dependencies
+# If the below command says "Depends: openjdk-17-jdk but it is not installable", see instructions below
+sudo apt build-dep .
+
+# Compile to `.deb`
+dpkg-buildpackage -b -us -uc
 ```
 
-The .deb will be located in the directory the repo was cloned in.
+If OpenJDK 17 is not available:
+
+```bash
+# Install the Temurin Debian repository
+sudo apt install ca-certificates wget apt-transport-https gpg
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+sudo apt update
+
+# Make the build process depend on it instead of `openjdk-17-jdk`
+sed -i s/openjdk-17-jdk/temurin-17-jdk/g debian/control
+```
 
 ### Building an .rpm  for Fedora
 
