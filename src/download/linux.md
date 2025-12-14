@@ -139,7 +139,7 @@ sudo dnf install prismlauncher
 
 ## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" alt="Debian Logo" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu Logo" height="20" /> Ubuntu (x86_64, ARM64)
 
-Packages are made available for Ubuntu, Debian, and Linux Mint through the unofficial [*Prism Launcher for Debian* repository](https://github.com/Prism-Launcher-for-Debian/repo).
+Packages are made available for Ubuntu, Debian, and Linux Mint through the [*Prism Launcher for Debian* repository](https://github.com/Prism-Launcher-for-Debian/repo).
 
 ```bash
 sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
