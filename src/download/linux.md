@@ -139,32 +139,13 @@ sudo dnf install prismlauncher
 
 ## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" alt="Debian Logo" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu Logo" height="20" /> Ubuntu (x86_64, ARM64)
 
-Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](https://mpr.makedeb.org/)
-
-[![MPR: prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)
-[![MPR: prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
-
-### Installation using Prebuilt-MPR (recommended)
-
-[Add the Prebuilt-MPR repository](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
+Packages are made available for Ubuntu, Debian, and Linux Mint through the unofficial [*Prism Launcher for Debian* repository](https://github.com/Prism-Launcher-for-Debian/repo).
 
 ```bash
-sudo apt install prismlauncher
-```
-
-Prebuilt MPR supports Debian 11/12, and Ubuntu 20.04, 22.04, 24.04.
-
-### Installing with mist, the MPR CLI
-
-Install `mist` by following the [upstream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
-
-Packages installed via `mist` will be compiled from source
-
-```bash
-# Latest stable release
-mist install prismlauncher
-# Newest Git commit
-mist install prismlauncher-git
+sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
+  && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
+  && sudo apt update \
+  && sudo apt install prismlauncher
 ```
 
 ## <img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" alt="Debian Logo" height="20" /> Debian / <img src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg" alt="Raspberry Pi Logo" height="20" /> Pi OS / <img src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg" alt="Ubuntu Logo" height="20" /> Ubuntu (ARM32/64)
