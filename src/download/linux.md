@@ -103,7 +103,6 @@ Packages are available in the official Arch Linux/Manjaro repositories and the A
 [![prismlauncher](https://img.shields.io/badge/Arch%20Linux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
 [![prismlauncher-git](https://img.shields.io/badge/AUR-prismlauncher--git-blue?logo=archlinux&logoColor=white)](https://aur.archlinux.org/packages/prismlauncher-git/)
 
-
 ### Installing
 
 ```bash
@@ -112,6 +111,7 @@ sudo pacman -S prismlauncher
 ```
 
 ### Installing Dev Build (AUR)
+
 ```bash
 # Newest Git commit (compiled from source)
 yay -S prismlauncher-git
