@@ -98,30 +98,23 @@ apk add prismlauncher
 
 ## <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" alt="Arch Linux Logo" height="20"/> Arch Linux / <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" alt="Manjaro Linux Logo" height="20"/> Manjaro
 
-Packages are available in both the official Arch Linux/Manjaro repositories and the AUR
+Packages are available in both the official Arch Linux/Manjaro repositories and the AUR (Development Builds)
 
 [![prismlauncher](https://img.shields.io/badge/Arch%20Linux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
 [![prismlauncher-git](https://img.shields.io/badge/AUR-prismlauncher--git-blue?logo=archlinux&logoColor=white)](https://aur.archlinux.org/packages/prismlauncher-git/)
 
-### Installing
+### Installing Prism
 
 ```bash
 # Latest release (binary)
 sudo pacman -S prismlauncher
-# Newest Git commit (compiled from source)
-yay -S prismlauncher-git
 ```
 
-You can replace `yay -S` with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-
-### Installation using Chaotic-AUR
-
-If you would like to use `prismlauncher-git` without compiling from source, the Chaotic-AUR offers pre-built binaries.
-
-See their instructions on <https://aur.chaotic.cx/> to enable the repository, then run:
+### Installing Dev Builds (AUR)
 
 ```bash
-sudo pacman -S prismlauncher-git
+# Newest Git commit (compiled from source)
+yay -S prismlauncher-git
 ```
 
 ## <img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" alt="CentOS Logo" height="20"> CentOS Stream / <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" alt="Fedora Logo" height="20"> Fedora / <img src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg" alt="RedHat Logo" height="20"> Red Hat Enterprise Linux
