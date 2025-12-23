@@ -45,9 +45,13 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 [Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
 
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Fabric" height="20"> ImmediatelyFast
+
+[ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
+
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" height="20"> Indium
 
-[Indium](https://modrinth.com/mod/indium) is an addon for older Sodium versions that provides support for the Fabric Rendering API. This is needed if you want to use Sodium on Minecraft 1.20 or older with mods that use advanced rendering techniques.
+[Indium](https://modrinth.com/mod/indium) is an addon for older Sodium versions that provides support for the Fabric Rendering API. This is needed if you want to use Sodium on Minecraft 1.20.x or older with mods that use advanced rendering techniques.
 
 ### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" alt="Starlight Logo" height="20"> Other Mods
 
@@ -73,7 +77,7 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game and not introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
-## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge/NeoForge Mods
+## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" height="30"> NeoForge Mods
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for NeoForge
 
@@ -87,8 +91,18 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
 
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast NeoForge" height="20"> ImmediatelyFast
+
+[ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
+
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge Mods
+
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Forge" height="20"> ImmediatelyFast
+
+[ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
+
 <div class="notification type-warn">
-<strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of OptiFine alternatives, which might have some compatibility/stability issues.</strong>
+<strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of most OptiFine alternatives, which might have some compatibility/stability issues.</strong>
 
 While on most modpacks/with most mods they&#39;re going to work well, other times they may not.
 
@@ -101,11 +115,11 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 
 [Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
-### <img src="https://raw.githubusercontent.com/Asek3/Oculus/1.18.2/src/main/resources/oculus-logo.png" alt="Oculus Logo" height="20"> Oculus
+### <img src="https://raw.githubusercontent.com/Asek3/Oculus/f59f6932eb20e00d123b36d5976d6ecd80b98b41/src/main/resources/oculus-logo.png" alt="Oculus Logo" height="20"> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
 
-### Radium
+### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" height="20"> Radium
 
 [Radium](https://modrinth.com/mod/radium) is a Lithium port for Forge. Be aware of the statements above before using it.
 
