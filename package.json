@@ -43,5 +43,5 @@
     "markdown-it-table-of-contents": "0.9.0",
     "markdownlint-cli": "0.47.0"
   },
-  "packageManager": "pnpm@10.26.1"
+  "packageManager": "pnpm@10.26.2"
 }
