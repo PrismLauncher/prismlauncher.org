@@ -67,7 +67,7 @@ importers:
         specifier: 0.34.5
         version: 0.34.5
       wrangler:
-        specifier: ^4.54.0
+        specifier: 4.54.0
         version: 4.54.0
 
 packages:
