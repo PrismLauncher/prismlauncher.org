@@ -6,6 +6,20 @@ sidebar:
 
 This is a collection of helpful information for frequent problems when using Prism Launcher.
 
+## MinecraftForge on Linux distributions that use zlib-ng
+
+Some Linux distributions like CachyOS and Fedora use zlib-ng instead of classic zlib, which is [incompatible with MinecraftForge installers](https://github.com/zlib-ng/zlib-ng/issues/1827). To fix this, add `-Dforgewrapper.skipHashCheck=true` in Edit > Settings > Java > Java arguments.
+
+Alternatively, you can switch to classic zlib. For CachyOS, the necessary command to do so is:
+
+```bash
+sudo pacman -S zlib lib32-zlib
+```
+
+## "Failed to log in: The authentication servers are down for maintenance." or skins not loading?
+
+This is most commonly an issue with old Mojang Java 8 versions in Windows and macOS. To fix it, delete the old installation by going to Prism > top toolbar > Settings > Java > Installations, selecting Java 1.8.0_51 (or Java 1.8.0_74 on macOS) and pressing Remove.
+
 ## Minecraft 1.16.5 with Minecraft Forge and Java 8u321+
 
 Older versions of Minecraft Forge for Minecraft 1.16.5 cause the game to crash on launch, as they do not support the latest revisions of Java 8.
@@ -24,6 +38,43 @@ A workaround for this issue is adding the following JVM argument:
 ```text
 -Djava.net.preferIPv4Stack=true
 ```
+
+## Very old Forge modpacks with modern Java 8 runtimes
+
+On very old modpacks you may crashes similar as follows:
+
+```text
+2024-02-28 10:35:15 [SEVERE] [Forestry] myrathi.flatsigns.FlatSigns failed validation. Halting runtime for security reasons. Please replace your mods with untampered versions from the official download sites.
+```
+
+```text
+2024-02-28 10:31:56 [SEVERE] [ForgeModLoader] The minecraft jar file:/home/********/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/libraries/com/mojang/minecraft/1.6.4/minecraft-1.6.4-client.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
+```
+
+```text
+2023-01-23 16:10:09 [SEVERE] [Forestry] ic2.core.IC2 failed validation. Halting runtime for security reasons. Please replace your mods with untampered versions from the official download sites.
+```
+
+To fix this, you can use Prism Launcher's auto-downloadable Mojang distributed java runtimes. To use them, enable "Auto-download Mojang Java" in Settings -> Java and untick "Java installation" in Edit -> Settings -> Java
+
+If that isn't enough you can try using the [SHA-1 Redemption](https://modrinth.com/mod/sha1redemption) nilmod with [NilLoader](https://git.sleeping.town/Nil/NilLoader). Alternatively you can follow this alternative process:
+
+1. Create a file named `java.security` inside the instance minecraft(`.minecraft`/`minecraft`) folder with the following content:
+
+   ```text
+   jdk.certpath.disabledAlgorithms=MD2, MD5, SHA1 jdkCA & usage TLSServer, \
+       RSA keySize < 1024, DSA keySize < 1024, EC keySize < 224, \
+       include jdk.disabled.namedCurves
+
+   jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize < 1024, \
+       DSA keySize < 1024, \
+       include jdk.disabled.namedCurves
+   ```
+
+2. Open Edit instance window
+3. Navigate to Java Setting
+4. Check the Java arguments checkbox
+5. Paste `-Djava.security.properties=java.security` inside the java arguments text box
 
 ## Common Launcher-related issues
 
@@ -48,12 +99,20 @@ This is unfortunately **normal behaviour** due to the nature of the Windows app 
 
 If you are **comfortable** and **trust** Prism Launcher, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
-### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" alt="Windows 7 Logo" width=20px style="display: inline-block" /> Windows 7 and 8.1
+### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" alt="Windows 7 Logo" width=20px style="display: inline-block" /> Legacy Operating Systems
 
-#### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
+Prism Launcher doesn't have support for old operating systems, such as Windows 7 and macOS 10.13 High Sierra.
 
-Prism Launcher hasn't supported Windows 7 and Windows 8.1 since version 8.0 due to dependencies. These operating systems have been EOL for years, so please upgrade your operating system for security reasons.
-[Prism Launcher 7.2](https://github.com/PrismLauncher/PrismLauncher/releases/tag/7.2) is the last version that has a legacy build for these EOL operating systems, but it's no longer supported.
+:::danger[The versions here aren't supported anymore!]
+These very old operating systems are EOL and not supported by our launcher anymore and these old versions are outdated and can break at any time. They're only listed here for historical reasons. **Do not ask for support on an unsupported OS version!**
+
+:::
+
+The last version of Prism Launcher supporting Windows 7 and Windows 8.1 was Prism Launcher 7.2's Qt 5 build, you can download here the [setup](https://github.com/PrismLauncher/PrismLauncher/releases/download/7.2/PrismLauncher-Windows-MSVC-Legacy-Setup-7.2.exe) and the [portable build](https://github.com/PrismLauncher/PrismLauncher/releases/download/7.2/PrismLauncher-Windows-MSVC-Legacy-Portable-7.2.zip).
+
+The last version of Prism Launcher supporting macOS 10.13 High Sierra, 10.14 Mojave, 10.15 Catalina is Prism Launcher's 9.4's Qt 5 build, downloadable [here](https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-macOS-Legacy-9.4.zip).
+
+The last version of Prism Launcher supporting macOS 11 Big Sur is Prism Launcher 9.4, downloadable [here](https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-macOS-9.4.zip).
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" width=20px style="display: inline-block" /> Linux
 
@@ -73,7 +132,7 @@ sudo chmod +x PrismLauncher-Linux-{{version.current}}-x86_64.AppImage
 
 **Please note,** that depending on the version of Prism Launcher that you have downloaded, you may have to **change the version number** in the command above.
 
-If you want to simplify the installation of the AppImage, use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher). Note that this won't work on non-systemd system, and we recommend just using packages.
+If you want to simplify the installation of the AppImage, use [Gear Level](https://gearlever.mijorus.it/). Note that we recommend just using packages when possible.
 
 #### Prism Launcher isn't using my system theme
 
