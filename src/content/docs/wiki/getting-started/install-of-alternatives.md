@@ -100,16 +100,15 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
 
-<div class="notification type-warn">
-<strong>On older Minecraft versions with Forge, you'll need to use unofficial ports of most OptiFine alternatives, which might have some compatibility/stability issues.</strong>
+:::caution[Potential issues]
+On older Minecraft versions with Forge, you'll need to use unofficial ports of most OptiFine alternatives, which in some rare cases have some compatibility/stability issues.
 
-While on most modpacks/with most mods they&#39;re going to work well, other times they may not.
+While on most modpacks/with most mods they're going to work well, a few times they may not.
 
-You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
+You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many Fabric mods on Forge.
 
-<strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
-
-</div>
+**Don't report issues with those on upstream's Discord support channels!**
+:::
 
 ### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" width=20px style="display: inline-block"> Embeddium
 
