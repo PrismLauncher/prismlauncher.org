@@ -4,11 +4,7 @@ sidebar:
   order: 9
 ---
 
-# Making use of Controllers
-
-This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
-
-## Before proceeding
+:::note[Before proceeding]
 
 - Please ensure that you are comfortable with the mod installation process within Prism Launcher.
 - A full guide on this can be [found here](../download-mods/).
@@ -16,6 +12,11 @@ This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 - Please ensure a compatible version of Java is selected. [You can learn how to do so here](../installing-java/).
 
 Finally, if you don't have one already, you must create an **instance** with the game version and mod loader of your choice.
+:::
+
+# Making use of Controllers
+
+This includes Steam Deck's Gamepad, PlayStation/Xbox controllers and so on.
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=30px style="display: inline-block"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=30px style="display: inline-block"> Fabric/Quilt
 
