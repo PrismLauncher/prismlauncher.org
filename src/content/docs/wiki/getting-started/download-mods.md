@@ -14,12 +14,12 @@ It is worth noting that many mods will be available on **both platforms**.
 
 After you've chosen your mod provider, you can search or browse for any desired mods. Click the **Select mod for download** button to add each mod to your download queue. Once finished, you can now press **OK**, and your mods should begin downloading.
 
-## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=30px style="display: inline-block"> Fabric
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" style="height: 1em; display: inline"> Fabric
 
 If you have selected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
 If it is missing, you can install it from **Edit** > **Mods** > **Download mods** like any other mod.
 
-## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=30px style="display: inline-block"> Quilt
+## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" style="height: 1em; display: inline"> Quilt
 
 For installing Quilt in Prism Launcher, follow the [quilt wiki](https://quiltmc.org/install/prismlauncher/).

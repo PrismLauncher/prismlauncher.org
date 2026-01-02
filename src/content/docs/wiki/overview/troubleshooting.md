@@ -27,7 +27,7 @@ A workaround for this issue is adding the following JVM argument:
 
 ## Common Launcher-related issues
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" width=20px style="display: inline-block" /> Windows (7, 8.1, 10, 11)
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" style="height: 1em; display: inline" /> Windows (7, 8.1, 10, 11)
 
 #### "MSVCP140_2.dll was not found"?
 
@@ -48,14 +48,14 @@ This is unfortunately **normal behaviour** due to the nature of the Windows app 
 
 If you are **comfortable** and **trust** Prism Launcher, then you can click on the **More info** button, and then do the same on the **Run anyway** one too.
 
-### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" alt="Windows 7 Logo" width=20px style="display: inline-block" /> Windows 7 and 8.1
+### <img src="https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg" alt="Windows 7 Logo" style="height: 1em; display: inline" /> Windows 7 and 8.1
 
 #### "api-ms-win-core-synch-l1-2.0.dll not found" or "The procedure entry point CreateDXGIFactory2 could not be located in the dynamic link library dxgi.dll"?
 
 Prism Launcher hasn't supported Windows 7 and Windows 8.1 since version 8.0 due to dependencies. These operating systems have been EOL for years, so please upgrade your operating system for security reasons.
 [Prism Launcher 7.2](https://github.com/PrismLauncher/PrismLauncher/releases/tag/7.2) is the last version that has a legacy build for these EOL operating systems, but it's no longer supported.
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" width=20px style="display: inline-block" /> Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" style="height: 1em; display: inline" /> Linux
 
 #### How do I install the Prism Launcher Flatpak on my Linux system?
 
@@ -82,7 +82,7 @@ This means that some themes and theming platforms like KDE Plasma's theming will
 But don't worry, we still provide Qt 5 builds.
 You can find them on the [download page](https://prismlauncher.org/download/linux).
 
-### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" width=20px style="display: inline-block" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" width=20px style="display: inline-block" /> Windows and Linux
+### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" style="height: 1em; display: inline" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" style="height: 1em; display: inline" /> Windows and Linux
 
 #### I want to make my system install portable
 
