@@ -68,7 +68,7 @@ Then, download the appropriate Java:
 |  | x86 | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?version=17&arch=x86&os=windows) | Azul, Coretto |
 |  | aarch64 | [Microsoft OpenJDK 17 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-aarch64.msi) | Azul |
 | Minecraft **1.16** or below | x86-64 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x64&os=windows) | Azul, Coretto |
-|  | x86 | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x86&os=windows) | Azul, Coretto |
+|  | x86 | [Temurin OpenJDK 8 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x86&os=windows) | Azul, Coretto |
 |  | aarch64 | Not available :( |  |
 
 **Tip:** If you are on Windows 11, you can automatically install 8, 17 and 21 by running `winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
