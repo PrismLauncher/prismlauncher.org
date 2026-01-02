@@ -4,13 +4,14 @@ sidebar:
   order: 8
 ---
 
-## Before you continue
+:::caution
 
 Because OptiFine is an old, closed-source project, it has evolved to cause many mod incompatibilities, and doesn't do as good of a job as some the alternatives out there.
 
 Also, if you're using the Fabric mod loader, there's no native support for it, and the current workaround is known to be buggy and quite unstable, due to the very nature of OptiFine and OptiFabric.
 
 Therefore, you should consider the use of OptiFine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
+:::
 
 ## <img src="https://www.optifine.net/favicon.ico" alt="OptiFine Logo" height="20" /> Installing OptiFine standalone
 

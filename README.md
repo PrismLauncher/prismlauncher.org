@@ -21,6 +21,7 @@ git clone https://github.com/PrismLauncher/prismlauncher.org.git
 run local build:
 
 ```sh
+pnpm install
 pnpm run dev
 ```
 

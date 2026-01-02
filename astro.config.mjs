@@ -45,10 +45,10 @@ export default defineConfig({
 					},
 				},
 				{
-					label: "Help",
+					label: "Help pages",
 					autogenerate: {
 						collapsed: true,
-						directory: "wiki/help",
+						directory: "wiki/help-pages",
 					},
 				},
 				"wiki/branding",

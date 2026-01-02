@@ -24,79 +24,79 @@ In the past few years, various mods have been made to replace these features and
 
 To install mods and modpacks, see the [Download mods](../download-mods) and [Download modpacks](../download-modpacks) pages.
 
-## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" height="30"> Fabric/Quilt Mods
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=30px><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=30px> Fabric/Quilt Mods
 
 <div class="notification type-info">
 Most Fabric mods require the <a href="https://modrinth.com/mod/fabric-api">Fabric API</a> mod in order to work, while most Quilt mods require <a href="https://modrinth.com/mod/qsl">Quilted Fabric API</a> to work.
 </div>
 
-### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium
+### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" width=20px Sodium>Sodium
 
 [Sodium](https://modrinth.com/mod/sodium) is a mod that greatly improves render performance through various rendering optimizations. We **highly recommend** installing it when possible.
 
 If you use Sodium often, please consider supporting development of the mod by [donating](https://jellysquid.me/donate) to the developer!
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" width=20px> Lithium
 
 [Lithium](https://modrinth.com/mod/lithium) is a mod that greatly improves render performance through various game logic optimizations. We **highly recommend** installing it when possible.
 
-### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris
+### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px> Iris
 
 [Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
 
-### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Fabric" height="20"> ImmediatelyFast
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Fabric" width=20px> ImmediatelyFast
 
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
 
-### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" height="20"> Indium
+### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" width=20px> Indium
 
 [Indium](https://modrinth.com/mod/indium) is an addon for older Sodium versions that provides support for the Fabric Rendering API. This is needed if you want to use Sodium on Minecraft 1.20.x or older with mods that use advanced rendering techniques.
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" alt="Starlight Logo" height="20"> Other Mods
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" width=20px><img src="https://cdn.modrinth.com/data/H8CaAYZC/icon.png" alt="Starlight Logo" width=20px> Other Mods
 
 If you would like to go a bit further, LambdAurora maintains a [very detailed list of OptiFine alternatives for Fabric and Quilt](https://lambdaurora.dev/optifine_alternatives/). There's also [a list of mods used by the Additive modpack](https://github.com/skywardmc/additive/wiki/Give-up-OptiFine), which provides the Minecraft versions that each mod supports along with some extra information.
 
-## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" height="30"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" height="30"> Fabric/Quilt Modpacks
+## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=30px><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=30px> Fabric/Quilt Modpacks
 
-### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" alt="Fabulously Optimized Logo" height="20"> Fabulously Optimized
+### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" alt="Fabulously Optimized Logo" width=20px> Fabulously Optimized
 
 If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
 
 [See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
 
-### <img src="https://cdn.modrinth.com/data/BYfVnHa7/icon.png" alt="Simply Optimized Logo" height="20"> Simply Optimized
+### <img src="https://cdn.modrinth.com/data/BYfVnHa7/icon.png" alt="Simply Optimized Logo" width=20px> Simply Optimized
 
 [Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just optimization in mind. SO has better out-of-the-box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
 
-### <img src="https://raw.githubusercontent.com/skywardmc/art/main/additive/logo_512h.png" alt="Additive Logo" height="20"> Additive
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/additive/logo_512h.png" alt="Additive Logo" width=20px> Additive
 
 [Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's based on Adrenaline for better performance, supports Fabric, and can be installed on a wide range of Minecraft versions.
 
-### <img src="https://raw.githubusercontent.com/skywardmc/art/main/adrenaline/logo_512h.png" alt="Adrenaline Logo" height="20"> Adrenaline
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/adrenaline/logo_512h.png" alt="Adrenaline Logo" width=20px> Adrenaline
 
 [Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game and not introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
-## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" height="30"> NeoForge Mods
+## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" width=30px> NeoForge Mods
 
-### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" height="20"> Sodium for NeoForge
+### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" width=20px> Sodium for NeoForge
 
 [Sodium](https://modrinth.com/mod/sodium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/sodium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" height="20"> Lithium for NeoForge
+### <img src="https://cdn.modrinth.com/data/gvQqBUqZ/icon.png" alt="Lithium Logo" width=20px> Lithium for NeoForge
 
 [Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
 
-### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" height="20"> Iris for NeoForge
+### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px> Iris for NeoForge
 
 [Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
 
-### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast NeoForge" height="20"> ImmediatelyFast
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast NeoForge" width=20px> ImmediatelyFast
 
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
 
-## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge Mods
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" width=30px> Forge Mods
 
-### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Forge" height="20"> ImmediatelyFast
+### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Forge" width=20px> ImmediatelyFast
 
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
 
@@ -110,15 +110,15 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 <strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
 </div>
 
-### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" height="20"> Embeddium
+### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" width=20px> Embeddium
 
 [Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
-### <img src="https://raw.githubusercontent.com/Asek3/Oculus/f59f6932eb20e00d123b36d5976d6ecd80b98b41/src/main/resources/oculus-logo.png" alt="Oculus Logo" height="20"> Oculus
+### <img src="https://raw.githubusercontent.com/Asek3/Oculus/f59f6932eb20e00d123b36d5976d6ecd80b98b41/src/main/resources/oculus-logo.png" alt="Oculus Logo" width=20px> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
 
-### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" height="20"> Radium
+### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" width=20px> Radium
 
 [Radium](https://modrinth.com/mod/radium) is a Lithium port for Forge. Be aware of the statements above before using it.
 
@@ -126,12 +126,12 @@ You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> t
 
 You can find [a list of performance mods for Forge here](https://github.com/NordicGamerFE/usefulmods#performance-and-bug-fixing-mods).
 
-## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="30"> Forge Modpacks
+## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" width=30px> Forge Modpacks
 
-### <img src="https://raw.githubusercontent.com/skywardmc/art/main/hammer/logo_512h.png" alt="Hammer Logo" height="20"> Hammer
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/hammer/logo_512h.png" alt="Hammer Logo" width=20px> Hammer
 
 [Hammer](https://modrinth.com/modpack/hammer) is like the Adrenaline modpack but made for Forge, utilizing Forge ports of mods and [Sinytra Connector](https://modrinth.com/mod/connector) to run Fabric/Quilt optimization mods.
 
-### <img src="https://raw.githubusercontent.com/skywardmc/art/main/drill/logo_512h.png" alt="Drill Logo" height="20"> Drill
+### <img src="https://raw.githubusercontent.com/skywardmc/art/main/drill/logo_512h.png" alt="Drill Logo" width=20px> Drill
 
 [Drill](https://modrinth.com/modpack/drill) is the Additive modpack but made for Forge, utilizing Forge ports of mods and [Sinytra Connector](https://modrinth.com/mod/connector) to run Fabric/Quilt optimization and OptiFine replacement mods.
