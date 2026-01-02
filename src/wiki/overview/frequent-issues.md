@@ -89,3 +89,14 @@ You can find them on the [download page](https://prismlauncher.org/download/linu
 #### I want to make my system install portable
 
 On Prism Launcher you can make any install portable (or making portable installs system) just by adding (or removing) portable.txt to the Prism Launcher root directory.
+
+## Login Issues
+
+### Using GitHub Account
+
+Some poeple have reported issues when logging in with a Microsoft acount that is linked to a Github account, where after entering your credentials you are forwarded to your Microsoft-account page. The following steps have helped working around the issue:
+
+1. After clicking _Add Microsoft_ and clicking next, don't enter your username/E-Mail but click _Sign-in options_
+2. Choose _Forgot Username_ and enter te E-Mail adress associated with your account and click next
+3. You should receive a one-time passcode to your E-Mail, enter the code and continue
+4. You should now be able too connect PrismLauncher
