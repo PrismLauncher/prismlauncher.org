@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+import Button from "../components/ui/Button.astro";
+---
+
+<MainLayout title="Successful Login">
+	<ProseCard class="text-center">
+		<h1>Successful Login</h1>
+		<p>
+			You have successfully logged in to Prism Launcher using your Microsoft
+			account. You can close this window.
+		</p>
+		<div class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+			<Button href="/wiki" size="md" variant="primary">
+				Guides and Documentation
+			</Button>
+			<Button
+				href="https://opencollective.com/prismlauncher"
+				size="md"
+				variant="secondary"
+			>
+				Support Prism Launcher
+			</Button>
+		</div>
+	</ProseCard>
+</MainLayout>
