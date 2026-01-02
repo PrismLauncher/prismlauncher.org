@@ -4,8 +4,7 @@ sidebar:
   order: 8
 ---
 
-:::caution
-
+:::danger[Before you continue]
 Because OptiFine is an old, closed-source project, it has evolved to cause many mod incompatibilities, and doesn't do as good of a job as some the alternatives out there.
 
 Also, if you're using the Fabric mod loader, there's no native support for it, and the current workaround is known to be buggy and quite unstable, due to the very nature of OptiFine and OptiFabric.
@@ -13,7 +12,7 @@ Also, if you're using the Fabric mod loader, there's no native support for it, a
 Therefore, you should consider the use of OptiFine alternatives whenever possible. [See the wiki page about it](../install-of-alternatives).
 :::
 
-## <img src="https://www.optifine.net/favicon.ico" alt="OptiFine Logo" height="20" /> Installing OptiFine standalone
+## <img src="https://www.optifine.net/favicon.ico" alt="OptiFine Logo" width=30px style="display: inline-block"> Installing OptiFine standalone
 
 This method requires you either have the Minecraft version you wish to install OptiFine on to be installed through the vanilla launcher or to recreate the folder structure somewhere on your system (like /.minecraft/versions/_1.18.2_/_1.18.2_.jar).
 
@@ -34,7 +33,7 @@ From OptiFine Version **H1_pre2** the instructions for installing OptiFine on Pr
 3. Move all files from the folder called **notch** to the top folder of the archive file and click **save**.
 4. Open Prism Launcher, edit the instance you wish to install OptiFine on, open the **Version** tab and click **Add to Minecraft.jar**, select the extracted / modified OptiFine jarmod (the file ending in \_MOD.jar) and confirm.
 
-## <img src="https://www.optifine.net/favicon.ico" alt="OptiFine Logo" height="20" /> Installing OptiFine on top of a modloader
+## <img src="https://www.optifine.net/favicon.ico" alt="OptiFine Logo" width=30px style="display: inline-block"> Installing OptiFine on top of a modloader
 
 Make sure you know how to [download mods](../download-mods) before attempting to install OptiFine.
 
@@ -44,13 +43,13 @@ Once found, click **mirror**. Now click the **download** button to download your
 
 Remember where you have kept your **.jar** file, and continue to Prism Launcher. Follow the steps from the [download mods](../download-mods) page, and choose either Forge or Fabric.
 
-### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" height="20"> Forge
+### <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" width=20px style="display: inline-block"> Forge
 
 Forge does not require any extra steps besides adding the **.jar** for OptiFine into Prism Launcher.
 
 **NOTE:** Some versions of OptiFine **don't** work on Forge!
 
-### <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" height="20"> Fabric
+### <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=20px style="display: inline-block"> Fabric
 
 **Note:** If you're playing on Minecraft versions older than 1.16, you might need to also install the [Fabric API](../download-mods/#fabric) mod.
 
@@ -60,7 +59,7 @@ Go into the **Mods** tab on the left side and then in the right menu select **Do
 
 If there were results shown in the search, your Minecraft version may not be compatible with OptiFabric. In this case, you can either try the Forge method, or choose to wait until support for your Minecraft version is added.
 
-### <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" height="20"> Quilt
+### <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=20px style="display: inline-block"> Quilt
 
 There's no way of running OptiFine on Quilt at the time of writing.
 
