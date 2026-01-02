@@ -16,7 +16,7 @@ After you've chosen your mod provider, you can search or browse for any desired 
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" height="20"> Fabric
 
-If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
+If you have selected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
 If it is missing, you can install it from **Edit** > **Mods** > **Download mods** like any other mod.
 

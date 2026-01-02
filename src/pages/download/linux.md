@@ -105,11 +105,14 @@ sudo dnf install prismlauncher
 
 ### Debian / Ubuntu (x86_64, ARM64)
 
-Several packages are available through [makedeb](https://makedeb.org/)'s [MPR](https://mpr.makedeb.org/)
+Packages are made available for Ubuntu, Debian, and Linux Mint through the [*Prism Launcher for Debian* repository](https://github.com/Prism-Launcher-for-Debian/repo).
 
-[![prismlauncher](https://img.shields.io/badge/mpr-prismlauncher-orange)](https://mpr.makedeb.org/packages/prismlauncher)
-[![prismlauncher-git](https://img.shields.io/badge/mpr-prismlauncher--git-orange)](https://mpr.makedeb.org/packages/prismlauncher-git)
-
+```bash
+sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
+  && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
+  && sudo apt update \
+  && sudo apt install prismlauncher
+```
 #### Installation using Prebuilt-MPR (recommended)
 
 Add the Prebuilt-MPR repository as described [here](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
