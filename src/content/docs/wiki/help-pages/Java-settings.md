@@ -40,4 +40,3 @@ For information about how to get a correct Java version, see: [Installing Java](
 This is where you can download and remove the java that were installed by Prism Launcher.
 
 ![Java Download section of java tab under Prism Launcher settings](/img/screenshots/JavaSettingsDownloadDark.png)
-

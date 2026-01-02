@@ -2,7 +2,6 @@
 title: Mods
 ---
 
-
 ![Mods tab under PrismLauncher settings](/img/screenshots/LoaderModsDark.png)
 
 This page reflects the contents of the instance's mods folder and is used for mods that loaders like Forge, Fabric, NeoForge, Quilt and LiteLoader can read and add to the game. Unlike an ordinary file explorer, it also shows details about the mods like version and name.

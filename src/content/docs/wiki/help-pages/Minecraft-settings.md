@@ -8,9 +8,9 @@ title: Minecraft Settings
 
 <!-- TODO: add image of Window Size section -->
 
-This is where you set the Window size and if it should be maximized*.
+This is where you set the Window size and if it should be maximized\*.
 
-*Only works on 1.5.2 and older
+\*Only works on 1.5.2 and older
 
 ### Native library workarounds
 

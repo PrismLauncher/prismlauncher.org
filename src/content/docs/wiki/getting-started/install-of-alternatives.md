@@ -5,7 +5,7 @@ sidebar:
 ---
 
 :::note[Why bother?]
-For older Minecraft versions, OptiFine was *the* way to make your game better, faster, and stronger through various useful features and optimizations. However, since Minecraft 1.16 there exist much better alternatives.
+For older Minecraft versions, OptiFine was _the_ way to make your game better, faster, and stronger through various useful features and optimizations. However, since Minecraft 1.16 there exist much better alternatives.
 :::
 
 ## Detailed explanation
@@ -18,7 +18,7 @@ For a very long time, OptiFine was an essential mod that many enjoyed using as i
 
 - OptiFine functions as an "all-in-one" mod (similar to a modpack). This makes it impossible for the user to disable/fully remove features that may be incompatible with other mods or that they don't need.
 
-In the past few years, various mods have been made to replace these features and offer a better experience for both mod developers *and* users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) Forge and/or NeoForge.
+In the past few years, various mods have been made to replace these features and offer a better experience for both mod developers _and_ users. Most of them are open-source, updated faster due to community contributions and support, and allow you to remove features if they're incompatible with another mod or don't suit your preference. These will usually be available on Fabric and Quilt, with some of them natively supporting (or working through compatibility layers) Forge and/or NeoForge.
 
 ## Installing things
 
@@ -108,6 +108,7 @@ While on most modpacks/with most mods they&#39;re going to work well, other time
 You can use <a href="https://modrinth.com/mod/connector">Sinytra Connector</a> to run many Fabric mods on Forge.
 
 <strong>Don&#39;t report issues with those on upstream&#39;s Discord support channels!</strong>
+
 </div>
 
 ### <img src="https://raw.githubusercontent.com/FiniteReality/embeddium/aa6657df4eaea8bdfa6243233c893207f5b7f8b4/src/main/resources/icon.png" alt="Embeddium" width=20px style="display: inline-block"> Embeddium
