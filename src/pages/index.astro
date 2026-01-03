@@ -127,7 +127,10 @@ import Card from "../components/ui/Card.astro";
 		<div class="flex flex-wrap justify-center items-center gap-4 mb-4">
 			{
 				SOCIAL_LINKS.map((social) => (
-					<Card variant="foreground">
+					<Card
+						variant="foreground"
+						class="size-16 flex justify-center items-center"
+					>
 						<a
 							href={social.href}
 							aria-label={social.label}
