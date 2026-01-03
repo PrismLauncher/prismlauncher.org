@@ -15,7 +15,7 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
   - Ubuntu >= 22.04 (or equivalent)
 - A C++ compiler supporting at least C++17.
   - This includes GCC >= 8, Clang >= 5, and MSVC >= 19.15
-- Java JDK >= 17
+- Java JDK \<= 17
 - cmake >= 3.22
 - ninja
 - extra-cmake-modules
@@ -46,20 +46,26 @@ You should first install [winget](https://learn.microsoft.com/en-us/windows/pack
 Once `winget` is available, install the MSVC toolchain with:
 
 ```console
-$ winget install --source winget --exact --id Microsoft.VisualStudio.2022.BuildTools --override '--add Microsoft.VisualStudio.Workload.VCTools;includeRecommended'
+winget install --source winget --exact --id Microsoft.VisualStudio.2022.BuildTools --override '--add Microsoft.VisualStudio.Workload.VCTools;includeRecommended'
+```
+
+Install JDK 17 with:
+
+```console
+winget install --source winget --exact --id EclipseAdoptium.Temurin.17.JDK
 ```
 
 We will also be using Git:
 
 ```console
-$ winget install --source winget --exact --id Git.Git
+winget install --source winget --exact --id Git.Git
 ```
 
 Qt can then be installed with [`aqt`](https://aqtinstall.readthedocs.io/en/latest/):
 
 ```console
-$ winget install --source winget --exact --id miurahr.aqtinstall
-$ aqt install-qt windows desktop 6 win64_msvc2022_64 -m qtimageformats qtnetworkauth
+winget install --source winget --exact --id miurahr.aqtinstall
+aqt install-qt windows desktop 6 win64_msvc2022_64 -m qtimageformats qtnetworkauth
 ```
 
 </TabItem>
@@ -68,14 +74,20 @@ $ aqt install-qt windows desktop 6 win64_msvc2022_64 -m qtimageformats qtnetwork
 [MSYS2](https://msys2.org) may be installed with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), or by following the setup guide [here](https://www.msys2.org/#installation):
 
 ```console
-$ winget install --exact --id MSYS2.MSYS2 --source winget
+winget install --exact --id MSYS2.MSYS2 --source winget
+```
+
+Install JDK 17 with:
+
+```console
+winget install --source winget --exact --id EclipseAdoptium.Temurin.17.JDK
 ```
 
 We **require** the CLANG(ARM)64 [environment](https://www.msys2.org/docs/environments/). After starting the environment, you may run the following to install all dependencies:
 
 ```console
-$ pacman -Syu pactoys git
-$ pacboy -S \
+pacman -Syu pactoys git
+pacboy -S \
   toolchain:p \
 	cmake:p ninja:p \
 	extra-cmake-modules:p \
@@ -93,24 +105,39 @@ $ pacboy -S \
 The XCode toolchain can be installed with:
 
 ```
-$ xcode-select --install
+xcode-select --install
 ```
 
 Qt and other dependencies can then be installed with the following [Homebrew](https://brew.sh/) command:
 
 ```console
-$ brew install cmake ninja extra-cmake-modules qt openjdk@17
+brew install cmake ninja extra-cmake-modules qt openjdk@17
 ```
 
 </TabItem>
 <TabItem label="Linux (Debian)">
 
 ```console
-$ sudo apt install \
+sudo apt install \
   build-essential \
-  cmake ninja-build openjdk-17-jdk extra-cmake-modules pkg-config scdoc \
+  cmake ninja-build extra-cmake-modules pkg-config scdoc \
   qt6-base-dev qt6-image-formats-plugins qt6-networkauth-dev qt6-svg-dev \
 	cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev zlib1g-dev \
+```
+
+To install JDK 17 on Debian:
+
+```console
+sudo apt install wget apt-transport-https gpg
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+sudo apt update && sudo apt install temurin-17-jdk
+```
+
+While on Ubuntu (or derivatives) you can just:
+
+```console
+sudo apt install openjdk-17-jdk
 ```
 
 </TabItem>
@@ -121,8 +148,8 @@ $ sudo apt install \
 We use [Git](https://git-scm.com/) for our version control. The command below will clone the repository, and fetch all submodules that come with it
 
 ```console
-$ git clone https://github.com/PrismLauncher/PrismLauncher.git
-$ cd PrismLauncher
+git clone https://github.com/PrismLauncher/PrismLauncher.git
+cd PrismLauncher
 ```
 
 **The rest of the documentation assumes you have already cloned the repository.**
