@@ -127,14 +127,11 @@ import Card from "../components/ui/Card.astro";
 		<div class="flex flex-wrap justify-center items-center gap-4 mb-4">
 			{
 				SOCIAL_LINKS.map((social) => (
-					<Card
-						variant="foreground"
-						class="flex justify-center items-center gap-4"
-					>
+					<Card variant="foreground">
 						<a
 							href={social.href}
 							aria-label={social.label}
-							class="text-prism-text-light dark:text-prism-text-dark rounded-sm"
+							class="text-prism-text-light dark:text-prism-text-dark"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
