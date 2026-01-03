@@ -148,7 +148,7 @@ sudo apt install openjdk-17-jdk
 We use [Git](https://git-scm.com/) for our version control. The command below will clone the repository, and fetch all submodules that come with it
 
 ```console
-git clone https://github.com/PrismLauncher/PrismLauncher.git
+git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
 cd PrismLauncher
 ```
 
@@ -249,7 +249,6 @@ cmake --install build --config Debug --component portable # If you want to insta
 
 ```bash
 cmake --install build --config Debug
-cmake --install build --config Debug --component portable # If you want to install a portable version
 ```
 
 </TabItem>
