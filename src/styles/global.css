@@ -1,10 +1,8 @@
-@import "@fontsource-variable/inter";
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "./font.css";
 
 @theme {
-	--font-sans: Inter, system-ui, sans-serif;
-
 	/* colors used here were taken from https://prismlauncher.org/wiki/branding */
 
 	/* colors */
