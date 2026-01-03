@@ -40,6 +40,10 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 [Lithium](https://modrinth.com/mod/lithium) is a mod that greatly improves render performance through various game logic optimizations. We **highly recommend** installing it when possible.
 
+### <img src="https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp" alt="FerriteCore Logo" width=20px style="display: inline-block"> FerriteCore
+
+[FerriteCore](https://modrinth.com/mod/ferrite-core) is a mod that reduces Minecraft's memory usage. We **highly recommend** installing it when possible.
+
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px style="display: inline-block"> Iris
 
 [Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
@@ -86,6 +90,10 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [Lithium](https://modrinth.com/mod/lithium) also exists for some Minecraft versions on NeoForge — see [its support policy](https://github.com/CaffeineMC/lithium/wiki/Support-Policy). We highly recommend installing it when possible.
 
+### <img src="https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp" alt="FerriteCore Logo" width=20px style="display: inline-block"> FerriteCore
+
+[FerriteCore](https://modrinth.com/mod/ferrite-core) is a mod that reduces Minecraft's memory usage. We **highly recommend** installing it when possible.
+
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px style="display: inline-block"> Iris for NeoForge
 
 [Iris](https://irisshaders.dev/) also generally exists for the same loaders/versions as Sodium.
@@ -95,6 +103,10 @@ If you don't want to search and install these mods manually, then try the [Fabul
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
 
 ## <img src="https://avatars0.githubusercontent.com/u/1390178?s=400&v=4" alt="Forge Logo" width=30px style="display: inline-block"> Forge Mods
+
+### <img src="https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp" alt="FerriteCore Logo" width=20px style="display: inline-block"> FerriteCore
+
+[FerriteCore](https://modrinth.com/mod/ferrite-core) is a mod that reduces Minecraft's memory usage. We **highly recommend** installing it when possible.
 
 ### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Forge" width=20px style="display: inline-block"> ImmediatelyFast
 
