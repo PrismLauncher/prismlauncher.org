@@ -1,0 +1,63 @@
+name: Update contributors
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies & update contributors
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_MEMBERS_TOKEN }}
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run update-contributors
+
+      - name: Commit files
+        run: |
+          git config --local user.email "gitbot@scrumplex.net"
+          git config --local user.name "PrismAutomata"
+          git add :/
+          git commit -m "Update contributors" || true
+
+      - name: Create PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          base: "main"
+          branch: "update-contributors"
+          delete-branch: true
+          title: "chore: update contributors"
+          body: "Automated pull request to update contributors"
+
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: merge
