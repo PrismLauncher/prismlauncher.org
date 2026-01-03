@@ -18,7 +18,7 @@ export default defineConfig({
 		starlight({
 			title: "Prism Launcher Wiki",
 
-			customCss: ["./src/styles/font.css"],
+			customCss: ["./src/styles/global.css"],
 
 			logo: {
 				light: "./public/img/logo-textLight.svg",

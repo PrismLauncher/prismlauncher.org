@@ -1,10 +1,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import "./font.css";
+@import "@fontsource-variable/inter";
 
 @theme {
-	/* colors used here were taken from https://prismlauncher.org/wiki/branding */
+	/* fonts */
+	--font-sans: "Inter Variable", Inter, system-ui, sans-serif;
 
+	/* https://prismlauncher.org/wiki/branding */
 	/* colors */
 	--color-prism-primary: hsl(350, 66%, 63%);
 	--color-prism-primary-dark: hsl(350, 66%, 55%);
@@ -43,7 +45,7 @@
 	--color-prism-text-light: #15191e;
 	--color-prism-code-background: #313540;
 
-	/* ui colors from the logo */
+	/* colors from the logo */
 	--color-prism-grass-green: #99cd61;
 	--color-prism-dirt-light-brown: #7a573b;
 	--color-prism-dirt-dark-brown: #4d3f33;
@@ -56,6 +58,26 @@
 	--color-prism-top-white: #ffffff;
 	--color-prism-right-white: #d6d2d2;
 	--color-prism-left-white: #dfdfdf;
+}
+
+/* starlight customization */
+:root {
+	--sl-font: "Inter Variable", Inter, system-ui, sans-serif;
+	--sl-color-accent-low: var(--color-prism-text-dark);
+	--sl-color-accent: var(--color-prism-primary);
+	--sl-color-accent-high: var(--color-prism-primary);
+	--sl-color-white: var(--color-prism-text-light);
+	--sl-color-text: var(--color-prism-text-light);
+	--sl-color-bg: var(--color-prism-background-light);
+}
+
+:root[data-theme="dark"] {
+	--sl-color-accent-low: var(--color-prism-text-dark);
+	--sl-color-accent: var(--color-prism-primary);
+	--sl-color-accent-high: var(--color-prism-primary);
+	--sl-color-white: var(--color-prism-text-dark);
+	--sl-color-text: var(--color-prism-text-dark);
+	--sl-color-bg: var(--color-prism-background-dark);
 }
 
 /* prose styling for typography */
@@ -76,31 +98,27 @@
 	--tw-prose-invert-code: var(--color-prism-text-dark);
 }
 
+/* heading classes */
 .heading-1 {
-	@apply text-4xl font-bold text-prism-text-light dark:text-prism-text-dark;
+	@apply text-4xl font-bold;
 }
 
 .heading-2 {
-	@apply text-2xl font-semibold text-prism-text-light dark:text-prism-text-dark;
+	@apply text-2xl font-semibold;
 }
 
 .heading-3 {
-	@apply text-xl font-semibold text-prism-text-light dark:text-prism-text-dark;
+	@apply text-xl font-semibold;
 }
 
 .heading-4 {
-	@apply text-lg font-semibold text-prism-text-light dark:text-prism-text-dark;
+	@apply text-lg font-semibold;
 }
 
 .heading-5 {
-	@apply text-base font-medium text-prism-text-light dark:text-prism-text-dark;
+	@apply text-base font-medium;
 }
 
 .heading-6 {
-	@apply text-sm font-medium text-prism-text-light dark:text-prism-text-dark;
-}
-
-/* base styles */
-:root {
-	color-scheme: light dark;
+	@apply text-sm font-medium;
 }
