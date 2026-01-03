@@ -1,0 +1,7 @@
+@import "@fontsource-variable/inter";
+
+:root {
+	--font-sans: Inter, system-ui, sans-serif;
+	/* apply to starlight */
+	--sl-font: var(--font-sans);
+}
