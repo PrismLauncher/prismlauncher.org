@@ -21,12 +21,10 @@ const {
 } = Astro.props;
 
 const buttonVariants = {
-	primary: "bg-prism-rainbow-red text-white",
-	secondary: "bg-prism-rainbow-blue text-white",
-	accent:
-		"bg-prism-accent-light dark:bg-prism-accent-dark text-prism-text-light dark:text-prism-text-dark",
-	outline:
-		"border border-black/10 dark:border-white/10 bg-transparent text-prism-text-light dark:text-prism-text-dark",
+	primary: "bg-prism-rainbow-red text-prism-text-dark",
+	secondary: "bg-prism-rainbow-blue text-prism-text-dark",
+	accent: "bg-prism-accent-light dark:bg-prism-accent-dark",
+	outline: "border border-black/10 dark:border-white/10 bg-transparent",
 } as const;
 
 const buttonSizes = {

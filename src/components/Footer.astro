@@ -4,9 +4,7 @@ import { Icon } from "astro-icon/components";
 import { SOCIAL_LINKS } from "../data/social";
 ---
 
-<footer
-	class="text-prism-text-light dark:text-prism-text-dark max-w-none text-center font-medium p-4"
->
+<footer class="max-w-none text-center font-medium p-4">
 	<!-- logo -->
 	<Logo class="mb-4" />
 
@@ -17,7 +15,6 @@ import { SOCIAL_LINKS } from "../data/social";
 				<a
 					href={social.href}
 					aria-label={social.label}
-					class="text-prism-text-light dark:text-prism-text-dark"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

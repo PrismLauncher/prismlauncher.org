@@ -12,32 +12,30 @@ const { post } = Astro.props;
 ---
 
 <Card variant="foreground">
-	<article>
-		<PostMeta
-			class="mb-3"
-			date={post.data.date}
-			metadata={post.data.release_version
-				? [{ icon: "lucide:tag", text: `v${post.data.release_version}` }]
-				: []}
-		/>
+	<PostMeta
+		class="mb-3"
+		date={post.data.date}
+		metadata={post.data.release_version
+			? [{ icon: "lucide:tag", text: `v${post.data.release_version}` }]
+			: []}
+	/>
 
-		<h3 class="heading-3 mb-3">
-			<a
-				href={`/news/${post.data.slug || post.slug}`}
-				class="text-prism-link hover:underline"
-			>
-				{post.data.title}
-			</a>
-		</h3>
+	<h3 class="heading-3 mb-3">
+		<a
+			href={`/news/${post.data.slug || post.slug}`}
+			class="text-prism-link hover:underline"
+		>
+			{post.data.title}
+		</a>
+	</h3>
 
-		<p class="mb-3">{post.data.description}</p>
+	<p class="mb-3">{post.data.description}</p>
 
-		{
-			post.data.tags.length > 0 && (
-				<footer>
-					<TagList tags={post.data.tags} />
-				</footer>
-			)
-		}
-	</article>
+	{
+		post.data.tags.length > 0 && (
+			<footer>
+				<TagList tags={post.data.tags} />
+			</footer>
+		)
+	}
 </Card>
