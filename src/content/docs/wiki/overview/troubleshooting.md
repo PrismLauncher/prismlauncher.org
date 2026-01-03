@@ -57,7 +57,7 @@ On very old modpacks you may crashes similar as follows:
 
 To fix this, you can use Prism Launcher's auto-downloadable Mojang distributed java runtimes. To use them, enable "Auto-download Mojang Java" in Settings -> Java and untick "Java installation" in Edit -> Settings -> Java
 
-If that isn't enough you can try using the [SHA-1 Redemption](https://modrinth.com/mod/sha1redemption) nilmod with [NilLoader](https://git.sleeping.town/Nil/NilLoader). Alternatively you can follow this alternative process:
+If that isn't enough or you can't use mojang's java you can try using the [SHA-1 Redemption](https://modrinth.com/mod/sha1redemption) nilmod with [NilLoader](https://git.sleeping.town/Nil/NilLoader). Alternatively you can follow this alternative process:
 
 1. Create a file named `java.security` inside the instance minecraft(`.minecraft`/`minecraft`) folder with the following content:
 
@@ -104,7 +104,7 @@ If you are **comfortable** and **trust** Prism Launcher, then you can click on t
 Prism Launcher doesn't have support for old operating systems, such as Windows 7 and macOS 10.13 High Sierra.
 
 :::danger[The versions here aren't supported anymore!]
-These very old operating systems are EOL and not supported by our launcher anymore and these old versions are outdated and can break at any time. They're only listed here for historical reasons. **Do not ask for support on an unsupported OS version!**
+These operating systems are very old and have reached the end of their life cycle. They are no longer supported by our launcher and these outdated launcher versions can break at any time. They are only listed here for historical reasons. **Do not ask for support on an unsupported OS version!**
 
 :::
 
@@ -127,22 +127,15 @@ Depending on your system, you may need to grant the Prism Launcher AppImage **ex
 You can do this by opening your system's terminal application, **making sure to navigate to the location of the downloaded AppImage,** before granting the execute permission using this command:
 
 ```bash
-sudo chmod +x PrismLauncher-Linux-{{version.current}}-x86_64.AppImage
+chmod +x PrismLauncher-Linux-{{version.current}}-x86_64.AppImage
 ```
 
 **Please note,** that depending on the version of Prism Launcher that you have downloaded, you may have to **change the version number** in the command above.
 
 If you want to simplify the installation of the AppImage, use [Gear Level](https://gearlever.mijorus.it/). Note that we recommend just using packages when possible.
 
-#### Prism Launcher isn't using my system theme
-
-Prism Launcher has support for Qt 6.
-This means that some themes and theming platforms like KDE Plasma's theming will not work on builds using that version of the Qt toolkit.
-But don't worry, we still provide Qt 5 builds.
-You can find them on the [download page](https://prismlauncher.org/download/linux).
-
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" width=20px style="display: inline-block" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" width=20px style="display: inline-block" /> Windows and Linux
 
 #### I want to make my system install portable
 
-On Prism Launcher you can make any install portable (or making portable installs system) just by adding (or removing) portable.txt to the Prism Launcher root directory.
+On Prism Launcher you can make any install portable (or making portable installs system) just by adding (or removing) `portable.txt` to the Prism Launcher root directory.
