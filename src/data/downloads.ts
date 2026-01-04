@@ -99,9 +99,21 @@ export const DOWNLOADS = {
 					icon: "simple-icons:linux",
 					secondaryIcon: "lucide:download",
 				},
+			],
+		},
+		{
+			title: "ARM64",
+			downloads: [
 				{
-					title: "Portable (Qt 5) (tar.gz)",
-					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-Qt5-Portable-${VERSION}.tar.gz`,
+					title: "AppImage (.appimage)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-aarch64.AppImage`,
+					type: "secondary" as const,
+					icon: "simple-icons:linux",
+					secondaryIcon: "lucide:download",
+				},
+				{
+					title: "Portable (tar.gz)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-aarch64-Qt6-Portable-${VERSION}.tar.gz`,
 					type: "secondary" as const,
 					icon: "simple-icons:linux",
 					secondaryIcon: "lucide:download",

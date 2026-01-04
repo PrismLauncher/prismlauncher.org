@@ -8,7 +8,7 @@ This is a collection of helpful information for frequent problems when using Pri
 
 ## MinecraftForge on Linux distributions that use zlib-ng
 
-Some Linux distributions like CachyOS and Fedora use zlib-ng instead of classic zlib, which is [incompatible with MinecraftForge installers](https://github.com/zlib-ng/zlib-ng/issues/1827). To fix this, add `-Dforgewrapper.skipHashCheck=true` in Edit > Settings > Java > Java arguments.
+Got an error like `Processor failed, invalid outputs:`? This is because some Linux distributions like CachyOS and Fedora use zlib-ng instead of classic zlib, which is [incompatible with MinecraftForge installers](https://github.com/zlib-ng/zlib-ng/issues/1827). To fix this, add `-Dforgewrapper.skipHashCheck=true` in Edit > Settings > Java > Java arguments.
 
 Alternatively, you can switch to classic zlib. For CachyOS, the necessary command to do so is:
 

@@ -36,9 +36,9 @@ An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/deve
 
 AppImages allow you to take a single file and run Prism anywhere. AppImage builds only support x86_64.
 
-#### With AppImageLauncher (Recommended)
+#### With Gear Level (Recommended)
 
-Follow AppImageLauncher's [installation instructions](https://github.com/TheAssassin/AppImageLauncher/wiki#installation). Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
+Download [Gear Level](https://flathub.org/en/apps/it.mijorus.gearlever) from flathub. Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
 
 #### Making the AppImage Executable
 
@@ -64,30 +64,23 @@ apk add prismlauncher
 
 ### Arch Linux / Manjaro
 
-Packages are available in both the official Arch Linux/Manjaro repositories and the AUR
+Packages are available in both the official Arch Linux/Manjaro repositories and the AUR (Development Builds)
 
 [![prismlauncher](https://img.shields.io/badge/Arch%20Linux-prismlauncher-blue?logo=archlinux&logoColor=white)](https://archlinux.org/packages/extra/x86_64/prismlauncher/)
 [![prismlauncher-git](https://img.shields.io/badge/AUR-prismlauncher--git-blue?logo=archlinux&logoColor=white)](https://aur.archlinux.org/packages/prismlauncher-git/)
 
-#### Installing
+#### Installing Prism
 
 ```bash
 # Latest release (binary)
 sudo pacman -S prismlauncher
-# Newest Git commit (compiled from source)
-yay -S prismlauncher-git
 ```
 
-You can replace `yay -S` with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
-
-#### Installation using Chaotic-AUR
-
-If you would like to use `prismlauncher-git` without compiling from source, the Chaotic-AUR offers pre-built binaries.
-
-See their instructions on [Chaotic-AUR](https://aur.chaotic.cx/) to enable the repository, then run:
+### Installing Dev Builds (AUR)
 
 ```bash
-sudo pacman -S prismlauncher-git
+# Newest Git commit (compiled from source)
+yay -S prismlauncher-git
 ```
 
 ### CentOS Stream / Fedora / Red Hat Enterprise Linux
@@ -112,29 +105,6 @@ sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O 
   && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
   && sudo apt update \
   && sudo apt install prismlauncher
-```
-
-#### Installation using Prebuilt-MPR (recommended)
-
-Add the Prebuilt-MPR repository as described [here](https://docs.makedeb.org/prebuilt-mpr/getting-started/), then run:
-
-```bash
-sudo apt install prismlauncher
-```
-
-Prebuilt MPR supports Debian 12, and Ubuntu 20.04, 22.04, and >= 23.04.
-
-#### Installing with mist, the MPR CLI
-
-Install `mist` by following the [upstream instructions](https://docs.makedeb.org/using-the-mpr/mist-the-mpr-cli/#installing-mist).
-
-Packages installed via `mist` will be compiled from source
-
-```bash
-# Latest stable release
-mist install prismlauncher
-# Newest Git commit
-mist install prismlauncher-git
 ```
 
 ### Debian / Pi OS / Ubuntu (ARM32/64)
