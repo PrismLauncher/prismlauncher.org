@@ -60,26 +60,6 @@
 	--color-prism-left-white: #dfdfdf;
 }
 
-/* starlight customization */
-:root {
-	--sl-font: "Inter Variable", Inter, system-ui, sans-serif;
-	--sl-color-accent-low: var(--color-prism-text-dark);
-	--sl-color-accent: var(--color-prism-primary);
-	--sl-color-accent-high: var(--color-prism-primary);
-	--sl-color-white: var(--color-prism-text-light);
-	--sl-color-text: var(--color-prism-text-light);
-	--sl-color-bg: var(--color-prism-background-light);
-}
-
-:root[data-theme="dark"] {
-	--sl-color-accent-low: var(--color-prism-text-dark);
-	--sl-color-accent: var(--color-prism-primary);
-	--sl-color-accent-high: var(--color-prism-primary);
-	--sl-color-white: var(--color-prism-text-dark);
-	--sl-color-text: var(--color-prism-text-dark);
-	--sl-color-bg: var(--color-prism-background-dark);
-}
-
 /* prose styling for typography */
 @utility prose {
 	--tw-prose-body: var(--color-prism-text-light);

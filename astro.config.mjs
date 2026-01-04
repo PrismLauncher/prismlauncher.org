@@ -18,7 +18,7 @@ export default defineConfig({
 		starlight({
 			title: "Prism Launcher Wiki",
 
-			customCss: ["./src/styles/global.css"],
+			customCss: ["./src/styles/starlight.css"],
 
 			expressiveCode: {
 				themes: ["github-light", "github-dark"],

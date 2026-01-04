@@ -1,0 +1,21 @@
+@import "@fontsource-variable/inter";
+
+/* starlight customization */
+:root {
+	--sl-font: "Inter Variable", Inter, system-ui, sans-serif;
+	--sl-color-accent-low: #ffffff;
+	--sl-color-accent: hsl(350, 66%, 63%);
+	--sl-color-accent-high: hsl(350, 66%, 63%);
+	--sl-color-white: #15191e;
+	--sl-color-text: #15191e;
+	--sl-color-bg: #ffffff;
+}
+
+:root[data-theme="dark"] {
+	--sl-color-accent-low: #ffffff;
+	--sl-color-accent: hsl(350, 66%, 63%);
+	--sl-color-accent-high: hsl(350, 66%, 63%);
+	--sl-color-white: #ffffff;
+	--sl-color-text: #ffffff;
+	--sl-color-bg: #15181c;
+}
