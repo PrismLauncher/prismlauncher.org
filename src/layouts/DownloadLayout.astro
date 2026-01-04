@@ -1,10 +1,18 @@
 ---
+import { Picture } from "astro:assets";
 import MainLayout from "./MainLayout.astro";
 import Card from "../components/ui/Card.astro";
 import ProseCard from "../components/ui/ProseCard.astro";
 import DownloadCard from "../components/ui/DownloadCard.astro";
 import { Icon } from "astro-icon/components";
 import { DOWNLOADS, PLATFORMS } from "../data/downloads";
+
+import linuxLight from "../assets/screenshots/landing/linux_light.png";
+import linuxDark from "../assets/screenshots/landing/linux_dark.png";
+import macosLight from "../assets/screenshots/landing/macos_light.png";
+import macosDark from "../assets/screenshots/landing/macos_dark.png";
+import windowsLight from "../assets/screenshots/landing/windows_light.png";
+import windowsDark from "../assets/screenshots/landing/windows_dark.png";
 
 export interface Props {
 	frontmatter: {
@@ -18,15 +26,14 @@ export interface Props {
 }
 
 const {
-	frontmatter: {
-		title,
-		platform,
-		description,
-		screenshotLight,
-		screenshotDark,
-		screenshotAlt,
-	},
+	frontmatter: { title, platform, description, screenshotAlt },
 } = Astro.props;
+
+const images = {
+	linux: { light: linuxLight, dark: linuxDark },
+	macos: { light: macosLight, dark: macosDark },
+	windows: { light: windowsLight, dark: windowsDark },
+}[platform];
 ---
 
 <MainLayout title={title} description={description}>
@@ -68,20 +75,26 @@ const {
 			</div>
 
 			{
-				screenshotLight && screenshotDark && (
+				images && (
 					<div class="flex justify-center">
-						<picture>
-							<source
-								media="(prefers-color-scheme: dark)"
-								srcset={screenshotDark}
-							/>
-							<img
-								src={screenshotLight}
-								alt={
-									screenshotAlt || `Prism Launcher screenshot on ${platform}`
-								}
-							/>
-						</picture>
+						<Picture
+							src={images.light}
+							formats={["avif", "webp"]}
+							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
+							class="mx-auto not-prose"
+							pictureAttributes={{
+								class: "dark:hidden",
+							}}
+						/>
+						<Picture
+							src={images.dark}
+							formats={["avif", "webp"]}
+							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
+							class="mx-auto not-prose"
+							pictureAttributes={{
+								class: "hidden dark:block",
+							}}
+						/>
 					</div>
 				)
 			}

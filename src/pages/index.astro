@@ -1,4 +1,5 @@
 ---
+import { Image, Picture } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroSection from "../components/HeroSection.astro";
 import ProseCard from "../components/ui/ProseCard.astro";
@@ -7,6 +8,18 @@ import DownloadLink from "../components/ui/DownloadLink.astro";
 import { SOCIAL_LINKS } from "../data/social.ts";
 import { Icon } from "astro-icon/components";
 import Card from "../components/ui/Card.astro";
+
+import packInstallLight from "../assets/screenshots/landing/pack-install_light.png";
+import packInstallDark from "../assets/screenshots/landing/pack-install_dark.png";
+import packUpdateLight from "../assets/screenshots/landing/pack-update_light.png";
+import packUpdateDark from "../assets/screenshots/landing/pack-update_dark.png";
+import modInstallLight from "../assets/screenshots/landing/mod-install_light.png";
+import modInstallDark from "../assets/screenshots/landing/mod-install_dark.png";
+import modUpdateLight from "../assets/screenshots/landing/mod-update_light.png";
+import modUpdateDark from "../assets/screenshots/landing/mod-update_dark.png";
+import instanceSettingsLight from "../assets/screenshots/landing/instance-settings_light.png";
+import instanceSettingsDark from "../assets/screenshots/landing/instance-settings_dark.png";
+import themesDark from "../assets/screenshots/landing/themes_dark.png";
 ---
 
 <MainLayout
@@ -23,29 +36,39 @@ import Card from "../components/ui/Card.astro";
 			keeping them clean. You no longer need to manually install and update
 			modpacks as Prism Launcher can do this for you.
 		</p>
-		<div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/img/screenshots/landing/pack-install_dark.png"
-				/>
-				<img
-					src="/img/screenshots/landing/pack-install_light.png"
-					alt="Prism Launcher screenshot showing the modpack installation user-interface"
-					class="mx-auto not-prose"
-				/>
-			</picture>
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/img/screenshots/landing/pack-update_dark.png"
-				/>
-				<img
-					src="/img/screenshots/landing/pack-update_light.png"
-					alt="Prism Launcher screenshot showing the modpack updating user-interface"
-					class="mx-auto not-prose"
-				/>
-			</picture>
+		<div class="mx-auto not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Picture
+				src={packInstallLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack installation user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={packInstallDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack installation user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+			<Picture
+				src={packUpdateLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack updating user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={packUpdateDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack updating user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
 		</div>
 
 		<h3>Mod Management</h3>
@@ -54,29 +77,39 @@ import Card from "../components/ui/Card.astro";
 			Launcher interfaces directly with Modrinth and CurseForge, allowing you to
 			update or install individual mods easily.
 		</p>
-		<div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/img/screenshots/landing/mod-install_dark.png"
-				/>
-				<img
-					src="/img/screenshots/landing/mod-install_light.png"
-					alt="Prism Launcher screenshot showing the mod installation user-interface"
-					class="mx-auto not-prose"
-				/>
-			</picture>
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/img/screenshots/landing/mod-update_dark.png"
-				/>
-				<img
-					src="/img/screenshots/landing/mod-update_light.png"
-					alt="Prism Launcher screenshot showing the mod updating user-interface"
-					class="mx-auto not-prose"
-				/>
-			</picture>
+		<div class="mx-auto not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Picture
+				src={modInstallLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod installation user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={modInstallDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod installation user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+			<Picture
+				src={modUpdateLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod updating user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={modUpdateDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod updating user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
 		</div>
 
 		<h3>Instance Management</h3>
@@ -85,17 +118,24 @@ import Card from "../components/ui/Card.astro";
 			Minecraft, each with its own settings, mods, and configurations. This
 			means you can easily switch between different setups without any issues.
 		</p>
-		<picture>
-			<source
-				media="(prefers-color-scheme: dark)"
-				srcset="/img/screenshots/landing/instance-settings_dark.png"
-			/>
-			<img
-				src="/img/screenshots/landing/instance-settings_light.png"
-				alt="Prism Launcher screenshot showing the instance management user-interface"
-				class="mx-auto not-prose"
-			/>
-		</picture>
+		<Picture
+			src={instanceSettingsLight}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing the instance management user-interface"
+			class="mx-auto not-prose"
+			pictureAttributes={{
+				class: "dark:hidden",
+			}}
+		/>
+		<Picture
+			src={instanceSettingsDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing the instance management user-interface"
+			class="mx-auto not-prose"
+			pictureAttributes={{
+				class: "hidden dark:block",
+			}}
+		/>
 
 		<h3>Lightweight and Customizable</h3>
 		<p>
@@ -103,8 +143,9 @@ import Card from "../components/ui/Card.astro";
 			is built with the Qt toolkit, requiring very few system resources to run.
 			It also lets you customize the menu and supports custom themes.
 		</p>
-		<img
-			src="/img/screenshots/landing/themes_dark.png"
+		<Picture
+			src={themesDark}
+			formats={["avif", "webp"]}
 			alt="Prism Launcher screenshot showing a themed user-interface"
 			class="mx-auto not-prose"
 		/>

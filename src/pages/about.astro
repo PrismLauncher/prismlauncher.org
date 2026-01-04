@@ -98,7 +98,8 @@ const contributors = contributorsData.users as [string, string][];
 						>
 							<img
 								class="rounded-full w-12 h-12 border border-black/10 dark:border-white/10"
-								src={`${avatarUrl}&size=96`}
+								src={`${avatarUrl}&size=48`}
+								srcset={`${avatarUrl}&size=48 1x, ${avatarUrl}&size=96 2x`}
 								alt={`${username}'s GitHub avatar`}
 								loading="lazy"
 							/>

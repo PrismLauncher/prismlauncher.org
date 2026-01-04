@@ -19,7 +19,8 @@ const { username } = Astro.props;
 	>
 		<img
 			class="rounded-md w-24 h-24 border border-black/10 dark:border-white/10"
-			src=`https://github.com/${username}.png?size=192`
+			src=`https://github.com/${username}.png?size=96`
+			srcset=`https://github.com/${username}.png?size=96 1x, https://github.com/${username}.png?size=192 2x`
 			alt={`${username}'s GitHub avatar`}
 			loading="lazy"
 		/>
