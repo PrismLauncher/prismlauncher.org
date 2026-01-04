@@ -14,6 +14,8 @@ Download the `.zip` file, open it, and drag Prism Launcher to your Applications 
 
 Prism Launcher only supports MacOS Monterey or later. If you don't know which MacOS version you're using, you can click the Apple logo in the corner and click "About this Mac".
 
+If your MacOS version is too old, you can [use an older version of Prism Launcher](/wiki/overview/troubleshooting/#-legacy-operating-systems), but keep in mind: **these older versions are unsupported**.
+
 ## Advanced macOS Install Options
 
 ### Homebrew
