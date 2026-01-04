@@ -20,6 +20,11 @@ export default defineConfig({
 
 			customCss: ["./src/styles/global.css"],
 
+			expressiveCode: {
+				themes: ["github-light", "github-dark"],
+				styleOverrides: { borderRadius: "0.5rem" },
+			},
+
 			logo: {
 				light: "./public/img/logo-textLight.svg",
 				dark: "./public/img/logo-textDark.svg",
