@@ -43,7 +43,7 @@ export const GET: APIRoute = async ({ site = DEFAULT_URL }) => {
     <link>${link}</link>
     <sparkle:version>${release_version}</sparkle:version>
     <description>${content}</description>
-    <pubDate>${data.date.toUTCString()}</pubDate>${minMac}
+    <pubDate>${data.date.toISOString()}</pubDate>${minMac}
     <enclosure sparkle:os="macos" url="https://github.com/PrismLauncher/PrismLauncher/releases/download/${release_version}/PrismLauncher-macOS-${release_version}.${macos_file_extension || "tar.gz"}" length="0" type="application/octet-stream" sparkle:edSignature="${macos_signature}"/>
   </item>`;
 		}),
