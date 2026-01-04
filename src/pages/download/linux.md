@@ -46,10 +46,20 @@ After downloading the AppImage, open your file manager and make it [executable](
 
 #### CLI
 
+on x86-64:
+
 ```bash
 curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-x86_64.AppImage
 chmod +x ./PrismLauncher-Linux-x86_64.AppImage
-./PrismLauncher.AppImage
+./PrismLauncher-Linux-x86_64.AppImage
+```
+
+on ARM64:
+
+```bash
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Linux-aarch64.AppImage
+chmod +x ./PrismLauncher-Linux-aarch64.AppImage
+./PrismLauncher-Linux-aarch64.AppImage
 ```
 
 ## Community Packages
@@ -92,6 +102,15 @@ If you are on an Enterprise Linux distribution (RHEL, CentOS, Rocky, etc.) and d
 ```bash
 # Enables the copr repo
 sudo dnf copr enable g3tchoo/prismlauncher
+# Install the latest release
+sudo dnf install prismlauncher
+```
+
+As an alternative, RPM packages for Fedora are also available from [Terra](https://terra.fyralabs.com/):
+
+```bash
+# Install the terra repository
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 # Install the latest release
 sudo dnf install prismlauncher
 ```
