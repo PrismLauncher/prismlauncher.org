@@ -112,24 +112,12 @@ export const DOWNLOADS = {
 
 	macos: [
 		{
-			title: "Big Sur or later",
+			title: "Monterey or later",
 			downloads: [
 				{
-					title: "Universal (.dmg)",
+					title: "Universal (.zip)",
 					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-macOS-${VERSION}.zip`,
 					type: "primary" as const,
-					icon: "simple-icons:apple",
-					secondaryIcon: "lucide:download",
-				},
-			],
-		},
-		{
-			title: "High Sierra to Catalina",
-			downloads: [
-				{
-					title: "Legacy (.dmg)",
-					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-macOS-Legacy-${VERSION}.zip`,
-					type: "secondary" as const,
 					icon: "simple-icons:apple",
 					secondaryIcon: "lucide:download",
 				},

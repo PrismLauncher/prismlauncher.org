@@ -10,12 +10,9 @@ screenshotAlt: Prism Launcher screenshot on MacOS showing off various different 
 
 ## Installation Instructions
 
-Download the appropriate .dmg file for your macOS version, open it, and drag Prism Launcher to your Applications folder.
+Download the `.zip` file, open it, and drag Prism Launcher to your Applications folder.
 
-- On MacOS Big Sur or later, you should use Universal.
-- On MacOS High Sierra to Catalina, you should use Legacy.
-
-If you don't know which MacOS version you're using, you can click the Apple logo in the corner and click "About this Mac" (usually the first option).
+Prism Launcher only supports MacOS Monterey or later. If you don't know which MacOS version you're using, you can click the Apple logo in the corner and click "About this Mac".
 
 ## Advanced macOS Install Options
 
