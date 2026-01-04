@@ -21,11 +21,30 @@ import DownloadButton from "./ui/DownloadButton.astro";
 	<picture class="sm:flex-1 not-prose">
 		<source
 			media="(prefers-color-scheme: dark)"
-			srcset="/img/screenshots/LauncherDark.png"
+			srcset="/img/screenshots/landing/linux_dark.png"
+			id="hero-screenshot-dark"
 		/>
 		<img
-			src="/img/screenshots/LauncherLight.png"
+			src="/img/screenshots/landing/linux_light.png"
 			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			id="hero-screenshot-light"
 		/>
 	</picture>
 </section>
+
+<script>
+	import { detectOS } from "../scripts/detectOS";
+
+	const os = detectOS();
+	const darkSource = document.getElementById(
+		"hero-screenshot-dark",
+	) as HTMLSourceElement;
+	const lightImg = document.getElementById(
+		"hero-screenshot-light",
+	) as HTMLImageElement;
+
+	if (darkSource && lightImg) {
+		darkSource.srcset = `/img/screenshots/landing/${os}_dark.png`;
+		lightImg.src = `/img/screenshots/landing/${os}_light.png`;
+	}
+</script>

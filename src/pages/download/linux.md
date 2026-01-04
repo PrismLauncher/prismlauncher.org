@@ -3,8 +3,8 @@ layout: ../../layouts/DownloadLayout.astro
 title: Linux Download
 platform: linux
 description: Download Prism Launcher for Linux
-screenshotLight: /img/screenshots/LauncherLight.png
-screenshotDark: /img/screenshots/LauncherDark.png
+screenshotLight: /img/screenshots/landing/linux_light.png
+screenshotDark: /img/screenshots/landing/linux_dark.png
 screenshotAlt: Prism Launcher screenshot on Linux showing off various different modpacks and instances
 ---
 

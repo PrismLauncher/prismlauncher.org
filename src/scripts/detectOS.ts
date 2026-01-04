@@ -1,13 +1,17 @@
-export const determineDownloadLink = () => {
+export const detectOS = (): "windows" | "macos" | "linux" => {
 	const { userAgent, platform } = navigator;
 	const ua = userAgent.toLowerCase();
 	const p = platform.toLowerCase();
 
 	if (ua.includes("windows") || p.includes("win")) {
-		return "/download/windows";
+		return "windows";
 	}
 	if (ua.includes("mac") || p.includes("mac")) {
-		return "/download/macos";
+		return "macos";
 	}
-	return "/download/linux";
+	return "linux";
+};
+
+export const determineDownloadLink = () => {
+	return `/download/${detectOS()}`;
 };

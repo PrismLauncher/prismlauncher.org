@@ -3,8 +3,8 @@ layout: ../../layouts/DownloadLayout.astro
 title: macOS Download
 platform: macos
 description: Download Prism Launcher for macOS
-screenshotLight: /img/screenshots/mac/LauncherLight.png
-screenshotDark: /img/screenshots/mac/LauncherDark.png
+screenshotLight: /img/screenshots/landing/macos_light.png
+screenshotDark: /img/screenshots/landing/macos_dark.png
 screenshotAlt: Prism Launcher screenshot on MacOS showing off various different modpacks and instances
 ---
 

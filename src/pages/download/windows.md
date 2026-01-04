@@ -3,8 +3,8 @@ layout: ../../layouts/DownloadLayout.astro
 title: Windows Download
 platform: windows
 description: Download Prism Launcher for Windows
-screenshotLight: /img/screenshots/windows/LauncherLight.png
-screenshotDark: /img/screenshots/windows/LauncherDark.png
+screenshotLight: /img/screenshots/landing/windows_light.png
+screenshotDark: /img/screenshots/landing/windows_dark.png
 screenshotAlt: Prism Launcher screenshot on Windows showing off various different modpacks and instances
 ---
 

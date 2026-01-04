@@ -18,6 +18,6 @@ import ProseCard from "../components/ui/ProseCard.astro";
 </MainLayout>
 
 <script>
-	import { determineDownloadLink } from "../scripts/downloads";
+	import { determineDownloadLink } from "../scripts/detectOS";
 	window.location.href = determineDownloadLink();
 </script>
