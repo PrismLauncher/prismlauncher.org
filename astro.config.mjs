@@ -14,6 +14,16 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 
+	redirects: {
+		"/discord": "https://discord.gg/ArX2nafFz2",
+		"/github": "https://github.com/PrismLauncher/PrismLauncher",
+		"/mastodon": "https://floss.social/@PrismLauncher",
+		"/matrix": "https://matrix.to/#/#prismlauncher:matrix.org",
+		"/reddit": "https://www.reddit.com/r/PrismLauncher/",
+		"/twitter": "https://twitter.com/PrismLauncher",
+		"/bluesky": "https://bsky.app/profile/prismlauncher.org",
+	},
+
 	integrations: [
 		starlight({
 			title: "Prism Launcher Wiki",
