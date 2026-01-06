@@ -132,7 +132,7 @@ chmod +x PrismLauncher-Linux-{{version.current}}-x86_64.AppImage
 
 **Please note,** that depending on the version of Prism Launcher that you have downloaded, you may have to **change the version number** in the command above.
 
-If you want to simplify the installation of the AppImage, use [Gear Level](https://gearlever.mijorus.it/). Note that we recommend just using packages when possible.
+If you want to simplify the installation of the AppImage, use [Gear Lever](https://gearlever.mijorus.it/). Note that we recommend just using packages when possible.
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" alt="Windows Logo" width=20px style="display: inline-block" /> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/TuxFlat.svg" alt="Linux Tux Logo" width=20px style="display: inline-block" /> Windows and Linux
 

@@ -36,9 +36,9 @@ An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/deve
 
 AppImages allow you to take a single file and run Prism anywhere. AppImage builds only support x86_64 and ARM64.
 
-#### With Gear Level (Recommended)
+#### With Gear Lever (Recommended)
 
-Download [Gear Level](https://flathub.org/en/apps/it.mijorus.gearlever) from flathub. Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
+Download [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever) from flathub. Once installed, you will be prompted to integrate the launcher's AppImage with your desktop when you open it for the first time.
 
 #### Making the AppImage Executable
 
