@@ -49,6 +49,14 @@ Once `winget` is available, install the MSVC toolchain with:
 winget install --source winget --exact --id Microsoft.VisualStudio.2022.BuildTools --override '--add Microsoft.VisualStudio.Workload.VCTools;includeRecommended'
 ```
 
+:::caution
+The installation of `vcpkg` bundled with VS 2026 is currently broken, and is thus not recommended. You can read more about this [here](https://developercommunity.visualstudio.com/t/Bundled-vcpkg-is-unusable/10998815).
+
+As a workaround, you can `git clone` the repository at `https://github.com/Microsoft/vcpkg` and set `VCPKG_ROOT` to its location.
+
+**This does not affect VS 2022!**
+:::
+
 Install JDK 17 with:
 
 ```console
@@ -111,7 +119,9 @@ xcode-select --install
 Qt and other dependencies can then be installed with the following [Homebrew](https://brew.sh/) command:
 
 ```console
-brew install cmake ninja extra-cmake-modules qt openjdk@17
+brew install cmake ninja extra-cmake-modules openjdk@17 vcpkg qt
+git clone https://github.com/Microsoft/vcpkg ~/vcpkg
+export VCPKG_ROOT="$HOME/vcpkg"
 ```
 
 </TabItem>
