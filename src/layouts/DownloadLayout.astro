@@ -22,11 +22,13 @@ export interface Props {
 		screenshotLight?: string;
 		screenshotDark?: string;
 		screenshotAlt?: string;
+		video?: string;
+		videoAlt?: string;
 	};
 }
 
 const {
-	frontmatter: { title, platform, description, screenshotAlt },
+	frontmatter: { title, platform, description, screenshotAlt, video, videoAlt },
 } = Astro.props;
 
 const images = {
@@ -60,8 +62,8 @@ const images = {
 		</div>
 		<h1 class="heading-1 mb-6">{title}</h1>
 
-		<div class="flex flex-col gap-6">
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+		<div class="flex flex-col md:flex-row gap-6">
+			<div class="flex flex-col gap-6 md:w-1/2">
 				{
 					(DOWNLOADS[platform as keyof typeof DOWNLOADS] || []).map(
 						(section) => (
@@ -75,28 +77,43 @@ const images = {
 			</div>
 
 			{
-				images && (
-					<div class="flex justify-center">
-						<Picture
-							src={images.light}
-							formats={["avif", "webp"]}
-							width="600"
-							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
-							class="mx-auto not-prose"
-							pictureAttributes={{
-								class: "dark:hidden",
-							}}
-						/>
-						<Picture
-							src={images.dark}
-							formats={["avif", "webp"]}
-							width="600"
-							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
-							class="mx-auto not-prose"
-							pictureAttributes={{
-								class: "hidden dark:block",
-							}}
-						/>
+				(video || images) && (
+					<div class="flex md:w-1/2">
+						{video ? (
+							<iframe
+								class="w-full aspect-video rounded-lg"
+								src={video}
+								title={videoAlt || "Prism Launcher video"}
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							/>
+						) : images ? (
+							<>
+								<Picture
+									src={images.light}
+									formats={["avif", "webp"]}
+									alt={
+										screenshotAlt || `Prism Launcher screenshot on ${platform}`
+									}
+									class="not-prose w-full"
+									pictureAttributes={{
+										class: "dark:hidden",
+									}}
+								/>
+								<Picture
+									src={images.dark}
+									formats={["avif", "webp"]}
+									alt={
+										screenshotAlt || `Prism Launcher screenshot on ${platform}`
+									}
+									class="not-prose w-full"
+									pictureAttributes={{
+										class: "hidden dark:block",
+									}}
+								/>
+							</>
+						) : null}
 					</div>
 				)
 			}

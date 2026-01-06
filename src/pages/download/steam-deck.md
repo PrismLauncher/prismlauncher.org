@@ -3,21 +3,9 @@ layout: ../../layouts/DownloadLayout.astro
 title: Steam Deck Download
 platform: steam-deck
 description: Download Prism Launcher on Steam Deck
+video: https://www.youtube.com/embed/M8oqFUl791Q?si=zZVkmKFTsZb9JRAF
+videoAlt: Prism Launcher on Steam Deck installation guide
 ---
-
-## Video Guide
-
-<div class="flex justify-center">
-  <iframe
-    class="w-full max-w-2xl aspect-video rounded-lg"
-    src="https://www.youtube.com/embed/M8oqFUl791Q?si=zZVkmKFTsZb9JRAF"
-    title="Prism Launcher on Steam Deck installation guide"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
 
 ## Installation Instructions
 
