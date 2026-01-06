@@ -37,6 +37,7 @@ jobs:
         run: |
           pnpm install --frozen-lockfile
           pnpm run update-contributors
+          pnpm run format
 
       - name: Commit files
         run: |
