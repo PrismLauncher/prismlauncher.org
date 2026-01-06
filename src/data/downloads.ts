@@ -71,7 +71,7 @@ export const DOWNLOADS = {
 
 	linux: [
 		{
-			title: "x86-64 and ARM64",
+			title: "x86-64",
 			downloads: [
 				{
 					title: "Flathub",
@@ -80,11 +80,6 @@ export const DOWNLOADS = {
 					icon: "simple-icons:flathub",
 					secondaryIcon: "lucide:link",
 				},
-			],
-		},
-		{
-			title: "x86-64",
-			downloads: [
 				{
 					title: "AppImage (.appimage)",
 					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-x86_64.AppImage`,
@@ -104,6 +99,13 @@ export const DOWNLOADS = {
 		{
 			title: "ARM64",
 			downloads: [
+				{
+					title: "Flathub",
+					href: "https://flathub.org/apps/details/org.prismlauncher.PrismLauncher",
+					type: "primary" as const,
+					icon: "simple-icons:flathub",
+					secondaryIcon: "lucide:link",
+				},
 				{
 					title: "AppImage (.appimage)",
 					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-aarch64.AppImage`,
