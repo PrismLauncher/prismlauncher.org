@@ -1,0 +1,17 @@
+---
+
+---
+
+<a data-download-link href="/download/windows"><slot>Download</slot></a>
+
+<script>
+	import { determineDownloadLink } from "../../scripts/detectOS";
+
+	const anchors = document.querySelectorAll("[data-download-link]");
+
+	const downloadLink = determineDownloadLink();
+
+	for (const anchor of anchors) {
+		anchor.setAttribute("href", downloadLink);
+	}
+</script>

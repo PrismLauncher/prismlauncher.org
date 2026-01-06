@@ -1,0 +1,28 @@
+---
+import Button from "./Button.astro";
+
+interface Props {
+	size?: "sm" | "md" | "lg";
+}
+
+const { size } = Astro.props;
+---
+
+<Button
+	data-download-button
+	href="/download/windows"
+	variant="primary"
+	size={size}>Download</Button
+>
+
+<script>
+	import { determineDownloadLink } from "../../scripts/detectOS";
+
+	const btns = document.querySelectorAll("[data-download-button]");
+
+	const downloadLink = determineDownloadLink();
+
+	for (const btn of btns) {
+		btn.setAttribute("href", downloadLink);
+	}
+</script>

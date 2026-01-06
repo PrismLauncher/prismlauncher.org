@@ -1,11 +1,29 @@
-# Official Website for Prism Launcher
+# prismlauncher.org
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a2ee96bf-2d95-43cf-ad05-3afed9b47fa8/deploy-status)](https://app.netlify.com/sites/prismlauncher/deploys)
+## Development Environment
 
-<https://prismlauncher.org>
+### Nix devShell
 
-## Serve site for local development
+A devShell is provided in `shell.nix`. It is also exposed in the flake in the
+root of this repository. You may use [`nix-direnv`][nix-direnv] by copying
+`.envrc.example` to `.envrc`.
 
-1. `npm install`
+### Manual
 
-2. `npm run serve`
+Install [pnpm][pnpm-install].
+
+clone repository:
+
+```sh
+git clone https://github.com/PrismLauncher/prismlauncher.org.git
+```
+
+run local build:
+
+```sh
+pnpm install
+pnpm run dev
+```
+
+[pnpm-install]: https://pnpm.io/installation
+[nix-direnv]: https://github.com/nix-community/nix-direnv

@@ -1,0 +1,23 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+---
+
+<MainLayout
+	title="Download"
+	description="Download Prism Launcher for Windows, macOS, Steam Deck, or Linux"
+>
+	<ProseCard>
+		<h1>Download</h1>
+		<p>You should be redirected to the download page in a moment.</p>
+		<em
+			>If you are not redirected, <a href="/download/windows">click here</a
+			>.</em
+		>
+	</ProseCard>
+</MainLayout>
+
+<script>
+	import { determineDownloadLink } from "../scripts/detectOS";
+	window.location.href = determineDownloadLink();
+</script>

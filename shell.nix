@@ -1,23 +1,13 @@
 {
-  pkgs ? import <nixpkgs> {
-    inherit system;
-    config = { };
-    overlays = [ ];
-  },
-  system ? builtins.currentSystem,
+  pkgs ? import <nixpkgs> { },
 }:
 
 pkgs.mkShellNoCC {
-  packages = [
-    # Node tools
-    pkgs.nodejs
-    pkgs.pnpm
-    pkgs.nrr
+  packages = with pkgs; [
+    nodejs_24
+    corepack
 
-    # Nix tools
-    pkgs.deadnix
-    pkgs.nil
-    pkgs.nixfmt-rfc-style
-    pkgs.statix
+    astro-language-server
+    typescript-language-server
   ];
 }

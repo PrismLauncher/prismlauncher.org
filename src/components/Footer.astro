@@ -1,0 +1,32 @@
+---
+import Logo from "./Logo.astro";
+import { Icon } from "astro-icon/components";
+import { SOCIAL_LINKS } from "../data/social";
+---
+
+<footer class="max-w-none text-center font-medium p-4">
+	<!-- logo -->
+	<Logo class="mb-4" />
+
+	<!-- social links -->
+	<div class="flex justify-center items-center gap-4 mb-4">
+		{
+			SOCIAL_LINKS.map((social) => (
+				<a
+					href={social.href}
+					aria-label={social.label}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name={social.icon} size="24" />
+				</a>
+			))
+		}
+	</div>
+
+	<!-- footer text -->
+	<p class="text-sm mb-2">Not affiliated with Mojang or Microsoft</p>
+	<p class="text-xs">
+		© 2022-{new Date().getFullYear()} Prism Launcher Contributors
+	</p>
+</footer>

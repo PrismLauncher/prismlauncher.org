@@ -1,0 +1,57 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import ProseCard from "../../../components/ui/ProseCard.astro";
+import Card from "../../../components/ui/Card.astro";
+import NewsCard from "../../../components/NewsCard.astro";
+import Breadcrumb from "../../../components/ui/Breadcrumb.astro";
+import TagFilter from "../../../components/ui/TagFilter.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+	const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
+		(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+	);
+
+	return [...new Set(posts.flatMap(({ data }) => data.tags))]
+		.sort()
+		.map((tag) => ({
+			params: { tag },
+			props: { tag, allPosts: posts },
+		}));
+}
+
+interface Props {
+	tag: string;
+	allPosts: Awaited<ReturnType<typeof getCollection<"news">>>;
+}
+
+const { tag, allPosts } = Astro.props;
+const filteredPosts = allPosts.filter(({ data }) => data.tags.includes(tag));
+---
+
+<MainLayout
+	title={`News: ${tag}`}
+	description={`All news posts tagged with "${tag}"`}
+>
+	<ProseCard>
+		<h1 class="heading-1 mb-6">News</h1>
+		<p>
+			The latest and greatest news regarding updates, changes and more. Prism
+			Launcher now supports viewing news directly in the Launcher by clicking
+			the news icon at the bottom of the window.
+		</p>
+		<TagFilter activeTag={tag} />
+	</ProseCard>
+
+	{
+		filteredPosts.length > 0 && (
+			<Card>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{filteredPosts.map((post) => (
+						<NewsCard post={post} />
+					))}
+				</div>
+			</Card>
+		)
+	}
+</MainLayout>

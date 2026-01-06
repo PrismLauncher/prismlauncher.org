@@ -1,0 +1,21 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+---
+
+<MainLayout title="404" description="Page not found">
+	<ProseCard>
+		<h1>404 - Page not found</h1>
+
+		<img
+			src="https://http.cat/404"
+			alt="A picture that says '404' with a silly cat"
+			class="mx-auto my-6"
+		/>
+
+		<p>
+			This page may still be in development or simply does not exist. Would you
+			like to go <a href="/">home</a>?
+		</p>
+	</ProseCard>
+</MainLayout>

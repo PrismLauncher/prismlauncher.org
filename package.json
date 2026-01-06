@@ -1,47 +1,39 @@
 {
-  "name": "prismlauncher",
-  "version": "1.0.0",
-  "description": "Official Prism Launcher website",
-  "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "lint": "markdownlint .",
-    "lint:fix": "markdownlint --fix .",
-    "update-contributors": "node ./scripts/update-contributors.mjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/PrismLauncher/prismlauncher.org.git"
-  },
-  "author": {
-    "name": "Ezekiel Smith",
-    "email": "ezekielsmith@protonmail.com",
-    "url": "https://github.com/ZekeSmith"
-  },
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/PrismLauncher/prismlauncher.org/issues"
-  },
-  "homepage": "https://prismlauncher.org/",
-  "devDependencies": {
-    "@11ty/eleventy": "3.1.2",
-    "@11ty/eleventy-fetch": "5.1.1",
-    "@11ty/eleventy-img": "6.0.4",
-    "@11ty/eleventy-navigation": "1.0.5",
-    "@11ty/eleventy-plugin-rss": "2.0.4",
-    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
-    "@fontsource/inter": "5.2.8",
-    "@fortawesome/fontawesome-free": "6.7.2",
-    "axios": "1.13.2",
-    "clean-css": "5.3.3",
-    "luxon": "3.7.2",
-    "markdown-it": "14.1.0",
-    "markdown-it-anchor": "9.2.0",
-    "markdown-it-table-of-contents": "0.9.0",
-    "markdownlint-cli": "0.47.0"
-  },
-  "packageManager": "pnpm@10.27.0"
+	"name": "prism-launcher-website",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"update-contributors": "node scripts/update-contributors.mjs"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "4.3.13",
+		"@astrojs/sitemap": "3.6.0",
+		"@fontsource-variable/inter": "5.2.8",
+		"@tailwindcss/typography": "0.5.19",
+		"@tailwindcss/vite": "4.1.18",
+		"astro": "5.16.6",
+		"astro-icon": "1.1.5",
+		"axios": "1.13.2",
+		"feed": "5.1.0",
+		"rehype-raw": "7.0.0",
+		"rehype-stringify": "10.0.1",
+		"remark": "15.0.1",
+		"remark-rehype": "11.1.2",
+		"tailwindcss": "4.1.18"
+	},
+	"devDependencies": {
+		"@astrojs/starlight": "0.37.1",
+		"@iconify-json/lucide": "1.2.82",
+		"@iconify-json/simple-icons": "1.2.64",
+		"prettier": "3.7.4",
+		"prettier-plugin-astro": "0.14.1",
+		"sharp": "0.34.5",
+		"wrangler": "4.54.0"
+	},
+	"packageManager": "pnpm@10.27.0+sha512.72d699da16b1179c14ba9e64dc71c9a40988cbdc65c264cb0e489db7de917f20dcf4d64d8723625f2969ba52d4b7e2a1170682d9ac2a5dcaeaab732b7e16f04a"
 }

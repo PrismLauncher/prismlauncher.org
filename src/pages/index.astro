@@ -1,0 +1,241 @@
+---
+import { Image, Picture } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+import LogoCard from "../components/ui/LogoCard.astro";
+import DownloadLink from "../components/ui/DownloadLink.astro";
+import { SOCIAL_LINKS } from "../data/social.ts";
+import { Icon } from "astro-icon/components";
+import Card from "../components/ui/Card.astro";
+
+import packInstallLight from "../assets/screenshots/landing/pack-install_light.png";
+import packInstallDark from "../assets/screenshots/landing/pack-install_dark.png";
+import packUpdateLight from "../assets/screenshots/landing/pack-update_light.png";
+import packUpdateDark from "../assets/screenshots/landing/pack-update_dark.png";
+import modInstallLight from "../assets/screenshots/landing/mod-install_light.png";
+import modInstallDark from "../assets/screenshots/landing/mod-install_dark.png";
+import modUpdateLight from "../assets/screenshots/landing/mod-update_light.png";
+import modUpdateDark from "../assets/screenshots/landing/mod-update_dark.png";
+import instanceSettingsLight from "../assets/screenshots/landing/instance-settings_light.png";
+import instanceSettingsDark from "../assets/screenshots/landing/instance-settings_dark.png";
+import themesDark from "../assets/screenshots/landing/themes_dark.png";
+---
+
+<MainLayout
+	title="Home"
+	description="An open source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability."
+>
+	<HeroSection />
+	<ProseCard>
+		<h2>Features</h2>
+
+		<h3>Modpack Management</h3>
+		<p>
+			Prism Launcher makes it easier to install and launch modpacks, while
+			keeping them clean. You no longer need to manually install and update
+			modpacks as Prism Launcher can do this for you.
+		</p>
+		<div class="mx-auto not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Picture
+				src={packInstallLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack installation user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={packInstallDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack installation user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+			<Picture
+				src={packUpdateLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack updating user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={packUpdateDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the modpack updating user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+		</div>
+
+		<h3>Mod Management</h3>
+		<p>
+			Sick of constantly finding and re-adding that one mod you need? Prism
+			Launcher interfaces directly with Modrinth and CurseForge, allowing you to
+			update or install individual mods easily.
+		</p>
+		<div class="mx-auto not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Picture
+				src={modInstallLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod installation user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={modInstallDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod installation user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+			<Picture
+				src={modUpdateLight}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod updating user-interface"
+				pictureAttributes={{
+					class: "dark:hidden",
+				}}
+			/>
+			<Picture
+				src={modUpdateDark}
+				formats={["avif", "webp"]}
+				alt="Prism Launcher screenshot showing the mod updating user-interface"
+				pictureAttributes={{
+					class: "hidden dark:block",
+				}}
+			/>
+		</div>
+
+		<h3>Instance Management</h3>
+		<p>
+			Prism Launcher allows you to create and manage multiple instances of
+			Minecraft, each with its own settings, mods, and configurations. This
+			means you can easily switch between different setups without any issues.
+		</p>
+		<Picture
+			src={instanceSettingsLight}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing the instance management user-interface"
+			class="mx-auto not-prose"
+			pictureAttributes={{
+				class: "dark:hidden",
+			}}
+		/>
+		<Picture
+			src={instanceSettingsDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing the instance management user-interface"
+			class="mx-auto not-prose"
+			pictureAttributes={{
+				class: "hidden dark:block",
+			}}
+		/>
+
+		<h3>Lightweight and Customizable</h3>
+		<p>
+			You don't need an embedded web browser as a game launcher. Prism Launcher
+			is built with the Qt toolkit, requiring very few system resources to run.
+			It also lets you customize the menu and supports custom themes.
+		</p>
+		<Picture
+			src={themesDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing a themed user-interface"
+			class="mx-auto not-prose"
+		/>
+
+		<h2>I want that!</h2>
+		<p>
+			You can install Prism Launcher on Windows, MacOS, and Linux. See the{" "}
+			<DownloadLink>Download page</DownloadLink> for more information. You can also
+			find community packages there.
+		</p>
+	</ProseCard>
+	<ProseCard>
+		<h2 id="get-involved">Get Involved</h2>
+		<div class="flex flex-wrap justify-center items-center gap-4 mb-4">
+			{
+				SOCIAL_LINKS.map((social) => (
+					<Card
+						variant="foreground"
+						class="size-16 flex justify-center items-center"
+					>
+						<a
+							href={social.href}
+							aria-label={social.label}
+							class="text-prism-text-light dark:text-prism-text-dark"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Icon name={social.icon} size="24" />
+						</a>
+					</Card>
+				))
+			}
+		</div>
+		<p>
+			Prism Launcher is an open-source project and we welcome contributions from
+			the community. You can find the source code on <a
+				href="https://github.com/PrismLauncher/PrismLauncher">GitHub</a
+			>. Join our <a href="https://discord.gg/ArX2nafFz2">Discord server</a> to chat
+			with other people. We also have a <a
+				href="https://matrix.to/#/#prismlauncher:matrix.org">Matrix space</a
+			> for those who don't use Discord.
+		</p>
+		<h2>Sponsors</h2>
+		<p>
+			We thank all the wonderful backers over at Open Collective! Support Prism
+			Launcher and it's development by <a
+				href="https://opencollective.com/prismlauncher">becoming a backer</a
+			>.
+		</p>
+		<a href="https://opencollective.com/prismlauncher#backers">
+			<img
+				class="not-prose"
+				src="https://opencollective.com/prismlauncher/backers.svg?width=840&limit=1000"
+				alt="Prism Launcher Open Collective backers"
+			/>
+		</a>
+		<p>
+			We also thank many wonderful companies who help us keep the lights on.
+		</p>
+		<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 not-prose">
+			<LogoCard
+				src="https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg"
+				alt="JetBrains"
+			/>
+			<LogoCard
+				src="https://hosted.weblate.org/widgets/prismlauncher/-/open-graph.png"
+				alt="Weblate"
+			/>
+			<LogoCard
+				src="https://uploads-ssl.webflow.com/5ac3c046c82724970fc60918/5c019d917bba312af7553b49_MacStadium-developerlogo.png"
+				alt="MacStadium"
+			/>
+			<LogoCard
+				src="https://upload.wikimedia.org/wikipedia/commons/1/10/Tuta_logo.svg"
+				alt="Tutanota"
+			/>
+		</div>
+		<h2>Other Information</h2>
+		<p>
+			Prism Launcher is <a href="https://github.com/PrismLauncher/PrismLauncher"
+				>open-source</a
+			> and licensed under GPL-3.
+		</p>
+		<p>
+			Prism Launcher's logo and related assets are licensed under CC BY-SA 4.0.
+		</p>
+		<p>
+			This website is powered by <a href="https://astro.build">Astro</a>. The <a
+				href="https://github.com/PrismLauncher/prismlauncher.org">source code</a
+			> is licensed under AGPL-3.
+		</p>
+	</ProseCard>
+</MainLayout>

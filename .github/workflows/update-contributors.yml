@@ -3,7 +3,7 @@ name: Update contributors
 on:
   schedule:
     - cron: "0 12 * * *"
-  workflow_dispatch: # allow manual trigger
+  workflow_dispatch:
 
 jobs:
   build:

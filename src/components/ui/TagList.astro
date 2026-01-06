@@ -1,0 +1,31 @@
+---
+import Tag from "./Tag.astro";
+
+interface Props {
+	tags: string[];
+	basePath?: string;
+	class?: string;
+	showAll?: boolean;
+	activeTag?: string;
+}
+
+const {
+	tags,
+	basePath = "/news/tag",
+	class: className = "",
+	showAll = false,
+	activeTag,
+} = Astro.props;
+---
+
+<div
+	class={`flex flex-wrap gap-1 ${className}`}
+	{...showAll && { role: "navigation", "aria-label": "Filter by tag" }}
+>
+	{showAll && <Tag tag="All" active={!activeTag} href="/news" />}
+	{
+		tags.map((tag) => (
+			<Tag tag={tag} active={activeTag === tag} href={`${basePath}/${tag}`} />
+		))
+	}
+</div>

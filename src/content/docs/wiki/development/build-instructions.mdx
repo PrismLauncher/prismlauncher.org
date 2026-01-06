@@ -1,0 +1,310 @@
+---
+title: "Build Instructions"
+description: "A guide on building the launcher"
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Compiling manually
+
+### Prerequisites
+
+- A recent-ish operating system release
+  - Windows 10 (1809 or later. Older versions may be supported, but aren't tested)
+  - macOS >= 12
+  - Ubuntu >= 22.04 (or equivalent)
+- A C++ compiler supporting at least C++17.
+  - This includes GCC >= 8, Clang >= 5, and MSVC >= 19.15
+- Java JDK \<= 17
+- cmake >= 3.22
+- ninja
+- extra-cmake-modules
+- Qt 6.0 or later, with the following addons/plugins:
+  - Qt NetworkAuth
+  - Qt Image Formats
+  - Qt Svg
+- cmark
+- gamemode (required at build time, optional at runtime. Only on Linux)
+- `glxinfo` (required at runtime, only on Linux)
+- libarchive
+- libGL headers (only on Linux)
+- libqrencode
+- pciutils (required at runtime, only on Linux)
+- scdoc (optional at build time, used to generate manpages)
+- tomlplusplus
+- zlib
+
+<Tabs syncKey="buildInstructions">
+<TabItem label="Windows (MSVC)">
+
+:::note
+`winget` is installed by default on newer versions of Windows 11
+:::
+
+You should first install [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), a package manager for Windows.
+
+Once `winget` is available, install the MSVC toolchain with:
+
+```console
+winget install --source winget --exact --id Microsoft.VisualStudio.2022.BuildTools --override '--add Microsoft.VisualStudio.Workload.VCTools;includeRecommended'
+```
+
+Install JDK 17 with:
+
+```console
+winget install --source winget --exact --id EclipseAdoptium.Temurin.17.JDK
+```
+
+We will also be using Git:
+
+```console
+winget install --source winget --exact --id Git.Git
+```
+
+Qt can then be installed with [`aqt`](https://aqtinstall.readthedocs.io/en/latest/):
+
+```console
+winget install --source winget --exact --id miurahr.aqtinstall
+aqt install-qt windows desktop 6 win64_msvc2022_64 -m qtimageformats qtnetworkauth
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+[MSYS2](https://msys2.org) may be installed with [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/), or by following the setup guide [here](https://www.msys2.org/#installation):
+
+```console
+winget install --exact --id MSYS2.MSYS2 --source winget
+```
+
+Install JDK 17 with:
+
+```console
+winget install --source winget --exact --id EclipseAdoptium.Temurin.17.JDK
+```
+
+We **require** the CLANG(ARM)64 [environment](https://www.msys2.org/docs/environments/). After starting the environment, you may run the following to install all dependencies:
+
+```console
+pacman -Syu pactoys git
+pacboy -S \
+  toolchain:p \
+	cmake:p ninja:p \
+	extra-cmake-modules:p \
+	qt6-base:p qt6-imageformats:p qt6-networkauth:p qt6-svg:p \
+	cmark:p \
+	libarchive:p \
+	qrencode:p \
+	tomlplusplus:p \
+	zlib:p
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+The XCode toolchain can be installed with:
+
+```
+xcode-select --install
+```
+
+Qt and other dependencies can then be installed with the following [Homebrew](https://brew.sh/) command:
+
+```console
+brew install cmake ninja extra-cmake-modules qt openjdk@17
+```
+
+</TabItem>
+<TabItem label="Linux (Debian)">
+
+```console
+sudo apt install \
+  build-essential \
+  cmake ninja-build extra-cmake-modules pkg-config scdoc \
+  qt6-base-dev qt6-image-formats-plugins qt6-networkauth-dev qt6-svg-dev \
+	cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev zlib1g-dev \
+```
+
+To install JDK 17 on Debian:
+
+```console
+sudo apt install wget apt-transport-https gpg
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+sudo apt update && sudo apt install temurin-17-jdk
+```
+
+While on Ubuntu (or derivatives) you can just:
+
+```console
+sudo apt install openjdk-17-jdk
+```
+
+</TabItem>
+</Tabs>
+
+### Getting the source
+
+We use [Git](https://git-scm.com/) for our version control. The command below will clone the repository, and fetch all submodules that come with it
+
+```console
+git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
+cd PrismLauncher
+```
+
+**The rest of the documentation assumes you have already cloned the repository.**
+
+### Building the source
+
+#### Configuration
+
+<Tabs syncKey="buildInstructions">
+<TabItem label="Windows (MSVC)">
+
+Open "x64 Native Tools PowerShell" in Windows Terminal
+
+```powershell
+cmake --preset windows_msvc -D CMAKE_PREFIX_PATH="C:\path\to\Qt"
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake --preset windows_mingw
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake --preset macos \
+  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt"
+  -D CMAKE_OSX_DEPLOYMENT_TARGET=12 \
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake --preset linux
+```
+
+</TabItem>
+</Tabs>
+
+#### Compilation
+
+<Tabs syncKey="buildInstructions">
+<TabItem label="Windows (MSVC)">
+
+```bash
+cmake --build --preset windows_msvc --config Debug
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake --build --preset windows_mingw --config Debug
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake --build --preset macos --config Debug
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake --build --preset linux --config Debug
+```
+
+</TabItem>
+</Tabs>
+
+#### Installation
+
+<Tabs syncKey="buildInstructions">
+<TabItem label="Windows (MSVC)">
+
+```powershell
+cmake --install build --config Debug
+cmake --install build --config Debug --component portable # If you want to install a portable version
+```
+
+</TabItem>
+<TabItem label="Windows (MSYS2)">
+
+```bash
+cmake --install build --config Debug
+cmake --install build --config Debug --component portable # If you want to install a portable version
+```
+
+</TabItem>
+<TabItem label="macOS">
+
+```bash
+cmake --install build --config Debug
+```
+
+</TabItem>
+<TabItem label="Linux">
+
+```bash
+cmake --install build --config Debug
+cmake --install build --config Debug --component portable # If you want to install a portable version
+DESTDIR="$pkgdir" cmake --install build --config Debug # If you're installing for a package
+```
+
+</TabItem>
+</Tabs>
+
+## Building with Nix (Linux and macOS)
+
+Nix is a tool for handling reproducible builds across multiple platforms.
+
+After [installing Nix](https://nix.dev/install-nix) and checking out the repository, you can run the following command to build a debug package:
+
+```bash
+nix build --print-build-logs '.#prismlauncher-debug'
+```
+
+You can also enter a development shell with all of the tools required to build manually:
+
+```bash
+nix-shell
+cmake --preset linux_debug
+cmake --build build
+cmake --install build
+```
+
+## Building a Flatpak (Linux)
+
+Flatpaks allow for you to quickly build Prism and run it on any distribution
+
+Make sure Flathub is [setup](https://flathub.org/setup).
+
+```bash
+# Install Flatpak build tools
+flatpak install flathub org.flatpak.Builder
+
+# Clone the source repository
+git clone --recursive https://github.com/prismlauncher/PrismLauncher
+
+# Enter the Flatpak directory
+cd PrismLauncher/flatpak
+
+# Run the build
+flatpak run org.flatpak.Builder \
+  --user \
+  --install \ # Comment if you only want to build, not install
+  --install-deps-from=flathub \
+  --ccache \
+  --repo=repo \
+  builddir \
+  org.prismlauncher.PrismLauncher.yml
+```

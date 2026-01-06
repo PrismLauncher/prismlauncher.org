@@ -1,0 +1,39 @@
+---
+import Button from "./Button.astro";
+import Card from "./Card.astro";
+
+interface Props {
+	title: string;
+	downloads: Array<{
+		title: string;
+		href: string;
+		type: "primary" | "secondary";
+		icon?: string;
+		secondaryIcon?: string;
+	}>;
+}
+
+const { title, downloads } = Astro.props;
+---
+
+<Card variant="foreground">
+	<h2 class="heading-2 mb-4">
+		{title}
+	</h2>
+	<div class="space-y-3">
+		{
+			downloads.map((download) => (
+				<Button
+					href={download.href}
+					variant={download.type}
+					icon={download.icon}
+					secondaryIcon={download.secondaryIcon}
+					size="md"
+					class="w-full"
+				>
+					{download.title}
+				</Button>
+			))
+		}
+	</div>
+</Card>

@@ -1,0 +1,89 @@
+---
+import { Picture } from "astro:assets";
+import DownloadButton from "./ui/DownloadButton.astro";
+
+import linuxLight from "../assets/screenshots/landing/linux_light.png";
+import linuxDark from "../assets/screenshots/landing/linux_dark.png";
+import macosLight from "../assets/screenshots/landing/macos_light.png";
+import macosDark from "../assets/screenshots/landing/macos_dark.png";
+import windowsLight from "../assets/screenshots/landing/windows_light.png";
+import windowsDark from "../assets/screenshots/landing/windows_dark.png";
+---
+
+<section
+	class="max-w-none p-4 sm:p-6 flex flex-col items-center text-center gap-4 sm:text-left sm:flex-row sm:justify-start"
+>
+	<div class="sm:flex-1">
+		<h1 class="heading-1 mb-6">Prism Launcher</h1>
+		<p class="font-medium text-lg mb-6">
+			An open-source Minecraft launcher with the ability to manage multiple
+			instances, accounts and mods. Focused on user freedom and free
+			redistributability.
+		</p>
+		<div class="not-prose mb-4">
+			<DownloadButton size="lg" />
+		</div>
+	</div>
+
+	<div class="sm:flex-1 not-prose">
+		<!-- linux image is enabled by default for visitors without javascript, macos/windows are enabled with javascript -->
+		<Picture
+			src={linuxLight}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-linux", class: "dark:hidden" }}
+		/>
+		<Picture
+			src={linuxDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-linux_dark", class: "hidden dark:block" }}
+		/>
+		<Picture
+			src={macosLight}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-macos", class: "hidden dark:hidden" }}
+		/>
+		<Picture
+			src={macosDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-macos_dark", class: "hidden" }}
+		/>
+		<Picture
+			src={windowsLight}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-windows", class: "hidden dark:hidden" }}
+		/>
+		<Picture
+			src={windowsDark}
+			formats={["avif", "webp"]}
+			alt="Prism Launcher screenshot showing off various different modpacks and instances"
+			pictureAttributes={{ id: "hero-windows_dark", class: "hidden" }}
+		/>
+	</div>
+</section>
+
+<script>
+	import { detectOS } from "../scripts/detectOS";
+
+	const detected = detectOS();
+	const platforms = ["linux", "macos", "windows"] as const;
+	const os = platforms.includes(detected as any) ? detected : "linux";
+
+	/* TODO: theres probably a better way to do this */
+	platforms.forEach((platform) => {
+		const light = document.getElementById(`hero-${platform}`);
+		const dark = document.getElementById(`hero-${platform}_dark`);
+
+		if (platform === os) {
+			light?.classList.remove("hidden");
+			dark?.classList.add("dark:block");
+		} else {
+			light?.remove();
+			dark?.remove();
+		}
+	});
+</script>

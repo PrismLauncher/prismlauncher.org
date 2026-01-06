@@ -1,0 +1,108 @@
+---
+import { Picture } from "astro:assets";
+import MainLayout from "./MainLayout.astro";
+import Card from "../components/ui/Card.astro";
+import ProseCard from "../components/ui/ProseCard.astro";
+import DownloadCard from "../components/ui/DownloadCard.astro";
+import { Icon } from "astro-icon/components";
+import { DOWNLOADS, PLATFORMS } from "../data/downloads";
+
+import linuxLight from "../assets/screenshots/landing/linux_light.png";
+import linuxDark from "../assets/screenshots/landing/linux_dark.png";
+import macosLight from "../assets/screenshots/landing/macos_light.png";
+import macosDark from "../assets/screenshots/landing/macos_dark.png";
+import windowsLight from "../assets/screenshots/landing/windows_light.png";
+import windowsDark from "../assets/screenshots/landing/windows_dark.png";
+
+export interface Props {
+	frontmatter: {
+		title: string;
+		platform: string;
+		description?: string;
+		screenshotLight?: string;
+		screenshotDark?: string;
+		screenshotAlt?: string;
+	};
+}
+
+const {
+	frontmatter: { title, platform, description, screenshotAlt },
+} = Astro.props;
+
+const images = {
+	linux: { light: linuxLight, dark: linuxDark },
+	macos: { light: macosLight, dark: macosDark },
+	windows: { light: windowsLight, dark: windowsDark },
+}[platform];
+---
+
+<MainLayout title={title} description={description}>
+	<Card>
+		<div
+			class="not-prose flex flex-wrap rounded-lg p-1 mb-6 bg-prism-accent-light dark:bg-prism-accent-dark"
+		>
+			{
+				PLATFORMS.map((platformItem) => (
+					<a
+						href={platformItem.path}
+						class:list={[
+							"flex flex-col items-center justify-center gap-1",
+							"grow basis-0 px-2 py-2 text-center text-sm font-medium rounded-md",
+							platform === platformItem.key &&
+								"bg-prism-background-light dark:bg-prism-background-dark border border-black/10 dark:border-white/10",
+						]}
+					>
+						<Icon size="24" name={platformItem.icon} />
+						{platformItem.name}
+					</a>
+				))
+			}
+		</div>
+		<h1 class="heading-1 mb-6">{title}</h1>
+
+		<div class="flex flex-col gap-6">
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+				{
+					(DOWNLOADS[platform as keyof typeof DOWNLOADS] || []).map(
+						(section) => (
+							<DownloadCard
+								title={section.title}
+								downloads={section.downloads}
+							/>
+						),
+					)
+				}
+			</div>
+
+			{
+				images && (
+					<div class="flex justify-center">
+						<Picture
+							src={images.light}
+							formats={["avif", "webp"]}
+							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
+							class="mx-auto not-prose"
+							pictureAttributes={{
+								class: "dark:hidden",
+							}}
+						/>
+						<Picture
+							src={images.dark}
+							formats={["avif", "webp"]}
+							alt={screenshotAlt || `Prism Launcher screenshot on ${platform}`}
+							class="mx-auto not-prose"
+							pictureAttributes={{
+								class: "hidden dark:block",
+							}}
+						/>
+					</div>
+				)
+			}
+		</div>
+	</Card>
+
+	<!-- markdown content goes here -->
+	<ProseCard>
+		<slot />
+	</ProseCard>
+</MainLayout>
