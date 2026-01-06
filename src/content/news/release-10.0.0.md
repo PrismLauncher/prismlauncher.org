@@ -72,8 +72,8 @@ Until next time! 🌈
 - Add settings to control the if prism should move the downloaded mods by [@Trial97](https://github.com/Trial97) in [#3228](https://github.com/PrismLauncher/PrismLauncher/pull/3228)
 - Add skin preview by [@Trial97](https://github.com/Trial97) in [#3283](https://github.com/PrismLauncher/PrismLauncher/pull/3283)
 - Allow creating shortcuts to individual worlds and servers with Quick Play by
-[@Trial97](https://github.com/Trial97),
-[@Scrumplex](https://github.com/Scrumplex) and [@Mick235711](https://github.com/Mick235711) in [#3767](https://github.com/PrismLauncher/PrismLauncher/pull/3767)
+  [@Trial97](https://github.com/Trial97),
+  [@Scrumplex](https://github.com/Scrumplex) and [@Mick235711](https://github.com/Mick235711) in [#3767](https://github.com/PrismLauncher/PrismLauncher/pull/3767)
 - Auto reauthenticate account if expired by [@Trial97](https://github.com/Trial97) in [#1953](https://github.com/PrismLauncher/PrismLauncher/pull/1953)
 - Build Linux binaries for ARM64 by [@getchoo](https://github.com/getchoo) in [#3304](https://github.com/PrismLauncher/PrismLauncher/pull/3304)
 - Build MinGW binaries for ARM64 by [@getchoo](https://github.com/getchoo) in [#3724](https://github.com/PrismLauncher/PrismLauncher/pull/3724)
@@ -128,7 +128,7 @@ Until next time! 🌈
 - Start using patch versioning for launcher by [@Ryex](https://github.com/Ryex) in [#3605](https://github.com/PrismLauncher/PrismLauncher/pull/3605)
 - Update Modrinth Client/Server Filters to match Modrinth website & launcher. by [@eff3ry](https://github.com/eff3ry) in [#3332](https://github.com/PrismLauncher/PrismLauncher/pull/3332)
 - Use Qt 6.10.1 on Linux and Windows by
-[@DioEgizio](https://github.com/DioEgizio) in [#4599](https://github.com/PrismLauncher/PrismLauncher/pull/4599)
+  [@DioEgizio](https://github.com/DioEgizio) in [#4599](https://github.com/PrismLauncher/PrismLauncher/pull/4599)
 - Update in-tree flatpak to use KDE Platform 6.10 by [@DioEgizio](https://github.com/DioEgizio) in [#4452](https://github.com/PrismLauncher/PrismLauncher/pull/4452)
 - Updated App icon for macOS 26 by [@ShadowPaint-SP](https://github.com/ShadowPaint-SP) in [#4160](https://github.com/PrismLauncher/PrismLauncher/pull/4160)
 - Use C++20 by [@Trial97](https://github.com/Trial97) in [#3957](https://github.com/PrismLauncher/PrismLauncher/pull/3957)

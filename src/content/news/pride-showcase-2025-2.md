@@ -6,7 +6,7 @@ tags:
   - News
 ---
 
-Following [last week's showcase](https://prismlauncher.org/news/pride-showcase-2025-1/), we're ***proud*** (wink) to be back for Week 2! We hope everyone has been having a good Pride Month so far, and want to say thanks again for all of these submissions. They're awesome to play around with, and it's really great to see what you all have come up with :)
+Following [last week's showcase](https://prismlauncher.org/news/pride-showcase-2025-1/), we're **_proud_** (wink) to be back for Week 2! We hope everyone has been having a good Pride Month so far, and want to say thanks again for all of these submissions. They're awesome to play around with, and it's really great to see what you all have come up with :)
 
 As a reminder, you can also send in your own through the [Pride 2025 Showcase thread](https://discord.com/channels/1031648380885147709/1379576393234649128) on our [Discord server](https://discord.gg/ArX2nafFz2), or email us at [`contact@prismlauncher.org`](mailto:contact@prismlauncher.org). Thanks to all of those who have already joined in! (And don't worry if yours haven't been included yet. We hope to get to all of them!)
 
