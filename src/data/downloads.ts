@@ -60,7 +60,7 @@ export const DOWNLOADS = {
 				},
 				{
 					title: "Portable (.zip)",
-					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Windows-MSVC-arm64-Portable-${VERSION}.zip`,
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Windows-MinGW-arm64-Portable-${VERSION}.zip`,
 					type: "secondary" as const,
 					icon: "simple-icons:windows",
 					secondaryIcon: "lucide:download",
