@@ -44,13 +44,13 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 [FerriteCore](https://modrinth.com/mod/ferrite-core) is a mod that reduces Minecraft's memory usage. We **highly recommend** installing it when possible.
 
-### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px style="display: inline-block"> Iris
-
-[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
-
 ### <img src="https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp" alt="ImmediatelyFast Fabric" width=20px style="display: inline-block"> ImmediatelyFast
 
 [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) is an open source Minecraft mod which improves the immediate mode rendering performance of the client. We **highly recommend** installing it when possible.
+
+### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px style="display: inline-block"> Iris
+
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
 
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" width=20px style="display: inline-block"> Indium
 
@@ -126,13 +126,13 @@ You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many 
 
 [Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
 
+### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" width=20px style="display: inline-block"> Radium
+
+[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
+
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/f59f6932eb20e00d123b36d5976d6ecd80b98b41/src/main/resources/oculus-logo.png" alt="Oculus Logo" width=20px style="display: inline-block"> Oculus
 
 [Oculus](https://modrinth.com/mod/oculus) is an Iris port for Forge. Be aware of the statements above before using it.
-
-### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" width=20px style="display: inline-block"> Radium
-
-[Radium](https://modrinth.com/mod/radium) is a Lithium port for Forge. Be aware of the statements above before using it.
 
 ### Other mods
 
