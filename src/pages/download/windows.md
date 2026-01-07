@@ -22,8 +22,8 @@ winget install --exact PrismLauncher.PrismLauncher
 
 These builds are built with MinGW and do not require the Visual C++ Redistributable to be installed on your system. They require Windows 10/11 64bit. **These builds are less tested than the MSVC builds.**
 
-- [Installer (x86-64) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.0/PrismLauncher-Windows-MinGW-w64-Setup-10.0.0.exe)
-- [Installer (ARM64) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.0/PrismLauncher-Windows-MinGW-arm64-Setup-10.0.0.exe)
+- [Installer (x86-64) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.1/PrismLauncher-Windows-MinGW-w64-Setup-10.0.1.exe)
+- [Installer (ARM64) (.exe)](https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.1/PrismLauncher-Windows-MinGW-arm64-Setup-10.0.1.exe)
 
 ## Community Packages
 
