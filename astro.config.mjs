@@ -4,11 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
+import cloudflare from "@astrojs/cloudflare";
 
 import starlight from "@astrojs/starlight";
 
 export default defineConfig({
 	site: process.env.DEPLOY_URL || "https://prismlauncher.org",
+	output: "static",
+	adapter: cloudflare(),
 
 	vite: {
 		plugins: [tailwindcss()],
