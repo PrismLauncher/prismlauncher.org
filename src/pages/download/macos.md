@@ -26,6 +26,14 @@ You can also install Prism Launcher via Homebrew:
 brew install --cask prismlauncher
 ```
 
+### MacPorts
+
+Install through MacPorts is also available:
+
+```bash
+sudo port install PrismLauncher
+```
+
 ### Nix
 
 See the [Linux section](/download/linux) for Nix information.
