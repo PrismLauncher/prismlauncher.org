@@ -86,7 +86,7 @@ Packages are available in both the official Arch Linux/Manjaro repositories and 
 sudo pacman -S prismlauncher
 ```
 
-### Installing Dev Builds (AUR)
+#### Installing Dev Builds (AUR)
 
 ```bash
 # Newest Git commit (compiled from source)
