@@ -58,8 +58,8 @@ importers:
         specifier: 1.2.84
         version: 1.2.84
       '@iconify-json/simple-icons':
-        specifier: 1.2.65
-        version: 1.2.65
+        specifier: 1.2.66
+        version: 1.2.66
       prettier:
         specifier: 3.7.4
         version: 3.7.4
@@ -521,8 +521,8 @@ packages:
   '@iconify-json/lucide@1.2.84':
     resolution: {integrity: sha512-m45MY1aW2swSK6Neb3J2qdZ+BxZ1VTdN7UeoXENwyMACG9bqGHWYJYxWoFzwoSnCfYLyKWTcBhesBgMd5IrUzQ==}
 
-  '@iconify-json/simple-icons@1.2.65':
-    resolution: {integrity: sha512-v/O0UeqrDz6ASuRVE5g2Puo5aWyej4M/CxX6WYDBARgswwxK0mp3VQbGgPFEAAUU9QN02IjTgjMuO021gpWf2w==}
+  '@iconify-json/simple-icons@1.2.66':
+    resolution: {integrity: sha512-D1OnnXwiQXFkVMw5M+Bt8mPsXeMkQyGmMdrmN7lsQlKMUkfLOp6JWhnUJ92po51WXT046aF/zzqSmkKqg08p4Q==}
 
   '@iconify/tools@4.2.0':
     resolution: {integrity: sha512-WRxPva/ipxYkqZd1+CkEAQmd86dQmrwH0vwK89gmp2Kh2WyyVw57XbPng0NehP3x4V1LzLsXUneP1uMfTMZmUA==}
@@ -3178,7 +3178,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.65':
+  '@iconify-json/simple-icons@1.2.66':
     dependencies:
       '@iconify/types': 2.0.0
 
