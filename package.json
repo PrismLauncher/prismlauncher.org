@@ -19,7 +19,7 @@
 		"astro": "5.16.8",
 		"astro-icon": "1.1.5",
 		"axios": "1.13.2",
-		"feed": "5.1.0",
+		"feed": "5.2.0",
 		"rehype-raw": "7.0.0",
 		"rehype-stringify": "10.0.1",
 		"remark": "15.0.1",
