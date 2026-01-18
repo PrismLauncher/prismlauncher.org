@@ -1,5 +1,5 @@
 ---
-title: [PSA] Fake Discord server using our old vanity link
+title: "[PSA] Fake Discord server using our old vanity link"
 description: Please use https://prismlauncher.org/discord.
 date: 2026-01-18
 ---
