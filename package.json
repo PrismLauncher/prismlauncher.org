@@ -12,11 +12,11 @@
 	},
 	"dependencies": {
 		"@astrojs/mdx": "4.3.13",
-		"@astrojs/sitemap": "3.6.1",
+		"@astrojs/sitemap": "3.7.0",
 		"@fontsource-variable/inter": "5.2.8",
 		"@tailwindcss/typography": "0.5.19",
 		"@tailwindcss/vite": "4.1.18",
-		"astro": "5.16.9",
+		"astro": "5.16.10",
 		"astro-icon": "1.1.5",
 		"axios": "1.13.2",
 		"feed": "5.2.0",
