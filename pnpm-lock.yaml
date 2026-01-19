@@ -52,8 +52,8 @@ importers:
         version: 4.1.18
     devDependencies:
       '@astrojs/cloudflare':
-        specifier: ^12.6.12
-        version: 12.6.12(@types/node@24.10.1)(astro@5.16.9(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3))(jiti@2.6.1)(lightningcss@1.30.2)
+        specifier: 12.6.12
+        version: 12.6.12(@types/node@24.10.1)(astro@5.16.10(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3))(jiti@2.6.1)(lightningcss@1.30.2)
       '@astrojs/starlight':
         specifier: 0.37.3
         version: 0.37.3(astro@5.16.10(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3))
@@ -3042,12 +3042,12 @@ snapshots:
 
   '@antfu/utils@8.1.1': {}
 
-  '@astrojs/cloudflare@12.6.12(@types/node@24.10.1)(astro@5.16.9(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3))(jiti@2.6.1)(lightningcss@1.30.2)':
+  '@astrojs/cloudflare@12.6.12(@types/node@24.10.1)(astro@5.16.10(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3))(jiti@2.6.1)(lightningcss@1.30.2)':
     dependencies:
       '@astrojs/internal-helpers': 0.7.5
       '@astrojs/underscore-redirects': 1.0.0
       '@cloudflare/workers-types': 4.20260108.0
-      astro: 5.16.9(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)
+      astro: 5.16.10(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.53.3)(typescript@5.9.3)
       tinyglobby: 0.2.15
       vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)
       wrangler: 4.50.0(@cloudflare/workers-types@4.20260108.0)
