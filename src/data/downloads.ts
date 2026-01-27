@@ -81,6 +81,13 @@ export const DOWNLOADS = {
 					secondaryIcon: "lucide:link",
 				},
 				{
+					title: "Nightly Flatpak for testers",
+					href: "https://flatpak.prismlauncher.org/prismlauncher-nightly.flatpakref",
+					type: "nightly" as const,
+					icon: "simple-icons:flatpak",
+					secondaryIcon: "lucide:link",
+				},
+				{
 					title: "AppImage (.appimage)",
 					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-x86_64.AppImage`,
 					type: "secondary" as const,
@@ -104,6 +111,13 @@ export const DOWNLOADS = {
 					href: "https://flathub.org/apps/details/org.prismlauncher.PrismLauncher",
 					type: "primary" as const,
 					icon: "simple-icons:flathub",
+					secondaryIcon: "lucide:link",
+				},
+				{
+					title: "Nightly Flatpak for testers",
+					href: "https://flatpak.prismlauncher.org/prismlauncher-nightly.flatpakref",
+					type: "nightly" as const,
+					icon: "simple-icons:flatpak",
 					secondaryIcon: "lucide:link",
 				},
 				{
@@ -148,6 +162,13 @@ export const DOWNLOADS = {
 					href: "https://flathub.org/apps/details/org.prismlauncher.PrismLauncher",
 					type: "primary" as const,
 					icon: "simple-icons:flathub",
+					secondaryIcon: "lucide:link",
+				},
+				{
+					title: "Nightly Flatpak for testers",
+					href: "https://flatpak.prismlauncher.org/prismlauncher-nightly.flatpakref",
+					type: "nightly" as const,
+					icon: "simple-icons:flatpak",
 					secondaryIcon: "lucide:link",
 				},
 			],
