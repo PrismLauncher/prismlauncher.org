@@ -1,6 +1,6 @@
 ---
 title: "Prism Launcher Release 10.0.4, now available"
-description: "May contain nuts2!"
+description: "May contain nuts!"
 date: 2026-01-31
 slug: "release-10.0.4"
 release_version: "10.0.4"
