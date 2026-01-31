@@ -1,12 +1,12 @@
 ---
-title: "Prism Launcher Release 10.0.3, now available"
+title: "Prism Launcher Release 10.0.4, now available"
 description: "May contain nuts!"
 date: 2026-01-31
-slug: "release-10.0.3"
-release_version: "10.0.3"
+slug: "release-10.0.4"
+release_version: "10.0.4"
 minimum_macos_version: 12.0.0
 macos_file_extension: zip
-macos_signature: 1cM3ohO7EYGTJbrQnk5KCx137YQV+cPbUFsuu2oDeBKVQFl37f5XHUhQFVsg+4QZEKEnZ0nD5wvP9yLuB3LdDw==
+macos_signature: 26CjqZkh9RKBDszMpsofZPNqZlb9GI0CY1o4amAPcbg8C0/PrYgXcUCsqOEfuxLEt4tr2d8HK6+cNlvyffL9Bg==
 tags:
   - Release
 ---
@@ -15,6 +15,7 @@ Hi again!
 
 This is another small release to sort out more bugs!
 AppImage updating is fixed. Updates were previously blocked due to a signing failure, which is now resolved.
+In 10.0.3 we accidentally forget to change the version number, so we have immediately released 10.0.4 to fix that.
 
 As always, you can [grab the latest download here](/download). Until next time!
 
