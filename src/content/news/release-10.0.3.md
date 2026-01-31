@@ -6,7 +6,7 @@ slug: "release-10.0.3"
 release_version: "10.0.3"
 minimum_macos_version: 12.0.0
 macos_file_extension: zip
-macos_signature: =====changeme=====
+macos_signature: 1cM3ohO7EYGTJbrQnk5KCx137YQV+cPbUFsuu2oDeBKVQFl37f5XHUhQFVsg+4QZEKEnZ0nD5wvP9yLuB3LdDw==
 tags:
   - Release
 ---
@@ -14,6 +14,7 @@ tags:
 Hi again!
 
 This is another small release to sort out more bugs!
+AppImage updating is fixed. Updates were previously blocked due to a signing failure, which is now resolved.
 
 As always, you can [grab the latest download here](/download). Until next time!
 
@@ -30,6 +31,7 @@ As always, you can [grab the latest download here](/download). Until next time!
 - [AppImage] use portals for file picking by [@DioEgizio](https://github.com/DioEgizio) in [#4759](https://github.com/PrismLauncher/PrismLauncher/pull/4759)
 - auth: improve status messages by [@Octol1ttle](https://github.com/Octol1ttle) in [#4750](https://github.com/PrismLauncher/PrismLauncher/pull/4750)
 - improve we couldn't launch after 3 tries message by [@DioEgizio](https://github.com/DioEgizio) in [#4805](https://github.com/PrismLauncher/PrismLauncher/pull/4805)
+- update to qt 6.10.2, build codeql on the qt version we still want to support, sign DLLs on windows by [@DioEgizio](https://github.com/DioEgizio) in [#4909](https://github.com/PrismLauncher/PrismLauncher/pull/4909)
 
 ## Fixed
 
