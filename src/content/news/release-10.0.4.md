@@ -6,7 +6,7 @@ slug: "release-10.0.4"
 release_version: "10.0.4"
 minimum_macos_version: 12.0.0
 macos_file_extension: zip
-macos_signature: ====changeme====
+macos_signature: 26CjqZkh9RKBDszMpsofZPNqZlb9GI0CY1o4amAPcbg8C0/PrYgXcUCsqOEfuxLEt4tr2d8HK6+cNlvyffL9Bg==
 tags:
   - Release
 ---
