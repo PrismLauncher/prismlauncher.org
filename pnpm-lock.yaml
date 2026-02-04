@@ -61,8 +61,8 @@ importers:
         specifier: 1.2.87
         version: 1.2.87
       '@iconify-json/simple-icons':
-        specifier: 1.2.68
-        version: 1.2.68
+        specifier: 1.2.69
+        version: 1.2.69
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -728,8 +728,8 @@ packages:
   '@iconify-json/lucide@1.2.87':
     resolution: {integrity: sha512-wxYIAp0f8Uw0rJa6BMWMaRbiHk3yV4XczA38GKXFlqyZtTdmHM1QOF4NZw5xpMlRDzbh2MnB7wjteLeFnn/ciQ==}
 
-  '@iconify-json/simple-icons@1.2.68':
-    resolution: {integrity: sha512-bQPl1zuZlX6AnofreA1v7J+hoPncrFMppqGboe/SH54jZO37meiBUGBqNOxEpc0HKfZGxJaVVJwZd4gdMYu3hw==}
+  '@iconify-json/simple-icons@1.2.69':
+    resolution: {integrity: sha512-T/rhy5n7pzE0ZOxQVlF68SNPCYYjRBpddjgjrJO5WWVRG8es5BQmvxIE9kKF+t2hhPGvuGQFpXmUyqbOtnxirQ==}
 
   '@iconify/tools@4.2.0':
     resolution: {integrity: sha512-WRxPva/ipxYkqZd1+CkEAQmd86dQmrwH0vwK89gmp2Kh2WyyVw57XbPng0NehP3x4V1LzLsXUneP1uMfTMZmUA==}
@@ -2734,7 +2734,7 @@ packages:
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
-    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tiny-inflate@1.0.3:
     resolution: {integrity: sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==}
@@ -3563,7 +3563,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.68':
+  '@iconify-json/simple-icons@1.2.69':
     dependencies:
       '@iconify/types': 2.0.0
 
