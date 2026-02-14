@@ -49,7 +49,7 @@ After downloading the AppImage, open your file manager and make it [executable](
 on x86-64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.2/PrismLauncher-Linux-x86_64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.5/PrismLauncher-Linux-x86_64.AppImage
 chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 ./PrismLauncher-Linux-x86_64.AppImage
 ```
@@ -57,7 +57,7 @@ chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 on ARM64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.2/PrismLauncher-Linux-aarch64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.5/PrismLauncher-Linux-aarch64.AppImage
 chmod +x ./PrismLauncher-Linux-aarch64.AppImage
 ./PrismLauncher-Linux-aarch64.AppImage
 ```
