@@ -76,10 +76,6 @@ If you don't want to search and install these mods manually, then try the [Fabul
 
 [See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
 
-### <img src="https://cdn.modrinth.com/data/BYfVnHa7/icon.png" alt="Simply Optimized Logo" width=20px style="display: inline-block"> Simply Optimized
-
-[Simply Optimized](https://modrinth.com/modpack/sop) is a modpack designed with just optimization in mind. SO has better out-of-the-box performance than Fabulously Optimized, but it doesn't come with the QoL mods or full OptiFine parity you would see in Fabulously Optimized, so you're expected to add any additional mods you want yourself.
-
 ## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" width=30px style="display: inline-block"> NeoForge Mods
 
 ### <img src="https://cdn.modrinth.com/data/AANobbMI/icon.png" alt="Sodium Logo" width=20px style="display: inline-block"> Sodium for NeoForge
