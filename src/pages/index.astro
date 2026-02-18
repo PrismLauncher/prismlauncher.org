@@ -163,18 +163,18 @@ import themesDark from "../assets/screenshots/landing/themes_dark.png";
 			{
 				SOCIAL_LINKS.map((social) => (
 					<a
-					href={social.href}
-					aria-label={social.label}
-					class="text-prism-text-light dark:text-prism-text-dark"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Card
-						variant="foreground"
-						class="size-18 flex justify-center items-center"
+						href={social.href}
+						aria-label={social.label}
+						class="text-prism-text-light dark:text-prism-text-dark"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
+						<Card
+							variant="foreground"
+							class="size-18 flex justify-center items-center"
+						>
 							<Icon name={social.icon} size="36" />
-					</Card>
+						</Card>
 					</a>
 				))
 			}
