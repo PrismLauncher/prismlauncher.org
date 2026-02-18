@@ -13,8 +13,6 @@ const processor = remark()
 	.use(rehypeRaw)
 	.use(rehypeStringify);
 
-const ARCHIVE_TAG = "Archive";
-
 export const GET: APIRoute = async ({
 	site = DEFAULT_URL,
 	url,
@@ -37,11 +35,9 @@ export const GET: APIRoute = async ({
 		image: `${site.toString()}/img/favicon.png`,
 	});
 
-	const posts = await getCollection(
-		"news",
-		({ data }) => !data.draft && !data.tags.includes(ARCHIVE_TAG),
-	).then((posts) =>
-		posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+	const posts = await getCollection("news", ({ data }) => !data.draft).then(
+		(posts) =>
+			posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
 	);
 
 	for (const post of posts) {

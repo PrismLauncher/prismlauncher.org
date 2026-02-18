@@ -7,14 +7,9 @@ import NewsCard from "../../components/NewsCard.astro";
 import TagFilter from "../../components/ui/TagFilter.astro";
 import { getCollection } from "astro:content";
 
-const ARCHIVE_TAG = "Archive";
-
-const posts = (
-	await getCollection(
-		"news",
-		({ data }) => !data.draft && !data.tags.includes(ARCHIVE_TAG),
-	)
-).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 const [latestPost, ...remainingPosts] = posts;
 ---
 
@@ -28,12 +23,6 @@ const [latestPost, ...remainingPosts] = posts;
 			The latest and greatest news regarding updates, changes and more. Prism
 			Launcher now supports viewing news directly in the Launcher by clicking
 			the news icon at the bottom of the window.
-		</p>
-		<p class="mt-3">
-			Looking for older updates? Visit the
-			<a href="/news/archive" class="text-prism-link hover:underline">
-				news archive
-			</a>.
 		</p>
 		<TagFilter />
 	</ProseCard>
