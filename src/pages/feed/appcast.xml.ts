@@ -6,6 +6,7 @@ import rehypeStringify from "rehype-stringify";
 import { getCollection } from "astro:content";
 
 const DEFAULT_URL = new URL("https://prismlauncher.org");
+const ARCHIVE_TAG = "Archive";
 
 const processor = remark()
 	.use(remarkRehype, { allowDangerousHtml: true })
@@ -14,7 +15,12 @@ const processor = remark()
 
 export const GET: APIRoute = async ({ site = DEFAULT_URL }) => {
 	const feedLink = new URL("/feed/appcast.xml", site).toString();
-	const posts = (await getCollection("news", ({ data }) => !data.draft))
+	const posts = (
+		await getCollection(
+			"news",
+			({ data }) => !data.draft && !data.tags.includes(ARCHIVE_TAG),
+		)
+	)
 		.filter(({ data }) => data.release_version && data.macos_signature)
 		.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 

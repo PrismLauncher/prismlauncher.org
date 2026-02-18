@@ -4,6 +4,7 @@ description: Swirl has stepped down from maintainer and a new core team has been
 date: 2022-02-06
 tags:
   - News
+  - Archive
 ---
 
 Based off recent controversies, and for the project's best interest, Swirl has stepped down from his role as maintainer. LennyMcLennington is now the head maintainer of PolyMC and has established a new core group of maintainers to keep the project healthy and active.
