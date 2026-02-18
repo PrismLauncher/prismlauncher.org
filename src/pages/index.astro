@@ -162,20 +162,20 @@ import themesDark from "../assets/screenshots/landing/themes_dark.png";
 		<div class="flex flex-wrap justify-center items-center gap-4 mb-4">
 			{
 				SOCIAL_LINKS.map((social) => (
+					<a
+					href={social.href}
+					aria-label={social.label}
+					class="text-prism-text-light dark:text-prism-text-dark"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<Card
 						variant="foreground"
-						class="size-16 flex justify-center items-center"
+						class="size-18 flex justify-center items-center"
 					>
-						<a
-							href={social.href}
-							aria-label={social.label}
-							class="text-prism-text-light dark:text-prism-text-dark"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Icon name={social.icon} size="24" />
-						</a>
+							<Icon name={social.icon} size="36" />
 					</Card>
+					</a>
 				))
 			}
 		</div>
