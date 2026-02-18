@@ -1,6 +1,7 @@
 ---
 title: FTB
 ---
+
 FTB
 ![FTB tab under PrismLauncher New Instances](/img/screenshots/NewInstanceFTBDark.png)
 
