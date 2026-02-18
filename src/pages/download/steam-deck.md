@@ -24,6 +24,9 @@ You can also install via terminal in Desktop Mode:
 
 ```bash
 flatpak install flathub org.prismlauncher.PrismLauncher
+# For nightly builds
+flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatapkrepo
+flatpak install prismlauncher org.prismlauncher.PrismLauncher//nightly
 ```
 
 ### Add to Steam library
