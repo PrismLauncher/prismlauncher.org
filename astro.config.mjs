@@ -10,7 +10,6 @@ import starlight from "@astrojs/starlight";
 
 export default defineConfig({
 	site: process.env.DEPLOY_URL || "https://prismlauncher.org",
-	trailingSlash: "never",
 	output: "static",
 	adapter: cloudflare(),
 
