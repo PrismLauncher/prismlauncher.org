@@ -1,6 +1,6 @@
 ---
 title: FTB Legacy
-slug: FTB-legacy
+slug: wiki/help-pages/FTB-legacy
 ---
 
 ![FTB Legacy tab under PrismLauncher New Instances](/img/screenshots/NewInstanceFTBLegacyDark.png)
