@@ -1,5 +1,6 @@
 ---
 title: FTB App Import
+slug: FTB-import
 ---
 
 ![FTB App Import tab under PrismLauncher New Instances](/img/screenshots/NewInstanceFTBAppImportDark.png)
