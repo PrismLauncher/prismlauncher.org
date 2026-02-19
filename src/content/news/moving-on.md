@@ -4,6 +4,7 @@ description: The origins of PolyMC are plagued by controversy. Let's move on fro
 date: 2022-03-06
 tags:
   - MultiMC
+  - PolyMC
 ---
 
 PolyMC emerged out of frustration with the MultiMC project and therefore brought controversy with it.

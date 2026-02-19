@@ -7,6 +7,7 @@ release_version: 1.4.2
 minimum_macos_version: 10.14.0
 tags:
   - Release
+  - Archive
 ---
 
 It has been a while.
