@@ -3,8 +3,6 @@ title: Launcher Settings
 slug: wiki/help-pages/Launcher-settings
 ---
 
-
-
 ## Features
 
 ![Features tab under Launcher tab in settings](/img/screenshots/SettingsLauncherFeaturesDark.png)
