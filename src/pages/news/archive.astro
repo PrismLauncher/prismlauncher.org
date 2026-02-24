@@ -1,0 +1,53 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import ProseCard from "../../components/ui/ProseCard.astro";
+import Card from "../../components/ui/Card.astro";
+import NewsCard from "../../components/NewsCard.astro";
+import Breadcrumb from "../../components/ui/Breadcrumb.astro";
+import { getCollection } from "astro:content";
+
+const ARCHIVE_TAG = "Archive";
+
+const archivePosts = (
+	await getCollection(
+		"news",
+		({ data }) => !data.draft && data.tags.includes(ARCHIVE_TAG),
+	)
+).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<MainLayout
+	title="News Archive"
+	description="Archived Prism Launcher news and announcements"
+>
+	<ProseCard>
+		<Breadcrumb href="/news" text="News" class="mb-3" />
+		<h1 class="heading-1 mb-6">Archive</h1>
+		<p>
+			Older announcements (PolyMC) are kept here for reference. Archived posts
+			do not appear on the main news page or feeds.
+			<br />
+			If you wish to learn more check out our <a
+				href="https://prismlauncher.org/wiki/overview/faq/"
+			>
+				FAQ
+			</a>
+		</p>
+	</ProseCard>
+
+	{
+		archivePosts.length > 0 ? (
+			<Card>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{archivePosts.map((post) => (
+						<NewsCard post={post} />
+					))}
+				</div>
+			</Card>
+		) : (
+			<ProseCard>
+				<p>No archived posts yet.</p>
+			</ProseCard>
+		)
+	}
+</MainLayout>

@@ -6,6 +6,7 @@ slug: release-1.3.1
 release_version: 1.3.1
 tags:
   - Release
+  - Archive
 ---
 
 Hey, it's that time again!
