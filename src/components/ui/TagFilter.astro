@@ -9,9 +9,14 @@ interface Props {
 
 const { activeTag, class: className = "" } = Astro.props;
 
-const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
-	(a, b) => b.data.date.getTime() - a.data.date.getTime(),
-);
+const ARCHIVE_TAG = "Archive";
+
+const posts = (
+	await getCollection(
+		"news",
+		({ data }) => !data.draft && !data.tags.includes(ARCHIVE_TAG),
+	)
+).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const popularTags = posts
 	.flatMap(({ data }) => data.tags)

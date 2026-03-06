@@ -6,6 +6,7 @@ slug: release-1.3.2
 release_version: 1.3.2
 tags:
   - Release
+  - Archive
 ---
 
 Yet again we have some fixes for you!
