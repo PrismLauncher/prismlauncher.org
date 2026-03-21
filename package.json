@@ -11,12 +11,12 @@
 		"update-contributors": "node scripts/update-contributors.mjs"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "4.3.14",
+		"@astrojs/mdx": "5.0.2",
 		"@astrojs/sitemap": "3.7.1",
 		"@fontsource-variable/inter": "5.2.8",
 		"@tailwindcss/typography": "0.5.19",
 		"@tailwindcss/vite": "4.2.2",
-		"astro": "5.18.1",
+		"astro": "6.0.6",
 		"astro-icon": "1.1.5",
 		"axios": "1.13.6",
 		"feed": "5.2.0",
@@ -30,7 +30,7 @@
 		"@astrojs/starlight": "0.38.1",
 		"@iconify-json/lucide": "1.2.98",
 		"@iconify-json/simple-icons": "1.2.74",
-		"@astrojs/cloudflare": "12.6.13",
+		"@astrojs/cloudflare": "13.1.2",
 		"prettier": "3.8.1",
 		"prettier-plugin-astro": "0.14.1",
 		"sharp": "0.34.5",
