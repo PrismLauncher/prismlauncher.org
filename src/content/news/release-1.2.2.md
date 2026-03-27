@@ -6,6 +6,7 @@ slug: release-1.2.2
 release_version: 1.2.2
 tags:
   - Release
+  - Archive
 ---
 
 The old API we used for CurseForge will stop working soon.
