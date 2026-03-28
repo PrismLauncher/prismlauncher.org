@@ -32,6 +32,7 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
 - pciutils (required at runtime, only on Linux)
 - scdoc (optional at build time, used to generate manpages)
 - tomlplusplus
+- vulkan-headers
 - zlib
 
 <Tabs syncKey="buildInstructions">
@@ -104,6 +105,7 @@ pacboy -S \
 	libarchive:p \
 	qrencode:p \
 	tomlplusplus:p \
+	vulkan-headers:p \
 	zlib:p
 ```
 
@@ -132,7 +134,7 @@ sudo apt install \
   build-essential \
   cmake ninja-build extra-cmake-modules pkg-config scdoc \
   qt6-base-dev qt6-image-formats-plugins qt6-networkauth-dev qt6-svg-dev \
-	cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev zlib1g-dev \
+	cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev libvulkan-dev zlib1g-dev \
 ```
 
 To install JDK 17 on Debian:
@@ -158,7 +160,7 @@ sudo pacman -S \
   base-devel \
   cmake ninja extra-cmake-modules pkg-config scdoc \
   qt6-base qt6-imageformats qt6-networkauth qt6-svg \
-  cmark gamemode libarchive mesa qrencode tomlplusplus zlib \
+  cmark gamemode libarchive mesa qrencode tomlplusplus vulkan-headers zlib \
   jdk17-openjdk
 ```
 
