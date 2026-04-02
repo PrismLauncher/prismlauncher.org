@@ -1,5 +1,5 @@
 ---
-title: "User Safety in Prism Launcher"
+title: "[April Fools 2026] User Safety in Prism Launcher"
 description: Now legal in California and Brazil!
 date: 2026-04-01
 tags:
