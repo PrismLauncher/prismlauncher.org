@@ -16,11 +16,11 @@ Hello again everyone. As is usually the case, when a new release of a long runni
 
 This is a patch release to fix a few fairly critical bugs with launching older Minecraft versions and fix Modpack updates. We've also restored the ability to view changelogs of Modrinth modpacks on the Instance's pack page.
 
-Run to [grab the latest download here](/download), and read on to see all the new stuff!
+Run to [grab the latest download here](/download), and read on to see the full list of changes.
 
 ## Changelog
 
-And for those who are a bit more curious (or just like reading long lists), here's our full changelog. You can also see the individual changes [here](https://github.com/PrismLauncher/PrismLauncher/compare/11.0.0...11.0.1).
+You can also see the individual changes [here](https://github.com/PrismLauncher/PrismLauncher/compare/11.0.0...11.0.1).
 
 ## Added
 
