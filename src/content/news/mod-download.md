@@ -4,6 +4,7 @@ description: PolyMC is now able to download individual mods from curseforge and 
 date: 2022-02-07
 tags:
   - Feature
+  - Archive
 ---
 
 Thanks to @timoreo it is now possible to download individual mods from both curseforge and modrinth. This pull request is the first of many big changes coming to PolyMC.

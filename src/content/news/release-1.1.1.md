@@ -6,6 +6,7 @@ slug: release-1.1.1
 release_version: 1.1.1
 tags:
   - Release
+  - Archive
 ---
 
 We are pleased to announce, that PolyMC version 1.1.1 is now available.
