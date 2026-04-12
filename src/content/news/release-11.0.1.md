@@ -11,10 +11,9 @@ tags:
   - Release
 ---
 
-Prism Launcher 11.0.1 is Ready
-Hello again everyone. As is usually the case, when a new release of a long running code base goes live the wider userbase can find more issues.
+Hello again everyone! As is usually the case, when a new release of a long running code base goes live the wider userbase can find more issues.
 
-This is a patch release to fix a few fairly critical bugs with launching older Minecraft versions and fix Modpack updates. We've also restored the ability to view changelogs of Modrinth modpacks on the Instance's pack page.
+This is a patch release to fix a few fairly critical bugs with launching older Minecraft versions and updating Modpacks. We've also restored the ability to view changelogs of Modrinth modpacks on the Instance's pack page.
 
 Run to [grab the latest download here](/download), and read on to see the full list of changes.
 
