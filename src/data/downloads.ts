@@ -1,4 +1,4 @@
-const VERSION = "11.0.1";
+const VERSION = "11.0.2";
 
 export const PLATFORMS = [
 	{
