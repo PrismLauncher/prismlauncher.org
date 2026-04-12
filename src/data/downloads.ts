@@ -126,12 +126,19 @@ export const DOWNLOADS = {
 
 	macos: [
 		{
-			title: "Monterey or later",
+			title: "Universal (Monterey or later)",
 			downloads: [
 				{
-					title: "Universal (.zip)",
-					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-macOS-${VERSION}.zip`,
+					title: "Disk Image (.dmg)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-macOS-${VERSION}.dmg`,
 					type: "primary" as const,
+					icon: "simple-icons:apple",
+					secondaryIcon: "lucide:download",
+				},
+				{
+					title: "Compressed (.zip)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-macOS-${VERSION}.zip`,
+					type: "secondary" as const,
 					icon: "simple-icons:apple",
 					secondaryIcon: "lucide:download",
 				},
