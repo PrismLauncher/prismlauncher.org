@@ -1,7 +1,7 @@
 ---
 title: "Prism Launcher Release 11.0.1, now available"
 description: "Symmetry not included!"
-date: 2026-04-08
+date: 2026-04-12
 slug: "release-11.0.1"
 release_version: "11.0.1"
 minimum_macos_version: 12.0.0
