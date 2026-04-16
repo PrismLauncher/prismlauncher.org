@@ -56,7 +56,8 @@ Logo colors:
 ```css
 --grass-green: #99cd61;
 --dirt-light-brown: #7a573b;
---dirt-dark-brwon: #4d3f33 --rainbow-red: #df6277;
+--dirt-dark-brown: #4d3f33;
+--rainbow-red: #df6277;
 --rainbow-orange: #fb9168;
 --rainbow-yellow: #f3db6c;
 --rainbow-green: #7ab392;
