@@ -28,6 +28,23 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub org.prismlauncher.PrismLauncher
 ```
 
+### Nightly Repository
+
+We offer our [own Flatpak remote](https://github.com/PrismLauncher/flatpak) with in-development builds of the launcher.
+
+#### App Center
+
+You should be able to open [this](https://flatpak.prismlauncher.org/prismlauncher-nightly.flatpakref) link with your chosen App Center.
+
+#### CLI
+
+You can also enable Flathub, our remote, and install the launcher with the following commands:
+
+```bash
+flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatapkrepo
+flatpak install prismlauncher org.prismlauncher.PrismLauncher//nightly
+```
+
 ### Nix / NixOS
 
 An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available for development and release builds.
