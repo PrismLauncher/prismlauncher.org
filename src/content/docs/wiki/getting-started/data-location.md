@@ -28,5 +28,5 @@ Prism Launcher stores your data in your OS's standard application data folder. F
 | logs         | Stores the logs.                                             |
 | meta         | Stores the cached metadata information.                      |
 | skins        | Stores the player skins.                                     |
-| themes       | Stores [themes](../change-themes).                           |
+| themes       | Stores [themes](../../themes).                               |
 | translations | Stores GUI translations.                                     |
