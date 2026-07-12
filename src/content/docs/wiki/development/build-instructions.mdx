@@ -25,14 +25,12 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
   - Qt Svg
 - cmark
 - gamemode (required at build time, optional at runtime. Only on Linux)
-- `glxinfo` (required at runtime, only on Linux)
 - libarchive
 - libGL headers (only on Linux)
 - libqrencode
 - pciutils (required at runtime, only on Linux)
 - scdoc (optional at build time, used to generate manpages)
 - tomlplusplus
-- vulkan-headers
 - zlib
 
 <Tabs syncKey="buildInstructions">
@@ -105,7 +103,6 @@ pacboy -S \
 	libarchive:p \
 	qrencode:p \
 	tomlplusplus:p \
-	vulkan-headers:p \
 	zlib:p
 ```
 
@@ -160,7 +157,7 @@ sudo pacman -S \
   base-devel \
   cmake ninja extra-cmake-modules pkg-config scdoc \
   qt6-base qt6-imageformats qt6-networkauth qt6-svg \
-  cmark gamemode libarchive mesa qrencode tomlplusplus vulkan-headers zlib \
+  cmark gamemode libarchive mesa qrencode tomlplusplus zlib \
   jdk17-openjdk
 ```
 
