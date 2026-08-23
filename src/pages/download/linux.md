@@ -121,9 +121,13 @@ Packages are made available for Ubuntu, Debian, and Linux Mint through the [_Pri
 
 ```bash
 sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
-  && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
-  && sudo apt update \
-  && sudo apt install prismlauncher
+ && echo "Types: deb
+URIs: https://prism-launcher-for-debian.github.io/repo
+Suites: $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}")
+Components: main
+Signed-By: /usr/share/keyrings/prismlauncher-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/prismlauncher.sources \
+ && sudo apt update \
+ && sudo apt install prismlauncher
 ```
 
 ### Debian / Pi OS / Ubuntu (ARM32/64)
