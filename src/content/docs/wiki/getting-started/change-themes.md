@@ -118,19 +118,19 @@ Themes can help you spice up your launcher appearance.
   <summary aria-label="Show screenshots">
     <a href="https://github.com/PrismLauncher/Themes/releases/latest/download/Mod.Labyrinth.Dark-theme.zip"><img src="https://img.shields.io/badge/Mod_Labyrinth_Dark-1CD96A?style=for-the-badge&logo=github" alt="Mod Labyrinth Dark"></a>
   </summary>
-  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod.Labyrinth.Dark/preview.png" alt="Mod Labyrinth Dark theme preview">
+  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod%20Labyrinth%20Dark/preview.png" alt="Mod Labyrinth Dark theme preview">
 </details>
 <details class="theme-preview">
   <summary aria-label="Show screenshots">
     <a href="https://github.com/PrismLauncher/Themes/releases/latest/download/Mod.Labyrinth.Mixed-theme.zip"><img src="https://img.shields.io/badge/Mod_Labyrinth_Mixed-1CD96A?style=for-the-badge&logo=github" alt="Mod Labyrinth Mixed"></a>
   </summary>
-  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod.Labyrinth.Mixed/preview.png" alt="Mod Labyrinth Mixed theme preview">
+  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod%20Labyrinth%20Mixed/preview.png" alt="Mod Labyrinth Mixed theme preview">
 </details>
 <details class="theme-preview">
   <summary aria-label="Show screenshots">
     <a href="https://github.com/PrismLauncher/Themes/releases/latest/download/Mod.Labyrinth.Pale-theme.zip"><img src="https://img.shields.io/badge/Mod_Labyrinth_Pale-1CD96A?style=for-the-badge&logo=github" alt="Mod Labyrinth Pale"></a>
   </summary>
-  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod.Labyrinth.Pale/preview.png" alt="Mod Labyrinth Pale theme preview">
+  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/themes/Mod%20Labyrinth%20Pale/preview.png" alt="Mod Labyrinth Pale theme preview">
 </details>
 <details class="theme-preview">
   <summary aria-label="Show screenshots">
