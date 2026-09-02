@@ -183,8 +183,13 @@ Themes can help you spice up your launcher appearance.
 
 ### Icon Packs
 
-[![Fluent Dark Icons](https://img.shields.io/badge/Fluent--Icons-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark-icons.zip)
-[![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-1d9bf0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Twemoji-icons.zip)
+<a class="theme-preview-static" href="https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark-icons.zip"><img src="https://img.shields.io/badge/Fluent--Icons-60CDFF?style=for-the-badge&logo=github&logoColor=333333" alt="Fluent Dark Icons"></a>
+<details class="theme-preview">
+  <summary aria-label="Show screenshots">
+    <a href="https://github.com/PrismLauncher/Themes/releases/latest/download/Twemoji-icons.zip"><img src="https://img.shields.io/badge/Twemoji--Icons-1d9bf0?style=for-the-badge&logo=github&logoColor=white" alt="Twemoji Icon Pack"></a>
+  </summary>
+  <img src="https://raw.githubusercontent.com/PrismLauncher/Themes/main/icons/Twemoji/preview.png" alt="Twemoji icon pack preview">
+</details>
 
 ## How to install Themes & Icons
 

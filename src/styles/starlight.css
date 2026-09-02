@@ -40,3 +40,8 @@
 	max-width: 100%;
 	height: auto;
 }
+
+.theme-preview-static {
+	display: inline-block;
+	margin-left: 1.75rem;
+}
