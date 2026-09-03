@@ -1,10 +1,10 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry, render } from "astro:content";
 import NewsLayout from "../../layouts/NewsLayout.astro";
 
 export async function getStaticPaths() {
 	return (await getCollection("news")).map((post) => ({
-		params: { slug: post.data.slug || post.slug },
+		params: { slug: post.data.slug || post.id },
 		props: { post },
 	}));
 }
@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <NewsLayout

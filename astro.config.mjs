@@ -54,29 +54,45 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: "Overview",
-					autogenerate: {
-						directory: "wiki/overview",
-					},
+					items: [
+						{
+							autogenerate: {
+								directory: "wiki/overview",
+							},
+						},
+					],
 				},
 				{
 					label: "Getting Started",
-					autogenerate: {
-						directory: "wiki/getting-started",
-					},
+					items: [
+						{
+							autogenerate: {
+								directory: "wiki/getting-started",
+							},
+						},
+					],
 				},
 				{
 					label: "Help pages",
-					autogenerate: {
-						collapsed: true,
-						directory: "wiki/help-pages",
-					},
+					items: [
+						{
+							autogenerate: {
+								collapsed: true,
+								directory: "wiki/help-pages",
+							},
+						},
+					],
 				},
 				"wiki/branding",
 				{
 					label: "Development",
-					autogenerate: {
-						directory: "wiki/development",
-					},
+					items: [
+						{
+							autogenerate: {
+								directory: "wiki/development",
+							},
+						},
+					],
 				},
 			],
 
