@@ -44,7 +44,7 @@ Run to [grab the latest download here](/download), and read on to see all the ne
     - `clang-tidy` is used in CI to catch more complex errors. Our configuration for it may become stricter in the future
   - Development container for Linux
     - This is meant to give developers on Linux an easier time building and developing for the launcher.
-    - See the newly updated [build instructions]() for a guide on how to set it up
+    - See the newly updated [build instructions](<>) for a guide on how to set it up
   - LLVM-based builds
     - Nix and the above mentioned development container both default to LLVM-based environments
 - Endless bug fixes and performance improvements
