@@ -33,7 +33,7 @@
 		"@astrojs/cloudflare": "12.6.13",
 		"prettier": "3.9.6",
 		"prettier-plugin-astro": "0.14.1",
-		"sharp": "0.35.0",
+		"sharp": "0.35.4",
 		"wrangler": "4.127.0"
 	},
 	"packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
