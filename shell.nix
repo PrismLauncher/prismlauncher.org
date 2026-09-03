@@ -4,8 +4,8 @@
 
 pkgs.mkShellNoCC {
   packages = with pkgs; [
-    nodejs_24
-    corepack
+    nodejs
+    pnpm
 
     astro-language-server
     typescript-language-server
