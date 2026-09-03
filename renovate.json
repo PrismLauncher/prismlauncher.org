@@ -1,4 +1,10 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [":semanticCommits", "config:best-practices", "config:js-app"]
+	"extends": [":semanticCommits", "config:best-practices", "config:js-app"],
+	"packageRules": [
+		{
+			"matchPackageNames": ["@astrojs/*", "astro", "astro-icon"],
+			"groupName": "astro packages"
+		}
+	]
 }
