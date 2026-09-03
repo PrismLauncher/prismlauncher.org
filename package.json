@@ -27,7 +27,7 @@
 		"tailwindcss": "4.3.3"
 	},
 	"devDependencies": {
-		"@astrojs/starlight": "0.37.7",
+		"@astrojs/starlight": "0.41.10",
 		"@iconify-json/lucide": "1.2.126",
 		"@iconify-json/simple-icons": "1.2.93",
 		"@astrojs/cloudflare": "12.6.13",
