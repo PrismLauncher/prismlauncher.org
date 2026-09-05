@@ -19,3 +19,29 @@
 	--sl-color-text: #ffffff;
 	--sl-color-bg: #15181c;
 }
+
+.theme-preview {
+	border: none;
+	padding: 0;
+	max-width: 100%;
+}
+
+.theme-preview summary {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.theme-preview > img {
+	display: block;
+	width: 700px;
+	max-width: 100%;
+	height: auto;
+}
+
+.theme-preview-static {
+	display: inline-block;
+	margin-left: 1.75rem;
+}
