@@ -1,26 +1,27 @@
 ---
 title: Launcher Settings
+slug: wiki/help-pages/Launcher-settings
 ---
 
 ## Features
 
-![Features tab under Launcher tab in settings](/public/img/screenshots/SettingsLauncherFeaturesDark.png)
+![Features tab under Launcher tab in settings](/img/screenshots/SettingsLauncherFeaturesDark.png)
 
 ### Folders
 
-<!-- TODO: add image of folder section -->
+![Features tab under Launcher tab in settings](/img/screenshots/SettingsLauncherFeaturesFoldersDark.png)
 
 This is where you can set the location for the Instances, Mods & Icons folders.
 
 ### Mods
 
-<!-- TODO: add image of mods section -->
+![Features tab under Launcher tab in settings](/img/screenshots/SettingsLauncherFeaturesModsnModpackDark.png)
 
 Disable the usage of metadata provided by Modrinth and CurseForge for mods.
 
 ## User Interface
 
-![User Interface tab under Launcher tab in settings](/public/img/screenshots/SettingsLauncherUserInterfaceDark.png)
+![User Interface tab under Launcher tab in settings](/img/screenshots/SettingsLauncherUserInterfaceDark.png)
 
 ### Instance view sorting mode
 
