@@ -35,6 +35,12 @@ Themes can help you spice up your launcher appearance.
 [![Nord Polar Night](https://img.shields.io/badge/Nord_Polar_Night-4C566A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Polar-Night-theme.zip)
 [![Nord Snow Storm](https://img.shields.io/badge/Nord_Snow_Storm-E5E9F0?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-Snow-Storm-theme.zip)
 [![Nord](https://img.shields.io/badge/Nord-88C0D0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Nord-theme.zip)
+[![Ore UI Dark Amethyst](https://img.shields.io/badge/Ore_UI_Dark_Amethyst-5B21B6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Dark.Amethyst-theme.zip)
+[![Ore UI Dark Diamond](https://img.shields.io/badge/Ore_UI_Dark_Diamond-1D4ED8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Dark.Diamond-theme.zip)
+[![Ore UI Dark Emerald](https://img.shields.io/badge/Ore_UI_Dark_Emerald-236212?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Dark.Emerald-theme.zip)
+[![Ore UI Light Amethyst](https://img.shields.io/badge/Ore_UI_Light_Amethyst-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Light.Amethyst-theme.zip)
+[![Ore UI Light Diamond](https://img.shields.io/badge/Ore_UI_Light_Diamond-3B82F6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Light.Diamond-theme.zip)
+[![Ore UI Light Emerald](https://img.shields.io/badge/Ore_UI_Light_Emerald-4B9736?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI.-.Light.Emerald-theme.zip)
 [![Rangoon Lightning](https://img.shields.io/badge/Rangoon_Lightning-FFBF22?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Rangoon-Lightning-theme.zip)
 [![Scarlett Pink](https://img.shields.io/badge/Scarlett_Pink-F8C8DC?style=for-the-badge&logo=github&logoColor=900000)](https://github.com/PrismLauncher/Themes/releases/latest/download/Scarlett-Pink-theme.zip)
 [![Solarized Dark](https://img.shields.io/badge/Solarized_Dark-073642?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Solarized-Dark-theme.zip)
@@ -44,6 +50,7 @@ Themes can help you spice up your launcher appearance.
 ### Icon Packs
 
 [![Fluent Dark Icons](https://img.shields.io/badge/Fluent--Icons-60CDFF?style=for-the-badge&logo=github&logoColor=333333)](https://github.com/PrismLauncher/Themes/releases/latest/download/Fluent-Dark-icons.zip)
+[![Ore UI Icons](https://img.shields.io/badge/Ore_UI_Icons-236212?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Ore.UI-icons.zip)
 [![Twemoji Icon Pack](https://img.shields.io/badge/Twemoji--Icons-1d9bf0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrismLauncher/Themes/releases/latest/download/Twemoji-icons.zip)
 
 ## How to install Themes & Icons
