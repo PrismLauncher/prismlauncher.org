@@ -58,19 +58,22 @@ If you have just installed a version of Java and it doesn't show up, try pressin
 
 Then, download the appropriate Java:
 
-|            Minecraft             | CPU type | Download page                                                                                                                  | Viable alternatives             |
-| :------------------------------: | :------: | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
-|  Minecraft **1.20.5** or above   |  x86-64  | [Microsoft OpenJDK 21 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-x64.msi)         | Azul, Coretto, Temurin, GraalVM |
-|                                  |   x86    | Not available :(                                                                                                               |                                 |
-|                                  | aarch64  | [Microsoft OpenJDK 21 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-aarch64.msi) | Azul                            |
-| Minecraft **1.17** to **1.20.4** |  x86-64  | [Microsoft OpenJDK 17 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-x64.msi)         | Azul, Coretto, Temurin, GraalVM |
-|                                  |   x86    | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?version=17&arch=x86&os=windows)  | Azul, Coretto                   |
-|                                  | aarch64  | [Microsoft OpenJDK 17 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-aarch64.msi) | Azul                            |
-|   Minecraft **1.16** or below    |  x86-64  | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x64&os=windows)    | Azul, Coretto                   |
-|                                  |   x86    | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x86&os=windows)    | Azul, Coretto                   |
-|                                  | aarch64  | Not available :(                                                                                                               |                                 |
+|              Minecraft              | CPU type | Download page                                                                                                                  | Viable alternatives             |
+| :---------------------------------: | :------: | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
+|     Minecraft **26.1** or above     |  x86-64  | [Microsoft OpenJDK 25 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-25-windows-x64.msi)         | Azul, Coretto, Temurin, GraalVM |
+|                                     |   x86    | Not available :(                                                                                                               |                                 |
+|                                     | aarch64  | [Microsoft OpenJDK 25 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-25-windows-aarch64.msi) | Azul                            |
+| Minecraft **1.20.5** to **1.21.11** |  x86-64  | [Microsoft OpenJDK 21 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-x64.msi)         | Azul, Coretto, Temurin, GraalVM |
+|                                     |   x86    | Not available :(                                                                                                               |                                 |
+|                                     | aarch64  | [Microsoft OpenJDK 21 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-21-windows-aarch64.msi) | Azul                            |
+|  Minecraft **1.17** to **1.20.4**   |  x86-64  | [Microsoft OpenJDK 17 for Windows x64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-x64.msi)         | Azul, Coretto, Temurin, GraalVM |
+|                                     |   x86    | [Temurin OpenJDK 17 for Windows x32, `.msi` installer](https://adoptium.net/temurin/releases/?version=17&arch=x86&os=windows)  | Azul, Coretto                   |
+|                                     | aarch64  | [Microsoft OpenJDK 17 for Windows aarch64, `.msi` installer](https://aka.ms/download-jdk/microsoft-jdk-17-windows-aarch64.msi) | Azul                            |
+|    Minecraft **1.16.5** or below    |  x86-64  | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x64&os=windows)    | Azul, Coretto                   |
+|                                     |   x86    | [Temurin OpenJDK 8 for Windows x64, `.msi` installer](https://adoptium.net/temurin/releases/?version=8&arch=x86&os=windows)    | Azul, Coretto                   |
+|                                     | aarch64  | Not available :(                                                                                                               |                                 |
 
-**Tip:** If you are on Windows 11, you can automatically install 8, 17 and 21 by running `winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
+**Tip:** If you are on Windows 11, you can automatically install 8, 17, 21 and 25 by running `winget install Microsoft.OpenJDK.25; winget install Microsoft.OpenJDK.21; winget install Microsoft.OpenJDK.17; winget install EclipseAdoptium.Temurin.8.JDK` in the Terminal app.
 
 ### Installing Java on macOS
 
@@ -84,63 +87,90 @@ Then, download the appropriate Java:
 
 Then, download the appropriate Java:
 
-|            Minecraft             | CPU type | Download page                                                                                                                                         | Viable alternatives             |
-| :------------------------------: | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-|  Minecraft **1.20.5** or above   |  x86-64  | [Microsoft OpenJDK 21 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                       | Azul, Coretto, Temurin, GraalVM |
-|                                  | aarch64  | [Microsoft OpenJDK 21 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                   | Azul, Coretto                   |
-| Minecraft **1.17** to **1.20.4** |  x86-64  | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                       | Azul, Coretto, Temurin, GraalVM |
-|                                  | aarch64  | [Microsoft OpenJDK 17 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                   | Azul, Coretto                   |
-|   Minecraft **1.16** or below    |  x86-64  | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8)                                                 | Azul, Coretto                   |
-|                                  | aarch64  | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto                         |
+|              Minecraft              | CPU type | Download page                                                                                                                                         | Viable alternatives             |
+| :---------------------------------: | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+|     Minecraft **26.1** or above     |  x86-64  | [Microsoft OpenJDK 25 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                       | Azul, Coretto, Temurin          |
+|                                     | aarch64  | [Microsoft OpenJDK 25 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                   | Azul, Coretto, Temurin, GraalVM |
+| Minecraft **1.20.5** to **1.21.11** |  x86-64  | [Microsoft OpenJDK 21 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                       | Azul, Coretto, Temurin          |
+|                                     | aarch64  | [Microsoft OpenJDK 21 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                   | Azul, Coretto, Temurin, GraalVM |
+|  Minecraft **1.17** to **1.20.4**   |  x86-64  | [Microsoft OpenJDK 17 for macOS x64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                       | Azul, Coretto, Temurin          |
+|                                     | aarch64  | [Microsoft OpenJDK 17 for macOS aarch64, `.pkg` installer](https://learn.microsoft.com/en-us/java/openjdk/download)                                   | Azul, Coretto, Temurin, GraalVM |
+|    Minecraft **1.16.5** or below    |  x86-64  | [Temurin OpenJDK 8 for macOS x64, `.pkg` installer](https://adoptium.net/temurin/releases/?version=8)                                                 | Azul, Coretto                   |
+|                                     | aarch64  | [Azul OpenJDK 8 for macOS aarch64, `.dmg` installer](https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit&package=jdk) | Coretto                         |
 
 ### Installing Java on Linux
 
 On Linux, it's recommended to use your package manager for installing Java.
 
-#### Fedora, RHEL, CentOS, AlmaLinux, or RockyLinux
+#### Fedora, RHEL, CentOS Stream, AlmaLinux, or Rocky Linux
 
 On the COPR package all required Java versions should be installed, but this is the command to install it:
 
 ```bash
-sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk
+sudo dnf install java-25-openjdk java-21-openjdk
+```
+
+To install JDK 8 and 17 on the distributions listed above:
+
+Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the distribution name if you are not using CentOS Stream/RHEL/Fedora/Rocky Linux.
+
+```bash
+# Uncomment and change the distribution name if you are not using CentOS/RHEL/Fedora
+# DISTRIBUTION_NAME=centos
+
+sudo cat <<EOF > /etc/yum.repos.d/adoptium.repo
+[Adoptium]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/${DISTRIBUTION_NAME:-$(. /etc/os-release; echo $ID)}/\$releasever/\$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+EOF
+```
+
+Then install JDK 8 and 17 by running:
+
+```bash
+sudo dnf install temurin-17-jdk temurin-8-jdk
 ```
 
 #### Void Linux
 
 ```bash
-sudo xbps-install openjdk17-jre openjdk8-jre openjdk21-jre
+sudo xbps-install openjdk25-jre openjdk21-jre openjdk17-jre openjdk8-jre
 ```
 
 #### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
-sudo pacman -S jre17-openjdk jre8-openjdk jre21-openjdk
+sudo pacman -S jre25-openjdk jre21-openjdk jre17-openjdk jre8-openjdk
 ```
 
 #### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
-sudo apt install openjdk-17-jre openjdk-8-jre openjdk-21-jre
+sudo apt install openjdk-25-jre openjdk-21-jre openjdk-17-jre openjdk-8-jre
 ```
 
 #### Debian, MX Linux
 
 ```bash
-sudo apt install openjdk-17-jre openjdk-21-jre
+sudo apt install openjdk-25-jre openjdk-21-jre
 ```
 
-Java 8 is not available in Debian 10+ due to lack of security support, but you can use the Adoptium repository for security support until 2026:
+To install JDK 8 and 17 on Debian:
 
 ```bash
-wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
-sudo add-apt-repository --yes https://packages.adoptium.net/artifactory/deb/
-sudo apt-get update && sudo apt-get install temurin-8-jdk
+sudo apt install wget apt-transport-https gpg
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+sudo apt update && sudo apt install temurin-17-jdk temurin-8-jdk
 ```
 
 #### Alpine Linux
 
 ```bash
-sudo apk add openjdk17 openjdk8
+sudo apk add openjdk25 openjdk21 openjdk17 openjdk8
 ```
 
 #### Flatpak
@@ -168,7 +198,7 @@ _For 1.16.5 or older_ there's a workaround in installing an older Java binary. M
 Unfortunately there's no workaround for Java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.
 If you want to try, [there's this guide that could work](https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1). Nothing is guaranteed here, though.
 
-#### Older Minecraft on MacOS
+#### Older Minecraft on macOS
 
 If you use some older Minecraft versions, you might have had this error:
 
@@ -178,6 +208,6 @@ Terminating app due to uncaught exception 'NSInternalInconsistencyException', re
 
 Here is a fix:
 
-- First, remove, if you had, [your current Oracle Java](https://explainjava.com/uninstall-java-macos/)
-- Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
+- First, remove your current [Oracle JRE](https://www.java.com/en/download/help/mac_uninstall_java.html) and [Oracle JDK](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#uninstall) if you have them installed.
+- Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg).
 - Select this java binary on Prism Launcher, and it should fix your issue!
