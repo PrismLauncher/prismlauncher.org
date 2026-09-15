@@ -65,9 +65,16 @@ export default defineConfig({
 					},
 				},
 				{
-					label: "Help pages",
+					label: "Themes",
+					collapsed: true,
 					autogenerate: {
-						collapsed: true,
+						directory: "wiki/themes",
+					},
+				},
+				{
+					label: "Help pages",
+					collapsed: true,
+					autogenerate: {
 						directory: "wiki/help-pages",
 					},
 				},
