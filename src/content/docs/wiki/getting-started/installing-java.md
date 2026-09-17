@@ -134,6 +134,12 @@ Then install JDK 8 and 17 by running:
 sudo dnf install temurin-17-jdk temurin-8-jdk
 ```
 
+To install JDK 21 on Fedora 44+:
+
+```bash
+sudo dnf install temurin-21-jdk
+```
+
 #### Void Linux
 
 ```bash
