@@ -74,7 +74,7 @@ chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 on ARM64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.0.3/PrismLauncher-Linux-aarch64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-Linux-aarch64.AppImage
 chmod +x ./PrismLauncher-Linux-aarch64.AppImage
 ./PrismLauncher-Linux-aarch64.AppImage
 ```
@@ -147,13 +147,13 @@ Signed-By: /usr/share/keyrings/prismlauncher-archive-keyring.gpg" | sudo tee /et
  && sudo apt install prismlauncher
 ```
 
-### Debian / Pi OS / Ubuntu (ARM32/64)
+### Debian / Raspberry Pi OS / Ubuntu (ARM32/64)
 
 Prism Launcher is available in the [pi-apps](https://github.com/Botspot/pi-apps) store
 
 [![pi-apps-badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBotspot%2Fpi-apps-analytics%2Fmain%2Fpackage_data_v2.json&query=%24.Minecraft%20Java%20Prism%20Launcher.Version&label=Pi-Apps&color=c51a4a)](https://github.com/Botspot/pi-apps)
 
-Only Debian/Raspbian/Pi OS Buster and newer and Ubuntu 18.04 and newer are supported.
+Only Debian/Pi OS Bookworm and newer and Ubuntu 22.04 and newer are supported.
 
 ### Gentoo
 
