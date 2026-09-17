@@ -1,6 +1,5 @@
 ---
 title: Launcher Settings
-slug: wiki/help-pages/Launcher-settings
 ---
 
 ## Features

@@ -1,6 +1,5 @@
 ---
 title: Environment Variables
-slug: wiki/help-pages/Environment-variables
 ---
 
 ![Custom Commands tab in settings](/img/screenshots/SettingsEnvironmentVariablesDark.png)

@@ -1,6 +1,5 @@
 ---
 title: Instance Settings
-slug: wiki/help-pages/Instance-settings
 ---
 
 ### General

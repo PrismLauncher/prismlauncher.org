@@ -1,6 +1,5 @@
 ---
 title: Core Mods
-slug: wiki/help-pages/Core-mods
 ---
 
 ![Mods tab under PrismLauncher settings](/img/screenshots/InstanceCoreModDark.png)

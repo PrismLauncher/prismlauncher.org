@@ -1,6 +1,5 @@
 ---
 title: Resource Pack Downloader
-slug: wiki/help-pages/Resourcepack-platform
 ---
 
 ![Resourcepack-platform downloader on Resourcepacks tab under Prism Launcher settings](/img/screenshots/InstanceResourcepackPlatformDark.png)

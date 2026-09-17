@@ -1,6 +1,5 @@
 ---
 title: Shader Packs
-slug: wiki/help-pages/shader-packs
 ---
 
 ![Shader Packs PrismLauncher Instances](/img/screenshots/InstanceShaderPackDark.png)

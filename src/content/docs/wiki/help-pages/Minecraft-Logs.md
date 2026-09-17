@@ -1,6 +1,5 @@
 ---
 title: Minecraft Logs
-slug: wiki/help-pages/Minecraft-Logs
 ---
 
 ![Minecraft Logs PrismLauncher Instances](/img/screenshots/InstanceMinecraftLogDark.png)

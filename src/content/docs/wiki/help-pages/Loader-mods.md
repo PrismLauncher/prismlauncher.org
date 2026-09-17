@@ -1,6 +1,5 @@
 ---
 title: Mods
-slug: wiki/help-pages/Loader-mods
 ---
 
 ![Mods tab under PrismLauncher settings](/img/screenshots/LoaderModsDark.png)

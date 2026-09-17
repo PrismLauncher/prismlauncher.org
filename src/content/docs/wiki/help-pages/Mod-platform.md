@@ -1,6 +1,5 @@
 ---
 title: Mod Downloader
-slug: wiki/help-pages/Mod-platform
 ---
 
 ![Mod downloader on mods tab under Prism Launcher settings](/img/screenshots/ModInstallDark.png)
