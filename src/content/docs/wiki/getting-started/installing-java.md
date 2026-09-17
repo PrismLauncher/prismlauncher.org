@@ -49,8 +49,8 @@ If you have just installed a version of Java and it doesn't show up, try pressin
 **First, check your CPU architecture.** Here is a method that works on all Windows versions:
 
 1. Click or tap on the **Start Menu**
-2. Search **Command Prompt** or **Terminal** and click on it
-3. Type in `echo %PROCESSOR_ARCHITECTURE%` and press enter
+2. Search **Terminal** and click on it
+3. Type in `$env:PROCESSOR_ARCHITECTURE` and press enter
 4. Read the result.
    - If it says `AMD64`, you have a 64-bit **x86-64** CPU. This is sometimes called **x64** or **amd64**.
    - If it says `X86`, you have a 32-bit **x86** CPU. This is sometimes called **x32** or **x86-32**.
