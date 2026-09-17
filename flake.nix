@@ -11,5 +11,6 @@
       inherit self nixpkgs;
       name = "prismlauncher.org";
       shell = ./shell.nix;
+      systems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin"];
     };
 }

@@ -11,30 +11,30 @@
 		"update-contributors": "node scripts/update-contributors.mjs"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "4.3.13",
-		"@astrojs/sitemap": "3.7.0",
-		"@fontsource-variable/inter": "5.2.8",
-		"@tailwindcss/typography": "0.5.19",
-		"@tailwindcss/vite": "4.1.18",
-		"astro": "5.17.2",
-		"astro-icon": "1.1.5",
-		"axios": "1.13.5",
-		"feed": "5.2.0",
+		"@astrojs/mdx": "4.3.14",
+		"@astrojs/sitemap": "3.7.3",
+		"@fontsource-variable/inter": "5.3.0",
+		"@tailwindcss/typography": "0.5.20",
+		"@tailwindcss/vite": "4.3.3",
+		"astro": "5.18.1",
+		"astro-icon": "1.2.0",
+		"axios": "1.20.0",
+		"feed": "6.0.0",
 		"rehype-raw": "7.0.0",
 		"rehype-stringify": "10.0.1",
 		"remark": "15.0.1",
 		"remark-rehype": "11.1.2",
-		"tailwindcss": "4.1.18"
+		"tailwindcss": "4.3.3"
 	},
 	"devDependencies": {
-		"@astrojs/starlight": "0.37.6",
-		"@iconify-json/lucide": "1.2.90",
-		"@iconify-json/simple-icons": "1.2.70",
-		"@astrojs/cloudflare": "12.6.12",
-		"prettier": "3.8.1",
+		"@astrojs/starlight": "0.37.7",
+		"@iconify-json/lucide": "1.2.132",
+		"@iconify-json/simple-icons": "1.2.96",
+		"@astrojs/cloudflare": "12.6.13",
+		"prettier": "3.9.6",
 		"prettier-plugin-astro": "0.14.1",
-		"sharp": "0.34.5",
-		"wrangler": "4.65.0"
+		"sharp": "0.35.4",
+		"wrangler": "4.131.1"
 	},
-	"packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
+	"packageManager": "pnpm@11.27.0"
 }

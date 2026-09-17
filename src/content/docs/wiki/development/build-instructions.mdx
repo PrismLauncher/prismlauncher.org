@@ -25,7 +25,6 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
   - Qt Svg
 - cmark
 - gamemode (required at build time, optional at runtime. Only on Linux)
-- `glxinfo` (required at runtime, only on Linux)
 - libarchive
 - libGL headers (only on Linux)
 - libqrencode
@@ -119,7 +118,7 @@ xcode-select --install
 Qt and other dependencies can then be installed with the following [Homebrew](https://brew.sh/) command:
 
 ```console
-brew install cmake ninja extra-cmake-modules openjdk@17 vcpkg qt
+brew install cmake pkg-config ninja extra-cmake-modules openjdk@17 vcpkg qt
 git clone https://github.com/Microsoft/vcpkg ~/vcpkg
 export VCPKG_ROOT="$HOME/vcpkg"
 ```
@@ -132,7 +131,7 @@ sudo apt install \
   build-essential \
   cmake ninja-build extra-cmake-modules pkg-config scdoc \
   qt6-base-dev qt6-image-formats-plugins qt6-networkauth-dev qt6-svg-dev \
-	cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev zlib1g-dev \
+  cmark gamemode-dev libarchive-dev libcmark-dev libgl1-mesa-dev libqrencode-dev libtomlplusplus-dev libvulkan-dev zlib1g-dev
 ```
 
 To install JDK 17 on Debian:
@@ -201,8 +200,8 @@ cmake --preset windows_mingw
 
 ```bash
 cmake --preset macos \
-  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt"
-  -D CMAKE_OSX_DEPLOYMENT_TARGET=12 \
+  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt" \
+  -D CMAKE_OSX_DEPLOYMENT_TARGET=12
 ```
 
 </TabItem>

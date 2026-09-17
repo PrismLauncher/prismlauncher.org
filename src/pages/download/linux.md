@@ -28,6 +28,23 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub org.prismlauncher.PrismLauncher
 ```
 
+### Nightly Repository
+
+We offer our [own Flatpak remote](https://github.com/PrismLauncher/flatpak) with in-development builds of the launcher.
+
+#### App Center
+
+You should be able to open [this](https://flatpak.prismlauncher.org/prismlauncher-nightly.flatpakref) link with your chosen App Center.
+
+#### CLI
+
+You can also enable Flathub, our remote, and install the launcher with the following commands:
+
+```bash
+flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatapkrepo
+flatpak install prismlauncher org.prismlauncher.PrismLauncher//nightly
+```
+
 ### Nix / NixOS
 
 An [official Nix Flake](https://github.com/PrismLauncher/PrismLauncher/blob/develop/nix/README.md) is available for development and release builds.
@@ -49,7 +66,7 @@ After downloading the AppImage, open your file manager and make it [executable](
 on x86-64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.5/PrismLauncher-Linux-x86_64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-Linux-x86_64.AppImage
 chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 ./PrismLauncher-Linux-x86_64.AppImage
 ```
@@ -57,7 +74,7 @@ chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 on ARM64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.5/PrismLauncher-Linux-aarch64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.0.3/PrismLauncher-Linux-aarch64.AppImage
 chmod +x ./PrismLauncher-Linux-aarch64.AppImage
 ./PrismLauncher-Linux-aarch64.AppImage
 ```
@@ -121,9 +138,13 @@ Packages are made available for Ubuntu, Debian, and Linux Mint through the [_Pri
 
 ```bash
 sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
-  && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
-  && sudo apt update \
-  && sudo apt install prismlauncher
+ && echo "Types: deb
+URIs: https://prism-launcher-for-debian.github.io/repo
+Suites: $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}")
+Components: main
+Signed-By: /usr/share/keyrings/prismlauncher-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/prismlauncher.sources \
+ && sudo apt update \
+ && sudo apt install prismlauncher
 ```
 
 ### Debian / Pi OS / Ubuntu (ARM32/64)
