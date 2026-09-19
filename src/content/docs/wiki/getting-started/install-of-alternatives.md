@@ -124,7 +124,7 @@ You can use [Sinytra Connector](https://modrinth.com/mod/connector) to run many 
 
 ### <img src="https://raw.githubusercontent.com/Reforged-Hub/radium-upstream/40739dc656c8bd2d580b5b15d8de89593c3e9c05/src/main/resources/icon.png" alt="Radium Logo" width=20px style="display: inline-block"> Radium
 
-[Embeddium](https://modrinth.com/mod/embeddium) is a Sodium port for Forge that focuses on compatibility with other Forge mods. We recommend using it instead of Rubidium. Be aware of the statements above before using it.
+[Radium](https://modrinth.com/mod/radium) is a Lithium port for Forge. We recommend using it instead of Canary. Be aware of the statements above before using it.
 
 ### <img src="https://raw.githubusercontent.com/Asek3/Oculus/f59f6932eb20e00d123b36d5976d6ecd80b98b41/src/main/resources/oculus-logo.png" alt="Oculus Logo" width=20px style="display: inline-block"> Oculus
 
