@@ -36,6 +36,11 @@ const images = {
 	macos: { light: macosLight, dark: macosDark },
 	windows: { light: windowsLight, dark: windowsDark },
 }[platform];
+
+const sections = DOWNLOADS[platform as keyof typeof DOWNLOADS] || [];
+const hasNightlies = sections.some((section) =>
+	section.downloads.some((d) => d.type === "nightly")
+);
 ---
 
 <MainLayout title={title} description={description}>
@@ -60,63 +65,74 @@ const images = {
 				))
 			}
 		</div>
-		<h1 class="heading-1 mb-6">{title}</h1>
-
-		<div class="flex flex-col md:flex-row gap-6">
-			<div class="flex flex-col gap-6 md:w-1/2">
-				{
-					(DOWNLOADS[platform as keyof typeof DOWNLOADS] || []).map(
-						(section) => (
-							<DownloadCard
-								title={section.title}
-								downloads={section.downloads}
-							/>
-						),
-					)
-				}
+		<div class="group/download">
+			<div class="flex justify-between w-full align-center mb-6">
+				<h1 class="heading-1">{title}</h1>
+				{hasNightlies && (
+					<div class="flex items-center">
+						<input id="toggle" type="checkbox" class="peer sr-only" />
+						<label
+							for="toggle"
+							class="cursor-pointer rounded bg-prism-accent-light dark:bg-prism-accent-dark px-3 py-1.5 peer-checked:bg-prism-background-light dark:peer-checked:bg-prism-background-dark peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2"
+						>
+							Show Testing Versions
+						</label>
+					</div>
+				)}
 			</div>
 
-			{
-				(video || images) && (
-					<div class="flex md:w-1/2">
-						{video ? (
-							<iframe
-								class="w-full aspect-video rounded-lg"
-								src={video}
-								title={videoAlt || "Prism Launcher video"}
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerpolicy="strict-origin-when-cross-origin"
-								allowfullscreen
-							/>
-						) : images ? (
-							<>
-								<Picture
-									src={images.light}
-									formats={["avif", "webp"]}
-									alt={
-										screenshotAlt || `Prism Launcher screenshot on ${platform}`
-									}
-									class="not-prose w-full"
-									pictureAttributes={{
-										class: "dark:hidden",
-									}}
+			<div class="flex flex-col md:flex-row gap-6">
+				<div class="flex flex-col gap-6 md:w-1/2">
+					{sections.map((section) => (
+						<DownloadCard
+							title={section.title}
+							downloads={section.downloads}
+						/>
+					))}
+				</div>
+
+				{
+					(video || images) && (
+						<div class="flex md:w-1/2">
+							{video ? (
+								<iframe
+									class="w-full aspect-video rounded-lg"
+									src={video}
+									title={videoAlt || "Prism Launcher video"}
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
 								/>
-								<Picture
-									src={images.dark}
-									formats={["avif", "webp"]}
-									alt={
-										screenshotAlt || `Prism Launcher screenshot on ${platform}`
-									}
-									class="not-prose w-full"
-									pictureAttributes={{
-										class: "hidden dark:block",
-									}}
-								/>
+							) : images ? (
+								<>
+									<Picture
+										src={images.light}
+										formats={["avif", "webp"]}
+										alt={
+											screenshotAlt || `Prism Launcher screenshot on ${platform}`
+										}
+										class="not-prose w-full"
+										pictureAttributes={{
+											class: "dark:hidden",
+										}}
+									/>
+									<Picture
+										src={images.dark}
+										formats={["avif", "webp"]}
+										alt={
+											screenshotAlt || `Prism Launcher screenshot on ${platform}`
+										}
+										class="not-prose w-full"
+										pictureAttributes={{
+											class: "hidden dark:block",
+										}}
+									/>
 							</>
 						) : null}
 					</div>
 				)
 			}
+			</div>
 		</div>
 	</Card>
 

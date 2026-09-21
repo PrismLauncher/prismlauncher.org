@@ -2,10 +2,10 @@ const VERSION = "11.1.0";
 
 export const PLATFORMS = [
 	{
-		name: "Windows",
-		path: "/download/windows",
-		key: "windows",
-		icon: "simple-icons:windows",
+		name: "Linux",
+		path: "/download/linux",
+		key: "linux",
+		icon: "simple-icons:linux",
 	},
 	{
 		name: "macOS",
@@ -14,16 +14,16 @@ export const PLATFORMS = [
 		icon: "simple-icons:apple",
 	},
 	{
-		name: "Steam Deck",
+		name: "Windows",
+		path: "/download/windows",
+		key: "windows",
+		icon: "simple-icons:windows",
+	},
+	{
+		name: "SteamOS",
 		path: "/download/steam-deck",
 		key: "steam-deck",
 		icon: "simple-icons:steam",
-	},
-	{
-		name: "Linux",
-		path: "/download/linux",
-		key: "linux",
-		icon: "simple-icons:linux",
 	},
 ] as const;
 
@@ -155,7 +155,7 @@ export const DOWNLOADS = {
 
 	"steam-deck": [
 		{
-			title: "Steam Deck",
+			title: "Deck & Machine",
 			downloads: [
 				{
 					title: "Flathub",
@@ -171,6 +171,37 @@ export const DOWNLOADS = {
 					icon: "simple-icons:flatpak",
 					secondaryIcon: "lucide:link",
 				},
+				{
+					title: "Controller Mods Setup",
+					href: "/wiki/getting-started/controller-support/",
+					type: "accent" as const,
+					icon: "lucide:book-open-text",
+				},
+			],
+		},
+		{
+			title: "Frame Standalone",
+			downloads: [
+				{
+					title: "AppImage (.appimage)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-aarch64.AppImage`,
+					type: "secondary" as const,
+					icon: "simple-icons:linux",
+					secondaryIcon: "lucide:download",
+				},
+				{
+					title: "Portable (tar.gz)",
+					href: `https://github.com/PrismLauncher/PrismLauncher/releases/download/${VERSION}/PrismLauncher-Linux-aarch64-Qt6-Portable-${VERSION}.tar.gz`,
+					type: "secondary" as const,
+					icon: "simple-icons:linux",
+					secondaryIcon: "lucide:download",
+				},
+				{
+					title: "Frame Standalone VR Setup",
+					href: "http://localhost:4321/wiki/getting-started/controller-support/",
+					type: "accent" as const,
+					icon: "lucide:book-open-text",	
+				}
 			],
 		},
 	],

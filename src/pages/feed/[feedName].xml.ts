@@ -41,7 +41,7 @@ export const GET: APIRoute = async ({
 	);
 
 	for (const post of posts) {
-		const slug = post.data.slug || post.slug;
+		const slug = post.data.slug || post.id;
 		const link = new URL(`/news/${slug}`, site).toString();
 
 		// TODO: use Astro's .render() in the future

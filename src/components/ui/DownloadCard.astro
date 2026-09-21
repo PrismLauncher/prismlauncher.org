@@ -29,6 +29,9 @@ const { title, downloads } = Astro.props;
 					icon={download.icon}
 					secondaryIcon={download.secondaryIcon}
 					size="md"
+					display={download.type === "nightly"
+							? "hidden group-has-[#toggle:checked]/download:inline-flex"
+							: undefined}
 					class="w-full"
 				>
 					{download.title}

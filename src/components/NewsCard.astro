@@ -1,4 +1,3 @@
----
 import Card from "./ui/Card.astro";
 import PostMeta from "./ui/PostMeta.astro";
 import TagList from "./ui/TagList.astro";
@@ -22,7 +21,7 @@ const { post } = Astro.props;
 
 	<h3 class="heading-3 mb-3">
 		<a
-			href={`/news/${post.data.slug || post.slug}`}
+			href={`/news/${post.data.slug || post.id}`}
 			class="text-prism-link hover:underline"
 		>
 			{post.data.title}

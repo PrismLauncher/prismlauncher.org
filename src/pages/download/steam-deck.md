@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/DownloadLayout.astro
-title: Steam Deck Download
+title: SteamOS Download
 platform: steam-deck
-description: Download Prism Launcher on Steam Deck
+description: Download Prism Launcher on SteamOS
 video: https://www.youtube.com/embed/M8oqFUl791Q?si=zZVkmKFTsZb9JRAF
 videoAlt: Prism Launcher on Steam Deck installation guide
 ---
@@ -11,7 +11,7 @@ videoAlt: Prism Launcher on Steam Deck installation guide
 
 ### Flathub
 
-The easiest way to install Prism Launcher on Steam Deck is through the Discover app store, which comes pre-installed on SteamOS.
+The easiest way to install Prism Launcher on SteamOS is through the Discover app store, which comes pre-installed on SteamOS.
 
 1. Switch to Desktop Mode (hold power button, select "Switch to Desktop")
 2. Open the Discover app
@@ -68,3 +68,10 @@ That's it! You should now see the artwork in your Steam Library.
     class="rounded-lg"
   />
 </div>
+
+### Extra Setup
+
+Our wiki has general pages for setting up controller and vr support. This is specifically beneficial for the frame and you 
+
+- [Controller mods setup]()
+- [Virtual Reality Mods Setup]()

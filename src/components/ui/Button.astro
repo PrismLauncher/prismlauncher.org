@@ -7,6 +7,7 @@ interface Props {
 	size?: "sm" | "md" | "lg";
 	icon?: string;
 	secondaryIcon?: string;
+	display?: string;
 	class?: string;
 }
 
@@ -16,6 +17,7 @@ const {
 	size = "md",
 	icon,
 	secondaryIcon,
+	display = "inline-flex",
 	class: className = "",
 	...rest
 } = Astro.props;
@@ -40,7 +42,8 @@ const iconSize = size === "sm" ? "14" : size === "lg" ? "20" : "16";
 <a
 	href={href}
 	class:list={[
-		"inline-flex items-center justify-center font-medium rounded-sm no-underline",
+		display,
+		"items-center justify-center font-medium rounded-sm no-underline",
 		buttonVariants[variant],
 		buttonSizes[size],
 		(icon || secondaryIcon) && "gap-2",
