@@ -1,0 +1,9 @@
+/discord https://discord.gg/ArX2nafFz2 301
+/github https://github.com/PrismLauncher/PrismLauncher 301
+/mastodon https://floss.social/@PrismLauncher 301
+/matrix https://matrix.to/#/#prismlauncher:matrix.org 301
+/reddit https://www.reddit.com/r/PrismLauncher 301
+/bluesky https://bsky.app/profile/prismlauncher.org 301
+/twitter https://twitter.com/PrismLauncher 301
+/wiki/help-pages/*    /help-pages/:splat    301
+/wiki/development/*   /development/:splat   301

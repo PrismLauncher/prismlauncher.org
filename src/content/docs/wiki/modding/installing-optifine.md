@@ -1,7 +1,10 @@
 ---
 title: Installing OptiFine
 sidebar:
-  order: 8
+    order: 8
+    badge:
+        text: Legacy
+        variant: caution
 ---
 
 :::danger[Before you continue]

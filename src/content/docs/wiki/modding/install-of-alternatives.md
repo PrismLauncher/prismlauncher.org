@@ -1,5 +1,5 @@
 ---
-title: OptiFine Alternatives
+title: Performance Optimizing
 sidebar:
   order: 7
 ---
