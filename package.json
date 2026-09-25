@@ -28,7 +28,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "0.37.7",
-		"@iconify-json/lucide": "1.2.135",
+		"@iconify-json/lucide": "1.2.136",
 		"@iconify-json/simple-icons": "1.2.97",
 		"@astrojs/cloudflare": "12.6.13",
 		"prettier": "3.9.8",
