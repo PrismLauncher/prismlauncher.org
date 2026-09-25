@@ -58,8 +58,8 @@ importers:
         specifier: 0.37.7
         version: 0.37.7(astro@5.18.1(@types/node@24.13.6)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.63.4)(supports-color@10.2.2)(typescript@5.9.3))(supports-color@10.2.2)
       '@iconify-json/lucide':
-        specifier: 1.2.135
-        version: 1.2.135
+        specifier: 1.2.136
+        version: 1.2.136
       '@iconify-json/simple-icons':
         specifier: 1.2.97
         version: 1.2.97
@@ -887,8 +887,8 @@ packages:
   '@fontsource-variable/inter@5.3.0':
     resolution: {integrity: sha512-OupL48va4JNofb97w6NYeF9S7W/kHNKM0Er8Dem5nqi4jeOLrVJDoE8tZEpnMJmtkvNbB1EIPPwHcdkF6b1oUA==}
 
-  '@iconify-json/lucide@1.2.135':
-    resolution: {integrity: sha512-M2RbCJMe/ZwRzGBxNGbqP3kEQ74iJjQyJsw5FgVQw+Kp8eJPQF1S19fiGJChG4yYLg73c8Z/fMnm07GTXUxmQA==}
+  '@iconify-json/lucide@1.2.136':
+    resolution: {integrity: sha512-Wk+OeDVKkw+1LELZqRR3gXWIy5jNx5XjNMvVc9KoygJYmGqclv36FYqseRuJuxBIKDggdoZWNBxNRrOkiRbtwQ==}
 
   '@iconify-json/simple-icons@1.2.97':
     resolution: {integrity: sha512-Z6PmM6jvWVU7rmLzqbxCLJA7SeqCnK6lMHXtjyzHPLZebwuoojBEcHHycppahDzEeN9xujRkrV5J8QpOhMyNrg==}
@@ -3720,7 +3720,7 @@ snapshots:
 
   '@fontsource-variable/inter@5.3.0': {}
 
-  '@iconify-json/lucide@1.2.135':
+  '@iconify-json/lucide@1.2.136':
     dependencies:
       '@iconify/types': 2.0.0
 
