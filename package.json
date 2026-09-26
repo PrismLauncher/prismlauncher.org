@@ -30,7 +30,7 @@
 		"@astrojs/starlight": "0.37.7",
 		"@iconify-json/lucide": "1.2.136",
 		"@iconify-json/simple-icons": "1.2.97",
-		"@astrojs/cloudflare": "12.6.13",
+		"@astrojs/cloudflare": "13.1.10",
 		"prettier": "3.9.9",
 		"prettier-plugin-astro": "0.14.1",
 		"sharp": "0.35.4",
