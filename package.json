@@ -34,7 +34,7 @@
 		"prettier": "3.9.9",
 		"prettier-plugin-astro": "0.14.1",
 		"sharp": "0.35.4",
-		"wrangler": "4.136.3"
+		"wrangler": "4.137.0"
 	},
 	"packageManager": "pnpm@11.27.1"
 }
