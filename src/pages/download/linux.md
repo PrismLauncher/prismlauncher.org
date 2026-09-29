@@ -41,7 +41,7 @@ You should be able to open [this](https://flatpak.prismlauncher.org/prismlaunche
 You can also enable Flathub, our remote, and install the launcher with the following commands:
 
 ```bash
-flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatapkrepo
+flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatpakrepo
 flatpak install prismlauncher org.prismlauncher.PrismLauncher//nightly
 ```
 
