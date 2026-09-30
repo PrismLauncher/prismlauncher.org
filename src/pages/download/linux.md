@@ -41,7 +41,7 @@ You should be able to open [this](https://flatpak.prismlauncher.org/prismlaunche
 You can also enable Flathub, our remote, and install the launcher with the following commands:
 
 ```bash
-flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatapkrepo
+flatpak remote-add --if-not-exists prismlauncher https://flatpak.prismlauncher.org/prismlauncher.flatpakrepo
 flatpak install prismlauncher org.prismlauncher.PrismLauncher//nightly
 ```
 
@@ -66,7 +66,7 @@ After downloading the AppImage, open your file manager and make it [executable](
 on x86-64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-Linux-x86_64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Linux-x86_64.AppImage
 chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 ./PrismLauncher-Linux-x86_64.AppImage
 ```
@@ -74,7 +74,7 @@ chmod +x ./PrismLauncher-Linux-x86_64.AppImage
 on ARM64:
 
 ```bash
-curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.0/PrismLauncher-Linux-aarch64.AppImage
+curl -LO https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Linux-aarch64.AppImage
 chmod +x ./PrismLauncher-Linux-aarch64.AppImage
 ./PrismLauncher-Linux-aarch64.AppImage
 ```

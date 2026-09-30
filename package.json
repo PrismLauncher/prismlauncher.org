@@ -28,13 +28,13 @@
 	},
 	"devDependencies": {
 		"@astrojs/starlight": "0.37.7",
-		"@iconify-json/lucide": "1.2.129",
-		"@iconify-json/simple-icons": "1.2.94",
+		"@iconify-json/lucide": "1.2.137",
+		"@iconify-json/simple-icons": "1.2.97",
 		"@astrojs/cloudflare": "12.6.13",
-		"prettier": "3.9.6",
+		"prettier": "3.9.9",
 		"prettier-plugin-astro": "0.14.1",
 		"sharp": "0.35.4",
-		"wrangler": "4.128.0"
+		"wrangler": "4.141.0"
 	},
-	"packageManager": "pnpm@11.25.0"
+	"packageManager": "pnpm@11.28.0"
 }
