@@ -62,19 +62,19 @@ If you would like to go a bit further, LambdAurora maintains a [very detailed li
 
 ## <img src="https://raw.githubusercontent.com/FabricMC/community/main/media/unascribed/png/fabric.png" alt="FabricMC Logo" width=30px style="display: inline-block"><img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" width=30px style="display: inline-block"> Fabric/Quilt Modpacks
 
+### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" alt="Fabulously Optimized Logo" width=20px style="display: inline-block"> Fabulously Optimized
+
+If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
+
+[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
+
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/additive/logo_512h.png" alt="Additive Logo" width=20px style="display: inline-block"> Additive
 
 [Additive](https://modrinth.com/modpack/additive) is a modpack similar to Fabulously Optimized which aims to support nearly all OptiFine features. It's based on Adrenaline for better performance, supports Fabric, and can be installed on a wide range of Minecraft versions.
 
 ### <img src="https://raw.githubusercontent.com/skywardmc/art/main/adrenaline/logo_512h.png" alt="Adrenaline Logo" width=20px style="display: inline-block"> Adrenaline
 
-[Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game and not introducing instability. Like Simply Optimized, it does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
-
-### <img src="https://avatars.githubusercontent.com/u/92206402?s=200&v=4" alt="Fabulously Optimized Logo" width=20px style="display: inline-block"> Fabulously Optimized
-
-If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
-
-[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
+[Adrenaline](https://modrinth.com/modpack/adrenaline) is a Fabric modpack which aims to improve performance as much as possible while not changing anything about the vanilla game and not introducing instability. It does not come with any OptiFine replacement mods, so you'll have to manually install the features that you want.
 
 ## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" width=30px style="display: inline-block"> NeoForge Mods
 
