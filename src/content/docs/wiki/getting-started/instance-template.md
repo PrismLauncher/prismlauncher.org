@@ -25,7 +25,7 @@ either create the directory with the correct name (see [default data locations](
 ### Creating the template
 
 Creating the template is pretty straight-forward: Place every file or symlink you want the template to contain in the template directory.
-This preserves the file tree, which means users needing to place files at the exact subpath they should appear in the instance direcory.
+This preserves the file tree starting from the `minecraft` folder, which means users needing to place files at the exact subpath they should appear in the instance direcory.
 
 For example, a newly created Minecraft 26.3 instance directory looks like this:
 
@@ -49,12 +49,13 @@ For example, a newly created Minecraft 26.3 instance directory looks like this:
 └── mmc-pack.json
 ```
 
+The template will only touch files inside the `minecraft` directory and ignore the other entries in the top-level `instance` directory (e.g. `instance.cfg`).
+
 This means, to create a template containing only the `options.txt` file, it should look like this:
 
 ```
 <template>
-└── minecraft
-    └── options.txt
+  └── options.txt
 ```
 
 ### Creating a new instance with the template
