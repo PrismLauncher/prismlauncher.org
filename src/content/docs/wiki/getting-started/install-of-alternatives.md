@@ -50,7 +50,7 @@ If you use Sodium often, please consider supporting development of the mod by [d
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" alt="Iris Logo" width=20px style="display: inline-block"> Iris
 
-[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/1.21.9/docs/unsupportedshaders.md).
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It currently supports almost every shaderpack, [with some exceptions](https://github.com/IrisShaders/Iris/blob/26.1/docs/unsupportedshaders.md).
 
 ### <img src="https://cdn.modrinth.com/data/Orvt0mRa/icon.png" alt="Indium Logo" width=20px style="display: inline-block"> Indium
 
@@ -74,7 +74,7 @@ If you would like to go a bit further, LambdAurora maintains a [very detailed li
 
 If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
 
-[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
+[See the installation instructions](https://wiki.download.fo/install-instructions/prism-launcher#desktop) for Prism Launcher.
 
 ## <img src="https://raw.githubusercontent.com/neoforged/websites/66732fa21e1a0d7b73df5c2f18a5345bbe13871f/assets/img/content/branding/icon.png" alt="NeoForge Logo" width=30px style="display: inline-block"> NeoForge Mods
 

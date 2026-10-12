@@ -14,7 +14,7 @@ This is where you can find options and copy settings for your new instance.
 
 ### Keep play time
 
-This option will allow you to keep your playtime from your original instance, if this setting is enabled in Global Settings, see: [Game Time](../Minecraft-settings/#game-time)
+This option will allow you to keep your playtime from your original instance, if this setting is enabled in Global Settings, see: [Game Time](../minecraft-settings/#game-time)
 
 ### Copy saves
 
