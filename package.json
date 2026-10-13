@@ -31,7 +31,7 @@
 		"@iconify-json/lucide": "1.2.142",
 		"@iconify-json/simple-icons": "1.2.99",
 		"@astrojs/cloudflare": "12.6.13",
-		"prettier": "3.9.9",
+		"prettier": "3.9.10",
 		"prettier-plugin-astro": "0.14.1",
 		"sharp": "0.35.5",
 		"wrangler": "4.149.0"
