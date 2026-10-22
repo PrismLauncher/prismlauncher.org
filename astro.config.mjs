@@ -11,7 +11,9 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
 	site: process.env.DEPLOY_URL || "https://prismlauncher.org",
 	output: "static",
-	adapter: cloudflare(),
+	adapter: cloudflare({
+		imageService: "compile",
+	}),
 
 	vite: {
 		plugins: [tailwindcss()],
