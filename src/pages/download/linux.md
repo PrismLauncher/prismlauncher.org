@@ -182,14 +182,9 @@ Installation instructions for stable releases are available on the [NixOS Wiki](
 
 ### openSUSE
 
-An RPM package is available on the [Open Build Service](https://build.opensuse.org/package/show/home:getchoo/prismlauncher)
+PrismLauncher is available on the [openSUSE repositories](https://software.opensuse.org/package/prismlauncher)
 
 ```bash
-# Add repository (if on Leap, replace 'openSUSE_Tumbleweed' with your release version)
-zypper addrepo https://download.opensuse.org/repositories/home:getchoo/openSUSE_Tumbleweed/home:getchoo.repo
-# Refresh the repository cache
-zypper refresh
-# Install the latest release
 zypper install prismlauncher
 ```
 
