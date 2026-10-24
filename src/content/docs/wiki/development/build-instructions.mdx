@@ -150,6 +150,24 @@ sudo apt install openjdk-17-jdk
 ```
 
 </TabItem>
+<TabItem label="Linux (Fedora)">
+
+```console
+sudo dnf install @c-development cmake ninja extra-cmake-modules scdoc \
+  qt6-qtbase-devel qt6-qtimageformats qt6-qtnetworkauth-devel \
+  qt6-qtsvg-devel cmark-devel gamemode-devel libarchive-devel \
+  mesa-libGL-devel qrencode-devel tomlplusplus-devel zlib-ng-devel
+```
+
+To install JDK 17 on Fedora (instructions from [Fedora docs](https://docs.fedoraproject.org/en-US/quick-docs/installing-java/#_installing_an_older_java_version)):
+
+```console
+sudo dnf install adoptium-termurin-java-repository
+sudo fedora-third-party enable
+sudo dnf install temurin-17-jdk
+```
+
+</TabItem>
 <TabItem label="Linux (Arch)">
 
 ```console
