@@ -18,7 +18,7 @@
 		"@tailwindcss/vite": "4.3.3",
 		"astro": "5.18.1",
 		"astro-icon": "1.2.0",
-		"axios": "1.20.0",
+		"axios": "1.21.0",
 		"feed": "6.0.0",
 		"rehype-raw": "7.0.0",
 		"rehype-stringify": "10.0.1",
